@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+
+# Environment
+.env*
+!.env.example
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated chemistry exports: ~25 MB, rebuilt by `uv run python -m chem export`.
+# Nothing reads these at runtime — they exist to be inspected and to feed puzzle
+# generation offline. The bundles under frontend/public/puzzles are deliberately
+# NOT ignored: those are the shipped game content, and the frontend has no
+# backend to fetch them from.
+backend/data/
