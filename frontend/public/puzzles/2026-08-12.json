@@ -1,0 +1,2513 @@
+{
+  "version": 3,
+  "target": "AlPO4",
+  "name": "aluminium phosphate",
+  "grade": "medium",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Al",
+    "Al2S3",
+    "AlBr3",
+    "AlI3",
+    "Ba(OH)2",
+    "H2O",
+    "K2O",
+    "P2O5"
+  ],
+  "species": {
+    "Al": {
+      "name": "aluminium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Al(H2PO4)3": {
+      "name": "aluminium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "H2PO4": -1
+      }
+    },
+    "Al(HS)3": {
+      "name": "aluminium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Al": 3,
+        "HS": -1
+      }
+    },
+    "Al(OH)3": {
+      "name": "aluminium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "OH": -1
+      }
+    },
+    "Al2(HPO4)3": {
+      "name": "aluminium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "HPO4": -2
+      }
+    },
+    "Al2S3": {
+      "name": "aluminium sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "S": -2
+      }
+    },
+    "AlBr3": {
+      "name": "aluminium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "Br": -1
+      }
+    },
+    "AlH3": {
+      "name": "aluminium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Al": 3,
+        "H": -1
+      }
+    },
+    "AlI3": {
+      "name": "aluminium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "I": -1
+      }
+    },
+    "AlPO4": {
+      "name": "aluminium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "PO4": -3
+      }
+    },
+    "Ba(H2PO4)2": {
+      "name": "barium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "H2PO4": -1
+      }
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "Ba3(PO4)2": {
+      "name": "barium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "PO4": -3
+      }
+    },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaHPO4": {
+      "name": "barium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HPO4": -2
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "K2HPO4": {
+      "name": "potassium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HPO4": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2S": {
+      "name": "potassium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "S": -2
+      }
+    },
+    "K3PO4": {
+      "name": "potassium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "PO4": -3
+      }
+    },
+    "KBr": {
+      "name": "potassium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "Br": -1
+      }
+    },
+    "KH2PO4": {
+      "name": "potassium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "H2PO4": -1
+      }
+    },
+    "KHS": {
+      "name": "potassium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HS": -1
+      }
+    },
+    "KI": {
+      "name": "potassium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "I": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "AlBr3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Al(OH)3",
+        "BaBr2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 AlBr3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaBr2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Al(OH)3",
+        "BaI2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 AlI3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaI2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ba(OH)2 + P2O5 -> Ba3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 K2O + P2O5 -> 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Al(OH)3"
+      ],
+      "products": [
+        "AlPO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + Al(OH)3 -> AlPO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H3PO4 + 2 Al(OH)3 -> Al2(HPO4)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al(H2PO4)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H3PO4 + Al(OH)3 -> Al(H2PO4)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaBr2 + 2 K3PO4 -> Ba3(PO4)2 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaI2 + 2 K3PO4 -> Ba3(PO4)2 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + 4 H3PO4 -> 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KBr"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "AlBr3 + 3 KOH -> Al(OH)3 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KI"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "AlI3 + 3 KOH -> Al(OH)3 + 3 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 KOH + P2O5 -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 KOH -> K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 KOH -> K2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "KH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + KOH -> KH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Al",
+        "H3PO4"
+      ],
+      "products": [
+        "AlPO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 2 H3PO4 -> 2 AlPO4 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "AlPO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "Al2S3",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "AlPO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Al2S3 + 2 H3PO4 -> 3 H2S + 2 AlPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ba(OH)2 -> Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ba(OH)2 -> Ba(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "K2O"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 K2O -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "K2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 K3PO4 + H3PO4 -> 3 K2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "KH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K3PO4 + 2 H3PO4 -> 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "AlBr3"
+      ],
+      "products": [
+        "AlPO4",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "K3PO4 + AlBr3 -> AlPO4 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "AlI3"
+      ],
+      "products": [
+        "AlPO4",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "K3PO4 + AlI3 -> AlPO4 + 3 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "BaBr2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 K3PO4 + 3 BaBr2 -> Ba3(PO4)2 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "BaI2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 K3PO4 + 3 BaI2 -> Ba3(PO4)2 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "AlPO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Al2(HPO4)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 AlPO4 + H3PO4 -> Al2(HPO4)3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "AlPO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Al(H2PO4)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "AlPO4 + 2 H3PO4 -> Al(H2PO4)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Al2(HPO4)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "AlPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al2(HPO4)3 + Al(OH)3 -> 3 AlPO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Al(OH)3",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 Al(H2PO4)3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al(H2PO4)3 + Al(OH)3 -> Al2(HPO4)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "AlPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al(H2PO4)3 + 2 Al(OH)3 -> 3 AlPO4 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3,
+          6
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KH2PO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Al(H2PO4)3 + 3 KOH -> Al(OH)3 + 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "K3PO4"
+      ],
+      "products": [
+        "AlPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Al(H2PO4)3 + K3PO4 -> AlPO4 + 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "K2HPO4"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(H2PO4)3 + 3 K2HPO4 -> Al2(HPO4)3 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 BaHPO4 + Ba(OH)2 -> Ba3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + 2 Ba(OH)2 -> Ba3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 K3PO4 -> Ba3(PO4)2 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "K2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + K2HPO4 -> BaHPO4 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "AlBr3"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2HPO4 + 2 AlBr3 -> Al2(HPO4)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "AlI3"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2HPO4 + 2 AlI3 -> Al2(HPO4)3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "BaBr2"
+      ],
+      "products": [
+        "BaHPO4",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2HPO4 + BaBr2 -> BaHPO4 + 2 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "BaI2"
+      ],
+      "products": [
+        "BaHPO4",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2HPO4 + BaI2 -> BaHPO4 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "K2HPO4 + KOH -> K3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "Al(H2PO4)3"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2HPO4 + 2 Al(H2PO4)3 -> Al2(HPO4)3 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "Ba(H2PO4)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2HPO4 + Ba(H2PO4)2 -> BaHPO4 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + KOH -> K2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + 2 KOH -> K3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al",
+        "H2"
+      ],
+      "products": [
+        "AlH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 H2 -> 2 AlH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Al",
+        "H2S"
+      ],
+      "products": [
+        "Al2S3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 3 H2S -> Al2S3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Al2S3",
+        "H2S"
+      ],
+      "products": [
+        "Al(HS)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Al2S3 + 3 H2S -> 2 Al(HS)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2O"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2S + 2 Al(OH)3 -> Al2S3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al(HS)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2S + Al(OH)3 -> Al(HS)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Al(OH)3",
+        "Ba(HS)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 Al(HS)3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al(HS)3 + Al(OH)3 -> Al2S3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KHS"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Al(HS)3 + 3 KOH -> Al(OH)3 + 3 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "AlPO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Al(HS)3 + H3PO4 -> 3 H2S + AlPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "K3PO4"
+      ],
+      "products": [
+        "AlPO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Al(HS)3 + K3PO4 -> AlPO4 + 3 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "K2HPO4"
+      ],
+      "products": [
+        "Al2(HPO4)3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 K2HPO4 -> Al2(HPO4)3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "BaS"
+      ],
+      "products": [
+        "Al2S3",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 BaS -> Al2S3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "K2S"
+      ],
+      "products": [
+        "Al2S3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 K2S -> Al2S3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "AlBr3"
+      ],
+      "products": [
+        "Al2S3",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 AlBr3 -> Al2S3 + 3 BaBr2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "AlI3"
+      ],
+      "products": [
+        "Al2S3",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 AlI3 -> Al2S3 + 3 BaI2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 BaS + 2 H3PO4 -> 3 H2S + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 K3PO4 -> Ba3(PO4)2 + 3 K2S",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Al(H2PO4)3"
+      ],
+      "products": [
+        "Al2S3",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 Al(H2PO4)3 -> Al2S3 + 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "K2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + K2HPO4 -> BaHPO4 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Al(HS)3"
+      ],
+      "products": [
+        "Al2S3",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 Al(HS)3 -> Al2S3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Ba(HS)2 + 2 H3PO4 -> 6 H2S + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(HS)2 + 2 K3PO4 -> Ba3(PO4)2 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + K2HPO4 -> BaHPO4 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "AlBr3"
+      ],
+      "products": [
+        "Al2S3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 AlBr3 -> Al2S3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "AlI3"
+      ],
+      "products": [
+        "Al2S3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 AlI3 -> Al2S3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 K2S + 2 H3PO4 -> 3 H2S + 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "Al(H2PO4)3"
+      ],
+      "products": [
+        "Al2S3",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 Al(H2PO4)3 -> Al2S3 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H2S"
+      ],
+      "products": [
+        "KHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2S + H2S -> 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "Al(HS)3"
+      ],
+      "products": [
+        "Al2S3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 Al(HS)3 -> Al2S3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 KHS + H3PO4 -> 3 H2S + K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "acid_displacement": {
+      "substrates": [
+        "Al2S3",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "AlPO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Al2S3 + 2 H3PO4 -> 3 H2S + 2 AlPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "K3PO4",
+        "AlBr3"
+      ],
+      "products": [
+        "AlPO4",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "K3PO4 + AlBr3 -> AlPO4 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Al",
+        "H3PO4"
+      ],
+      "products": [
+        "AlPO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 2 H3PO4 -> 2 AlPO4 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "AlPO4 is insoluble"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "Al(OH)3"
+      ],
+      "products": [
+        "AlPO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + Al(OH)3 -> AlPO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "AlPO4 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Al2(HPO4)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "AlPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al2(HPO4)3 + Al(OH)3 -> 3 AlPO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  }
+}

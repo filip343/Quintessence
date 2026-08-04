@@ -1,0 +1,2473 @@
+{
+  "version": 3,
+  "target": "Ba(HSO4)2",
+  "name": "barium hydrogensulfate",
+  "grade": "medium",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "Ba(OH)2",
+    "BaO",
+    "BaS",
+    "FeI2",
+    "H2O",
+    "NH3",
+    "SO3"
+  ],
+  "species": {
+    "(NH4)2S": {
+      "name": "ammonium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "S": -2
+      }
+    },
+    "(NH4)2SO4": {
+      "name": "ammonium sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SO4": -2
+      }
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag2S": {
+      "name": "silver sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "S": -2
+      }
+    },
+    "Ag2SO4": {
+      "name": "silver sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "SO4": -2
+      }
+    },
+    "AgHS": {
+      "name": "silver hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "HS": -1
+      }
+    },
+    "AgHSO4": {
+      "name": "silver hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HSO4": -1
+      }
+    },
+    "AgI": {
+      "name": "silver iodide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "I": -1
+      }
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
+      }
+    },
+    "Ba(HSO4)2": {
+      "name": "barium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HSO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaO": {
+      "name": "barium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "BaSO4": {
+      "name": "barium sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO4": -2
+      }
+    },
+    "Fe(HS)2": {
+      "name": "iron(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "HS": -1
+      }
+    },
+    "Fe(HSO4)2": {
+      "name": "iron(II) hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "HSO4": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeS": {
+      "name": "iron(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "S": -2
+      }
+    },
+    "FeSO4": {
+      "name": "iron(II) sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "SO4": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H2SO4": {
+      "name": "sulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO4": -2
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4HS": {
+      "name": "ammonium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "NH4": 1,
+        "HS": -1
+      }
+    },
+    "NH4HSO4": {
+      "name": "ammonium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "HSO4": -1
+      }
+    },
+    "NH4I": {
+      "name": "ammonium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "I": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "SO3": {
+      "name": "sulfur trioxide",
+      "class": "acidic oxide",
+      "state": "l",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "SO3"
+      ],
+      "products": [
+        "Ag2SO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + SO3 -> Ag2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "BaI2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "SO3"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SO3 -> BaSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "BaO",
+        "H2O"
+      ],
+      "products": [
+        "Ba(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "BaO + H2O -> Ba(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaO",
+        "SO3"
+      ],
+      "products": [
+        "BaSO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "BaO + SO3 -> BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "FeI2"
+      ],
+      "products": [
+        "FeS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + FeI2 -> FeS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "BaS"
+      ],
+      "products": [
+        "FeS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeI2 + BaS -> FeS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "SO3",
+        "H2O"
+      ],
+      "products": [
+        "H2SO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO3 + H2O -> H2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2SO4",
+        "H2SO4"
+      ],
+      "products": [
+        "AgHSO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2SO4 + H2SO4 -> 2 AgHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Fe(OH)2 -> FeSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Fe(OH)2 -> Fe(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "FeSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeS + H2SO4 -> H2S + FeSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4I"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeI2 + 2 NH4OH -> Fe(OH)2 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + 2 NH4OH -> (NH4)2SO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HSO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO4 + NH4OH -> NH4HSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2SO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + Ag2O -> Ag2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Ba(OH)2 -> BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "BaO"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + BaO -> BaSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + H2SO4 -> H2S + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2SO4"
+      ],
+      "products": [
+        "(NH4)2SO4"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2SO4 -> (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "BaS"
+      ],
+      "products": [
+        "Ag2S",
+        "Ba(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHSO4 + BaS -> Ag2S + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "FeI2"
+      ],
+      "products": [
+        "AgI",
+        "Fe(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHSO4 + FeI2 -> 2 AgI + Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "BaI2"
+      ],
+      "products": [
+        "AgI",
+        "Ba(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHSO4 + BaI2 -> 2 AgI + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "NH4I"
+      ],
+      "products": [
+        "AgI",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHSO4 + NH4I -> AgI + NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "BaSO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeSO4 + Ba(OH)2 -> Fe(OH)2 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "BaS"
+      ],
+      "products": [
+        "FeS",
+        "BaSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeSO4 + BaS -> FeS + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "FeSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "FeS"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + FeSO4 -> BaSO4 + FeS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "BaI2"
+      ],
+      "products": [
+        "BaSO4",
+        "FeI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeSO4 + BaI2 -> BaSO4 + FeI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "(NH4)2SO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeSO4 + 2 NH4OH -> Fe(OH)2 + (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Fe(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeSO4 + H2SO4 -> Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "Ba(HSO4)2"
+      ],
+      "products": [
+        "BaSO4",
+        "Fe(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeSO4 + Ba(HSO4)2 -> BaSO4 + Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HSO4)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(HSO4)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "BaS"
+      ],
+      "products": [
+        "FeS",
+        "Ba(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HSO4)2 + BaS -> FeS + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeSO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HSO4)2 + Fe(OH)2 -> 2 FeSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4HSO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(HSO4)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HSO4)2 + Ba(OH)2 -> 2 BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "FeSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Fe(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + FeSO4 -> BaSO4 + Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "(NH4)2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + (NH4)2SO4 -> BaSO4 + 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Ag2O -> Ag2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "BaO"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + BaO -> BaS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2S"
+      ],
+      "products": [
+        "(NH4)2S"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2S -> (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NH4OH -> NH4HS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "2 NH4I + Ba(OH)2 -> 2 NH3 + BaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "AgHSO4"
+      ],
+      "products": [
+        "AgI",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "NH4I + AgHSO4 -> AgI + NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SO4 + Ba(OH)2 -> 2 NH3 + BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "BaS"
+      ],
+      "products": [
+        "BaSO4",
+        "(NH4)2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2SO4 + BaS -> BaSO4 + (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "BaI2"
+      ],
+      "products": [
+        "BaSO4",
+        "NH4I"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2SO4 + BaI2 -> BaSO4 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "H2SO4"
+      ],
+      "products": [
+        "NH4HSO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2SO4 + H2SO4 -> 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Ba(HSO4)2"
+      ],
+      "products": [
+        "BaSO4",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2SO4 + Ba(HSO4)2 -> BaSO4 + 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "NH4HSO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "2 NH4HSO4 + Ba(OH)2 -> 2 NH3 + Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HSO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HSO4 + NH4OH -> (NH4)2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "Ag2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2S + H2SO4 -> H2S + Ag2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "H2S"
+      ],
+      "products": [
+        "AgHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2S + H2S -> 2 AgHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + H2SO4 -> 2 H2S + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "FeSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Fe(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + FeSO4 -> BaSO4 + Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "(NH4)2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + (NH4)2SO4 -> BaSO4 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "BaS",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2S + Ba(OH)2 -> 2 NH3 + BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "FeI2"
+      ],
+      "products": [
+        "FeS",
+        "NH4I"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + FeI2 -> FeS + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "(NH4)2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2S + H2SO4 -> H2S + (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "AgHSO4"
+      ],
+      "products": [
+        "Ag2S",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + 2 AgHSO4 -> Ag2S + 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "FeSO4"
+      ],
+      "products": [
+        "FeS",
+        "(NH4)2SO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + FeSO4 -> FeS + (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(HSO4)2"
+      ],
+      "products": [
+        "FeS",
+        "NH4HSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + Fe(HSO4)2 -> FeS + 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2S"
+      ],
+      "products": [
+        "NH4HS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2S + H2S -> 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(HS)2"
+      ],
+      "products": [
+        "FeS",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + Fe(HS)2 -> FeS + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(HS)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "BaS"
+      ],
+      "products": [
+        "FeS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + BaS -> FeS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4HS"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(HS)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "FeSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Fe(HS)2 + H2SO4 -> 2 H2S + FeSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "(NH4)2S"
+      ],
+      "products": [
+        "FeS",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + (NH4)2S -> FeS + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "2 NH4HS + Ba(OH)2 -> 2 NH3 + Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "(NH4)2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "2 NH4HS + H2SO4 -> 2 H2S + (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "BaS"
+      ],
+      "products": [
+        "Ag2S",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + BaS -> Ag2S + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "FeI2"
+      ],
+      "products": [
+        "AgI",
+        "Fe(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + FeI2 -> 2 AgI + Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "BaI2"
+      ],
+      "products": [
+        "AgI",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + BaI2 -> 2 AgI + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "Ag2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "2 AgHS + H2SO4 -> 2 H2S + Ag2SO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "NH4I"
+      ],
+      "products": [
+        "AgI",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHS + NH4I -> AgI + NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "(NH4)2S"
+      ],
+      "products": [
+        "Ag2S",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + (NH4)2S -> Ag2S + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    }
+  ],
+  "answers": {
+    "partial_neutralisation": {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    "salt_with_parent_acid": {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "NH4HSO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "2 NH4HSO4 + Ba(OH)2 -> 2 NH3 + Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    "double_displacement": {
+      "substrates": [
+        "AgHSO4",
+        "BaS"
+      ],
+      "products": [
+        "Ag2S",
+        "Ba(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHSO4 + BaS -> Ag2S + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    "hydroxide_precipitation": {
+      "substrates": [
+        "Fe(HSO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HSO4)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(HSO4)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    }
+  }
+}

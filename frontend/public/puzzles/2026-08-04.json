@@ -1,0 +1,1704 @@
+{
+  "version": 3,
+  "target": "FePO4",
+  "name": "iron(III) phosphate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 6,
+  "cut": 1,
+  "palette": [
+    "Ba(OH)2",
+    "Fe2O3",
+    "FeBr3",
+    "FeF3",
+    "H2O",
+    "Li2O",
+    "P2O5"
+  ],
+  "species": {
+    "Ba(H2PO4)2": {
+      "name": "barium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "H2PO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "Ba3(PO4)2": {
+      "name": "barium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "PO4": -3
+      }
+    },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaF2": {
+      "name": "barium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "F": -1
+      }
+    },
+    "BaHPO4": {
+      "name": "barium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HPO4": -2
+      }
+    },
+    "Fe(H2PO4)3": {
+      "name": "iron(III) dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "H2PO4": -1
+      }
+    },
+    "Fe(OH)3": {
+      "name": "iron(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "OH": -1
+      }
+    },
+    "Fe2(HPO4)3": {
+      "name": "iron(III) hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "HPO4": -2
+      }
+    },
+    "Fe2O3": {
+      "name": "iron(III) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeBr3": {
+      "name": "iron(III) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "Br": -1
+      }
+    },
+    "FeF3": {
+      "name": "iron(III) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "F": -1
+      }
+    },
+    "FePO4": {
+      "name": "iron(III) phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "PO4": -3
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "Li2HPO4": {
+      "name": "lithium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "HPO4": -2
+      }
+    },
+    "Li2O": {
+      "name": "lithium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Li3PO4": {
+      "name": "lithium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "PO4": -3
+      }
+    },
+    "LiBr": {
+      "name": "lithium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "Br": -1
+      }
+    },
+    "LiF": {
+      "name": "lithium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "F": -1
+      }
+    },
+    "LiH2PO4": {
+      "name": "lithium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "H2PO4": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "OH": -1
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "FeBr3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "BaBr2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 FeBr3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 BaBr2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "BaF2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 FeF3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 BaF2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ba(OH)2 + P2O5 -> Ba3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Fe2O3",
+        "P2O5"
+      ],
+      "products": [
+        "FePO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Fe2O3 + P2O5 -> 2 FePO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "H2O"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Li2O + H2O -> 2 LiOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 Li2O + P2O5 -> 2 Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + Fe(OH)3 -> FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H3PO4 + 2 Fe(OH)3 -> Fe2(HPO4)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe(H2PO4)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H3PO4 + Fe(OH)3 -> Fe(H2PO4)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaBr2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 BaF2 + 2 H3PO4 -> 6 HF + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + 4 H3PO4 -> 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FePO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe2(HPO4)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 FePO4 + H3PO4 -> Fe2(HPO4)3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FePO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe(H2PO4)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FePO4 + 2 H3PO4 -> Fe(H2PO4)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "LiBr"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeBr3 + 3 LiOH -> Fe(OH)3 + 3 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "LiF"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeF3 + 3 LiOH -> Fe(OH)3 + 3 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "LiOH",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 LiOH + P2O5 -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 LiOH -> Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 LiOH -> Li2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "LiH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ba(OH)2 -> Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ba(OH)2 -> Ba(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe2O3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + Fe2O3 -> 2 FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "FePO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "FePO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF3 + H3PO4 -> 3 HF + FePO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Li2O"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 Li2O -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Li2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Li3PO4 + H3PO4 -> 3 Li2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "FeBr3"
+      ],
+      "products": [
+        "FePO4",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li3PO4 + FeBr3 -> FePO4 + 3 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "FeF3"
+      ],
+      "products": [
+        "FePO4",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li3PO4 + FeF3 -> FePO4 + 3 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "BaBr2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Li3PO4 + 3 BaBr2 -> Ba3(PO4)2 + 6 LiBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe2(HPO4)3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe2(HPO4)3 + Fe(OH)3 -> 3 FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 Fe(H2PO4)3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)3 + Fe(OH)3 -> Fe2(HPO4)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)3 + 2 Fe(OH)3 -> 3 FePO4 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3,
+          6
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "LiH2PO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(H2PO4)3 + 3 LiOH -> Fe(OH)3 + 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "Li3PO4"
+      ],
+      "products": [
+        "FePO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)3 + Li3PO4 -> FePO4 + 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Fe(H2PO4)3 + 3 Li2HPO4 -> Fe2(HPO4)3 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ba(OH)2 -> BaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe2O3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HF + Fe2O3 -> 2 FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2O"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Li2O -> 2 LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HF + Fe(OH)3 -> FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiOH"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + LiOH -> LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 BaHPO4 + Ba(OH)2 -> Ba3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + 2 Ba(OH)2 -> Ba3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + Li2HPO4 -> BaHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "LiF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Li3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 LiF + H3PO4 -> 3 HF + Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "FeBr3"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Li2HPO4 + 2 FeBr3 -> Fe2(HPO4)3 + 6 LiBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "FeF3"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Li2HPO4 + 2 FeF3 -> Fe2(HPO4)3 + 6 LiF",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "BaBr2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + BaBr2 -> BaHPO4 + 2 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Li2HPO4 + LiOH -> Li3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Fe(H2PO4)3"
+      ],
+      "products": [
+        "Fe2(HPO4)3",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Li2HPO4 + 2 Fe(H2PO4)3 -> Fe2(HPO4)3 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(HPO4)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Ba(H2PO4)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + Ba(H2PO4)2 -> BaHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + LiOH -> Li2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + 2 LiOH -> Li3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "oxide_with_oxide": {
+      "substrates": [
+        "Fe2O3",
+        "P2O5"
+      ],
+      "products": [
+        "FePO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Fe2O3 + P2O5 -> 2 FePO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "FeF3",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "FePO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF3 + H3PO4 -> 3 HF + FePO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H3PO4",
+        "Fe2O3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + Fe2O3 -> 2 FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "FePO4 is insoluble"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Li3PO4",
+        "FeBr3"
+      ],
+      "products": [
+        "FePO4",
+        "LiBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li3PO4 + FeBr3 -> FePO4 + 3 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 precipitates"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + Fe(OH)3 -> FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "FePO4 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Fe2(HPO4)3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FePO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe2(HPO4)3 + Fe(OH)3 -> 3 FePO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "version": 3,
+  "target": "MgO",
+  "name": "magnesium oxide",
+  "grade": "hard",
+  "want": 3,
+  "ways": 3,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "CO2",
+    "H2O",
+    "Mg",
+    "MgO",
+    "O2"
+  ],
+  "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2CO3": {
+      "name": "silver carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "CO3": -2
+      }
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgHCO3": {
+      "name": "silver hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HCO3": -1
+      }
+    },
+    "CO2": {
+      "name": "carbon dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2CO3": {
+      "name": "carbonic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "CO3": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "Mg": {
+      "name": "magnesium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Mg(HCO3)2": {
+      "name": "magnesium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "HCO3": -1
+      }
+    },
+    "MgCO3": {
+      "name": "magnesium carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "CO3": -2
+      }
+    },
+    "MgH2": {
+      "name": "magnesium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Mg": 2,
+        "H": -1
+      }
+    },
+    "MgO": {
+      "name": "magnesium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "O2": {
+      "name": "oxygen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "CO2"
+      ],
+      "products": [
+        "Ag2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + CO2 -> Ag2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Mg"
+      ],
+      "products": [
+        "MgO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Mg -> MgO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "CO2",
+        "H2O"
+      ],
+      "products": [
+        "H2CO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "CO2 + H2O -> H2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "MgO",
+        "CO2"
+      ],
+      "products": [
+        "MgCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "MgO + CO2 -> MgCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "O2"
+      ],
+      "products": [
+        "MgO"
+      ],
+      "rule": "oxidation",
+      "equation": "2 Mg + O2 -> 2 MgO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "basic oxide"
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "AgHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2CO3 + H2CO3 -> 2 AgHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "O2"
+      ],
+      "products": [
+        "Ag2O"
+      ],
+      "rule": "oxidation",
+      "equation": "4 Ag + O2 -> 2 Ag2O",
+      "coefficients": {
+        "substrates": [
+          4,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "basic oxide"
+    },
+    {
+      "substrates": [
+        "H2CO3"
+      ],
+      "products": [
+        "CO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2CO3 -> CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Ag2O -> Ag2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2CO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H2CO3"
+      ],
+      "products": [
+        "MgCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + H2CO3 -> MgCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "MgO"
+      ],
+      "products": [
+        "MgCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + MgO -> MgCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "MgCO3",
+        "H2CO3"
+      ],
+      "products": [
+        "Mg(HCO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "MgCO3 + H2CO3 -> Mg(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "MgCO3"
+      ],
+      "products": [
+        "MgO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "MgCO3 -> MgO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "AgHCO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 AgHCO3 -> Ag2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "AgHCO3"
+      ],
+      "products": [
+        "Mg(HCO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + 2 AgHCO3 -> Mg(HCO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H2"
+      ],
+      "products": [
+        "MgH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + H2 -> MgH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "O2"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "rule": "oxidation",
+      "equation": "2 H2 + O2 -> 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "neutral oxide"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HCO3)2"
+      ],
+      "products": [
+        "MgCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Mg(HCO3)2 -> MgCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    }
+  ],
+  "answers": {
+    "aluminothermic_reduction": {
+      "substrates": [
+        "Ag2O",
+        "Mg"
+      ],
+      "products": [
+        "MgO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Mg -> MgO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    "oxidation": {
+      "substrates": [
+        "Mg",
+        "O2"
+      ],
+      "products": [
+        "MgO"
+      ],
+      "rule": "oxidation",
+      "equation": "2 Mg + O2 -> 2 MgO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "basic oxide"
+    },
+    "carbonate_decomposition": {
+      "substrates": [
+        "MgCO3"
+      ],
+      "products": [
+        "MgO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "MgCO3 -> MgO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    }
+  }
+}

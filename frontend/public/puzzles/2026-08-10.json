@@ -1,0 +1,1032 @@
+{
+  "version": 3,
+  "target": "K2SO3",
+  "name": "potassium sulfite",
+  "grade": "easy",
+  "want": 5,
+  "ways": 7,
+  "cut": 1,
+  "palette": [
+    "H2O",
+    "K",
+    "K2O",
+    "KOH",
+    "NH3",
+    "SO2",
+    "SiO2"
+  ],
+  "species": {
+    "(NH4)2SO3": {
+      "name": "ammonium sulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SO3": -2
+      }
+    },
+    "(NH4)2SiO3": {
+      "name": "ammonium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SiO3": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SO3": {
+      "name": "sulfurous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO3": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K": {
+      "name": "potassium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2SO3": {
+      "name": "potassium sulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SO3": -2
+      }
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KH": {
+      "name": "potassium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "H": -1
+      }
+    },
+    "KHSO3": {
+      "name": "potassium hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HSO3": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4HSO3": {
+      "name": "ammonium hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "NH4": 1,
+        "HSO3": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "SO2": {
+      "name": "sulfur dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "K",
+        "H2O"
+      ],
+      "products": [
+        "KOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 K + 2 H2O -> 2 KOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "SO2",
+        "H2O"
+      ],
+      "products": [
+        "H2SO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO2 + H2O -> H2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SO2 -> K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K",
+        "H2"
+      ],
+      "products": [
+        "KH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 K + H2 -> 2 KH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + 2 NH4OH -> (NH4)2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HSO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO3 + NH4OH -> NH4HSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO3"
+      ],
+      "products": [
+        "SO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2SO3 -> SO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2SO3"
+      ],
+      "products": [
+        "K2SO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2SO3 -> K2SO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KOH"
+      ],
+      "products": [
+        "KHSO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO3 + KOH -> KHSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2SO3"
+      ],
+      "products": [
+        "(NH4)2SO3"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2SO3 -> (NH4)2SO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "K2SO3",
+        "H2SO3"
+      ],
+      "products": [
+        "KHSO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2SO3 + H2SO3 -> 2 KHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2SO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SO3 + 2 KOH -> 2 NH3 + K2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "H2SO3"
+      ],
+      "products": [
+        "NH4HSO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2SO3 + H2SO3 -> 2 NH4HSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "NH4HSO3",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "KHSO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4HSO3 + KOH -> NH3 + KHSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HSO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HSO3 + NH4OH -> (NH4)2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KHSO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2SiO3"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2SiO3 -> K2SiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2SiO3"
+      ],
+      "products": [
+        "(NH4)2SiO3"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SiO3 + 2 KOH -> 2 NH3 + K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "(NH4)2SO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2SiO3 + H2SO3 -> H2SiO3 + (NH4)2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "base_with_acidic_oxide": {
+      "substrates": [
+        "KOH",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "oxide_with_oxide": {
+      "substrates": [
+        "K2O",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SO2 -> K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "K2SiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2SO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2SO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "K",
+        "H2SO3"
+      ],
+      "products": [
+        "K2SO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2SO3 -> K2SO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2SO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "(NH4)2SO3",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SO3 + 2 KOH -> 2 NH3 + K2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  }
+}
