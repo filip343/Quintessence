@@ -93,6 +93,11 @@ def generate(
 
     palette = _cover(requirements, budget, want, target)
     palette.add(WATER)  # every branch needs it and it is free at any cut
+    # Belt and braces. `_resolve` already refuses to walk through the target,
+    # so this should never fire -- but a palette containing the trophy is the
+    # one defect that cannot be recovered from downstream, because the board
+    # silently refuses to select it and the day just plays short.
+    palette.discard(target)
 
     verified = assess(target, tuple(sorted(palette)))
     if verified is None or not verified.accessible:
@@ -149,7 +154,7 @@ def _requirements(
         # where AgF and ZnBr2 get into a palette, not in the rule choice.
         costed: list[tuple[int, int, frozenset[str]]] = []
         for reaction in reactions[:_ROUTES_CONSIDERED]:
-            leaves = _resolve(reaction.reactants, cost, makers, cut)
+            leaves = _resolve(reaction.reactants, cost, makers, cut, target)
             if leaves is None:
                 continue
             foreign = {e for s in leaves for e in _elements_in(s)} - home - _FREE_ELEMENTS
@@ -165,14 +170,25 @@ def _resolve(
     cost: dict[str, int],
     makers: dict[str, list[Reaction]],
     cut: int,
+    target: str,
 ) -> frozenset[str] | None:
-    """Walk back to the cut. None if any branch dead-ends above it."""
+    """Walk back to the cut. None if any branch dead-ends above it.
+
+    `target` is refused everywhere, not merely left out of the answer. The board
+    will not let anyone select the trophy, so a branch that needs it is dead in
+    play whatever this walk decides -- and if the target happens to sit at or
+    below the cut, it would otherwise be *dealt*, handing the player a bottle
+    they can never pick up. Both readings are the same rule: nothing is made
+    from the thing being made.
+    """
     leaves: set[str] = set()
     seen: set[str] = set()
     frontier = list(species)
 
     while frontier:
         current = frontier.pop()
+        if current == target:
+            return None  # circular: this branch is built out of the trophy
         if current in seen:
             continue
         seen.add(current)
@@ -182,7 +198,9 @@ def _resolve(
             continue
 
         routes = [
-            r for r in makers.get(current, []) if all(is_common(x) for x in r.reactants)
+            r
+            for r in makers.get(current, [])
+            if target not in r.reactants and all(is_common(x) for x in r.reactants)
         ]
         if not routes:
             return None  # above the cut and unmakeable from common things

@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import json
 import sys
+from collections import defaultdict
 from datetime import date as Date
 from datetime import timedelta
 from pathlib import Path
@@ -34,6 +35,7 @@ from chem import network
 from chem.balance import balance
 from chem.difficulty import PLAYABLE_RULES, Grade, assess_all
 from chem.export import VERSION
+from chem.network import cheapest_moves
 from chem.generate import DEFAULT_CUT, WANT_WAYS, Puzzle, generate
 from chem.reaction import Reaction
 from chem.rules.catalogue import rule_slug
@@ -41,6 +43,9 @@ from chem.rules.commonness import is_common
 from chem.rules.display import species_record
 
 DEFAULT_OUTPUT = Path("../frontend/public/puzzles")
+
+# How many targets a day may try before accepting a hand short of five ways.
+_CANDIDATES = 40
 
 # Rotates the difficulty over a week, the way a crossword does: gentle at the
 # start, hardest midweek. Monday is index 0.
@@ -59,24 +64,67 @@ def bundle(puzzle: Puzzle) -> dict[str, Any]:
     """Everything the front end needs to run this hand offline."""
     net = network.build(puzzle.palette)
     reachable = sorted(net.species)
+    examples = _ways(puzzle.target, net)
 
     return {
         "version": VERSION,
         "target": puzzle.target,
         "name": species_record(puzzle.target).name,
         "grade": puzzle.grade.value,
-        "want": min(WANT_WAYS, puzzle.ways),  # ask for what exists
-        "ways": puzzle.ways,
+        "want": min(WANT_WAYS, len(examples)),  # ask for what exists
+        "ways": len(examples),
         "cut": puzzle.cut,
         "palette": list(puzzle.palette),
         "species": {formula: _species(formula) for formula in reachable},
         "reactions": [_reaction(r) for r in net.reactions],
-        "answers": {
-            rule: _reaction(puzzle.examples[rule])
-            for rule in puzzle.rules
-            if rule in puzzle.examples
-        },
+        "answers": {rule: _reaction(examples[rule]) for rule in examples},
     }
+
+
+def _ways(target: str, net: network.Network) -> dict[str, Reaction]:
+    """One worked reaction per rule the dealt hand can actually reach.
+
+    Counted from the closure the bundle ships rather than from the grading pass,
+    because those two applied different filters and the difference was visible
+    in play. `chem.difficulty` drops any rule whose substrates are not all
+    `is_common` -- the right call when ranking 1183 targets, where it is what
+    stops a route through MgCrO4 counting as a way. But the bundle ships the
+    whole closure, and the board scores any reaction that makes the target. So
+    a hand could offer eight ways, print five on the answer sheet, and give a
+    player a sixth the end screen then failed to explain.
+
+    The commonness gate has already done its work by this point: it chose the
+    target and it chose the palette. Once a hand is dealt, anything the player
+    can actually build out of it is a way, and the teaching screen owes them
+    every one.
+
+    Reactions consuming the target are excluded, the trophy rule again --
+    `Na2SO4 + H2SO4 -> NaHSO4` then back again is two real reactions and a fake
+    way. The shallowest reaction per rule wins, so the example shown is the one
+    a player could most plausibly have found.
+    """
+    cost = cheapest_moves(net)
+    by_rule: dict[str, list[Reaction]] = defaultdict(list)
+    for reaction in net.reactions:
+        if target in reaction.products and target not in reaction.reactants:
+            slug = rule_slug(reaction.template) or reaction.template
+            by_rule[slug].append(reaction)
+
+    depth: dict[str, int] = {}
+    best: dict[str, Reaction] = {}
+    for rule, reactions in by_rule.items():
+        usable = [r for r in reactions if all(x in cost for x in r.reactants)]
+        if not usable:
+            continue
+        # `equation()` breaks ties, so the same hand always names the same
+        # example -- a bundle that changed between two identical runs would
+        # make a regenerated day a different puzzle for no reason.
+        pick = min(usable, key=lambda r: (max(cost[x] for x in r.reactants), r.equation()))
+        depth[rule] = max(cost[x] for x in pick.reactants)
+        best[rule] = pick
+
+    # Shallowest first: the end screen reads as a difficulty ramp.
+    return {rule: best[rule] for rule in sorted(best, key=lambda r: (depth[r], r))}
 
 
 def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
@@ -100,12 +148,30 @@ def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
         return None
 
     seed = day.toordinal()
-    for offset in range(len(pool)):
+    fallback: Puzzle | None = None
+
+    # Keep looking until a hand offers the full five, then settle. The grading
+    # pass counts ways across the whole network under the commonness gate; what
+    # a player meets is the closure of the dealt palette, which is usually
+    # larger. So a target graded at three ways often deals a hand worth five,
+    # and taking the first playable candidate was leaving those on the table --
+    # most Fridays asked for three when a few more draws found five.
+    #
+    # Bounded rather than exhaustive, for the same reason `_cover` is greedy:
+    # a generator that might scan a thousand targets on a bad day is one nobody
+    # can predict the runtime of. Past the bound, the first playable hand wins
+    # and the day asks for what it has, which is the brief's rule -- a hard
+    # target has few ways, and that is what makes it hard.
+    for offset in range(min(len(pool), _CANDIDATES)):
         target = pool[(seed + offset * 7919) % len(pool)]  # a prime, to spread
         puzzle = generate(target, cut=cut, seed=seed)
-        if puzzle is not None and puzzle.ways >= floor:
+        if puzzle is None or puzzle.ways < floor:
+            continue
+        if len(_ways(target, network.build(puzzle.palette))) >= WANT_WAYS:
             return puzzle
-    return None
+        if fallback is None:
+            fallback = puzzle
+    return fallback
 
 
 # --------------------------------------------------------------------------
