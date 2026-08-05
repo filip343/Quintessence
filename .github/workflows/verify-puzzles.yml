@@ -1,0 +1,39 @@
+# Guards the bundles the browser is actually served.
+#
+# Deliberately does NOT pass --reindex. This job's whole value is failing when
+# index.json disagrees with the directory, which is the failure mode the
+# generator makes easy: `python -m chem.puzzle` writes an index containing only
+# the days of that one run, so regenerating a single day quietly truncates the
+# calendar and orphans every other bundle. A job that repaired that before
+# checking would report a clean run and hide the mistake.
+#
+# No chempy, no uv, no generator import: it re-derives winnability from the
+# shipped JSON, so a generator bug cannot vouch for itself.
+
+name: verify puzzles
+
+on:
+  push:
+    paths:
+      - "frontend/public/puzzles/**"
+      - "backend/**"
+      - ".github/workflows/verify-puzzles.yml"
+  pull_request:
+    paths:
+      - "frontend/public/puzzles/**"
+      - "backend/**"
+      - ".github/workflows/verify-puzzles.yml"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check every bundle
+        run: python backend/verify_bundles.py

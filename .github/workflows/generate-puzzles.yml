@@ -1,0 +1,104 @@
+# Keeps the calendar topped up.
+#
+# Only ever deals days that do not exist yet. Regenerating a day that already
+# shipped would be a quiet way to break it: puzzles are seeded off the date
+# ordinal so the same engine reproduces the same day byte for byte, but the
+# moment a rule or a data table changes, a regenerated past day becomes a
+# *different* puzzle -- and a save whose target no longer matches is discarded,
+# so anyone mid-game that day loses it. Past days are history; only the future
+# is generated.
+#
+# A month ahead, topped up weekly. The horizon is short on purpose: every day
+# dealt is a day committed, and the moment a rule or table changes, everything
+# already dealt is frozen as-is or breaks someone's save. A month is enough
+# runway to survive three missed runs and small enough that an engine change
+# only locks in a few weeks.
+#
+# Weekly rather than daily: each run adds about seven days, so a daily job
+# would mostly be a commit and a redeploy that added nothing.
+
+name: generate puzzles
+
+on:
+  schedule:
+    # 03:00 UTC on Mondays. Nothing depends on the hour or the day -- with a
+    # month of runway this job is never the reason tomorrow has a puzzle.
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      horizon:
+        description: "Deal puzzles this many days ahead of today"
+        required: false
+        default: "30"
+
+concurrency:
+  group: generate-puzzles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+
+      - name: Work out which days are missing
+        id: range
+        run: |
+          set -euo pipefail
+          horizon="${{ github.event.inputs.horizon || '30' }}"
+
+          last=$(ls frontend/public/puzzles/*.json 2>/dev/null \
+                 | xargs -r -n1 basename \
+                 | sed 's/\.json$//' \
+                 | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' \
+                 | sort | tail -1 || true)
+
+          if [ -z "$last" ]; then
+            start=$(date -u +%F)
+          else
+            start=$(date -u -d "$last + 1 day" +%F)
+          fi
+          end=$(date -u -d "+$horizon days" +%F)
+
+          days=$(( ( $(date -u -d "$end" +%s) - $(date -u -d "$start" +%s) ) / 86400 + 1 ))
+          if [ "$days" -le 0 ]; then
+            echo "calendar already reaches $last, nothing to deal"
+            echo "days=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "dealing $days days from $start (last on disk: ${last:-none})"
+            echo "days=$days" >> "$GITHUB_OUTPUT"
+            echo "start=$start" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deal them
+        if: steps.range.outputs.days != '0'
+        working-directory: backend
+        run: uv run python -m chem.puzzle "${{ steps.range.outputs.start }}" --days "${{ steps.range.outputs.days }}"
+
+      # Rebuilt from the directory, not from what the generator just happened to
+      # write -- that is the whole reason the index keeps getting truncated.
+      - name: Rebuild the index and check every bundle
+        if: steps.range.outputs.days != '0'
+        run: python backend/verify_bundles.py --reindex
+
+      - name: Commit
+        if: steps.range.outputs.days != '0'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/puzzles
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git commit -m "chore(puzzles): deal through $(date -u -d "+${{ github.event.inputs.horizon || '30' }} days" +%F)"
+          git push
