@@ -13,7 +13,7 @@
  * dark because the OS says so or because a previous visit said so.
  */
 
-const KEY = "fiveways:theme";
+const KEY = "quintessence:theme";
 
 export function ThemeToggle() {
   function flip() {

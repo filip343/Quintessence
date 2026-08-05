@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Archivo, IBM_Plex_Mono, Newsreader } from "next/font/google";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
@@ -10,7 +11,7 @@ import "./globals.css";
  * who chose light on a dark machine gets a black flash on every navigation.
  * Nothing else belongs in here.
  */
-const APPLY_THEME = `try{var t=localStorage.getItem("fiveways:theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}`;
+const APPLY_THEME = `try{var t=localStorage.getItem("quintessence:theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}`;
 
 /**
  * Three faces, three jobs.
@@ -38,10 +39,34 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600"],
 });
 
+const UMAMI_ID = process.env.NEXT_PUBLIC_UMAMI_ID;
+
+const TITLE = "Quintessence - a daily chemistry puzzle";
+const DESCRIPTION =
+  "Find five different reactions that make the day's compound. Real inorganic chemistry, no textbook needed.";
+
 export const metadata: Metadata = {
-  title: "Five Ways - a daily chemistry puzzle",
-  description:
-    "Find five different reactions that make the day's compound. Real inorganic chemistry, no textbook needed.",
+  // Open Graph needs absolute urls, and the only place that knows the domain
+  // is the deployment. Set NEXT_PUBLIC_SITE_URL there; falling back to
+  // localhost keeps `next build` quiet and produces a link preview that is
+  // wrong only in development, where nobody is sharing links.
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
+  title: TITLE,
+  description: DESCRIPTION,
+  applicationName: "Quintessence",
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    siteName: "Quintessence",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
@@ -62,6 +87,18 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: APPLY_THEME }} />
         <ThemeToggle />
         {children}
+        {/* Absent unless a website id is configured, which is what keeps
+            development out of the numbers: the variable is set on the
+            deployment only, so localhost never has a tracker to report to and
+            needs no domain filtering to stay quiet. Cookieless and carrying no
+            identifier of any kind — see `lib/analytics`. */}
+        {UMAMI_ID && (
+          <Script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id={UMAMI_ID}
+          />
+        )}
       </body>
     </html>
   );

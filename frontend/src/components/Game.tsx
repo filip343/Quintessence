@@ -13,12 +13,16 @@ import {
   won,
 } from "@/lib/game";
 import {
+  claimFirstVisit,
+  claimOutcome,
   clear,
   load,
   markTutorialSeen,
+  recordSolve,
   store,
   tutorialSeen,
 } from "@/lib/storage";
+import { track } from "@/lib/analytics";
 import { Chip } from "./Chip";
 import { Equation, Formula } from "./Formula";
 import { Legend } from "./Legend";
@@ -56,6 +60,12 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
     const played = Boolean(save && (save.moves.length > 0 || save.revealed));
     const teaching = tutorialSeen() !== true && !played;
 
+    // No save at all and no record of having been told how to play is as close
+    // to "never been here" as a game without accounts can get. Reusing the
+    // flags the tutorial already needs, rather than minting an id to count
+    // people with.
+    if (!save && teaching && claimFirstVisit()) track("first-visit");
+
     // Not `|| save.moves.length === 0`: a game whose whole story is "I gave up"
     // — or "these four pairs do nothing" — has an empty move log and still has
     // to come back. Replaying no moves is just the opening position.
@@ -81,6 +91,27 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
     if (!day || !hydrated.current) return;
     store(day, bundle, state.log, state.failed, state.revealed);
   }, [bundle, day, state.log, state.failed, state.revealed]);
+
+  // How the day ended, reported once. The streak is counted here rather than
+  // where the win is displayed so that the two can never disagree: one claim,
+  // one bump, one event.
+  useEffect(() => {
+    if (!day || !hydrated.current) return;
+    if (!complete && !state.revealed) return;
+    if (!claimOutcome(day)) return;
+
+    const shape = {
+      day,
+      grade: bundle.grade,
+      moves: state.moves,
+      ways: state.order.length,
+    };
+    if (complete) {
+      track("solved", { ...shape, streak: recordSolve(day).current });
+    } else {
+      track("gave-up", shape);
+    }
+  }, [bundle.grade, complete, day, state.moves, state.order.length, state.revealed]);
 
   return (
     <main className="mx-auto flex w-full max-w-352 flex-col gap-7 px-4 py-8 sm:px-6">
@@ -114,6 +145,7 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         <Trail
           title="reactions you ran"
           count={state.made.length}
+          tone="flask"
           className="order-2 xl:order-1 xl:border-r xl:border-rule xl:pr-5"
         >
           {[...state.made].reverse().map((reaction, index) => (
@@ -149,6 +181,7 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         <Trail
           title="no reaction"
           count={state.failed.length}
+          tone="muted"
           className="order-3 xl:border-l xl:border-rule xl:pl-5"
         >
           {[...state.failed].reverse().map((pair) => (
@@ -274,7 +307,7 @@ function Header({
   return (
     <header className="flex flex-col gap-4">
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-        <span className="font-semibold text-ink">Five Ways</span>
+        <span className="font-semibold text-brass">Quintessence</span>
         {day && <span>{day}</span>}
         <span aria-hidden>·</span>
         <span>{bundle.grade}</span>
@@ -291,7 +324,7 @@ function Header({
           // Most targets are salts, and salt is deliberately the quietest
           // class — so the hero gets its presence from a lift rather than from
           // shouting with a tint the chemistry does not support.
-          className={`${speciesClass(record)} flex flex-col gap-1 rounded-lg border px-5 py-4 shadow-(--shadow-lift)`}
+          className={`${speciesClass(record)} species-hero flex flex-col gap-1 rounded-lg border px-5 py-4 shadow-(--shadow-lift)`}
         >
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
             make
@@ -322,7 +355,13 @@ function Header({
             )}
           </p>
           <p className="font-mono text-[13px] tabular-nums text-muted">
-            <span className="text-ink">{found}</span>/{bundle.want} kinds
+            {/* The score turns green the moment there is a score to show, so
+                the number that matters is not the same grey as the two
+                counters beside it. */}
+            <span className={found > 0 ? "font-semibold text-flask" : "text-ink"}>
+              {found}
+            </span>
+            /{bundle.want} kinds
             <span className="mx-2 text-rule">|</span>
             {state.moves} {state.moves === 1 ? "move" : "moves"}
             {state.misses > 0 && (
@@ -638,17 +677,19 @@ function Rack({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) {
 function Trail({
   title,
   count,
+  tone,
   className,
   children,
 }: {
   title: string;
   count: number;
+  tone?: "brass" | "flask" | "muted";
   className?: string;
   children: React.ReactNode[];
 }) {
   return (
     <section className={`flex flex-col gap-2 ${className ?? ""}`}>
-      <Mark>
+      <Mark tone={tone}>
         {title} <span className="tabular-nums">({count})</span>
       </Mark>
       <ol className="flex max-h-[60vh] flex-col gap-1.5 overflow-y-auto xl:sticky xl:top-4">
@@ -662,10 +703,27 @@ function Trail({
   );
 }
 
-/** The one heading style: a mono rule, set small and wide. */
-function Mark({ children }: { children: React.ReactNode }) {
+/**
+ * The one heading style: a mono rule, set small and wide.
+ *
+ * In brass by default. These sit above every section on the page, so they are
+ * the cheapest place to get the accent out of the rack and onto the rest of
+ * the board — and a heading is chrome, which means it can take a hue without
+ * saying anything about chemistry. `tone` is for the two sections that have a
+ * colour of their own already: what worked is flask green, what did not is
+ * left grey, because absence should not be the brightest thing on the screen.
+ */
+function Mark({
+  children,
+  tone = "brass",
+}: {
+  children: React.ReactNode;
+  tone?: "brass" | "flask" | "muted";
+}) {
+  const colour =
+    tone === "flask" ? "text-flask" : tone === "muted" ? "text-muted" : "text-brass";
   return (
-    <h2 className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
+    <h2 className={`font-mono text-[11px] uppercase tracking-[0.16em] ${colour}`}>
       {children}
     </h2>
   );

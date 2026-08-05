@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   Five Ways — the reagent shelf
+   Quintessence — the reagent shelf
    --------------------------------------------------------------------------
    The visual system is the chemistry, not a skin over it.
 
@@ -53,12 +53,19 @@
 :root {
   color-scheme: light;
 
-  /* Frosted lab glass rather than paper — cool, not cream. */
-  --bench: #eceff2;
-  --panel: #f8fafb;
+  /* Frosted lab glass rather than paper — cool, not cream. Carried further
+     than it first was: the bench used to sit a few points off white, which
+     read as "unstyled page" rather than as a surface. It is now a definite
+     cool green-grey, and the panels stay near-white so anything on the bench
+     lifts off it instead of blending in. */
+  --bench: #d6e4e9;
+  --bench-low: #c8dae1;
+  /* Not pure white. Panels cover most of the board, so white here undoes the
+     tint on the bench and the page goes back to looking like a blank page. */
+  --panel: #f3f8fa;
   --ink: #16191d;
-  --muted: #5d666f;
-  --rule: #d2d8dd;
+  --muted: #566169;
+  --rule: #c3d2d8;
 
   /* Brass: burette taps and clamp fittings. The only accent on the page.
      `--brass-solid` is the one that gets filled and carries label text, so it
@@ -78,23 +85,31 @@
   /* How hard a species tint is mixed into its ground. The tints are picked as
      ink on paper, so on a dark ground every one of these has to rise or the
      classes collapse into the same murk. */
-  --tint-fill: 13%;
-  --tint-edge: 34%;
-  --tint-hatch: 24%;
-  --tint-hatch-salt: 11%;
+  --tint-fill: 17%;
+  --tint-edge: 42%;
+  --tint-hatch: 26%;
+  --tint-hatch-salt: 12%;
   --mark-mix: 72%;
   --mark-into: var(--ink);
+
+  /* The target, which is the one species that must not recede. Its own pair
+     rather than a hard-coded bump, because how far a tint has to be pushed to
+     read as "the same colour, louder" is exactly the kind of thing that
+     differs between a light ground and a dark one. */
+  --tint-fill-hero: 30%;
+  --tint-edge-hero: 62%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
 
-    --bench: #0f1317;
-    --panel: #161b21;
+    --bench: #0c1418;
+    --bench-low: #091013;
+    --panel: #142026;
     --ink: #e7ecf0;
-    --muted: #8d99a4;
-    --rule: #262e36;
+    --muted: #93a3ac;
+    --rule: #26353d;
 
     --brass: #c9a24a;
     --brass-solid: #c9a24a;
@@ -110,17 +125,21 @@
     --tint-hatch-salt: 16%;
     --mark-mix: 42%;
     --mark-into: #ffffff;
+
+    --tint-fill-hero: 36%;
+    --tint-edge-hero: 64%;
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  --bench: #0f1317;
-  --panel: #161b21;
+  --bench: #0c1418;
+  --bench-low: #091013;
+  --panel: #142026;
   --ink: #e7ecf0;
-  --muted: #8d99a4;
-  --rule: #262e36;
+  --muted: #93a3ac;
+  --rule: #26353d;
 
   --brass: #c9a24a;
   --brass-solid: #c9a24a;
@@ -136,14 +155,24 @@
   --tint-hatch-salt: 16%;
   --mark-mix: 42%;
   --mark-into: #ffffff;
+
+  --tint-fill-hero: 36%;
+  --tint-edge-hero: 64%;
 }
 
 /* The ground stays plain on purpose. A ruled bench grid was the obvious move
    and it was wrong: every chip already carries a texture, and a texture behind
    textures reads as noise rather than as a surface. The colour code is the
-   thing worth looking at, so nothing competes with it. */
+   thing worth looking at, so nothing competes with it.
+
+   A smooth gradient is not a texture, though, and that is the distinction the
+   rule above was really drawing. Light falls from the top of the bench and the
+   surface deepens away from it — enough to say "this is a surface" without
+   putting a single edge behind the chips. */
 body {
   background-color: var(--bench);
+  background-image: linear-gradient(180deg, var(--bench) 0%, var(--bench-low) 100%);
+  background-attachment: fixed;
   color: var(--ink);
   font-family: var(--font-body), Georgia, serif;
 }
@@ -161,6 +190,14 @@ body {
     background-color: color-mix(in oklab, var(--tint) var(--tint-fill), var(--panel));
     background-image: var(--texture);
     border-color: color-mix(in oklab, var(--tint) var(--tint-edge), transparent);
+  }
+
+  /* The target card. Same tint, same texture, turned up — so the hero is
+     louder without being a different colour, which would be a lie about what
+     kind of substance it is. */
+  .species-hero {
+    --tint-fill: var(--tint-fill-hero);
+    --tint-edge: var(--tint-edge-hero);
   }
 
   /* The formula carries the identity — a saturated mark on a calm ground. */
@@ -252,10 +289,14 @@ body {
     border-color: color-mix(in oklab, var(--brass) 45%, transparent);
   }
 
+  /* Not grey. An empty slot is a fitting waiting to be filled, and the rack is
+     the largest thing on the board — left neutral it was a field of dead
+     dashes, and it is the one element whose whole job is to look like it wants
+     something in it. Brass at a whisper, so five of them read as a set. */
   .slot-empty {
-    border-color: var(--rule);
+    border-color: color-mix(in oklab, var(--brass) 30%, var(--rule));
     border-style: dashed;
-    background-color: transparent;
+    background-color: color-mix(in oklab, var(--brass) 6%, transparent);
   }
 }
 

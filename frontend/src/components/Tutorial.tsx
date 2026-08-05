@@ -64,7 +64,10 @@ function Swatch({ name, label }: { name: string; label: string }) {
 function steps(bundle: PuzzleBundle): Step[] {
   return [
     {
-      title: "Five ways to make one thing",
+      // The ask is not always five: a hard target has few ways precisely
+      // because it is hard, so the day scales down rather than being excluded.
+      // The title has to move with it or it contradicts the sentence under it.
+      title: `${bundle.want} ways to make one thing`,
       body: (
         <>
           Every day there is one compound to build — today it is{" "}

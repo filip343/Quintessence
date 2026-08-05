@@ -45,7 +45,7 @@ export default async function Page() {
     return (
       <main className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-16">
         <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-          Five Ways
+          Quintessence
         </span>
         <h1 className="font-display text-2xl font-semibold">
           The shelf is empty

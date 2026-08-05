@@ -17,7 +17,7 @@
 import type { Move } from "./game";
 import type { PuzzleBundle } from "./puzzle";
 
-const PREFIX = "fiveways";
+const PREFIX = "quintessence";
 
 /** Bumped when the save shape changes, so old saves are dropped not misread. */
 const SAVE_VERSION = 1;
@@ -112,6 +112,128 @@ export function markTutorialSeen(): void {
     // Storage off. They will be offered the tutorial again next visit, which
     // is the kinder failure of the two.
   }
+}
+
+const STREAK_KEY = `${PREFIX}:streak`;
+
+export interface Streak {
+  /** The last puzzle day counted towards the run, `YYYY-MM-DD`. */
+  last: string;
+  current: number;
+  best: number;
+}
+
+/**
+ * The run of consecutive daily puzzles solved.
+ *
+ * Its own key, not a field on `Save`: a streak outlives any one day, and
+ * putting it on the save would mean bumping `SAVE_VERSION`, which drops every
+ * game in progress. It is real game state rather than bookkeeping — a badge
+ * wants it as much as the analytics do.
+ *
+ * Per-browser and permanently so. Clearing storage or moving to a phone loses
+ * the run, which is what a game with no accounts costs; carrying it would take
+ * a login and a server, and this game has neither by design.
+ */
+export function readStreak(): Streak | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(STREAK_KEY);
+    if (!raw) return null;
+    const value: unknown = JSON.parse(raw);
+    if (typeof value !== "object" || value === null) return null;
+    const streak = value as Partial<Streak>;
+    if (
+      typeof streak.last !== "string" ||
+      typeof streak.current !== "number" ||
+      typeof streak.best !== "number"
+    ) {
+      return null;
+    }
+    return { last: streak.last, current: streak.current, best: streak.best };
+  } catch {
+    return null;
+  }
+}
+
+/** The previous calendar day. UTC throughout, so no clock change can skip one. */
+function dayBefore(day: string): string | null {
+  const time = Date.parse(`${day}T00:00:00Z`);
+  if (Number.isNaN(time)) return null;
+  return new Date(time - 86_400_000).toISOString().slice(0, 10);
+}
+
+/**
+ * Count a solved day, and return the run it leaves.
+ *
+ * Only ever moves forward: a day at or before `last` changes nothing. That is
+ * what makes playing the archive harmless — going back to finish Tuesday
+ * cannot reset the run you are on, and cannot extend it either. Dates compare
+ * as strings because they are ISO.
+ */
+export function recordSolve(day: string): Streak {
+  const previous = readStreak();
+  const fresh: Streak = { last: day, current: 1, best: 1 };
+  if (!previous) return writeStreak(fresh);
+  if (day <= previous.last) return previous;
+
+  const current = dayBefore(day) === previous.last ? previous.current + 1 : 1;
+  return writeStreak({
+    last: day,
+    current,
+    best: Math.max(previous.best, current),
+  });
+}
+
+function writeStreak(streak: Streak): Streak {
+  if (typeof window !== "undefined") {
+    try {
+      window.localStorage.setItem(STREAK_KEY, JSON.stringify(streak));
+    } catch {
+      // Storage off. The run is not recoverable, but play is unaffected.
+    }
+  }
+  return streak;
+}
+
+/**
+ * True the first time it is asked for a given key, false ever after.
+ *
+ * Everything reported here is reported once, and the guard has to be written
+ * down rather than held in state: a save is replayed through the reducer on
+ * every load, so a solved game is freshly "just solved" on each reload, and a
+ * tab left open all week would otherwise count as a week of solvers.
+ *
+ * Storage off means it cannot remember, and it answers yes — a refresh may
+ * double-count that browser, which is a smaller distortion than dropping
+ * private-mode players from the numbers entirely.
+ */
+function claimOnce(name: string): boolean {
+  if (typeof window === "undefined") return false;
+  const slot = `${PREFIX}:sent:${name}`;
+  try {
+    if (window.localStorage.getItem(slot)) return false;
+    window.localStorage.setItem(slot, "1");
+    return true;
+  } catch {
+    return true;
+  }
+}
+
+/**
+ * Claim the right to report how a day ended.
+ *
+ * One outcome per day, whichever happens first — a player who gives up, starts
+ * over and then solves it has read the answer sheet, and neither the solve
+ * count nor their streak should pretend otherwise. `start over` deliberately
+ * does not release the claim; that is the hole it exists to close.
+ */
+export function claimOutcome(day: string): boolean {
+  return claimOnce(day);
+}
+
+export function claimFirstVisit(): boolean {
+  return claimOnce("first-visit");
 }
 
 export function clear(day: string): void {
