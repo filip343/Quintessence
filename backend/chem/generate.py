@@ -38,7 +38,7 @@ from functools import lru_cache
 
 from chem import network
 from chem.data.oxides import WATER
-from chem.difficulty import Assessment, Grade, assess
+from chem.difficulty import Grade, assess
 from chem.network import Network, cheapest_moves
 from chem.reaction import Reaction
 from chem.rules.catalogue import rule_slug

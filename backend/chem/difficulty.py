@@ -150,7 +150,6 @@ def _assess(target: str, net: Network, cost: dict[str, int]) -> Assessment:
 
 
 def main(argv: list[str]) -> int:
-    import sys
     from collections import Counter
 
     assessments = assess_all()
