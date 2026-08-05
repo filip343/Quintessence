@@ -951,29 +951,6 @@
     },
     {
       "substrates": [
-        "Li3PO4",
-        "BaBr2"
-      ],
-      "products": [
-        "Ba3(PO4)2",
-        "LiBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Li3PO4 + 3 BaBr2 -> Ba3(PO4)2 + 6 LiBr",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Ba3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
         "Fe2(HPO4)3",
         "Fe(OH)3"
       ],
@@ -1471,52 +1448,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Li2HPO4",
-        "Fe(H2PO4)3"
-      ],
-      "products": [
-        "Fe2(HPO4)3",
-        "LiH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 Li2HPO4 + 2 Fe(H2PO4)3 -> Fe2(HPO4)3 + 6 LiH2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(HPO4)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Li2HPO4",
-        "Ba(H2PO4)2"
-      ],
-      "products": [
-        "BaHPO4",
-        "LiH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Li2HPO4 + Ba(H2PO4)2 -> BaHPO4 + 2 LiH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaHPO4 precipitates"
     },
     {
       "substrates": [

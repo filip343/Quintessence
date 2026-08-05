@@ -57,7 +57,15 @@ def build(seeds: tuple[str, ...] = DEFAULT_SEEDS) -> Network:
     frontier = list(known)
 
     def record(reaction: Reaction) -> list[str]:
-        reactions.setdefault((reaction.reactants, reaction.products), reaction)
+        # Sorted reactants, because the closure meets every pair both ways round
+        # -- `first` walks the frontier while `second` walks all of `known`, so
+        # A+B and B+A both fire. `combine` already dedupes by sorted reactants;
+        # keying on the raw tuple here would put the order-dependence straight
+        # back and ship `CuI2 + K2S` and `K2S + CuI2` as two separate reactions.
+        # Products stay unsorted: their order is not incidental, `Reaction.product`
+        # is the first of them, and one pair genuinely can give two different
+        # product sets (an acid with too little base is not a neutralisation).
+        reactions.setdefault((tuple(sorted(reaction.reactants)), reaction.products), reaction)
         return [product for product in reaction.products if product not in seen]
 
     while frontier:

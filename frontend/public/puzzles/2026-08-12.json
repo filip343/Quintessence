@@ -967,52 +967,6 @@
     },
     {
       "substrates": [
-        "K3PO4",
-        "BaBr2"
-      ],
-      "products": [
-        "Ba3(PO4)2",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 K3PO4 + 3 BaBr2 -> Ba3(PO4)2 + 6 KBr",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Ba3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "K3PO4",
-        "BaI2"
-      ],
-      "products": [
-        "Ba3(PO4)2",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 K3PO4 + 3 BaI2 -> Ba3(PO4)2 + 6 KI",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Ba3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
         "AlPO4",
         "H3PO4"
       ],
@@ -1443,52 +1397,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "K2HPO4",
-        "Al(H2PO4)3"
-      ],
-      "products": [
-        "Al2(HPO4)3",
-        "KH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2HPO4 + 2 Al(H2PO4)3 -> Al2(HPO4)3 + 6 KH2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(HPO4)3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2HPO4",
-        "Ba(H2PO4)2"
-      ],
-      "products": [
-        "BaHPO4",
-        "KH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2HPO4 + Ba(H2PO4)2 -> BaHPO4 + 2 KH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaHPO4 precipitates"
     },
     {
       "substrates": [
@@ -2101,29 +2009,6 @@
     },
     {
       "substrates": [
-        "BaS",
-        "Al(HS)3"
-      ],
-      "products": [
-        "Al2S3",
-        "Ba(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 BaS + 2 Al(HS)3 -> Al2S3 + 3 Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Al2S3 precipitates"
-    },
-    {
-      "substrates": [
         "Ba(HS)2",
         "Ba(OH)2"
       ],
@@ -2324,29 +2209,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "Al(HS)3"
-      ],
-      "products": [
-        "Al2S3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2S + 2 Al(HS)3 -> Al2S3 + 6 KHS",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2S3 precipitates"
     },
     {
       "substrates": [

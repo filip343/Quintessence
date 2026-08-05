@@ -430,29 +430,6 @@
     },
     {
       "substrates": [
-        "FeI2",
-        "BaS"
-      ],
-      "products": [
-        "FeS",
-        "BaI2"
-      ],
-      "rule": "double_displacement",
-      "equation": "FeI2 + BaS -> FeS + BaI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
         "NH3",
         "H2O"
       ],
@@ -945,34 +922,11 @@
         "BaS"
       ],
       "products": [
-        "FeS",
-        "BaSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "FeSO4 + BaS -> FeS + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "FeSO4"
-      ],
-      "products": [
         "BaSO4",
         "FeS"
       ],
       "rule": "double_displacement",
-      "equation": "BaS + FeSO4 -> BaSO4 + FeS",
+      "equation": "FeSO4 + BaS -> BaSO4 + FeS",
       "coefficients": {
         "substrates": [
           1,
@@ -983,7 +937,7 @@
           1
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "BaSO4 and FeS both precipitate"
     },
     {
       "substrates": [
@@ -1189,29 +1143,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "FeSO4"
-      ],
-      "products": [
-        "BaSO4",
-        "Fe(HSO4)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + FeSO4 -> BaSO4 + Fe(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSO4 precipitates"
     },
     {
       "substrates": [
@@ -1507,29 +1438,6 @@
     },
     {
       "substrates": [
-        "NH4I",
-        "AgHSO4"
-      ],
-      "products": [
-        "AgI",
-        "NH4HSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "NH4I + AgHSO4 -> AgI + NH4HSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "AgI precipitates"
-    },
-    {
-      "substrates": [
         "(NH4)2SO4",
         "Ba(OH)2"
       ],
@@ -1619,29 +1527,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2SO4",
-        "Ba(HSO4)2"
-      ],
-      "products": [
-        "BaSO4",
-        "NH4HSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SO4 + Ba(HSO4)2 -> BaSO4 + 2 NH4HSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
     },
     {
       "substrates": [
@@ -2121,29 +2006,6 @@
           1
         ]
       }
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "(NH4)2S"
-      ],
-      "products": [
-        "FeS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(HS)2 + (NH4)2S -> FeS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
     },
     {
       "substrates": [

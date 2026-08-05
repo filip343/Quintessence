@@ -1310,29 +1310,6 @@
     },
     {
       "substrates": [
-        "NH4I",
-        "AgH2PO4"
-      ],
-      "products": [
-        "AgI",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "NH4I + AgH2PO4 -> AgI + NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "AgI precipitates"
-    },
-    {
-      "substrates": [
         "(NH4)3PO4",
         "Ba(OH)2"
       ],
@@ -1469,75 +1446,6 @@
     },
     {
       "substrates": [
-        "(NH4)3PO4",
-        "AgH2PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)3PO4 + 3 AgH2PO4 -> Ag3PO4 + 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Fe(H2PO4)2"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 (NH4)3PO4 + 3 Fe(H2PO4)2 -> Fe3(PO4)2 + 6 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Ba(H2PO4)2"
-      ],
-      "products": [
-        "Ba3(PO4)2",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 (NH4)3PO4 + 3 Ba(H2PO4)2 -> Ba3(PO4)2 + 6 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Ba3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
         "(NH4)2HPO4",
         "Ba(OH)2"
       ],
@@ -1652,75 +1560,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "AgH2PO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2HPO4 + 2 AgH2PO4 -> Ag2HPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "Fe(H2PO4)2"
-      ],
-      "products": [
-        "FeHPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2HPO4 + Fe(H2PO4)2 -> FeHPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "Ba(H2PO4)2"
-      ],
-      "products": [
-        "BaHPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2HPO4 + Ba(H2PO4)2 -> BaHPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaHPO4 precipitates"
     },
     {
       "substrates": [

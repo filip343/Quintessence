@@ -7,7 +7,6 @@
   "ways": 8,
   "cut": 1,
   "palette": [
-    "BaS",
     "H2O",
     "H2S",
     "K",
@@ -47,56 +46,6 @@
       "common": true,
       "ions": {
         "NH4": 1,
-        "SiO3": -2
-      }
-    },
-    "Ba(HS)2": {
-      "name": "barium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Ba": 2,
-        "HS": -1
-      }
-    },
-    "Ba(HSO3)2": {
-      "name": "barium hydrogensulfite",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Ba": 2,
-        "HSO3": -1
-      }
-    },
-    "BaS": {
-      "name": "barium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "S": -2
-      }
-    },
-    "BaSO3": {
-      "name": "barium sulfite",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "SO3": -2
-      }
-    },
-    "BaSiO3": {
-      "name": "barium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
         "SiO3": -2
       }
     },
@@ -340,27 +289,6 @@
     }
   },
   "reactions": [
-    {
-      "substrates": [
-        "BaS",
-        "H2S"
-      ],
-      "products": [
-        "Ba(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaS + H2S -> Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
     {
       "substrates": [
         "K",
@@ -702,52 +630,6 @@
           1
         ]
       }
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "K2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HS)2 + K2SO3 -> BaSO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HS)2 + K2SiO3 -> BaSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
     },
     {
       "substrates": [
@@ -1351,29 +1233,6 @@
     {
       "substrates": [
         "K2SO3",
-        "BaS"
-      ],
-      "products": [
-        "BaSO3",
-        "K2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SO3 + BaS -> BaSO3 + K2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SO3",
         "MgS"
       ],
       "products": [
@@ -1393,75 +1252,6 @@
         ]
       },
       "note": "MgSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SO3",
-        "Ba(HS)2"
-      ],
-      "products": [
-        "BaSO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SO3 + Ba(HS)2 -> BaSO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SO3",
-        "Mg(HS)2"
-      ],
-      "products": [
-        "MgSO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SO3 + Mg(HS)2 -> MgSO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "BaS"
-      ],
-      "products": [
-        "BaSiO3",
-        "K2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + BaS -> BaSiO3 + K2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 precipitates"
     },
     {
       "substrates": [
@@ -1510,52 +1300,6 @@
     },
     {
       "substrates": [
-        "K2SiO3",
-        "Ba(HS)2"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + Ba(HS)2 -> BaSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "Mg(HS)2"
-      ],
-      "products": [
-        "MgSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + Mg(HS)2 -> MgSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
         "H2S",
         "Mg(OH)2"
       ],
@@ -1598,71 +1342,6 @@
         ]
       },
       "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "BaSO3",
-        "H2SO3"
-      ],
-      "products": [
-        "Ba(HSO3)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaSO3 + H2SO3 -> Ba(HSO3)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2SO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaSO3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2SO3 -> H2SiO3 + BaSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
     },
     {
       "substrates": [
@@ -1715,29 +1394,6 @@
     {
       "substrates": [
         "(NH4)2SO3",
-        "BaS"
-      ],
-      "products": [
-        "BaSO3",
-        "(NH4)2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SO3 + BaS -> BaSO3 + (NH4)2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2SO3",
         "KOH"
       ],
       "products": [
@@ -1782,29 +1438,6 @@
         ]
       },
       "note": "MgSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2SO3",
-        "Ba(HS)2"
-      ],
-      "products": [
-        "BaSO3",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SO3 + Ba(HS)2 -> BaSO3 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
     },
     {
       "substrates": [
@@ -2214,29 +1847,6 @@
     },
     {
       "substrates": [
-        "Mg(HSO3)2",
-        "(NH4)2SO3"
-      ],
-      "products": [
-        "MgSO3",
-        "NH4HSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Mg(HSO3)2 + (NH4)2SO3 -> MgSO3 + 2 NH4HSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSO3 precipitates"
-    },
-    {
-      "substrates": [
         "MgSiO3",
         "H2S"
       ],
@@ -2278,121 +1888,6 @@
           1
         ]
       }
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "K2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "KHSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + K2SO3 -> BaSO3 + 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + K2SiO3 -> BaSiO3 + 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "(NH4)2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "NH4HSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + (NH4)2SO3 -> BaSO3 + 2 NH4HSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "(NH4)2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "NH4HSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + (NH4)2SiO3 -> BaSiO3 + 2 NH4HSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "BaS"
-      ],
-      "products": [
-        "BaSiO3",
-        "(NH4)2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SiO3 + BaS -> BaSiO3 + (NH4)2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 precipitates"
     },
     {
       "substrates": [
@@ -2467,29 +1962,6 @@
     {
       "substrates": [
         "(NH4)2SiO3",
-        "Ba(HS)2"
-      ],
-      "products": [
-        "BaSiO3",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SiO3 + Ba(HS)2 -> BaSiO3 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
         "H2SO3"
       ],
       "products": [
@@ -2554,29 +2026,6 @@
         ]
       },
       "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "Ba(HSO3)2"
-      ],
-      "products": [
-        "BaSiO3",
-        "NH4HSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2SiO3 + Ba(HSO3)2 -> BaSiO3 + 2 NH4HSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
     }
   ],
   "answers": {
@@ -2739,14 +2188,14 @@
     "double_displacement": {
       "substrates": [
         "K2SO3",
-        "BaS"
+        "MgS"
       ],
       "products": [
-        "BaSO3",
+        "MgSO3",
         "K2S"
       ],
       "rule": "double_displacement",
-      "equation": "K2SO3 + BaS -> BaSO3 + K2S",
+      "equation": "K2SO3 + MgS -> MgSO3 + K2S",
       "coefficients": {
         "substrates": [
           1,
@@ -2757,7 +2206,7 @@
           1
         ]
       },
-      "note": "BaSO3 precipitates"
+      "note": "MgSO3 precipitates"
     }
   }
 }

@@ -75,6 +75,7 @@ from chem.data.solubility import (
     SOLUBILITY_OVERRIDES,
 )
 from chem.formulas import oxide_formula, oxygen_count, parse_charge, strip_charge
+from chem.reaction import Reaction
 from chem.rules.catalogue import RULE_SLUGS
 from chem.rules.chromate import CHROMATE, DICHROMATE
 from chem.rules.display import GAS, LIQUID
@@ -587,10 +588,71 @@ def check_display() -> list[str]:
     return problems
 
 
+def check_symmetry() -> list[str]:
+    """Mixing is unordered: `a + b` must be the same reaction as `b + a`.
+
+    The player picks two bottles, not a first and a second, so a template that
+    reads its arguments positionally is a bug — and it surfaces in the ugliest
+    possible way, as the game asking which of two identical reactions you meant.
+    `double_displacement` did exactly that: it returned on the first ion pairing
+    that precipitated, so where *both* new salts are insoluble (AgF + CaBr2
+    gives AgBr and CaF2) the two orders named different precipitates.
+
+    Swept in two passes, because one pass cannot be both cheap and sensitive:
+
+    - every pair of common species through `combine`, which covers all thirty-one
+      templates but only at the scale a player meets;
+    - every pair of the 1260 indexed salts through `double_displacement` alone.
+      That is where the combinatorics are, and the bug above appears on none of
+      the common pairs — a sample would have called it clean.
+    """
+    from chem.rules.commonness import is_common
+    from chem.rules.reactions import combine
+    from chem.rules.salts import double_displacement
+
+    def signature(reactions: list[Reaction]) -> set[tuple[object, ...]]:
+        return {(tuple(sorted(r.reactants)), r.products, r.template, r.note) for r in reactions}
+
+    problems: list[str] = []
+
+    common = sorted(
+        {formula for formula in SALT_IONS if is_common(formula)}
+        | {formula for formula in ACID_FORMULAS.values() if is_common(formula)}
+        | {formula for formula in BASE_FORMULAS.values() if is_common(formula)}
+        | {formula for formula in OXIDE_IONS if is_common(formula)}
+    )
+    for index, first in enumerate(common):
+        for second in common[index + 1 :]:
+            forward, backward = combine(first, second), combine(second, first)
+            if signature(forward) != signature(backward):
+                problems.append(
+                    f"{first} + {second} differs from {second} + {first}: "
+                    f"{[str(r) for r in forward]} vs {[str(r) for r in backward]}"
+                )
+
+    salts = sorted(SALT_IONS)
+    for index, first in enumerate(salts):
+        for second in salts[index + 1 :]:
+            forward, backward = (
+                double_displacement(first, second),
+                double_displacement(second, first),
+            )
+            if (forward is None) != (backward is None):
+                problems.append(f"{first} + {second} reacts one way round only")
+            elif forward is not None and backward is not None:
+                if (forward.products, forward.note) != (backward.products, backward.note):
+                    problems.append(
+                        f"{first} + {second} swaps its products when written the "
+                        f"other way: {forward} vs {backward}"
+                    )
+    return problems
+
+
 def check_tables() -> list[str]:
     """Run every check. Empty result means the tables agree with each other."""
     return (
         check_ions()
+        + check_symmetry()
         + check_display()
         + check_activity()
         + check_solubility()

@@ -14,7 +14,6 @@
     "K2O",
     "K2S",
     "KOH",
-    "MgO",
     "NH3",
     "SO3"
   ],
@@ -343,78 +342,6 @@
         "OH": -1
       }
     },
-    "Mg": {
-      "name": "magnesium",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Mg(HS)2": {
-      "name": "magnesium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Mg": 2,
-        "HS": -1
-      }
-    },
-    "Mg(HSO4)2": {
-      "name": "magnesium hydrogensulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "HSO4": -1
-      }
-    },
-    "Mg(OH)2": {
-      "name": "magnesium hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "OH": -1
-      }
-    },
-    "MgH2": {
-      "name": "magnesium hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Mg": 2,
-        "H": -1
-      }
-    },
-    "MgO": {
-      "name": "magnesium oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "MgS": {
-      "name": "magnesium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "S": -2
-      }
-    },
-    "MgSO4": {
-      "name": "magnesium sulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "SO4": -2
-      }
-    },
     "NH3": {
       "name": "ammonia",
       "class": "hydride",
@@ -630,29 +557,6 @@
     },
     {
       "substrates": [
-        "MgO",
-        "K"
-      ],
-      "products": [
-        "K2O",
-        "Mg"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "MgO + 2 K -> K2O + Mg",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "K is above Mg in the activity series"
-    },
-    {
-      "substrates": [
         "K2O",
         "SO3"
       ],
@@ -689,26 +593,6 @@
         ],
         "products": [
           1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgO",
-        "SO3"
-      ],
-      "products": [
-        "MgSO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "MgO + SO3 -> MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           1
         ]
       }
@@ -846,29 +730,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "CuSO4"
-      ],
-      "products": [
-        "MgSO4",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + CuSO4 -> MgSO4 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Cu in the activity series"
     },
     {
       "substrates": [
@@ -1028,29 +889,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "FeSO4"
-      ],
-      "products": [
-        "MgSO4",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + FeSO4 -> MgSO4 + Fe",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
         "CuO",
         "H2"
       ],
@@ -1112,26 +950,6 @@
         ],
         "products": [
           2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Mg",
-        "H2"
-      ],
-      "products": [
-        "MgH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Mg + H2 -> MgH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
         ]
       }
     },
@@ -1200,29 +1018,6 @@
         ]
       },
       "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "NH4OH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "(NH4)2SO4"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgSO4 + 2 NH4OH -> Mg(OH)2 + (NH4)2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
     },
     {
       "substrates": [
@@ -1381,28 +1176,6 @@
     },
     {
       "substrates": [
-        "H2SO4",
-        "MgO"
-      ],
-      "products": [
-        "MgSO4",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO4 + MgO -> MgSO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "NH3",
         "H2SO4"
       ],
@@ -1424,28 +1197,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "H2SO4"
-      ],
-      "products": [
-        "MgSO4",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2SO4 -> MgSO4 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "K2SO4",
         "H2SO4"
       ],
@@ -1464,96 +1215,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "H2SO4"
-      ],
-      "products": [
-        "Mg(HSO4)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "MgSO4 + H2SO4 -> Mg(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "CuO",
-        "Mg"
-      ],
-      "products": [
-        "MgO",
-        "Cu"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "CuO + Mg -> MgO + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Cu in the activity series"
-    },
-    {
-      "substrates": [
-        "FeO",
-        "Mg"
-      ],
-      "products": [
-        "MgO",
-        "Fe"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "FeO + Mg -> MgO + Fe",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "K2SO4"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgSO4 + 2 KOH -> Mg(OH)2 + K2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
     },
     {
       "substrates": [
@@ -1852,29 +1513,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "Cu(HSO4)2"
-      ],
-      "products": [
-        "Mg(HSO4)2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + Cu(HSO4)2 -> Mg(HSO4)2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Cu in the activity series"
-    },
-    {
-      "substrates": [
         "Fe2O3",
         "K"
       ],
@@ -1960,29 +1598,6 @@
           3
         ]
       }
-    },
-    {
-      "substrates": [
-        "Fe2O3",
-        "Mg"
-      ],
-      "products": [
-        "MgO",
-        "Fe"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "Fe2O3 + 3 Mg -> 3 MgO + 2 Fe",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
     },
     {
       "substrates": [
@@ -2235,29 +1850,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "Fe(HSO4)2"
-      ],
-      "products": [
-        "Mg(HSO4)2",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + Fe(HSO4)2 -> Mg(HSO4)2 + Fe",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
         "NH4HSO4",
         "KOH"
       ],
@@ -2300,119 +1892,6 @@
         "products": [
           1,
           1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgSO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO4 + Mg(OH)2 -> MgSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "Mg(HSO4)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2SO4 + Mg(OH)2 -> Mg(HSO4)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Mg(HSO4)2",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgSO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HSO4)2 + Mg(OH)2 -> 2 MgSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
         ]
       },
       "note": "more base takes off another proton"
@@ -2575,28 +2054,6 @@
     },
     {
       "substrates": [
-        "H2S",
-        "MgO"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + MgO -> MgS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "NH3",
         "H2S"
       ],
@@ -2686,28 +2143,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "H2S"
-      ],
-      "products": [
-        "MgS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2S -> MgS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "KHSO4",
         "KOH"
       ],
@@ -2728,52 +2163,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Mg(HSO4)2",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "KHSO4"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Mg(HSO4)2 + 2 KOH -> Mg(OH)2 + 2 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HSO4)2",
-        "NH4OH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "NH4HSO4"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Mg(HSO4)2 + 2 NH4OH -> Mg(OH)2 + 2 NH4HSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
     },
     {
       "substrates": [
@@ -2891,29 +2280,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "Cu(HS)2"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + Cu(HS)2 -> Mg(HS)2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Cu in the activity series"
-    },
-    {
-      "substrates": [
         "Cu(HS)2",
         "Cu(OH)2"
       ],
@@ -2934,29 +2300,6 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "MgS"
-      ],
-      "products": [
-        "CuS",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Cu(HS)2 + MgS -> CuS + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "CuS precipitates"
     },
     {
       "substrates": [
@@ -3070,52 +2413,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Fe2(SO4)3"
-      ],
-      "products": [
-        "MgSO4",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "3 Mg + Fe2(SO4)3 -> 3 MgSO4 + 2 Fe",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "MgS"
-      ],
-      "products": [
-        "Fe2S3",
-        "MgSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe2(SO4)3 + 3 MgS -> Fe2S3 + 3 MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2S3 precipitates"
     },
     {
       "substrates": [
@@ -3276,29 +2573,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "Fe(HS)2"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Mg + Fe(HS)2 -> Mg(HS)2 + Fe",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
         "Fe(HS)2",
         "Fe(OH)2"
       ],
@@ -3323,29 +2597,6 @@
     {
       "substrates": [
         "Fe(HS)2",
-        "MgS"
-      ],
-      "products": [
-        "FeS",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(HS)2 + MgS -> FeS + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
         "(NH4)2S"
       ],
       "products": [
@@ -3365,347 +2616,6 @@
         ]
       },
       "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "K2S"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgS + 2 KOH -> Mg(OH)2 + K2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "CuSO4"
-      ],
-      "products": [
-        "CuS",
-        "MgSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + CuSO4 -> CuS + MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "FeSO4"
-      ],
-      "products": [
-        "FeS",
-        "MgSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + FeSO4 -> FeS + MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "NH4OH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "(NH4)2S"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgS + 2 NH4OH -> Mg(OH)2 + (NH4)2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "H2SO4"
-      ],
-      "products": [
-        "H2S",
-        "MgSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgS + H2SO4 -> H2S + MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Cu(HSO4)2"
-      ],
-      "products": [
-        "CuS",
-        "Mg(HSO4)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + Cu(HSO4)2 -> CuS + Mg(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Fe(HSO4)2"
-      ],
-      "products": [
-        "FeS",
-        "Mg(HSO4)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + Fe(HSO4)2 -> FeS + Mg(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "H2S"
-      ],
-      "products": [
-        "Mg(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "MgS + H2S -> Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Cu(HS)2"
-      ],
-      "products": [
-        "CuS",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + Cu(HS)2 -> CuS + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Fe2(SO4)3"
-      ],
-      "products": [
-        "Fe2S3",
-        "MgSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 MgS + Fe2(SO4)3 -> Fe2S3 + 3 MgSO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Fe(HS)2"
-      ],
-      "products": [
-        "FeS",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgS + Fe(HS)2 -> FeS + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "KHS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Mg(HS)2 + 2 KOH -> Mg(OH)2 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "NH4OH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "NH4HS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Mg(HS)2 + 2 NH4OH -> Mg(OH)2 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "H2SO4"
-      ],
-      "products": [
-        "H2S",
-        "MgSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Mg(HS)2 + H2SO4 -> 2 H2S + MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
     },
     {
       "substrates": [
@@ -3911,75 +2821,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Cu(HS)2"
-      ],
-      "products": [
-        "CuS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + Cu(HS)2 -> CuS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe2(SO4)3"
-      ],
-      "products": [
-        "Fe2S3",
-        "(NH4)2SO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 (NH4)2S + Fe2(SO4)3 -> Fe2S3 + 3 (NH4)2SO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(HS)2"
-      ],
-      "products": [
-        "FeS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + Fe(HS)2 -> FeS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
     },
     {
       "substrates": [
@@ -4259,52 +3100,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "Fe(HSO4)3"
-      ],
-      "products": [
-        "Mg(HSO4)2",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "3 Mg + 2 Fe(HSO4)3 -> 3 Mg(HSO4)2 + 2 Fe",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
-        "MgS"
-      ],
-      "products": [
-        "Fe2S3",
-        "Mg(HSO4)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Fe(HSO4)3 + 3 MgS -> Fe2S3 + 3 Mg(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
         "Fe(HSO4)3",
         "(NH4)2S"
       ],
@@ -4416,52 +3211,6 @@
           1
         ]
       }
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Fe(HS)3"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "Fe"
-      ],
-      "rule": "metal_displacement",
-      "equation": "3 Mg + 2 Fe(HS)3 -> 3 Mg(HS)2 + 2 Fe",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "Mg is above Fe in the activity series"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "MgS"
-      ],
-      "products": [
-        "Fe2S3",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Fe(HS)3 + 3 MgS -> Fe2S3 + 3 Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2S3 precipitates"
     },
     {
       "substrates": [

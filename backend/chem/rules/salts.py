@@ -266,23 +266,37 @@ def double_displacement(first: str, second: str) -> Reaction | None:
     if not _dissolves(left_cation, left_anion) or not _dissolves(right_cation, right_anion):
         return None  # a solid cannot swap ions with anything
 
+    # Both pairings, not the first one that drops out. Which two salts come of
+    # the swap does not depend on argument order -- but "the first that
+    # precipitates" did, and where both are insoluble (AgF + CaBr2 gives AgBr
+    # and CaF2) that made `A + B` and `B + A` two different-looking reactions
+    # naming different precipitates. The player was then asked to choose between
+    # a reaction and itself.
+    swapped: list[tuple[str, bool]] = []
     for cation, anion in ((left_cation, right_anion), (right_cation, left_anion)):
-        if not certainly_precipitates(cation, anion):
-            continue
-        precipitate = salt_formula(cation, anion)
-        spectator = salt_formula(
-            right_cation if cation == left_cation else left_cation,
-            left_anion if anion == right_anion else right_anion,
-        )
-        if precipitate is None or spectator is None:
-            continue
-        return Reaction(
-            reactants=(first, second),
-            products=(precipitate, spectator),
-            template=DOUBLE_DISPLACEMENT,
-            note=f"{precipitate} precipitates",
-        )
-    return None
+        formula = salt_formula(cation, anion)
+        if formula is None:
+            return None
+        swapped.append((formula, certainly_precipitates(cation, anion)))
+
+    dropping = [formula for formula, precipitates in swapped if precipitates]
+    if not dropping:
+        return None  # nothing leaves solution, so nothing drives the exchange
+
+    # Precipitate first, so `Reaction.product` is the one the move is *for*;
+    # when both come out, the tie breaks on the formula rather than on which
+    # salt happened to be written on the left.
+    ordered = sorted(swapped, key=lambda entry: (not entry[1], entry[0]))
+    return Reaction(
+        reactants=(first, second),
+        products=tuple(formula for formula, _ in ordered),
+        template=DOUBLE_DISPLACEMENT,
+        note=(
+            f"{dropping[0]} precipitates"
+            if len(dropping) == 1
+            else f"{' and '.join(sorted(dropping))} both precipitate"
+        ),
+    )
 
 
 def metal_with_salt(metal: str, salt: str) -> Reaction | None:
