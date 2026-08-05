@@ -1,0 +1,2489 @@
+{
+  "version": 3,
+  "target": "LiCl",
+  "name": "lithium chloride",
+  "grade": "easy",
+  "want": 5,
+  "ways": 10,
+  "cut": 1,
+  "palette": [
+    "Cl2",
+    "H2O",
+    "HCl",
+    "Li",
+    "Li2O",
+    "Li2S",
+    "LiI",
+    "LiOH",
+    "NH3",
+    "ZnCl2"
+  ],
+  "species": {
+    "(NH4)2S": {
+      "name": "ammonium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "S": -2
+      }
+    },
+    "Cl2": {
+      "name": "chlorine",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "HClO": {
+      "name": "hypochlorous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "ClO": -1
+      }
+    },
+    "HI": {
+      "name": "hydroiodic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "I": -1
+      }
+    },
+    "I2": {
+      "name": "iodine",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Li": {
+      "name": "lithium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Li2O": {
+      "name": "lithium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Li2S": {
+      "name": "lithium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "S": -2
+      }
+    },
+    "LiCl": {
+      "name": "lithium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "Cl": -1
+      }
+    },
+    "LiClO": {
+      "name": "lithium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "ClO": -1
+      }
+    },
+    "LiClO3": {
+      "name": "lithium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "ClO3": -1
+      }
+    },
+    "LiH": {
+      "name": "lithium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Li": 1,
+        "H": -1
+      }
+    },
+    "LiHS": {
+      "name": "lithium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Li": 1,
+        "HS": -1
+      }
+    },
+    "LiI": {
+      "name": "lithium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "I": -1
+      }
+    },
+    "LiIO3": {
+      "name": "lithium iodate",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Li": 1,
+        "IO3": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "OH": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4Cl": {
+      "name": "ammonium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "Cl": -1
+      }
+    },
+    "NH4ClO": {
+      "name": "ammonium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "ClO": -1
+      }
+    },
+    "NH4HS": {
+      "name": "ammonium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "NH4": 1,
+        "HS": -1
+      }
+    },
+    "NH4I": {
+      "name": "ammonium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "I": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "Zn(ClO)2": {
+      "name": "zinc hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "ClO": -1
+      }
+    },
+    "Zn(HS)2": {
+      "name": "zinc hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "HS": -1
+      }
+    },
+    "Zn(OH)2": {
+      "name": "zinc hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "OH": -1
+      }
+    },
+    "ZnCl2": {
+      "name": "zinc chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "Cl": -1
+      }
+    },
+    "ZnI2": {
+      "name": "zinc iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "I": -1
+      }
+    },
+    "ZnS": {
+      "name": "zinc sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "S": -2
+      }
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Li",
+        "Cl2"
+      ],
+      "products": [
+        "LiCl"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Li + Cl2 -> 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "LiI"
+      ],
+      "products": [
+        "LiCl",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + 2 LiI -> 2 LiCl + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 LiOH -> LiClO + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO3",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Cl2 + 6 LiOH -> LiClO3 + 5 LiCl + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Li",
+        "H2O"
+      ],
+      "products": [
+        "LiOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 Li + 2 H2O -> 2 LiOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "H2O"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Li2O + H2O -> 2 LiOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "Li",
+        "HCl"
+      ],
+      "products": [
+        "LiCl",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Li + 2 HCl -> 2 LiCl + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Li2O"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Li2O -> 2 LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Li2S + 2 HCl -> H2S + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiOH"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + LiOH -> LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HCl"
+      ],
+      "products": [
+        "NH4Cl"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HCl -> NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2S + ZnCl2 -> ZnS + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "ZnCl2",
+        "LiOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "LiCl"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "ZnCl2 + 2 LiOH -> Zn(OH)2 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Li",
+        "I2"
+      ],
+      "products": [
+        "LiI"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Li + I2 -> 2 LiI",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "I2",
+        "LiOH"
+      ],
+      "products": [
+        "LiIO3",
+        "LiI",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 I2 + 6 LiOH -> LiIO3 + 5 LiI + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "H2",
+        "I2"
+      ],
+      "products": [
+        "HI"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + I2 -> 2 HI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiClO + HCl -> HClO + LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "Cl2"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Cl2 -> 2 HCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li",
+        "H2"
+      ],
+      "products": [
+        "LiH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Li + H2 -> 2 LiH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4Cl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + NH4OH -> NH4Cl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnCl2",
+        "NH4OH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NH4Cl"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "ZnCl2 + 2 NH4OH -> Zn(OH)2 + 2 NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NH4OH -> NH4HS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Li",
+        "H2S"
+      ],
+      "products": [
+        "Li2S",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Li + H2S -> Li2S + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Li2O"
+      ],
+      "products": [
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Li2O -> Li2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "H2S"
+      ],
+      "products": [
+        "LiHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li2S + H2S -> 2 LiHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiOH"
+      ],
+      "products": [
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 LiOH -> Li2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiOH"
+      ],
+      "products": [
+        "LiHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + LiOH -> LiHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2S"
+      ],
+      "products": [
+        "(NH4)2S"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2S -> (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "H2S"
+      ],
+      "products": [
+        "Zn(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "ZnS + H2S -> Zn(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4Cl + LiOH -> NH3 + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HCl -> H2S + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Zn(OH)2 -> ZnCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li",
+        "HI"
+      ],
+      "products": [
+        "LiI",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Li + 2 HI -> 2 LiI + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Li2O"
+      ],
+      "products": [
+        "LiI",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HI + Li2O -> 2 LiI + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "LiI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Li2S + 2 HI -> H2S + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "LiOH"
+      ],
+      "products": [
+        "LiI",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HI + LiOH -> LiI + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HI"
+      ],
+      "products": [
+        "NH4I"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HI -> NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "LiI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiClO + HI -> HClO + LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4I",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HI + NH4OH -> NH4I + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HI -> H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Zn(OH)2 -> ZnI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "NH4I"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2S + 2 HI -> H2S + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "NH4I"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4HS + HI -> H2S + NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "LiI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiHS + HI -> H2S + LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HI -> 2 H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li",
+        "HClO"
+      ],
+      "products": [
+        "LiClO",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Li + 2 HClO -> 2 LiClO + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Li2O"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + Li2O -> 2 LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + LiOH -> LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HClO"
+      ],
+      "products": [
+        "NH4ClO"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HClO -> NH4ClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4ClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + NH4OH -> NH4ClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Zn(OH)2 -> Zn(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "NH4Cl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2S + 2 HCl -> H2S + 2 NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2S + 2 LiOH -> 2 NH3 + Li2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "NH4Cl"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + ZnCl2 -> ZnS + 2 NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2S"
+      ],
+      "products": [
+        "NH4HS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2S + H2S -> 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Zn(HS)2"
+      ],
+      "products": [
+        "ZnS",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + Zn(HS)2 -> ZnS + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "NH4Cl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4HS + HCl -> H2S + NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiHS",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4HS + LiOH -> NH3 + LiHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiHS + HCl -> H2S + LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "LiOH"
+      ],
+      "products": [
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiHS + LiOH -> Li2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HCl -> 2 H2S + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Li2S"
+      ],
+      "products": [
+        "ZnS",
+        "LiHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(HS)2 + Li2S -> ZnS + 2 LiHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "LiOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "LiHS"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Zn(HS)2 + 2 LiOH -> Zn(OH)2 + 2 LiHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NH4HS"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Zn(HS)2 + 2 NH4OH -> Zn(OH)2 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "NH4I"
+      ],
+      "products": [
+        "NH4Cl",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + 2 NH4I -> 2 NH4Cl + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiI",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4I + LiOH -> NH3 + LiI + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "ZnI2"
+      ],
+      "products": [
+        "ZnCl2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + ZnI2 -> ZnCl2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "Li2S"
+      ],
+      "products": [
+        "ZnS",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnI2 + Li2S -> ZnS + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "LiOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "LiI"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "ZnI2 + 2 LiOH -> Zn(OH)2 + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "NH4OH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NH4I"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "ZnI2 + 2 NH4OH -> Zn(OH)2 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "(NH4)2S"
+      ],
+      "products": [
+        "ZnS",
+        "NH4I"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnI2 + (NH4)2S -> ZnS + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "NH4Cl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4ClO + HCl -> HClO + NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4ClO + LiOH -> NH3 + LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "NH4I"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4ClO + HI -> HClO + NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(ClO)2 + 2 HCl -> 2 HClO + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "Li2S"
+      ],
+      "products": [
+        "ZnS",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(ClO)2 + Li2S -> ZnS + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "LiOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "LiClO"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Zn(ClO)2 + 2 LiOH -> Zn(OH)2 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NH4ClO"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Zn(ClO)2 + 2 NH4OH -> Zn(OH)2 + 2 NH4ClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(ClO)2 + 2 HI -> 2 HClO + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "(NH4)2S"
+      ],
+      "products": [
+        "ZnS",
+        "NH4ClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(ClO)2 + (NH4)2S -> ZnS + 2 NH4ClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    }
+  ],
+  "answers": {
+    "acid_displacement": {
+      "substrates": [
+        "Li2S",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Li2S + 2 HCl -> H2S + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HCl",
+        "Li2O"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Li2O -> 2 LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Li",
+        "Cl2"
+      ],
+      "products": [
+        "LiCl"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Li + Cl2 -> 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "Li2S",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2S + ZnCl2 -> ZnS + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    "halogen_displacement": {
+      "substrates": [
+        "Cl2",
+        "LiI"
+      ],
+      "products": [
+        "LiCl",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + 2 LiI -> 2 LiCl + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    "halogen_disproportionation": {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 LiOH -> LiClO + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    "hydroxide_precipitation": {
+      "substrates": [
+        "ZnCl2",
+        "LiOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "LiCl"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "ZnCl2 + 2 LiOH -> Zn(OH)2 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Li",
+        "HCl"
+      ],
+      "products": [
+        "LiCl",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Li + 2 HCl -> 2 LiCl + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HCl",
+        "LiOH"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + LiOH -> LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "NH4Cl",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4Cl + LiOH -> NH3 + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  }
+}

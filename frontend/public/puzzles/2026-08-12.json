@@ -2350,7 +2350,7 @@
     },
     "acid_salt_with_base": {
       "substrates": [
-        "Al2(HPO4)3",
+        "Al(H2PO4)3",
         "Al(OH)3"
       ],
       "products": [
@@ -2358,15 +2358,15 @@
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Al2(HPO4)3 + Al(OH)3 -> 3 AlPO4 + 3 H2O",
+      "equation": "Al(H2PO4)3 + 2 Al(OH)3 -> 3 AlPO4 + 6 H2O",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           3,
-          3
+          6
         ]
       },
       "note": "more base takes off another proton"

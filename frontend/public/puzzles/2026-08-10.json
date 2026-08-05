@@ -4,7 +4,7 @@
   "name": "potassium sulfite",
   "grade": "easy",
   "want": 5,
-  "ways": 7,
+  "ways": 8,
   "cut": 1,
   "palette": [
     "H2O",
@@ -1002,6 +1002,29 @@
           2
         ]
       }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "KHSO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
     },
     "ammonia_liberation": {
       "substrates": [

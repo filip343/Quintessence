@@ -1,39 +1,30 @@
 {
   "version": 3,
-  "target": "LiH2PO4",
-  "name": "lithium dihydrogenphosphate",
+  "target": "KHSO4",
+  "name": "potassium hydrogensulfate",
   "grade": "medium",
   "want": 5,
   "ways": 5,
   "cut": 1,
   "palette": [
     "Ag2O",
+    "BaO",
     "Cr",
     "H2O",
-    "Li2O",
-    "LiOH",
+    "K2O",
+    "KOH",
     "NH3",
-    "P2O5"
+    "SO3"
   ],
   "species": {
-    "(NH4)2HPO4": {
-      "name": "ammonium hydrogenphosphate",
+    "(NH4)2SO4": {
+      "name": "ammonium sulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "NH4": 1,
-        "HPO4": -2
-      }
-    },
-    "(NH4)3PO4": {
-      "name": "ammonium phosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "PO4": -3
+        "SO4": -2
       }
     },
     "Ag": {
@@ -42,30 +33,20 @@
       "state": "s",
       "common": true
     },
-    "Ag2HPO4": {
-      "name": "silver hydrogenphosphate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "HPO4": -2
-      }
-    },
     "Ag2O": {
       "name": "silver oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "Ag3PO4": {
-      "name": "silver phosphate",
+    "Ag2SO4": {
+      "name": "silver sulfate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
         "Ag": 1,
-        "PO4": -3
+        "SO4": -2
       }
     },
     "AgH": {
@@ -78,14 +59,50 @@
         "H": -1
       }
     },
-    "AgH2PO4": {
-      "name": "silver dihydrogenphosphate",
+    "AgHSO4": {
+      "name": "silver hydrogensulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Ag": 1,
-        "H2PO4": -1
+        "HSO4": -1
+      }
+    },
+    "Ba(HSO4)2": {
+      "name": "barium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HSO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaO": {
+      "name": "barium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "BaSO4": {
+      "name": "barium sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO4": -2
       }
     },
     "Cr": {
@@ -94,14 +111,14 @@
       "state": "s",
       "common": true
     },
-    "Cr(H2PO4)3": {
-      "name": "chromium(III) dihydrogenphosphate",
+    "Cr(HSO4)3": {
+      "name": "chromium(III) hydrogensulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Cr": 3,
-        "H2PO4": -1
+        "HSO4": -1
       }
     },
     "Cr(OH)3": {
@@ -114,14 +131,14 @@
         "OH": -1
       }
     },
-    "Cr2(HPO4)3": {
-      "name": "chromium(III) hydrogenphosphate",
+    "Cr2(SO4)3": {
+      "name": "chromium(III) sulfate",
       "class": "salt",
-      "state": "s",
+      "state": "aq",
       "common": true,
       "ions": {
         "Cr": 3,
-        "HPO4": -2
+        "SO4": -2
       }
     },
     "Cr2O3": {
@@ -140,16 +157,6 @@
         "H": -1
       }
     },
-    "CrPO4": {
-      "name": "chromium(III) phosphate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Cr": 3,
-        "PO4": -3
-      }
-    },
     "H2": {
       "name": "hydrogen",
       "class": "element",
@@ -162,59 +169,49 @@
       "state": "l",
       "common": true
     },
-    "H3PO4": {
-      "name": "phosphoric acid",
+    "H2SO4": {
+      "name": "sulfuric acid",
       "class": "acid",
       "state": "aq",
       "common": true,
       "ions": {
         "H": 1,
-        "PO4": -3
+        "SO4": -2
       }
     },
-    "Li2HPO4": {
-      "name": "lithium hydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Li": 1,
-        "HPO4": -2
-      }
-    },
-    "Li2O": {
-      "name": "lithium oxide",
+    "K2O": {
+      "name": "potassium oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "Li3PO4": {
-      "name": "lithium phosphate",
+    "K2SO4": {
+      "name": "potassium sulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
-        "PO4": -3
+        "K": 1,
+        "SO4": -2
       }
     },
-    "LiH2PO4": {
-      "name": "lithium dihydrogenphosphate",
+    "KHSO4": {
+      "name": "potassium hydrogensulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
-        "H2PO4": -1
+        "K": 1,
+        "HSO4": -1
       }
     },
-    "LiOH": {
-      "name": "lithium hydroxide",
+    "KOH": {
+      "name": "potassium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
+        "K": 1,
         "OH": -1
       }
     },
@@ -224,14 +221,14 @@
       "state": "g",
       "common": true
     },
-    "NH4H2PO4": {
-      "name": "ammonium dihydrogenphosphate",
+    "NH4HSO4": {
+      "name": "ammonium hydrogensulfate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "NH4": 1,
-        "H2PO4": -1
+        "HSO4": -1
       }
     },
     "NH4OH": {
@@ -244,10 +241,10 @@
         "OH": -1
       }
     },
-    "P2O5": {
-      "name": "diphosphorus pentoxide",
+    "SO3": {
+      "name": "sulfur trioxide",
       "class": "acidic oxide",
-      "state": "s",
+      "state": "l",
       "common": true
     }
   },
@@ -278,33 +275,73 @@
     {
       "substrates": [
         "Ag2O",
-        "P2O5"
+        "SO3"
       ],
       "products": [
-        "Ag3PO4"
+        "Ag2SO4"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "3 Ag2O + P2O5 -> 2 Ag3PO4",
+      "equation": "Ag2O + SO3 -> Ag2SO4",
       "coefficients": {
         "substrates": [
-          3,
+          1,
           1
         ],
         "products": [
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "Li2O",
+        "BaO",
         "H2O"
       ],
       "products": [
-        "LiOH"
+        "Ba(OH)2"
       ],
       "rule": "basic_oxide_hydration",
-      "equation": "Li2O + H2O -> 2 LiOH",
+      "equation": "BaO + H2O -> Ba(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaO",
+        "SO3"
+      ],
+      "products": [
+        "BaSO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "BaO + SO3 -> BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
       "coefficients": {
         "substrates": [
           1,
@@ -338,104 +375,173 @@
     },
     {
       "substrates": [
-        "P2O5",
+        "SO3",
         "H2O"
       ],
       "products": [
-        "H3PO4"
+        "H2SO4"
       ],
       "rule": "anhydride_hydration",
-      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "equation": "SO3 + H2O -> H2SO4",
       "coefficients": {
         "substrates": [
           1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li2O",
-        "P2O5"
-      ],
-      "products": [
-        "Li3PO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "3 Li2O + P2O5 -> 2 Li3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
           1
         ],
         "products": [
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "LiOH",
-        "P2O5"
+        "K2O",
+        "SO3"
       ],
       "products": [
-        "Li3PO4",
+        "K2SO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SO3 -> K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SO3"
+      ],
+      "products": [
+        "K2SO4",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "6 LiOH + P2O5 -> 2 Li3PO4 + 3 H2O",
+      "equation": "2 KOH + SO3 -> K2SO4 + H2O",
       "coefficients": {
         "substrates": [
-          6,
+          2,
           1
         ],
         "products": [
-          2,
-          3
+          1,
+          1
         ]
       }
     },
     {
       "substrates": [
-        "Ag3PO4",
-        "H3PO4"
+        "Ag2SO4",
+        "H2SO4"
       ],
       "products": [
-        "Ag2HPO4"
+        "AgHSO4"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "2 Ag3PO4 + H3PO4 -> 3 Ag2HPO4",
+      "equation": "Ag2SO4 + H2SO4 -> 2 AgHSO4",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
-          3
+          2
         ]
       },
       "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
-        "Ag3PO4",
-        "H3PO4"
+        "Ba(OH)2",
+        "SO3"
       ],
       "products": [
-        "AgH2PO4"
+        "BaSO4",
+        "H2O"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Ag3PO4 + 2 H3PO4 -> 3 AgH2PO4",
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SO3 -> BaSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          3
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Ba(OH)2 -> BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
         ]
       },
       "note": "the acid protonates its own salt"
@@ -463,60 +569,37 @@
     },
     {
       "substrates": [
-        "H3PO4",
+        "H2SO4",
         "NH4OH"
       ],
       "products": [
-        "(NH4)3PO4",
+        "(NH4)2SO4",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H3PO4 + 3 NH4OH -> (NH4)3PO4 + 3 H2O",
+      "equation": "H2SO4 + 2 NH4OH -> (NH4)2SO4 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
         ],
         "products": [
           1,
-          3
+          2
         ]
       }
     },
     {
       "substrates": [
-        "H3PO4",
+        "H2SO4",
         "NH4OH"
       ],
       "products": [
-        "(NH4)2HPO4",
+        "NH4HSO4",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + 2 NH4OH -> (NH4)2HPO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4H2PO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + NH4OH -> NH4H2PO4 + H2O",
+      "equation": "H2SO4 + NH4OH -> NH4HSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -531,128 +614,126 @@
     },
     {
       "substrates": [
-        "H3PO4",
+        "H2SO4",
         "Ag2O"
       ],
       "products": [
-        "Ag3PO4",
+        "Ag2SO4",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "2 H3PO4 + 3 Ag2O -> 2 Ag3PO4 + 3 H2O",
+      "equation": "H2SO4 + Ag2O -> Ag2SO4 + H2O",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
-          2,
-          3
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "BaO"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + BaO -> BaSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       },
-      "note": "Ag3PO4 is insoluble"
+      "note": "BaSO4 is insoluble"
     },
     {
       "substrates": [
         "Cr",
-        "H3PO4"
+        "H2SO4"
       ],
       "products": [
-        "CrPO4",
+        "Cr2(SO4)3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Cr + 2 H3PO4 -> 2 CrPO4 + 3 H2",
+      "equation": "2 Cr + 3 H2SO4 -> Cr2(SO4)3 + 3 H2",
       "coefficients": {
         "substrates": [
           2,
-          2
+          3
         ],
         "products": [
-          2,
+          1,
           3
         ]
-      },
-      "note": "CrPO4 is insoluble"
+      }
     },
     {
       "substrates": [
-        "H3PO4",
-        "Li2O"
+        "H2SO4",
+        "K2O"
       ],
       "products": [
-        "Li3PO4",
+        "K2SO4",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "2 H3PO4 + 3 Li2O -> 2 Li3PO4 + 3 H2O",
+      "equation": "H2SO4 + K2O -> K2SO4 + H2O",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
-          2,
-          3
+          1,
+          1
         ]
       }
     },
     {
       "substrates": [
-        "H3PO4",
-        "LiOH"
+        "H2SO4",
+        "KOH"
       ],
       "products": [
-        "Li3PO4",
+        "K2SO4",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H3PO4 + 3 LiOH -> Li3PO4 + 3 H2O",
+      "equation": "H2SO4 + 2 KOH -> K2SO4 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
         ],
         "products": [
           1,
-          3
+          2
         ]
       }
     },
     {
       "substrates": [
-        "H3PO4",
-        "LiOH"
+        "H2SO4",
+        "KOH"
       ],
       "products": [
-        "Li2HPO4",
+        "KHSO4",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + 2 LiOH -> Li2HPO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "LiOH"
-      ],
-      "products": [
-        "LiH2PO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "equation": "H2SO4 + KOH -> KHSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -668,16 +749,16 @@
     {
       "substrates": [
         "NH3",
-        "H3PO4"
+        "H2SO4"
       ],
       "products": [
-        "(NH4)3PO4"
+        "(NH4)2SO4"
       ],
       "rule": "ammonia_with_acid",
-      "equation": "3 NH3 + H3PO4 -> (NH4)3PO4",
+      "equation": "2 NH3 + H2SO4 -> (NH4)2SO4",
       "coefficients": {
         "substrates": [
-          3,
+          2,
           1
         ],
         "products": [
@@ -688,42 +769,21 @@
     },
     {
       "substrates": [
-        "Li3PO4",
-        "H3PO4"
+        "K2SO4",
+        "H2SO4"
       ],
       "products": [
-        "Li2HPO4"
+        "KHSO4"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "2 Li3PO4 + H3PO4 -> 3 Li2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Li3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "LiH2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "equation": "K2SO4 + H2SO4 -> 2 KHSO4",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          3
+          2
         ]
       },
       "note": "the acid protonates its own salt"
@@ -731,14 +791,14 @@
     {
       "substrates": [
         "Cr",
-        "AgH2PO4"
+        "AgHSO4"
       ],
       "products": [
-        "Cr(H2PO4)3",
+        "Cr(HSO4)3",
         "Ag"
       ],
       "rule": "metal_displacement",
-      "equation": "Cr + 3 AgH2PO4 -> Cr(H2PO4)3 + 3 Ag",
+      "equation": "Cr + 3 AgHSO4 -> Cr(HSO4)3 + 3 Ag",
       "coefficients": {
         "substrates": [
           1,
@@ -753,64 +813,41 @@
     },
     {
       "substrates": [
-        "AgH2PO4",
-        "Li3PO4"
+        "Ba(HSO4)2",
+        "Ba(OH)2"
       ],
       "products": [
-        "Ag3PO4",
-        "LiH2PO4"
+        "BaSO4",
+        "H2O"
       ],
-      "rule": "double_displacement",
-      "equation": "3 AgH2PO4 + Li3PO4 -> Ag3PO4 + 3 LiH2PO4",
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HSO4)2 + Ba(OH)2 -> 2 BaSO4 + 2 H2O",
       "coefficients": {
         "substrates": [
-          3,
+          1,
           1
         ],
         "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 AgH2PO4 + (NH4)3PO4 -> Ag3PO4 + 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "(NH4)2HPO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + (NH4)2HPO4 -> Ag2HPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
           2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "K2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "KHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + K2SO4 -> BaSO4 + 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
           1
         ],
         "products": [
@@ -818,22 +855,22 @@
           2
         ]
       },
-      "note": "Ag2HPO4 precipitates"
+      "note": "BaSO4 precipitates"
     },
     {
       "substrates": [
-        "AgH2PO4",
-        "Li2HPO4"
+        "Ba(HSO4)2",
+        "(NH4)2SO4"
       ],
       "products": [
-        "Ag2HPO4",
-        "LiH2PO4"
+        "BaSO4",
+        "NH4HSO4"
       ],
       "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + Li2HPO4 -> Ag2HPO4 + 2 LiH2PO4",
+      "equation": "Ba(HSO4)2 + (NH4)2SO4 -> BaSO4 + 2 NH4HSO4",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
@@ -841,87 +878,43 @@
           2
         ]
       },
-      "note": "Ag2HPO4 precipitates"
+      "note": "BaSO4 precipitates"
     },
     {
       "substrates": [
-        "(NH4)3PO4",
-        "LiOH"
+        "Ba(HSO4)2",
+        "Cr2(SO4)3"
+      ],
+      "products": [
+        "BaSO4",
+        "Cr(HSO4)3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(HSO4)2 + Cr2(SO4)3 -> 3 BaSO4 + 2 Cr(HSO4)3",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "KOH"
       ],
       "products": [
         "NH3",
-        "Li3PO4",
+        "K2SO4",
         "H2O"
       ],
       "rule": "ammonia_liberation",
-      "equation": "(NH4)3PO4 + 3 LiOH -> 3 NH3 + Li3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1,
-          3
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "(NH4)2HPO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 (NH4)3PO4 + H3PO4 -> 3 (NH4)2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "NH4H2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)3PO4 + 2 H3PO4 -> 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "LiOH"
-      ],
-      "products": [
-        "NH3",
-        "Li2HPO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2HPO4 + 2 LiOH -> 2 NH3 + Li2HPO4 + 2 H2O",
+      "equation": "(NH4)2SO4 + 2 KOH -> 2 NH3 + K2SO4 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -937,39 +930,62 @@
     },
     {
       "substrates": [
-        "(NH4)2HPO4",
-        "NH4OH"
+        "(NH4)2SO4",
+        "Ba(OH)2"
       ],
       "products": [
-        "(NH4)3PO4",
+        "NH3",
+        "BaSO4",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "(NH4)2HPO4 + NH4OH -> (NH4)3PO4 + H2O",
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SO4 + Ba(OH)2 -> 2 NH3 + BaSO4 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          2,
           1,
-          1
+          2
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "warm with alkali -- the test for an ammonium salt"
     },
     {
       "substrates": [
-        "NH4H2PO4",
-        "LiOH"
+        "(NH4)2SO4",
+        "H2SO4"
+      ],
+      "products": [
+        "NH4HSO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2SO4 + H2SO4 -> 2 NH4HSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "NH4HSO4",
+        "KOH"
       ],
       "products": [
         "NH3",
-        "LiH2PO4",
+        "KHSO4",
         "H2O"
       ],
       "rule": "ammonia_liberation",
-      "equation": "NH4H2PO4 + LiOH -> NH3 + LiH2PO4 + H2O",
+      "equation": "NH4HSO4 + KOH -> NH3 + KHSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -985,88 +1001,138 @@
     },
     {
       "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
+        "NH4HSO4",
+        "Ba(OH)2"
       ],
       "products": [
-        "(NH4)2HPO4",
+        "NH3",
+        "Ba(HSO4)2",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + NH4OH -> (NH4)2HPO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + 2 NH4OH -> (NH4)3PO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "CrPO4",
-        "H3PO4"
-      ],
-      "products": [
-        "Cr2(HPO4)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 CrPO4 + H3PO4 -> Cr2(HPO4)3",
+      "rule": "ammonia_liberation",
+      "equation": "2 NH4HSO4 + Ba(OH)2 -> 2 NH3 + Ba(HSO4)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
-          1
+          2,
+          1,
+          2
         ]
       },
-      "note": "the acid protonates its own salt"
+      "note": "warm with alkali -- the test for an ammonium salt"
     },
     {
       "substrates": [
-        "CrPO4",
-        "H3PO4"
+        "NH4HSO4",
+        "NH4OH"
       ],
       "products": [
-        "Cr(H2PO4)3"
+        "(NH4)2SO4",
+        "H2O"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "CrPO4 + 2 H3PO4 -> Cr(H2PO4)3",
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HSO4 + NH4OH -> (NH4)2SO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
+          1,
           1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "K2SO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr2(SO4)3 + 6 KOH -> 2 Cr(OH)3 + 3 K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "BaSO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr2(SO4)3 + 3 Ba(OH)2 -> 2 Cr(OH)3 + 3 BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "NH4OH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "(NH4)2SO4"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr2(SO4)3 + 6 NH4OH -> 2 Cr(OH)3 + 3 (NH4)2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "H2SO4"
+      ],
+      "products": [
+        "Cr(HSO4)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Cr2(SO4)3 + 3 H2SO4 -> 2 Cr(HSO4)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
         ]
       },
       "note": "the acid protonates its own salt"
@@ -1159,15 +1225,15 @@
     },
     {
       "substrates": [
-        "Li2HPO4",
-        "LiOH"
+        "KHSO4",
+        "KOH"
       ],
       "products": [
-        "Li3PO4",
+        "K2SO4",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Li2HPO4 + LiOH -> Li3PO4 + H2O",
+      "equation": "KHSO4 + KOH -> K2SO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1182,61 +1248,15 @@
     },
     {
       "substrates": [
-        "LiH2PO4",
-        "LiOH"
-      ],
-      "products": [
-        "Li2HPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "LiH2PO4 + LiOH -> Li2HPO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "LiH2PO4",
-        "LiOH"
-      ],
-      "products": [
-        "Li3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "LiH2PO4 + 2 LiOH -> Li3PO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "LiOH"
+        "Cr(HSO4)3",
+        "KOH"
       ],
       "products": [
         "Cr(OH)3",
-        "LiH2PO4"
+        "KHSO4"
       ],
       "rule": "hydroxide_precipitation",
-      "equation": "Cr(H2PO4)3 + 3 LiOH -> Cr(OH)3 + 3 LiH2PO4",
+      "equation": "Cr(HSO4)3 + 3 KOH -> Cr(OH)3 + 3 KHSO4",
       "coefficients": {
         "substrates": [
           1,
@@ -1251,15 +1271,38 @@
     },
     {
       "substrates": [
-        "Cr(H2PO4)3",
+        "Cr(HSO4)3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "Ba(HSO4)2"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "2 Cr(HSO4)3 + 3 Ba(OH)2 -> 2 Cr(OH)3 + 3 Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HSO4)3",
         "NH4OH"
       ],
       "products": [
         "Cr(OH)3",
-        "NH4H2PO4"
+        "NH4HSO4"
       ],
       "rule": "hydroxide_precipitation",
-      "equation": "Cr(H2PO4)3 + 3 NH4OH -> Cr(OH)3 + 3 NH4H2PO4",
+      "equation": "Cr(HSO4)3 + 3 NH4OH -> Cr(OH)3 + 3 NH4HSO4",
       "coefficients": {
         "substrates": [
           1,
@@ -1274,130 +1317,38 @@
     },
     {
       "substrates": [
-        "Cr(H2PO4)3",
-        "Li3PO4"
-      ],
-      "products": [
-        "CrPO4",
-        "LiH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Cr(H2PO4)3 + Li3PO4 -> CrPO4 + 3 LiH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "CrPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "CrPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Cr(H2PO4)3 + (NH4)3PO4 -> CrPO4 + 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "CrPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "(NH4)2HPO4"
-      ],
-      "products": [
-        "Cr2(HPO4)3",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Cr(H2PO4)3 + 3 (NH4)2HPO4 -> Cr2(HPO4)3 + 6 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Cr2(HPO4)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "Li2HPO4"
-      ],
-      "products": [
-        "Cr2(HPO4)3",
-        "LiH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Cr(H2PO4)3 + 3 Li2HPO4 -> Cr2(HPO4)3 + 6 LiH2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Cr2(HPO4)3 precipitates"
-    },
-    {
-      "substrates": [
-        "H3PO4",
+        "Cr(HSO4)3",
         "Cr(OH)3"
       ],
       "products": [
-        "CrPO4",
+        "Cr2(SO4)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HSO4)3 + Cr(OH)3 -> Cr2(SO4)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SO4)3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H3PO4 + Cr(OH)3 -> CrPO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "CrPO4 is insoluble"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "Cr2(HPO4)3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "3 H3PO4 + 2 Cr(OH)3 -> Cr2(HPO4)3 + 6 H2O",
+      "equation": "3 H2SO4 + 2 Cr(OH)3 -> Cr2(SO4)3 + 6 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -1407,20 +1358,19 @@
           1,
           6
         ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
+      }
     },
     {
       "substrates": [
-        "H3PO4",
+        "H2SO4",
         "Cr(OH)3"
       ],
       "products": [
-        "Cr(H2PO4)3",
+        "Cr(HSO4)3",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "3 H3PO4 + Cr(OH)3 -> Cr(H2PO4)3 + 3 H2O",
+      "equation": "3 H2SO4 + Cr(OH)3 -> Cr(HSO4)3 + 3 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -1432,89 +1382,20 @@
         ]
       },
       "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "Cr2(HPO4)3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Cr(H2PO4)3 + Cr(OH)3 -> Cr2(HPO4)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cr(H2PO4)3",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "CrPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Cr(H2PO4)3 + 2 Cr(OH)3 -> 3 CrPO4 + 6 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3,
-          6
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cr2(HPO4)3",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "CrPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Cr2(HPO4)3 + Cr(OH)3 -> 3 CrPO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          3,
-          3
-        ]
-      },
-      "note": "more base takes off another proton"
     }
   ],
   "answers": {
     "partial_neutralisation": {
       "substrates": [
-        "H3PO4",
-        "LiOH"
+        "H2SO4",
+        "KOH"
       ],
       "products": [
-        "LiH2PO4",
+        "KHSO4",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "equation": "H2SO4 + KOH -> KHSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1529,37 +1410,37 @@
     },
     "salt_with_parent_acid": {
       "substrates": [
-        "Li3PO4",
-        "H3PO4"
+        "K2SO4",
+        "H2SO4"
       ],
       "products": [
-        "LiH2PO4"
+        "KHSO4"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "equation": "K2SO4 + H2SO4 -> 2 KHSO4",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          3
+          2
         ]
       },
       "note": "the acid protonates its own salt"
     },
     "ammonia_liberation": {
       "substrates": [
-        "NH4H2PO4",
-        "LiOH"
+        "NH4HSO4",
+        "KOH"
       ],
       "products": [
         "NH3",
-        "LiH2PO4",
+        "KHSO4",
         "H2O"
       ],
       "rule": "ammonia_liberation",
-      "equation": "NH4H2PO4 + LiOH -> NH3 + LiH2PO4 + H2O",
+      "equation": "NH4HSO4 + KOH -> NH3 + KHSO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1575,18 +1456,18 @@
     },
     "double_displacement": {
       "substrates": [
-        "AgH2PO4",
-        "Li2HPO4"
+        "Ba(HSO4)2",
+        "K2SO4"
       ],
       "products": [
-        "Ag2HPO4",
-        "LiH2PO4"
+        "BaSO4",
+        "KHSO4"
       ],
       "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + Li2HPO4 -> Ag2HPO4 + 2 LiH2PO4",
+      "equation": "Ba(HSO4)2 + K2SO4 -> BaSO4 + 2 KHSO4",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
@@ -1594,19 +1475,19 @@
           2
         ]
       },
-      "note": "Ag2HPO4 precipitates"
+      "note": "BaSO4 precipitates"
     },
     "hydroxide_precipitation": {
       "substrates": [
-        "Cr(H2PO4)3",
-        "LiOH"
+        "Cr(HSO4)3",
+        "KOH"
       ],
       "products": [
         "Cr(OH)3",
-        "LiH2PO4"
+        "KHSO4"
       ],
       "rule": "hydroxide_precipitation",
-      "equation": "Cr(H2PO4)3 + 3 LiOH -> Cr(OH)3 + 3 LiH2PO4",
+      "equation": "Cr(HSO4)3 + 3 KOH -> Cr(OH)3 + 3 KHSO4",
       "coefficients": {
         "substrates": [
           1,

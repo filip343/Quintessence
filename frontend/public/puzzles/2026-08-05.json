@@ -4,7 +4,7 @@
   "name": "potassium iodide",
   "grade": "medium",
   "want": 5,
-  "ways": 5,
+  "ways": 8,
   "cut": 1,
   "palette": [
     "AlI3",
@@ -1170,6 +1170,28 @@
       },
       "note": "Al(OH)3 precipitates"
     },
+    "acid_displacement": {
+      "substrates": [
+        "KF",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "KI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KF + HI -> HF + KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
     "ammonia_liberation": {
       "substrates": [
         "NH4I",
@@ -1194,6 +1216,50 @@
         ]
       },
       "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "K",
+        "HI"
+      ],
+      "products": [
+        "KI",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + 2 HI -> 2 KI + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HI",
+        "KOH"
+      ],
+      "products": [
+        "KI",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HI + KOH -> KI + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
     }
   }
 }

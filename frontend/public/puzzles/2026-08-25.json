@@ -1,0 +1,2373 @@
+{
+  "version": 3,
+  "target": "LiNO3",
+  "name": "lithium nitrate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 8,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "CuBr2",
+    "CuO",
+    "Fe",
+    "H2O",
+    "Li2O",
+    "LiF",
+    "LiI",
+    "LiOH",
+    "N2O5",
+    "NH3"
+  ],
+  "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "AgBr": {
+      "name": "silver bromide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Br": -1
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgI": {
+      "name": "silver iodide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "I": -1
+      }
+    },
+    "AgNO3": {
+      "name": "silver nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "NO3": -1
+      }
+    },
+    "Cu": {
+      "name": "copper",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cu(NO3)2": {
+      "name": "copper(II) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "NO3": -1
+      }
+    },
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "OH": -1
+      }
+    },
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuF2": {
+      "name": "copper(II) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "F": -1
+      }
+    },
+    "CuH2": {
+      "name": "copper(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "H": -1
+      }
+    },
+    "CuO": {
+      "name": "copper(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Fe": {
+      "name": "iron",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Fe(NO3)2": {
+      "name": "iron(II) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "NO3": -1
+      }
+    },
+    "Fe(NO3)3": {
+      "name": "iron(III) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "NO3": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "Fe(OH)3": {
+      "name": "iron(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "OH": -1
+      }
+    },
+    "Fe2O3": {
+      "name": "iron(III) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeBr2": {
+      "name": "iron(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "Br": -1
+      }
+    },
+    "FeF2": {
+      "name": "iron(II) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "F": -1
+      }
+    },
+    "FeF3": {
+      "name": "iron(III) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "F": -1
+      }
+    },
+    "FeH2": {
+      "name": "iron(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "H": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "HNO3": {
+      "name": "nitric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "NO3": -1
+      }
+    },
+    "Li2O": {
+      "name": "lithium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "LiBr": {
+      "name": "lithium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "Br": -1
+      }
+    },
+    "LiF": {
+      "name": "lithium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "F": -1
+      }
+    },
+    "LiI": {
+      "name": "lithium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "I": -1
+      }
+    },
+    "LiNO3": {
+      "name": "lithium nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "NO3": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "OH": -1
+      }
+    },
+    "N2O5": {
+      "name": "dinitrogen pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4Br": {
+      "name": "ammonium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "Br": -1
+      }
+    },
+    "NH4F": {
+      "name": "ammonium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "F": -1
+      }
+    },
+    "NH4NO3": {
+      "name": "ammonium nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "NO3": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "Fe"
+      ],
+      "products": [
+        "Fe2O3",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "3 Ag2O + 2 Fe -> Fe2O3 + 6 Ag",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "N2O5"
+      ],
+      "products": [
+        "AgNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + N2O5 -> 2 AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "CuBr2"
+      ],
+      "products": [
+        "FeBr2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + CuBr2 -> FeBr2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "LiOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "LiBr"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "CuBr2 + 2 LiOH -> Cu(OH)2 + 2 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuO",
+        "Fe"
+      ],
+      "products": [
+        "Fe2O3",
+        "Cu"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "3 CuO + 2 Fe -> Fe2O3 + 3 Cu",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuO",
+        "N2O5"
+      ],
+      "products": [
+        "Cu(NO3)2"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + N2O5 -> Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "H2O"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Li2O + H2O -> 2 LiOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "N2O5",
+        "H2O"
+      ],
+      "products": [
+        "HNO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "N2O5 + H2O -> 2 HNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "N2O5"
+      ],
+      "products": [
+        "LiNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Li2O + N2O5 -> 2 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiOH",
+        "N2O5"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 LiOH + N2O5 -> 2 LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe2O3",
+        "N2O5"
+      ],
+      "products": [
+        "Fe(NO3)3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Fe2O3 + 3 N2O5 -> 2 Fe(NO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe2O3"
+      ],
+      "products": [
+        "Fe(NO3)3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HNO3 + Fe2O3 -> 2 Fe(NO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "CuBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Cu(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + CuBr2 -> 2 AgBr + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "AgNO3"
+      ],
+      "products": [
+        "Fe(NO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + 2 AgNO3 -> Fe(NO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "LiI"
+      ],
+      "products": [
+        "AgI",
+        "LiNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgNO3 + LiI -> AgI + LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "FeBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Fe(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + FeBr2 -> 2 AgBr + Fe(NO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "AgNO3"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgNO3 -> Cu(NO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "LiBr"
+      ],
+      "products": [
+        "AgBr",
+        "LiNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgNO3 + LiBr -> AgBr + LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "LiBr"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeBr2 + 2 LiOH -> Fe(OH)2 + 2 LiBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4Br"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeBr2 + 2 NH4OH -> Fe(OH)2 + 2 NH4Br",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Cu"
+      ],
+      "products": [
+        "CuO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Cu -> CuO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Cu(OH)2 -> Cu(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Cu(NO3)2"
+      ],
+      "products": [
+        "Fe(NO3)2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + Cu(NO3)2 -> Fe(NO3)2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "LiOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "LiNO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cu(NO3)2 + 2 LiOH -> Cu(OH)2 + 2 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NH4NO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cu(NO3)2 + 2 NH4OH -> Cu(OH)2 + 2 NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Ag2O"
+      ],
+      "products": [
+        "AgNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Ag2O -> 2 AgNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "CuO"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + CuO -> Cu(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Li2O"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Li2O -> 2 LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "LiNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiF + HNO3 -> HF + LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "LiOH"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HNO3 + LiOH -> LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HNO3"
+      ],
+      "products": [
+        "NH4NO3"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HNO3 -> NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4NO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HNO3 + NH4OH -> NH4NO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NH4OH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NH4Br"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "CuBr2 + 2 NH4OH -> Cu(OH)2 + 2 NH4Br",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "LiNO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(NO3)3 + 3 LiOH -> Fe(OH)3 + 3 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "NH4NO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(NO3)3 + 3 NH4OH -> Fe(OH)3 + 3 NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "LiNO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(NO3)2 + 2 LiOH -> Fe(OH)2 + 2 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4NO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Fe(NO3)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Fe(OH)2 -> Fe(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Fe(OH)2 -> FeF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4Br",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiBr",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4Br + LiOH -> NH3 + LiBr + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4Br",
+        "AgNO3"
+      ],
+      "products": [
+        "AgBr",
+        "NH4NO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "NH4Br + AgNO3 -> AgBr + NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "NH4NO3",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4NO3 + LiOH -> NH3 + LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ag2O"
+      ],
+      "products": [
+        "AgF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Ag2O -> 2 AgF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "CuO"
+      ],
+      "products": [
+        "CuF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + CuO -> CuF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "HF"
+      ],
+      "products": [
+        "FeF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + 2 HF -> FeF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2O"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Li2O -> 2 LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiOH"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + LiOH -> LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HF"
+      ],
+      "products": [
+        "NH4F"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HF -> NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe2O3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HF + Fe2O3 -> 2 FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Cu(OH)2 -> CuF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4F",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + NH4OH -> NH4F + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe(NO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HNO3 + Fe(OH)3 -> Fe(NO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HF + Fe(OH)3 -> FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "LiF"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeF2 + 2 LiOH -> Fe(OH)2 + 2 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Fe(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF2 + 2 HNO3 -> 2 HF + Fe(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4F"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeF2 + 2 NH4OH -> Fe(OH)2 + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "CuBr2"
+      ],
+      "products": [
+        "AgBr",
+        "CuF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + CuBr2 -> 2 AgBr + CuF2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "AgF"
+      ],
+      "products": [
+        "FeF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + 2 AgF -> FeF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "LiI"
+      ],
+      "products": [
+        "AgI",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgF + LiI -> AgI + LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "FeBr2"
+      ],
+      "products": [
+        "AgBr",
+        "FeF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + FeBr2 -> 2 AgBr + FeF2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "AgF"
+      ],
+      "products": [
+        "CuF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgF -> CuF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "LiBr"
+      ],
+      "products": [
+        "AgBr",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgF + LiBr -> AgBr + LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "AgNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgF + HNO3 -> HF + AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NH4Br"
+      ],
+      "products": [
+        "AgBr",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgF + NH4Br -> AgBr + NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "CuF2"
+      ],
+      "products": [
+        "FeF2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + CuF2 -> FeF2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "LiOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "LiF"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "CuF2 + 2 LiOH -> Cu(OH)2 + 2 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Cu(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuF2 + 2 HNO3 -> 2 HF + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "NH4OH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NH4F"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "CuF2 + 2 NH4OH -> Cu(OH)2 + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "CuO",
+        "H2"
+      ],
+      "products": [
+        "Cu",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "CuO + H2 -> Cu + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "Fe2O3",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Fe2O3 + 3 H2 -> 2 Fe + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2"
+      ],
+      "products": [
+        "CuH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + H2 -> CuH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiF",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4F + LiOH -> NH3 + LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "NH4NO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4F + HNO3 -> HF + NH4NO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "LiF"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeF3 + 3 LiOH -> Fe(OH)3 + 3 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Fe(NO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF3 + 3 HNO3 -> 3 HF + Fe(NO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "NH4F"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "FeF3 + 3 NH4OH -> Fe(OH)3 + 3 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    }
+  ],
+  "answers": {
+    "base_with_acidic_oxide": {
+      "substrates": [
+        "LiOH",
+        "N2O5"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 LiOH + N2O5 -> 2 LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "oxide_with_oxide": {
+      "substrates": [
+        "Li2O",
+        "N2O5"
+      ],
+      "products": [
+        "LiNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Li2O + N2O5 -> 2 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "LiF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "LiNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiF + HNO3 -> HF + LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HNO3",
+        "Li2O"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Li2O -> 2 LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "AgNO3",
+        "LiBr"
+      ],
+      "products": [
+        "AgBr",
+        "LiNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgNO3 + LiBr -> AgBr + LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    "hydroxide_precipitation": {
+      "substrates": [
+        "Cu(NO3)2",
+        "LiOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "LiNO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cu(NO3)2 + 2 LiOH -> Cu(OH)2 + 2 LiNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    "neutralisation": {
+      "substrates": [
+        "HNO3",
+        "LiOH"
+      ],
+      "products": [
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HNO3 + LiOH -> LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "NH4NO3",
+        "LiOH"
+      ],
+      "products": [
+        "NH3",
+        "LiNO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4NO3 + LiOH -> NH3 + LiNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  }
+}
