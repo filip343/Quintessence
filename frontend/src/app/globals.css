@@ -1,26 +1,295 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ==========================================================================
+   Five Ways — the reagent shelf
+   --------------------------------------------------------------------------
+   The visual system is the chemistry, not a skin over it.
+
+   HUE is the acid-base axis, the one colour code every student already knows
+   from litmus: acids red, bases blue. The oxides that *become* an acid or a
+   base with water sit one step out on the same side (orange, periwinkle), so
+   the palette reads as a scale rather than a set of unrelated labels. Species
+   with no place on that axis get a material instead of a hue: salts kraft,
+   elements graphite.
+
+   TEXTURE is what the substance is. Salts are drawn with a square lattice
+   because an ionic solid is a lattice. Acid and base hatch in mirrored
+   directions, and amphoteric oxides — which act as both — get both hatches
+   crossed. The anhydrides use their parent's direction at a wider pitch:
+   the same chemistry, not yet arrived.
+
+   All of it is legible without the legend and learnable with it.
+   ========================================================================== */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-archivo);
+  --font-body: var(--font-newsreader);
+  --font-mono: var(--font-plex-mono);
+
+  --color-bench: var(--bench);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-brass: var(--brass);
+  --color-flask: var(--flask);
+}
+
+/* --------------------------------------------------------------------------
+   Theme.
+
+   Everything that differs between light and dark is a variable here — the
+   palette, and the three strengths at which a species tint is mixed into its
+   ground. That is the whole point: below this block there is not one
+   `prefers-color-scheme`, so a class or a component can never quietly grow a
+   dark case that the toggle does not know about.
+
+   The dark palette is written twice because a media query and an attribute
+   selector cannot be merged into one rule. The media query is the default;
+   `[data-theme]` is what the toggle writes. `:not([data-theme="light"])` is
+   what lets someone on a dark OS choose light and be obeyed.
+   -------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: light;
+
+  /* Frosted lab glass rather than paper — cool, not cream. */
+  --bench: #eceff2;
+  --panel: #f8fafb;
+  --ink: #16191d;
+  --muted: #5d666f;
+  --rule: #d2d8dd;
+
+  /* Brass: burette taps and clamp fittings. The only accent on the page.
+     `--brass-solid` is the one that gets filled and carries label text, so it
+     is darkened until it clears 4.5:1 rather than tuned by eye. */
+  --brass: #8a6820;
+  --brass-solid: #6f5316;
+  --brass-lift: #8a6820;
+  /* What sits *on* solid brass. Light brass in dark mode wants dark ink, so
+     this is a variable and not a `dark:` utility — Tailwind's `dark:` variant
+     keys off the OS media query and would ignore the toggle entirely. */
+  --brass-ink: #ffffff;
+  /* Flask green: bottle glass, not the default success green. */
+  --flask: #0e6b58;
+
+  --shadow-lift: 0 1px 2px rgb(22 25 29 / 0.06), 0 4px 12px rgb(22 25 29 / 0.05);
+
+  /* How hard a species tint is mixed into its ground. The tints are picked as
+     ink on paper, so on a dark ground every one of these has to rise or the
+     classes collapse into the same murk. */
+  --tint-fill: 13%;
+  --tint-edge: 34%;
+  --tint-hatch: 24%;
+  --tint-hatch-salt: 11%;
+  --mark-mix: 72%;
+  --mark-into: var(--ink);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bench: #0f1317;
+    --panel: #161b21;
+    --ink: #e7ecf0;
+    --muted: #8d99a4;
+    --rule: #262e36;
+
+    --brass: #c9a24a;
+    --brass-solid: #c9a24a;
+    --brass-lift: #dcb75f;
+    --brass-ink: #14181c;
+    --flask: #3fbf9e;
+
+    --shadow-lift: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.35);
+
+    --tint-fill: 22%;
+    --tint-edge: 42%;
+    --tint-hatch: 42%;
+    --tint-hatch-salt: 16%;
+    --mark-mix: 42%;
+    --mark-into: #ffffff;
   }
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bench: #0f1317;
+  --panel: #161b21;
+  --ink: #e7ecf0;
+  --muted: #8d99a4;
+  --rule: #262e36;
+
+  --brass: #c9a24a;
+  --brass-solid: #c9a24a;
+  --brass-lift: #dcb75f;
+  --brass-ink: #14181c;
+  --flask: #3fbf9e;
+
+  --shadow-lift: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.35);
+
+  --tint-fill: 22%;
+  --tint-edge: 42%;
+  --tint-hatch: 42%;
+  --tint-hatch-salt: 16%;
+  --mark-mix: 42%;
+  --mark-into: #ffffff;
+}
+
+/* The ground stays plain on purpose. A ruled bench grid was the obvious move
+   and it was wrong: every chip already carries a texture, and a texture behind
+   textures reads as noise rather than as a surface. The colour code is the
+   thing worth looking at, so nothing competes with it. */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bench);
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, serif;
+}
+
+@layer components {
+  /* ---------------------------------------------------------------------
+     Species classes. Each sets a tint and a texture; `.species` composes.
+     Kept in the components layer so Tailwind utilities still win over them.
+     --------------------------------------------------------------------- */
+
+  .species {
+    --tint: #6b7480;
+    --line: color-mix(in oklab, var(--tint) var(--tint-hatch), transparent);
+    --texture: none;
+    background-color: color-mix(in oklab, var(--tint) var(--tint-fill), var(--panel));
+    background-image: var(--texture);
+    border-color: color-mix(in oklab, var(--tint) var(--tint-edge), transparent);
+  }
+
+  /* The formula carries the identity — a saturated mark on a calm ground. */
+  .species-mark {
+    color: color-mix(in oklab, var(--tint) var(--mark-mix), var(--mark-into));
+  }
+
+  .species-acid {
+    --tint: #b3261e;
+    --texture: repeating-linear-gradient(45deg, var(--line) 0 1px, transparent 1px 7px);
+  }
+
+  /* Amber rather than the obvious orange: at a 13% fill an orange sits almost
+     on top of the acid red, and these two turn up side by side constantly. */
+  .species-acidic-oxide {
+    --tint: #b0761a;
+    --texture: repeating-linear-gradient(45deg, var(--line) 0 1px, transparent 1px 14px);
+  }
+
+  .species-base {
+    --tint: #1b4f9c;
+    --texture: repeating-linear-gradient(-45deg, var(--line) 0 1px, transparent 1px 7px);
+  }
+
+  /* Pushed towards violet for the same reason: a second blue next to the base
+     blue was a distinction nobody could see. */
+  .species-basic-oxide {
+    --tint: #6a4fbe;
+    --texture: repeating-linear-gradient(-45deg, var(--line) 0 1px, transparent 1px 14px);
+  }
+
+  /* Acts as both, so it is hatched both ways. */
+  .species-amphoteric-oxide {
+    --tint: #7a3fa8;
+    --texture:
+      repeating-linear-gradient(45deg, var(--line) 0 1px, transparent 1px 10px),
+      repeating-linear-gradient(-45deg, var(--line) 0 1px, transparent 1px 10px);
+  }
+
+  /* An ionic solid is a lattice.
+     Drawn much fainter and wider than every other texture, because most
+     species in any hand are salts: at the strength the hatches use, a shelf of
+     salts reads as a sheet of graph paper and the classes that actually need
+     to stand out cannot. The bulk class is the one that recedes. */
+  .species-salt {
+    --tint: #7a6e5d;
+    --line: color-mix(in oklab, var(--tint) var(--tint-hatch-salt), transparent);
+    --texture:
+      repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 13px),
+      repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 13px);
+  }
+
+  /* Raw material: no hue on the acid-base axis, a metallic sheen instead. */
+  .species-element {
+    --tint: #3e4a55;
+    --texture: linear-gradient(125deg, color-mix(in oklab, var(--tint) 16%, transparent) 0 22%, transparent 55%);
+  }
+
+  .species-hydride {
+    --tint: #17766b;
+    --texture: radial-gradient(var(--line) 1px, transparent 1px);
+    background-size: 9px 9px;
+  }
+
+  .species-water {
+    --tint: #1d8fa8;
+    --texture: repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 6px);
+  }
+
+  /* ---------------------------------------------------------------------
+     Surfaces
+     --------------------------------------------------------------------- */
+
+  .panel {
+    background-color: var(--panel);
+    border-color: var(--rule);
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* A found way. Flask green, and the slot is filled rather than outlined. */
+  .slot-filled {
+    background-color: color-mix(in oklab, var(--flask) 12%, var(--panel));
+    border-color: color-mix(in oklab, var(--flask) 45%, transparent);
+  }
+
+  /* Beyond the five asked for. Brass, because it is the bonus fitting. */
+  .slot-bonus {
+    background-color: color-mix(in oklab, var(--brass) 13%, var(--panel));
+    border-color: color-mix(in oklab, var(--brass) 45%, transparent);
+  }
+
+  .slot-empty {
+    border-color: var(--rule);
+    border-style: dashed;
+    background-color: transparent;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Motion: one moment, when a slot fills. Everything else is a hover lift.
+   -------------------------------------------------------------------------- */
+
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.settle {
+  animation: settle 260ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Keyboard focus stays visible everywhere, in brass. */
+:focus-visible {
+  outline: 2px solid var(--brass-lift);
+  outline-offset: 2px;
 }

@@ -91,6 +91,21 @@ export const STATE_NAMES: Record<SpeciesRecord["state"], string> = {
   aq: "in solution",
 };
 
+/**
+ * The CSS hooks for a species' compound class.
+ *
+ * Hue places it on the acid-base axis and texture says what the substance is;
+ * both live in `globals.css`. Classes arrive as prose from the Python side
+ * ("basic oxide"), so they are slugged here — and filtered to letters and
+ * hyphens, because a class name from a bundle should never be able to become
+ * part of a selector that was not written by hand.
+ */
+export function speciesClass(record?: SpeciesRecord): string {
+  if (!record) return "species";
+  const slug = record.class.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z-]/g, "");
+  return slug ? `species species-${slug}` : "species";
+}
+
 /** Reactions that consume exactly this unordered pair (or this one species). */
 export function reactionsFor(
   bundle: PuzzleBundle,

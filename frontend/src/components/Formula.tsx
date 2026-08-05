@@ -41,14 +41,14 @@ export function Equation({
       {equation.split(/\s+/).map((token, index) => {
         if (token === "->") {
           return (
-            <span key={index} className="mx-1.5 text-neutral-400">
+            <span key={index} className="mx-1.5 text-muted">
               →
             </span>
           );
         }
         if (token === "+") {
           return (
-            <span key={index} className="mx-1 text-neutral-400">
+            <span key={index} className="mx-1 text-muted">
               +
             </span>
           );
@@ -56,7 +56,7 @@ export function Equation({
         // A bare leading number is a coefficient, not a subscript.
         if (/^\d+$/.test(token)) {
           return (
-            <span key={index} className="mr-0.5 text-neutral-500">
+            <span key={index} className="mr-0.5 text-muted">
               {token}
             </span>
           );

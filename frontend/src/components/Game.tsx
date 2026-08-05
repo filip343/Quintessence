@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useReducer, useRef } from "react";
+import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import type { PuzzleBundle, ReactionRecord } from "@/lib/puzzle";
-import { reactionsFor, ruleName } from "@/lib/puzzle";
+import { reactionsFor, ruleName, speciesClass } from "@/lib/puzzle";
 import {
   type Action,
   type GameState,
@@ -12,14 +12,22 @@ import {
   validFailures,
   won,
 } from "@/lib/game";
-import { clear, load, store } from "@/lib/storage";
+import {
+  clear,
+  load,
+  markTutorialSeen,
+  store,
+  tutorialSeen,
+} from "@/lib/storage";
 import { Chip } from "./Chip";
 import { Equation, Formula } from "./Formula";
+import { Legend } from "./Legend";
+import { Tutorial } from "./Tutorial";
 
-const GRADE_STYLE: Record<string, string> = {
-  easy: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
-  medium: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300",
-  hard: "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
+const GRADE_NOTE: Record<string, string> = {
+  easy: "several ways in easy reach",
+  medium: "you will have to build something first",
+  hard: "few ways exist, and none of them are obvious",
 };
 
 export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
@@ -41,7 +49,20 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
     hydrated.current = true;
 
     const save = load(day, bundle);
-    if (!save || save.moves.length === 0) return;
+
+    // First time here: nothing played, and no record of having been told how.
+    // A save with moves in it means they are mid-game and know what this is,
+    // so an overlay would only be in the way.
+    const played = Boolean(save && (save.moves.length > 0 || save.revealed));
+    const teaching = tutorialSeen() !== true && !played;
+
+    // Not `|| save.moves.length === 0`: a game whose whole story is "I gave up"
+    // — or "these four pairs do nothing" — has an empty move log and still has
+    // to come back. Replaying no moves is just the opening position.
+    if (!save) {
+      if (teaching) dispatch({ type: "teach", on: true });
+      return;
+    }
 
     const { state: rebuilt, replayed } = replay(bundle, save.moves);
     dispatch({
@@ -51,6 +72,7 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         failed: validFailures(bundle, rebuilt, save.failed ?? []),
         revealed: save.revealed,
         restored: { kept: replayed, total: save.moves.length },
+        teaching,
       },
     });
   }, [bundle, day]);
@@ -61,13 +83,23 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
   }, [bundle, day, state.log, state.failed, state.revealed]);
 
   return (
-    <main className="mx-auto flex max-w-[88rem] flex-col gap-6 px-4 py-8">
-      <Header bundle={bundle} state={state} day={day} />
+    <main className="mx-auto flex w-full max-w-352 flex-col gap-7 px-4 py-8 sm:px-6">
+      {state.teaching && (
+        <Tutorial
+          bundle={bundle}
+          onClose={() => {
+            markTutorialSeen();
+            dispatch({ type: "teach", on: false });
+          }}
+        />
+      )}
+
+      <Header bundle={bundle} state={state} day={day} dispatch={dispatch} />
 
       {state.restored && state.restored.kept < state.restored.total && (
-        <p className="rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-200">
-          Restored {state.restored.kept} of {state.restored.total} saved moves — the rest
-          could not be replayed against today&rsquo;s puzzle and were dropped.
+        <p className="rounded-lg border border-[color-mix(in_oklab,var(--brass)_40%,transparent)] bg-[color-mix(in_oklab,var(--brass)_10%,var(--panel))] px-4 py-3 text-sm">
+          Kept {state.restored.kept} of {state.restored.total} saved moves. The rest
+          could not be replayed against today&rsquo;s puzzle, so they were dropped.
         </p>
       )}
 
@@ -78,10 +110,11 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         were empty. Below `xl` they stack under the bench, ordered so the bench
         is still first.
       */}
-      <div className="grid gap-6 xl:grid-cols-[18rem_minmax(0,1fr)_18rem] xl:items-start">
+      <div className="grid gap-6 xl:grid-cols-[17rem_minmax(0,1fr)_17rem] xl:items-start">
         <Trail
-          title={`reactions you ran (${state.made.length})`}
-          className="order-2 xl:order-1"
+          title="reactions you ran"
+          count={state.made.length}
+          className="order-2 xl:order-1 xl:border-r xl:border-rule xl:pr-5"
         >
           {[...state.made].reverse().map((reaction, index) => (
             <li
@@ -89,38 +122,39 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
               className={[
                 "rounded-md border px-2.5 py-1.5",
                 index === 0
-                  ? "border-neutral-400 bg-neutral-50 dark:border-neutral-600 dark:bg-neutral-900"
+                  ? "panel border-rule"
                   : "border-transparent",
               ].join(" ")}
             >
-              <Equation
-                equation={reaction.equation}
-                className="font-mono text-xs text-neutral-700 dark:text-neutral-300"
-              />
+              <Equation equation={reaction.equation} className="font-mono text-xs" />
               {reaction.note && (
-                <div className="text-[11px] text-neutral-500">{reaction.note}</div>
+                <div className="mt-0.5 text-[11px] text-muted">{reaction.note}</div>
               )}
             </li>
           ))}
         </Trail>
 
         <div className="order-1 flex flex-col gap-6 xl:order-2">
-          {state.pending ? (
+          {state.revealed ? (
+            <Closed bundle={bundle} state={state} />
+          ) : state.pending ? (
             <Picker reactions={state.pending} dispatch={dispatch} />
           ) : (
             <Bench bundle={bundle} state={state} dispatch={dispatch} />
           )}
-          <Solved state={state} />
+          <Rack bundle={bundle} state={state} />
+          <Legend />
         </div>
 
         <Trail
-          title={`no reaction (${state.failed.length})`}
-          className="order-3"
+          title="no reaction"
+          count={state.failed.length}
+          className="order-3 xl:border-l xl:border-rule xl:pl-5"
         >
           {[...state.failed].reverse().map((pair) => (
             <li
               key={pair.join("+")}
-              className="rounded-md px-2.5 py-1.5 font-mono text-xs text-neutral-400 line-through decoration-neutral-300 dark:text-neutral-500 dark:decoration-neutral-700"
+              className="rounded-md px-2.5 py-1.5 font-mono text-xs text-muted line-through decoration-rule"
             >
               {pair.map((formula, index) => (
                 <span key={formula}>
@@ -134,80 +168,178 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
       </div>
 
       {(complete || state.revealed) && <Answers bundle={bundle} state={state} />}
-
-      <div className="flex gap-4 text-xs text-neutral-500">
-        {!complete && !state.revealed && (
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "reveal" })}
-            className="underline underline-offset-4 hover:text-neutral-800 dark:hover:text-neutral-200"
-          >
-            give up and show every way
-          </button>
-        )}
-        {state.log.length > 0 && (
-          <button
-            type="button"
-            onClick={() => {
-              if (day) clear(day);
-              dispatch({ type: "reset" });
-            }}
-            className="underline underline-offset-4 hover:text-neutral-800 dark:hover:text-neutral-200"
-          >
-            start over
-          </button>
-        )}
-      </div>
     </main>
   );
 }
 
+/**
+ * Give up, start over, how to play.
+ *
+ * In the header rather than under the board, which is where they were: the
+ * board grows all day — three history columns, then the answer sheet — so a
+ * footer walks steadily further off the bottom of the screen, and "give up" is
+ * needed exactly when the page has got long. Up here they are always one look
+ * away and never move.
+ */
+function Controls({
+  state,
+  dispatch,
+  day,
+  complete,
+}: {
+  state: GameState;
+  dispatch: (a: Action) => void;
+  day?: string;
+  complete: boolean;
+}) {
+  // Giving up cannot be taken back and survives a reload, so it asks first.
+  const [confirming, setConfirming] = useState(false);
+  const link =
+    "underline decoration-rule underline-offset-4 hover:text-ink hover:decoration-current";
+
+  // `!state.revealed` matters: answering the question leaves `confirming` set,
+  // and without this the controls would stay stuck on a question that has
+  // already been answered, with "start over" unreachable behind it.
+  if (confirming && !complete && !state.revealed) {
+    return (
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
+        <span className="font-body text-[14px] normal-case tracking-normal text-ink">
+          That closes the shelf for today and prints every way, including the
+          ones you have not found.
+        </span>
+        <button type="button" onClick={() => dispatch({ type: "reveal" })} className={link}>
+          yes, show me
+        </button>
+        <button type="button" onClick={() => setConfirming(false)} className={link}>
+          keep playing
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
+      <button
+        type="button"
+        onClick={() => dispatch({ type: "teach", on: true })}
+        className={link}
+      >
+        how to play
+      </button>
+      {!complete && !state.revealed && (
+        <button type="button" onClick={() => setConfirming(true)} className={link}>
+          give up, show every way
+        </button>
+      )}
+      {/* Anything worth wiping, not just successful moves: after giving up the
+          day is over even if nothing ever reacted, and that is precisely when
+          someone wants to play it again. */}
+      {(state.log.length > 0 || state.failed.length > 0 || state.revealed) && (
+        <button
+          type="button"
+          onClick={() => {
+            if (day) clear(day);
+            dispatch({ type: "reset" });
+          }}
+          className={link}
+        >
+          start over
+        </button>
+      )}
+    </div>
+  );
+}
+
+/**
+ * The hero is the target, presented as its own reagent label.
+ *
+ * Showing it in the class colours it would have on the shelf is the one place
+ * the whole code is stated without a legend: whatever you are making, you can
+ * see what kind of thing it is before you have run a single reaction.
+ */
 function Header({
   bundle,
   state,
   day,
+  dispatch,
 }: {
   bundle: PuzzleBundle;
   state: GameState;
   day?: string;
+  dispatch: (a: Action) => void;
 }) {
+  const record = bundle.species[bundle.target];
+  const found = state.order.length;
+
   return (
-    <header className="flex flex-col gap-3">
-      <div className="flex items-center gap-3">
-        <span
-          className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${GRADE_STYLE[bundle.grade]}`}
-        >
-          {bundle.grade}
+    <header className="flex flex-col gap-4">
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
+        <span className="font-semibold text-ink">Five Ways</span>
+        {day && <span>{day}</span>}
+        <span aria-hidden>·</span>
+        <span>{bundle.grade}</span>
+        <span className="normal-case tracking-normal">
+          — {GRADE_NOTE[bundle.grade]}
         </span>
-        {day && (
-          <span className="text-xs text-neutral-500 dark:text-neutral-400">{day}</span>
-        )}
       </div>
 
-      <h1 className="text-3xl font-semibold tracking-tight">
-        make <Formula formula={bundle.target} className="font-mono" />
-      </h1>
-      <p className="text-sm text-neutral-600 dark:text-neutral-400">
-        {bundle.name} — find <strong>{bundle.want}</strong> different kinds of
-        reaction that produce it.
-        {bundle.ways > bundle.want && ` ${bundle.ways} exist.`}
-      </p>
-
-      <div className="flex items-center gap-2">
-        {Array.from({ length: bundle.want }).map((_, index) => (
-          <span
-            key={index}
-            className={[
-              "h-3 w-8 rounded-sm",
-              index < state.order.length
-                ? "bg-emerald-500"
-                : "bg-neutral-200 dark:bg-neutral-800",
-            ].join(" ")}
+      {/* Not `justify-between`: on a wide screen that flung the ask 600px away
+          from the compound it is asking about, and the two have to be read as
+          one sentence. */}
+      <div className="flex flex-wrap items-end gap-x-8 gap-y-4">
+        <div
+          // Most targets are salts, and salt is deliberately the quietest
+          // class — so the hero gets its presence from a lift rather than from
+          // shouting with a tint the chemistry does not support.
+          className={`${speciesClass(record)} flex flex-col gap-1 rounded-lg border px-5 py-4 shadow-(--shadow-lift)`}
+        >
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
+            make
+          </span>
+          <Formula
+            formula={bundle.target}
+            className="species-mark font-mono text-4xl font-semibold tracking-tight sm:text-5xl"
           />
-        ))}
-        <span className="ml-2 text-sm tabular-nums text-neutral-500">
-          {state.order.length}/{bundle.want} · {state.moves} moves
-        </span>
+          <span className="font-display text-sm font-medium">{bundle.name}</span>
+          {record && (
+            <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+              {record.class}
+            </span>
+          )}
+        </div>
+
+        <div className="flex max-w-md flex-col gap-2">
+          <p className="text-[17px] leading-snug">
+            Find <strong className="font-display font-semibold">{bundle.want}</strong>{" "}
+            different kinds of reaction that make it.
+            {bundle.ways > bundle.want && (
+              <>
+                {" "}
+                <span className="text-muted">
+                  {bundle.ways} exist — every one past {bundle.want} is a bonus.
+                </span>
+              </>
+            )}
+          </p>
+          <p className="font-mono text-[13px] tabular-nums text-muted">
+            <span className="text-ink">{found}</span>/{bundle.want} kinds
+            <span className="mx-2 text-rule">|</span>
+            {state.moves} {state.moves === 1 ? "move" : "moves"}
+            {state.misses > 0 && (
+              <>
+                <span className="mx-2 text-rule">|</span>
+                {state.misses} dead {state.misses === 1 ? "end" : "ends"}
+              </>
+            )}
+          </p>
+
+          <Controls
+            state={state}
+            dispatch={dispatch}
+            day={day}
+            complete={found >= bundle.want}
+          />
+        </div>
       </div>
     </header>
   );
@@ -224,11 +356,12 @@ function Bench({
 }) {
   const [a, b] = state.selected;
   const canMix = state.selected.length === 2;
-  const canHeat =
-    state.selected.length === 1 && reactionsFor(bundle, a).length > 0;
+  const canHeat = state.selected.length === 1 && reactionsFor(bundle, a).length > 0;
 
   return (
     <section className="flex flex-col gap-4">
+      <Mark>on the shelf ({state.inventory.length})</Mark>
+
       <div className="flex flex-wrap gap-2">
         {state.inventory.map((formula) => (
           <Chip
@@ -242,42 +375,37 @@ function Bench({
         ))}
       </div>
 
-      <div className="flex flex-wrap items-center gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/50">
-        <span className="font-mono text-sm">
-          {a ? <Formula formula={a} /> : <em className="text-neutral-400">pick one</em>}
-          <span className="mx-2 text-neutral-400">+</span>
-          {b ? <Formula formula={b} /> : <em className="text-neutral-400">and another</em>}
+      <div className="panel flex flex-wrap items-center gap-x-4 gap-y-3 rounded-lg border p-4">
+        <span className="flex items-baseline gap-2 font-mono text-[15px]">
+          <Slot formula={a} bundle={bundle} placeholder="pick one" />
+          <span className="text-muted">+</span>
+          <Slot formula={b} bundle={bundle} placeholder="and another" />
         </span>
 
-        <button
-          type="button"
-          disabled={!canMix}
-          onClick={() => dispatch({ type: "mix" })}
-          className="rounded-lg bg-indigo-600 px-4 py-1.5 text-sm font-medium text-white enabled:hover:bg-indigo-500 disabled:opacity-40"
-        >
-          mix
-        </button>
-        <button
-          type="button"
-          disabled={!canHeat}
-          onClick={() => dispatch({ type: "decompose", formula: a })}
-          className="rounded-lg border border-neutral-300 px-4 py-1.5 text-sm enabled:hover:bg-white disabled:opacity-40 dark:border-neutral-700 dark:enabled:hover:bg-neutral-800"
-        >
-          heat
-        </button>
-        {state.selected.length > 0 && (
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "clear" })}
-            className="text-xs text-neutral-500 underline underline-offset-4"
+        <span className="ml-auto flex items-center gap-2">
+          {state.selected.length > 0 && (
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "clear" })}
+              className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted underline decoration-rule underline-offset-4 hover:text-ink"
+            >
+              clear
+            </button>
+          )}
+          <Key onClick={() => dispatch({ type: "mix" })} disabled={!canMix} primary>
+            mix
+          </Key>
+          <Key
+            onClick={() => dispatch({ type: "decompose", formula: a })}
+            disabled={!canHeat}
           >
-            clear
-          </button>
-        )}
+            heat
+          </Key>
+        </span>
       </div>
 
       {state.message && (
-        <p className="rounded-lg bg-neutral-100 px-4 py-3 text-sm text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
+        <p className="rounded-lg border border-rule bg-panel px-4 py-3 text-[15px] leading-snug">
           {state.message}
         </p>
       )}
@@ -287,29 +415,120 @@ function Bench({
   );
 }
 
+/**
+ * The shelf after the player has given up.
+ *
+ * The bottles stay on the screen — they are the record of what was built, and
+ * the answers below are read against them — but nothing here is a control any
+ * more. The mix line is gone rather than disabled: a greyed-out button invites
+ * you to work out how to un-grey it, and there is nothing to work out.
+ */
+function Closed({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) {
+  const found = state.order.length;
+
+  return (
+    <section className="flex flex-col gap-4">
+      <Mark>what you had on the shelf ({state.inventory.length})</Mark>
+
+      <div className="flex flex-wrap gap-2">
+        {state.inventory.map((formula) => (
+          <Chip
+            key={formula}
+            formula={formula}
+            record={bundle.species[formula]}
+            isTarget={formula === bundle.target}
+          />
+        ))}
+      </div>
+
+      <p className="panel rounded-lg border px-4 py-3 text-[15px] leading-snug">
+        Today is done — you found{" "}
+        <strong className="font-display font-semibold">{found}</strong> of{" "}
+        {bundle.want} kinds in {state.moves}{" "}
+        {state.moves === 1 ? "move" : "moves"}. Every way is written out below,
+        yours marked. Come back tomorrow, or start over and play this one again.
+      </p>
+    </section>
+  );
+}
+
+/** One half of the mix line: a filled label, or an empty holder. */
+function Slot({
+  formula,
+  bundle,
+  placeholder,
+}: {
+  formula?: string;
+  bundle: PuzzleBundle;
+  placeholder: string;
+}) {
+  if (!formula) {
+    return (
+      <span className="rounded border border-dashed border-rule px-2 py-1 font-body text-sm italic text-muted">
+        {placeholder}
+      </span>
+    );
+  }
+  return (
+    <span
+      className={`${speciesClass(bundle.species[formula])} rounded border px-2 py-1`}
+    >
+      <Formula formula={formula} className="species-mark font-medium" />
+    </span>
+  );
+}
+
+/** A control on a piece of lab equipment, not a web button. */
+function Key({
+  children,
+  onClick,
+  disabled,
+  primary,
+}: {
+  children: React.ReactNode;
+  onClick: () => void;
+  disabled?: boolean;
+  primary?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className={[
+        "rounded border px-4 py-1.5 font-mono text-[12px] font-semibold uppercase tracking-[0.14em]",
+        "transition-[transform,box-shadow,background-color] duration-100",
+        "enabled:hover:-translate-y-px enabled:active:translate-y-0 disabled:opacity-35",
+        primary
+          ? "border-transparent bg-(--brass-solid) text-(--brass-ink) enabled:hover:bg-(--brass-lift)"
+          : "border-rule bg-panel enabled:hover:border-muted",
+      ].join(" ")}
+    >
+      {children}
+    </button>
+  );
+}
+
 function Outcome({ last }: { last: NonNullable<GameState["last"]> }) {
   const { reaction, scored, repeat } = last;
   return (
     <div
+      key={reaction.equation}
       className={[
-        "rounded-xl border p-4",
-        scored
-          ? "border-emerald-400 bg-emerald-50 dark:border-emerald-700 dark:bg-emerald-950/40"
-          : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900",
+        "settle rounded-lg border p-4",
+        scored ? "slot-filled" : "panel",
       ].join(" ")}
     >
       <Equation equation={reaction.equation} className="font-mono text-sm" />
-      {reaction.note && (
-        <p className="mt-1 text-xs text-neutral-500">{reaction.note}</p>
-      )}
+      {reaction.note && <p className="mt-1 text-[13px] text-muted">{reaction.note}</p>}
       {scored && (
-        <p className="mt-2 text-sm font-medium text-emerald-700 dark:text-emerald-400">
-          new way — {ruleName(reaction.rule)}
+        <p className="mt-2 font-display text-sm font-semibold text-flask">
+          new kind — {ruleName(reaction.rule)}
         </p>
       )}
       {repeat && (
-        <p className="mt-2 text-sm text-neutral-500">
-          you already have this kind of reaction
+        <p className="mt-2 text-[13px] text-muted">
+          You already have this kind. It counts once, however you run it.
         </p>
       )}
     </div>
@@ -324,13 +543,11 @@ function Picker({
   dispatch: (a: Action) => void;
 }) {
   return (
-    <section className="flex flex-col gap-3 rounded-xl border border-amber-300 bg-amber-50 p-4 dark:border-amber-800 dark:bg-amber-950/30">
-      <p className="text-sm font-medium">
-        {reactions.length} products are possible — one move, one product.
-      </p>
-      <p className="text-xs text-neutral-600 dark:text-neutral-400">
-        The engine works at formula level and has no amounts, so it cannot know
-        how much you added. You choose.
+    <section className="settle panel flex flex-col gap-3 rounded-lg border p-5">
+      <Mark>{reactions.length} products are possible</Mark>
+      <p className="max-w-prose text-[15px] leading-snug">
+        One move, one product. The engine works at formula level and has no
+        amounts, so it cannot know how much you added — you choose.
       </p>
       <div className="flex flex-col gap-2">
         {reactions.map((reaction, index) => (
@@ -338,11 +555,11 @@ function Picker({
             key={index}
             type="button"
             onClick={() => dispatch({ type: "choose", index })}
-            className="rounded-lg border border-neutral-300 bg-white px-4 py-3 text-left hover:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900"
+            className="rounded-lg border border-rule bg-bench px-4 py-3 text-left transition-[transform,border-color] duration-100 hover:-translate-y-px hover:border-brass"
           >
             <Equation equation={reaction.equation} className="font-mono text-sm" />
             {reaction.note && (
-              <p className="mt-1 text-xs text-neutral-500">{reaction.note}</p>
+              <p className="mt-1 text-[13px] text-muted">{reaction.note}</p>
             )}
           </button>
         ))}
@@ -350,7 +567,7 @@ function Picker({
       <button
         type="button"
         onClick={() => dispatch({ type: "cancel" })}
-        className="self-start text-xs text-neutral-500 underline underline-offset-4"
+        className="self-start font-mono text-[11px] uppercase tracking-[0.12em] text-muted underline decoration-rule underline-offset-4 hover:text-ink"
       >
         change my mind — costs no move
       </button>
@@ -358,36 +575,59 @@ function Picker({
   );
 }
 
-/** The ways you have solved — green blocks, directly under the bench. */
-function Solved({ state }: { state: GameState }) {
-  if (state.order.length === 0) return null;
+/**
+ * The rack: one slot per kind the day asks for, filled as you find them.
+ *
+ * Not a progress bar. The whole game is that the five have to be *different
+ * kinds*, so the score has to show which kinds are in the rack — a bar of
+ * anonymous green blocks says how many and hides the only part that matters.
+ * Anything past `want` is a bonus and comes back in brass.
+ */
+function Rack({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) {
+  const slots = Math.max(bundle.want, state.order.length);
+
   return (
-    <section className="grid gap-2 sm:grid-cols-2">
-      {state.order.map((rule) => (
-        <div
-          key={rule}
-          className="rounded-lg border border-emerald-400 bg-emerald-50 px-3 py-2 dark:border-emerald-700 dark:bg-emerald-950/40"
-        >
-          <div className="text-sm font-medium text-emerald-900 dark:text-emerald-200">
-            {ruleName(rule)}
-          </div>
-          <Equation
-            equation={state.found[rule].equation}
-            className="font-mono text-xs text-emerald-800/80 dark:text-emerald-300/80"
-          />
-        </div>
-      ))}
+    <section className="flex flex-col gap-3">
+      <Mark>the rack</Mark>
+      <div className="grid gap-2 sm:grid-cols-2">
+        {Array.from({ length: slots }).map((_, index) => {
+          const rule = state.order[index];
+          if (!rule) {
+            return (
+              <div
+                key={`empty-${index}`}
+                className="slot-empty min-h-13 rounded-lg border"
+              />
+            );
+          }
+          const bonus = index >= bundle.want;
+          return (
+            <div
+              key={rule}
+              className={`settle rounded-lg border px-3 py-2.5 ${bonus ? "slot-bonus" : "slot-filled"}`}
+            >
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="font-display text-[13px] font-semibold">
+                  {ruleName(rule)}
+                </span>
+                {bonus && (
+                  <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-brass">
+                    bonus
+                  </span>
+                )}
+              </div>
+              <Equation
+                equation={state.found[rule].equation}
+                className="font-mono text-[11px] text-muted"
+              />
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }
 
-/**
- * Two columns: everything that reacted, and everything that did not.
- *
- * The dead ends are kept deliberately. In a 28-pair palette a player will try
- * plenty of things that do nothing, and remembering which is real progress —
- * without it they retry the same pair after a reload.
- */
 /**
  * One margin column of history.
  *
@@ -397,26 +637,37 @@ function Solved({ state }: { state: GameState }) {
  */
 function Trail({
   title,
+  count,
   className,
   children,
 }: {
   title: string;
+  count: number;
   className?: string;
   children: React.ReactNode[];
 }) {
   return (
     <section className={`flex flex-col gap-2 ${className ?? ""}`}>
-      <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-        {title}
-      </h2>
+      <Mark>
+        {title} <span className="tabular-nums">({count})</span>
+      </Mark>
       <ol className="flex max-h-[60vh] flex-col gap-1.5 overflow-y-auto xl:sticky xl:top-4">
         {children.length > 0 ? (
           children
         ) : (
-          <li className="text-xs text-neutral-400">nothing yet</li>
+          <li className="px-2.5 text-[13px] italic text-muted">nothing yet</li>
         )}
       </ol>
     </section>
+  );
+}
+
+/** The one heading style: a mono rule, set small and wide. */
+function Mark({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
+      {children}
+    </h2>
   );
 }
 
@@ -425,43 +676,50 @@ function Answers({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) 
   const missed = rules.filter((rule) => !(rule in state.found)).length;
 
   return (
-    <section className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-5 dark:border-neutral-800 dark:bg-neutral-900/50">
-      <h2 className="text-base font-semibold">
-        every way to make <Formula formula={bundle.target} className="font-mono" />
-      </h2>
-      <div className="flex flex-col gap-3">
+    <section className="panel flex flex-col gap-4 rounded-lg border p-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h2 className="font-display text-xl font-semibold">
+          Every way to make{" "}
+          <Formula formula={bundle.target} className="font-mono" />
+        </h2>
+        <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+          {missed === 0
+            ? "you found all of them"
+            : `${missed} you did not find`}
+        </span>
+      </div>
+
+      <ol className="flex flex-col gap-3">
         {rules.map((rule) => {
           const yours = state.found[rule];
           // Show the player's own equation where they found one: their
           // spectator ions are the version they will recognise.
           const reaction = yours ?? bundle.answers[rule];
           return (
-            <div key={rule} className="flex gap-3">
+            <li key={rule} className="flex gap-3">
               <span
+                aria-hidden
                 className={[
-                  "mt-1 h-2.5 w-2.5 shrink-0 rounded-full",
-                  yours ? "bg-emerald-500" : "bg-neutral-300 dark:bg-neutral-700",
+                  "mt-1.5 h-2 w-2 shrink-0 rounded-full",
+                  yours ? "bg-flask" : "bg-rule",
                 ].join(" ")}
               />
               <div className="flex flex-col gap-0.5">
-                <span className="text-sm font-medium">{ruleName(rule)}</span>
+                <span className="font-display text-[14px] font-semibold">
+                  {ruleName(rule)}
+                </span>
                 <Equation
                   equation={reaction.equation}
-                  className="font-mono text-xs text-neutral-600 dark:text-neutral-400"
+                  className="font-mono text-xs text-muted"
                 />
                 {reaction.note && (
-                  <span className="text-xs text-neutral-500">{reaction.note}</span>
+                  <span className="text-[13px] text-muted">{reaction.note}</span>
                 )}
               </div>
-            </div>
+            </li>
           );
         })}
-      </div>
-      {missed > 0 && (
-        <p className="text-sm text-neutral-500">
-          {missed} you did not find.
-        </p>
-      )}
+      </ol>
     </section>
   );
 }

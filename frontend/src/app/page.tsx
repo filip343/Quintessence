@@ -43,12 +43,23 @@ export default async function Page() {
 
   if (!puzzle) {
     return (
-      <main className="mx-auto max-w-3xl px-4 py-16">
-        <h1 className="text-xl font-semibold">No puzzles built yet</h1>
-        <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-          Run <code className="font-mono">python -m chem.puzzle --days 30</code> in{" "}
-          <code className="font-mono">backend/</code>.
+      <main className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-16">
+        <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
+          Five Ways
+        </span>
+        <h1 className="font-display text-2xl font-semibold">
+          The shelf is empty
+        </h1>
+        <p className="max-w-prose text-[15px] leading-snug">
+          No puzzles have been built yet. Deal a month of them from{" "}
+          <code className="rounded border border-rule bg-panel px-1.5 py-0.5 font-mono text-[13px]">
+            backend/
+          </code>
+          :
         </p>
+        <code className="w-fit rounded border border-rule bg-panel px-3 py-2 font-mono text-[13px]">
+          python -m chem.puzzle --days 30
+        </code>
       </main>
     );
   }

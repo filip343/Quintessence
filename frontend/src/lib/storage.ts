@@ -82,6 +82,38 @@ export function store(
   }
 }
 
+const TUTORIAL_KEY = `${PREFIX}:tutorial`;
+
+/**
+ * Whether this browser has been shown how to play.
+ *
+ * Its own key rather than a field on the save, because it outlives any one day
+ * and has to survive "start over" — someone clearing today's board is not
+ * asking to be taught the rules again.
+ *
+ * `null` means "cannot tell": storage is off, so the caller decides. It must
+ * not be read during render — on the server there is no `localStorage`, and
+ * seeding state from it would be a hydration mismatch.
+ */
+export function tutorialSeen(): boolean | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return window.localStorage.getItem(TUTORIAL_KEY) === "1";
+  } catch {
+    return null;
+  }
+}
+
+export function markTutorialSeen(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(TUTORIAL_KEY, "1");
+  } catch {
+    // Storage off. They will be offered the tutorial again next visit, which
+    // is the kinder failure of the two.
+  }
+}
+
 export function clear(day: string): void {
   if (typeof window === "undefined") return;
   try {

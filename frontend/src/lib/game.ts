@@ -58,6 +58,13 @@ export interface GameState {
    * `setState` inside the load effect would cascade an extra render.
    */
   restored: { kept: number; total: number } | null;
+  /**
+   * Whether the how-to-play cards are up. Here for the same reason as
+   * `restored`: whether to teach is decided by the same look at storage that
+   * decides what to replay, and routing it through the reducer keeps that one
+   * dispatch instead of a dispatch plus a `setState`.
+   */
+  teaching: boolean;
 }
 
 export type Action =
@@ -68,6 +75,7 @@ export type Action =
   | { type: "choose"; index: number }
   | { type: "cancel" }
   | { type: "reveal" }
+  | { type: "teach"; on: boolean }
   | { type: "restore"; state: GameState }
   | { type: "reset" };
 
@@ -87,6 +95,7 @@ export function initial(bundle: PuzzleBundle): GameState {
     misses: 0,
     revealed: false,
     restored: null,
+    teaching: false,
   };
 }
 
@@ -99,6 +108,21 @@ export function reducer(
   state: GameState,
   action: Action,
 ): GameState {
+  // Reading the rules is not a move, so it is answered above the guard below:
+  // someone who has given up is exactly the person who might want to check what
+  // they were meant to be doing.
+  if (action.type === "teach") return { ...state, teaching: action.on };
+
+  // Giving up ends the day. Once every way is printed on the screen there is
+  // nothing left to find, and a reaction run now is copied off the page rather
+  // than worked out — it would fill the rack with ways the player was handed.
+  // The rule lives here rather than in the component so there is one answer to
+  // "is this game still running", and so hiding the bench is presentation
+  // rather than enforcement.
+  if (state.revealed && action.type !== "reset" && action.type !== "restore") {
+    return state;
+  }
+
   switch (action.type) {
     case "select":
       return select(state, bundle, action.formula);
@@ -110,7 +134,14 @@ export function reducer(
       return { ...state, pending: null, message: null };
 
     case "reveal":
-      return { ...state, revealed: true, pending: null };
+      return {
+        ...state,
+        revealed: true,
+        pending: null,
+        selected: [],
+        last: null,
+        message: null,
+      };
 
     case "restore":
       return action.state;
