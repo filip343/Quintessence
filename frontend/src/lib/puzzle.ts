@@ -28,6 +28,12 @@ export interface ReactionRecord {
   note?: string;
 }
 
+export interface MissRecord {
+  substrates: string[];
+  /** Why this pair does nothing. A curated gate's reason, not "these two are unrelated". */
+  note: string;
+}
+
 export interface PuzzleBundle {
   version: number;
   target: string;
@@ -43,6 +49,13 @@ export interface PuzzleBundle {
   reactions: ReactionRecord[];
   /** One worked reaction per way, for the end screen. */
   answers: Record<string, ReactionRecord>;
+  /**
+   * Why the interesting dead ends are dead. Only pairs that a curated gate
+   * refused appear here, so most dead ends have no entry and get silence —
+   * which makes the presence of a note information in itself. Optional because
+   * bundles written before this existed simply do not carry the field.
+   */
+  misses?: MissRecord[];
 }
 
 /** Rule slugs are stable ids; these are what a player should read. */
@@ -104,6 +117,22 @@ export function speciesClass(record?: SpeciesRecord): string {
   if (!record) return "species";
   const slug = record.class.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z-]/g, "");
   return slug ? `species species-${slug}` : "species";
+}
+
+/**
+ * The curated reason this pair does nothing, or null if there is none to give.
+ *
+ * Null is the common case and is not a gap: a note means a named gate turned the
+ * move down, so handing one out for every blank pair would make it worthless.
+ */
+export function missFor(bundle: PuzzleBundle, a: string, b?: string): string | null {
+  const wanted = b === undefined ? [a] : [a, b].sort();
+  const found = bundle.misses?.find((miss) => {
+    if (miss.substrates.length !== wanted.length) return false;
+    const have = [...miss.substrates].sort();
+    return have.every((formula, index) => formula === wanted[index]);
+  });
+  return found?.note ?? null;
 }
 
 /** Reactions that consume exactly this unordered pair (or this one species). */

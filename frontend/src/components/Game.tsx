@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import type { PuzzleBundle, ReactionRecord } from "@/lib/puzzle";
-import { reactionsFor, ruleName, speciesClass } from "@/lib/puzzle";
+import { missFor, reactionsFor, ruleName, speciesClass } from "@/lib/puzzle";
 import {
   type Action,
   type GameState,
@@ -184,19 +184,28 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
           tone="muted"
           className="order-3 xl:border-l xl:border-rule xl:pl-5"
         >
-          {[...state.failed].reverse().map((pair) => (
-            <li
-              key={pair.join("+")}
-              className="rounded-md px-2.5 py-1.5 font-mono text-xs text-muted line-through decoration-rule"
-            >
-              {pair.map((formula, index) => (
-                <span key={formula}>
-                  {index > 0 && <span className="mx-1 no-underline">+</span>}
-                  <Formula formula={formula} />
+          {[...state.failed].reverse().map((pair) => {
+            const why = pair.length === 2 ? missFor(bundle, pair[0], pair[1]) : null;
+            return (
+              <li key={pair.join("+")} className="rounded-md px-2.5 py-1.5">
+                <span className="font-mono text-xs text-muted line-through decoration-rule">
+                  {pair.map((formula, index) => (
+                    <span key={formula}>
+                      {index > 0 && <span className="mx-1 no-underline">+</span>}
+                      <Formula formula={formula} />
+                    </span>
+                  ))}
                 </span>
-              ))}
-            </li>
-          ))}
+                {/* Struck through above, deliberately not here: the pair is
+                    spent, but the reason is the part worth reading twice. */}
+                {why && (
+                  <span className="mt-0.5 block text-[11px] leading-snug text-muted">
+                    {why}
+                  </span>
+                )}
+              </li>
+            );
+          })}
         </Trail>
       </div>
 

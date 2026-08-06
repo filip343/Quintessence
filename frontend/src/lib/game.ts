@@ -15,7 +15,7 @@
  */
 
 import type { PuzzleBundle, ReactionRecord } from "./puzzle";
-import { reactionsFor } from "./puzzle";
+import { missFor, reactionsFor } from "./puzzle";
 
 /** A move as it is written down: what went in, and which product was taken. */
 export interface Move {
@@ -207,6 +207,10 @@ function offer(
     const known = state.failed.some(
       (seen) => seen.length === pair.length && seen.every((f, i) => f === pair[i]),
     );
+    // Only some dead ends have a reason worth giving — see `missFor`. The pair
+    // is kept in `failed` either way, so the note is looked up rather than
+    // stored: it is a fact about the bundle, not about this game.
+    const why = pair.length === 2 ? missFor(bundle, pair[0], pair[1]) : null;
     return {
       ...state,
       selected: [],
@@ -214,7 +218,7 @@ function offer(
       last: null,
       failed: known ? state.failed : [...state.failed, pair],
       misses: state.misses + 1,
-      message: `${what} — no reaction.`,
+      message: why ? `${what} — no reaction. ${why}.` : `${what} — no reaction.`,
     };
   }
   if (reactions.length === 1) return apply(state, bundle, reactions[0]);
