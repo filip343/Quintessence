@@ -1,15 +1,21 @@
 /**
- * Today's puzzle, read from disk at build time.
+ * The list of days that exist, read from disk at build time.
  *
- * The bundles in `public/puzzles` are written by `backend/chem/puzzle.py` and
- * are self-contained, so there is no API and no runtime backend: this is a
- * static page that hands one small JSON file to a client component.
+ * Only the list. *Which* of them is today is decided in the browser, by
+ * `Today` -- see the note there for why reading the clock here was a bug that
+ * froze the site on whatever day it was last built.
+ *
+ * The list is safe to bake in because the bundles are committed alongside it:
+ * whatever `index.json` said at build time is exactly the set of files the
+ * deployment serves, so there is nothing for a runtime read to discover. That
+ * keeps this a static page with no API and no runtime backend, which is the
+ * whole premise -- the browser is handed a manifest and fetches one small
+ * self-contained JSON file.
  */
 
 import { promises as fs } from "fs";
 import path from "path";
-import { Game } from "@/components/Game";
-import type { PuzzleBundle } from "@/lib/puzzle";
+import { Today } from "@/components/Today";
 
 const PUZZLES = path.join(process.cwd(), "public", "puzzles");
 
@@ -18,30 +24,21 @@ interface Index {
   puzzles: string[];
 }
 
-/** The most recent puzzle not in the future, so a stale build still plays. */
-async function today(): Promise<{ bundle: PuzzleBundle; day: string } | null> {
-  let index: Index;
+async function days(): Promise<string[]> {
   try {
-    index = JSON.parse(await fs.readFile(path.join(PUZZLES, "index.json"), "utf8"));
+    const index: Index = JSON.parse(
+      await fs.readFile(path.join(PUZZLES, "index.json"), "utf8"),
+    );
+    return index.puzzles;
   } catch {
-    return null;
+    return [];
   }
-
-  const now = new Date().toISOString().slice(0, 10);
-  const available = [...index.puzzles].filter((day) => day <= now).sort();
-  const day = available.at(-1) ?? [...index.puzzles].sort().at(0);
-  if (!day) return null;
-
-  const bundle: PuzzleBundle = JSON.parse(
-    await fs.readFile(path.join(PUZZLES, `${day}.json`), "utf8"),
-  );
-  return { bundle, day };
 }
 
 export default async function Page() {
-  const puzzle = await today();
+  const available = await days();
 
-  if (!puzzle) {
+  if (available.length === 0) {
     return (
       <main className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-16">
         <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
@@ -64,5 +61,5 @@ export default async function Page() {
     );
   }
 
-  return <Game bundle={puzzle.bundle} day={puzzle.day} />;
+  return <Today days={available} />;
 }
