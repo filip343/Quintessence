@@ -93,6 +93,22 @@ def check(day: str, bundle: dict) -> tuple[list[str], list[str]]:
             f"{', '.join(sorted(answers - reached))}"
         )
 
+    # A dead-end note on a pair that actually reacts is the one kind of feedback
+    # that is worse than silence: the player is told, in the game's own voice,
+    # that chemistry they could have run does not happen. `explain` guards
+    # against it on the way in by asking `combine` first; this checks the
+    # shipped file, which is the only artefact a player ever sees.
+    pairs = {tuple(sorted(r["substrates"])) for r in bundle["reactions"]}
+    lying = [
+        " + ".join(sorted(m["substrates"]))
+        for m in bundle.get("misses", [])
+        if tuple(sorted(m["substrates"])) in pairs
+    ]
+    if lying:
+        problems.append(
+            f"{day}: dead-end notes on pairs that do react: {', '.join(sorted(lying))}"
+        )
+
     # Playable, but the end screen promises *every* way and would omit these.
     if reached - answers:
         notes.append(

@@ -27,6 +27,7 @@ import json
 import sys
 from collections import defaultdict
 from datetime import date as Date
+from itertools import combinations
 from datetime import timedelta
 from pathlib import Path
 from typing import Any
@@ -40,6 +41,7 @@ from chem.generate import DEFAULT_CUT, WANT_WAYS, Puzzle, generate
 from chem.reaction import Reaction
 from chem.rules.catalogue import rule_slug
 from chem.rules.commonness import is_common
+from chem.rules.misses import explain
 from chem.rules.display import species_record
 
 DEFAULT_OUTPUT = Path("../frontend/public/puzzles")
@@ -78,7 +80,28 @@ def bundle(puzzle: Puzzle) -> dict[str, Any]:
         "species": {formula: _species(formula) for formula in reachable},
         "reactions": [_reaction(r) for r in net.reactions],
         "answers": {rule: _reaction(examples[rule]) for rule in examples},
+        "misses": _misses(reachable, puzzle.target),
     }
+
+
+def _misses(species: list[str], target: str) -> list[dict[str, Any]]:
+    """Why the interesting dead ends are dead.
+
+    Precomputed for the same reason the reactions are: the browser has no rule
+    engine, and a note that had to be derived in the client would mean shipping
+    the activity series and the solubility table to derive it from.
+
+    Only pairs a curated gate refused get an entry, so this is a fraction of the
+    dead ends rather than all of them -- on a typical hand, a quarter. Pairs
+    containing the target are skipped because the board will not let anyone
+    select it, so a note about one could never be read.
+    """
+    found: list[dict[str, Any]] = []
+    for first, second in combinations([s for s in species if s != target], 2):
+        note = explain(first, second)
+        if note:
+            found.append({"substrates": [first, second], "note": note})
+    return found
 
 
 def _ways(target: str, net: network.Network) -> dict[str, Reaction]:
