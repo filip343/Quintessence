@@ -1636,5 +1636,385 @@
       },
       "note": "more base takes off another proton"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2S"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SiO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHSO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg(HSO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg(HSO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaSO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "MgBr2"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "MgS"
+      ],
+      "note": "H2SO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Na2S"
+      ],
+      "note": "H2SO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NaBr"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Mg(HSO3)2"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgBr2"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2S"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2SO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHSO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(HSO3)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgBr2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgS"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Na2S"
+      ],
+      "note": "Mg sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Na2SO3"
+      ],
+      "note": "Mg sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Na2SiO3"
+      ],
+      "note": "Mg sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "NaBr"
+      ],
+      "note": "Mg sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "NaHSO3"
+      ],
+      "note": "Mg sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg(HSO3)2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(HSO3)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    }
+  ]
 }

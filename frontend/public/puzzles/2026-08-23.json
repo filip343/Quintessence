@@ -3934,5 +3934,1645 @@
         ]
       }
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cu"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cu(OH)2"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(OH)3"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiIO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(HS)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuBr2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuI2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HS)2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HS)3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeBr2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeBr3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeI2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeI3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2S"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HBr"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HI"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Li2S"
+      ],
+      "note": "Cu sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "LiBrO3"
+      ],
+      "note": "Cu sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "LiHS"
+      ],
+      "note": "Cu sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "LiI"
+      ],
+      "note": "Cu sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "LiIO3"
+      ],
+      "note": "Cu sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4Br"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4I"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Zn(HS)2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnBr2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnI2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "FeI3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "LiIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4Br"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4HS"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4I"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Fe(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeI3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "LiIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Fe(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "LiIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HS)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HS)3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeBr2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeBr3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeI2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeI3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Li2S"
+      ],
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "LiBrO3"
+      ],
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "LiHS"
+      ],
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "LiI"
+      ],
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "LiIO3"
+      ],
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4Br"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4I"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Zn(HS)2"
+      ],
+      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "ZnBr2"
+      ],
+      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "ZnI2"
+      ],
+      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "FeI3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4Br"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4HS"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4I"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4Br"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4HS"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4I"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "FeI3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "LiBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "LiIO3"
+      ],
+      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiBrO3"
+      ],
+      "note": "H2S is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiIO3"
+      ],
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4Br"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4I"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnBr2"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnI2"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "LiBrO3"
+      ],
+      "note": "HBr is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "LiI"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "LiIO3"
+      ],
+      "note": "HBr is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "NH4I"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "ZnI2"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "LiBrO3"
+      ],
+      "note": "HI is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "LiIO3"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "NH4Br"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "ZnBr2"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "I2",
+        "NH4Br"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "ZnBr2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Li",
+        "Li2S"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiBrO3"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiHS"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiI"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiIO3"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4Br"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4HS"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4I"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "Zn(HS)2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "ZnBr2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "ZnI2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiBrO3",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "Zn(HS)2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "ZnBr2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "ZnI2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NH4Br",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4Br",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4Br",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    }
+  ]
 }

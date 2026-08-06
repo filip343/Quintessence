@@ -1282,5 +1282,448 @@
       },
       "note": "MgSiO3 is insoluble"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ag",
+        "BaBr2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaCl2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaI2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2SiO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HCl"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2SiO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KBr"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KCl"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KI"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgBr2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgCl2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgI2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2SiO3"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KBr"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KCl"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KI"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KCl"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KI"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgBr2"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgCl2"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgI2"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "KBr"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "KI"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "MgBr2"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "MgI2"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "Mg"
+      ],
+      "note": "Mg sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "Mg"
+      ],
+      "note": "Mg sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Mg"
+      ],
+      "note": "Mg sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KI",
+        "Mg"
+      ],
+      "note": "Mg sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KI",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KI",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgBr2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgCl2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgI2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    }
+  ]
 }

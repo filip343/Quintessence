@@ -2371,5 +2371,651 @@
       },
       "note": "more base takes off another proton"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Al",
+        "Al(H2PO4)3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "Al(HS)3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "AlBr3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "AlI3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "Ba(H2PO4)2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "Ba(HS)2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "BaBr2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "BaI2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "BaS"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "K2HPO4"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "K2S"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "K3PO4"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KBr"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KH2PO4"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KHS"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KI"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "Ba(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "BaBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "BaI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(H2PO4)3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Ba(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "BaBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "BaI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al2(HPO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "Ba(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "Ba(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "BaI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "Ba(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "Ba(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "BaBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2HPO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2S"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K3PO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KBr"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KH2PO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KHS"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KI"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2HPO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K3PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KBr"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KH2PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KBr"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KI"
+      ],
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    }
+  ]
 }

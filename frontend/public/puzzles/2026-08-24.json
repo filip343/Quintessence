@@ -2485,5 +2485,812 @@
       },
       "note": "warm with alkali -- the test for an ammonium salt"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Li"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiIO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiClO"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiClO3"
+      ],
+      "note": "H2S is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "LiIO3"
+      ],
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4Cl"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4ClO"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4I"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(ClO)2"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnI2"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiClO3"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiI"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiIO3"
+      ],
+      "note": "HCl is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NH4I"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "ZnI2"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Li2S"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiClO3"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiHS"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiI"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiIO3"
+      ],
+      "note": "HClO is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NH4Cl"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NH4HS"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NH4I"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Zn(HS)2"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnCl2"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnI2"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnS"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "LiClO3"
+      ],
+      "note": "HI is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "LiIO3"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "NH4Cl"
+      ],
+      "note": "HI is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "ZnCl2"
+      ],
+      "note": "HI is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "I2",
+        "NH4Cl"
+      ],
+      "note": "I2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "ZnCl2"
+      ],
+      "note": "I2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Li",
+        "Li2S"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiClO"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiClO3"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiHS"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiI"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "LiIO3"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4Cl"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4ClO"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4HS"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "NH4I"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "Zn(ClO)2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "Zn(HS)2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "ZnCl2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li",
+        "ZnI2"
+      ],
+      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4ClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "NH4ClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4ClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4ClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiI",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4Cl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4ClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "Zn(ClO)2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "Zn(HS)2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "ZnCl2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "LiIO3",
+        "ZnI2"
+      ],
+      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4ClO",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Zn(OH)2"
+      ],
+      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    }
+  ]
 }

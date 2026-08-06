@@ -2116,5 +2116,483 @@
       },
       "note": "Cr(OH)3 precipitates"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cr"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cr(OH)3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Li2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "AgHS"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "AgHSO4"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cr"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cr(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cr(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cr(OH)3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Li2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgHS"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgHSO4"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr(HS)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr(HSO4)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr2(SO4)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2S"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2SO4"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li2S"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li2SO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "LiHS"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4HSO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag2SO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Cr(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Cr2(SO4)3"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Li2SO4"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "Cr(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "Cr2(SO4)3"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "Li2SO4"
+      ],
+      "note": "Ag2SO4 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHSO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HS)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HSO4)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr2(SO4)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Li2S"
+      ],
+      "note": "Cr sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Li2SO4"
+      ],
+      "note": "Cr sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "LiHS"
+      ],
+      "note": "Cr sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NH4HSO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "Li2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HSO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr(HSO4)3",
+        "Li2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HSO4)3",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HSO4)3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(OH)3",
+        "NH4HS"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cr(OH)3",
+        "NH4HSO4"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr2(SO4)3",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Li2SO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4HSO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2SO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2SO4",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Li2SO4",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "NH4OH"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
 }

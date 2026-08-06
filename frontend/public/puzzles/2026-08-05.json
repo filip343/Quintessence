@@ -1261,5 +1261,308 @@
         ]
       }
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Al(OH)3",
+        "NH4F"
+      ],
+      "note": "Al(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Al(OH)3",
+        "NH4I"
+      ],
+      "note": "Al(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "AlF3",
+        "FeI3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlF3",
+        "I2"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "AlF3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "AlF3",
+        "KIO3"
+      ],
+      "note": "Al(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AlF3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "KIO3"
+      ],
+      "note": "Al(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AlI3",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaI2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaI2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CaI2",
+        "KIO3"
+      ],
+      "note": "Ca(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaI2",
+        "KOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaI2",
+        "NH4OH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4F"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4I"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "I2"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "KIO3"
+      ],
+      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "KIO3"
+      ],
+      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KIO3"
+      ],
+      "note": "HF is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4I"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "KIO3"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "I2",
+        "KF"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "NH4F"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "K",
+        "KF"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KIO3"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4F"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4I"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KIO3",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KIO3",
+        "NH4I"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KIO3",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
 }

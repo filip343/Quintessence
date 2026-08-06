@@ -1631,5 +1631,217 @@
       },
       "note": "more base takes off another proton"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "FeF3"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li2HPO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li3PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiBr"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiH2PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Fe(H2PO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "FeF3"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)3",
+        "LiBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe2(HPO4)3",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "LiBr"
+      ],
+      "note": "LiF is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "LiH2PO4"
+      ],
+      "note": "LiF is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiBr"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2HPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li3PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiBr"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiH2PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    }
+  ]
 }

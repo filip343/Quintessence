@@ -3461,5 +3461,903 @@
       },
       "note": "warm with alkali -- the test for an ammonium salt"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cu"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cu(OH)2"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(OH)3"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cu"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cu(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Cu(OH)2"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "Fe(OH)3"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO4",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(HS)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(HSO4)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuSO4"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HS)2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HS)3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HSO4)2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HSO4)3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe2(SO4)3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeSO4"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2S"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2SO4"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "K2S"
+      ],
+      "note": "Cu sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "KHS"
+      ],
+      "note": "Cu sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "KHSO4"
+      ],
+      "note": "Cu sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4HSO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Fe(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Fe2(SO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Fe(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Fe2(SO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4HS"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4HSO4"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Fe(HS)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Fe(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HS)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HS)3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HSO4)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HSO4)3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe2(SO4)3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeSO4"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "K2S"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KHS"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KHSO4"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4HSO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Fe(HSO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Fe2(SO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)3",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "Fe2(SO4)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)3",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4HS"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4HSO4"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4HS"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4HSO4"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe2(SO4)3",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KHSO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4HSO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2S"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHSO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4HS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4HSO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NH4HSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
 }

@@ -1682,5 +1682,140 @@
       },
       "note": "Cr(OH)3 precipitates"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Cr"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Cr(OH)3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgHCO3"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ba(HCO3)2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr(HCO3)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2CO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2CO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4HCO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "Cr"
+      ],
+      "note": "Cr sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "NH4OH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2CO3"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HCO3)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2CO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NH4HCO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cr(OH)3",
+        "NH4HCO3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NH4HCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
 }

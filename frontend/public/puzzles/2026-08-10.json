@@ -1051,5 +1051,105 @@
       },
       "note": "warm with alkali -- the test for an ammonium salt"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "K2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SO3",
+        "KHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "KHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHSO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4HSO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2SiO3"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHSO3"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4HSO3"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NH4HSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO3",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
 }

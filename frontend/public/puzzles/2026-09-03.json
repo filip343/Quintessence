@@ -825,5 +825,35 @@
         ]
       }
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Cu(OH)2"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4HS"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    }
+  ]
 }

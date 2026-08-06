@@ -2654,5 +2654,945 @@
       },
       "note": "warm with alkali -- the test for an ammonium salt"
     }
-  }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ag",
+        "AgF"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgNO3"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cu(NO3)2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CuBr2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CuF2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Fe(NO3)2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Fe(NO3)3"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeBr2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeF2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeF3"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HF"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HNO3"
+      ],
+      "note": "HNO3 oxidises the metal rather than handing over hydrogen, which is outside what this game covers"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KBr"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KF"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Mg(NO3)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4Br"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4F"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4NO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "HNO3"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Cu(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Fe(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Fe(NO3)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "CuF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(NO3)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuBr2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuF2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(NO3)2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(NO3)3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeBr2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeF2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeF3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HF"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HNO3"
+      ],
+      "note": "HNO3 oxidises the metal rather than handing over hydrogen, which is outside what this game covers"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "KBr"
+      ],
+      "note": "Cu sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "KF"
+      ],
+      "note": "Cu sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Mg(NO3)2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4Br"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4F"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "NH4NO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4Br"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4F"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Cu(OH)2",
+        "NH4NO3"
+      ],
+      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Fe(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Fe(NO3)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HNO3"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Fe(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Fe(NO3)3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(NO3)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(NO3)3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeBr2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeF2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeF3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "HNO3"
+      ],
+      "note": "HNO3 oxidises the metal rather than handing over hydrogen, which is outside what this game covers"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KBr"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KF"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Mg(NO3)2"
+      ],
+      "note": "Fe sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4Br"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4F"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4NO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "FeBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4Br"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4F"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4NO3"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4Br"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4F"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4NO3"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "FeF3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "HNO3"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr2",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KBr"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(NO3)2"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4Br"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4NO3"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "KBr"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "NH4Br"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4NO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(NO3)2",
+        "NH4Br"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(OH)2",
+        "NH4Br"
+      ],
+      "note": "Mg(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Mg(OH)2",
+        "NH4F"
+      ],
+      "note": "Mg(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Mg(OH)2",
+        "NH4NO3"
+      ],
+      "note": "Mg(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    }
+  ]
 }
