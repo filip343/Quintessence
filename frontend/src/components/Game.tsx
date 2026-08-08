@@ -595,7 +595,9 @@ function Picker({
       <Mark>{reactions.length} products are possible</Mark>
       <p className="max-w-prose text-[15px] leading-snug">
         One move, one product. The engine works at formula level and has no
-        amounts, so it cannot know how much you added — you choose.
+        amounts, so it cannot know how much you added — you choose. Want the
+        lot? Take them all; it costs a move each, the same as picking them one
+        at a time.
       </p>
       <div className="flex flex-col gap-2">
         {reactions.map((reaction, index) => (
@@ -612,13 +614,20 @@ function Picker({
           </button>
         ))}
       </div>
-      <button
-        type="button"
-        onClick={() => dispatch({ type: "cancel" })}
-        className="self-start font-mono text-[11px] uppercase tracking-[0.12em] text-muted underline decoration-rule underline-offset-4 hover:text-ink"
-      >
-        change my mind — costs no move
-      </button>
+      {/* Below the list rather than beside it: the products are the decision,
+          and a shortcut past a decision should not be the first thing read. */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <Key onClick={() => dispatch({ type: "chooseAll" })}>
+          take all {reactions.length} — {reactions.length} moves
+        </Key>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "cancel" })}
+          className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted underline decoration-rule underline-offset-4 hover:text-ink"
+        >
+          change my mind — costs no move
+        </button>
+      </div>
     </section>
   );
 }

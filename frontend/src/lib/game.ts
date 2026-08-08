@@ -7,7 +7,10 @@
  * - **One move, one product.** A triprotic acid with a base gives three salts
  *   and the engine offers all of them, because it has no amounts. Taking all
  *   three would hand over three species for one move and score a way nobody
- *   chose, so a multi-product mix pauses for a choice.
+ *   chose, so a multi-product mix pauses for a choice. Taking the whole set is
+ *   allowed — it is tedious to click three salts one at a time when you want
+ *   all three — but it is priced at a move each, which is what the rule was
+ *   ever about: one move buys one species.
  * - **The target is a trophy, not a reagent.** `Na2SO4 + H2SO4 -> NaHSO4` then
  *   `NaHSO4 + NaOH -> Na2SO4` is two real reactions and a fake way: it consumes
  *   the target to make the target. Any route needing the target is circular, so
@@ -73,6 +76,7 @@ export type Action =
   | { type: "mix" }
   | { type: "decompose"; formula: string }
   | { type: "choose"; index: number }
+  | { type: "chooseAll" }
   | { type: "cancel" }
   | { type: "reveal" }
   | { type: "teach"; on: boolean }
@@ -168,6 +172,33 @@ export function reducer(
       const chosen = state.pending?.[action.index];
       if (!chosen) return state;
       return apply({ ...state, pending: null }, bundle, chosen);
+    }
+
+    case "chooseAll": {
+      const offered = state.pending;
+      if (!offered || offered.length < 2) return state;
+
+      // Every product is one `apply`, so this is exactly the same sequence of
+      // moves as clicking them one at a time — same move count, same log, and
+      // therefore the same thing to replay. It buys the clicks back, not the
+      // moves. Order is the order shown, which is the order the bundle lists.
+      let next: GameState = { ...state, pending: null };
+      for (const reaction of offered) next = apply(next, bundle, reaction);
+
+      // `last` is one reaction and the loop leaves it on whichever product came
+      // last, so a way scored in the middle of the batch would announce nothing.
+      // Promote the first scoring product instead: the rack would show it either
+      // way, but the point of that banner is to name the kind just found.
+      const scored = next.order.slice(state.order.length);
+      const notable = offered.find((reaction) => scored.includes(reaction.rule));
+
+      return {
+        ...next,
+        last: notable ? { reaction: notable, scored: true, repeat: false } : next.last,
+        // Says what it cost. Silence here would read as three species for the
+        // one move the player thinks they made.
+        message: `Took all ${offered.length} products — ${offered.length} moves, one each.`,
+      };
     }
   }
 }
