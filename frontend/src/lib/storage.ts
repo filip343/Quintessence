@@ -197,6 +197,94 @@ function writeStreak(streak: Streak): Streak {
 }
 
 /**
+ * The run as it stands *now*, which is not the same as the number on disk.
+ *
+ * `recordSolve` only ever runs when a day is solved, so nothing writes down
+ * that a run has ended — miss two days and storage still says "3". The stored
+ * number is the length of the run at its last solve; whether that run is still
+ * alive is a question about the clock, and only the reader has the clock.
+ *
+ * Alive means the last solve was today or yesterday. Yesterday counts because
+ * today is still playable: that is the state a streak display exists for.
+ */
+export function currentStreak(streak: Streak | null, today: string): number {
+  if (!streak) return 0;
+  if (streak.last === today || streak.last === dayBefore(today)) {
+    return streak.current;
+  }
+  return 0;
+}
+
+const RESULTS_KEY = `${PREFIX}:results`;
+
+export interface Result {
+  /** Whether every kind the day asked for was found. */
+  solved: boolean;
+  /** Kinds found. May exceed the ask — bonus ways are counted here too. */
+  ways: number;
+  moves: number;
+}
+
+/**
+ * How each finished day went, one entry per day.
+ *
+ * Its own key for the same reason the streak has one: it outlives any single
+ * day, so putting it on a save would mean bumping `SAVE_VERSION` and dropping
+ * every game in progress. Nothing derived from a save is stored -- a save is
+ * still only a move log -- because this is a different question. A save answers
+ * "where was I", and replaying it is the honest way to find out; this answers
+ * "what have I done", which no single save can, and which the home page would
+ * otherwise have to reconstruct by replaying a year of them.
+ *
+ * Bounded by the number of days that exist, so it cannot run away.
+ */
+export function readResults(): Record<string, Result> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = window.localStorage.getItem(RESULTS_KEY);
+    if (!raw) return {};
+    const value: unknown = JSON.parse(raw);
+    if (typeof value !== "object" || value === null) return {};
+    const results: Record<string, Result> = {};
+    for (const [day, result] of Object.entries(value as Record<string, unknown>)) {
+      if (isResult(result)) results[day] = result;
+    }
+    return results;
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Write down how a day ended. The first outcome for a day is the one that
+ * counts, matching `claimOutcome` -- someone who gives up, starts over and then
+ * solves it has read the answer sheet, and the ledger should not say otherwise.
+ */
+export function recordResult(day: string, result: Result): void {
+  if (typeof window === "undefined") return;
+  const results = readResults();
+  if (day in results) return;
+  try {
+    window.localStorage.setItem(
+      RESULTS_KEY,
+      JSON.stringify({ ...results, [day]: result }),
+    );
+  } catch {
+    // Storage off or full. The day still played; it just goes uncounted.
+  }
+}
+
+function isResult(value: unknown): value is Result {
+  if (typeof value !== "object" || value === null) return false;
+  const result = value as Partial<Result>;
+  return (
+    typeof result.solved === "boolean" &&
+    typeof result.ways === "number" &&
+    typeof result.moves === "number"
+  );
+}
+
+/**
  * True the first time it is asked for a given key, false ever after.
  *
  * Everything reported here is reported once, and the guard has to be written

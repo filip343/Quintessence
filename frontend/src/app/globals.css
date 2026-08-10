@@ -36,6 +36,66 @@
 }
 
 /* --------------------------------------------------------------------------
+   shadcn/ui, wearing this palette.
+
+   The components are source in `components/ui`, and they address colour by
+   shadcn's names. Rather than keep a second palette for them to read, the names
+   are aliased onto the one above — so a Card is panel over rule, a Button is
+   brass, and both follow the theme toggle without knowing it exists.
+
+   One collision is worth naming. shadcn's `muted` is a *surface* and its text
+   is `muted-foreground`; here `--muted` has always been the muted **text**, and
+   `text-muted` is written in a few dozen places. So `--color-muted` keeps its
+   meaning, `--color-muted-foreground` is aliased to the same value, and the two
+   components that wanted `bg-muted` as a surface were edited to say `secondary`
+   instead — which is the point of vendoring the source rather than importing it.
+   -------------------------------------------------------------------------- */
+
+@theme inline {
+  --color-background: var(--bench);
+  --color-foreground: var(--ink);
+  --color-card: var(--panel);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--panel);
+  --color-popover-foreground: var(--ink);
+
+  --color-primary: var(--brass-solid);
+  --color-primary-foreground: var(--brass-ink);
+
+  --color-secondary: var(--well);
+  --color-secondary-foreground: var(--ink);
+  --color-accent: var(--well-brass);
+  --color-accent-foreground: var(--ink);
+
+  --color-muted-foreground: var(--muted);
+  --color-destructive: var(--danger);
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: var(--rule);
+  --color-input: var(--rule);
+  --color-ring: var(--brass-lift);
+
+  /* Matches `rounded-lg`, which is what the board is built from. */
+  --radius: 0.5rem;
+}
+
+/* Vendored components carry `dark:` utilities, and Tailwind's own dark variant
+   keys off the OS alone — which would let a component disagree with the toggle,
+   the exact failure the theme block below is arranged to prevent. Redefining
+   the variant to the same two conditions keeps that promise: there is still
+   only one answer to "is this dark", and every component reads it. */
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+  &:where(:root[data-theme="dark"], :root[data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+/* --------------------------------------------------------------------------
    Theme.
 
    Everything that differs between light and dark is a variable here — the
@@ -158,6 +218,18 @@
 
   --tint-fill-hero: 36%;
   --tint-edge-hero: 64%;
+}
+
+/* Derived surfaces.
+   Written once rather than per theme, because each is expressed in terms of the
+   palette above and so flips with it — which is the same promise the theme
+   blocks make, kept without a fourth copy of it. They exist for the vendored
+   components: a recessed fill (skeletons, quiet buttons), the same one tinted
+   brass, and a danger colour nothing on the site currently reaches. */
+:root {
+  --well: color-mix(in oklab, var(--ink) 7%, var(--panel));
+  --well-brass: color-mix(in oklab, var(--brass) 12%, var(--panel));
+  --danger: color-mix(in oklab, #b3261e 80%, var(--ink));
 }
 
 /* The ground stays plain on purpose. A ruled bench grid was the obvious move
@@ -319,6 +391,47 @@ body {
   animation: settle 260ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
 }
 
+/* The specimen on the front page, lifting the way a label curls off a bench.
+   Slow enough to be felt rather than watched, and the only perpetual motion on
+   the site — `transform` only, so it stays on the compositor.
+   The rotation is repeated in both frames because a transform is replaced, not
+   merged: leaving it out of the keyframes would straighten the card as soon as
+   the animation took hold. */
+@keyframes drift {
+  0%,
+  100% {
+    transform: rotate(-1.6deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-1.6deg) translateY(-7px);
+  }
+}
+
+.drift {
+  animation: drift 9s ease-in-out infinite;
+}
+
+/* The reagent shelf. Bottles standing on a plank rock on their bases — they do
+   not bob, which is what a floating one would do and what would give the whole
+   row away as decoration. Each piece carries its own period and a negative
+   delay, so the shelf is already mid-swing on the first frame rather than
+   starting from rest in unison. */
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(calc(var(--tilt, 0deg) - 0.7deg));
+  }
+  50% {
+    transform: rotate(calc(var(--tilt, 0deg) + 0.7deg));
+  }
+}
+
+.sway {
+  transform-origin: bottom center;
+  animation: sway var(--sway-period, 13s) ease-in-out infinite;
+  animation-delay: var(--sway-delay, 0s);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -326,6 +439,11 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    /* Delays too, or a staggered reveal still staggers: the duration collapses
+       but each element waits out its offset invisibly and then pops in, which
+       is the jarring version of the effect this rule exists to switch off. */
+    animation-delay: 0s !important;
+    transition-delay: 0s !important;
   }
 }
 

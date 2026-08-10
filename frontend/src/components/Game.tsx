@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import type { PuzzleBundle, ReactionRecord } from "@/lib/puzzle";
 import { missFor, reactionsFor, ruleName, speciesClass } from "@/lib/puzzle";
@@ -18,6 +19,7 @@ import {
   clear,
   load,
   markTutorialSeen,
+  recordResult,
   recordSolve,
   store,
   tutorialSeen,
@@ -26,6 +28,7 @@ import { track } from "@/lib/analytics";
 import { Chip } from "./Chip";
 import { Equation, Formula } from "./Formula";
 import { Legend } from "./Legend";
+import { Mark } from "./Mark";
 import { Tutorial } from "./Tutorial";
 
 const GRADE_NOTE: Record<string, string> = {
@@ -106,6 +109,13 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
       moves: state.moves,
       ways: state.order.length,
     };
+    // The home page's ledger. Under the same claim as everything else here, so
+    // what it counts is what the streak counted and what was reported.
+    recordResult(day, {
+      solved: complete,
+      ways: state.order.length,
+      moves: state.moves,
+    });
     if (complete) {
       track("solved", { ...shape, streak: recordSolve(day).current });
     } else {
@@ -316,7 +326,15 @@ function Header({
   return (
     <header className="flex flex-col gap-4">
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-        <span className="font-semibold text-brass">Quintessence</span>
+        {/* The wordmark is the way out. It is the one thing on this page that
+            is always in the same place, and a board with no exit strands
+            anybody who came to check a streak rather than to play. */}
+        <Link
+          href="/"
+          className="font-semibold text-brass hover:underline hover:decoration-current hover:underline-offset-4"
+        >
+          Quintessence
+        </Link>
         {day && <span>{day}</span>}
         <span aria-hidden>·</span>
         <span>{bundle.grade}</span>
@@ -718,32 +736,6 @@ function Trail({
         )}
       </ol>
     </section>
-  );
-}
-
-/**
- * The one heading style: a mono rule, set small and wide.
- *
- * In brass by default. These sit above every section on the page, so they are
- * the cheapest place to get the accent out of the rack and onto the rest of
- * the board — and a heading is chrome, which means it can take a hue without
- * saying anything about chemistry. `tone` is for the two sections that have a
- * colour of their own already: what worked is flask green, what did not is
- * left grey, because absence should not be the brightest thing on the screen.
- */
-function Mark({
-  children,
-  tone = "brass",
-}: {
-  children: React.ReactNode;
-  tone?: "brass" | "flask" | "muted";
-}) {
-  const colour =
-    tone === "flask" ? "text-flask" : tone === "muted" ? "text-muted" : "text-brass";
-  return (
-    <h2 className={`font-mono text-[11px] uppercase tracking-[0.16em] ${colour}`}>
-      {children}
-    </h2>
   );
 }
 

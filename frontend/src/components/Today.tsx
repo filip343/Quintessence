@@ -21,30 +21,17 @@
  * which is what lets two people compare a score without first agreeing on whose
  * midnight counts. `page.tsx` always meant this -- it used `toISOString()` --
  * and this only moves where it is evaluated, not what it decides.
+ *
+ * The picking itself lives in `lib/day`, because the home page has to reach the
+ * same answer and a countdown that disagrees with the board about which day it
+ * is would be worse than no countdown.
  */
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { pick, utcToday } from "@/lib/day";
 import type { PuzzleBundle } from "@/lib/puzzle";
 import { Game } from "./Game";
-
-/** The UTC date, `YYYY-MM-DD`. The one clock the whole game agrees on. */
-function utcToday(): string {
-  return new Date().toISOString().slice(0, 10);
-}
-
-/**
- * The most recent day that is not in the future.
- *
- * Falling back to the earliest day rather than to nothing is deliberate: a
- * calendar that has run out should keep serving a playable puzzle instead of an
- * error page. `verify_bundles.py` is what notices the runway is short, because
- * that is a job for CI and not for a player's browser.
- */
-function pick(days: string[], now: string): string | undefined {
-  const sorted = [...days].sort();
-  const available = sorted.filter((day) => day <= now);
-  return available.at(-1) ?? sorted.at(0);
-}
 
 export function Today({ days }: { days: string[] }) {
   const [puzzle, setPuzzle] = useState<{ day: string; bundle: PuzzleBundle } | null>(
@@ -86,6 +73,12 @@ export function Today({ days }: { days: string[] }) {
           The bench is set but the reagents never arrived. Reloading usually
           does it.
         </p>
+        <Link
+          href="/"
+          className="w-fit font-mono text-[11px] uppercase tracking-[0.12em] text-muted underline decoration-rule underline-offset-4 hover:text-ink"
+        >
+          back to the front
+        </Link>
       </Shell>
     );
   }
@@ -108,9 +101,12 @@ export function Today({ days }: { days: string[] }) {
 function Shell({ children }: { children: React.ReactNode }) {
   return (
     <main className="mx-auto flex w-full max-w-352 flex-col gap-3 px-4 py-8 sm:px-6">
-      <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-brass">
+      <Link
+        href="/"
+        className="w-fit font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-brass hover:underline hover:decoration-current hover:underline-offset-4"
+      >
         Quintessence
-      </span>
+      </Link>
       {children}
     </main>
   );
