@@ -75,10 +75,8 @@ export const RULE_NAMES: Record<string, string> = {
   oxide_with_oxide: "basic oxide + acidic oxide",
   metal_with_acid: "metal + acid",
   acid_displacement: "stronger acid drives out weaker",
-  ammonia_with_acid: "ammonia + acid",
-  ammonia_liberation: "ammonium salt + alkali",
   double_displacement: "salt + salt, something precipitates",
-  hydroxide_precipitation: "salt + alkali, hydroxide drops out",
+  salt_with_base: "salt + alkali, something leaves solution",
   metal_displacement: "more active metal pushes one out",
   halogen_displacement: "more reactive halogen pushes one out",
   halogen_disproportionation: "halogen + alkali",
@@ -91,6 +89,20 @@ export const RULE_NAMES: Record<string, string> = {
   unstable_decomposition: "it falls apart on its own",
   carbonate_decomposition: "heating a carbonate",
   hydrogencarbonate_decomposition: "heating a hydrogencarbonate",
+
+  // Retired: the engine no longer emits these. Ammonia's two reactions used to
+  // be scored as rules of their own, which handed most days a free way — NH4OH
+  // is ammonia plus water, so a palette with NH3 could reach both halves of the
+  // same idea and get credit twice. They are now catalogued as the rules they
+  // are special cases of: `neutralisation` and `salt_with_base`.
+  //
+  // Days dealt before the merge are frozen — regenerating one would discard the
+  // save of anyone playing it — so their bundles still carry these three, and
+  // an end screen that fell back to "ammonia liberation" would be the one
+  // screen in the game that reads like a database.
+  ammonia_with_acid: "ammonia + acid",
+  ammonia_liberation: "ammonium salt + alkali",
+  hydroxide_precipitation: "salt + alkali, hydroxide drops out",
 };
 
 export function ruleName(slug: string): string {

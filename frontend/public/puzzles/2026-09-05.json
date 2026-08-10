@@ -1,129 +1,75 @@
 {
   "version": 3,
-  "target": "NaHCO3",
-  "name": "sodium hydrogencarbonate",
+  "target": "NaBr",
+  "name": "sodium bromide",
   "grade": "medium",
   "want": 5,
-  "ways": 5,
+  "ways": 8,
   "cut": 1,
   "palette": [
-    "Ag2O",
-    "CO2",
-    "Cr",
+    "Br2",
+    "CuBr2",
     "H2O",
-    "NH3",
-    "Na2O",
+    "Na",
+    "Na2S",
+    "NaI",
     "NaOH"
   ],
   "species": {
-    "(NH4)2CO3": {
-      "name": "ammonium carbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "CO3": -2
-      }
-    },
-    "Ag": {
-      "name": "silver",
+    "Br2": {
+      "name": "bromine",
       "class": "element",
-      "state": "s",
+      "state": "l",
       "common": true
     },
-    "Ag2CO3": {
-      "name": "silver carbonate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "CO3": -2
-      }
-    },
-    "Ag2O": {
-      "name": "silver oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "AgH": {
-      "name": "silver hydride",
+    "Cu(HS)2": {
+      "name": "copper(II) hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Ag": 1,
-        "H": -1
+        "Cu": 2,
+        "HS": -1
       }
     },
-    "AgHCO3": {
-      "name": "silver hydrogencarbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "HCO3": -1
-      }
-    },
-    "CO2": {
-      "name": "carbon dioxide",
-      "class": "acidic oxide",
-      "state": "g",
-      "common": true
-    },
-    "Cr": {
-      "name": "chromium",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Cr(HCO3)3": {
-      "name": "chromium(III) hydrogencarbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Cr": 3,
-        "HCO3": -1
-      }
-    },
-    "Cr(OH)3": {
-      "name": "chromium(III) hydroxide",
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
       "class": "base",
       "state": "s",
-      "common": false,
+      "common": true,
       "ions": {
-        "Cr": 3,
+        "Cu": 2,
         "OH": -1
       }
     },
-    "Cr2(CO3)3": {
-      "name": "chromium(III) carbonate",
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuI2": {
+      "name": "copper(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "I": -1
+      }
+    },
+    "CuS": {
+      "name": "copper(II) sulfide",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Cr": 3,
-        "CO3": -2
-      }
-    },
-    "Cr2O3": {
-      "name": "chromium(III) oxide",
-      "class": "amphoteric oxide",
-      "state": "s",
-      "common": true
-    },
-    "CrH3": {
-      "name": "chromium(III) hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Cr": 3,
-        "H": -1
+        "Cu": 2,
+        "S": -2
       }
     },
     "H2": {
@@ -132,72 +78,122 @@
       "state": "g",
       "common": true
     },
-    "H2CO3": {
-      "name": "carbonic acid",
-      "class": "acid",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "H": 1,
-        "CO3": -2
-      }
-    },
     "H2O": {
       "name": "water",
       "class": "water",
       "state": "l",
       "common": true
     },
-    "NH3": {
-      "name": "ammonia",
-      "class": "hydride",
-      "state": "g",
-      "common": true
-    },
-    "NH4HCO3": {
-      "name": "ammonium hydrogencarbonate",
-      "class": "salt",
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
-        "HCO3": -1
+        "H": 1,
+        "S": -2
       }
     },
-    "NH4OH": {
-      "name": "ammonia solution",
-      "class": "base",
+    "HBr": {
+      "name": "hydrobromic acid",
+      "class": "acid",
       "state": "aq",
-      "common": true,
+      "common": false,
       "ions": {
-        "NH4": 1,
-        "OH": -1
+        "H": 1,
+        "Br": -1
       }
     },
-    "Na2CO3": {
-      "name": "sodium carbonate",
-      "class": "salt",
+    "HI": {
+      "name": "hydroiodic acid",
+      "class": "acid",
       "state": "aq",
-      "common": true,
+      "common": false,
       "ions": {
-        "Na": 1,
-        "CO3": -2
+        "H": 1,
+        "I": -1
       }
     },
-    "Na2O": {
-      "name": "sodium oxide",
-      "class": "basic oxide",
+    "I2": {
+      "name": "iodine",
+      "class": "element",
       "state": "s",
       "common": true
     },
-    "NaHCO3": {
-      "name": "sodium hydrogencarbonate",
+    "Na": {
+      "name": "sodium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Na2S": {
+      "name": "sodium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Na": 1,
-        "HCO3": -1
+        "S": -2
+      }
+    },
+    "NaBr": {
+      "name": "sodium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaBrO3": {
+      "name": "sodium bromate",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "BrO3": -1
+      }
+    },
+    "NaH": {
+      "name": "sodium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "H": -1
+      }
+    },
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "HS": -1
+      }
+    },
+    "NaI": {
+      "name": "sodium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "I": -1
+      }
+    },
+    "NaIO3": {
+      "name": "sodium iodate",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "IO3": -1
       }
     },
     "NaOH": {
@@ -214,141 +210,195 @@
   "reactions": [
     {
       "substrates": [
-        "Ag2O",
-        "CO2"
+        "Na",
+        "Br2"
       ],
       "products": [
-        "Ag2CO3"
+        "NaBr"
       ],
-      "rule": "oxide_with_oxide",
-      "equation": "Ag2O + CO2 -> Ag2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ag2O",
-        "Cr"
-      ],
-      "products": [
-        "Cr2O3",
-        "Ag"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "3 Ag2O + 2 Cr -> Cr2O3 + 6 Ag",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Cr is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "CO2",
-        "H2O"
-      ],
-      "products": [
-        "H2CO3"
-      ],
-      "rule": "anhydride_hydration",
-      "equation": "CO2 + H2O -> H2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to CO2 + H2O"
-    },
-    {
-      "substrates": [
-        "Na2O",
-        "CO2"
-      ],
-      "products": [
-        "Na2CO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Na2O + CO2 -> Na2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NaOH",
-        "CO2"
-      ],
-      "products": [
-        "Na2CO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 NaOH + CO2 -> Na2CO3 + H2O",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Na + Br2 -> 2 NaBr",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
-          1,
-          1
+          2
         ]
       }
     },
     {
       "substrates": [
-        "NH3",
-        "H2O"
+        "Br2",
+        "NaI"
       ],
       "products": [
-        "NH4OH"
+        "NaBr",
+        "I2"
       ],
-      "rule": "hydride_dissolution",
-      "equation": "NH3 + H2O -> NH4OH",
+      "rule": "halogen_displacement",
+      "equation": "Br2 + 2 NaI -> 2 NaBr + I2",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
+          2,
           1
         ]
       },
-      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+      "note": "Br is more reactive than I"
     },
     {
       "substrates": [
-        "Na2O",
-        "H2O"
-      ],
-      "products": [
+        "Br2",
         "NaOH"
       ],
-      "rule": "basic_oxide_hydration",
-      "equation": "Na2O + H2O -> 2 NaOH",
+      "products": [
+        "NaBrO3",
+        "NaBr",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Br2 + 6 NaOH -> NaBrO3 + 5 NaBr + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Na2S"
+      ],
+      "products": [
+        "CuS",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuBr2 + Na2S -> CuS + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Na",
+        "H2O"
+      ],
+      "products": [
+        "NaOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 Na + 2 H2O -> 2 NaOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na",
+        "I2"
+      ],
+      "products": [
+        "NaI"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Na + I2 -> 2 NaI",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "I2",
+        "NaOH"
+      ],
+      "products": [
+        "NaIO3",
+        "NaI",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 I2 + 6 NaOH -> NaIO3 + 5 NaI + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "H2",
+        "I2"
+      ],
+      "products": [
+        "HI"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + I2 -> 2 HI",
       "coefficients": {
         "substrates": [
           1,
@@ -361,14 +411,14 @@
     },
     {
       "substrates": [
-        "Ag2CO3",
-        "H2CO3"
+        "H2",
+        "Br2"
       ],
       "products": [
-        "AgHCO3"
+        "HBr"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Ag2CO3 + H2CO3 -> 2 AgHCO3",
+      "rule": "hydrogenation",
+      "equation": "H2 + Br2 -> 2 HBr",
       "coefficients": {
         "substrates": [
           1,
@@ -377,130 +427,171 @@
         "products": [
           2
         ]
-      },
-      "note": "the acid protonates its own salt"
+      }
     },
     {
       "substrates": [
-        "H2CO3"
+        "Na",
+        "H2"
       ],
       "products": [
-        "CO2",
-        "H2O"
+        "NaH"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "H2CO3 -> CO2 + H2O",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Na + H2 -> 2 NaH",
       "coefficients": {
         "substrates": [
+          2,
           1
         ],
         "products": [
-          1,
-          1
+          2
         ]
-      },
-      "note": "does not survive in solution"
+      }
     },
     {
       "substrates": [
-        "H2CO3",
-        "Ag2O"
+        "Na",
+        "HI"
       ],
       "products": [
-        "Ag2CO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + Ag2O -> Ag2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Ag2CO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "Cr",
-        "H2CO3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
+        "NaI",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Cr + 3 H2CO3 -> Cr2(CO3)3 + 3 H2",
+      "equation": "2 Na + 2 HI -> 2 NaI + H2",
       "coefficients": {
         "substrates": [
           2,
-          3
+          2
         ],
         "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Cr2(CO3)3 is insoluble"
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2CO3"
-      ],
-      "products": [
-        "(NH4)2CO3"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2CO3 -> (NH4)2CO3",
-      "coefficients": {
-        "substrates": [
           2,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "H2CO3",
-        "Na2O"
-      ],
-      "products": [
-        "Na2CO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + Na2O -> Na2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "H2CO3",
+        "Na2S",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "NaI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2S + 2 HI -> H2S + 2 NaI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
         "NaOH"
       ],
       "products": [
-        "Na2CO3",
+        "NaI",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + 2 NaOH -> Na2CO3 + 2 H2O",
+      "equation": "HI + NaOH -> NaI + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HI -> H2S + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Cu(OH)2 -> CuI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na",
+        "HBr"
+      ],
+      "products": [
+        "NaBr",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + 2 HBr -> 2 NaBr + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "NaBr"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2S + 2 HBr -> H2S + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -514,15 +605,146 @@
     },
     {
       "substrates": [
-        "H2CO3",
+        "HBr",
         "NaOH"
       ],
       "products": [
-        "NaHCO3",
+        "NaBr",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HBr + NaOH -> NaBr + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HBr -> H2S + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuBr2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HBr + Cu(OH)2 -> CuBr2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na",
+        "H2S"
+      ],
+      "products": [
+        "Na2S",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + H2S -> Na2S + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "NaHS",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
+      "equation": "H2S + NaOH -> NaHS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -537,82 +759,85 @@
     },
     {
       "substrates": [
-        "Na2CO3",
-        "H2CO3"
+        "CuS",
+        "H2S"
       ],
       "products": [
-        "NaHCO3"
+        "Cu(HS)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
+      "equation": "CuS + H2S -> Cu(HS)2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2
+          1
         ]
       },
       "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
-        "H2CO3",
-        "NH4OH"
+        "H2S",
+        "Cu(OH)2"
       ],
       "products": [
-        "(NH4)2CO3",
+        "CuS",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + 2 NH4OH -> (NH4)2CO3 + 2 H2O",
+      "equation": "H2S + Cu(OH)2 -> CuS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
           1,
           2
         ]
-      }
+      },
+      "note": "CuS is insoluble"
     },
     {
       "substrates": [
-        "H2CO3",
-        "NH4OH"
+        "H2S",
+        "Cu(OH)2"
       ],
       "products": [
-        "NH4HCO3",
+        "Cu(HS)2",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H2CO3 + NH4OH -> NH4HCO3 + H2O",
+      "equation": "2 H2S + Cu(OH)2 -> Cu(HS)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
           1,
-          1
+          2
         ]
       },
       "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
-        "NH4OH"
+        "Br2",
+        "CuI2"
       ],
       "products": [
-        "NH3",
-        "H2O"
+        "CuBr2",
+        "I2"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "NH4OH -> NH3 + H2O",
+      "rule": "halogen_displacement",
+      "equation": "Br2 + CuI2 -> CuBr2 + I2",
       "coefficients": {
         "substrates": [
+          1,
           1
         ],
         "products": [
@@ -620,68 +845,22 @@
           1
         ]
       },
-      "note": "does not survive in solution"
+      "note": "Br is more reactive than I"
     },
     {
       "substrates": [
-        "AgHCO3"
+        "CuI2",
+        "Na2S"
       ],
       "products": [
-        "Ag2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 AgHCO3 -> Ag2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "Cr",
-        "AgHCO3"
-      ],
-      "products": [
-        "Cr(HCO3)3",
-        "Ag"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Cr + 3 AgHCO3 -> Cr(HCO3)3 + 3 Ag",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Cr is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "AgHCO3",
-        "Na2CO3"
-      ],
-      "products": [
-        "Ag2CO3",
-        "NaHCO3"
+        "CuS",
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "2 AgHCO3 + Na2CO3 -> Ag2CO3 + 2 NaHCO3",
+      "equation": "CuI2 + Na2S -> CuS + 2 NaI",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
@@ -689,722 +868,611 @@
           2
         ]
       },
-      "note": "Ag2CO3 precipitates"
+      "note": "CuS precipitates"
     },
     {
       "substrates": [
-        "AgHCO3",
-        "(NH4)2CO3"
+        "CuI2",
+        "NaOH"
       ],
       "products": [
-        "Ag2CO3",
-        "NH4HCO3"
+        "Cu(OH)2",
+        "NaI"
       ],
-      "rule": "double_displacement",
-      "equation": "2 AgHCO3 + (NH4)2CO3 -> Ag2CO3 + 2 NH4HCO3",
+      "rule": "salt_with_base",
+      "equation": "CuI2 + 2 NaOH -> Cu(OH)2 + 2 NaI",
       "coefficients": {
         "substrates": [
-          2,
-          1
+          1,
+          2
         ],
         "products": [
           1,
           2
         ]
       },
-      "note": "Ag2CO3 precipitates"
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
-        "Cr2(CO3)3"
+        "NaHS",
+        "NaOH"
       ],
       "products": [
-        "Cr2O3",
-        "CO2"
-      ],
-      "rule": "carbonate_decomposition",
-      "equation": "Cr2(CO3)3 -> Cr2O3 + 3 CO2",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "needs heating"
-    },
-    {
-      "substrates": [
-        "Cr2(CO3)3",
-        "H2CO3"
-      ],
-      "products": [
-        "Cr(HCO3)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Cr2(CO3)3 + 3 H2CO3 -> 2 Cr(HCO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Ag2O",
-        "H2"
-      ],
-      "products": [
-        "Ag",
+        "Na2S",
         "H2O"
       ],
-      "rule": "oxide_reduction",
-      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "rule": "acid_salt_with_base",
+      "equation": "NaHS + NaOH -> Na2S + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2,
+          1,
           1
         ]
       },
-      "note": "hydrogen reduces oxides below Zn in the activity series"
+      "note": "more base takes off another proton"
     },
     {
       "substrates": [
-        "Cr",
-        "H2"
+        "NaHS",
+        "HI"
       ],
       "products": [
-        "CrH3"
+        "H2S",
+        "NaI"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Cr + 3 H2 -> 2 CrH3",
+      "rule": "acid_displacement",
+      "equation": "NaHS + HI -> H2S + NaI",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
-          2
+          1,
+          1
         ]
       }
     },
     {
       "substrates": [
-        "Cr2O3",
-        "H2"
+        "NaHS",
+        "HBr"
       ],
       "products": [
-        "Cr",
-        "H2O"
+        "H2S",
+        "NaBr"
       ],
-      "rule": "oxide_reduction",
-      "equation": "Cr2O3 + 3 H2 -> 2 Cr + 3 H2O",
+      "rule": "acid_displacement",
+      "equation": "NaHS + HBr -> H2S + NaBr",
       "coefficients": {
         "substrates": [
           1,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "hydrogen reduces oxides below Zn in the activity series"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "H2"
-      ],
-      "products": [
-        "AgH"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Ag + H2 -> 2 AgH",
-      "coefficients": {
-        "substrates": [
-          2,
           1
         ],
         "products": [
-          2
+          1,
+          1
         ]
       }
     },
     {
       "substrates": [
-        "(NH4)2CO3",
-        "NaOH"
+        "Cu(HS)2",
+        "Na2S"
       ],
       "products": [
-        "NH3",
-        "Na2CO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2CO3 + 2 NaOH -> 2 NH3 + Na2CO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2CO3",
-        "H2CO3"
-      ],
-      "products": [
-        "NH4HCO3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)2CO3 + H2CO3 -> 2 NH4HCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "NaHCO3"
-      ],
-      "products": [
-        "Na2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 NaHCO3 -> Na2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "NaHCO3",
-        "NaOH"
-      ],
-      "products": [
-        "Na2CO3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NaHCO3 + NaOH -> Na2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4HCO3"
-      ],
-      "products": [
-        "(NH4)2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 NH4HCO3 -> (NH4)2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "NH4HCO3",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "NaHCO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HCO3 + NaOH -> NH3 + NaHCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4HCO3",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2CO3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4HCO3 + NH4OH -> (NH4)2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cr(HCO3)3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 Cr(HCO3)3 -> Cr2(CO3)3 + 3 CO2 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          3,
-          3
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "Cr(HCO3)3",
-        "NaOH"
-      ],
-      "products": [
-        "Cr(OH)3",
-        "NaHCO3"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Cr(HCO3)3 + 3 NaOH -> Cr(OH)3 + 3 NaHCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Cr(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Cr(HCO3)3",
-        "Na2CO3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
-        "NaHCO3"
+        "CuS",
+        "NaHS"
       ],
       "rule": "double_displacement",
-      "equation": "2 Cr(HCO3)3 + 3 Na2CO3 -> Cr2(CO3)3 + 6 NaHCO3",
+      "equation": "Cu(HS)2 + Na2S -> CuS + 2 NaHS",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
           1,
-          6
+          2
         ]
       },
-      "note": "Cr2(CO3)3 precipitates"
+      "note": "CuS precipitates"
     },
     {
       "substrates": [
-        "Cr(HCO3)3",
-        "NH4OH"
+        "Cu(HS)2",
+        "NaOH"
       ],
       "products": [
-        "Cr(OH)3",
-        "NH4HCO3"
+        "Cu(OH)2",
+        "NaHS"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Cr(HCO3)3 + 3 NH4OH -> Cr(OH)3 + 3 NH4HCO3",
+      "rule": "salt_with_base",
+      "equation": "Cu(HS)2 + 2 NaOH -> Cu(OH)2 + 2 NaHS",
       "coefficients": {
         "substrates": [
           1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Cr(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Cr(HCO3)3",
-        "(NH4)2CO3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
-        "NH4HCO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Cr(HCO3)3 + 3 (NH4)2CO3 -> Cr2(CO3)3 + 6 NH4HCO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Cr2(CO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "H2CO3",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 H2CO3 + 2 Cr(OH)3 -> Cr2(CO3)3 + 6 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
           2
         ],
         "products": [
           1,
-          6
+          2
         ]
       },
-      "note": "Cr2(CO3)3 is insoluble"
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
-        "H2CO3",
-        "Cr(OH)3"
+        "Cu(HS)2",
+        "Cu(OH)2"
       ],
       "products": [
-        "Cr(HCO3)3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "3 H2CO3 + Cr(OH)3 -> Cr(HCO3)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Cr(HCO3)3",
-        "Cr(OH)3"
-      ],
-      "products": [
-        "Cr2(CO3)3",
+        "CuS",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Cr(HCO3)3 + Cr(OH)3 -> Cr2(CO3)3 + 3 H2O",
+      "equation": "Cu(HS)2 + Cu(OH)2 -> 2 CuS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          3
+          2,
+          2
         ]
       },
       "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HI -> 2 H2S + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HBr -> 2 H2S + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
     }
   ],
   "answers": {
-    "partial_neutralisation": {
+    "binary_salt_synthesis": {
       "substrates": [
-        "H2CO3",
-        "NaOH"
+        "Na",
+        "Br2"
       ],
       "products": [
-        "NaHCO3",
-        "H2O"
+        "NaBr"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    "salt_with_parent_acid": {
-      "substrates": [
-        "Na2CO3",
-        "H2CO3"
-      ],
-      "products": [
-        "NaHCO3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    "ammonia_liberation": {
-      "substrates": [
-        "NH4HCO3",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "NaHCO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HCO3 + NaOH -> NH3 + NaHCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    "double_displacement": {
-      "substrates": [
-        "AgHCO3",
-        "Na2CO3"
-      ],
-      "products": [
-        "Ag2CO3",
-        "NaHCO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHCO3 + Na2CO3 -> Ag2CO3 + 2 NaHCO3",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Na + Br2 -> 2 NaBr",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
+          2
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "CuBr2",
+        "Na2S"
+      ],
+      "products": [
+        "CuS",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuBr2 + Na2S -> CuS + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
           1,
           2
         ]
       },
-      "note": "Ag2CO3 precipitates"
+      "note": "CuS precipitates"
     },
-    "hydroxide_precipitation": {
+    "halogen_displacement": {
       "substrates": [
-        "Cr(HCO3)3",
-        "NaOH"
+        "Br2",
+        "NaI"
       ],
       "products": [
-        "Cr(OH)3",
-        "NaHCO3"
+        "NaBr",
+        "I2"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Cr(HCO3)3 + 3 NaOH -> Cr(OH)3 + 3 NaHCO3",
+      "rule": "halogen_displacement",
+      "equation": "Br2 + 2 NaI -> 2 NaBr + I2",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    "halogen_disproportionation": {
+      "substrates": [
+        "Br2",
+        "NaOH"
+      ],
+      "products": [
+        "NaBrO3",
+        "NaBr",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Br2 + 6 NaOH -> NaBrO3 + 5 NaBr + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
         ],
         "products": [
           1,
+          5,
           3
         ]
       },
-      "note": "Cr(OH)3 precipitates"
+      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
+    },
+    "salt_with_base": {
+      "substrates": [
+        "CuBr2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Na2S",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "NaBr"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2S + 2 HBr -> H2S + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Na",
+        "HBr"
+      ],
+      "products": [
+        "NaBr",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + 2 HBr -> 2 NaBr + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HBr",
+        "NaOH"
+      ],
+      "products": [
+        "NaBr",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HBr + NaOH -> NaBr + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
     }
   },
   "misses": [
     {
       "substrates": [
-        "(NH4)2CO3",
-        "Ag"
+        "Cu(HS)2",
+        "Na"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "(NH4)2CO3",
-        "Cr"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)2CO3",
-        "Cr(OH)3"
-      ],
-      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "AgHCO3"
-      ],
-      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "Cr(HCO3)3"
-      ],
-      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "H2CO3"
-      ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NH4HCO3"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "Na2CO3"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cr",
-        "Cr(HCO3)3"
-      ],
-      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cr",
-        "NH4HCO3"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Cr",
-        "Na2CO3"
-      ],
-      "note": "Cr sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cr(OH)3",
-        "NH4HCO3"
-      ],
-      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "NH4HCO3",
-        "Na2CO3"
+        "Cu(HS)2",
+        "NaBrO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "NH4OH",
-        "Na2CO3"
+        "Cu(HS)2",
+        "NaI"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "NaIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Na"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Na"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "NaBrO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "NaIO3"
+      ],
+      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaBrO3"
+      ],
+      "note": "H2S is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaIO3"
+      ],
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "NaBrO3"
+      ],
+      "note": "HBr is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "NaI"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "NaIO3"
+      ],
+      "note": "HBr is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "NaBrO3"
+      ],
+      "note": "HI is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "NaIO3"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Na",
+        "Na2S"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Na",
+        "NaBrO3"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Na",
+        "NaHS"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Na",
+        "NaI"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Na",
+        "NaIO3"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     }
   ]
 }

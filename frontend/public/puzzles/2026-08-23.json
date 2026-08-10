@@ -1,221 +1,108 @@
 {
   "version": 3,
-  "target": "LiBr",
-  "name": "lithium bromide",
+  "target": "CaCO3",
+  "name": "calcium carbonate",
   "grade": "easy",
   "want": 5,
-  "ways": 9,
+  "ways": 10,
   "cut": 1,
   "palette": [
-    "Br2",
-    "CuBr2",
-    "Fe",
-    "FeBr3",
+    "CO2",
+    "Ca",
+    "Ca(OH)2",
+    "CaO",
     "H2O",
-    "Li",
-    "Li2S",
-    "LiI",
-    "LiOH",
+    "K2O",
     "NH3",
-    "ZnBr2"
+    "SiO2"
   ],
   "species": {
-    "(NH4)2S": {
-      "name": "ammonium sulfide",
+    "(NH4)2CO3": {
+      "name": "ammonium carbonate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "NH4": 1,
-        "S": -2
+        "CO3": -2
       }
     },
-    "Br2": {
-      "name": "bromine",
-      "class": "element",
-      "state": "l",
+    "(NH4)2SiO3": {
+      "name": "ammonium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SiO3": -2
+      }
+    },
+    "CO2": {
+      "name": "carbon dioxide",
+      "class": "acidic oxide",
+      "state": "g",
       "common": true
     },
-    "Cu": {
-      "name": "copper",
+    "Ca": {
+      "name": "calcium",
       "class": "element",
       "state": "s",
       "common": true
     },
-    "Cu(HS)2": {
-      "name": "copper(II) hydrogensulfide",
+    "Ca(HCO3)2": {
+      "name": "calcium hydrogencarbonate",
       "class": "salt",
       "state": "aq",
-      "common": false,
+      "common": true,
       "ions": {
-        "Cu": 2,
-        "HS": -1
+        "Ca": 2,
+        "HCO3": -1
       }
     },
-    "Cu(OH)2": {
-      "name": "copper(II) hydroxide",
+    "Ca(OH)2": {
+      "name": "calcium hydroxide",
       "class": "base",
       "state": "s",
       "common": true,
       "ions": {
-        "Cu": 2,
+        "Ca": 2,
         "OH": -1
       }
     },
-    "CuBr2": {
-      "name": "copper(II) bromide",
+    "CaCO3": {
+      "name": "calcium carbonate",
       "class": "salt",
-      "state": "aq",
+      "state": "s",
       "common": true,
       "ions": {
-        "Cu": 2,
-        "Br": -1
+        "Ca": 2,
+        "CO3": -2
       }
     },
-    "CuH2": {
-      "name": "copper(II) hydride",
+    "CaH2": {
+      "name": "calcium hydride",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Cu": 2,
+        "Ca": 2,
         "H": -1
       }
     },
-    "CuI2": {
-      "name": "copper(II) iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Cu": 2,
-        "I": -1
-      }
-    },
-    "CuS": {
-      "name": "copper(II) sulfide",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Cu": 2,
-        "S": -2
-      }
-    },
-    "Fe": {
-      "name": "iron",
-      "class": "element",
+    "CaO": {
+      "name": "calcium oxide",
+      "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "Fe(HS)2": {
-      "name": "iron(II) hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 2,
-        "HS": -1
-      }
-    },
-    "Fe(HS)3": {
-      "name": "iron(III) hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 3,
-        "HS": -1
-      }
-    },
-    "Fe(OH)2": {
-      "name": "iron(II) hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "OH": -1
-      }
-    },
-    "Fe(OH)3": {
-      "name": "iron(III) hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "OH": -1
-      }
-    },
-    "Fe2S3": {
-      "name": "iron(III) sulfide",
+    "CaSiO3": {
+      "name": "calcium silicate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Fe": 3,
-        "S": -2
-      }
-    },
-    "FeBr2": {
-      "name": "iron(II) bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "Br": -1
-      }
-    },
-    "FeBr3": {
-      "name": "iron(III) bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "Br": -1
-      }
-    },
-    "FeH2": {
-      "name": "iron(II) hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 2,
-        "H": -1
-      }
-    },
-    "FeI2": {
-      "name": "iron(II) iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "I": -1
-      }
-    },
-    "FeI3": {
-      "name": "iron(III) iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "I": -1
-      }
-    },
-    "FeS": {
-      "name": "iron(II) sulfide",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "S": -2
+        "Ca": 2,
+        "SiO3": -2
       }
     },
     "H2": {
@@ -224,131 +111,75 @@
       "state": "g",
       "common": true
     },
+    "H2CO3": {
+      "name": "carbonic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "CO3": -2
+      }
+    },
     "H2O": {
       "name": "water",
       "class": "water",
       "state": "l",
       "common": true
     },
-    "H2S": {
-      "name": "hydrosulfuric acid",
+    "H2SiO3": {
+      "name": "silicic acid",
       "class": "acid",
-      "state": "aq",
+      "state": "s",
       "common": true,
       "ions": {
         "H": 1,
-        "S": -2
+        "SiO3": -2
       }
     },
-    "HBr": {
-      "name": "hydrobromic acid",
-      "class": "acid",
+    "K2CO3": {
+      "name": "potassium carbonate",
+      "class": "salt",
       "state": "aq",
-      "common": false,
+      "common": true,
       "ions": {
-        "H": 1,
-        "Br": -1
+        "K": 1,
+        "CO3": -2
       }
     },
-    "HI": {
-      "name": "hydroiodic acid",
-      "class": "acid",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "H": 1,
-        "I": -1
-      }
-    },
-    "I2": {
-      "name": "iodine",
-      "class": "element",
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "Li": {
-      "name": "lithium",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Li2S": {
-      "name": "lithium sulfide",
+    "K2SiO3": {
+      "name": "potassium silicate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
-        "S": -2
+        "K": 1,
+        "SiO3": -2
       }
     },
-    "LiBr": {
-      "name": "lithium bromide",
+    "KHCO3": {
+      "name": "potassium hydrogencarbonate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
-        "Br": -1
+        "K": 1,
+        "HCO3": -1
       }
     },
-    "LiBrO3": {
-      "name": "lithium bromate",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Li": 1,
-        "BrO3": -1
-      }
-    },
-    "LiH": {
-      "name": "lithium hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Li": 1,
-        "H": -1
-      }
-    },
-    "LiHS": {
-      "name": "lithium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Li": 1,
-        "HS": -1
-      }
-    },
-    "LiI": {
-      "name": "lithium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Li": 1,
-        "I": -1
-      }
-    },
-    "LiIO3": {
-      "name": "lithium iodate",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Li": 1,
-        "IO3": -1
-      }
-    },
-    "LiOH": {
-      "name": "lithium hydroxide",
+    "KOH": {
+      "name": "potassium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
+        "K": 1,
         "OH": -1
       }
     },
@@ -358,34 +189,14 @@
       "state": "g",
       "common": true
     },
-    "NH4Br": {
-      "name": "ammonium bromide",
+    "NH4HCO3": {
+      "name": "ammonium hydrogencarbonate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "NH4": 1,
-        "Br": -1
-      }
-    },
-    "NH4HS": {
-      "name": "ammonium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "NH4": 1,
-        "HS": -1
-      }
-    },
-    "NH4I": {
-      "name": "ammonium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "I": -1
+        "HCO3": -1
       }
     },
     "NH4OH": {
@@ -398,281 +209,200 @@
         "OH": -1
       }
     },
-    "Zn(HS)2": {
-      "name": "zinc hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Zn": 2,
-        "HS": -1
-      }
-    },
-    "Zn(OH)2": {
-      "name": "zinc hydroxide",
-      "class": "base",
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
       "state": "s",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "OH": -1
-      }
-    },
-    "ZnBr2": {
-      "name": "zinc bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "Br": -1
-      }
-    },
-    "ZnI2": {
-      "name": "zinc iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "I": -1
-      }
-    },
-    "ZnS": {
-      "name": "zinc sulfide",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "S": -2
-      }
+      "common": true
     }
   },
   "reactions": [
     {
       "substrates": [
-        "Fe",
-        "Br2"
+        "Ca(OH)2",
+        "CO2"
       ],
       "products": [
-        "FeBr3"
+        "CaCO3",
+        "H2O"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Fe + 3 Br2 -> 2 FeBr3",
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ca(OH)2 + CO2 -> CaCO3 + H2O",
       "coefficients": {
         "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "Fe goes to +3 with Br"
-    },
-    {
-      "substrates": [
-        "Li",
-        "Br2"
-      ],
-      "products": [
-        "LiBr"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Li + Br2 -> 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
-          2
+          1,
+          1
+        ]
+      },
+      "note": "CaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "CaO",
+        "CO2"
+      ],
+      "products": [
+        "CaCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + CO2 -> CaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
         ]
       }
     },
     {
       "substrates": [
-        "Br2",
-        "LiI"
-      ],
-      "products": [
-        "LiBr",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + 2 LiI -> 2 LiBr + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "LiOH"
-      ],
-      "products": [
-        "LiBrO3",
-        "LiBr",
-        "H2O"
-      ],
-      "rule": "halogen_disproportionation",
-      "equation": "3 Br2 + 6 LiOH -> LiBrO3 + 5 LiBr + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          6
-        ],
-        "products": [
-          1,
-          5,
-          3
-        ]
-      },
-      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "CuBr2"
-      ],
-      "products": [
-        "FeBr2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + CuBr2 -> FeBr2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Fe is above Cu in the activity series"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Li2S"
-      ],
-      "products": [
-        "CuS",
-        "LiBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "CuBr2 + Li2S -> CuS + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "LiOH"
-      ],
-      "products": [
-        "Cu(OH)2",
-        "LiBr"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "CuBr2 + 2 LiOH -> Cu(OH)2 + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Cu(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "Li2S"
-      ],
-      "products": [
-        "Fe2S3",
-        "LiBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 FeBr3 + 3 Li2S -> Fe2S3 + 6 LiBr",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "LiOH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "LiBr"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeBr3 + 3 LiOH -> Fe(OH)3 + 3 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Li",
+        "CO2",
         "H2O"
       ],
       "products": [
-        "LiOH",
+        "H2CO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "CO2 + H2O -> H2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "CO2"
+      ],
+      "products": [
+        "K2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + CO2 -> K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2O"
+      ],
+      "products": [
+        "Ca(OH)2",
         "H2"
       ],
       "rule": "metal_with_water",
-      "equation": "2 Li + 2 H2O -> 2 LiOH + H2",
+      "equation": "Ca + 2 H2O -> Ca(OH)2 + H2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           2
         ],
         "products": [
-          2,
+          1,
           1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca(OH)2",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ca(OH)2 + SiO2 -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "CaO",
+        "H2O"
+      ],
+      "products": [
+        "Ca(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "CaO + H2O -> Ca(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaO",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + SiO2 -> CaSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
         ]
       }
     },
@@ -699,15 +429,121 @@
     },
     {
       "substrates": [
-        "Li2S",
-        "ZnBr2"
+        "K2O",
+        "SiO2"
       ],
       "products": [
-        "ZnS",
-        "LiBr"
+        "K2SiO3"
       ],
-      "rule": "double_displacement",
-      "equation": "Li2S + ZnBr2 -> ZnS + 2 LiBr",
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaCO3"
+      ],
+      "products": [
+        "CaO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "CaCO3 -> CaO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "CaCO3",
+        "H2CO3"
+      ],
+      "products": [
+        "Ca(HCO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "CaCO3 + H2CO3 -> Ca(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3"
+      ],
+      "products": [
+        "CO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2CO3 -> CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2CO3"
+      ],
+      "products": [
+        "CaCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2CO3 -> CaCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Ca(OH)2 -> CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -718,149 +554,173 @@
           2
         ]
       },
-      "note": "ZnS precipitates"
+      "note": "CaCO3 is insoluble"
     },
     {
       "substrates": [
-        "ZnBr2",
-        "LiOH"
+        "H2CO3",
+        "Ca(OH)2"
       ],
       "products": [
-        "Zn(OH)2",
-        "LiBr"
+        "Ca(HCO3)2",
+        "H2O"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "ZnBr2 + 2 LiOH -> Zn(OH)2 + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "I2"
-      ],
-      "products": [
-        "FeI2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Fe + I2 -> FeI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Fe goes to +2 with I"
-    },
-    {
-      "substrates": [
-        "Li",
-        "I2"
-      ],
-      "products": [
-        "LiI"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Li + I2 -> 2 LiI",
+      "rule": "partial_neutralisation",
+      "equation": "2 H2CO3 + Ca(OH)2 -> Ca(HCO3)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
+          1,
           2
         ]
-      }
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
-        "I2",
-        "LiOH"
+        "H2CO3",
+        "CaO"
       ],
       "products": [
-        "LiIO3",
-        "LiI",
+        "CaCO3",
         "H2O"
       ],
-      "rule": "halogen_disproportionation",
-      "equation": "3 I2 + 6 LiOH -> LiIO3 + 5 LiI + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          6
-        ],
-        "products": [
-          1,
-          5,
-          3
-        ]
-      },
-      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "I2"
-      ],
-      "products": [
-        "CuI2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Cu + I2 -> CuI2",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + CaO -> CaCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          1,
           1
         ]
       },
-      "note": "Cu goes to +2 with I"
+      "note": "CaCO3 is insoluble"
     },
     {
       "substrates": [
-        "H2",
-        "I2"
+        "H2CO3",
+        "K2O"
       ],
       "products": [
-        "HI"
+        "K2CO3",
+        "H2O"
       ],
-      "rule": "hydrogenation",
-      "equation": "H2 + I2 -> 2 HI",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + K2O -> K2CO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2CO3"
+      ],
+      "products": [
+        "(NH4)2CO3"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 NH3 + H2CO3 -> (NH4)2CO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "KHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2CO3 + H2CO3 -> 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaCO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + H2CO3 -> H2SiO3 + CaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 KOH -> K2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
           2
         ]
       }
     },
     {
       "substrates": [
-        "FeBr2",
-        "Li2S"
+        "H2CO3",
+        "KOH"
       ],
       "products": [
-        "FeS",
-        "LiBr"
+        "KHCO3",
+        "H2O"
       ],
-      "rule": "double_displacement",
-      "equation": "FeBr2 + Li2S -> FeS + 2 LiBr",
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + KOH -> KHCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -868,45 +728,22 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
       },
-      "note": "FeS precipitates"
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
-        "FeBr2",
-        "LiOH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "LiBr"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeBr2 + 2 LiOH -> Fe(OH)2 + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "FeBr2",
+        "H2CO3",
         "NH4OH"
       ],
       "products": [
-        "Fe(OH)2",
-        "NH4Br"
+        "(NH4)2CO3",
+        "H2O"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeBr2 + 2 NH4OH -> Fe(OH)2 + 2 NH4Br",
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 NH4OH -> (NH4)2CO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -914,83 +751,65 @@
         ],
         "products": [
           1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Br2"
-      ],
-      "products": [
-        "CuBr2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Cu + Br2 -> CuBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Cu goes to +2 with Br"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "H2"
-      ],
-      "products": [
-        "CuH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Cu + H2 -> CuH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Cu goes to +2 with H"
-    },
-    {
-      "substrates": [
-        "H2",
-        "Br2"
-      ],
-      "products": [
-        "HBr"
-      ],
-      "rule": "hydrogenation",
-      "equation": "H2 + Br2 -> 2 HBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           2
         ]
       }
     },
     {
       "substrates": [
-        "Fe",
+        "H2CO3",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + NH4OH -> NH4HCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2CO3 -> H2SiO3 + K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca",
         "H2"
       ],
       "products": [
-        "FeH2"
+        "CaH2"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "Fe + H2 -> FeH2",
+      "equation": "Ca + H2 -> CaH2",
       "coefficients": {
         "substrates": [
           1,
@@ -999,26 +818,49 @@
         "products": [
           1
         ]
-      },
-      "note": "Fe goes to +2 with H"
+      }
     },
     {
       "substrates": [
-        "Li",
-        "H2"
+        "KOH",
+        "CO2"
       ],
       "products": [
-        "LiH"
+        "K2CO3",
+        "H2O"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Li + H2 -> 2 LiH",
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + CO2 -> K2CO3 + H2O",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
-          2
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       }
     },
@@ -1045,107 +887,61 @@
     },
     {
       "substrates": [
-        "CuBr2",
-        "NH4OH"
+        "Ca(HCO3)2"
       ],
       "products": [
-        "Cu(OH)2",
-        "NH4Br"
+        "CaCO3",
+        "CO2",
+        "H2O"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "CuBr2 + 2 NH4OH -> Cu(OH)2 + 2 NH4Br",
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Ca(HCO3)2 -> CaCO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
-          1,
-          2
+          1
         ],
         "products": [
           1,
-          2
+          1,
+          1
         ]
       },
-      "note": "Cu(OH)2 precipitates"
+      "note": "needs only gentle heating"
     },
     {
       "substrates": [
-        "FeBr3",
-        "NH4OH"
+        "Ca(HCO3)2",
+        "Ca(OH)2"
       ],
       "products": [
-        "Fe(OH)3",
-        "NH4Br"
+        "CaCO3",
+        "H2O"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeBr3 + 3 NH4OH -> Fe(OH)3 + 3 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "ZnBr2",
-        "NH4OH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "NH4Br"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "ZnBr2 + 2 NH4OH -> Zn(OH)2 + 2 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "FeI2"
-      ],
-      "products": [
-        "FeBr2",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + FeI2 -> FeBr2 + I2",
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(HCO3)2 + Ca(OH)2 -> 2 CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
+          2,
+          2
         ]
       },
-      "note": "Br is more reactive than I"
+      "note": "more base takes off another proton"
     },
     {
       "substrates": [
-        "FeI2",
-        "Li2S"
+        "Ca(HCO3)2",
+        "K2CO3"
       ],
       "products": [
-        "FeS",
-        "LiI"
+        "CaCO3",
+        "KHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "FeI2 + Li2S -> FeS + 2 LiI",
+      "equation": "Ca(HCO3)2 + K2CO3 -> CaCO3 + 2 KHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1156,111 +952,19 @@
           2
         ]
       },
-      "note": "FeS precipitates"
+      "note": "CaCO3 precipitates"
     },
     {
       "substrates": [
-        "FeI2",
-        "LiOH"
+        "Ca(HCO3)2",
+        "K2SiO3"
       ],
       "products": [
-        "Fe(OH)2",
-        "LiI"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeI2 + 2 LiOH -> Fe(OH)2 + 2 LiI",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "NH4OH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "NH4I"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeI2 + 2 NH4OH -> Fe(OH)2 + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "CuI2"
-      ],
-      "products": [
-        "CuBr2",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + CuI2 -> CuBr2 + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "CuI2"
-      ],
-      "products": [
-        "FeI2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + CuI2 -> FeI2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Fe is above Cu in the activity series"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Li2S"
-      ],
-      "products": [
-        "CuS",
-        "LiI"
+        "CaSiO3",
+        "KHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "CuI2 + Li2S -> CuS + 2 LiI",
+      "equation": "Ca(HCO3)2 + K2SiO3 -> CaSiO3 + 2 KHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1271,796 +975,66 @@
           2
         ]
       },
-      "note": "CuS precipitates"
+      "note": "CaSiO3 precipitates"
     },
     {
       "substrates": [
-        "CuI2",
-        "LiOH"
+        "Ca(HCO3)2",
+        "(NH4)2CO3"
       ],
       "products": [
-        "Cu(OH)2",
-        "LiI"
+        "CaCO3",
+        "NH4HCO3"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "CuI2 + 2 LiOH -> Cu(OH)2 + 2 LiI",
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + (NH4)2CO3 -> CaCO3 + 2 NH4HCO3",
       "coefficients": {
         "substrates": [
           1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Cu(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "NH4OH"
-      ],
-      "products": [
-        "Cu(OH)2",
-        "NH4I"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "CuI2 + 2 NH4OH -> Cu(OH)2 + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
+          1
         ],
         "products": [
           1,
           2
         ]
       },
-      "note": "Cu(OH)2 precipitates"
+      "note": "CaCO3 precipitates"
     },
     {
       "substrates": [
-        "Fe",
-        "HI"
-      ],
-      "products": [
-        "FeI2",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + 2 HI -> FeI2 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li",
-        "HI"
-      ],
-      "products": [
-        "LiI",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Li + 2 HI -> 2 LiI + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li2S",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "LiI"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Li2S + 2 HI -> H2S + 2 LiI",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "LiOH"
-      ],
-      "products": [
-        "LiI",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HI + LiOH -> LiI + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "HI"
-      ],
-      "products": [
-        "NH4I"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "NH3 + HI -> NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "CuS",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "CuI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "CuS + 2 HI -> H2S + CuI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "CuI2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HI + Cu(OH)2 -> CuI2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe2S3",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "FeI3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe2S3 + 6 HI -> 3 H2S + 2 FeI3",
-      "coefficients": {
-        "substrates": [
-          1,
-          6
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "FeI3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 HI + Fe(OH)3 -> FeI3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4I",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HI + NH4OH -> NH4I + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "ZnS",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "ZnI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "ZnS + 2 HI -> H2S + ZnI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnI2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HI + Zn(OH)2 -> ZnI2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeS",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "FeI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "FeS + 2 HI -> H2S + FeI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "FeI2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HI + Fe(OH)2 -> FeI2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeS",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "FeBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "FeS + 2 HBr -> H2S + FeBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "FeBr2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HBr + Fe(OH)2 -> FeBr2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH4Br",
-        "LiOH"
+        "(NH4)2CO3",
+        "Ca(OH)2"
       ],
       "products": [
         "NH3",
-        "LiBr",
+        "CaCO3",
         "H2O"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4Br + LiOH -> NH3 + LiBr + H2O",
+      "rule": "salt_with_base",
+      "equation": "(NH4)2CO3 + Ca(OH)2 -> 2 NH3 + CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          2,
           1,
-          1,
-          1
+          2
         ]
       },
       "note": "warm with alkali -- the test for an ammonium salt"
     },
     {
       "substrates": [
-        "Fe",
-        "HBr"
+        "(NH4)2CO3",
+        "H2CO3"
       ],
       "products": [
-        "FeBr2",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + 2 HBr -> FeBr2 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li",
-        "HBr"
-      ],
-      "products": [
-        "LiBr",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Li + 2 HBr -> 2 LiBr + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li2S",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "LiBr"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Li2S + 2 HBr -> H2S + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "LiOH"
-      ],
-      "products": [
-        "LiBr",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HBr + LiOH -> LiBr + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "HBr"
-      ],
-      "products": [
-        "NH4Br"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "NH3 + HBr -> NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "CuS",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "CuBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "CuS + 2 HBr -> H2S + CuBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "CuBr2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HBr + Cu(OH)2 -> CuBr2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe2S3",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "FeBr3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe2S3 + 6 HBr -> 3 H2S + 2 FeBr3",
-      "coefficients": {
-        "substrates": [
-          1,
-          6
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "FeBr3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 HBr + Fe(OH)3 -> FeBr3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4Br",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HBr + NH4OH -> NH4Br + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "ZnS",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "ZnBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "ZnS + 2 HBr -> H2S + ZnBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnBr2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HBr + Zn(OH)2 -> ZnBr2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Br2",
-        "NH4I"
-      ],
-      "products": [
-        "NH4Br",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + 2 NH4I -> 2 NH4Br + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "NH4I",
-        "LiOH"
-      ],
-      "products": [
-        "NH3",
-        "LiI",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4I + LiOH -> NH3 + LiI + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "H2S"
-      ],
-      "products": [
-        "FeS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2S -> FeS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS is insoluble"
-    },
-    {
-      "substrates": [
-        "Li",
-        "H2S"
-      ],
-      "products": [
-        "Li2S",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Li + H2S -> Li2S + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li2S",
-        "H2S"
-      ],
-      "products": [
-        "LiHS"
+        "NH4HCO3"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Li2S + H2S -> 2 LiHS",
+      "equation": "(NH4)2CO3 + H2CO3 -> 2 NH4HCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -2074,37 +1048,63 @@
     },
     {
       "substrates": [
-        "H2S",
-        "LiOH"
+        "(NH4)2CO3",
+        "KOH"
       ],
       "products": [
-        "Li2S",
+        "NH3",
+        "K2CO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "H2S + 2 LiOH -> Li2S + 2 H2O",
+      "rule": "salt_with_base",
+      "equation": "(NH4)2CO3 + 2 KOH -> 2 NH3 + K2CO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           2
         ],
         "products": [
+          2,
           1,
           2
         ]
-      }
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
     },
     {
       "substrates": [
-        "H2S",
-        "LiOH"
+        "KHCO3"
       ],
       "products": [
-        "LiHS",
+        "K2CO3",
+        "CO2",
         "H2O"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "H2S + LiOH -> LiHS + H2O",
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 KHCO3 -> K2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHCO3 + KOH -> K2CO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -2115,18 +1115,109 @@
           1
         ]
       },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2SiO3 -> CaSiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ca(OH)2 -> CaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "CaO"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + CaO -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
     },
     {
       "substrates": [
         "NH3",
-        "H2S"
+        "H2SiO3"
       ],
       "products": [
-        "(NH4)2S"
+        "(NH4)2SiO3"
       ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2S -> (NH4)2S",
+      "rule": "neutralisation",
+      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
       "coefficients": {
         "substrates": [
           2,
@@ -2140,149 +1231,15 @@
     },
     {
       "substrates": [
-        "CuS",
-        "H2S"
+        "H2SiO3",
+        "KOH"
       ],
       "products": [
-        "Cu(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "CuS + H2S -> Cu(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "CuS",
+        "K2SiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2S + Cu(OH)2 -> CuS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS is insoluble"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "Cu(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Cu(OH)2 -> Cu(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Fe2S3",
-        "H2S"
-      ],
-      "products": [
-        "Fe(HS)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Fe2S3 + 3 H2S -> 2 Fe(HS)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "Fe2S3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 H2S + 2 Fe(OH)3 -> Fe2S3 + 6 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "Fe(HS)3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "3 H2S + Fe(OH)3 -> Fe(HS)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2S",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -2296,310 +1253,15 @@
     },
     {
       "substrates": [
-        "H2S",
+        "H2SiO3",
         "NH4OH"
       ],
       "products": [
-        "NH4HS",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2S + NH4OH -> NH4HS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "ZnS",
-        "H2S"
-      ],
-      "products": [
-        "Zn(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "ZnS + H2S -> Zn(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnS",
+        "(NH4)2SiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS is insoluble"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "Zn(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "FeS",
-        "H2S"
-      ],
-      "products": [
-        "Fe(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "FeS + H2S -> Fe(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "FeS",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS is insoluble"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "Fe(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "FeI3"
-      ],
-      "products": [
-        "FeBr3",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "3 Br2 + 2 FeI3 -> 2 FeBr3 + 3 I2",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "Li2S"
-      ],
-      "products": [
-        "Fe2S3",
-        "LiI"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 FeI3 + 3 Li2S -> Fe2S3 + 6 LiI",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "LiOH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "LiI"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeI3 + 3 LiOH -> Fe(OH)3 + 3 LiI",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "NH4OH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "NH4I"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeI3 + 3 NH4OH -> Fe(OH)3 + 3 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "ZnI2"
-      ],
-      "products": [
-        "ZnBr2",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + ZnI2 -> ZnBr2 + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "ZnI2",
-        "Li2S"
-      ],
-      "products": [
-        "ZnS",
-        "LiI"
-      ],
-      "rule": "double_displacement",
-      "equation": "ZnI2 + Li2S -> ZnS + 2 LiI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "ZnI2",
-        "LiOH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "LiI"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "ZnI2 + 2 LiOH -> Zn(OH)2 + 2 LiI",
+      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -2608,162 +1270,48 @@
         "products": [
           1,
           2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "ZnI2",
-        "NH4OH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "NH4I"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "ZnI2 + 2 NH4OH -> Zn(OH)2 + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "LiHS",
-        "LiOH"
-      ],
-      "products": [
-        "Li2S",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "LiHS + LiOH -> Li2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "LiHS",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "LiI"
-      ],
-      "rule": "acid_displacement",
-      "equation": "LiHS + HI -> H2S + LiI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
         ]
       }
     },
     {
       "substrates": [
-        "LiHS",
-        "HBr"
+        "NH4HCO3"
       ],
       "products": [
-        "H2S",
-        "LiBr"
+        "(NH4)2CO3",
+        "CO2",
+        "H2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "LiHS + HBr -> H2S + LiBr",
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 NH4HCO3 -> (NH4)2CO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "CuBr2"
-      ],
-      "products": [
-        "CuS",
-        "NH4Br"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + CuBr2 -> CuS + 2 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "FeBr3"
-      ],
-      "products": [
-        "Fe2S3",
-        "NH4Br"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 (NH4)2S + 2 FeBr3 -> Fe2S3 + 6 NH4Br",
-      "coefficients": {
-        "substrates": [
-          3,
           2
         ],
         "products": [
           1,
-          6
+          1,
+          1
         ]
       },
-      "note": "Fe2S3 precipitates"
+      "note": "needs only gentle heating"
     },
     {
       "substrates": [
-        "(NH4)2S",
-        "LiOH"
+        "NH4HCO3",
+        "Ca(OH)2"
       ],
       "products": [
         "NH3",
-        "Li2S",
+        "Ca(HCO3)2",
         "H2O"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2S + 2 LiOH -> 2 NH3 + Li2S + 2 H2O",
+      "rule": "salt_with_base",
+      "equation": "2 NH4HCO3 + Ca(OH)2 -> 2 NH3 + Ca(HCO3)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
-          2
+          2,
+          1
         ],
         "products": [
           2,
@@ -2775,606 +1323,16 @@
     },
     {
       "substrates": [
-        "(NH4)2S",
-        "ZnBr2"
-      ],
-      "products": [
-        "ZnS",
-        "NH4Br"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + ZnBr2 -> ZnS + 2 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "FeBr2"
-      ],
-      "products": [
-        "FeS",
-        "NH4Br"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + FeBr2 -> FeS + 2 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "FeI2"
-      ],
-      "products": [
-        "FeS",
-        "NH4I"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + FeI2 -> FeS + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "CuI2"
-      ],
-      "products": [
-        "CuS",
-        "NH4I"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + CuI2 -> CuS + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "NH4I"
-      ],
-      "rule": "acid_displacement",
-      "equation": "(NH4)2S + 2 HI -> H2S + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "NH4Br"
-      ],
-      "rule": "acid_displacement",
-      "equation": "(NH4)2S + 2 HBr -> H2S + 2 NH4Br",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "H2S"
-      ],
-      "products": [
-        "NH4HS"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)2S + H2S -> 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "FeI3"
-      ],
-      "products": [
-        "Fe2S3",
-        "NH4I"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 (NH4)2S + 2 FeI3 -> Fe2S3 + 6 NH4I",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "ZnI2"
-      ],
-      "products": [
-        "ZnS",
-        "NH4I"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + ZnI2 -> ZnS + 2 NH4I",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Cu(HS)2"
-      ],
-      "products": [
-        "CuS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + Cu(HS)2 -> CuS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(HS)3"
-      ],
-      "products": [
-        "Fe2S3",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 (NH4)2S + 2 Fe(HS)3 -> Fe2S3 + 6 NH4HS",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Zn(HS)2"
-      ],
-      "products": [
-        "ZnS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + Zn(HS)2 -> ZnS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(HS)2"
-      ],
-      "products": [
-        "FeS",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + Fe(HS)2 -> FeS + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Cu(HS)2"
-      ],
-      "products": [
-        "Fe(HS)2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + Cu(HS)2 -> Fe(HS)2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Fe is above Cu in the activity series"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "Li2S"
-      ],
-      "products": [
-        "CuS",
-        "LiHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Cu(HS)2 + Li2S -> CuS + 2 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "LiOH"
-      ],
-      "products": [
-        "Cu(OH)2",
-        "LiHS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Cu(HS)2 + 2 LiOH -> Cu(OH)2 + 2 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Cu(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "CuS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Cu(HS)2 + Cu(OH)2 -> 2 CuS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "NH4OH"
-      ],
-      "products": [
-        "Cu(OH)2",
-        "NH4HS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Cu(HS)2 + 2 NH4OH -> Cu(OH)2 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Cu(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "CuI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Cu(HS)2 + 2 HI -> 2 H2S + CuI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "CuBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Cu(HS)2 + 2 HBr -> 2 H2S + CuBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "Li2S"
-      ],
-      "products": [
-        "Fe2S3",
-        "LiHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Fe(HS)3 + 3 Li2S -> Fe2S3 + 6 LiHS",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2S3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "LiOH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "LiHS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)3 + 3 LiOH -> Fe(OH)3 + 3 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "Fe2S3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Fe(HS)3 + Fe(OH)3 -> Fe2S3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "NH4OH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "NH4HS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)3 + 3 NH4OH -> Fe(OH)3 + 3 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "FeI3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe(HS)3 + 3 HI -> 3 H2S + FeI3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "FeBr3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe(HS)3 + 3 HBr -> 3 H2S + FeBr3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "LiOH"
+        "NH4HCO3",
+        "KOH"
       ],
       "products": [
         "NH3",
-        "LiHS",
+        "KHCO3",
         "H2O"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HS + LiOH -> NH3 + LiHS + H2O",
+      "rule": "salt_with_base",
+      "equation": "NH4HCO3 + KOH -> NH3 + KHCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -3390,15 +1348,15 @@
     },
     {
       "substrates": [
-        "NH4HS",
+        "NH4HCO3",
         "NH4OH"
       ],
       "products": [
-        "(NH4)2S",
+        "(NH4)2CO3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
+      "equation": "NH4HCO3 + NH4OH -> (NH4)2CO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -3413,15 +1371,40 @@
     },
     {
       "substrates": [
-        "NH4HS",
-        "HI"
+        "(NH4)2SiO3",
+        "Ca(OH)2"
       ],
       "products": [
-        "H2S",
-        "NH4I"
+        "NH3",
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2SiO3 + Ca(OH)2 -> 2 NH3 + CaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "(NH4)2CO3"
       ],
       "rule": "acid_displacement",
-      "equation": "NH4HS + HI -> H2S + NH4I",
+      "equation": "(NH4)2SiO3 + H2CO3 -> H2SiO3 + (NH4)2CO3",
       "coefficients": {
         "substrates": [
           1,
@@ -3435,37 +1418,40 @@
     },
     {
       "substrates": [
-        "NH4HS",
-        "HBr"
+        "(NH4)2SiO3",
+        "KOH"
       ],
       "products": [
-        "H2S",
-        "NH4Br"
+        "NH3",
+        "K2SiO3",
+        "H2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "NH4HS + HBr -> H2S + NH4Br",
+      "rule": "salt_with_base",
+      "equation": "(NH4)2SiO3 + 2 KOH -> 2 NH3 + K2SiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
+          2,
           1,
-          1
+          2
         ]
-      }
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
     },
     {
       "substrates": [
-        "Zn(HS)2",
-        "Li2S"
+        "(NH4)2SiO3",
+        "Ca(HCO3)2"
       ],
       "products": [
-        "ZnS",
-        "LiHS"
+        "CaSiO3",
+        "NH4HCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Zn(HS)2 + Li2S -> ZnS + 2 LiHS",
+      "equation": "(NH4)2SiO3 + Ca(HCO3)2 -> CaSiO3 + 2 NH4HCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -3476,410 +1462,203 @@
           2
         ]
       },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "LiOH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "LiHS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Zn(HS)2 + 2 LiOH -> Zn(OH)2 + 2 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "NH4OH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "NH4HS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Zn(HS)2 + 2 NH4OH -> Zn(OH)2 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "ZnI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Zn(HS)2 + 2 HI -> 2 H2S + ZnI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "ZnBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Zn(HS)2 + 2 HBr -> 2 H2S + ZnBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "Li2S"
-      ],
-      "products": [
-        "FeS",
-        "LiHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(HS)2 + Li2S -> FeS + 2 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "LiOH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "LiHS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)2 + 2 LiOH -> Fe(OH)2 + 2 LiHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NH4OH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "NH4HS"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "HI"
-      ],
-      "products": [
-        "H2S",
-        "FeI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe(HS)2 + 2 HI -> 2 H2S + FeI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "FeS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "FeBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe(HS)2 + 2 HBr -> 2 H2S + FeBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
+      "note": "CaSiO3 precipitates"
     }
   ],
   "answers": {
-    "binary_salt_synthesis": {
+    "base_with_acidic_oxide": {
       "substrates": [
-        "Li",
-        "Br2"
+        "Ca(OH)2",
+        "CO2"
       ],
       "products": [
-        "LiBr"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Li + Br2 -> 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    "double_displacement": {
-      "substrates": [
-        "CuBr2",
-        "Li2S"
-      ],
-      "products": [
-        "CuS",
-        "LiBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "CuBr2 + Li2S -> CuS + 2 LiBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    "halogen_displacement": {
-      "substrates": [
-        "Br2",
-        "LiI"
-      ],
-      "products": [
-        "LiBr",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + 2 LiI -> 2 LiBr + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    "halogen_disproportionation": {
-      "substrates": [
-        "Br2",
-        "LiOH"
-      ],
-      "products": [
-        "LiBrO3",
-        "LiBr",
+        "CaCO3",
         "H2O"
       ],
-      "rule": "halogen_disproportionation",
-      "equation": "3 Br2 + 6 LiOH -> LiBrO3 + 5 LiBr + 3 H2O",
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ca(OH)2 + CO2 -> CaCO3 + H2O",
       "coefficients": {
         "substrates": [
-          3,
-          6
+          1,
+          1
         ],
         "products": [
           1,
-          5,
-          3
+          1
         ]
       },
-      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
+      "note": "CaCO3 is insoluble"
     },
-    "hydroxide_precipitation": {
+    "oxide_with_oxide": {
       "substrates": [
-        "CuBr2",
-        "LiOH"
+        "CaO",
+        "CO2"
       ],
       "products": [
-        "Cu(OH)2",
-        "LiBr"
+        "CaCO3"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "CuBr2 + 2 LiOH -> Cu(OH)2 + 2 LiBr",
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + CO2 -> CaCO3",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          1,
-          2
+          1
         ]
-      },
-      "note": "Cu(OH)2 precipitates"
+      }
     },
     "acid_displacement": {
       "substrates": [
-        "Li2S",
-        "HBr"
+        "CaSiO3",
+        "H2CO3"
       ],
       "products": [
-        "H2S",
-        "LiBr"
+        "H2SiO3",
+        "CaCO3"
       ],
       "rule": "acid_displacement",
-      "equation": "Li2S + 2 HBr -> H2S + 2 LiBr",
+      "equation": "CaSiO3 + H2CO3 -> H2SiO3 + CaCO3",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2CO3",
+        "CaO"
+      ],
+      "products": [
+        "CaCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + CaO -> CaCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaCO3 is insoluble"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Ca",
+        "H2CO3"
+      ],
+      "products": [
+        "CaCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2CO3 -> CaCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaCO3 is insoluble"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2CO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Ca(OH)2 -> CaCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
         ],
         "products": [
           1,
           2
         ]
-      }
+      },
+      "note": "CaCO3 is insoluble"
     },
-    "ammonia_liberation": {
+    "acid_salt_with_base": {
       "substrates": [
-        "NH4Br",
-        "LiOH"
+        "Ca(HCO3)2",
+        "Ca(OH)2"
       ],
       "products": [
-        "NH3",
-        "LiBr",
+        "CaCO3",
         "H2O"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4Br + LiOH -> NH3 + LiBr + H2O",
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(HCO3)2 + Ca(OH)2 -> 2 CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Ca(HCO3)2",
+        "(NH4)2CO3"
+      ],
+      "products": [
+        "CaCO3",
+        "NH4HCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + (NH4)2CO3 -> CaCO3 + 2 NH4HCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    "hydrogencarbonate_decomposition": {
+      "substrates": [
+        "Ca(HCO3)2"
+      ],
+      "products": [
+        "CaCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Ca(HCO3)2 -> CaCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
           1
         ],
         "products": [
@@ -3888,1691 +1667,195 @@
           1
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      "note": "needs only gentle heating"
     },
-    "metal_with_acid": {
+    "salt_with_base": {
       "substrates": [
-        "Li",
-        "HBr"
+        "(NH4)2CO3",
+        "Ca(OH)2"
       ],
       "products": [
-        "LiBr",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Li + 2 HBr -> 2 LiBr + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    "neutralisation": {
-      "substrates": [
-        "HBr",
-        "LiOH"
-      ],
-      "products": [
-        "LiBr",
+        "NH3",
+        "CaCO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "HBr + LiOH -> LiBr + H2O",
+      "rule": "salt_with_base",
+      "equation": "(NH4)2CO3 + Ca(OH)2 -> 2 NH3 + CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          2,
           1,
-          1
+          2
         ]
-      }
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
     }
   },
   "misses": [
     {
       "substrates": [
-        "(NH4)2S",
-        "Cu"
+        "(NH4)2CO3",
+        "Ca"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "(NH4)2S",
-        "Cu(OH)2"
+        "(NH4)2CO3",
+        "H2SiO3"
       ],
-      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "(NH4)2S",
-        "Fe"
+        "(NH4)2CO3",
+        "K2SiO3"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(OH)2"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(OH)3"
-      ],
-      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "LiIO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Zn(OH)2"
-      ],
-      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Cu(HS)2"
-      ],
-      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "CuBr2"
-      ],
-      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "CuI2"
-      ],
-      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Fe(HS)2"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Fe(HS)3"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "FeBr2"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "FeBr3"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "FeI2"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "FeI3"
-      ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "H2S"
-      ],
-      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "HBr"
-      ],
-      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "HI"
-      ],
-      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Li2S"
-      ],
-      "note": "Cu sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "LiBrO3"
-      ],
-      "note": "Cu sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "LiHS"
-      ],
-      "note": "Cu sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "LiI"
-      ],
-      "note": "Cu sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "LiIO3"
-      ],
-      "note": "Cu sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "NH4Br"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "NH4HS"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "NH4I"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "Zn(HS)2"
-      ],
-      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "ZnBr2"
-      ],
-      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "ZnI2"
-      ],
-      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "FeBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "FeBr3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "FeI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "FeI3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "LiIO3"
-      ],
-      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(OH)2",
-        "NH4Br"
-      ],
-      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Cu(OH)2",
-        "NH4HS"
-      ],
-      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Cu(OH)2",
-        "NH4I"
-      ],
-      "note": "Cu(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Fe(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Fe(HS)3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "FeI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "FeI3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "HI"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "I2"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "LiIO3"
-      ],
-      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Fe(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Fe(HS)3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "FeBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "FeBr3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "HBr"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "LiIO3"
-      ],
-      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Fe(HS)2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Fe(HS)3"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeBr2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeBr3"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeI2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeI3"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Li2S"
-      ],
-      "note": "Fe sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "LiBrO3"
-      ],
-      "note": "Fe sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "LiHS"
-      ],
-      "note": "Fe sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "LiI"
-      ],
-      "note": "Fe sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "LiIO3"
-      ],
-      "note": "Fe sits below Li in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "NH4Br"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "NH4HS"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "NH4I"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Zn(HS)2"
-      ],
-      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "ZnBr2"
-      ],
-      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "ZnI2"
-      ],
-      "note": "Fe sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "FeBr3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "FeI3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "LiIO3"
-      ],
-      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "FeBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "FeI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "LiIO3"
-      ],
-      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)3",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4Br"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4HS"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4I"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)3",
-        "NH4Br"
-      ],
-      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)3",
-        "NH4HS"
-      ],
-      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)3",
-        "NH4I"
-      ],
-      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "FeI3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "HI"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "I2"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "LiIO3"
-      ],
-      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "FeI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "HI"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "I2"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "LiI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "LiIO3"
-      ],
-      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "HBr"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "LiBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "LiHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "LiIO3"
-      ],
-      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "HBr"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "LiBrO3"
-      ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "FeI3",
-        "LiHS"
+        "(NH4)2CO3",
+        "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "FeI3",
-        "LiIO3"
+        "(NH4)2SiO3",
+        "Ca"
       ],
-      "note": "Fe(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "FeI3",
-        "NH4Br"
+        "(NH4)2SiO3",
+        "K2CO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "FeI3",
-        "NH4HS"
+        "(NH4)2SiO3",
+        "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeI3",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "LiBrO3"
-      ],
-      "note": "H2S is no stronger than HBrO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "LiI"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "LiIO3"
-      ],
-      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4Br"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4I"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "ZnBr2"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "ZnI2"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "LiBrO3"
-      ],
-      "note": "HBr is no stronger than HBrO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "LiI"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "LiIO3"
-      ],
-      "note": "HBr is no stronger than HIO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NH4I"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "ZnI2"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HI",
-        "LiBrO3"
-      ],
-      "note": "HI is no stronger than HBrO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HI",
-        "LiIO3"
-      ],
-      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HI",
-        "NH4Br"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HI",
-        "ZnBr2"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "I2",
-        "NH4Br"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "I2",
-        "ZnBr2"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "Li",
-        "Li2S"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "LiBrO3"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "LiHS"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "LiI"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "LiIO3"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "NH4Br"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "NH4HS"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li",
-        "NH4I"
+        "Ca",
+        "Ca(HCO3)2"
       ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li",
-        "Zn(HS)2"
+        "Ca",
+        "K2CO3"
       ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li",
-        "ZnBr2"
+        "Ca",
+        "K2SiO3"
       ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li",
-        "ZnI2"
+        "Ca",
+        "KHCO3"
       ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li2S",
-        "NH4Br"
+        "Ca",
+        "NH4HCO3"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Li2S",
-        "NH4HS"
+        "Ca(HCO3)2",
+        "H2SiO3"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Li2S",
-        "NH4I"
+        "Ca(HCO3)2",
+        "KOH"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
-        "Li2S",
+        "Ca(HCO3)2",
         "NH4OH"
       ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
-        "LiBrO3",
-        "NH4Br"
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4HCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NH4HCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "LiBrO3",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiBrO3",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiBrO3",
+        "K2CO3",
         "NH4OH"
       ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "LiBrO3",
-        "Zn(HS)2"
+        "K2SiO3",
+        "NH4HCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "LiBrO3",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiBrO3",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiHS",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiHS",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiHS",
+        "K2SiO3",
         "NH4OH"
       ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "LiHS",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiHS",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiI",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiI",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiI",
+        "KHCO3",
         "NH4OH"
       ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiI",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiI",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "NH4Br"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "NH4I"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "NH4OH"
-      ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "Zn(HS)2"
-      ],
-      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "ZnBr2"
-      ],
-      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "LiIO3",
-        "ZnI2"
-      ],
-      "note": "Zn(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "NH4Br",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4Br",
-        "Zn(OH)2"
-      ],
-      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "NH4Br",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "Zn(OH)2"
-      ],
-      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4I",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4I",
-        "Zn(OH)2"
-      ],
-      "note": "Zn(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "NH4I",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     }
   ]
 }

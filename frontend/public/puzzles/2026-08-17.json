@@ -1,46 +1,83 @@
 {
   "version": 3,
-  "target": "Li2CO3",
-  "name": "lithium carbonate",
+  "target": "BaS",
+  "name": "barium sulfide",
   "grade": "easy",
   "want": 5,
-  "ways": 9,
+  "ways": 7,
   "cut": 1,
   "palette": [
-    "CO2",
+    "Ba",
+    "Ba(OH)2",
+    "BaO",
     "H2O",
-    "Li",
-    "Li2O",
-    "LiOH",
-    "NH3",
+    "H2S",
+    "MgS",
+    "S",
     "SiO2"
   ],
   "species": {
-    "(NH4)2CO3": {
-      "name": "ammonium carbonate",
+    "Ba": {
+      "name": "barium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
       "class": "salt",
       "state": "aq",
-      "common": true,
+      "common": false,
       "ions": {
-        "NH4": 1,
-        "CO3": -2
+        "Ba": 2,
+        "HS": -1
       }
     },
-    "(NH4)2SiO3": {
-      "name": "ammonium silicate",
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaH2": {
+      "name": "barium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "H": -1
+      }
+    },
+    "BaO": {
+      "name": "barium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "BaS": {
+      "name": "barium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "BaSiO3": {
+      "name": "barium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
         "SiO3": -2
       }
-    },
-    "CO2": {
-      "name": "carbon dioxide",
-      "class": "acidic oxide",
-      "state": "g",
-      "common": true
     },
     "H2": {
       "name": "hydrogen",
@@ -48,21 +85,21 @@
       "state": "g",
       "common": true
     },
-    "H2CO3": {
-      "name": "carbonic acid",
-      "class": "acid",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "H": 1,
-        "CO3": -2
-      }
-    },
     "H2O": {
       "name": "water",
       "class": "water",
       "state": "l",
       "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
     },
     "H2SiO3": {
       "name": "silicic acid",
@@ -74,93 +111,51 @@
         "SiO3": -2
       }
     },
-    "Li": {
-      "name": "lithium",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Li2CO3": {
-      "name": "lithium carbonate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Li": 1,
-        "CO3": -2
-      }
-    },
-    "Li2O": {
-      "name": "lithium oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "Li2SiO3": {
-      "name": "lithium silicate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Li": 1,
-        "SiO3": -2
-      }
-    },
-    "LiH": {
-      "name": "lithium hydride",
+    "Mg(HS)2": {
+      "name": "magnesium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Li": 1,
-        "H": -1
+        "Mg": 2,
+        "HS": -1
       }
     },
-    "LiHCO3": {
-      "name": "lithium hydrogencarbonate",
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "MgS": {
+      "name": "magnesium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Li": 1,
-        "HCO3": -1
+        "Mg": 2,
+        "S": -2
       }
     },
-    "LiOH": {
-      "name": "lithium hydroxide",
-      "class": "base",
-      "state": "aq",
+    "MgSiO3": {
+      "name": "magnesium silicate",
+      "class": "salt",
+      "state": "s",
       "common": true,
       "ions": {
-        "Li": 1,
-        "OH": -1
+        "Mg": 2,
+        "SiO3": -2
       }
     },
-    "NH3": {
-      "name": "ammonia",
-      "class": "hydride",
-      "state": "g",
+    "S": {
+      "name": "sulfur",
+      "class": "element",
+      "state": "s",
       "common": true
-    },
-    "NH4HCO3": {
-      "name": "ammonium hydrogencarbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "HCO3": -1
-      }
-    },
-    "NH4OH": {
-      "name": "ammonia solution",
-      "class": "base",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "OH": -1
-      }
     },
     "SiO2": {
       "name": "silicon dioxide",
@@ -172,184 +167,150 @@
   "reactions": [
     {
       "substrates": [
-        "CO2",
+        "Ba",
         "H2O"
       ],
       "products": [
-        "H2CO3"
-      ],
-      "rule": "anhydride_hydration",
-      "equation": "CO2 + H2O -> H2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to CO2 + H2O"
-    },
-    {
-      "substrates": [
-        "Li2O",
-        "CO2"
-      ],
-      "products": [
-        "Li2CO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Li2O + CO2 -> Li2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "LiOH",
-        "CO2"
-      ],
-      "products": [
-        "Li2CO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 LiOH + CO2 -> Li2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li",
-        "H2O"
-      ],
-      "products": [
-        "LiOH",
+        "Ba(OH)2",
         "H2"
       ],
       "rule": "metal_with_water",
-      "equation": "2 Li + 2 H2O -> 2 LiOH + H2",
+      "equation": "Ba + 2 H2O -> Ba(OH)2 + H2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           2
         ],
         "products": [
-          2,
+          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "Li2O",
-        "H2O"
+        "Ba",
+        "H2S"
       ],
       "products": [
-        "LiOH"
+        "BaS",
+        "H2"
       ],
-      "rule": "basic_oxide_hydration",
-      "equation": "Li2O + H2O -> 2 LiOH",
+      "rule": "metal_with_acid",
+      "equation": "Ba + H2S -> BaS + H2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba",
+        "S"
+      ],
+      "products": [
+        "BaS"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ba + S -> BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
           2
         ]
       }
     },
     {
       "substrates": [
-        "NH3",
-        "H2O"
+        "H2S",
+        "Ba(OH)2"
       ],
       "products": [
-        "NH4OH"
+        "Ba(HS)2",
+        "H2O"
       ],
-      "rule": "hydride_dissolution",
-      "equation": "NH3 + H2O -> NH4OH",
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          1,
           1
         ]
       },
-      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+      "note": "Mg(OH)2 precipitates"
     },
     {
       "substrates": [
-        "Li2O",
+        "Ba(OH)2",
         "SiO2"
       ],
       "products": [
-        "Li2SiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Li2O + SiO2 -> Li2SiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "LiOH",
-        "SiO2"
-      ],
-      "products": [
-        "Li2SiO3",
+        "BaSiO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "2 LiOH + SiO2 -> Li2SiO3 + H2O",
+      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
       "coefficients": {
         "substrates": [
-          2,
-          1
-        ],
-        "products": [
           1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2CO3"
-      ],
-      "products": [
-        "CO2",
-        "H2O"
-      ],
-      "rule": "unstable_decomposition",
-      "equation": "H2CO3 -> CO2 + H2O",
-      "coefficients": {
-        "substrates": [
           1
         ],
         "products": [
@@ -357,41 +318,39 @@
           1
         ]
       },
-      "note": "does not survive in solution"
+      "note": "BaSiO3 is insoluble"
     },
     {
       "substrates": [
-        "Li",
-        "H2CO3"
+        "BaO",
+        "H2O"
       ],
       "products": [
-        "Li2CO3",
-        "H2"
+        "Ba(OH)2"
       ],
-      "rule": "metal_with_acid",
-      "equation": "2 Li + H2CO3 -> Li2CO3 + H2",
+      "rule": "basic_oxide_hydration",
+      "equation": "BaO + H2O -> Ba(OH)2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
-          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "H2CO3",
-        "Li2O"
+        "H2S",
+        "BaO"
       ],
       "products": [
-        "Li2CO3",
+        "BaS",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + Li2O -> Li2CO3 + H2O",
+      "equation": "H2S + BaO -> BaS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -405,395 +364,299 @@
     },
     {
       "substrates": [
-        "H2CO3",
-        "LiOH"
+        "BaO",
+        "SiO2"
       ],
       "products": [
-        "Li2CO3",
-        "H2O"
+        "BaSiO3"
       ],
-      "rule": "neutralisation",
-      "equation": "H2CO3 + 2 LiOH -> Li2CO3 + 2 H2O",
+      "rule": "oxide_with_oxide",
+      "equation": "BaO + SiO2 -> BaSiO3",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          1,
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "H2CO3",
-        "LiOH"
+        "MgS",
+        "H2S"
       ],
       "products": [
-        "LiHCO3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2CO3 + LiOH -> LiHCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2CO3"
-      ],
-      "products": [
-        "(NH4)2CO3"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2CO3 -> (NH4)2CO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "Li2CO3",
-        "H2CO3"
-      ],
-      "products": [
-        "LiHCO3"
+        "Mg(HS)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Li2CO3 + H2CO3 -> 2 LiHCO3",
+      "equation": "MgS + H2S -> Mg(HS)2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2
+          1
         ]
       },
       "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
-        "H2CO3",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2CO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2CO3 + 2 NH4OH -> (NH4)2CO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2CO3",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4HCO3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2CO3 + NH4OH -> NH4HCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Li2SiO3",
-        "H2CO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "Li2CO3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Li2SiO3 + H2CO3 -> H2SiO3 + Li2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Li",
+        "Ba",
         "H2"
       ],
       "products": [
-        "LiH"
+        "BaH2"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 Li + H2 -> 2 LiH",
+      "equation": "Ba + H2 -> BaH2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "NH4OH"
+        "H2",
+        "S"
       ],
       "products": [
-        "NH3",
-        "H2O"
+        "H2S"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "NH4OH -> NH3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "does not survive in solution"
-    },
-    {
-      "substrates": [
-        "LiHCO3"
-      ],
-      "products": [
-        "Li2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 LiHCO3 -> Li2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "LiHCO3",
-        "LiOH"
-      ],
-      "products": [
-        "Li2CO3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "LiHCO3 + LiOH -> Li2CO3 + H2O",
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
           1
         ]
-      },
-      "note": "more base takes off another proton"
+      }
     },
     {
       "substrates": [
-        "(NH4)2CO3",
-        "LiOH"
+        "BaS",
+        "H2S"
       ],
       "products": [
-        "NH3",
-        "Li2CO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2CO3 + 2 LiOH -> 2 NH3 + Li2CO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2CO3",
-        "H2CO3"
-      ],
-      "products": [
-        "NH4HCO3"
+        "Ba(HS)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "(NH4)2CO3 + H2CO3 -> 2 NH4HCO3",
+      "equation": "BaS + H2S -> Ba(HS)2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2
+          1
         ]
       },
       "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
-        "NH4HCO3"
+        "Ba(HS)2",
+        "Ba(OH)2"
       ],
       "products": [
-        "(NH4)2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 NH4HCO3 -> (NH4)2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "NH4HCO3",
-        "LiOH"
-      ],
-      "products": [
-        "NH3",
-        "LiHCO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HCO3 + LiOH -> NH3 + LiHCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4HCO3",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2CO3",
+        "BaS",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "NH4HCO3 + NH4OH -> (NH4)2CO3 + H2O",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
+          2,
+          2
         ]
       },
       "note": "more base takes off another proton"
     },
     {
       "substrates": [
-        "Li",
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(HS)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba",
         "H2SiO3"
       ],
       "products": [
-        "Li2SiO3",
+        "BaSiO3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Li + H2SiO3 -> Li2SiO3 + H2",
+      "equation": "Ba + H2SiO3 -> BaSiO3 + H2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
           1,
           1
         ]
-      }
+      },
+      "note": "BaSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "Li2O"
+        "Ba(OH)2"
       ],
       "products": [
-        "Li2SiO3",
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "BaO"
+      ],
+      "products": [
+        "BaSiO3",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + Li2O -> Li2SiO3 + H2O",
+      "equation": "H2SiO3 + BaO -> BaSiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -801,111 +664,45 @@
         ],
         "products": [
           1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "LiOH"
-      ],
-      "products": [
-        "Li2SiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 LiOH -> Li2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2SiO3"
-      ],
-      "products": [
-        "(NH4)2SiO3"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
           1
         ]
       },
-      "note": "no water -- the base is a gas, not a hydroxide"
+      "note": "BaSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "NH4OH"
+        "Mg(OH)2"
       ],
       "products": [
-        "(NH4)2SiO3",
+        "MgSiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
+      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "LiOH"
-      ],
-      "products": [
-        "NH3",
-        "Li2SiO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2SiO3 + 2 LiOH -> 2 NH3 + Li2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
           1,
           2
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      "note": "MgSiO3 is insoluble"
     },
     {
       "substrates": [
-        "(NH4)2SiO3",
-        "H2CO3"
+        "MgSiO3",
+        "H2S"
       ],
       "products": [
         "H2SiO3",
-        "(NH4)2CO3"
+        "MgS"
       ],
       "rule": "acid_displacement",
-      "equation": "(NH4)2SiO3 + H2CO3 -> H2SiO3 + (NH4)2CO3",
+      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
       "coefficients": {
         "substrates": [
           1,
@@ -919,81 +716,17 @@
     }
   ],
   "answers": {
-    "base_with_acidic_oxide": {
-      "substrates": [
-        "LiOH",
-        "CO2"
-      ],
-      "products": [
-        "Li2CO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 LiOH + CO2 -> Li2CO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    "oxide_with_oxide": {
-      "substrates": [
-        "Li2O",
-        "CO2"
-      ],
-      "products": [
-        "Li2CO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Li2O + CO2 -> Li2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    "acid_displacement": {
-      "substrates": [
-        "Li2SiO3",
-        "H2CO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "Li2CO3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Li2SiO3 + H2CO3 -> H2SiO3 + Li2CO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
     "acid_with_basic_oxide": {
       "substrates": [
-        "H2CO3",
-        "Li2O"
+        "H2S",
+        "BaO"
       ],
       "products": [
-        "Li2CO3",
+        "BaS",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + Li2O -> Li2CO3 + H2O",
+      "equation": "H2S + BaO -> BaS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1001,24 +734,44 @@
         ],
         "products": [
           1,
+          1
+        ]
+      }
+    },
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Ba",
+        "S"
+      ],
+      "products": [
+        "BaS"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ba + S -> BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
           1
         ]
       }
     },
     "metal_with_acid": {
       "substrates": [
-        "Li",
-        "H2CO3"
+        "Ba",
+        "H2S"
       ],
       "products": [
-        "Li2CO3",
+        "BaS",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Li + H2CO3 -> Li2CO3 + H2",
+      "equation": "Ba + H2S -> BaS + H2",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
@@ -1029,19 +782,19 @@
     },
     "neutralisation": {
       "substrates": [
-        "H2CO3",
-        "LiOH"
+        "H2S",
+        "Ba(OH)2"
       ],
       "products": [
-        "Li2CO3",
+        "BaS",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + 2 LiOH -> Li2CO3 + 2 H2O",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
           1,
@@ -1049,176 +802,124 @@
         ]
       }
     },
-    "acid_salt_with_base": {
+    "salt_with_base": {
       "substrates": [
-        "LiHCO3",
-        "LiOH"
+        "MgS",
+        "Ba(OH)2"
       ],
       "products": [
-        "Li2CO3",
+        "Mg(OH)2",
+        "BaS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "BaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "LiHCO3 + LiOH -> Li2CO3 + H2O",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    "ammonia_liberation": {
-      "substrates": [
-        "(NH4)2CO3",
-        "LiOH"
-      ],
-      "products": [
-        "NH3",
-        "Li2CO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2CO3 + 2 LiOH -> 2 NH3 + Li2CO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
         ],
         "products": [
           2,
-          1,
           2
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    "hydrogencarbonate_decomposition": {
-      "substrates": [
-        "LiHCO3"
-      ],
-      "products": [
-        "Li2CO3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 LiHCO3 -> Li2CO3 + CO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "needs only gentle heating"
+      "note": "more base takes off another proton"
     }
   },
   "misses": [
     {
       "substrates": [
-        "(NH4)2CO3",
+        "Ba",
+        "Ba(HS)2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "Mg(HS)2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "MgS"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "(NH4)2CO3",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2CO3",
-        "Li2SiO3"
-      ],
-      "note": "Li2CO3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "(NH4)2CO3",
-        "LiHCO3"
-      ],
-      "note": "Li2CO3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "Li"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "LiHCO3"
+        "Ba(HS)2",
+        "MgS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "H2SiO3",
-        "LiHCO3"
+        "Mg(HS)2"
       ],
-      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "NH4HCO3"
+        "MgS"
       ],
-      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "Li2SiO3"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "LiHCO3"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li",
-        "NH4HCO3"
-      ],
-      "note": "Li attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Li2SiO3",
-        "NH4HCO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Li2SiO3",
-        "NH4OH"
-      ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "LiHCO3",
-        "NH4OH"
-      ],
-      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     }
   ]
 }

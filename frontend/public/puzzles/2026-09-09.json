@@ -1,39 +1,22 @@
 {
   "version": 3,
-  "target": "BaHPO4",
-  "name": "barium hydrogenphosphate",
+  "target": "Zn3(PO4)2",
+  "name": "zinc phosphate",
   "grade": "medium",
   "want": 5,
   "ways": 5,
   "cut": 1,
   "palette": [
     "Ba(OH)2",
-    "BaO",
     "H2O",
-    "NH3",
-    "P2O5"
+    "Na2O",
+    "P2O5",
+    "Zn",
+    "ZnBr2",
+    "ZnCl2",
+    "ZnS"
   ],
   "species": {
-    "(NH4)2HPO4": {
-      "name": "ammonium hydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "HPO4": -2
-      }
-    },
-    "(NH4)3PO4": {
-      "name": "ammonium phosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "PO4": -3
-      }
-    },
     "Ba(H2PO4)2": {
       "name": "barium dihydrogenphosphate",
       "class": "salt",
@@ -42,6 +25,16 @@
       "ions": {
         "Ba": 2,
         "H2PO4": -1
+      }
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
       }
     },
     "Ba(OH)2": {
@@ -64,6 +57,26 @@
         "PO4": -3
       }
     },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaCl2": {
+      "name": "barium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Cl": -1
+      }
+    },
     "BaHPO4": {
       "name": "barium hydrogenphosphate",
       "class": "salt",
@@ -74,10 +87,20 @@
         "HPO4": -2
       }
     },
-    "BaO": {
-      "name": "barium oxide",
-      "class": "basic oxide",
-      "state": "s",
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
       "common": true
     },
     "H2O": {
@@ -85,6 +108,16 @@
       "class": "water",
       "state": "l",
       "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
     },
     "H3PO4": {
       "name": "phosphoric acid",
@@ -96,29 +129,89 @@
         "PO4": -3
       }
     },
-    "NH3": {
-      "name": "ammonia",
-      "class": "hydride",
-      "state": "g",
-      "common": true
-    },
-    "NH4H2PO4": {
-      "name": "ammonium dihydrogenphosphate",
+    "Na2HPO4": {
+      "name": "sodium hydrogenphosphate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
+        "Na": 1,
+        "HPO4": -2
+      }
+    },
+    "Na2O": {
+      "name": "sodium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Na2S": {
+      "name": "sodium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "S": -2
+      }
+    },
+    "Na3PO4": {
+      "name": "sodium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "PO4": -3
+      }
+    },
+    "NaBr": {
+      "name": "sodium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaCl": {
+      "name": "sodium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Cl": -1
+      }
+    },
+    "NaH2PO4": {
+      "name": "sodium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
         "H2PO4": -1
       }
     },
-    "NH4OH": {
-      "name": "ammonia solution",
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "HS": -1
+      }
+    },
+    "NaOH": {
+      "name": "sodium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
+        "Na": 1,
         "OH": -1
       }
     },
@@ -127,6 +220,102 @@
       "class": "acidic oxide",
       "state": "s",
       "common": true
+    },
+    "Zn": {
+      "name": "zinc",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Zn(H2PO4)2": {
+      "name": "zinc dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "H2PO4": -1
+      }
+    },
+    "Zn(HS)2": {
+      "name": "zinc hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "HS": -1
+      }
+    },
+    "Zn(OH)2": {
+      "name": "zinc hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "OH": -1
+      }
+    },
+    "Zn3(PO4)2": {
+      "name": "zinc phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "PO4": -3
+      }
+    },
+    "ZnBr2": {
+      "name": "zinc bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "Br": -1
+      }
+    },
+    "ZnCl2": {
+      "name": "zinc chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "Cl": -1
+      }
+    },
+    "ZnH2": {
+      "name": "zinc hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "H": -1
+      }
+    },
+    "ZnHPO4": {
+      "name": "zinc hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "HPO4": -2
+      }
+    },
+    "ZnS": {
+      "name": "zinc sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "S": -2
+      }
     }
   },
   "reactions": [
@@ -155,64 +344,69 @@
     },
     {
       "substrates": [
-        "BaO",
-        "H2O"
-      ],
-      "products": [
+        "ZnBr2",
         "Ba(OH)2"
       ],
-      "rule": "basic_oxide_hydration",
-      "equation": "BaO + H2O -> Ba(OH)2",
+      "products": [
+        "Zn(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnBr2 + Ba(OH)2 -> Zn(OH)2 + BaBr2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaO",
-        "P2O5"
-      ],
-      "products": [
-        "Ba3(PO4)2"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "3 BaO + P2O5 -> Ba3(PO4)2",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2O"
-      ],
-      "products": [
-        "NH4OH"
-      ],
-      "rule": "hydride_dissolution",
-      "equation": "NH3 + H2O -> NH4OH",
-      "coefficients": {
-        "substrates": [
           1,
-          1
-        ],
-        "products": [
           1
         ]
       },
-      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnCl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaCl2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnCl2 + Ba(OH)2 -> Zn(OH)2 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "H2O"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
     },
     {
       "substrates": [
@@ -228,6 +422,26 @@
         "substrates": [
           1,
           3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "P2O5"
+      ],
+      "products": [
+        "Na3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 Na2O + P2O5 -> 2 Na3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
         ],
         "products": [
           2
@@ -278,36 +492,198 @@
     },
     {
       "substrates": [
-        "NH4OH"
+        "H3PO4",
+        "Zn(OH)2"
       ],
       "products": [
-        "NH3",
+        "Zn3(PO4)2",
         "H2O"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "NH4OH -> NH3 + H2O",
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Zn(OH)2 -> Zn3(PO4)2 + 6 H2O",
       "coefficients": {
         "substrates": [
-          1
+          2,
+          3
         ],
         "products": [
           1,
-          1
+          6
         ]
       },
-      "note": "does not survive in solution"
+      "note": "Zn3(PO4)2 is insoluble"
     },
     {
       "substrates": [
         "H3PO4",
-        "NH4OH"
+        "Zn(OH)2"
       ],
       "products": [
-        "(NH4)3PO4",
+        "ZnHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Zn(OH)2 -> ZnHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Zn(OH)2 -> Zn(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaBr2 + 2 Na3PO4 -> Ba3(PO4)2 + 6 NaBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Na3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaCl2 + 2 Na3PO4 -> Ba3(PO4)2 + 6 NaCl",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "P2O5"
+      ],
+      "products": [
+        "Na3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 NaOH + P2O5 -> 2 Na3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnBr2",
+        "NaOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NaBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnBr2 + 2 NaOH -> Zn(OH)2 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnCl2",
+        "NaOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NaCl"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnCl2 + 2 NaOH -> Zn(OH)2 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na3PO4",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H3PO4 + 3 NH4OH -> (NH4)3PO4 + 3 H2O",
+      "equation": "H3PO4 + 3 NaOH -> Na3PO4 + 3 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -322,14 +698,14 @@
     {
       "substrates": [
         "H3PO4",
-        "NH4OH"
+        "NaOH"
       ],
       "products": [
-        "(NH4)2HPO4",
+        "Na2HPO4",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + 2 NH4OH -> (NH4)2HPO4 + 2 H2O",
+      "equation": "H3PO4 + 2 NaOH -> Na2HPO4 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -345,14 +721,14 @@
     {
       "substrates": [
         "H3PO4",
-        "NH4OH"
+        "NaOH"
       ],
       "products": [
-        "NH4H2PO4",
+        "NaH2PO4",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + NH4OH -> NH4H2PO4 + H2O",
+      "equation": "H3PO4 + NaOH -> NaH2PO4 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -437,14 +813,123 @@
     {
       "substrates": [
         "H3PO4",
-        "BaO"
+        "Na2O"
       ],
       "products": [
-        "Ba3(PO4)2",
+        "Na3PO4",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "2 H3PO4 + 3 BaO -> Ba3(PO4)2 + 3 H2O",
+      "equation": "2 H3PO4 + 3 Na2O -> 2 Na3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "H3PO4"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Zn + 2 H3PO4 -> Zn3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Zn3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Zn3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 ZnS + 2 H3PO4 -> 3 H2S + Zn3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Na2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Na3PO4 + H3PO4 -> 3 Na2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "NaH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na3PO4 + 2 H3PO4 -> 3 NaH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na3PO4",
+        "ZnBr2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Na3PO4 + 3 ZnBr2 -> Zn3(PO4)2 + 6 NaBr",
       "coefficients": {
         "substrates": [
           2,
@@ -452,31 +937,33 @@
         ],
         "products": [
           1,
-          3
+          6
         ]
       },
-      "note": "Ba3(PO4)2 is insoluble"
+      "note": "Zn3(PO4)2 precipitates"
     },
     {
       "substrates": [
-        "NH3",
-        "H3PO4"
+        "Na3PO4",
+        "ZnCl2"
       ],
       "products": [
-        "(NH4)3PO4"
+        "Zn3(PO4)2",
+        "NaCl"
       ],
-      "rule": "ammonia_with_acid",
-      "equation": "3 NH3 + H3PO4 -> (NH4)3PO4",
+      "rule": "double_displacement",
+      "equation": "2 Na3PO4 + 3 ZnCl2 -> Zn3(PO4)2 + 6 NaCl",
       "coefficients": {
         "substrates": [
-          3,
-          1
+          2,
+          3
         ],
         "products": [
-          1
+          1,
+          6
         ]
       },
-      "note": "no water -- the base is a gas, not a hydroxide"
+      "note": "Zn3(PO4)2 precipitates"
     },
     {
       "substrates": [
@@ -550,14 +1037,14 @@
     {
       "substrates": [
         "Ba(H2PO4)2",
-        "(NH4)3PO4"
+        "Na3PO4"
       ],
       "products": [
         "Ba3(PO4)2",
-        "NH4H2PO4"
+        "NaH2PO4"
       ],
       "rule": "double_displacement",
-      "equation": "3 Ba(H2PO4)2 + 2 (NH4)3PO4 -> Ba3(PO4)2 + 6 NH4H2PO4",
+      "equation": "3 Ba(H2PO4)2 + 2 Na3PO4 -> Ba3(PO4)2 + 6 NaH2PO4",
       "coefficients": {
         "substrates": [
           3,
@@ -573,14 +1060,14 @@
     {
       "substrates": [
         "Ba(H2PO4)2",
-        "(NH4)2HPO4"
+        "Na2HPO4"
       ],
       "products": [
         "BaHPO4",
-        "NH4H2PO4"
+        "NaH2PO4"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(H2PO4)2 + (NH4)2HPO4 -> BaHPO4 + 2 NH4H2PO4",
+      "equation": "Ba(H2PO4)2 + Na2HPO4 -> BaHPO4 + 2 NaH2PO4",
       "coefficients": {
         "substrates": [
           1,
@@ -595,206 +1082,424 @@
     },
     {
       "substrates": [
-        "(NH4)3PO4",
-        "Ba(OH)2"
+        "Zn3(PO4)2",
+        "H3PO4"
       ],
       "products": [
-        "NH3",
-        "Ba3(PO4)2",
+        "ZnHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Zn3(PO4)2 + H3PO4 -> 3 ZnHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Zn3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Zn(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Zn3(PO4)2 + 4 H3PO4 -> 3 Zn(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "ZnHPO4",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
         "H2O"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "2 (NH4)3PO4 + 3 Ba(OH)2 -> 6 NH3 + Ba3(PO4)2 + 6 H2O",
+      "rule": "acid_salt_with_base",
+      "equation": "2 ZnHPO4 + Zn(OH)2 -> Zn3(PO4)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
-          3
+          1
         ],
         "products": [
-          6,
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(H2PO4)2 + Ba(OH)2 -> Zn(OH)2 + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(H2PO4)2 + Zn(OH)2 -> 2 ZnHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(H2PO4)2 + 2 Zn(OH)2 -> Zn3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "NaOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NaH2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(H2PO4)2 + 2 NaOH -> Zn(OH)2 + 2 NaH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "Na3PO4"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "NaH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Zn(H2PO4)2 + 2 Na3PO4 -> Zn3(PO4)2 + 6 NaH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
           1,
           6
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      "note": "Zn3(PO4)2 precipitates"
     },
     {
       "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
+        "Zn(H2PO4)2",
+        "Na2HPO4"
       ],
       "products": [
-        "(NH4)2HPO4"
+        "ZnHPO4",
+        "NaH2PO4"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 (NH4)3PO4 + H3PO4 -> 3 (NH4)2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "NH4H2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)3PO4 + 2 H3PO4 -> 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "NH3",
-        "BaHPO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2HPO4 + Ba(OH)2 -> 2 NH3 + BaHPO4 + 2 H2O",
+      "rule": "double_displacement",
+      "equation": "Zn(H2PO4)2 + Na2HPO4 -> ZnHPO4 + 2 NaH2PO4",
       "coefficients": {
         "substrates": [
           1,
           1
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "(NH4)2HPO4 + NH4OH -> (NH4)3PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "NH3",
-        "Ba(H2PO4)2",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "2 NH4H2PO4 + Ba(OH)2 -> 2 NH3 + Ba(H2PO4)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2HPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + NH4OH -> (NH4)2HPO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + 2 NH4OH -> (NH4)3PO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
         ],
         "products": [
           1,
           2
         ]
       },
-      "note": "more base takes off another proton"
-    }
-  ],
-  "answers": {
-    "partial_neutralisation": {
+      "note": "ZnHPO4 precipitates"
+    },
+    {
       "substrates": [
-        "H3PO4",
-        "Ba(OH)2"
+        "Na2HPO4",
+        "ZnBr2"
+      ],
+      "products": [
+        "ZnHPO4",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2HPO4 + ZnBr2 -> ZnHPO4 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2HPO4",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnHPO4",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2HPO4 + ZnCl2 -> ZnHPO4 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2HPO4",
+        "BaBr2"
       ],
       "products": [
         "BaHPO4",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2HPO4 + BaBr2 -> BaHPO4 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2HPO4",
+        "BaCl2"
+      ],
+      "products": [
+        "BaHPO4",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2HPO4 + BaCl2 -> BaHPO4 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2HPO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Na2HPO4 + NaOH -> Na3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaH2PO4 + NaOH -> Na2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaH2PO4 + 2 NaOH -> Na3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "H2"
+      ],
+      "products": [
+        "ZnH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Zn + H2 -> ZnH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
@@ -804,38 +1509,355 @@
       },
       "note": "an acid salt -- less base than the normal salt needs"
     },
-    "salt_with_parent_acid": {
+    {
       "substrates": [
-        "Ba3(PO4)2",
-        "H3PO4"
+        "H2S",
+        "Na2O"
       ],
       "products": [
-        "BaHPO4"
+        "Na2S",
+        "H2O"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Na2O -> Na2S + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          3
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "H2S"
+      ],
+      "products": [
+        "ZnS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + H2S -> ZnS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "H2S"
+      ],
+      "products": [
+        "Zn(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "ZnS + H2S -> Zn(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
         ]
       },
       "note": "the acid protonates its own salt"
     },
-    "acid_salt_with_base": {
+    {
       "substrates": [
-        "Ba(H2PO4)2",
-        "Ba(OH)2"
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "NaHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NaOH -> NaHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "ZnBr2"
+      ],
+      "products": [
+        "ZnS",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + ZnBr2 -> ZnS + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "BaCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + ZnCl2 -> ZnS + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 BaS + 2 H3PO4 -> 3 H2S + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Na3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "Na2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 Na3PO4 -> Ba3(PO4)2 + 3 Na2S",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Zn(H2PO4)2"
+      ],
+      "products": [
+        "ZnS",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Zn(H2PO4)2 -> ZnS + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Na2HPO4"
       ],
       "products": [
         "BaHPO4",
+        "Na2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Na2HPO4 -> BaHPO4 + Na2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Zn(HS)2"
+      ],
+      "products": [
+        "ZnS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Zn(HS)2 -> ZnS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -848,42 +1870,62 @@
       },
       "note": "more base takes off another proton"
     },
-    "ammonia_liberation": {
+    {
       "substrates": [
-        "(NH4)2HPO4",
-        "Ba(OH)2"
+        "Ba(HS)2",
+        "H3PO4"
       ],
       "products": [
-        "NH3",
-        "BaHPO4",
-        "H2O"
+        "H2S",
+        "Ba3(PO4)2"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2HPO4 + Ba(OH)2 -> 2 NH3 + BaHPO4 + 2 H2O",
+      "rule": "acid_displacement",
+      "equation": "3 Ba(HS)2 + 2 H3PO4 -> 6 H2S + Ba3(PO4)2",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          3,
+          2
         ],
         "products": [
-          2,
-          1,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Na3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(HS)2 + 2 Na3PO4 -> Ba3(PO4)2 + 6 NaHS",
+      "coefficients": {
+        "substrates": [
+          3,
           2
+        ],
+        "products": [
+          1,
+          6
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      "note": "Ba3(PO4)2 precipitates"
     },
-    "double_displacement": {
+    {
       "substrates": [
-        "Ba(H2PO4)2",
-        "(NH4)2HPO4"
+        "Ba(HS)2",
+        "Na2HPO4"
       ],
       "products": [
         "BaHPO4",
-        "NH4H2PO4"
+        "NaHS"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(H2PO4)2 + (NH4)2HPO4 -> BaHPO4 + 2 NH4H2PO4",
+      "equation": "Ba(HS)2 + Na2HPO4 -> BaHPO4 + 2 NaHS",
       "coefficients": {
         "substrates": [
           1,
@@ -895,15 +1937,1085 @@
         ]
       },
       "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "ZnBr2"
+      ],
+      "products": [
+        "ZnS",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2S + ZnBr2 -> ZnS + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2S + ZnCl2 -> ZnS + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Na3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Na2S + 2 H3PO4 -> 3 H2S + 2 Na3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "Zn(H2PO4)2"
+      ],
+      "products": [
+        "ZnS",
+        "NaH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2S + Zn(H2PO4)2 -> ZnS + 2 NaH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "Zn(HS)2"
+      ],
+      "products": [
+        "ZnS",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2S + Zn(HS)2 -> ZnS + 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(HS)2 + Ba(OH)2 -> Zn(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "NaOH"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "NaHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(HS)2 + 2 NaOH -> Zn(OH)2 + 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Zn3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Zn(HS)2 + 2 H3PO4 -> 6 H2S + Zn3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Na3PO4"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Zn(HS)2 + 2 Na3PO4 -> Zn3(PO4)2 + 6 NaHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Zn3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Na2HPO4"
+      ],
+      "products": [
+        "ZnHPO4",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(HS)2 + Na2HPO4 -> ZnHPO4 + 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHS + NaOH -> Na2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Na3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 NaHS + H3PO4 -> 3 H2S + Na3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "acid_displacement": {
+      "substrates": [
+        "ZnS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Zn3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 ZnS + 2 H3PO4 -> 3 H2S + Zn3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "Na3PO4",
+        "ZnBr2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Na3PO4 + 3 ZnBr2 -> Zn3(PO4)2 + 6 NaBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Zn3(PO4)2 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Zn",
+        "H3PO4"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Zn + 2 H3PO4 -> Zn3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Zn3(PO4)2 is insoluble"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Zn(OH)2 -> Zn3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Zn3(PO4)2 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Zn(H2PO4)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(H2PO4)2 + 2 Zn(OH)2 -> Zn3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
     }
   },
   "misses": [
     {
       "substrates": [
         "Ba(H2PO4)2",
-        "NH4OH"
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "NaOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "NaH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2HPO4"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2S"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na3PO4"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaCl"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaH2PO4"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHS"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "NaH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Na2HPO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Na3PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaBr"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaCl"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaH2PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(H2PO4)2"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnBr2"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnHPO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NaBr"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NaCl"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "ZnBr2"
+      ],
+      "note": "H3PO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "ZnCl2"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Na2HPO4",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Na3PO4",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaBr",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaBr",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaBr",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaBr",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaH2PO4",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "Zn"
+      ],
+      "note": "Zn sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "Zn(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Zn(H2PO4)2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Zn(HS)2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnBr2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnCl2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
     }
   ]
 }

@@ -1,24 +1,86 @@
 {
   "version": 3,
-  "target": "MgS",
-  "name": "magnesium sulfide",
+  "target": "Cu(NO3)2",
+  "name": "copper(II) nitrate",
   "grade": "easy",
   "want": 5,
-  "ways": 7,
+  "ways": 6,
   "cut": 1,
   "palette": [
+    "Ag2O",
     "Ba(OH)2",
-    "BaS",
+    "Cu",
+    "CuBr2",
+    "CuF2",
+    "CuO",
+    "CuS",
     "H2O",
-    "H2S",
-    "Mg",
-    "MgBr2",
     "MgO",
-    "S",
-    "SO3",
-    "SiO2"
+    "N2O5"
   ],
   "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag2S": {
+      "name": "silver sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "S": -2
+      }
+    },
+    "AgBr": {
+      "name": "silver bromide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Br": -1
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgHS": {
+      "name": "silver hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "HS": -1
+      }
+    },
+    "AgNO3": {
+      "name": "silver nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "NO3": -1
+      }
+    },
     "Ba(HS)2": {
       "name": "barium hydrogensulfide",
       "class": "salt",
@@ -29,14 +91,14 @@
         "HS": -1
       }
     },
-    "Ba(HSO4)2": {
-      "name": "barium hydrogensulfate",
+    "Ba(NO3)2": {
+      "name": "barium nitrate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Ba": 2,
-        "HSO4": -1
+        "NO3": -1
       }
     },
     "Ba(OH)2": {
@@ -59,6 +121,16 @@
         "Br": -1
       }
     },
+    "BaF2": {
+      "name": "barium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "F": -1
+      }
+    },
     "BaS": {
       "name": "barium sulfide",
       "class": "salt",
@@ -69,31 +141,77 @@
         "S": -2
       }
     },
-    "BaSO4": {
-      "name": "barium sulfate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "SO4": -2
-      }
-    },
-    "BaSiO3": {
-      "name": "barium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "SiO3": -2
-      }
-    },
-    "H2": {
-      "name": "hydrogen",
+    "Cu": {
+      "name": "copper",
       "class": "element",
-      "state": "g",
+      "state": "s",
       "common": true
+    },
+    "Cu(HS)2": {
+      "name": "copper(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "HS": -1
+      }
+    },
+    "Cu(NO3)2": {
+      "name": "copper(II) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "NO3": -1
+      }
+    },
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "OH": -1
+      }
+    },
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuF2": {
+      "name": "copper(II) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "F": -1
+      }
+    },
+    "CuO": {
+      "name": "copper(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "CuS": {
+      "name": "copper(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "S": -2
+      }
     },
     "H2O": {
       "name": "water",
@@ -111,31 +229,25 @@
         "S": -2
       }
     },
-    "H2SO4": {
-      "name": "sulfuric acid",
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "HNO3": {
+      "name": "nitric acid",
       "class": "acid",
       "state": "aq",
       "common": true,
       "ions": {
         "H": 1,
-        "SO4": -2
+        "NO3": -1
       }
-    },
-    "H2SiO3": {
-      "name": "silicic acid",
-      "class": "acid",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "H": 1,
-        "SiO3": -2
-      }
-    },
-    "Mg": {
-      "name": "magnesium",
-      "class": "element",
-      "state": "s",
-      "common": true
     },
     "Mg(HS)2": {
       "name": "magnesium hydrogensulfide",
@@ -147,14 +259,14 @@
         "HS": -1
       }
     },
-    "Mg(HSO4)2": {
-      "name": "magnesium hydrogensulfate",
+    "Mg(NO3)2": {
+      "name": "magnesium nitrate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Mg": 2,
-        "HSO4": -1
+        "NO3": -1
       }
     },
     "Mg(OH)2": {
@@ -177,14 +289,14 @@
         "Br": -1
       }
     },
-    "MgH2": {
-      "name": "magnesium hydride",
+    "MgF2": {
+      "name": "magnesium fluoride",
       "class": "salt",
-      "state": "aq",
-      "common": false,
+      "state": "s",
+      "common": true,
       "ions": {
         "Mg": 2,
-        "H": -1
+        "F": -1
       }
     },
     "MgO": {
@@ -203,46 +315,656 @@
         "S": -2
       }
     },
-    "MgSO4": {
-      "name": "magnesium sulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "SO4": -2
-      }
-    },
-    "MgSiO3": {
-      "name": "magnesium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "SiO3": -2
-      }
-    },
-    "S": {
-      "name": "sulfur",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "SO3": {
-      "name": "sulfur trioxide",
-      "class": "acidic oxide",
-      "state": "l",
-      "common": true
-    },
-    "SiO2": {
-      "name": "silicon dioxide",
+    "N2O5": {
+      "name": "dinitrogen pentoxide",
       "class": "acidic oxide",
       "state": "s",
       "common": true
     }
   },
   "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "Cu"
+      ],
+      "products": [
+        "CuO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Cu -> CuO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "N2O5"
+      ],
+      "products": [
+        "AgNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + N2O5 -> 2 AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + Ba(OH)2 -> Cu(OH)2 + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaF2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuF2 + Ba(OH)2 -> Cu(OH)2 + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "N2O5"
+      ],
+      "products": [
+        "Ba(NO3)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + N2O5 -> Ba(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuO",
+        "N2O5"
+      ],
+      "products": [
+        "Cu(NO3)2"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + N2O5 -> Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "N2O5",
+        "H2O"
+      ],
+      "products": [
+        "HNO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "N2O5 + H2O -> 2 HNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgO",
+        "N2O5"
+      ],
+      "products": [
+        "Mg(NO3)2"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "MgO + N2O5 -> Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "AgNO3"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgNO3 -> Cu(NO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "CuBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Cu(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + CuBr2 -> 2 AgBr + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "BaBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Ba(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + BaBr2 -> 2 AgBr + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Cu(OH)2 -> Cu(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Ba(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaF2 + 2 HNO3 -> 2 HF + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(NO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(NO3)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(NO3)2 + Ba(OH)2 -> Cu(OH)2 + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Ag2O"
+      ],
+      "products": [
+        "AgNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Ag2O -> 2 AgNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Ba(OH)2 -> Ba(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Cu(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuF2 + 2 HNO3 -> 2 HF + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "CuO"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + CuO -> Cu(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Cu(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HNO3 -> H2S + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "MgO"
+      ],
+      "products": [
+        "Mg(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + MgO -> Mg(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(NO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(NO3)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(NO3)2 + Ba(OH)2 -> Mg(OH)2 + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(NO3)2",
+        "CuF2"
+      ],
+      "products": [
+        "MgF2",
+        "Cu(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(NO3)2 + CuF2 -> MgF2 + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ag2O"
+      ],
+      "products": [
+        "AgF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Ag2O -> 2 AgF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ba(OH)2 -> BaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "CuO"
+      ],
+      "products": [
+        "CuF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + CuO -> CuF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgO"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + MgO -> MgF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Cu(OH)2 -> CuF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Mg(OH)2 -> MgF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Ag2O -> Ag2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S is insoluble"
+    },
     {
       "substrates": [
         "H2S",
@@ -290,38 +1012,15 @@
     },
     {
       "substrates": [
-        "MgBr2",
-        "Ba(OH)2"
+        "H2S",
+        "CuO"
       ],
       "products": [
-        "Mg(OH)2",
-        "BaBr2"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgBr2 + Ba(OH)2 -> Mg(OH)2 + BaBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "SO3"
-      ],
-      "products": [
-        "BaSO4",
+        "CuS",
         "H2O"
       ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SO3 -> BaSO4 + H2O",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + CuO -> CuS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -332,41 +1031,18 @@
           1
         ]
       },
-      "note": "BaSO4 is insoluble"
+      "note": "CuS is insoluble"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "SiO2"
-      ],
-      "products": [
-        "BaSiO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "BaS",
+        "CuS",
         "H2S"
       ],
       "products": [
-        "Ba(HS)2"
+        "Cu(HS)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "BaS + H2S -> Ba(HS)2",
+      "equation": "CuS + H2S -> Cu(HS)2",
       "coefficients": {
         "substrates": [
           1,
@@ -377,48 +1053,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "SO3",
-        "H2O"
-      ],
-      "products": [
-        "H2SO4"
-      ],
-      "rule": "anhydride_hydration",
-      "equation": "SO3 + H2O -> H2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Mg",
-        "H2S"
-      ],
-      "products": [
-        "MgS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2S -> MgS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
     },
     {
       "substrates": [
@@ -444,131 +1078,49 @@
     },
     {
       "substrates": [
-        "Mg",
-        "S"
+        "H2S",
+        "Cu(OH)2"
       ],
       "products": [
-        "MgS"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Mg + S -> MgS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgO",
-        "SO3"
-      ],
-      "products": [
-        "MgSO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "MgO + SO3 -> MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgO",
-        "SiO2"
-      ],
-      "products": [
-        "MgSiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "MgO + SiO2 -> MgSiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaS",
+        "CuS",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "rule": "neutralisation",
+      "equation": "H2S + Cu(OH)2 -> CuS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2,
+          1,
           2
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "CuS is insoluble"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "H2SO4"
+        "H2S",
+        "Cu(OH)2"
       ],
       "products": [
-        "H2S",
-        "BaSO4"
+        "Cu(HS)2",
+        "H2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "Ba(HS)2 + H2SO4 -> 2 H2S + BaSO4",
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Cu(OH)2 -> Cu(HS)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
           2,
           1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "MgSO4"
-      ],
-      "products": [
-        "BaSO4",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HS)2 + MgSO4 -> BaSO4 + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
         ],
         "products": [
           1,
-          1
+          2
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
@@ -617,18 +1169,18 @@
     },
     {
       "substrates": [
-        "H2SO4",
+        "HNO3",
         "Mg(OH)2"
       ],
       "products": [
-        "MgSO4",
+        "Mg(NO3)2",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SO4 + Mg(OH)2 -> MgSO4 + 2 H2O",
+      "equation": "2 HNO3 + Mg(OH)2 -> Mg(NO3)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
@@ -639,15 +1191,128 @@
     },
     {
       "substrates": [
-        "H2SO4",
-        "Mg(OH)2"
+        "MgF2",
+        "HNO3"
       ],
       "products": [
-        "Mg(HSO4)2",
-        "H2O"
+        "HF",
+        "Mg(NO3)2"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2SO4 + Mg(OH)2 -> Mg(HSO4)2 + 2 H2O",
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HNO3 -> 2 HF + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "AgF"
+      ],
+      "products": [
+        "CuF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgF -> CuF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "CuBr2"
+      ],
+      "products": [
+        "AgBr",
+        "CuF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + CuBr2 -> 2 AgBr + CuF2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "BaBr2"
+      ],
+      "products": [
+        "AgBr",
+        "BaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + BaBr2 -> 2 AgBr + BaF2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "AgNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgF + HNO3 -> HF + AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Mg(NO3)2"
+      ],
+      "products": [
+        "MgF2",
+        "AgNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + Mg(NO3)2 -> MgF2 + 2 AgNO3",
       "coefficients": {
         "substrates": [
           2,
@@ -658,22 +1323,22 @@
           2
         ]
       },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "MgF2 precipitates"
     },
     {
       "substrates": [
-        "BaBr2",
-        "MgSO4"
+        "AgF",
+        "BaS"
       ],
       "products": [
-        "BaSO4",
-        "MgBr2"
+        "Ag2S",
+        "BaF2"
       ],
       "rule": "double_displacement",
-      "equation": "BaBr2 + MgSO4 -> BaSO4 + MgBr2",
+      "equation": "2 AgF + BaS -> Ag2S + BaF2",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
@@ -681,134 +1346,204 @@
           1
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "Ag2S precipitates"
     },
     {
       "substrates": [
-        "BaSO4",
-        "H2SO4"
+        "AgF",
+        "MgS"
       ],
       "products": [
-        "Ba(HSO4)2"
+        "Ag2S",
+        "MgF2"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "rule": "double_displacement",
+      "equation": "2 AgF + MgS -> Ag2S + MgF2",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
+          1,
           1
         ]
       },
-      "note": "the acid protonates its own salt"
+      "note": "Ag2S and MgF2 both precipitate"
     },
     {
       "substrates": [
-        "BaSiO3",
+        "AgF",
+        "Mg(HS)2"
+      ],
+      "products": [
+        "MgF2",
+        "AgHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + Mg(HS)2 -> MgF2 + 2 AgHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "AgNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2S + 2 HNO3 -> H2S + 2 AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2S",
         "H2S"
       ],
       "products": [
-        "H2SiO3",
-        "BaS"
+        "AgHS"
       ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2S + H2S -> 2 AgHS",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2SO4 -> H2SiO3 + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO4 + Ba(OH)2 -> BaSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
           2
         ]
       },
-      "note": "BaSO4 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Ba(HSO4)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
         "BaS",
-        "H2SO4"
+        "CuBr2"
+      ],
+      "products": [
+        "CuS",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + CuBr2 -> CuS + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "CuF2"
+      ],
+      "products": [
+        "CuS",
+        "BaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + CuF2 -> CuS + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "AgNO3"
+      ],
+      "products": [
+        "Ag2S",
+        "Ba(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + 2 AgNO3 -> Ag2S + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Cu(NO3)2"
+      ],
+      "products": [
+        "CuS",
+        "Ba(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Cu(NO3)2 -> CuS + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HNO3"
       ],
       "products": [
         "H2S",
-        "BaSO4"
+        "Ba(NO3)2"
       ],
       "rule": "acid_displacement",
-      "equation": "BaS + H2SO4 -> H2S + BaSO4",
+      "equation": "BaS + 2 HNO3 -> H2S + Ba(NO3)2",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
@@ -818,80 +1553,14 @@
     },
     {
       "substrates": [
-        "Mg",
-        "H2SO4"
+        "BaS",
+        "H2S"
       ],
       "products": [
-        "MgSO4",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2SO4 -> MgSO4 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "MgO"
-      ],
-      "products": [
-        "MgSO4",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO4 + MgO -> MgSO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgS",
-        "H2SO4"
-      ],
-      "products": [
-        "H2S",
-        "MgSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgS + H2SO4 -> H2S + MgSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "H2SO4"
-      ],
-      "products": [
-        "Mg(HSO4)2"
+        "Ba(HS)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "MgSO4 + H2SO4 -> Mg(HSO4)2",
+      "equation": "BaS + H2S -> Ba(HS)2",
       "coefficients": {
         "substrates": [
           1,
@@ -905,15 +1574,15 @@
     },
     {
       "substrates": [
-        "MgSiO3",
-        "H2SO4"
+        "BaS",
+        "Cu(HS)2"
       ],
       "products": [
-        "H2SiO3",
-        "MgSO4"
+        "CuS",
+        "Ba(HS)2"
       ],
-      "rule": "acid_displacement",
-      "equation": "MgSiO3 + H2SO4 -> H2SiO3 + MgSO4",
+      "rule": "double_displacement",
+      "equation": "BaS + Cu(HS)2 -> CuS + Ba(HS)2",
       "coefficients": {
         "substrates": [
           1,
@@ -923,7 +1592,144 @@
           1,
           1
         ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Ba(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + 2 HNO3 -> 2 H2S + Ba(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
       }
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HS)2 + Ba(OH)2 -> Cu(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cu(HS)2 + Cu(OH)2 -> 2 CuS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Cu(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HNO3 -> 2 H2S + Cu(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HS)2 + MgS -> CuS + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
     },
     {
       "substrates": [
@@ -934,7 +1740,7 @@
         "Mg(OH)2",
         "BaS"
       ],
-      "rule": "hydroxide_precipitation",
+      "rule": "salt_with_base",
       "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
       "coefficients": {
         "substrates": [
@@ -947,6 +1753,120 @@
         ]
       },
       "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "CuBr2"
+      ],
+      "products": [
+        "CuS",
+        "MgBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgS + CuBr2 -> CuS + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "CuF2"
+      ],
+      "products": [
+        "CuS",
+        "MgF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgS + CuF2 -> CuS + MgF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS and MgF2 both precipitate"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "AgNO3"
+      ],
+      "products": [
+        "Ag2S",
+        "Mg(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgS + 2 AgNO3 -> Ag2S + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "Cu(NO3)2"
+      ],
+      "products": [
+        "CuS",
+        "Mg(NO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgS + Cu(NO3)2 -> CuS + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Mg(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgS + 2 HNO3 -> H2S + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
     },
     {
       "substrates": [
@@ -971,114 +1891,6 @@
     },
     {
       "substrates": [
-        "Mg",
-        "H2"
-      ],
-      "products": [
-        "MgH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Mg + H2 -> MgH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2",
-        "S"
-      ],
-      "products": [
-        "H2S"
-      ],
-      "rule": "hydrogenation",
-      "equation": "H2 + S -> H2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "BaSO4"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "MgSO4 + Ba(OH)2 -> Mg(OH)2 + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgSO4",
-        "BaS"
-      ],
-      "products": [
-        "BaSO4",
-        "MgS"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgSO4 + BaS -> BaSO4 + MgS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "MgSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "MgS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "Mg(HS)2",
         "Ba(OH)2"
       ],
@@ -1086,7 +1898,7 @@
         "Mg(OH)2",
         "Ba(HS)2"
       ],
-      "rule": "hydroxide_precipitation",
+      "rule": "salt_with_base",
       "equation": "Mg(HS)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HS)2",
       "coefficients": {
         "substrates": [
@@ -1103,6 +1915,51 @@
     {
       "substrates": [
         "Mg(HS)2",
+        "CuF2"
+      ],
+      "products": [
+        "MgF2",
+        "Cu(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(HS)2 + CuF2 -> MgF2 + Cu(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Mg(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(HS)2 + 2 HNO3 -> 2 H2S + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
         "Mg(OH)2"
       ],
       "products": [
@@ -1125,37 +1982,175 @@
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "H2SO4"
+        "Cu",
+        "AgHS"
       ],
       "products": [
-        "H2S",
-        "MgSO4"
+        "Cu(HS)2",
+        "Ag"
       ],
-      "rule": "acid_displacement",
-      "equation": "Mg(HS)2 + H2SO4 -> 2 H2S + MgSO4",
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgHS -> Cu(HS)2 + 2 Ag",
       "coefficients": {
         "substrates": [
           1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "CuBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Cu(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + CuBr2 -> 2 AgBr + Cu(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
           1
         ],
         "products": [
           2,
           1
         ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "BaBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + BaBr2 -> 2 AgBr + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "AgNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgHS + HNO3 -> H2S + AgNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
       }
     },
     {
       "substrates": [
-        "Mg(HSO4)2",
+        "AgHS",
+        "BaS"
+      ],
+      "products": [
+        "Ag2S",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + BaS -> Ag2S + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "MgS"
+      ],
+      "products": [
+        "Ag2S",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + MgS -> Ag2S + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "MgBr2"
+      ],
+      "products": [
+        "AgBr",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + MgBr2 -> 2 AgBr + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "MgBr2",
         "Ba(OH)2"
       ],
       "products": [
         "Mg(OH)2",
-        "Ba(HSO4)2"
+        "BaBr2"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Mg(HSO4)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HSO4)2",
+      "rule": "salt_with_base",
+      "equation": "MgBr2 + Ba(OH)2 -> Mg(OH)2 + BaBr2",
       "coefficients": {
         "substrates": [
           1,
@@ -1170,61 +2165,15 @@
     },
     {
       "substrates": [
-        "Mg(HSO4)2",
-        "Mg(OH)2"
+        "MgBr2",
+        "CuF2"
       ],
       "products": [
-        "MgSO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HSO4)2 + Mg(OH)2 -> 2 MgSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Ba(HSO4)2 + Ba(OH)2 -> 2 BaSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "MgSO4"
-      ],
-      "products": [
-        "BaSO4",
-        "Mg(HSO4)2"
+        "MgF2",
+        "CuBr2"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + MgSO4 -> BaSO4 + Mg(HSO4)2",
+      "equation": "MgBr2 + CuF2 -> MgF2 + CuBr2",
       "coefficients": {
         "substrates": [
           1,
@@ -1235,180 +2184,112 @@
           1
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "MgF2 precipitates"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "Ba(OH)2"
+        "MgBr2",
+        "AgNO3"
       ],
       "products": [
-        "BaSiO3",
-        "H2O"
+        "AgBr",
+        "Mg(NO3)2"
       ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "rule": "double_displacement",
+      "equation": "MgBr2 + 2 AgNO3 -> 2 AgBr + Mg(NO3)2",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
           1,
           2
-        ]
-      },
-      "note": "BaSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "H2SiO3"
-      ],
-      "products": [
-        "MgSiO3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2SiO3 -> MgSiO3 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
         ],
         "products": [
-          1,
+          2,
           1
         ]
       },
-      "note": "MgSiO3 is insoluble"
+      "note": "AgBr precipitates"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "MgO"
+        "MgBr2",
+        "AgF"
       ],
       "products": [
-        "MgSiO3",
-        "H2O"
+        "AgBr",
+        "MgF2"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + MgO -> MgSiO3 + H2O",
+      "rule": "double_displacement",
+      "equation": "MgBr2 + 2 AgF -> 2 AgBr + MgF2",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgSiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           1,
           2
+        ],
+        "products": [
+          2,
+          1
         ]
       },
-      "note": "MgSiO3 is insoluble"
+      "note": "AgBr and MgF2 both precipitate"
     }
   ],
   "answers": {
-    "acid_with_basic_oxide": {
+    "oxide_with_oxide": {
       "substrates": [
-        "H2S",
-        "MgO"
+        "CuO",
+        "N2O5"
       ],
       "products": [
-        "MgS",
-        "H2O"
+        "Cu(NO3)2"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + MgO -> MgS + H2O",
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + N2O5 -> Cu(NO3)2",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
-        ]
-      }
-    },
-    "binary_salt_synthesis": {
-      "substrates": [
-        "Mg",
-        "S"
-      ],
-      "products": [
-        "MgS"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Mg + S -> MgS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    "metal_with_acid": {
-      "substrates": [
-        "Mg",
-        "H2S"
-      ],
-      "products": [
-        "MgS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2S -> MgS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
           1
         ]
       }
     },
     "acid_displacement": {
       "substrates": [
-        "MgSiO3",
-        "H2S"
+        "CuF2",
+        "HNO3"
       ],
       "products": [
-        "H2SiO3",
-        "MgS"
+        "HF",
+        "Cu(NO3)2"
       ],
       "rule": "acid_displacement",
-      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
+      "equation": "CuF2 + 2 HNO3 -> 2 HF + Cu(NO3)2",
       "coefficients": {
         "substrates": [
           1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HNO3",
+        "CuO"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + CuO -> Cu(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
           1
         ],
         "products": [
@@ -1419,41 +2300,64 @@
     },
     "double_displacement": {
       "substrates": [
-        "MgSO4",
-        "BaS"
+        "AgNO3",
+        "CuBr2"
       ],
       "products": [
-        "BaSO4",
-        "MgS"
+        "AgBr",
+        "Cu(NO3)2"
       ],
       "rule": "double_displacement",
-      "equation": "MgSO4 + BaS -> BaSO4 + MgS",
+      "equation": "2 AgNO3 + CuBr2 -> 2 AgBr + Cu(NO3)2",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
-          1,
+          2,
           1
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "AgBr precipitates"
     },
-    "neutralisation": {
+    "metal_displacement": {
       "substrates": [
-        "H2S",
-        "Mg(OH)2"
+        "Cu",
+        "AgNO3"
       ],
       "products": [
-        "MgS",
-        "H2O"
+        "Cu(NO3)2",
+        "Ag"
       ],
-      "rule": "neutralisation",
-      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
+      "rule": "metal_displacement",
+      "equation": "Cu + 2 AgNO3 -> Cu(NO3)2 + 2 Ag",
       "coefficients": {
         "substrates": [
           1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu is above Ag in the activity series"
+    },
+    "neutralisation": {
+      "substrates": [
+        "HNO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Cu(OH)2 -> Cu(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
           1
         ],
         "products": [
@@ -1461,94 +2365,386 @@
           2
         ]
       }
-    },
-    "acid_salt_with_base": {
-      "substrates": [
-        "Mg(HS)2",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
     }
   },
   "misses": [
     {
       "substrates": [
-        "Ba(HS)2",
-        "H2SiO3"
+        "Ag",
+        "AgF"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "Mg"
+        "Ag",
+        "AgHS"
       ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "Mg(HSO4)2"
+        "Ag",
+        "AgNO3"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "MgBr2"
+        "Ag",
+        "Ba(HS)2"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
+        "Ag",
+        "Ba(NO3)2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaBr2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaS"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cu(HS)2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CuBr2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CuF2"
+      ],
+      "note": "Ag sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
         "H2S"
       ],
-      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "H2SiO3"
+        "Ag",
+        "HF"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "Mg"
+        "Ag",
+        "HNO3"
       ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+      "note": "HNO3 oxidises the metal rather than handing over hydrogen, which is outside what this game covers"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
+        "Ag",
+        "Mg(HS)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Mg(NO3)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgBr2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgS"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "HNO3"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Ba(HS)2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Ba(NO3)2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Ba(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "CuF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "Ba(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "CuF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgNO3",
         "Mg(HS)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
+        "Ba(HS)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
         "MgBr2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(NO3)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
@@ -1560,23 +2756,16 @@
     {
       "substrates": [
         "BaBr2",
-        "H2SO4"
+        "HF"
       ],
-      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "BaBr2",
-        "H2SiO3"
+        "HNO3"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Mg"
-      ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -1588,23 +2777,37 @@
     {
       "substrates": [
         "BaBr2",
-        "Mg(HSO4)2"
+        "Mg(NO3)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaS",
-        "H2SiO3"
+        "BaBr2",
+        "MgS"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "BaS",
-        "Mg"
+        "Cu"
       ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -1616,7 +2819,7 @@
     {
       "substrates": [
         "BaS",
-        "Mg(HSO4)2"
+        "Mg(NO3)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
@@ -1629,24 +2832,150 @@
     },
     {
       "substrates": [
-        "BaSO4",
-        "H2S"
+        "Cu",
+        "Cu(HS)2"
       ],
-      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaSO4",
-        "H2SiO3"
+        "Cu",
+        "CuBr2"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuF2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2S"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HF"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HNO3"
+      ],
+      "note": "HNO3 oxidises the metal rather than handing over hydrogen, which is outside what this game covers"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Mg(HS)2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Mg(NO3)2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "MgBr2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "MgS"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HNO3"
+      ],
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Mg(NO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2S",
-        "Mg(HSO4)2"
+        "Mg(NO3)2"
       ],
-      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -1658,72 +2987,44 @@
     {
       "substrates": [
         "H2S",
-        "MgSO4"
+        "MgF2"
       ],
-      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SO4",
-        "MgBr2"
-      ],
-      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
+        "HF",
         "Mg(HS)2"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "Mg(HSO4)2"
+        "HF",
+        "Mg(NO3)2"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SiO3",
+        "HF",
         "MgBr2"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "MgSO4"
+        "HF",
+        "MgS"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Mg",
-        "Mg(HS)2"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Mg(HSO4)2"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
+        "HNO3",
         "MgBr2"
       ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "MgSO4"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+      "note": "HNO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     }
   ]
 }

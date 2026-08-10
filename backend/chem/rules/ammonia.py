@@ -12,9 +12,12 @@ curated cation with a full row of salts in the index that nothing else can reach
 The last two are inverses, which is what makes this a branch rather than a
 dead end: a puzzle can go into an ammonium salt and back out again.
 
-`with_acid` is deliberately separate from `neutralise`. Ammonia is not NH4OH: it
-takes a proton directly and gives no water, so the template that would otherwise
-cover it produces the wrong equation.
+`with_acid` is a template of its own because ammonia is not NH4OH: it takes a
+proton directly and gives no water, so `neutralise` would write the wrong
+equation. It is *not* a rule of its own -- it and `liberate` are catalogued
+under `neutralisation` and `salt_with_base`, the rules whose equations they are
+special cases of. See `chem.rules.catalogue`: a different equation is not a
+different thing to discover, and scoring counts things to discover.
 """
 
 from __future__ import annotations

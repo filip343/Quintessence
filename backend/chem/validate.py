@@ -76,7 +76,7 @@ from chem.data.solubility import (
 )
 from chem.formulas import oxide_formula, oxygen_count, parse_charge, strip_charge
 from chem.reaction import Reaction
-from chem.rules.catalogue import RULE_SLUGS
+from chem.rules.catalogue import MERGED_SLUGS, RULE_SLUGS
 from chem.rules.chromate import CHROMATE, DICHROMATE
 from chem.rules.display import GAS, LIQUID
 from chem.rules.oxides import oxide_character
@@ -577,13 +577,25 @@ def check_display() -> list[str]:
         if symbol not in IS_METAL:
             problems.append(f"COMMON_ELEMENTS: {symbol!r} is not a curated element")
 
-    # the slug is what persists, so two templates sharing one would silently
-    # merge two rules in every exported file
+    # the slug is what persists, so two templates sharing one merges two rules
+    # in every file the engine writes -- which is sometimes exactly the intent
+    # (the ammonia templates, see `chem.rules.catalogue`) and is otherwise a
+    # typo that would do it silently. Declared merges pass; the rest are flagged.
     slugs: dict[str, str] = {}
+    shared: set[str] = set()
     for template, slug in RULE_SLUGS.items():
         if slug in slugs:
-            problems.append(f"RULE_SLUGS: {slug!r} is used by {slugs[slug]!r} and {template!r}")
+            shared.add(slug)
+            if slug not in MERGED_SLUGS:
+                problems.append(
+                    f"RULE_SLUGS: {slug!r} is used by {slugs[slug]!r} and {template!r}"
+                )
         slugs[slug] = template
+
+    # and the declaration has to keep earning its place, or it silently licenses
+    # a collision nobody meant once the templates it named have moved on
+    for slug in sorted(MERGED_SLUGS - shared):
+        problems.append(f"MERGED_SLUGS: {slug!r} is no longer shared by two templates")
 
     return problems
 

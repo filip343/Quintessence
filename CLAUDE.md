@@ -83,9 +83,8 @@ to key on while the prose wording stays free to change.
     water in      anhydride_hydration · basic_oxide_hydration · metal_with_water ·
                   hydride_dissolution
     acid/base     neutralisation · acid_with_basic_oxide · base_with_acidic_oxide ·
-                  oxide_with_oxide · metal_with_acid · acid_displacement ·
-                  ammonia_with_acid · ammonia_liberation
-    salts         double_displacement · hydroxide_precipitation · metal_displacement ·
+                  oxide_with_oxide · metal_with_acid · acid_displacement
+    salts         double_displacement · salt_with_base · metal_displacement ·
                   halogen_displacement · oxide_reduction · aluminothermic_reduction ·
                   halogen_disproportionation
     acid salts    partial_neutralisation · salt_with_parent_acid · acid_salt_with_base
@@ -93,9 +92,19 @@ to key on while the prose wording stays free to change.
     on heating    unstable_decomposition · hydrogencarbonate_decomposition ·
                   carbonate_decomposition
 
+Twenty-nine slugs, not thirty-one, and the gap is deliberate. Ammonia writes two
+equations nothing else writes — it takes a proton without giving water, and it
+leaves a salt as a gas rather than as a precipitate — so it needs two templates
+of its own, but neither is a second thing to discover. They are catalogued under
+`neutralisation` and `salt_with_base`, the rules they are special cases of.
+Scored separately they were a free way on most days, because NH4OH is ammonia
+plus water and any palette holding NH3 could reach both halves of the same idea.
+
 `chem.validate` checks that every reaction the engine can emit came from a
 catalogued template, so a rule added without a slug surfaces as a failed check
-rather than as an unrecognised string in an export.
+rather than as an unrecognised string in an export — and that any slug two
+templates share is one of the two declared merges, since an undeclared collision
+would fold two rules together silently.
 
 ## Data tables (the entire curation burden)
 

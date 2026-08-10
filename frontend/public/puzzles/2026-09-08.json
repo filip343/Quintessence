@@ -1,127 +1,90 @@
 {
   "version": 3,
-  "target": "Na3PO4",
-  "name": "sodium phosphate",
+  "target": "Fe3(PO4)2",
+  "name": "iron(II) phosphate",
   "grade": "easy",
   "want": 5,
-  "ways": 8,
+  "ways": 7,
   "cut": 1,
   "palette": [
-    "AgF",
+    "Ba(OH)2",
     "Fe",
+    "FeI2",
+    "FeO",
+    "FeS",
     "H2O",
-    "NH3",
-    "Na",
-    "Na2O",
-    "Na2S",
-    "NaOH",
+    "Li2O",
     "P2O5"
   ],
   "species": {
-    "(NH4)2HPO4": {
-      "name": "ammonium hydrogenphosphate",
+    "Ba(H2PO4)2": {
+      "name": "barium dihydrogenphosphate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
-        "HPO4": -2
-      }
-    },
-    "(NH4)2S": {
-      "name": "ammonium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "S": -2
-      }
-    },
-    "(NH4)3PO4": {
-      "name": "ammonium phosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "PO4": -3
-      }
-    },
-    "Ag": {
-      "name": "silver",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Ag2HPO4": {
-      "name": "silver hydrogenphosphate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "HPO4": -2
-      }
-    },
-    "Ag2S": {
-      "name": "silver sulfide",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "S": -2
-      }
-    },
-    "Ag3PO4": {
-      "name": "silver phosphate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "PO4": -3
-      }
-    },
-    "AgF": {
-      "name": "silver fluoride",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "F": -1
-      }
-    },
-    "AgH": {
-      "name": "silver hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Ag": 1,
-        "H": -1
-      }
-    },
-    "AgH2PO4": {
-      "name": "silver dihydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ag": 1,
+        "Ba": 2,
         "H2PO4": -1
       }
     },
-    "AgHS": {
-      "name": "silver hydrogensulfide",
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Ag": 1,
+        "Ba": 2,
         "HS": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "Ba3(PO4)2": {
+      "name": "barium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "PO4": -3
+      }
+    },
+    "BaHPO4": {
+      "name": "barium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HPO4": -2
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
       }
     },
     "Fe": {
@@ -170,16 +133,6 @@
         "PO4": -3
       }
     },
-    "FeF2": {
-      "name": "iron(II) fluoride",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "F": -1
-      }
-    },
     "FeH2": {
       "name": "iron(II) hydride",
       "class": "salt",
@@ -199,6 +152,22 @@
         "Fe": 2,
         "HPO4": -2
       }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeO": {
+      "name": "iron(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
     },
     "FeS": {
       "name": "iron(II) sulfide",
@@ -242,151 +211,79 @@
         "PO4": -3
       }
     },
-    "HF": {
-      "name": "hydrofluoric acid",
-      "class": "acid",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "H": 1,
-        "F": -1
-      }
-    },
-    "NH3": {
-      "name": "ammonia",
-      "class": "hydride",
-      "state": "g",
-      "common": true
-    },
-    "NH4F": {
-      "name": "ammonium fluoride",
+    "Li2HPO4": {
+      "name": "lithium hydrogenphosphate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "NH4": 1,
-        "F": -1
-      }
-    },
-    "NH4H2PO4": {
-      "name": "ammonium dihydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "H2PO4": -1
-      }
-    },
-    "NH4HS": {
-      "name": "ammonium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "NH4": 1,
-        "HS": -1
-      }
-    },
-    "NH4OH": {
-      "name": "ammonia solution",
-      "class": "base",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "OH": -1
-      }
-    },
-    "Na": {
-      "name": "sodium",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Na2HPO4": {
-      "name": "sodium hydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
+        "Li": 1,
         "HPO4": -2
       }
     },
-    "Na2O": {
-      "name": "sodium oxide",
+    "Li2O": {
+      "name": "lithium oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "Na2S": {
-      "name": "sodium sulfide",
+    "Li2S": {
+      "name": "lithium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Na": 1,
+        "Li": 1,
         "S": -2
       }
     },
-    "Na3PO4": {
-      "name": "sodium phosphate",
+    "Li3PO4": {
+      "name": "lithium phosphate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Na": 1,
+        "Li": 1,
         "PO4": -3
       }
     },
-    "NaF": {
-      "name": "sodium fluoride",
+    "LiH2PO4": {
+      "name": "lithium dihydrogenphosphate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Na": 1,
-        "F": -1
-      }
-    },
-    "NaH": {
-      "name": "sodium hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Na": 1,
-        "H": -1
-      }
-    },
-    "NaH2PO4": {
-      "name": "sodium dihydrogenphosphate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
+        "Li": 1,
         "H2PO4": -1
       }
     },
-    "NaHS": {
-      "name": "sodium hydrogensulfide",
+    "LiHS": {
+      "name": "lithium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Na": 1,
+        "Li": 1,
         "HS": -1
       }
     },
-    "NaOH": {
-      "name": "sodium hydroxide",
+    "LiI": {
+      "name": "lithium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "I": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "Na": 1,
+        "Li": 1,
         "OH": -1
       }
     },
@@ -400,103 +297,80 @@
   "reactions": [
     {
       "substrates": [
-        "Fe",
-        "AgF"
+        "FeI2",
+        "Ba(OH)2"
       ],
       "products": [
-        "FeF2",
-        "Ag"
+        "Fe(OH)2",
+        "BaI2"
       ],
-      "rule": "metal_displacement",
-      "equation": "Fe + 2 AgF -> FeF2 + 2 Ag",
+      "rule": "salt_with_base",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
       "coefficients": {
         "substrates": [
           1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "AgF",
-        "Na2S"
-      ],
-      "products": [
-        "Ag2S",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgF + Na2S -> Ag2S + 2 NaF",
-      "coefficients": {
-        "substrates": [
-          2,
           1
         ],
         "products": [
           1,
-          2
+          1
         ]
       },
-      "note": "Ag2S precipitates"
+      "note": "Fe(OH)2 precipitates"
     },
     {
       "substrates": [
-        "NH3",
+        "Ba(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2",
         "H2O"
       ],
-      "products": [
-        "NH4OH"
-      ],
-      "rule": "hydride_dissolution",
-      "equation": "NH3 + H2O -> NH4OH",
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ba(OH)2 + P2O5 -> Ba3(PO4)2 + 3 H2O",
       "coefficients": {
         "substrates": [
-          1,
+          3,
           1
         ],
         "products": [
-          1
+          1,
+          3
         ]
       },
-      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+      "note": "Ba3(PO4)2 is insoluble"
     },
     {
       "substrates": [
-        "Na",
-        "H2O"
+        "FeO",
+        "P2O5"
       ],
       "products": [
-        "NaOH",
-        "H2"
+        "Fe3(PO4)2"
       ],
-      "rule": "metal_with_water",
-      "equation": "2 Na + 2 H2O -> 2 NaOH + H2",
+      "rule": "oxide_with_oxide",
+      "equation": "3 FeO + P2O5 -> Fe3(PO4)2",
       "coefficients": {
         "substrates": [
-          2,
-          2
+          3,
+          1
         ],
         "products": [
-          2,
           1
         ]
       }
     },
     {
       "substrates": [
-        "Na2O",
+        "Li2O",
         "H2O"
       ],
       "products": [
-        "NaOH"
+        "LiOH"
       ],
       "rule": "basic_oxide_hydration",
-      "equation": "Na2O + H2O -> 2 NaOH",
+      "equation": "Li2O + H2O -> 2 LiOH",
       "coefficients": {
         "substrates": [
           1,
@@ -529,14 +403,14 @@
     },
     {
       "substrates": [
-        "Na2O",
+        "Li2O",
         "P2O5"
       ],
       "products": [
-        "Na3PO4"
+        "Li3PO4"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "3 Na2O + P2O5 -> 2 Na3PO4",
+      "equation": "3 Li2O + P2O5 -> 2 Li3PO4",
       "coefficients": {
         "substrates": [
           3,
@@ -546,644 +420,6 @@
           2
         ]
       }
-    },
-    {
-      "substrates": [
-        "NaOH",
-        "P2O5"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "6 NaOH + P2O5 -> 2 Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          6,
-          1
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "Na2S"
-      ],
-      "products": [
-        "FeS",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "FeF2 + Na2S -> FeS + 2 NaF",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NaOH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "NaF"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeF2 + 2 NaOH -> Fe(OH)2 + 2 NaF",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NH4OH"
-      ],
-      "products": [
-        "Fe(OH)2",
-        "NH4F"
-      ],
-      "rule": "hydroxide_precipitation",
-      "equation": "FeF2 + 2 NH4OH -> Fe(OH)2 + 2 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "H3PO4"
-      ],
-      "products": [
-        "HF",
-        "Fe3(PO4)2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 FeF2 + 2 H3PO4 -> 6 HF + Fe3(PO4)2",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          6,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "Na3PO4"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 FeF2 + 2 Na3PO4 -> Fe3(PO4)2 + 6 NaF",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "H2"
-      ],
-      "products": [
-        "AgH"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Ag + H2 -> 2 AgH",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ag2S",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Ag3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 Ag2S + 2 H3PO4 -> 3 H2S + 2 Ag3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NaF",
-        "H3PO4"
-      ],
-      "products": [
-        "HF",
-        "Na3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 NaF + H3PO4 -> 3 HF + Na3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH4OH"
-      ],
-      "products": [
-        "NH3",
-        "H2O"
-      ],
-      "rule": "unstable_decomposition",
-      "equation": "NH4OH -> NH3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "does not survive in solution"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H3PO4 + 3 NH4OH -> (NH4)3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2HPO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + 2 NH4OH -> (NH4)2HPO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4H2PO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + NH4OH -> NH4H2PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "H2"
-      ],
-      "products": [
-        "FeH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Fe + H2 -> FeH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Fe goes to +2 with H"
-    },
-    {
-      "substrates": [
-        "Na",
-        "H2"
-      ],
-      "products": [
-        "NaH"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Na + H2 -> 2 NaH",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "AgF",
-        "H3PO4"
-      ],
-      "products": [
-        "HF",
-        "Ag3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 AgF + H3PO4 -> 3 HF + Ag3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe",
-        "H3PO4"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "3 Fe + 2 H3PO4 -> Fe3(PO4)2 + 3 H2",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe3(PO4)2 is insoluble"
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H3PO4"
-      ],
-      "products": [
-        "(NH4)3PO4"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "3 NH3 + H3PO4 -> (NH4)3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "Na",
-        "H3PO4"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "6 Na + 2 H3PO4 -> 2 Na3PO4 + 3 H2",
-      "coefficients": {
-        "substrates": [
-          6,
-          2
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "Na2O"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 H3PO4 + 3 Na2O -> 2 Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2S",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Na3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 Na2S + 2 H3PO4 -> 3 H2S + 2 Na3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H3PO4 + 3 NaOH -> Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na2HPO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + 2 NaOH -> Na2HPO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "NaH2PO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H3PO4 + NaOH -> NaH2PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Na3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "Na2HPO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 Na3PO4 + H3PO4 -> 3 Na2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Na3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "NaH2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Na3PO4 + 2 H3PO4 -> 3 NaH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Na3PO4",
-        "AgF"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "Na3PO4 + 3 AgF -> Ag3PO4 + 3 NaF",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "FeS",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Fe3(PO4)2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 FeS + 2 H3PO4 -> 3 H2S + Fe3(PO4)2",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeS",
-        "H2S"
-      ],
-      "products": [
-        "Fe(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "FeS + H2S -> Fe(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
@@ -1256,15 +492,281 @@
     },
     {
       "substrates": [
-        "HF",
-        "Fe(OH)2"
+        "BaI2",
+        "Li3PO4"
       ],
       "products": [
-        "FeF2",
+        "Ba3(PO4)2",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaI2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + 4 H3PO4 -> 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "FeHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Fe3(PO4)2 + H3PO4 -> 3 FeHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Fe3(PO4)2 + 4 H3PO4 -> 3 Fe(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "LiI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + 2 LiOH -> Fe(OH)2 + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "LiOH",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 LiOH + P2O5 -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "2 HF + Fe(OH)2 -> FeF2 + 2 H2O",
+      "equation": "H3PO4 + 3 LiOH -> Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 LiOH -> Li2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "LiH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ba(OH)2 -> Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ba(OH)2 -> Ba(H2PO4)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -1273,6 +775,731 @@
         "products": [
           1,
           2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Fe + 2 H3PO4 -> Fe3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "FeO"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 FeO -> Fe3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Fe3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 FeS + 2 H3PO4 -> 3 H2S + Fe3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Li2O"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 Li2O -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Li2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Li3PO4 + H3PO4 -> 3 Li2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "FeI2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Li3PO4 + 3 FeI2 -> Fe3(PO4)2 + 6 LiI",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeHPO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 FeHPO4 + Fe(OH)2 -> Fe3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(H2PO4)2 + Ba(OH)2 -> Fe(OH)2 + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)2 + Fe(OH)2 -> 2 FeHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)2 + 2 Fe(OH)2 -> Fe3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "LiOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(H2PO4)2 + 2 LiOH -> Fe(OH)2 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Fe(H2PO4)2 + 2 Li3PO4 -> Fe3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "FeHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)2 + Li2HPO4 -> FeHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 BaHPO4 + Ba(OH)2 -> Ba3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + 2 Ba(OH)2 -> Ba3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + Li2HPO4 -> BaHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "FeI2"
+      ],
+      "products": [
+        "FeHPO4",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + FeI2 -> FeHPO4 + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "BaI2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + BaI2 -> BaHPO4 + 2 LiI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Li2HPO4 + LiOH -> Li3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + LiOH -> Li2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + 2 LiOH -> Li3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "FeO + H2 -> Fe + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2S"
+      ],
+      "products": [
+        "FeS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2S -> FeS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "FeO"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + FeO -> FeS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Li2O"
+      ],
+      "products": [
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Li2O -> Li2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       }
     },
@@ -1324,344 +1551,15 @@
     },
     {
       "substrates": [
-        "NH4F",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "NaF",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4F + NaOH -> NH3 + NaF + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "H3PO4"
-      ],
-      "products": [
-        "HF",
-        "(NH4)3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 NH4F + H3PO4 -> 3 HF + (NH4)3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe",
-        "HF"
-      ],
-      "products": [
-        "FeF2",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + 2 HF -> FeF2 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "HF"
-      ],
-      "products": [
-        "NH4F"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "NH3 + HF -> NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "Na",
-        "HF"
-      ],
-      "products": [
-        "NaF",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Na + 2 HF -> 2 NaF + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HF",
-        "Na2O"
-      ],
-      "products": [
-        "NaF",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HF + Na2O -> 2 NaF + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HF",
-        "NaOH"
-      ],
-      "products": [
-        "NaF",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HF + NaOH -> NaF + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HF",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4F",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HF + NH4OH -> NH4F + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe3(PO4)2",
-        "H3PO4"
-      ],
-      "products": [
-        "FeHPO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Fe3(PO4)2 + H3PO4 -> 3 FeHPO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Fe3(PO4)2",
-        "H3PO4"
-      ],
-      "products": [
-        "Fe(H2PO4)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Fe3(PO4)2 + 4 H3PO4 -> 3 Fe(H2PO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          4
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "H2S"
-      ],
-      "products": [
-        "FeS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2S -> FeS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeS is insoluble"
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2S"
-      ],
-      "products": [
-        "(NH4)2S"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2S -> (NH4)2S",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "Na",
-        "H2S"
-      ],
-      "products": [
-        "Na2S",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Na + H2S -> Na2S + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "H2S",
-        "Na2O"
+        "LiOH"
       ],
       "products": [
-        "Na2S",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + Na2O -> Na2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2S",
-        "H2S"
-      ],
-      "products": [
-        "NaHS"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Na2S + H2S -> 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaOH"
-      ],
-      "products": [
-        "Na2S",
+        "Li2S",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
+      "equation": "H2S + 2 LiOH -> Li2S + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1676,14 +1574,14 @@
     {
       "substrates": [
         "H2S",
-        "NaOH"
+        "LiOH"
       ],
       "products": [
-        "NaHS",
+        "LiHS",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H2S + NaOH -> NaHS + H2O",
+      "equation": "H2S + LiOH -> LiHS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1698,516 +1596,15 @@
     },
     {
       "substrates": [
-        "Ag2S",
-        "H2S"
-      ],
-      "products": [
-        "AgHS"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Ag2S + H2S -> 2 AgHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2S",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4OH"
-      ],
-      "products": [
-        "NH4HS",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2S + NH4OH -> NH4HS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Ag3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "Ag2HPO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 Ag3PO4 + H3PO4 -> 3 Ag2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Ag3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "AgH2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Ag3PO4 + 2 H3PO4 -> 3 AgH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "AgF"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)3PO4 + 3 AgF -> Ag3PO4 + 3 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)3PO4 + 3 NaOH -> 3 NH3 + Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1,
-          3
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "FeF2"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 (NH4)3PO4 + 3 FeF2 -> Fe3(PO4)2 + 6 NH4F",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "(NH4)2HPO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "2 (NH4)3PO4 + H3PO4 -> 3 (NH4)2HPO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H3PO4"
-      ],
-      "products": [
-        "NH4H2PO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)3PO4 + 2 H3PO4 -> 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          3
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "AgF"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2HPO4 + 2 AgF -> Ag2HPO4 + 2 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "Na2HPO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2HPO4 + 2 NaOH -> 2 NH3 + Na2HPO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "FeF2"
-      ],
-      "products": [
-        "FeHPO4",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2HPO4 + FeF2 -> FeHPO4 + 2 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "(NH4)2HPO4 + NH4OH -> (NH4)3PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "NaH2PO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4H2PO4 + NaOH -> NH3 + NaH2PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2HPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + NH4OH -> (NH4)2HPO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4H2PO4 + 2 NH4OH -> (NH4)3PO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Na2HPO4",
-        "AgF"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "Na2HPO4 + 2 AgF -> Ag2HPO4 + 2 NaF",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Na2HPO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Na2HPO4 + NaOH -> Na3PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Na2HPO4",
-        "FeF2"
-      ],
-      "products": [
-        "FeHPO4",
-        "NaF"
-      ],
-      "rule": "double_displacement",
-      "equation": "Na2HPO4 + FeF2 -> FeHPO4 + 2 NaF",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "NaH2PO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na2HPO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NaH2PO4 + NaOH -> Na2HPO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NaH2PO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NaH2PO4 + 2 NaOH -> Na3PO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "Na2S"
+        "BaS",
+        "FeI2"
       ],
       "products": [
         "FeS",
-        "NaHS"
+        "BaI2"
       ],
       "rule": "double_displacement",
-      "equation": "Fe(HS)2 + Na2S -> FeS + 2 NaHS",
+      "equation": "BaS + FeI2 -> FeS + BaI2",
       "coefficients": {
         "substrates": [
           1,
@@ -2215,30 +1612,256 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
       },
       "note": "FeS precipitates"
     },
     {
       "substrates": [
-        "Fe(HS)2",
-        "NaOH"
+        "BaS",
+        "H3PO4"
       ],
       "products": [
-        "Fe(OH)2",
-        "NaHS"
+        "H2S",
+        "Ba3(PO4)2"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)2 + 2 NaOH -> Fe(OH)2 + 2 NaHS",
+      "rule": "acid_displacement",
+      "equation": "3 BaS + 2 H3PO4 -> 3 H2S + Ba3(PO4)2",
       "coefficients": {
         "substrates": [
-          1,
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "Li2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 Li3PO4 -> Ba3(PO4)2 + 3 Li2S",
+      "coefficients": {
+        "substrates": [
+          3,
           2
         ],
         "products": [
           1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Fe(H2PO4)2"
+      ],
+      "products": [
+        "FeS",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Fe(H2PO4)2 -> FeS + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Li2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "Li2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Li2HPO4 -> BaHPO4 + Li2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Fe(HS)2"
+      ],
+      "products": [
+        "FeS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + Fe(HS)2 -> FeS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
           2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Ba(HS)2 + 2 H3PO4 -> 6 H2S + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(HS)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + Li2HPO4 -> BaHPO4 + 2 LiHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       },
       "note": "Fe(OH)2 precipitates"
@@ -2246,14 +1869,37 @@
     {
       "substrates": [
         "Fe(HS)2",
-        "NH4OH"
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "LiOH"
       ],
       "products": [
         "Fe(OH)2",
-        "NH4HS"
+        "LiHS"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(HS)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4HS",
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + 2 LiOH -> Fe(OH)2 + 2 LiHS",
       "coefficients": {
         "substrates": [
           1,
@@ -2291,14 +1937,14 @@
     {
       "substrates": [
         "Fe(HS)2",
-        "Na3PO4"
+        "Li3PO4"
       ],
       "products": [
         "Fe3(PO4)2",
-        "NaHS"
+        "LiHS"
       ],
       "rule": "double_displacement",
-      "equation": "3 Fe(HS)2 + 2 Na3PO4 -> Fe3(PO4)2 + 6 NaHS",
+      "equation": "3 Fe(HS)2 + 2 Li3PO4 -> Fe3(PO4)2 + 6 LiHS",
       "coefficients": {
         "substrates": [
           3,
@@ -2314,60 +1960,14 @@
     {
       "substrates": [
         "Fe(HS)2",
-        "Fe(OH)2"
-      ],
-      "products": [
-        "FeS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 Fe(HS)2 + 2 (NH4)3PO4 -> Fe3(PO4)2 + 6 NH4HS",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "(NH4)2HPO4"
+        "Li2HPO4"
       ],
       "products": [
         "FeHPO4",
-        "NH4HS"
+        "LiHS"
       ],
       "rule": "double_displacement",
-      "equation": "Fe(HS)2 + (NH4)2HPO4 -> FeHPO4 + 2 NH4HS",
+      "equation": "Fe(HS)2 + Li2HPO4 -> FeHPO4 + 2 LiHS",
       "coefficients": {
         "substrates": [
           1,
@@ -2383,37 +1983,14 @@
     {
       "substrates": [
         "Fe(HS)2",
-        "Na2HPO4"
-      ],
-      "products": [
-        "FeHPO4",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(HS)2 + Na2HPO4 -> FeHPO4 + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "(NH4)2S"
+        "Li2S"
       ],
       "products": [
         "FeS",
-        "NH4HS"
+        "LiHS"
       ],
       "rule": "double_displacement",
-      "equation": "Fe(HS)2 + (NH4)2S -> FeS + 2 NH4HS",
+      "equation": "Fe(HS)2 + Li2S -> FeS + 2 LiHS",
       "coefficients": {
         "substrates": [
           1,
@@ -2428,111 +2005,220 @@
     },
     {
       "substrates": [
-        "FeHPO4",
-        "Fe(OH)2"
+        "Li2S",
+        "FeI2"
       ],
       "products": [
-        "Fe3(PO4)2",
-        "H2O"
+        "FeS",
+        "LiI"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "2 FeHPO4 + Fe(OH)2 -> Fe3(PO4)2 + 2 H2O",
+      "rule": "double_displacement",
+      "equation": "Li2S + FeI2 -> FeS + 2 LiI",
       "coefficients": {
         "substrates": [
-          2,
+          1,
           1
         ],
         "products": [
           1,
           2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Li3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Li2S + 2 H3PO4 -> 3 H2S + 2 Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "Fe(H2PO4)2"
+      ],
+      "products": [
+        "FeS",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2S + Fe(H2PO4)2 -> FeS + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Li2S",
+        "H2S"
+      ],
+      "products": [
+        "LiHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li2S + H2S -> 2 LiHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "LiHS",
+        "LiOH"
+      ],
+      "products": [
+        "Li2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiHS + LiOH -> Li2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       },
       "note": "more base takes off another proton"
     },
     {
       "substrates": [
-        "Fe(H2PO4)2",
-        "Na2S"
+        "LiHS",
+        "H3PO4"
       ],
       "products": [
-        "FeS",
-        "NaH2PO4"
+        "H2S",
+        "Li3PO4"
       ],
-      "rule": "double_displacement",
-      "equation": "Fe(H2PO4)2 + Na2S -> FeS + 2 NaH2PO4",
+      "rule": "acid_displacement",
+      "equation": "3 LiHS + H3PO4 -> 3 H2S + Li3PO4",
       "coefficients": {
         "substrates": [
-          1,
+          3,
           1
         ],
         "products": [
-          1,
-          2
+          3,
+          1
         ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
+      }
+    }
+  ],
+  "answers": {
+    "oxide_with_oxide": {
       "substrates": [
-        "Fe(H2PO4)2",
-        "NaOH"
+        "FeO",
+        "P2O5"
       ],
       "products": [
-        "Fe(OH)2",
-        "NaH2PO4"
+        "Fe3(PO4)2"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(H2PO4)2 + 2 NaOH -> Fe(OH)2 + 2 NaH2PO4",
+      "rule": "oxide_with_oxide",
+      "equation": "3 FeO + P2O5 -> Fe3(PO4)2",
       "coefficients": {
         "substrates": [
-          1,
-          2
+          3,
+          1
         ],
         "products": [
-          1,
-          2
+          1
         ]
-      },
-      "note": "Fe(OH)2 precipitates"
+      }
     },
-    {
+    "acid_displacement": {
       "substrates": [
-        "Fe(H2PO4)2",
-        "NH4OH"
+        "FeS",
+        "H3PO4"
       ],
       "products": [
-        "Fe(OH)2",
-        "NH4H2PO4"
+        "H2S",
+        "Fe3(PO4)2"
       ],
-      "rule": "hydroxide_precipitation",
-      "equation": "Fe(H2PO4)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "Na3PO4"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NaH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 Fe(H2PO4)2 + 2 Na3PO4 -> Fe3(PO4)2 + 6 NaH2PO4",
+      "rule": "acid_displacement",
+      "equation": "3 FeS + 2 H3PO4 -> 3 H2S + Fe3(PO4)2",
       "coefficients": {
         "substrates": [
           3,
           2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H3PO4",
+        "FeO"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 FeO -> Fe3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Li3PO4",
+        "FeI2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "LiI"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Li3PO4 + 3 FeI2 -> Fe3(PO4)2 + 6 LiI",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
         ],
         "products": [
           1,
@@ -2541,30 +2227,53 @@
       },
       "note": "Fe3(PO4)2 precipitates"
     },
-    {
+    "metal_with_acid": {
       "substrates": [
-        "Fe(H2PO4)2",
+        "Fe",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Fe + 2 H3PO4 -> Fe3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
         "Fe(OH)2"
       ],
       "products": [
-        "FeHPO4",
+        "Fe3(PO4)2",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "Fe(H2PO4)2 + Fe(OH)2 -> 2 FeHPO4 + 2 H2O",
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Fe(OH)2 -> Fe3(PO4)2 + 6 H2O",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
-          2,
-          2
+          1,
+          6
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "Fe3(PO4)2 is insoluble"
     },
-    {
+    "acid_salt_with_base": {
       "substrates": [
         "Fe(H2PO4)2",
         "Fe(OH)2"
@@ -2586,1392 +2295,267 @@
         ]
       },
       "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "Fe3(PO4)2",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 Fe(H2PO4)2 + 2 (NH4)3PO4 -> Fe3(PO4)2 + 6 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe3(PO4)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "(NH4)2HPO4"
-      ],
-      "products": [
-        "FeHPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(H2PO4)2 + (NH4)2HPO4 -> FeHPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "Na2HPO4"
-      ],
-      "products": [
-        "FeHPO4",
-        "NaH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(H2PO4)2 + Na2HPO4 -> FeHPO4 + 2 NaH2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeHPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "(NH4)2S"
-      ],
-      "products": [
-        "FeS",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Fe(H2PO4)2 + (NH4)2S -> FeS + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "AgF"
-      ],
-      "products": [
-        "Ag2S",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + 2 AgF -> Ag2S + 2 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "Na2S",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2S + 2 NaOH -> 2 NH3 + Na2S + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "FeF2"
-      ],
-      "products": [
-        "FeS",
-        "NH4F"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + FeF2 -> FeS + 2 NH4F",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "FeS precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "(NH4)3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 (NH4)2S + 2 H3PO4 -> 3 H2S + 2 (NH4)3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "H2S"
-      ],
-      "products": [
-        "NH4HS"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)2S + H2S -> 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "AgHS"
-      ],
-      "products": [
-        "Ag2S",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + 2 AgHS -> Ag2S + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "AgH2PO4"
-      ],
-      "products": [
-        "Ag2S",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "(NH4)2S + 2 AgH2PO4 -> Ag2S + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "NaHS",
-        "NaOH"
-      ],
-      "products": [
-        "Na2S",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NaHS + NaOH -> Na2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NaHS",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Na3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 NaHS + H3PO4 -> 3 H2S + Na3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe",
-        "AgHS"
-      ],
-      "products": [
-        "Fe(HS)2",
-        "Ag"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + 2 AgHS -> Fe(HS)2 + 2 Ag",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na2S"
-      ],
-      "products": [
-        "Ag2S",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + Na2S -> Ag2S + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Ag3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 AgHS + H3PO4 -> 3 H2S + Ag3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na3PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 AgHS + Na3PO4 -> Ag3PO4 + 3 NaHS",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 AgHS + (NH4)3PO4 -> Ag3PO4 + 3 NH4HS",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "(NH4)2HPO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NH4HS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + (NH4)2HPO4 -> Ag2HPO4 + 2 NH4HS",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na2HPO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + Na2HPO4 -> Ag2HPO4 + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "NaHS",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HS + NaOH -> NH3 + NaHS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2S",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "(NH4)3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 NH4HS + H3PO4 -> 3 H2S + (NH4)3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe",
-        "AgH2PO4"
-      ],
-      "products": [
-        "Fe(H2PO4)2",
-        "Ag"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + 2 AgH2PO4 -> Fe(H2PO4)2 + 2 Ag",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Fe is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "Na2S"
-      ],
-      "products": [
-        "Ag2S",
-        "NaH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + Na2S -> Ag2S + 2 NaH2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "Na3PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NaH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 AgH2PO4 + Na3PO4 -> Ag3PO4 + 3 NaH2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "(NH4)3PO4"
-      ],
-      "products": [
-        "Ag3PO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 AgH2PO4 + (NH4)3PO4 -> Ag3PO4 + 3 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Ag3PO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "(NH4)2HPO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NH4H2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + (NH4)2HPO4 -> Ag2HPO4 + 2 NH4H2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "Na2HPO4"
-      ],
-      "products": [
-        "Ag2HPO4",
-        "NaH2PO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgH2PO4 + Na2HPO4 -> Ag2HPO4 + 2 NaH2PO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2HPO4 precipitates"
-    }
-  ],
-  "answers": {
-    "base_with_acidic_oxide": {
-      "substrates": [
-        "NaOH",
-        "P2O5"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "6 NaOH + P2O5 -> 2 Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          6,
-          1
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    "oxide_with_oxide": {
-      "substrates": [
-        "Na2O",
-        "P2O5"
-      ],
-      "products": [
-        "Na3PO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "3 Na2O + P2O5 -> 2 Na3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    "acid_displacement": {
-      "substrates": [
-        "Na2S",
-        "H3PO4"
-      ],
-      "products": [
-        "H2S",
-        "Na3PO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "3 Na2S + 2 H3PO4 -> 3 H2S + 2 Na3PO4",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          3,
-          2
-        ]
-      }
-    },
-    "acid_with_basic_oxide": {
-      "substrates": [
-        "H3PO4",
-        "Na2O"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 H3PO4 + 3 Na2O -> 2 Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    "metal_with_acid": {
-      "substrates": [
-        "Na",
-        "H3PO4"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "6 Na + 2 H3PO4 -> 2 Na3PO4 + 3 H2",
-      "coefficients": {
-        "substrates": [
-          6,
-          2
-        ],
-        "products": [
-          2,
-          3
-        ]
-      }
-    },
-    "neutralisation": {
-      "substrates": [
-        "H3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H3PO4 + 3 NaOH -> Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    "acid_salt_with_base": {
-      "substrates": [
-        "Na2HPO4",
-        "NaOH"
-      ],
-      "products": [
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Na2HPO4 + NaOH -> Na3PO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    "ammonia_liberation": {
-      "substrates": [
-        "(NH4)3PO4",
-        "NaOH"
-      ],
-      "products": [
-        "NH3",
-        "Na3PO4",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)3PO4 + 3 NaOH -> 3 NH3 + Na3PO4 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1,
-          3
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
     }
   },
   "misses": [
     {
       "substrates": [
-        "(NH4)2HPO4",
-        "Ag"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
+        "Ba(H2PO4)2",
         "Fe"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "(NH4)2HPO4",
-        "Fe(OH)2"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2HPO4",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Ag"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Fe(OH)2"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "HF"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "Na2HPO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)2S",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Ag"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Fe"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Fe(OH)2"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Na2HPO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "(NH4)3PO4",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "AgF"
-      ],
-      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "AgH2PO4"
-      ],
-      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "AgHS"
-      ],
-      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "Fe(H2PO4)2"
-      ],
-      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
+        "Ba(H2PO4)2",
         "Fe(HS)2"
       ],
-      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ag",
-        "FeF2"
+        "Ba(H2PO4)2",
+        "FeI2"
       ],
-      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ag",
+        "Ba(H2PO4)2",
         "H2S"
       ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ag",
+        "Ba(H2PO4)2",
+        "Li2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Fe(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Li2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "LiI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li2HPO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li2S"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li3PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiH2PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiHS"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiI"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Fe(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
         "H3PO4"
       ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ag",
-        "HF"
-      ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NH4F"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NH4H2PO4"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NH4HS"
-      ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "Na2HPO4"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "Na2S"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaF"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaH2PO4"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaHS"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag2HPO4",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Ag2HPO4",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Ag2S",
-        "HF"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Ag3PO4",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Ag3PO4",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgF",
-        "Fe(H2PO4)2"
+        "BaI2",
+        "Li2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgF",
-        "Fe(HS)2"
+        "BaI2",
+        "LiH2PO4"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgF",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgF",
-        "NH4H2PO4"
+        "BaI2",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgF",
-        "NH4HS"
+        "BaI2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "LiH2PO4"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgF",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "AgF",
-        "NaH2PO4"
+        "BaS",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgF",
-        "NaHS"
+        "BaS",
+        "LiI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgH2PO4",
-        "Fe(HS)2"
+        "BaS",
+        "LiOH"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "FeF2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "NH4F"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgH2PO4",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Fe(H2PO4)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "FeF2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "HF"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NH4F"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NH4H2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
@@ -3990,65 +2574,51 @@
     {
       "substrates": [
         "Fe",
-        "FeF2"
+        "FeI2"
       ],
       "note": "Fe sits below Fe in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "NH4F"
+        "Li2HPO4"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "NH4H2PO4"
+        "Li2S"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "NH4HS"
+        "Li3PO4"
       ],
-      "note": "NH4+ is not a metal, so there is nothing here to displace"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "Na2HPO4"
+        "LiH2PO4"
       ],
-      "note": "Fe sits below Na in the activity series, so it cannot push it out"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "Na2S"
+        "LiHS"
       ],
-      "note": "Fe sits below Na in the activity series, so it cannot push it out"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
         "Fe",
-        "NaF"
+        "LiI"
       ],
-      "note": "Fe sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "NaH2PO4"
-      ],
-      "note": "Fe sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "NaHS"
-      ],
-      "note": "Fe sits below Na in the activity series, so it cannot push it out"
+      "note": "Fe sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
@@ -4060,161 +2630,28 @@
     {
       "substrates": [
         "Fe(H2PO4)2",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "NH4F"
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Fe(H2PO4)2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(H2PO4)2",
-        "NaHS"
+        "LiI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Fe(HS)2",
-        "HF"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NH4F"
+        "LiH2PO4"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Fe(HS)2",
-        "NH4H2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(HS)2",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4F"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4H2PO4"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe(OH)2",
-        "NH4HS"
-      ],
-      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
-    },
-    {
-      "substrates": [
-        "Fe3(PO4)2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe3(PO4)2",
-        "HF"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NH4H2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NH4HS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeF2",
-        "NaHS"
+        "LiI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
@@ -4227,269 +2664,66 @@
     },
     {
       "substrates": [
-        "FeHPO4",
-        "HF"
+        "FeI2",
+        "H2S"
       ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "FeS",
-        "HF"
+        "FeI2",
+        "H3PO4"
       ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "H2S",
-        "NH4F"
-      ],
-      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NH4H2PO4"
+        "Li2HPO4"
       ],
       "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2S",
-        "Na2HPO4"
+        "Li3PO4"
       ],
       "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2S",
-        "NaF"
-      ],
-      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaH2PO4"
+        "LiH2PO4"
       ],
       "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "HF",
-        "NH4H2PO4"
+        "H2S",
+        "LiI"
       ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "HF",
-        "NH4HS"
+        "H3PO4",
+        "LiI"
       ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HF",
-        "Na2HPO4"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HF",
-        "Na2S"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HF",
-        "NaH2PO4"
-      ],
-      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HF",
-        "NaHS"
-      ],
-      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "Na2HPO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4F",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "Na2HPO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4H2PO4",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "Na2HPO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "NaF"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4HS",
-        "NaH2PO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4OH",
-        "Na2HPO4"
-      ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4OH",
-        "Na2S"
-      ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4OH",
-        "NaF"
-      ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4OH",
-        "NaH2PO4"
-      ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "NH4OH",
-        "NaHS"
-      ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Na",
-        "Na2HPO4"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
-        "Na2S"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
-        "NaF"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
-        "NaH2PO4"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
-        "NaHS"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+      "note": "H3PO4 is no stronger than HI, so it cannot drive it out of its own salt"
     }
   ]
 }
