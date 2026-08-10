@@ -1,0 +1,1031 @@
+{
+  "version": 3,
+  "target": "Na2SiO3",
+  "name": "sodium silicate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 6,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "H2O",
+    "HCl",
+    "NH3",
+    "Na",
+    "Na2O",
+    "NaOH",
+    "SiO2"
+  ],
+  "species": {
+    "(NH4)2SiO3": {
+      "name": "ammonium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SiO3": -2
+      }
+    },
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag2SiO3": {
+      "name": "silver silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "SiO3": -2
+      }
+    },
+    "AgCl": {
+      "name": "silver chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Cl": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4Cl": {
+      "name": "ammonium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "Cl": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "Na": {
+      "name": "sodium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Na2O": {
+      "name": "sodium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Na2SiO3": {
+      "name": "sodium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "SiO3": -2
+      }
+    },
+    "NaCl": {
+      "name": "sodium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Cl": -1
+      }
+    },
+    "NaH": {
+      "name": "sodium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "H": -1
+      }
+    },
+    "NaOH": {
+      "name": "sodium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "OH": -1
+      }
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "HCl",
+        "Ag2O"
+      ],
+      "products": [
+        "AgCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Ag2O -> 2 AgCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl is insoluble"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Na"
+      ],
+      "products": [
+        "Na2O",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + 2 Na -> Na2O + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Na is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "SiO2"
+      ],
+      "products": [
+        "Ag2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + SiO2 -> Ag2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "Na",
+        "H2O"
+      ],
+      "products": [
+        "NaOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 Na + 2 H2O -> 2 NaOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "H2O"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HCl"
+      ],
+      "products": [
+        "NH4Cl"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "NH3 + HCl -> NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "Na",
+        "HCl"
+      ],
+      "products": [
+        "NaCl",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + 2 HCl -> 2 NaCl + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Na2O"
+      ],
+      "products": [
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Na2O -> 2 NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NaOH"
+      ],
+      "products": [
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + NaOH -> NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + 2 HCl -> H2SiO3 + 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4Cl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + NH4OH -> NH4Cl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Na",
+        "H2"
+      ],
+      "products": [
+        "NaH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Na + H2 -> 2 NaH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4Cl + NaOH -> NH3 + NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + 2 HCl -> H2SiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Ag2O -> Ag2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2SiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2SiO3"
+      ],
+      "products": [
+        "(NH4)2SiO3"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "Na",
+        "H2SiO3"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + H2SiO3 -> Na2SiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "NH4Cl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2SiO3 + 2 HCl -> H2SiO3 + 2 NH4Cl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SiO3 + 2 NaOH -> 2 NH3 + Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  ],
+  "answers": {
+    "base_with_acidic_oxide": {
+      "substrates": [
+        "NaOH",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "oxide_with_oxide": {
+      "substrates": [
+        "Na2O",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2SiO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Na",
+        "H2SiO3"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Na + H2SiO3 -> Na2SiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "(NH4)2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2SiO3 + 2 NaOH -> 2 NH3 + Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "Na"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2SiO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HCl"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4Cl"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaCl"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4Cl"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaCl"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "NH4Cl",
+        "Na"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "NH4OH",
+        "NaCl"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Na",
+        "NaCl"
+      ],
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
+    }
+  ]
+}

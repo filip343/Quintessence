@@ -1,0 +1,1410 @@
+{
+  "version": 3,
+  "target": "NaHCO3",
+  "name": "sodium hydrogencarbonate",
+  "grade": "medium",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "CO2",
+    "Cr",
+    "H2O",
+    "NH3",
+    "Na2O",
+    "NaOH"
+  ],
+  "species": {
+    "(NH4)2CO3": {
+      "name": "ammonium carbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "CO3": -2
+      }
+    },
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2CO3": {
+      "name": "silver carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "CO3": -2
+      }
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgHCO3": {
+      "name": "silver hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HCO3": -1
+      }
+    },
+    "CO2": {
+      "name": "carbon dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "Cr": {
+      "name": "chromium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cr(HCO3)3": {
+      "name": "chromium(III) hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "HCO3": -1
+      }
+    },
+    "Cr(OH)3": {
+      "name": "chromium(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "OH": -1
+      }
+    },
+    "Cr2(CO3)3": {
+      "name": "chromium(III) carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "CO3": -2
+      }
+    },
+    "Cr2O3": {
+      "name": "chromium(III) oxide",
+      "class": "amphoteric oxide",
+      "state": "s",
+      "common": true
+    },
+    "CrH3": {
+      "name": "chromium(III) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "H": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2CO3": {
+      "name": "carbonic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "CO3": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4HCO3": {
+      "name": "ammonium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "HCO3": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "Na2CO3": {
+      "name": "sodium carbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "CO3": -2
+      }
+    },
+    "Na2O": {
+      "name": "sodium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "NaHCO3": {
+      "name": "sodium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "HCO3": -1
+      }
+    },
+    "NaOH": {
+      "name": "sodium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "OH": -1
+      }
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "CO2"
+      ],
+      "products": [
+        "Ag2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + CO2 -> Ag2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Cr"
+      ],
+      "products": [
+        "Cr2O3",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "3 Ag2O + 2 Cr -> Cr2O3 + 6 Ag",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "CO2",
+        "H2O"
+      ],
+      "products": [
+        "H2CO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "CO2 + H2O -> H2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "CO2"
+      ],
+      "products": [
+        "Na2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + CO2 -> Na2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "CO2"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + CO2 -> Na2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "H2O"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "AgHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2CO3 + H2CO3 -> 2 AgHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3"
+      ],
+      "products": [
+        "CO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2CO3 -> CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Ag2O -> Ag2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2CO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2CO3 -> Cr2(CO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2CO3"
+      ],
+      "products": [
+        "(NH4)2CO3"
+      ],
+      "rule": "ammonia_with_acid",
+      "equation": "2 NH3 + H2CO3 -> (NH4)2CO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Na2O -> Na2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 NaOH -> Na2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "NaHCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "NaHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 NH4OH -> (NH4)2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + NH4OH -> NH4HCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "AgHCO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 AgHCO3 -> Ag2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "AgHCO3"
+      ],
+      "products": [
+        "Cr(HCO3)3",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cr + 3 AgHCO3 -> Cr(HCO3)3 + 3 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "Na2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + Na2CO3 -> Ag2CO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "(NH4)2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NH4HCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + (NH4)2CO3 -> Ag2CO3 + 2 NH4HCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr2(CO3)3"
+      ],
+      "products": [
+        "Cr2O3",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "Cr2(CO3)3 -> Cr2O3 + 3 CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "Cr2(CO3)3",
+        "H2CO3"
+      ],
+      "products": [
+        "Cr(HCO3)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Cr2(CO3)3 + 3 H2CO3 -> 2 Cr(HCO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2"
+      ],
+      "products": [
+        "CrH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 H2 -> 2 CrH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr2O3",
+        "H2"
+      ],
+      "products": [
+        "Cr",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Cr2O3 + 3 H2 -> 2 Cr + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "(NH4)2CO3 + 2 NaOH -> 2 NH3 + Na2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "NH4HCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2CO3 + H2CO3 -> 2 NH4HCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "NaHCO3"
+      ],
+      "products": [
+        "Na2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 NaHCO3 -> Na2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHCO3 + NaOH -> Na2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4HCO3"
+      ],
+      "products": [
+        "(NH4)2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 NH4HCO3 -> (NH4)2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "NH4HCO3",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "NaHCO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4HCO3 + NaOH -> NH3 + NaHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HCO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HCO3 + NH4OH -> (NH4)2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 Cr(HCO3)3 -> Cr2(CO3)3 + 3 CO2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          3,
+          3
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "NaOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "NaHCO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr(HCO3)3 + 3 NaOH -> Cr(OH)3 + 3 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "Na2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HCO3)3 + 3 Na2CO3 -> Cr2(CO3)3 + 6 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "NH4OH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "NH4HCO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr(HCO3)3 + 3 NH4OH -> Cr(OH)3 + 3 NH4HCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "(NH4)2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "NH4HCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HCO3)3 + 3 (NH4)2CO3 -> Cr2(CO3)3 + 6 NH4HCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2CO3 + 2 Cr(OH)3 -> Cr2(CO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr(HCO3)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2CO3 + Cr(OH)3 -> Cr(HCO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HCO3)3 + Cr(OH)3 -> Cr2(CO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "partial_neutralisation": {
+      "substrates": [
+        "H2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "NaHCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    "salt_with_parent_acid": {
+      "substrates": [
+        "Na2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "NaHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    "ammonia_liberation": {
+      "substrates": [
+        "NH4HCO3",
+        "NaOH"
+      ],
+      "products": [
+        "NH3",
+        "NaHCO3",
+        "H2O"
+      ],
+      "rule": "ammonia_liberation",
+      "equation": "NH4HCO3 + NaOH -> NH3 + NaHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    "double_displacement": {
+      "substrates": [
+        "AgHCO3",
+        "Na2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + Na2CO3 -> Ag2CO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    "hydroxide_precipitation": {
+      "substrates": [
+        "Cr(HCO3)3",
+        "NaOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "NaHCO3"
+      ],
+      "rule": "hydroxide_precipitation",
+      "equation": "Cr(HCO3)3 + 3 NaOH -> Cr(OH)3 + 3 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Cr"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2CO3",
+        "Cr(OH)3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgHCO3"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr(HCO3)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2CO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4HCO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Na2CO3"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HCO3)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NH4HCO3"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Na2CO3"
+      ],
+      "note": "Cr sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr(OH)3",
+        "NH4HCO3"
+      ],
+      "note": "Cr(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "NH4HCO3",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NH4OH",
+        "Na2CO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
+}
