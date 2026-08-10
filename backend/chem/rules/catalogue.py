@@ -31,9 +31,11 @@ kind as already found, which is the truth and is also the lesson: a gas leaving
 and a precipitate dropping are one rule with two exits.
 
 `hydroxide_precipitation` became `salt_with_base` in that merge, since half of
-what it now covers drops nothing. Retired slugs are still named in the front
-end's `RULE_NAMES`, because puzzles dealt before the merge are frozen and still
-carry them.
+what it now covers drops nothing. The whole calendar was redealt rather than
+carrying the retired slugs forward -- cheap at one player, and not a precedent:
+once anyone's streak is worth keeping, a rename means retiring the old slug in
+the front end's `RULE_NAMES` instead, because regenerating a day someone has
+played discards their save.
 
 Note the two constants named SYNTHESIS: `chem.rules.ammonia` and
 `chem.rules.salts` both use the name for different templates, and the package's

@@ -46,6 +46,15 @@ from chem.rules.commonness import is_common
 
 # How many ways a day asks for, and the most species it may deal to get there.
 WANT_WAYS = 5
+
+# ...and the fewest it may ask for and still be worth dealing. The gap between
+# these two is what buys variety. Only 32 of the 100 playable medium targets
+# offer a fifth way; insisting on five threw the other 68 away, and a pool of 32
+# behind a weekly draw deals the same compounds over and over. Four is still a
+# puzzle -- four *different* kinds of reaction is the mechanic either way -- and
+# it is the difference between a third of the catalogue and all of it.
+MIN_WAYS = 4
+
 PALETTE_BUDGET = 15
 
 # Where the backward walk stops. 1 = deal anything one move from the elements.

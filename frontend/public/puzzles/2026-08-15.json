@@ -1,40 +1,97 @@
 {
   "version": 3,
-  "target": "Fe2(SO3)3",
-  "name": "iron(III) sulfite",
+  "target": "Al2S3",
+  "name": "aluminium sulfide",
   "grade": "medium",
   "want": 5,
   "ways": 6,
   "cut": 1,
   "palette": [
+    "Al",
+    "AlBr3",
     "Ba(OH)2",
-    "Fe2O3",
-    "FeBr3",
     "H2O",
+    "H2S",
     "K2O",
-    "SO2",
-    "SO3",
+    "Na2S",
+    "S",
     "SiO2"
   ],
   "species": {
-    "Ba(HSO3)2": {
-      "name": "barium hydrogensulfite",
+    "Al": {
+      "name": "aluminium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Al(HS)3": {
+      "name": "aluminium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Al": 3,
+        "HS": -1
+      }
+    },
+    "Al(OH)3": {
+      "name": "aluminium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "OH": -1
+      }
+    },
+    "Al2(SiO3)3": {
+      "name": "aluminium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "SiO3": -2
+      }
+    },
+    "Al2S3": {
+      "name": "aluminium sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "S": -2
+      }
+    },
+    "AlBr3": {
+      "name": "aluminium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "Br": -1
+      }
+    },
+    "AlH3": {
+      "name": "aluminium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Al": 3,
+        "H": -1
+      }
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
         "Ba": 2,
-        "HSO3": -1
-      }
-    },
-    "Ba(HSO4)2": {
-      "name": "barium hydrogensulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "HSO4": -1
+        "HS": -1
       }
     },
     "Ba(OH)2": {
@@ -57,24 +114,14 @@
         "Br": -1
       }
     },
-    "BaSO3": {
-      "name": "barium sulfite",
+    "BaS": {
+      "name": "barium sulfide",
       "class": "salt",
-      "state": "s",
+      "state": "aq",
       "common": true,
       "ions": {
         "Ba": 2,
-        "SO3": -2
-      }
-    },
-    "BaSO4": {
-      "name": "barium sulfate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "SO4": -2
+        "S": -2
       }
     },
     "BaSiO3": {
@@ -87,81 +134,11 @@
         "SiO3": -2
       }
     },
-    "Fe(HSO3)3": {
-      "name": "iron(III) hydrogensulfite",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 3,
-        "HSO3": -1
-      }
-    },
-    "Fe(HSO4)3": {
-      "name": "iron(III) hydrogensulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "HSO4": -1
-      }
-    },
-    "Fe(OH)3": {
-      "name": "iron(III) hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "OH": -1
-      }
-    },
-    "Fe2(SO3)3": {
-      "name": "iron(III) sulfite",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "SO3": -2
-      }
-    },
-    "Fe2(SO4)3": {
-      "name": "iron(III) sulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "SO4": -2
-      }
-    },
-    "Fe2(SiO3)3": {
-      "name": "iron(III) silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "SiO3": -2
-      }
-    },
-    "Fe2O3": {
-      "name": "iron(III) oxide",
-      "class": "basic oxide",
-      "state": "s",
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
       "common": true
-    },
-    "FeBr3": {
-      "name": "iron(III) bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 3,
-        "Br": -1
-      }
     },
     "H2O": {
       "name": "water",
@@ -169,24 +146,14 @@
       "state": "l",
       "common": true
     },
-    "H2SO3": {
-      "name": "sulfurous acid",
+    "H2S": {
+      "name": "hydrosulfuric acid",
       "class": "acid",
       "state": "aq",
       "common": true,
       "ions": {
         "H": 1,
-        "SO3": -2
-      }
-    },
-    "H2SO4": {
-      "name": "sulfuric acid",
-      "class": "acid",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "H": 1,
-        "SO4": -2
+        "S": -2
       }
     },
     "H2SiO3": {
@@ -205,24 +172,14 @@
       "state": "s",
       "common": true
     },
-    "K2SO3": {
-      "name": "potassium sulfite",
+    "K2S": {
+      "name": "potassium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "K": 1,
-        "SO3": -2
-      }
-    },
-    "K2SO4": {
-      "name": "potassium sulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
-        "SO4": -2
+        "S": -2
       }
     },
     "K2SiO3": {
@@ -245,24 +202,14 @@
         "Br": -1
       }
     },
-    "KHSO3": {
-      "name": "potassium hydrogensulfite",
+    "KHS": {
+      "name": "potassium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
         "K": 1,
-        "HSO3": -1
-      }
-    },
-    "KHSO4": {
-      "name": "potassium hydrogensulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
-        "HSO4": -1
+        "HS": -1
       }
     },
     "KOH": {
@@ -275,16 +222,40 @@
         "OH": -1
       }
     },
-    "SO2": {
-      "name": "sulfur dioxide",
-      "class": "acidic oxide",
-      "state": "g",
-      "common": true
+    "Na2S": {
+      "name": "sodium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "S": -2
+      }
     },
-    "SO3": {
-      "name": "sulfur trioxide",
-      "class": "acidic oxide",
-      "state": "l",
+    "NaBr": {
+      "name": "sodium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "HS": -1
+      }
+    },
+    "S": {
+      "name": "sulfur",
+      "class": "element",
+      "state": "s",
       "common": true
     },
     "SiO2": {
@@ -297,15 +268,58 @@
   "reactions": [
     {
       "substrates": [
-        "FeBr3",
+        "Al",
+        "H2S"
+      ],
+      "products": [
+        "Al2S3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 3 H2S -> Al2S3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Al",
+        "S"
+      ],
+      "products": [
+        "Al2S3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 S -> Al2S3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AlBr3",
         "Ba(OH)2"
       ],
       "products": [
-        "Fe(OH)3",
+        "Al(OH)3",
         "BaBr2"
       ],
       "rule": "salt_with_base",
-      "equation": "2 FeBr3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 BaBr2",
+      "equation": "2 AlBr3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaBr2",
       "coefficients": {
         "substrates": [
           2,
@@ -316,19 +330,42 @@
           3
         ]
       },
-      "note": "Fe(OH)3 precipitates"
+      "note": "Al(OH)3 precipitates"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "SO2"
+        "AlBr3",
+        "Na2S"
       ],
       "products": [
-        "BaSO3",
+        "Al2S3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AlBr3 + 3 Na2S -> Al2S3 + 6 NaBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
         "H2O"
       ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SO2 -> BaSO3 + H2O",
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -336,33 +373,32 @@
         ],
         "products": [
           1,
-          1
+          2
         ]
-      },
-      "note": "BaSO3 is insoluble"
+      }
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "SO3"
+        "H2S",
+        "Ba(OH)2"
       ],
       "products": [
-        "BaSO4",
+        "Ba(HS)2",
         "H2O"
       ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SO3 -> BaSO4 + H2O",
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
           1,
-          1
+          2
         ]
       },
-      "note": "BaSO4 is insoluble"
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
@@ -389,66 +425,6 @@
     },
     {
       "substrates": [
-        "Fe2O3",
-        "SO2"
-      ],
-      "products": [
-        "Fe2(SO3)3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Fe2O3 + 3 SO2 -> Fe2(SO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe2O3",
-        "SO3"
-      ],
-      "products": [
-        "Fe2(SO4)3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Fe2O3 + 3 SO3 -> Fe2(SO4)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe2O3",
-        "SiO2"
-      ],
-      "products": [
-        "Fe2(SiO3)3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Fe2O3 + 3 SiO2 -> Fe2(SiO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
         "K2O",
         "H2O"
       ],
@@ -469,84 +445,46 @@
     },
     {
       "substrates": [
-        "SO2",
-        "H2O"
+        "H2S",
+        "K2O"
       ],
       "products": [
-        "H2SO3"
+        "K2S",
+        "H2O"
       ],
-      "rule": "anhydride_hydration",
-      "equation": "SO2 + H2O -> H2SO3",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
+          1,
           1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
         ]
       },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "SO3",
-        "H2O"
-      ],
-      "products": [
-        "H2SO4"
-      ],
-      "rule": "anhydride_hydration",
-      "equation": "SO3 + H2O -> H2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2O",
-        "SO2"
-      ],
-      "products": [
-        "K2SO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "K2O + SO2 -> K2SO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2O",
-        "SO3"
-      ],
-      "products": [
-        "K2SO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "K2O + SO3 -> K2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
+      "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
@@ -570,83 +508,99 @@
     },
     {
       "substrates": [
-        "H2SO3",
-        "Fe(OH)3"
+        "Al2S3",
+        "H2S"
       ],
       "products": [
-        "Fe2(SO3)3",
-        "H2O"
+        "Al(HS)3"
       ],
-      "rule": "neutralisation",
-      "equation": "3 H2SO3 + 2 Fe(OH)3 -> Fe2(SO3)3 + 6 H2O",
+      "rule": "salt_with_parent_acid",
+      "equation": "Al2S3 + 3 H2S -> 2 Al(HS)3",
       "coefficients": {
         "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(SO3)3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "Fe(HSO3)3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "3 H2SO3 + Fe(OH)3 -> Fe(HSO3)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
           1,
           3
+        ],
+        "products": [
+          2
         ]
       },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "the acid protonates its own salt"
     },
     {
       "substrates": [
-        "H2SO4",
-        "Fe(OH)3"
+        "Al",
+        "H2"
       ],
       "products": [
-        "Fe2(SO4)3",
-        "H2O"
+        "AlH3"
       ],
-      "rule": "neutralisation",
-      "equation": "3 H2SO4 + 2 Fe(OH)3 -> Fe2(SO4)3 + 6 H2O",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 H2 -> 2 AlH3",
       "coefficients": {
         "substrates": [
-          3,
-          2
+          2,
+          3
         ],
         "products": [
-          1,
-          6
+          2
         ]
       }
     },
     {
       "substrates": [
-        "H2SO4",
-        "Fe(OH)3"
+        "H2",
+        "S"
       ],
       "products": [
-        "Fe(HSO4)3",
+        "H2S"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2S + 2 Al(OH)3 -> Al2S3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al(HS)3",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "3 H2SO4 + Fe(OH)3 -> Fe(HSO4)3 + 3 H2O",
+      "equation": "3 H2S + Al(OH)3 -> Al(HS)3 + 3 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -658,75 +612,6 @@
         ]
       },
       "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Fe2(SO4)3"
-      ],
-      "products": [
-        "BaSO4",
-        "FeBr3"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 BaBr2 + Fe2(SO4)3 -> 3 BaSO4 + 2 FeBr3",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "K2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + K2SO3 -> BaSO3 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "K2SO4"
-      ],
-      "products": [
-        "BaSO4",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + K2SO4 -> BaSO4 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
     },
     {
       "substrates": [
@@ -753,325 +638,150 @@
     },
     {
       "substrates": [
-        "BaSO3",
-        "H2SO3"
+        "BaS",
+        "AlBr3"
       ],
       "products": [
-        "Ba(HSO3)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaSO3 + H2SO3 -> Ba(HSO3)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaSO3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SO3",
-        "BaSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSO3 + H2SO4 -> H2SO3 + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "BaSO4",
-        "H2SO4"
-      ],
-      "products": [
-        "Ba(HSO4)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2SO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaSO3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2SO3 -> H2SiO3 + BaSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2SO4 -> H2SiO3 + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Fe2(SO3)3",
-        "H2SO3"
-      ],
-      "products": [
-        "Fe(HSO3)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Fe2(SO3)3 + 3 H2SO3 -> 2 Fe(HSO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Fe2(SO3)3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SO3",
-        "Fe2(SO4)3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe2(SO3)3 + 3 H2SO4 -> 3 H2SO3 + Fe2(SO4)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "BaSO4"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Fe2(SO4)3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "KOH"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "K2SO4"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Fe2(SO4)3 + 6 KOH -> 2 Fe(OH)3 + 3 K2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          6
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "H2SO4"
-      ],
-      "products": [
-        "Fe(HSO4)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Fe2(SO4)3 + 3 H2SO4 -> 2 Fe(HSO4)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "K2SO3"
-      ],
-      "products": [
-        "Fe2(SO3)3",
-        "K2SO4"
+        "Al2S3",
+        "BaBr2"
       ],
       "rule": "double_displacement",
-      "equation": "Fe2(SO4)3 + 3 K2SO3 -> Fe2(SO3)3 + 3 K2SO4",
+      "equation": "3 BaS + 2 AlBr3 -> Al2S3 + 3 BaBr2",
       "coefficients": {
         "substrates": [
-          1,
-          3
+          3,
+          2
         ],
         "products": [
           1,
           3
         ]
       },
-      "note": "Fe2(SO3)3 precipitates"
+      "note": "Al2S3 precipitates"
     },
     {
       "substrates": [
-        "Fe2(SO4)3",
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
         "K2SiO3"
       ],
       "products": [
-        "Fe2(SiO3)3",
-        "K2SO4"
+        "BaSiO3",
+        "K2S"
       ],
       "rule": "double_displacement",
-      "equation": "Fe2(SO4)3 + 3 K2SiO3 -> Fe2(SiO3)3 + 3 K2SO4",
+      "equation": "BaS + K2SiO3 -> BaSiO3 + K2S",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
           1,
-          3
+          1
         ]
       },
-      "note": "Fe2(SiO3)3 precipitates"
+      "note": "BaSiO3 precipitates"
     },
     {
       "substrates": [
-        "Fe2(SiO3)3",
-        "H2SO3"
+        "Ba(HS)2",
+        "Ba(OH)2"
       ],
       "products": [
-        "H2SiO3",
-        "Fe2(SO3)3"
+        "BaS",
+        "H2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "Fe2(SiO3)3 + 3 H2SO3 -> 3 H2SiO3 + Fe2(SO3)3",
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
-          3,
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + K2SiO3 -> BaSiO3 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "Fe2(SiO3)3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SiO3",
-        "Fe2(SO4)3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Fe2(SiO3)3 + 3 H2SO4 -> 3 H2SiO3 + Fe2(SO4)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          3,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "FeBr3",
+        "AlBr3",
         "KOH"
       ],
       "products": [
-        "Fe(OH)3",
+        "Al(OH)3",
         "KBr"
       ],
       "rule": "salt_with_base",
-      "equation": "FeBr3 + 3 KOH -> Fe(OH)3 + 3 KBr",
+      "equation": "AlBr3 + 3 KOH -> Al(OH)3 + 3 KBr",
       "coefficients": {
         "substrates": [
           1,
@@ -1082,51 +792,52 @@
           3
         ]
       },
-      "note": "Fe(OH)3 precipitates"
+      "note": "Al(OH)3 precipitates"
     },
     {
       "substrates": [
-        "KOH",
-        "SO2"
+        "H2S",
+        "KOH"
       ],
       "products": [
-        "K2SO3",
+        "K2S",
         "H2O"
       ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
       "coefficients": {
         "substrates": [
-          2,
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
           1
         ],
         "products": [
           1,
           1
         ]
-      }
-    },
-    {
-      "substrates": [
-        "KOH",
-        "SO3"
-      ],
-      "products": [
-        "K2SO4",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SO3 -> K2SO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
@@ -1152,216 +863,37 @@
     },
     {
       "substrates": [
-        "H2SO3",
-        "KOH"
+        "K2S",
+        "AlBr3"
       ],
       "products": [
-        "K2SO3",
-        "H2O"
+        "Al2S3",
+        "KBr"
       ],
-      "rule": "neutralisation",
-      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "KOH"
-      ],
-      "products": [
-        "KHSO3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2SO3 + KOH -> KHSO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "KOH"
-      ],
-      "products": [
-        "K2SO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO4 + 2 KOH -> K2SO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "KOH"
-      ],
-      "products": [
-        "KHSO4",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2SO4 + KOH -> KHSO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2SO3"
-      ],
-      "products": [
-        "SO2",
-        "H2O"
-      ],
-      "rule": "unstable_decomposition",
-      "equation": "H2SO3 -> SO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "does not survive in solution"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO3 + Ba(OH)2 -> BaSO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Ba(HSO3)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2SO3 + Ba(OH)2 -> Ba(HSO3)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "Fe2O3"
-      ],
-      "products": [
-        "Fe2(SO3)3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "3 H2SO3 + Fe2O3 -> Fe2(SO3)3 + 3 H2O",
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 AlBr3 -> Al2S3 + 6 KBr",
       "coefficients": {
         "substrates": [
           3,
-          1
+          2
         ],
         "products": [
           1,
-          3
+          6
         ]
       },
-      "note": "Fe2(SO3)3 is insoluble"
+      "note": "Al2S3 precipitates"
     },
     {
       "substrates": [
-        "H2SO3",
-        "K2O"
+        "K2S",
+        "H2S"
       ],
       "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2SO3",
-        "H2SO3"
-      ],
-      "products": [
-        "KHSO3"
+        "KHS"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "K2SO3 + H2SO3 -> 2 KHSO3",
+      "equation": "K2S + H2S -> 2 KHS",
       "coefficients": {
         "substrates": [
           1,
@@ -1376,170 +908,37 @@
     {
       "substrates": [
         "K2SiO3",
-        "H2SO3"
+        "AlBr3"
       ],
       "products": [
-        "H2SiO3",
-        "K2SO3"
+        "Al2(SiO3)3",
+        "KBr"
       ],
-      "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO4",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO4 + Ba(OH)2 -> BaSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO4 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Ba(HSO4)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "Fe2O3"
-      ],
-      "products": [
-        "Fe2(SO4)3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "3 H2SO4 + Fe2O3 -> Fe2(SO4)3 + 3 H2O",
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 AlBr3 -> Al2(SiO3)3 + 6 KBr",
       "coefficients": {
         "substrates": [
           3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "K2O"
-      ],
-      "products": [
-        "K2SO4",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO4 + K2O -> K2SO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2SO3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SO3",
-        "K2SO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "K2SO3 + H2SO4 -> H2SO3 + K2SO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "K2SO4",
-        "H2SO4"
-      ],
-      "products": [
-        "KHSO4"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "K2SO4 + H2SO4 -> 2 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           2
+        ],
+        "products": [
+          1,
+          6
         ]
       },
-      "note": "the acid protonates its own salt"
+      "note": "Al2(SiO3)3 precipitates"
     },
     {
       "substrates": [
         "K2SiO3",
-        "H2SO4"
+        "H2S"
       ],
       "products": [
         "H2SiO3",
-        "K2SO4"
+        "K2S"
       ],
       "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2SO4 -> H2SiO3 + K2SO4",
+      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
       "coefficients": {
         "substrates": [
           1,
@@ -1553,61 +952,15 @@
     },
     {
       "substrates": [
-        "K2SO3",
-        "FeBr3"
-      ],
-      "products": [
-        "Fe2(SO3)3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2SO3 + 2 FeBr3 -> Fe2(SO3)3 + 6 KBr",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(SO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "FeBr3"
-      ],
-      "products": [
-        "Fe2(SiO3)3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2SiO3 + 2 FeBr3 -> Fe2(SiO3)3 + 6 KBr",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(SiO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HSO3)3",
+        "Al(HS)3",
         "Ba(OH)2"
       ],
       "products": [
-        "Fe(OH)3",
-        "Ba(HSO3)2"
+        "Al(OH)3",
+        "Ba(HS)2"
       ],
       "rule": "salt_with_base",
-      "equation": "2 Fe(HSO3)3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 Ba(HSO3)2",
+      "equation": "2 Al(HS)3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 Ba(HS)2",
       "coefficients": {
         "substrates": [
           2,
@@ -1618,19 +971,42 @@
           3
         ]
       },
-      "note": "Fe(OH)3 precipitates"
+      "note": "Al(OH)3 precipitates"
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
-        "Fe(OH)3"
+        "Al(HS)3",
+        "Na2S"
       ],
       "products": [
-        "Fe2(SO3)3",
+        "Al2S3",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 Na2S -> Al2S3 + 6 NaHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Fe(HSO3)3 + Fe(OH)3 -> Fe2(SO3)3 + 3 H2O",
+      "equation": "Al(HS)3 + Al(OH)3 -> Al2S3 + 3 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1645,15 +1021,38 @@
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
+        "Al(HS)3",
+        "BaS"
+      ],
+      "products": [
+        "Al2S3",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 BaS -> Al2S3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
         "KOH"
       ],
       "products": [
-        "Fe(OH)3",
-        "KHSO3"
+        "Al(OH)3",
+        "KHS"
       ],
       "rule": "salt_with_base",
-      "equation": "Fe(HSO3)3 + 3 KOH -> Fe(OH)3 + 3 KHSO3",
+      "equation": "Al(HS)3 + 3 KOH -> Al(OH)3 + 3 KHS",
       "coefficients": {
         "substrates": [
           1,
@@ -1664,42 +1063,19 @@
           3
         ]
       },
-      "note": "Fe(OH)3 precipitates"
+      "note": "Al(OH)3 precipitates"
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
-        "H2SO4"
+        "Al(HS)3",
+        "K2S"
       ],
       "products": [
-        "H2SO3",
-        "Fe2(SO4)3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "2 Fe(HSO3)3 + 3 H2SO4 -> 6 H2SO3 + Fe2(SO4)3",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          6,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "Fe(HSO3)3",
-        "K2SO3"
-      ],
-      "products": [
-        "Fe2(SO3)3",
-        "KHSO3"
+        "Al2S3",
+        "KHS"
       ],
       "rule": "double_displacement",
-      "equation": "2 Fe(HSO3)3 + 3 K2SO3 -> Fe2(SO3)3 + 6 KHSO3",
+      "equation": "2 Al(HS)3 + 3 K2S -> Al2S3 + 6 KHS",
       "coefficients": {
         "substrates": [
           2,
@@ -1710,19 +1086,19 @@
           6
         ]
       },
-      "note": "Fe2(SO3)3 precipitates"
+      "note": "Al2S3 precipitates"
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
+        "Al(HS)3",
         "K2SiO3"
       ],
       "products": [
-        "Fe2(SiO3)3",
-        "KHSO3"
+        "Al2(SiO3)3",
+        "KHS"
       ],
       "rule": "double_displacement",
-      "equation": "2 Fe(HSO3)3 + 3 K2SiO3 -> Fe2(SiO3)3 + 6 KHSO3",
+      "equation": "2 Al(HS)3 + 3 K2SiO3 -> Al2(SiO3)3 + 6 KHS",
       "coefficients": {
         "substrates": [
           2,
@@ -1733,375 +1109,53 @@
           6
         ]
       },
-      "note": "Fe2(SiO3)3 precipitates"
+      "note": "Al2(SiO3)3 precipitates"
     },
     {
       "substrates": [
-        "Fe(HSO4)3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Fe(OH)3",
-        "Ba(HSO4)2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "2 Fe(HSO4)3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 Ba(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
-        "Fe(OH)3"
-      ],
-      "products": [
-        "Fe2(SO4)3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Fe(HSO4)3 + Fe(OH)3 -> Fe2(SO4)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
+        "KHS",
         "KOH"
       ],
       "products": [
-        "Fe(OH)3",
-        "KHSO4"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Fe(HSO4)3 + 3 KOH -> Fe(OH)3 + 3 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
-        "K2SO3"
-      ],
-      "products": [
-        "Fe2(SO3)3",
-        "KHSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Fe(HSO4)3 + 3 K2SO3 -> Fe2(SO3)3 + 6 KHSO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(SO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
-        "K2SiO3"
-      ],
-      "products": [
-        "Fe2(SiO3)3",
-        "KHSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Fe(HSO4)3 + 3 K2SiO3 -> Fe2(SiO3)3 + 6 KHSO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Fe2(SiO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO3",
+        "K2S",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Ba(HSO3)2 + Ba(OH)2 -> 2 BaSO3 + 2 H2O",
+      "equation": "KHS + KOH -> K2S + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          2,
-          2
+          1,
+          1
         ]
       },
       "note": "more base takes off another proton"
     },
     {
       "substrates": [
-        "Ba(HSO3)2",
-        "Fe2(SO4)3"
+        "Al",
+        "H2SiO3"
       ],
       "products": [
-        "BaSO4",
-        "Fe(HSO3)3"
+        "Al2(SiO3)3",
+        "H2"
       ],
-      "rule": "double_displacement",
-      "equation": "3 Ba(HSO3)2 + Fe2(SO4)3 -> 3 BaSO4 + 2 Fe(HSO3)3",
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 3 H2SiO3 -> Al2(SiO3)3 + 3 H2",
       "coefficients": {
         "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SO3",
-        "BaSO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Ba(HSO3)2 + H2SO4 -> 2 H2SO3 + BaSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           2,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "K2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "KHSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + K2SO3 -> BaSO3 + 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
+          3
         ],
         "products": [
           1,
-          2
+          3
         ]
       },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "K2SO4"
-      ],
-      "products": [
-        "BaSO4",
-        "KHSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + K2SO4 -> BaSO4 + 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHSO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO3)2 + K2SiO3 -> BaSiO3 + 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaSO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Ba(HSO4)2 + Ba(OH)2 -> 2 BaSO4 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "Fe2(SO4)3"
-      ],
-      "products": [
-        "BaSO4",
-        "Fe(HSO4)3"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 Ba(HSO4)2 + Fe2(SO4)3 -> 3 BaSO4 + 2 Fe(HSO4)3",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          3,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "K2SO3"
-      ],
-      "products": [
-        "BaSO3",
-        "KHSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + K2SO3 -> BaSO3 + 2 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "K2SO4"
-      ],
-      "products": [
-        "BaSO4",
-        "KHSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + K2SO4 -> BaSO4 + 2 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHSO4"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + K2SiO3 -> BaSiO3 + 2 KHSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
+      "note": "Al2(SiO3)3 is insoluble"
     },
     {
       "substrates": [
@@ -2129,29 +1183,6 @@
     {
       "substrates": [
         "H2SiO3",
-        "Fe2O3"
-      ],
-      "products": [
-        "Fe2(SiO3)3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "3 H2SiO3 + Fe2O3 -> Fe2(SiO3)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Fe2(SiO3)3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
         "K2O"
       ],
       "products": [
@@ -2174,14 +1205,14 @@
     {
       "substrates": [
         "H2SiO3",
-        "Fe(OH)3"
+        "Al(OH)3"
       ],
       "products": [
-        "Fe2(SiO3)3",
+        "Al2(SiO3)3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "3 H2SiO3 + 2 Fe(OH)3 -> Fe2(SiO3)3 + 6 H2O",
+      "equation": "3 H2SiO3 + 2 Al(OH)3 -> Al2(SiO3)3 + 6 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -2192,7 +1223,7 @@
           6
         ]
       },
-      "note": "Fe2(SiO3)3 is insoluble"
+      "note": "Al2(SiO3)3 is insoluble"
     },
     {
       "substrates": [
@@ -2218,106 +1249,15 @@
     },
     {
       "substrates": [
-        "KHSO3",
-        "KOH"
-      ],
-      "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "KHSO3",
-        "H2SO4"
-      ],
-      "products": [
-        "H2SO3",
-        "K2SO4"
-      ],
-      "rule": "acid_displacement",
-      "equation": "2 KHSO3 + H2SO4 -> 2 H2SO3 + K2SO4",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "KHSO4",
-        "KOH"
-      ],
-      "products": [
-        "K2SO4",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "KHSO4 + KOH -> K2SO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    }
-  ],
-  "answers": {
-    "oxide_with_oxide": {
-      "substrates": [
-        "Fe2O3",
-        "SO2"
-      ],
-      "products": [
-        "Fe2(SO3)3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Fe2O3 + 3 SO2 -> Fe2(SO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    "acid_displacement": {
-      "substrates": [
-        "Fe2(SiO3)3",
-        "H2SO3"
+        "Al2(SiO3)3",
+        "H2S"
       ],
       "products": [
         "H2SiO3",
-        "Fe2(SO3)3"
+        "Al2S3"
       ],
       "rule": "acid_displacement",
-      "equation": "Fe2(SiO3)3 + 3 H2SO3 -> 3 H2SiO3 + Fe2(SO3)3",
+      "equation": "Al2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Al2S3",
       "coefficients": {
         "substrates": [
           1,
@@ -2328,44 +1268,66 @@
           1
         ]
       }
-    },
-    "acid_with_basic_oxide": {
+    }
+  ],
+  "answers": {
+    "binary_salt_synthesis": {
       "substrates": [
-        "H2SO3",
-        "Fe2O3"
+        "Al",
+        "S"
       ],
       "products": [
-        "Fe2(SO3)3",
-        "H2O"
+        "Al2S3"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "3 H2SO3 + Fe2O3 -> Fe2(SO3)3 + 3 H2O",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 S -> Al2S3",
       "coefficients": {
         "substrates": [
-          3,
-          1
+          2,
+          3
         ],
         "products": [
-          1,
-          3
+          1
         ]
-      },
-      "note": "Fe2(SO3)3 is insoluble"
+      }
     },
     "double_displacement": {
       "substrates": [
-        "Fe2(SO4)3",
-        "K2SO3"
+        "AlBr3",
+        "Na2S"
       ],
       "products": [
-        "Fe2(SO3)3",
-        "K2SO4"
+        "Al2S3",
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "Fe2(SO4)3 + 3 K2SO3 -> Fe2(SO3)3 + 3 K2SO4",
+      "equation": "2 AlBr3 + 3 Na2S -> Al2S3 + 6 NaBr",
       "coefficients": {
         "substrates": [
+          2,
+          3
+        ],
+        "products": [
           1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Al",
+        "H2S"
+      ],
+      "products": [
+        "Al2S3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 3 H2S -> Al2S3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
           3
         ],
         "products": [
@@ -2373,19 +1335,19 @@
           3
         ]
       },
-      "note": "Fe2(SO3)3 precipitates"
+      "note": "Al2S3 is insoluble"
     },
     "neutralisation": {
       "substrates": [
-        "H2SO3",
-        "Fe(OH)3"
+        "H2S",
+        "Al(OH)3"
       ],
       "products": [
-        "Fe2(SO3)3",
+        "Al2S3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "3 H2SO3 + 2 Fe(OH)3 -> Fe2(SO3)3 + 6 H2O",
+      "equation": "3 H2S + 2 Al(OH)3 -> Al2S3 + 6 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -2396,19 +1358,41 @@
           6
         ]
       },
-      "note": "Fe2(SO3)3 is insoluble"
+      "note": "Al2S3 is insoluble"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Al2(SiO3)3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "Al2S3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Al2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Al2S3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
     },
     "acid_salt_with_base": {
       "substrates": [
-        "Fe(HSO3)3",
-        "Fe(OH)3"
+        "Al(HS)3",
+        "Al(OH)3"
       ],
       "products": [
-        "Fe2(SO3)3",
+        "Al2S3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Fe(HSO3)3 + Fe(OH)3 -> Fe2(SO3)3 + 3 H2O",
+      "equation": "Al(HS)3 + Al(OH)3 -> Al2S3 + 3 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -2425,106 +1409,197 @@
   "misses": [
     {
       "substrates": [
-        "Ba(HSO3)2",
-        "Fe(HSO4)3"
+        "Al",
+        "Al(HS)3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "AlBr3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "Ba(HS)2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "BaBr2"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "BaS"
+      ],
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "K2S"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "K2SiO3"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KBr"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "KHS"
+      ],
+      "note": "Al sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "Na2S"
+      ],
+      "note": "Al sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "NaBr"
+      ],
+      "note": "Al sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
+        "NaHS"
+      ],
+      "note": "Al sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "BaBr2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO3)2",
-        "FeBr3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HSO3)2",
+        "Al(HS)3",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ba(HSO3)2",
+        "Al(HS)3",
         "KBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO3)2",
-        "KHSO4"
+        "Al(HS)3",
+        "NaBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO3)2",
-        "KOH"
-      ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "Fe(HSO3)3"
+        "AlBr3",
+        "Ba(HS)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "FeBr3"
+        "AlBr3",
+        "H2S"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "H2SO3"
-      ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
+        "AlBr3",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
+        "AlBr3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
         "KBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "KHSO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
+        "Ba(HS)2",
         "KOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "K2SO3"
+        "Ba(HS)2",
+        "Na2S"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "K2SO4"
+        "K2S"
       ],
       "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
@@ -2545,44 +1620,37 @@
     {
       "substrates": [
         "Ba(OH)2",
-        "KHSO3"
+        "KHS"
       ],
       "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "KHSO4"
+        "Na2S"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHS"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "BaBr2",
-        "Fe(HSO3)3"
+        "H2S"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Fe(HSO4)3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "H2SO3"
-      ],
-      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "H2SO4"
-      ],
-      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -2594,14 +1662,14 @@
     {
       "substrates": [
         "BaBr2",
-        "KHSO3"
+        "K2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaBr2",
-        "KHSO4"
+        "KHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
@@ -2614,206 +1682,80 @@
     },
     {
       "substrates": [
-        "BaSO3",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaSO4",
-        "H2SO3"
-      ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaSO4",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe(HSO3)3",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe(HSO3)3",
-        "K2SO4"
+        "BaBr2",
+        "Na2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
+        "BaBr2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
         "KBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Fe(HSO3)3",
-        "KHSO4"
+        "BaS",
+        "KHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Fe(HSO4)3",
-        "H2SO3"
+        "BaS",
+        "KOH"
       ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "Fe(HSO4)3",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)3",
-        "K2SO4"
+        "BaS",
+        "NaBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Fe(HSO4)3",
+        "BaS",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
         "KBr"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Fe(HSO4)3",
-        "KHSO3"
+        "H2S",
+        "NaBr"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "H2SO3"
-      ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "KBr"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "KHSO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe2(SO4)3",
-        "KHSO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "H2SO3"
-      ],
-      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "H2SO4"
-      ],
-      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "K2SO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "KHSO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "FeBr3",
-        "KHSO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "K2SO4"
-      ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "KBr"
-      ],
-      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "KHSO4"
-      ],
-      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "KBr"
-      ],
-      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "K2SO3"
+        "K2S"
       ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "K2SO4"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -2825,16 +1767,114 @@
     {
       "substrates": [
         "H2SiO3",
-        "KHSO3"
+        "KHS"
       ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "KHSO4"
+        "Na2S"
       ],
-      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "Na2S"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaHS"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
     }
   ]
 }

@@ -1,46 +1,113 @@
 {
   "version": 3,
-  "target": "K2SO3",
-  "name": "potassium sulfite",
+  "target": "NaNO3",
+  "name": "sodium nitrate",
   "grade": "easy",
   "want": 5,
-  "ways": 8,
+  "ways": 7,
   "cut": 1,
   "palette": [
+    "Ag2O",
+    "FeO",
     "H2O",
-    "K",
-    "K2O",
-    "KOH",
-    "NH3",
-    "SO2",
-    "SiO2"
+    "N2O5",
+    "Na2O",
+    "Na2S",
+    "NaCl",
+    "NaOH"
   ],
   "species": {
-    "(NH4)2SO3": {
-      "name": "ammonium sulfite",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "SO3": -2
-      }
-    },
-    "(NH4)2SiO3": {
-      "name": "ammonium silicate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "SiO3": -2
-      }
-    },
-    "H2": {
-      "name": "hydrogen",
-      "class": "element",
-      "state": "g",
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
       "common": true
+    },
+    "Ag2S": {
+      "name": "silver sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "S": -2
+      }
+    },
+    "AgCl": {
+      "name": "silver chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Cl": -1
+      }
+    },
+    "AgHS": {
+      "name": "silver hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "HS": -1
+      }
+    },
+    "AgNO3": {
+      "name": "silver nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "NO3": -1
+      }
+    },
+    "Fe(HS)2": {
+      "name": "iron(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "HS": -1
+      }
+    },
+    "Fe(NO3)2": {
+      "name": "iron(II) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "NO3": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "FeO": {
+      "name": "iron(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeS": {
+      "name": "iron(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "S": -2
+      }
     },
     "H2O": {
       "name": "water",
@@ -48,160 +115,100 @@
       "state": "l",
       "common": true
     },
-    "H2SO3": {
-      "name": "sulfurous acid",
+    "H2S": {
+      "name": "hydrosulfuric acid",
       "class": "acid",
       "state": "aq",
       "common": true,
       "ions": {
         "H": 1,
-        "SO3": -2
+        "S": -2
       }
     },
-    "H2SiO3": {
-      "name": "silicic acid",
+    "HNO3": {
+      "name": "nitric acid",
       "class": "acid",
-      "state": "s",
+      "state": "aq",
       "common": true,
       "ions": {
         "H": 1,
-        "SiO3": -2
+        "NO3": -1
       }
     },
-    "K": {
-      "name": "potassium",
-      "class": "element",
+    "N2O5": {
+      "name": "dinitrogen pentoxide",
+      "class": "acidic oxide",
       "state": "s",
       "common": true
     },
-    "K2O": {
-      "name": "potassium oxide",
+    "Na2O": {
+      "name": "sodium oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "K2SO3": {
-      "name": "potassium sulfite",
+    "Na2S": {
+      "name": "sodium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
-        "SO3": -2
+        "Na": 1,
+        "S": -2
       }
     },
-    "K2SiO3": {
-      "name": "potassium silicate",
+    "NaCl": {
+      "name": "sodium chloride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
-        "SiO3": -2
+        "Na": 1,
+        "Cl": -1
       }
     },
-    "KH": {
-      "name": "potassium hydride",
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "K": 1,
-        "H": -1
+        "Na": 1,
+        "HS": -1
       }
     },
-    "KHSO3": {
-      "name": "potassium hydrogensulfite",
+    "NaNO3": {
+      "name": "sodium nitrate",
       "class": "salt",
       "state": "aq",
-      "common": false,
+      "common": true,
       "ions": {
-        "K": 1,
-        "HSO3": -1
+        "Na": 1,
+        "NO3": -1
       }
     },
-    "KOH": {
-      "name": "potassium hydroxide",
+    "NaOH": {
+      "name": "sodium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "OH": -1
       }
-    },
-    "NH3": {
-      "name": "ammonia",
-      "class": "hydride",
-      "state": "g",
-      "common": true
-    },
-    "NH4HSO3": {
-      "name": "ammonium hydrogensulfite",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "NH4": 1,
-        "HSO3": -1
-      }
-    },
-    "NH4OH": {
-      "name": "ammonia solution",
-      "class": "base",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "NH4": 1,
-        "OH": -1
-      }
-    },
-    "SO2": {
-      "name": "sulfur dioxide",
-      "class": "acidic oxide",
-      "state": "g",
-      "common": true
-    },
-    "SiO2": {
-      "name": "silicon dioxide",
-      "class": "acidic oxide",
-      "state": "s",
-      "common": true
     }
   },
   "reactions": [
     {
       "substrates": [
-        "K",
-        "H2O"
+        "Ag2O",
+        "N2O5"
       ],
       "products": [
-        "KOH",
-        "H2"
+        "AgNO3"
       ],
-      "rule": "metal_with_water",
-      "equation": "2 K + 2 H2O -> 2 KOH + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2O",
-        "H2O"
-      ],
-      "products": [
-        "KOH"
-      ],
-      "rule": "basic_oxide_hydration",
-      "equation": "K2O + H2O -> 2 KOH",
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + N2O5 -> 2 AgNO3",
       "coefficients": {
         "substrates": [
           1,
@@ -214,14 +221,14 @@
     },
     {
       "substrates": [
-        "NH3",
-        "H2O"
+        "FeO",
+        "N2O5"
       ],
       "products": [
-        "NH4OH"
+        "Fe(NO3)2"
       ],
-      "rule": "hydride_dissolution",
-      "equation": "NH3 + H2O -> NH4OH",
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + N2O5 -> Fe(NO3)2",
       "coefficients": {
         "substrates": [
           1,
@@ -230,127 +237,21 @@
         "products": [
           1
         ]
-      },
-      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+      }
     },
     {
       "substrates": [
-        "SO2",
+        "N2O5",
         "H2O"
       ],
       "products": [
-        "H2SO3"
+        "HNO3"
       ],
       "rule": "anhydride_hydration",
-      "equation": "SO2 + H2O -> H2SO3",
+      "equation": "N2O5 + H2O -> 2 HNO3",
       "coefficients": {
         "substrates": [
           1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "unstable -- decomposes to SO2 + H2O"
-    },
-    {
-      "substrates": [
-        "K2O",
-        "SO2"
-      ],
-      "products": [
-        "K2SO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "K2O + SO2 -> K2SO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2O",
-        "SiO2"
-      ],
-      "products": [
-        "K2SiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "K2O + SiO2 -> K2SiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "KOH",
-        "SO2"
-      ],
-      "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "KOH",
-        "SiO2"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K",
-        "H2"
-      ],
-      "products": [
-        "KH"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 K + H2 -> 2 KH",
-      "coefficients": {
-        "substrates": [
-          2,
           1
         ],
         "products": [
@@ -360,16 +261,103 @@
     },
     {
       "substrates": [
-        "NH4OH"
-      ],
-      "products": [
-        "NH3",
+        "Na2O",
         "H2O"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "NH4OH -> NH3 + H2O",
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
       "coefficients": {
         "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "N2O5"
+      ],
+      "products": [
+        "NaNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + N2O5 -> 2 NaNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "N2O5"
+      ],
+      "products": [
+        "NaNO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + N2O5 -> 2 NaNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "Na2S"
+      ],
+      "products": [
+        "Ag2S",
+        "NaNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + Na2S -> Ag2S + 2 NaNO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgNO3",
+        "NaCl"
+      ],
+      "products": [
+        "AgCl",
+        "NaNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgNO3 + NaCl -> AgCl + NaNO3",
+      "coefficients": {
+        "substrates": [
+          1,
           1
         ],
         "products": [
@@ -377,19 +365,175 @@
           1
         ]
       },
-      "note": "does not survive in solution"
+      "note": "AgCl precipitates"
     },
     {
       "substrates": [
-        "H2SO3",
-        "NH4OH"
+        "Fe(NO3)2",
+        "Na2S"
       ],
       "products": [
-        "(NH4)2SO3",
+        "FeS",
+        "NaNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(NO3)2 + Na2S -> FeS + 2 NaNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "NaOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NaNO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(NO3)2 + 2 NaOH -> Fe(OH)2 + 2 NaNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Ag2O"
+      ],
+      "products": [
+        "AgNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Ag2O -> 2 AgNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "FeO"
+      ],
+      "products": [
+        "Fe(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + FeO -> Fe(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Na2O"
+      ],
+      "products": [
+        "NaNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + Na2O -> 2 NaNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "NaNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2S + 2 HNO3 -> H2S + 2 NaNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "NaOH"
+      ],
+      "products": [
+        "NaNO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SO3 + 2 NH4OH -> (NH4)2SO3 + 2 H2O",
+      "equation": "HNO3 + NaOH -> NaNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "AgNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2S + 2 HNO3 -> H2S + 2 AgNO3",
       "coefficients": {
         "substrates": [
           1,
@@ -403,15 +547,258 @@
     },
     {
       "substrates": [
-        "H2SO3",
-        "NH4OH"
+        "Ag2S",
+        "H2S"
       ],
       "products": [
-        "NH4HSO3",
+        "AgHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2S + H2S -> 2 AgHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Fe(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeS + 2 HNO3 -> H2S + Fe(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Fe(OH)2 -> Fe(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HS)2",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H2SO3 + NH4OH -> NH4HSO3 + H2O",
+      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Ag2O -> Ag2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2S is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "FeO"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + FeO -> FeS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Na2O"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + Na2O -> Na2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "NaHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NaOH -> NaHS + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -426,36 +813,15 @@
     },
     {
       "substrates": [
-        "H2SO3"
+        "AgHS",
+        "Na2S"
       ],
       "products": [
-        "SO2",
-        "H2O"
+        "Ag2S",
+        "NaHS"
       ],
-      "rule": "unstable_decomposition",
-      "equation": "H2SO3 -> SO2 + H2O",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "does not survive in solution"
-    },
-    {
-      "substrates": [
-        "K",
-        "H2SO3"
-      ],
-      "products": [
-        "K2SO3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 K + H2SO3 -> K2SO3 + H2",
+      "rule": "double_displacement",
+      "equation": "2 AgHS + Na2S -> Ag2S + 2 NaHS",
       "coefficients": {
         "substrates": [
           2,
@@ -463,65 +829,22 @@
         ],
         "products": [
           1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "K2O"
-      ],
-      "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO3",
-        "KOH"
-      ],
-      "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
           2
         ]
-      }
+      },
+      "note": "Ag2S precipitates"
     },
     {
       "substrates": [
-        "H2SO3",
-        "KOH"
+        "AgHS",
+        "NaCl"
       ],
       "products": [
-        "KHSO3",
-        "H2O"
+        "AgCl",
+        "NaHS"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "H2SO3 + KOH -> KHSO3 + H2O",
+      "rule": "double_displacement",
+      "equation": "AgHS + NaCl -> AgCl + NaHS",
       "coefficients": {
         "substrates": [
           1,
@@ -532,61 +855,19 @@
           1
         ]
       },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "AgCl precipitates"
     },
     {
       "substrates": [
-        "NH3",
-        "H2SO3"
+        "AgHS",
+        "HNO3"
       ],
       "products": [
-        "(NH4)2SO3"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2SO3 -> (NH4)2SO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "K2SO3",
-        "H2SO3"
-      ],
-      "products": [
-        "KHSO3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "K2SO3 + H2SO3 -> 2 KHSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "H2SO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "K2SO3"
+        "H2S",
+        "AgNO3"
       ],
       "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
+      "equation": "AgHS + HNO3 -> H2S + AgNO3",
       "coefficients": {
         "substrates": [
           1,
@@ -600,16 +881,61 @@
     },
     {
       "substrates": [
-        "(NH4)2SO3",
-        "KOH"
+        "Fe(HS)2",
+        "Na2S"
       ],
       "products": [
-        "NH3",
-        "K2SO3",
-        "H2O"
+        "FeS",
+        "NaHS"
       ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2SO3 + 2 KOH -> 2 NH3 + K2SO3 + 2 H2O",
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + Na2S -> FeS + 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NaOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NaHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + 2 NaOH -> Fe(OH)2 + 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "HNO3"
+      ],
+      "products": [
+        "H2S",
+        "Fe(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Fe(HS)2 + 2 HNO3 -> 2 H2S + Fe(NO3)2",
       "coefficients": {
         "substrates": [
           1,
@@ -617,69 +943,44 @@
         ],
         "products": [
           2,
-          1,
-          2
+          1
         ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      }
     },
     {
       "substrates": [
-        "(NH4)2SO3",
-        "H2SO3"
+        "Fe(HS)2",
+        "Fe(OH)2"
       ],
       "products": [
-        "NH4HSO3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "(NH4)2SO3 + H2SO3 -> 2 NH4HSO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "NH4HSO3",
-        "KOH"
-      ],
-      "products": [
-        "NH3",
-        "KHSO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "NH4HSO3 + KOH -> NH3 + KHSO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1,
-          1
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "NH4HSO3",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2SO3",
+        "FeS",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "NH4HSO3 + NH4OH -> (NH4)2SO3 + H2O",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHS + NaOH -> Na2S + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -694,172 +995,15 @@
     },
     {
       "substrates": [
-        "KHSO3",
-        "KOH"
+        "NaHS",
+        "HNO3"
       ],
       "products": [
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "K",
-        "H2SiO3"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 K + H2SiO3 -> K2SiO3 + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "K2O"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "KOH"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NH3",
-        "H2SiO3"
-      ],
-      "products": [
-        "(NH4)2SiO3"
-      ],
-      "rule": "ammonia_with_acid",
-      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "no water -- the base is a gas, not a hydroxide"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "NH4OH"
-      ],
-      "products": [
-        "(NH4)2SiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "KOH"
-      ],
-      "products": [
-        "NH3",
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2SiO3 + 2 KOH -> 2 NH3 + K2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1,
-          2
-        ]
-      },
-      "note": "warm with alkali -- the test for an ammonium salt"
-    },
-    {
-      "substrates": [
-        "(NH4)2SiO3",
-        "H2SO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "(NH4)2SO3"
+        "H2S",
+        "NaNO3"
       ],
       "rule": "acid_displacement",
-      "equation": "(NH4)2SiO3 + H2SO3 -> H2SiO3 + (NH4)2SO3",
+      "equation": "NaHS + HNO3 -> H2S + NaNO3",
       "coefficients": {
         "substrates": [
           1,
@@ -875,101 +1019,101 @@
   "answers": {
     "base_with_acidic_oxide": {
       "substrates": [
-        "KOH",
-        "SO2"
+        "NaOH",
+        "N2O5"
       ],
       "products": [
-        "K2SO3",
+        "NaNO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
+      "equation": "2 NaOH + N2O5 -> 2 NaNO3 + H2O",
       "coefficients": {
         "substrates": [
           2,
           1
         ],
         "products": [
-          1,
+          2,
           1
         ]
       }
     },
     "oxide_with_oxide": {
       "substrates": [
-        "K2O",
-        "SO2"
+        "Na2O",
+        "N2O5"
       ],
       "products": [
-        "K2SO3"
+        "NaNO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "K2O + SO2 -> K2SO3",
+      "equation": "Na2O + N2O5 -> 2 NaNO3",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1
+          2
         ]
       }
     },
     "acid_displacement": {
       "substrates": [
-        "K2SiO3",
-        "H2SO3"
+        "Na2S",
+        "HNO3"
       ],
       "products": [
-        "H2SiO3",
-        "K2SO3"
+        "H2S",
+        "NaNO3"
       ],
       "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
+      "equation": "Na2S + 2 HNO3 -> H2S + 2 NaNO3",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
-          1
+          2
         ]
       }
     },
     "acid_with_basic_oxide": {
       "substrates": [
-        "H2SO3",
-        "K2O"
+        "HNO3",
+        "Na2O"
       ],
       "products": [
-        "K2SO3",
+        "NaNO3",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
+      "equation": "2 HNO3 + Na2O -> 2 NaNO3 + H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
-          1,
+          2,
           1
         ]
       }
     },
-    "metal_with_acid": {
+    "double_displacement": {
       "substrates": [
-        "K",
-        "H2SO3"
+        "AgNO3",
+        "Na2S"
       ],
       "products": [
-        "K2SO3",
-        "H2"
+        "Ag2S",
+        "NaNO3"
       ],
-      "rule": "metal_with_acid",
-      "equation": "2 K + H2SO3 -> K2SO3 + H2",
+      "rule": "double_displacement",
+      "equation": "2 AgNO3 + Na2S -> Ag2S + 2 NaNO3",
       "coefficients": {
         "substrates": [
           2,
@@ -977,179 +1121,141 @@
         ],
         "products": [
           1,
-          1
+          2
         ]
-      }
+      },
+      "note": "Ag2S precipitates"
     },
     "neutralisation": {
       "substrates": [
-        "H2SO3",
-        "KOH"
+        "HNO3",
+        "NaOH"
       ],
       "products": [
-        "K2SO3",
+        "NaNO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
+      "equation": "HNO3 + NaOH -> NaNO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
           1,
-          2
+          1
         ]
       }
     },
-    "acid_salt_with_base": {
+    "salt_with_base": {
       "substrates": [
-        "KHSO3",
-        "KOH"
+        "Fe(NO3)2",
+        "NaOH"
       ],
       "products": [
-        "K2SO3",
-        "H2O"
+        "Fe(OH)2",
+        "NaNO3"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    "ammonia_liberation": {
-      "substrates": [
-        "(NH4)2SO3",
-        "KOH"
-      ],
-      "products": [
-        "NH3",
-        "K2SO3",
-        "H2O"
-      ],
-      "rule": "ammonia_liberation",
-      "equation": "(NH4)2SO3 + 2 KOH -> 2 NH3 + K2SO3 + 2 H2O",
+      "rule": "salt_with_base",
+      "equation": "Fe(NO3)2 + 2 NaOH -> Fe(OH)2 + 2 NaNO3",
       "coefficients": {
         "substrates": [
           1,
           2
         ],
         "products": [
-          2,
           1,
           2
         ]
       },
-      "note": "warm with alkali -- the test for an ammonium salt"
+      "note": "Fe(OH)2 precipitates"
     }
   },
   "misses": [
     {
       "substrates": [
-        "(NH4)2SO3",
-        "H2SiO3"
+        "AgCl",
+        "H2S"
       ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "(NH4)2SO3",
-        "K"
+        "AgCl",
+        "HNO3"
       ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
+      "note": "HNO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "(NH4)2SO3",
-        "K2SiO3"
+        "AgHS",
+        "Fe(NO3)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "(NH4)2SO3",
-        "KHSO3"
+        "AgNO3",
+        "Fe(HS)2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "(NH4)2SiO3",
-        "K"
+        "AgNO3",
+        "H2S"
       ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "(NH4)2SiO3",
-        "KHSO3"
+        "AgNO3",
+        "NaHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "KHSO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "NH4HSO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "K",
-        "K2SiO3"
-      ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "K",
-        "KHSO3"
-      ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "K",
-        "NH4HSO3"
-      ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "NH4HSO3"
+        "Fe(HS)2",
+        "NaCl"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "K2SiO3",
-        "NH4OH"
+        "Fe(NO3)2",
+        "H2S"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "H2S is no stronger than HNO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "KHSO3",
-        "NH4OH"
+        "Fe(NO3)2",
+        "NaCl"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)2",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaCl"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "NaCl"
+      ],
+      "note": "HNO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     }
   ]
 }

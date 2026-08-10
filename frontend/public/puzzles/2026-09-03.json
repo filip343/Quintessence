@@ -1,94 +1,87 @@
 {
   "version": 3,
-  "target": "MgSiO3",
-  "name": "magnesium silicate",
+  "target": "Al2S3",
+  "name": "aluminium sulfide",
   "grade": "medium",
   "want": 5,
-  "ways": 5,
+  "ways": 6,
   "cut": 1,
   "palette": [
-    "Ag2O",
+    "Al",
+    "AlBr3",
     "Ba(OH)2",
     "H2O",
-    "HCl",
-    "Mg",
-    "MgBr2",
-    "MgO",
-    "MgS",
-    "Na2O",
+    "H2S",
+    "K2O",
+    "Li2S",
+    "S",
     "SiO2"
   ],
   "species": {
-    "Ag": {
-      "name": "silver",
+    "Al": {
+      "name": "aluminium",
       "class": "element",
       "state": "s",
       "common": true
     },
-    "Ag2O": {
-      "name": "silver oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "Ag2S": {
-      "name": "silver sulfide",
+    "Al(HS)3": {
+      "name": "aluminium hydrogensulfide",
       "class": "salt",
-      "state": "s",
-      "common": true,
+      "state": "aq",
+      "common": false,
       "ions": {
-        "Ag": 1,
-        "S": -2
+        "Al": 3,
+        "HS": -1
       }
     },
-    "Ag2SiO3": {
-      "name": "silver silicate",
+    "Al(OH)3": {
+      "name": "aluminium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Al": 3,
+        "OH": -1
+      }
+    },
+    "Al2(SiO3)3": {
+      "name": "aluminium silicate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Ag": 1,
+        "Al": 3,
         "SiO3": -2
       }
     },
-    "AgBr": {
-      "name": "silver bromide",
+    "Al2S3": {
+      "name": "aluminium sulfide",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Ag": 1,
+        "Al": 3,
+        "S": -2
+      }
+    },
+    "AlBr3": {
+      "name": "aluminium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Al": 3,
         "Br": -1
       }
     },
-    "AgCl": {
-      "name": "silver chloride",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ag": 1,
-        "Cl": -1
-      }
-    },
-    "AgH": {
-      "name": "silver hydride",
+    "AlH3": {
+      "name": "aluminium hydride",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Ag": 1,
+        "Al": 3,
         "H": -1
-      }
-    },
-    "AgHS": {
-      "name": "silver hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Ag": 1,
-        "HS": -1
       }
     },
     "Ba(HS)2": {
@@ -119,16 +112,6 @@
       "ions": {
         "Ba": 2,
         "Br": -1
-      }
-    },
-    "BaCl2": {
-      "name": "barium chloride",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "Cl": -1
       }
     },
     "BaS": {
@@ -183,163 +166,97 @@
         "SiO3": -2
       }
     },
-    "HCl": {
-      "name": "hydrochloric acid",
-      "class": "acid",
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2S": {
+      "name": "potassium sulfide",
+      "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "H": 1,
-        "Cl": -1
+        "K": 1,
+        "S": -2
       }
     },
-    "Mg": {
-      "name": "magnesium",
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KBr": {
+      "name": "potassium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "Br": -1
+      }
+    },
+    "KHS": {
+      "name": "potassium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HS": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "Li2S": {
+      "name": "lithium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "S": -2
+      }
+    },
+    "LiBr": {
+      "name": "lithium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "Br": -1
+      }
+    },
+    "LiHS": {
+      "name": "lithium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Li": 1,
+        "HS": -1
+      }
+    },
+    "S": {
+      "name": "sulfur",
       "class": "element",
       "state": "s",
       "common": true
-    },
-    "Mg(HS)2": {
-      "name": "magnesium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Mg": 2,
-        "HS": -1
-      }
-    },
-    "Mg(OH)2": {
-      "name": "magnesium hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "OH": -1
-      }
-    },
-    "MgBr2": {
-      "name": "magnesium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "Br": -1
-      }
-    },
-    "MgCl2": {
-      "name": "magnesium chloride",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "Cl": -1
-      }
-    },
-    "MgH2": {
-      "name": "magnesium hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Mg": 2,
-        "H": -1
-      }
-    },
-    "MgO": {
-      "name": "magnesium oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "MgS": {
-      "name": "magnesium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "S": -2
-      }
-    },
-    "MgSiO3": {
-      "name": "magnesium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "SiO3": -2
-      }
-    },
-    "Na2O": {
-      "name": "sodium oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "Na2S": {
-      "name": "sodium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "S": -2
-      }
-    },
-    "Na2SiO3": {
-      "name": "sodium silicate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "SiO3": -2
-      }
-    },
-    "NaBr": {
-      "name": "sodium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "Br": -1
-      }
-    },
-    "NaCl": {
-      "name": "sodium chloride",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "Cl": -1
-      }
-    },
-    "NaHS": {
-      "name": "sodium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Na": 1,
-        "HS": -1
-      }
-    },
-    "NaOH": {
-      "name": "sodium hydroxide",
-      "class": "base",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "OH": -1
-      }
     },
     "SiO2": {
       "name": "silicon dioxide",
@@ -351,865 +268,92 @@
   "reactions": [
     {
       "substrates": [
-        "HCl",
-        "Ag2O"
+        "Al",
+        "H2S"
       ],
       "products": [
-        "AgCl",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HCl + Ag2O -> 2 AgCl + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "AgCl is insoluble"
-    },
-    {
-      "substrates": [
-        "Ag2O",
-        "Mg"
-      ],
-      "products": [
-        "MgO",
-        "Ag"
-      ],
-      "rule": "aluminothermic_reduction",
-      "equation": "Ag2O + Mg -> MgO + 2 Ag",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg is above Ag in the activity series"
-    },
-    {
-      "substrates": [
-        "Ag2O",
-        "SiO2"
-      ],
-      "products": [
-        "Ag2SiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Ag2O + SiO2 -> Ag2SiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HCl",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaCl2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HCl + Ba(OH)2 -> BaCl2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "BaBr2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgBr2 + Ba(OH)2 -> Mg(OH)2 + BaBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "BaS"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "SiO2"
-      ],
-      "products": [
-        "BaSiO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "Na2O",
-        "H2O"
-      ],
-      "products": [
-        "NaOH"
-      ],
-      "rule": "basic_oxide_hydration",
-      "equation": "Na2O + H2O -> 2 NaOH",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Mg",
-        "HCl"
-      ],
-      "products": [
-        "MgCl2",
+        "Al2S3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Mg + 2 HCl -> MgCl2 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HCl",
-        "MgO"
-      ],
-      "products": [
-        "MgCl2",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HCl + MgO -> MgCl2 + H2O",
+      "equation": "2 Al + 3 H2S -> Al2S3 + 3 H2",
       "coefficients": {
         "substrates": [
           2,
-          1
+          3
         ],
         "products": [
           1,
-          1
+          3
         ]
-      }
+      },
+      "note": "Al2S3 is insoluble"
     },
     {
       "substrates": [
-        "MgS",
-        "HCl"
+        "Al",
+        "S"
       ],
       "products": [
-        "H2S",
-        "MgCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgS + 2 HCl -> H2S + MgCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HCl",
-        "Na2O"
-      ],
-      "products": [
-        "NaCl",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HCl + Na2O -> 2 NaCl + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgO",
-        "SiO2"
-      ],
-      "products": [
-        "MgSiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "MgO + SiO2 -> MgSiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2O",
-        "SiO2"
-      ],
-      "products": [
-        "Na2SiO3"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "Na2O + SiO2 -> Na2SiO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ag",
-        "H2"
-      ],
-      "products": [
-        "AgH"
+        "Al2S3"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 Ag + H2 -> 2 AgH",
+      "equation": "2 Al + 3 S -> Al2S3",
       "coefficients": {
         "substrates": [
           2,
-          1
+          3
         ],
         "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ag2SiO3",
-        "HCl"
-      ],
-      "products": [
-        "H2SiO3",
-        "AgCl"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Ag2SiO3 + 2 HCl -> H2SiO3 + 2 AgCl",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ag2SiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "Ag2S"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Ag2SiO3 + H2S -> H2SiO3 + Ag2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "BaCl2",
-        "Na2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "NaCl"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaCl2 + Na2SiO3 -> BaSiO3 + 2 NaCl",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "HCl",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgCl2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HCl + Mg(OH)2 -> MgCl2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Na2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "NaBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + Na2SiO3 -> BaSiO3 + 2 NaBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "HCl"
-      ],
-      "products": [
-        "H2S",
-        "BaCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaS + 2 HCl -> H2S + BaCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaS",
-        "H2S"
-      ],
-      "products": [
-        "Ba(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaS + H2S -> Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "Na2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "Na2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaS + Na2SiO3 -> BaSiO3 + Na2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "HCl"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + 2 HCl -> H2SiO3 + BaCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HCl",
-        "NaOH"
-      ],
-      "products": [
-        "NaCl",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HCl + NaOH -> NaCl + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "NaOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "NaBr"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgBr2 + 2 NaOH -> Mg(OH)2 + 2 NaBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "NaOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "Na2S"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgS + 2 NaOH -> Mg(OH)2 + Na2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "NaOH",
-        "SiO2"
-      ],
-      "products": [
-        "Na2SiO3",
-        "H2O"
-      ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgCl2",
-        "NaOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "NaCl"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgCl2 + 2 NaOH -> Mg(OH)2 + 2 NaCl",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaOH"
-      ],
-      "products": [
-        "Na2S",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaOH"
-      ],
-      "products": [
-        "NaHS",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "H2S + NaOH -> NaHS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "MgCl2",
+        "AlBr3",
         "Ba(OH)2"
       ],
       "products": [
-        "Mg(OH)2",
-        "BaCl2"
+        "Al(OH)3",
+        "BaBr2"
       ],
       "rule": "salt_with_base",
-      "equation": "MgCl2 + Ba(OH)2 -> Mg(OH)2 + BaCl2",
+      "equation": "2 AlBr3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaBr2",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgCl2",
-        "Na2SiO3"
-      ],
-      "products": [
-        "MgSiO3",
-        "NaCl"
-      ],
-      "rule": "double_displacement",
-      "equation": "MgCl2 + Na2SiO3 -> MgSiO3 + 2 NaCl",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ag2O",
-        "H2"
-      ],
-      "products": [
-        "Ag",
-        "H2O"
-      ],
-      "rule": "oxide_reduction",
-      "equation": "Ag2O + H2 -> 2 Ag + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
           2,
-          1
+          3
         ]
       },
-      "note": "hydrogen reduces oxides below Zn in the activity series"
+      "note": "Al(OH)3 precipitates"
     },
     {
       "substrates": [
-        "Mg",
-        "H2"
+        "AlBr3",
+        "Li2S"
       ],
       "products": [
-        "MgH2"
+        "Al2S3",
+        "LiBr"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Mg + H2 -> MgH2",
+      "rule": "double_displacement",
+      "equation": "2 AlBr3 + 3 Li2S -> Al2S3 + 6 LiBr",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Ag2O"
-      ],
-      "products": [
-        "Ag2S",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + Ag2O -> Ag2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
           1,
-          1
+          6
         ]
       },
-      "note": "Ag2S is insoluble"
+      "note": "Al2S3 precipitates"
     },
     {
       "substrates": [
@@ -1258,259 +402,15 @@
     },
     {
       "substrates": [
-        "Mg",
-        "H2S"
-      ],
-      "products": [
-        "MgS",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2S -> MgS + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "MgO"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + MgO -> MgS + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgS",
-        "H2S"
-      ],
-      "products": [
-        "Mg(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "MgS + H2S -> Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Na2O"
-      ],
-      "products": [
-        "Na2S",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + Na2O -> Na2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "MgS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2SiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "Na2S"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Na2SiO3 + H2S -> H2SiO3 + Na2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgSiO3",
-        "HCl"
-      ],
-      "products": [
-        "H2SiO3",
-        "MgCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgSiO3 + 2 HCl -> H2SiO3 + MgCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2SiO3",
-        "HCl"
-      ],
-      "products": [
-        "H2SiO3",
-        "NaCl"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Na2SiO3 + 2 HCl -> H2SiO3 + 2 NaCl",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2SiO3",
-        "MgBr2"
-      ],
-      "products": [
-        "MgSiO3",
-        "NaBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "Na2SiO3 + MgBr2 -> MgSiO3 + 2 NaBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Na2SiO3",
-        "MgS"
-      ],
-      "products": [
-        "MgSiO3",
-        "Na2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "Na2SiO3 + MgS -> MgSiO3 + Na2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Ag2O"
-      ],
-      "products": [
-        "Ag2SiO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + Ag2O -> Ag2SiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Ag2SiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Ba(OH)2"
+        "Ba(OH)2",
+        "SiO2"
       ],
       "products": [
         "BaSiO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1518,156 +418,63 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
       },
       "note": "BaSiO3 is insoluble"
     },
     {
       "substrates": [
-        "Mg",
-        "H2SiO3"
-      ],
-      "products": [
-        "MgSiO3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Mg + H2SiO3 -> MgSiO3 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "MgO"
-      ],
-      "products": [
-        "MgSiO3",
+        "K2O",
         "H2O"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + MgO -> MgSiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Na2O"
-      ],
       "products": [
-        "Na2SiO3",
-        "H2O"
+        "KOH"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgSiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "NaOH"
-      ],
-      "products": [
-        "Na2SiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
           2
         ]
       }
     },
     {
       "substrates": [
-        "Ag2S",
-        "HCl"
-      ],
-      "products": [
         "H2S",
-        "AgCl"
+        "K2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "Ag2S + 2 HCl -> H2S + 2 AgCl",
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
           1,
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "Ag2S",
+        "Li2S",
         "H2S"
       ],
       "products": [
-        "AgHS"
+        "LiHS"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Ag2S + H2S -> 2 AgHS",
+      "equation": "Li2S + H2S -> 2 LiHS",
       "coefficients": {
         "substrates": [
           1,
@@ -1681,106 +488,142 @@
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "Ba(OH)2"
+        "K2O",
+        "SiO2"
       ],
       "products": [
-        "Mg(OH)2",
-        "Ba(HS)2"
+        "K2SiO3"
       ],
-      "rule": "salt_with_base",
-      "equation": "Mg(HS)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HS)2",
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "HCl"
-      ],
-      "products": [
-        "H2S",
-        "MgCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Mg(HS)2 + 2 HCl -> 2 H2S + MgCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
           1
         ]
       }
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "Mg(OH)2"
+        "Al2S3",
+        "H2S"
       ],
       "products": [
-        "MgS",
+        "Al(HS)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Al2S3 + 3 H2S -> 2 Al(HS)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Al",
+        "H2"
+      ],
+      "products": [
+        "AlH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 H2 -> 2 AlH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
+      "rule": "neutralisation",
+      "equation": "3 H2S + 2 Al(OH)3 -> Al2S3 + 6 H2O",
       "coefficients": {
         "substrates": [
+          3,
+          2
+        ],
+        "products": [
           1,
+          6
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al(HS)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2S + Al(OH)3 -> Al(HS)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
           1
         ],
         "products": [
-          2,
-          2
+          1,
+          3
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "NaOH"
+        "BaBr2",
+        "K2SiO3"
       ],
       "products": [
-        "Mg(OH)2",
-        "NaHS"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Mg(HS)2 + 2 NaOH -> Mg(OH)2 + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Na2SiO3"
-      ],
-      "products": [
-        "MgSiO3",
-        "NaHS"
+        "BaSiO3",
+        "KBr"
       ],
       "rule": "double_displacement",
-      "equation": "Mg(HS)2 + Na2SiO3 -> MgSiO3 + 2 NaHS",
+      "equation": "BaBr2 + K2SiO3 -> BaSiO3 + 2 KBr",
       "coefficients": {
         "substrates": [
           1,
@@ -1791,7 +634,74 @@
           2
         ]
       },
-      "note": "MgSiO3 precipitates"
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "AlBr3"
+      ],
+      "products": [
+        "Al2S3",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaS + 2 AlBr3 -> Al2S3 + 3 BaBr2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + K2SiO3 -> BaSiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSiO3 precipitates"
     },
     {
       "substrates": [
@@ -1819,36 +729,14 @@
     {
       "substrates": [
         "Ba(HS)2",
-        "HCl"
-      ],
-      "products": [
-        "H2S",
-        "BaCl2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Ba(HS)2 + 2 HCl -> 2 H2S + BaCl2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "Na2SiO3"
+        "K2SiO3"
       ],
       "products": [
         "BaSiO3",
-        "NaHS"
+        "KHS"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HS)2 + Na2SiO3 -> BaSiO3 + 2 NaHS",
+      "equation": "Ba(HS)2 + K2SiO3 -> BaSiO3 + 2 KHS",
       "coefficients": {
         "substrates": [
           1,
@@ -1863,15 +751,60 @@
     },
     {
       "substrates": [
-        "Na2S",
-        "HCl"
+        "BaSiO3",
+        "H2S"
       ],
       "products": [
-        "H2S",
-        "NaCl"
+        "H2SiO3",
+        "BaS"
       ],
       "rule": "acid_displacement",
-      "equation": "Na2S + 2 HCl -> H2S + 2 NaCl",
+      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "AlBr3 + 3 KOH -> Al(OH)3 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1885,14 +818,82 @@
     },
     {
       "substrates": [
-        "Na2S",
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "AlBr3"
+      ],
+      "products": [
+        "Al2S3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 AlBr3 -> Al2S3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
         "H2S"
       ],
       "products": [
-        "NaHS"
+        "KHS"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "Na2S + H2S -> 2 NaHS",
+      "equation": "K2S + H2S -> 2 KHS",
       "coefficients": {
         "substrates": [
           1,
@@ -1906,15 +907,38 @@
     },
     {
       "substrates": [
-        "NaHS",
-        "HCl"
+        "K2SiO3",
+        "AlBr3"
       ],
       "products": [
-        "H2S",
-        "NaCl"
+        "Al2(SiO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 AlBr3 -> Al2(SiO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2S"
       ],
       "rule": "acid_displacement",
-      "equation": "NaHS + HCl -> H2S + NaCl",
+      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
       "coefficients": {
         "substrates": [
           1,
@@ -1928,15 +952,176 @@
     },
     {
       "substrates": [
-        "NaHS",
-        "NaOH"
+        "Al(HS)3",
+        "Ba(OH)2"
       ],
       "products": [
-        "Na2S",
+        "Al(OH)3",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 Al(HS)3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Li2S"
+      ],
+      "products": [
+        "Al2S3",
+        "LiHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 Li2S -> Al2S3 + 6 LiHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "NaHS + NaOH -> Na2S + H2O",
+      "equation": "Al(HS)3 + Al(OH)3 -> Al2S3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "BaS"
+      ],
+      "products": [
+        "Al2S3",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 BaS -> Al2S3 + 3 Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "KOH"
+      ],
+      "products": [
+        "Al(OH)3",
+        "KHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Al(HS)3 + 3 KOH -> Al(OH)3 + 3 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "K2S"
+      ],
+      "products": [
+        "Al2S3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 K2S -> Al2S3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Al2(SiO3)3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Al(HS)3 + 3 K2SiO3 -> Al2(SiO3)3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1951,15 +1136,61 @@
     },
     {
       "substrates": [
-        "AgHS",
-        "HCl"
+        "Al",
+        "H2SiO3"
       ],
       "products": [
-        "H2S",
-        "AgCl"
+        "Al2(SiO3)3",
+        "H2"
       ],
-      "rule": "acid_displacement",
-      "equation": "AgHS + HCl -> H2S + AgCl",
+      "rule": "metal_with_acid",
+      "equation": "2 Al + 3 H2SiO3 -> Al2(SiO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Al2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1973,15 +1204,38 @@
     },
     {
       "substrates": [
-        "Mg",
-        "AgHS"
+        "H2SiO3",
+        "Al(OH)3"
       ],
       "products": [
-        "Mg(HS)2",
-        "Ag"
+        "Al2(SiO3)3",
+        "H2O"
       ],
-      "rule": "metal_displacement",
-      "equation": "Mg + 2 AgHS -> Mg(HS)2 + 2 Ag",
+      "rule": "neutralisation",
+      "equation": "3 H2SiO3 + 2 Al(OH)3 -> Al2(SiO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1991,255 +1245,46 @@
           1,
           2
         ]
-      },
-      "note": "Mg is above Ag in the activity series"
+      }
     },
     {
       "substrates": [
-        "AgHS",
-        "MgBr2"
+        "Al2(SiO3)3",
+        "H2S"
       ],
       "products": [
-        "AgBr",
-        "Mg(HS)2"
+        "H2SiO3",
+        "Al2S3"
       ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + MgBr2 -> 2 AgBr + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "AgBr precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "MgS"
-      ],
-      "products": [
-        "Ag2S",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + MgS -> Ag2S + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "BaCl2"
-      ],
-      "products": [
-        "AgCl",
-        "Ba(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + BaCl2 -> 2 AgCl + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "AgCl precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "BaBr2"
-      ],
-      "products": [
-        "AgBr",
-        "Ba(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + BaBr2 -> 2 AgBr + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "AgBr precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "BaS"
-      ],
-      "products": [
-        "Ag2S",
-        "Ba(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + BaS -> Ag2S + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Ag2S precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "MgCl2"
-      ],
-      "products": [
-        "AgCl",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + MgCl2 -> 2 AgCl + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "AgCl precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NaCl"
-      ],
-      "products": [
-        "AgCl",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "AgHS + NaCl -> AgCl + NaHS",
+      "rule": "acid_displacement",
+      "equation": "Al2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Al2S3",
       "coefficients": {
         "substrates": [
           1,
-          1
+          3
         ],
         "products": [
-          1,
+          3,
           1
         ]
-      },
-      "note": "AgCl precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na2SiO3"
-      ],
-      "products": [
-        "Ag2SiO3",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + Na2SiO3 -> Ag2SiO3 + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2SiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "NaBr"
-      ],
-      "products": [
-        "AgBr",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "AgHS + NaBr -> AgBr + NaHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "AgBr precipitates"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "Na2S"
-      ],
-      "products": [
-        "Ag2S",
-        "NaHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 AgHS + Na2S -> Ag2S + 2 NaHS",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Ag2S precipitates"
+      }
     }
   ],
   "answers": {
-    "oxide_with_oxide": {
+    "binary_salt_synthesis": {
       "substrates": [
-        "MgO",
-        "SiO2"
+        "Al",
+        "S"
       ],
       "products": [
-        "MgSiO3"
+        "Al2S3"
       ],
-      "rule": "oxide_with_oxide",
-      "equation": "MgO + SiO2 -> MgSiO3",
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Al + 3 S -> Al2S3",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
           1
@@ -2248,84 +1293,106 @@
     },
     "double_displacement": {
       "substrates": [
-        "MgCl2",
-        "Na2SiO3"
+        "AlBr3",
+        "Li2S"
       ],
       "products": [
-        "MgSiO3",
-        "NaCl"
+        "Al2S3",
+        "LiBr"
       ],
       "rule": "double_displacement",
-      "equation": "MgCl2 + Na2SiO3 -> MgSiO3 + 2 NaCl",
+      "equation": "2 AlBr3 + 3 Li2S -> Al2S3 + 6 LiBr",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
           1,
-          2
+          6
         ]
       },
-      "note": "MgSiO3 precipitates"
-    },
-    "acid_with_basic_oxide": {
-      "substrates": [
-        "H2SiO3",
-        "MgO"
-      ],
-      "products": [
-        "MgSiO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + MgO -> MgSiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 is insoluble"
+      "note": "Al2S3 precipitates"
     },
     "metal_with_acid": {
       "substrates": [
-        "Mg",
-        "H2SiO3"
+        "Al",
+        "H2S"
       ],
       "products": [
-        "MgSiO3",
+        "Al2S3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Mg + H2SiO3 -> MgSiO3 + H2",
+      "equation": "2 Al + 3 H2S -> Al2S3 + 3 H2",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
           1,
-          1
+          3
         ]
       },
-      "note": "MgSiO3 is insoluble"
+      "note": "Al2S3 is insoluble"
     },
     "neutralisation": {
       "substrates": [
-        "H2SiO3",
-        "Mg(OH)2"
+        "H2S",
+        "Al(OH)3"
       ],
       "products": [
-        "MgSiO3",
+        "Al2S3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
+      "equation": "3 H2S + 2 Al(OH)3 -> Al2S3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Al2S3 is insoluble"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Al2(SiO3)3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "Al2S3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Al2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Al2S3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Al(HS)3",
+        "Al(OH)3"
+      ],
+      "products": [
+        "Al2S3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Al(HS)3 + Al(OH)3 -> Al2S3 + 3 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -2333,180 +1400,159 @@
         ],
         "products": [
           1,
-          2
+          3
         ]
       },
-      "note": "MgSiO3 is insoluble"
+      "note": "more base takes off another proton"
     }
   },
   "misses": [
     {
       "substrates": [
-        "Ag",
-        "AgHS"
+        "Al",
+        "Al(HS)3"
       ],
-      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
+        "Al",
+        "AlBr3"
+      ],
+      "note": "Al sits below Al in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Al",
         "Ba(HS)2"
       ],
-      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
+        "Al",
         "BaBr2"
       ],
-      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "BaCl2"
-      ],
-      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
+        "Al",
         "BaS"
       ],
-      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+      "note": "Al sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "H2S"
+        "Al",
+        "K2S"
       ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+      "note": "Al sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "H2SiO3"
+        "Al",
+        "K2SiO3"
       ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+      "note": "Al sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "HCl"
+        "Al",
+        "KBr"
       ],
-      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+      "note": "Al sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "Mg(HS)2"
+        "Al",
+        "KHS"
       ],
-      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+      "note": "Al sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "MgBr2"
+        "Al",
+        "Li2S"
       ],
-      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+      "note": "Al sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "MgCl2"
+        "Al",
+        "LiBr"
       ],
-      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+      "note": "Al sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "MgS"
+        "Al",
+        "LiHS"
       ],
-      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+      "note": "Al sits below Li in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ag",
-        "Na2S"
+        "Al(HS)3",
+        "BaBr2"
       ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ag",
-        "Na2SiO3"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaBr"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaCl"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag",
-        "NaHS"
-      ],
-      "note": "Ag sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ag2S",
+        "Al(HS)3",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AgBr",
+        "Al(HS)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Al(HS)3",
+        "LiBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
+        "Ba(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AlBr3",
         "H2S"
       ],
       "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AgBr",
+        "AlBr3",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AgBr",
-        "HCl"
+        "AlBr3",
+        "KHS"
       ],
-      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AgCl",
-        "H2S"
+        "AlBr3",
+        "LiHS"
       ],
-      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgCl",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "AgHS",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
@@ -2518,93 +1564,86 @@
     {
       "substrates": [
         "Ba(HS)2",
-        "Mg"
-      ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "MgBr2"
+        "K2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(HS)2",
-        "MgCl2"
+        "KBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(HS)2",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "NaBr"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "NaCl"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "NaOH"
+        "KOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "Na2S"
+        "Ba(HS)2",
+        "Li2S"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "LiBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "Na2SiO3"
+        "K2S"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "NaBr"
+        "K2SiO3"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "NaCl"
+        "KBr"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "NaHS"
+        "KHS"
       ],
-      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li2S"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiBr"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiHS"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
@@ -2623,135 +1662,37 @@
     {
       "substrates": [
         "BaBr2",
-        "HCl"
-      ],
-      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Mg"
-      ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Mg(HS)2"
+        "K2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaBr2",
-        "MgCl2"
+        "KHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaBr2",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "NaCl"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "NaOH"
+        "KOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaCl2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "Mg"
-      ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "Mg(HS)2"
+        "BaBr2",
+        "Li2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaCl2",
-        "MgBr2"
+        "BaBr2",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "Na2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "NaBr"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaCl2",
-        "NaOH"
-      ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
@@ -2763,303 +1704,177 @@
     {
       "substrates": [
         "BaS",
-        "Mg"
-      ],
-      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "Mg(HS)2"
+        "KBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaS",
-        "MgBr2"
+        "KHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaS",
-        "MgCl2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "NaBr"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "NaCl"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "NaOH"
+        "KOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
+        "BaS",
+        "LiBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "LiHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
         "H2S",
-        "MgBr2"
+        "KBr"
       ],
       "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2S",
-        "MgCl2"
-      ],
-      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaBr"
+        "LiBr"
       ],
       "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2S",
-        "NaCl"
-      ],
-      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
         "H2SiO3",
-        "Mg(HS)2"
+        "K2S"
       ],
       "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "MgBr2"
+        "KBr"
       ],
       "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "MgCl2"
-      ],
-      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "MgS"
+        "KHS"
       ],
       "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "Na2S"
+        "Li2S"
       ],
       "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "NaBr"
+        "LiBr"
       ],
       "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "NaCl"
-      ],
-      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "NaHS"
+        "LiHS"
       ],
       "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "HCl",
-        "MgBr2"
-      ],
-      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HCl",
-        "NaBr"
-      ],
-      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Mg(HS)2"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "MgBr2"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "MgCl2"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "MgS"
-      ],
-      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Na2S"
-      ],
-      "note": "Mg sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "Na2SiO3"
-      ],
-      "note": "Mg sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "NaBr"
-      ],
-      "note": "Mg sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "NaCl"
-      ],
-      "note": "Mg sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg",
-        "NaHS"
-      ],
-      "note": "Mg sits below Na in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Na2S"
+        "K2S",
+        "LiBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "NaBr"
+        "K2S",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Mg(HS)2",
-        "NaCl"
+        "K2SiO3",
+        "Li2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgBr2",
-        "Na2S"
+        "K2SiO3",
+        "LiBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgBr2",
-        "NaCl"
+        "K2SiO3",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgBr2",
-        "NaHS"
+        "KBr",
+        "Li2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgCl2",
-        "Na2S"
+        "KBr",
+        "LiHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgCl2",
-        "NaBr"
+        "KHS",
+        "Li2S"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgCl2",
-        "NaHS"
+        "KHS",
+        "LiBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgS",
-        "NaBr"
+        "KOH",
+        "Li2S"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgS",
-        "NaCl"
+        "KOH",
+        "LiBr"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "MgS",
-        "NaHS"
+        "KOH",
+        "LiHS"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
     }
   ]
 }

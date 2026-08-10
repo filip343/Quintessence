@@ -1,32 +1,63 @@
 {
   "version": 3,
-  "target": "ZnS",
-  "name": "zinc sulfide",
+  "target": "FeSiO3",
+  "name": "iron(II) silicate",
   "grade": "medium",
   "want": 5,
-  "ways": 6,
+  "ways": 5,
   "cut": 1,
   "palette": [
+    "Ag2O",
     "Ba(OH)2",
+    "Fe",
+    "FeI2",
+    "FeO",
     "H2O",
-    "H2S",
-    "K2O",
-    "MgS",
-    "S",
-    "SiO2",
-    "Zn",
-    "ZnBr2",
-    "ZnI2"
+    "HCl",
+    "Na2O",
+    "SiO2"
   ],
   "species": {
-    "Ba(HS)2": {
-      "name": "barium hydrogensulfide",
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag2SiO3": {
+      "name": "silver silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "SiO3": -2
+      }
+    },
+    "AgCl": {
+      "name": "silver chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Cl": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Ba": 2,
-        "HS": -1
+        "Ag": 1,
+        "H": -1
       }
     },
     "Ba(OH)2": {
@@ -39,14 +70,14 @@
         "OH": -1
       }
     },
-    "BaBr2": {
-      "name": "barium bromide",
+    "BaCl2": {
+      "name": "barium chloride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "Ba": 2,
-        "Br": -1
+        "Cl": -1
       }
     },
     "BaI2": {
@@ -59,16 +90,6 @@
         "I": -1
       }
     },
-    "BaS": {
-      "name": "barium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "S": -2
-      }
-    },
     "BaSiO3": {
       "name": "barium silicate",
       "class": "salt",
@@ -76,6 +97,104 @@
       "common": true,
       "ions": {
         "Ba": 2,
+        "SiO3": -2
+      }
+    },
+    "Fe": {
+      "name": "iron",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "Fe(OH)3": {
+      "name": "iron(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "OH": -1
+      }
+    },
+    "Fe2(SiO3)3": {
+      "name": "iron(III) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "SiO3": -2
+      }
+    },
+    "Fe2O3": {
+      "name": "iron(III) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeCl2": {
+      "name": "iron(II) chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "Cl": -1
+      }
+    },
+    "FeCl3": {
+      "name": "iron(III) chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "Cl": -1
+      }
+    },
+    "FeH2": {
+      "name": "iron(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "H": -1
+      }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeO": {
+      "name": "iron(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeSiO3": {
+      "name": "iron(II) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
         "SiO3": -2
       }
     },
@@ -91,16 +210,6 @@
       "state": "l",
       "common": true
     },
-    "H2S": {
-      "name": "hydrosulfuric acid",
-      "class": "acid",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "H": 1,
-        "S": -2
-      }
-    },
     "H2SiO3": {
       "name": "silicic acid",
       "class": "acid",
@@ -111,233 +220,147 @@
         "SiO3": -2
       }
     },
-    "K2O": {
-      "name": "potassium oxide",
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "Na2O": {
+      "name": "sodium oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "K2S": {
-      "name": "potassium sulfide",
+    "Na2SiO3": {
+      "name": "sodium silicate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
-        "S": -2
-      }
-    },
-    "K2SiO3": {
-      "name": "potassium silicate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
+        "Na": 1,
         "SiO3": -2
       }
     },
-    "KBr": {
-      "name": "potassium bromide",
+    "NaCl": {
+      "name": "sodium chloride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
-        "Br": -1
+        "Na": 1,
+        "Cl": -1
       }
     },
-    "KHS": {
-      "name": "potassium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "K": 1,
-        "HS": -1
-      }
-    },
-    "KI": {
-      "name": "potassium iodide",
+    "NaI": {
+      "name": "sodium iodide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "I": -1
       }
     },
-    "KOH": {
-      "name": "potassium hydroxide",
+    "NaOH": {
+      "name": "sodium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "OH": -1
       }
-    },
-    "Mg(HS)2": {
-      "name": "magnesium hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Mg": 2,
-        "HS": -1
-      }
-    },
-    "Mg(OH)2": {
-      "name": "magnesium hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "OH": -1
-      }
-    },
-    "MgBr2": {
-      "name": "magnesium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "Br": -1
-      }
-    },
-    "MgI2": {
-      "name": "magnesium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "I": -1
-      }
-    },
-    "MgS": {
-      "name": "magnesium sulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "S": -2
-      }
-    },
-    "MgSiO3": {
-      "name": "magnesium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Mg": 2,
-        "SiO3": -2
-      }
-    },
-    "S": {
-      "name": "sulfur",
-      "class": "element",
-      "state": "s",
-      "common": true
     },
     "SiO2": {
       "name": "silicon dioxide",
       "class": "acidic oxide",
       "state": "s",
       "common": true
-    },
-    "Zn": {
-      "name": "zinc",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Zn(HS)2": {
-      "name": "zinc hydrogensulfide",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Zn": 2,
-        "HS": -1
-      }
-    },
-    "Zn(OH)2": {
-      "name": "zinc hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "OH": -1
-      }
-    },
-    "ZnBr2": {
-      "name": "zinc bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "Br": -1
-      }
-    },
-    "ZnH2": {
-      "name": "zinc hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Zn": 2,
-        "H": -1
-      }
-    },
-    "ZnI2": {
-      "name": "zinc iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "I": -1
-      }
-    },
-    "ZnS": {
-      "name": "zinc sulfide",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "S": -2
-      }
-    },
-    "ZnSiO3": {
-      "name": "zinc silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Zn": 2,
-        "SiO3": -2
-      }
     }
   },
   "reactions": [
     {
       "substrates": [
-        "H2S",
+        "Ag2O",
+        "Fe"
+      ],
+      "products": [
+        "Fe2O3",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "3 Ag2O + 2 Fe -> Fe2O3 + 6 Ag",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ag2O"
+      ],
+      "products": [
+        "AgCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Ag2O -> 2 AgCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl is insoluble"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "SiO2"
+      ],
+      "products": [
+        "Ag2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + SiO2 -> Ag2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeI2",
         "Ba(OH)2"
       ],
       "products": [
-        "BaS",
-        "H2O"
+        "Fe(OH)2",
+        "BaI2"
       ],
-      "rule": "neutralisation",
-      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "rule": "salt_with_base",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
       "coefficients": {
         "substrates": [
           1,
@@ -345,21 +368,22 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
-      }
+      },
+      "note": "Fe(OH)2 precipitates"
     },
     {
       "substrates": [
-        "H2S",
+        "HCl",
         "Ba(OH)2"
       ],
       "products": [
-        "Ba(HS)2",
+        "BaCl2",
         "H2O"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "rule": "neutralisation",
+      "equation": "2 HCl + Ba(OH)2 -> BaCl2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -369,31 +393,7 @@
           1,
           2
         ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "BaS"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
+      }
     },
     {
       "substrates": [
@@ -420,146 +420,58 @@
     },
     {
       "substrates": [
-        "ZnBr2",
-        "Ba(OH)2"
+        "Fe",
+        "HCl"
       ],
       "products": [
-        "Zn(OH)2",
-        "BaBr2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "ZnBr2 + Ba(OH)2 -> Zn(OH)2 + BaBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "ZnI2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "BaI2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "ZnI2 + Ba(OH)2 -> Zn(OH)2 + BaI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "K2O",
-        "H2O"
-      ],
-      "products": [
-        "KOH"
-      ],
-      "rule": "basic_oxide_hydration",
-      "equation": "K2O + H2O -> 2 KOH",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "K2O"
-      ],
-      "products": [
-        "K2S",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2S + K2O -> K2S + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "MgS",
-        "H2S"
-      ],
-      "products": [
-        "Mg(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "MgS + H2S -> Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Zn",
-        "H2S"
-      ],
-      "products": [
-        "ZnS",
+        "FeCl2",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Zn + H2S -> ZnS + H2",
+      "equation": "Fe + 2 HCl -> FeCl2 + H2",
       "coefficients": {
         "substrates": [
           1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "FeO"
+      ],
+      "products": [
+        "FeCl2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + FeO -> FeCl2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
           1
         ],
         "products": [
           1,
           1
         ]
-      },
-      "note": "ZnS is insoluble"
+      }
     },
     {
       "substrates": [
-        "K2O",
+        "FeO",
         "SiO2"
       ],
       "products": [
-        "K2SiO3"
+        "FeSiO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "K2O + SiO2 -> K2SiO3",
+      "equation": "FeO + SiO2 -> FeSiO3",
       "coefficients": {
         "substrates": [
           1,
@@ -572,330 +484,184 @@
     },
     {
       "substrates": [
-        "MgS",
-        "ZnBr2"
+        "Na2O",
+        "H2O"
       ],
       "products": [
-        "ZnS",
-        "MgBr2"
+        "NaOH"
       ],
-      "rule": "double_displacement",
-      "equation": "MgS + ZnBr2 -> ZnS + MgBr2",
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          1
+          2
         ]
-      },
-      "note": "ZnS precipitates"
+      }
     },
     {
       "substrates": [
-        "MgS",
-        "ZnI2"
+        "HCl",
+        "Na2O"
       ],
       "products": [
-        "ZnS",
-        "MgI2"
+        "NaCl",
+        "H2O"
       ],
-      "rule": "double_displacement",
-      "equation": "MgS + ZnI2 -> ZnS + MgI2",
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Na2O -> 2 NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
           1
         ]
-      },
-      "note": "ZnS precipitates"
+      }
     },
     {
       "substrates": [
-        "Zn",
-        "S"
+        "HCl",
+        "Fe2O3"
       ],
       "products": [
-        "ZnS"
+        "FeCl3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HCl + Fe2O3 -> 2 FeCl3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe2O3",
+        "SiO2"
+      ],
+      "products": [
+        "Fe2(SiO3)3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Fe2O3 + 3 SiO2 -> Fe2(SiO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe2O3",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Fe2O3 + 3 H2 -> 2 Fe + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "Zn + S -> ZnS",
+      "equation": "2 Ag + H2 -> 2 AgH",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaS",
-        "H2S"
-      ],
-      "products": [
-        "Ba(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaS + H2S -> Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "ZnBr2"
-      ],
-      "products": [
-        "ZnS",
-        "BaBr2"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaS + ZnBr2 -> ZnS + BaBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "ZnI2"
-      ],
-      "products": [
-        "ZnS",
-        "BaI2"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaS + ZnI2 -> ZnS + BaI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "K2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaS + K2SiO3 -> BaSiO3 + K2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "BaS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
           2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HS)2 + K2SiO3 -> BaSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
           1
         ],
         "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
           2
         ]
       }
     },
     {
       "substrates": [
-        "H2S",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "Mg(HS)2",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Mg(OH)2"
-      ],
-      "products": [
-        "MgS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2S"
+        "Ag2SiO3",
+        "HCl"
       ],
       "products": [
         "H2SiO3",
-        "BaS"
+        "AgCl"
       ],
       "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "equation": "Ag2SiO3 + 2 HCl -> H2SiO3 + 2 AgCl",
       "coefficients": {
         "substrates": [
           1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2S",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnS",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
+          2
         ],
         "products": [
           1,
           2
         ]
-      },
-      "note": "ZnS is insoluble"
+      }
     },
     {
       "substrates": [
-        "H2S",
-        "Zn(OH)2"
+        "HCl",
+        "Fe(OH)2"
       ],
       "products": [
-        "Zn(HS)2",
+        "FeCl2",
         "H2O"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
+      "rule": "neutralisation",
+      "equation": "2 HCl + Fe(OH)2 -> FeCl2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -905,43 +671,19 @@
           1,
           2
         ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + K2SiO3 -> BaSiO3 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
+      }
     },
     {
       "substrates": [
         "BaI2",
-        "K2SiO3"
+        "Na2SiO3"
       ],
       "products": [
         "BaSiO3",
-        "KI"
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "BaI2 + K2SiO3 -> BaSiO3 + 2 KI",
+      "equation": "BaI2 + Na2SiO3 -> BaSiO3 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -956,15 +698,38 @@
     },
     {
       "substrates": [
-        "H2S",
-        "KOH"
+        "BaCl2",
+        "Na2SiO3"
       ],
       "products": [
-        "K2S",
-        "H2O"
+        "BaSiO3",
+        "NaCl"
       ],
-      "rule": "neutralisation",
-      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "rule": "double_displacement",
+      "equation": "BaCl2 + Na2SiO3 -> BaSiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + 2 HCl -> H2SiO3 + BaCl2",
       "coefficients": {
         "substrates": [
           1,
@@ -972,21 +737,21 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
       }
     },
     {
       "substrates": [
-        "H2S",
-        "KOH"
+        "FeCl2",
+        "Ba(OH)2"
       ],
       "products": [
-        "KHS",
-        "H2O"
+        "Fe(OH)2",
+        "BaCl2"
       ],
-      "rule": "partial_neutralisation",
-      "equation": "H2S + KOH -> KHS + H2O",
+      "rule": "salt_with_base",
+      "equation": "FeCl2 + Ba(OH)2 -> Fe(OH)2 + BaCl2",
       "coefficients": {
         "substrates": [
           1,
@@ -997,19 +762,132 @@
           1
         ]
       },
-      "note": "an acid salt -- less base than the normal salt needs"
+      "note": "Fe(OH)2 precipitates"
     },
     {
       "substrates": [
-        "MgS",
-        "KOH"
+        "FeCl2",
+        "NaOH"
       ],
       "products": [
-        "Mg(OH)2",
-        "K2S"
+        "Fe(OH)2",
+        "NaCl"
       ],
       "rule": "salt_with_base",
-      "equation": "MgS + 2 KOH -> Mg(OH)2 + K2S",
+      "equation": "FeCl2 + 2 NaOH -> Fe(OH)2 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeCl2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "FeSiO3",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeCl2 + Na2SiO3 -> FeSiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "FeO + H2 -> Fe + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "FeSiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "FeCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeSiO3 + 2 HCl -> H2SiO3 + FeCl2",
       "coefficients": {
         "substrates": [
           1,
@@ -1019,20 +897,64 @@
           1,
           1
         ]
-      },
-      "note": "Mg(OH)2 precipitates"
+      }
     },
     {
       "substrates": [
-        "KOH",
+        "FeI2",
+        "NaOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NaI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + 2 NaOH -> Fe(OH)2 + 2 NaI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NaOH"
+      ],
+      "products": [
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + NaOH -> NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
         "SiO2"
       ],
       "products": [
-        "K2SiO3",
+        "Na2SiO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -1046,151 +968,15 @@
     },
     {
       "substrates": [
-        "ZnBr2",
-        "KOH"
+        "Na2SiO3",
+        "FeI2"
       ],
       "products": [
-        "Zn(OH)2",
-        "KBr"
-      ],
-      "rule": "salt_with_base",
-      "equation": "ZnBr2 + 2 KOH -> Zn(OH)2 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "ZnI2",
-        "KOH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "KI"
-      ],
-      "rule": "salt_with_base",
-      "equation": "ZnI2 + 2 KOH -> Zn(OH)2 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "KHS"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Mg(HS)2 + 2 KOH -> Mg(OH)2 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "KBr"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgBr2 + 2 KOH -> Mg(OH)2 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "MgI2",
-        "KOH"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "KI"
-      ],
-      "rule": "salt_with_base",
-      "equation": "MgI2 + 2 KOH -> Mg(OH)2 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "H2S"
-      ],
-      "products": [
-        "KHS"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "K2S + H2S -> 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "ZnBr2"
-      ],
-      "products": [
-        "ZnS",
-        "KBr"
+        "FeSiO3",
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "K2S + ZnBr2 -> ZnS + 2 KBr",
+      "equation": "Na2SiO3 + FeI2 -> FeSiO3 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -1201,332 +987,132 @@
           2
         ]
       },
-      "note": "ZnS precipitates"
+      "note": "FeSiO3 precipitates"
     },
     {
       "substrates": [
-        "K2S",
-        "ZnI2"
-      ],
-      "products": [
-        "ZnS",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2S + ZnI2 -> ZnS + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Mg(OH)2",
-        "Ba(HS)2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Mg(HS)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Mg(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "MgSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Mg(HS)2 + K2SiO3 -> MgSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "ZnS",
-        "H2S"
-      ],
-      "products": [
-        "Zn(HS)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "ZnS + H2S -> Zn(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "H2",
-        "S"
-      ],
-      "products": [
-        "H2S"
-      ],
-      "rule": "hydrogenation",
-      "equation": "H2 + S -> H2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Zn",
-        "H2"
-      ],
-      "products": [
-        "ZnH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Zn + H2 -> ZnH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "H2S"
+        "Na2SiO3",
+        "HCl"
       ],
       "products": [
         "H2SiO3",
-        "K2S"
+        "NaCl"
       ],
       "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
+      "equation": "Na2SiO3 + 2 HCl -> H2SiO3 + 2 NaCl",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
-          1
+          2
         ]
       }
     },
     {
       "substrates": [
-        "K2SiO3",
-        "MgS"
-      ],
-      "products": [
-        "MgSiO3",
-        "K2S"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + MgS -> MgSiO3 + K2S",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "ZnBr2"
-      ],
-      "products": [
-        "ZnSiO3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + ZnBr2 -> ZnSiO3 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "ZnI2"
-      ],
-      "products": [
-        "ZnSiO3",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + ZnI2 -> ZnSiO3 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "MgBr2"
-      ],
-      "products": [
-        "MgSiO3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + MgBr2 -> MgSiO3 + 2 KBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "MgI2"
-      ],
-      "products": [
-        "MgSiO3",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "K2SiO3 + MgI2 -> MgSiO3 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "MgSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "MgBr2",
+        "FeCl3",
         "Ba(OH)2"
       ],
       "products": [
-        "Mg(OH)2",
-        "BaBr2"
+        "Fe(OH)3",
+        "BaCl2"
       ],
       "rule": "salt_with_base",
-      "equation": "MgBr2 + Ba(OH)2 -> Mg(OH)2 + BaBr2",
+      "equation": "2 FeCl3 + 3 Ba(OH)2 -> 2 Fe(OH)3 + 3 BaCl2",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
-          1,
-          1
+          2,
+          3
         ]
       },
-      "note": "Mg(OH)2 precipitates"
+      "note": "Fe(OH)3 precipitates"
     },
     {
       "substrates": [
-        "MgI2",
-        "Ba(OH)2"
+        "FeCl3",
+        "NaOH"
       ],
       "products": [
-        "Mg(OH)2",
-        "BaI2"
+        "Fe(OH)3",
+        "NaCl"
       ],
       "rule": "salt_with_base",
-      "equation": "MgI2 + Ba(OH)2 -> Mg(OH)2 + BaI2",
+      "equation": "FeCl3 + 3 NaOH -> Fe(OH)3 + 3 NaCl",
       "coefficients": {
         "substrates": [
           1,
-          1
+          3
         ],
         "products": [
           1,
-          1
+          3
         ]
       },
-      "note": "Mg(OH)2 precipitates"
+      "note": "Fe(OH)3 precipitates"
     },
     {
       "substrates": [
-        "KHS",
-        "KOH"
+        "FeCl3",
+        "Na2SiO3"
       ],
       "products": [
-        "K2S",
+        "Fe2(SiO3)3",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 FeCl3 + 3 Na2SiO3 -> Fe2(SiO3)3 + 6 NaCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe2(SiO3)3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "FeCl3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Fe2(SiO3)3 + 6 HCl -> 3 H2SiO3 + 2 FeCl3",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2SiO3",
         "H2O"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "KHS + KOH -> K2S + H2O",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Ag2O -> Ag2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1537,7 +1123,7 @@
           1
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "Ag2SiO3 is insoluble"
     },
     {
       "substrates": [
@@ -1564,37 +1150,15 @@
     },
     {
       "substrates": [
-        "H2SiO3",
-        "K2O"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Zn",
+        "Fe",
         "H2SiO3"
       ],
       "products": [
-        "ZnSiO3",
+        "FeSiO3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Zn + H2SiO3 -> ZnSiO3 + H2",
+      "equation": "Fe + H2SiO3 -> FeSiO3 + H2",
       "coefficients": {
         "substrates": [
           1,
@@ -1605,19 +1169,19 @@
           1
         ]
       },
-      "note": "ZnSiO3 is insoluble"
+      "note": "FeSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "Mg(OH)2"
+        "FeO"
       ],
       "products": [
-        "MgSiO3",
+        "FeSiO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + FeO -> FeSiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1625,228 +1189,22 @@
         ],
         "products": [
           1,
-          2
+          1
         ]
       },
-      "note": "MgSiO3 is insoluble"
+      "note": "FeSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "Zn(OH)2"
+        "Na2O"
       ],
       "products": [
-        "ZnSiO3",
+        "Na2SiO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + Zn(OH)2 -> ZnSiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "KOH"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "Ba(HS)2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Zn(HS)2 + Ba(OH)2 -> Zn(OH)2 + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "MgS"
-      ],
-      "products": [
-        "ZnS",
-        "Mg(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Zn(HS)2 + MgS -> ZnS + Mg(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "BaS"
-      ],
-      "products": [
-        "ZnS",
-        "Ba(HS)2"
-      ],
-      "rule": "double_displacement",
-      "equation": "Zn(HS)2 + BaS -> ZnS + Ba(HS)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "KOH"
-      ],
-      "products": [
-        "Zn(OH)2",
-        "KHS"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Zn(HS)2 + 2 KOH -> Zn(OH)2 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Zn(OH)2 precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "K2S"
-      ],
-      "products": [
-        "ZnS",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Zn(HS)2 + K2S -> ZnS + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnS precipitates"
-    },
-    {
-      "substrates": [
-        "Zn(HS)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "ZnSiO3",
-        "KHS"
-      ],
-      "rule": "double_displacement",
-      "equation": "Zn(HS)2 + K2SiO3 -> ZnSiO3 + 2 KHS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "ZnSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "MgSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "MgS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1860,15 +1218,38 @@
     },
     {
       "substrates": [
-        "ZnSiO3",
-        "H2S"
+        "H2SiO3",
+        "Fe2O3"
       ],
       "products": [
-        "H2SiO3",
-        "ZnS"
+        "Fe2(SiO3)3",
+        "H2O"
       ],
-      "rule": "acid_displacement",
-      "equation": "ZnSiO3 + H2S -> H2SiO3 + ZnS",
+      "rule": "acid_with_basic_oxide",
+      "equation": "3 H2SiO3 + Fe2O3 -> Fe2(SiO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Fe(OH)2 -> FeSiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1876,22 +1257,90 @@
         ],
         "products": [
           1,
-          1
+          2
+        ]
+      },
+      "note": "FeSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
         ]
       }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FeCl3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HCl + Fe(OH)3 -> FeCl3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe2(SiO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SiO3 + 2 Fe(OH)3 -> Fe2(SiO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe2(SiO3)3 is insoluble"
     }
   ],
   "answers": {
-    "binary_salt_synthesis": {
+    "oxide_with_oxide": {
       "substrates": [
-        "Zn",
-        "S"
+        "FeO",
+        "SiO2"
       ],
       "products": [
-        "ZnS"
+        "FeSiO3"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Zn + S -> ZnS",
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + SiO2 -> FeSiO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1904,15 +1353,38 @@
     },
     "double_displacement": {
       "substrates": [
-        "MgS",
-        "ZnBr2"
+        "FeCl2",
+        "Na2SiO3"
       ],
       "products": [
-        "ZnS",
-        "MgBr2"
+        "FeSiO3",
+        "NaCl"
       ],
       "rule": "double_displacement",
-      "equation": "MgS + ZnBr2 -> ZnS + MgBr2",
+      "equation": "FeCl2 + Na2SiO3 -> FeSiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeSiO3 precipitates"
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2SiO3",
+        "FeO"
+      ],
+      "products": [
+        "FeSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + FeO -> FeSiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1923,19 +1395,19 @@
           1
         ]
       },
-      "note": "ZnS precipitates"
+      "note": "FeSiO3 is insoluble"
     },
     "metal_with_acid": {
       "substrates": [
-        "Zn",
-        "H2S"
+        "Fe",
+        "H2SiO3"
       ],
       "products": [
-        "ZnS",
+        "FeSiO3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Zn + H2S -> ZnS + H2",
+      "equation": "Fe + H2SiO3 -> FeSiO3 + H2",
       "coefficients": {
         "substrates": [
           1,
@@ -1946,19 +1418,19 @@
           1
         ]
       },
-      "note": "ZnS is insoluble"
+      "note": "FeSiO3 is insoluble"
     },
     "neutralisation": {
       "substrates": [
-        "H2S",
-        "Zn(OH)2"
+        "H2SiO3",
+        "Fe(OH)2"
       ],
       "products": [
-        "ZnS",
+        "FeSiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
+      "equation": "H2SiO3 + Fe(OH)2 -> FeSiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1969,257 +1441,163 @@
           2
         ]
       },
-      "note": "ZnS is insoluble"
-    },
-    "acid_displacement": {
-      "substrates": [
-        "ZnSiO3",
-        "H2S"
-      ],
-      "products": [
-        "H2SiO3",
-        "ZnS"
-      ],
-      "rule": "acid_displacement",
-      "equation": "ZnSiO3 + H2S -> H2SiO3 + ZnS",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    "acid_salt_with_base": {
-      "substrates": [
-        "Zn(HS)2",
-        "Zn(OH)2"
-      ],
-      "products": [
-        "ZnS",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2,
-          2
-        ]
-      },
-      "note": "more base takes off another proton"
+      "note": "FeSiO3 is insoluble"
     }
   },
   "misses": [
     {
       "substrates": [
-        "Ba(HS)2",
+        "Ag",
+        "BaCl2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaI2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeCl2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeCl3"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeI2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "K2S"
+        "Ag",
+        "HCl"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Na2SiO3"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaCl"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaI"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SiO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaCl"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaI"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "FeI2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "KBr"
+        "BaCl2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "NaI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "KI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "KOH"
+        "BaCl2",
+        "NaOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "MgBr2"
+        "BaI2",
+        "Fe"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Ba(HS)2",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "Zn"
-      ],
-      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(HS)2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "K2S"
-      ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "K2SiO3"
-      ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "KBr"
-      ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "KHS"
-      ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
-        "KI"
-      ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "H2SiO3"
-      ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "K2S"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "KHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "KI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "KOH"
-      ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Mg(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Zn"
-      ],
-      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "ZnI2"
+        "BaI2",
+        "FeCl2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaI2",
-        "H2S"
+        "FeCl3"
       ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
@@ -2231,506 +1609,142 @@
     {
       "substrates": [
         "BaI2",
-        "K2S"
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "NaCl"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "BaI2",
-        "KBr"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "KHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "KOH"
+        "NaOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaI2",
-        "Mg(HS)2"
+        "Fe",
+        "FeCl2"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaI2",
-        "MgBr2"
+        "Fe",
+        "FeCl3"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaI2",
-        "MgS"
+        "Fe",
+        "FeI2"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaI2",
-        "Zn"
+        "Fe",
+        "Na2SiO3"
       ],
-      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+      "note": "Fe sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaI2",
-        "Zn(HS)2"
+        "Fe",
+        "NaCl"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaI2",
-        "ZnBr2"
+        "Fe",
+        "NaI"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Fe sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "BaS",
+        "FeCl2",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaS",
-        "KBr"
+        "FeCl2",
+        "NaI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaS",
-        "KHS"
+        "FeCl3",
+        "FeI2"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaS",
-        "KI"
+        "FeCl3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeCl3",
+        "NaI"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaS",
-        "KOH"
-      ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "Mg(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "MgBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaS",
-        "Zn"
-      ],
-      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "KBr"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "KI"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "MgBr2"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "MgI2"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "ZnBr2"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "ZnI2"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "K2S"
-      ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "KBr"
-      ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "KHS"
-      ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "KI"
+        "FeI2",
+        "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "Mg(HS)2"
+        "FeI2",
+        "HCl"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "H2SiO3",
-        "MgBr2"
+        "NaCl"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "MgI2"
+        "NaI"
       ],
       "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "MgS"
+        "HCl",
+        "NaI"
       ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "Zn(HS)2"
-      ],
-      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "ZnBr2"
-      ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "ZnI2"
-      ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "Mg(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "MgBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "K2S",
-        "Zn"
-      ],
-      "note": "Zn sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "Zn"
-      ],
-      "note": "Zn sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "Mg(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "Zn"
-      ],
-      "note": "Zn sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KBr",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "MgBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "MgI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "Zn"
-      ],
-      "note": "Zn sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KHS",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KI",
-        "Mg(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KI",
-        "MgBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KI",
-        "MgS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KI",
-        "Zn"
-      ],
-      "note": "Zn sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "KI",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "KI",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "Zn"
-      ],
-      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Mg(HS)2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "Zn"
-      ],
-      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "MgBr2",
-        "ZnI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "MgI2",
-        "Zn"
-      ],
-      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "MgI2",
-        "Zn(HS)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "MgI2",
-        "ZnBr2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "MgS",
-        "Zn"
-      ],
-      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Zn",
-        "Zn(HS)2"
-      ],
-      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Zn",
-        "ZnBr2"
-      ],
-      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Zn",
-        "ZnI2"
-      ],
-      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
     }
   ]
 }

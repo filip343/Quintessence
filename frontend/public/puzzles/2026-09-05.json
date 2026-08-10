@@ -1,27 +1,20 @@
 {
   "version": 3,
-  "target": "NaBr",
-  "name": "sodium bromide",
+  "target": "NaI",
+  "name": "sodium iodide",
   "grade": "medium",
   "want": 5,
-  "ways": 8,
+  "ways": 7,
   "cut": 1,
   "palette": [
-    "Br2",
-    "CuBr2",
+    "CuI2",
     "H2O",
+    "I2",
     "Na",
     "Na2S",
-    "NaI",
     "NaOH"
   ],
   "species": {
-    "Br2": {
-      "name": "bromine",
-      "class": "element",
-      "state": "l",
-      "common": true
-    },
     "Cu(HS)2": {
       "name": "copper(II) hydrogensulfide",
       "class": "salt",
@@ -40,16 +33,6 @@
       "ions": {
         "Cu": 2,
         "OH": -1
-      }
-    },
-    "CuBr2": {
-      "name": "copper(II) bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Cu": 2,
-        "Br": -1
       }
     },
     "CuI2": {
@@ -94,16 +77,6 @@
         "S": -2
       }
     },
-    "HBr": {
-      "name": "hydrobromic acid",
-      "class": "acid",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "H": 1,
-        "Br": -1
-      }
-    },
     "HI": {
       "name": "hydroiodic acid",
       "class": "acid",
@@ -134,26 +107,6 @@
       "ions": {
         "Na": 1,
         "S": -2
-      }
-    },
-    "NaBr": {
-      "name": "sodium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Na": 1,
-        "Br": -1
-      }
-    },
-    "NaBrO3": {
-      "name": "sodium bromate",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Na": 1,
-        "BrO3": -1
       }
     },
     "NaH": {
@@ -210,83 +163,15 @@
   "reactions": [
     {
       "substrates": [
-        "Na",
-        "Br2"
-      ],
-      "products": [
-        "NaBr"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "2 Na + Br2 -> 2 NaBr",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Br2",
-        "NaI"
-      ],
-      "products": [
-        "NaBr",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + 2 NaI -> 2 NaBr + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "Br2",
-        "NaOH"
-      ],
-      "products": [
-        "NaBrO3",
-        "NaBr",
-        "H2O"
-      ],
-      "rule": "halogen_disproportionation",
-      "equation": "3 Br2 + 6 NaOH -> NaBrO3 + 5 NaBr + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          6
-        ],
-        "products": [
-          1,
-          5,
-          3
-        ]
-      },
-      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
-    },
-    {
-      "substrates": [
-        "CuBr2",
+        "CuI2",
         "Na2S"
       ],
       "products": [
         "CuS",
-        "NaBr"
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "CuBr2 + Na2S -> CuS + 2 NaBr",
+      "equation": "CuI2 + Na2S -> CuS + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -301,15 +186,15 @@
     },
     {
       "substrates": [
-        "CuBr2",
+        "CuI2",
         "NaOH"
       ],
       "products": [
         "Cu(OH)2",
-        "NaBr"
+        "NaI"
       ],
       "rule": "salt_with_base",
-      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
+      "equation": "CuI2 + 2 NaOH -> Cu(OH)2 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -399,26 +284,6 @@
       ],
       "rule": "hydrogenation",
       "equation": "H2 + I2 -> 2 HI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2",
-        "Br2"
-      ],
-      "products": [
-        "HBr"
-      ],
-      "rule": "hydrogenation",
-      "equation": "H2 + Br2 -> 2 HBr",
       "coefficients": {
         "substrates": [
           1,
@@ -548,116 +413,6 @@
       ],
       "rule": "neutralisation",
       "equation": "2 HI + Cu(OH)2 -> CuI2 + 2 H2O",
-      "coefficients": {
-        "substrates": [
-          2,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na",
-        "HBr"
-      ],
-      "products": [
-        "NaBr",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Na + 2 HBr -> 2 NaBr + H2",
-      "coefficients": {
-        "substrates": [
-          2,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "Na2S",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "NaBr"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Na2S + 2 HBr -> H2S + 2 NaBr",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NaOH"
-      ],
-      "products": [
-        "NaBr",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "HBr + NaOH -> NaBr + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "CuS",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "CuBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "CuS + 2 HBr -> H2S + CuBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HBr",
-        "Cu(OH)2"
-      ],
-      "products": [
-        "CuBr2",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "2 HBr + Cu(OH)2 -> CuBr2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -826,75 +581,6 @@
     },
     {
       "substrates": [
-        "Br2",
-        "CuI2"
-      ],
-      "products": [
-        "CuBr2",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + CuI2 -> CuBr2 + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Na2S"
-      ],
-      "products": [
-        "CuS",
-        "NaI"
-      ],
-      "rule": "double_displacement",
-      "equation": "CuI2 + Na2S -> CuS + 2 NaI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "CuS precipitates"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "NaOH"
-      ],
-      "products": [
-        "Cu(OH)2",
-        "NaI"
-      ],
-      "rule": "salt_with_base",
-      "equation": "CuI2 + 2 NaOH -> Cu(OH)2 + 2 NaI",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "Cu(OH)2 precipitates"
-    },
-    {
-      "substrates": [
         "NaHS",
         "NaOH"
       ],
@@ -927,28 +613,6 @@
       ],
       "rule": "acid_displacement",
       "equation": "NaHS + HI -> H2S + NaI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "NaHS",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "NaBr"
-      ],
-      "rule": "acid_displacement",
-      "equation": "NaHS + HBr -> H2S + NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -1050,41 +714,19 @@
           1
         ]
       }
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "HBr"
-      ],
-      "products": [
-        "H2S",
-        "CuBr2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "Cu(HS)2 + 2 HBr -> 2 H2S + CuBr2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      }
     }
   ],
   "answers": {
     "binary_salt_synthesis": {
       "substrates": [
         "Na",
-        "Br2"
+        "I2"
       ],
       "products": [
-        "NaBr"
+        "NaI"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 Na + Br2 -> 2 NaBr",
+      "equation": "2 Na + I2 -> 2 NaI",
       "coefficients": {
         "substrates": [
           2,
@@ -1097,15 +739,15 @@
     },
     "double_displacement": {
       "substrates": [
-        "CuBr2",
+        "CuI2",
         "Na2S"
       ],
       "products": [
         "CuS",
-        "NaBr"
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "CuBr2 + Na2S -> CuS + 2 NaBr",
+      "equation": "CuI2 + Na2S -> CuS + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -1118,41 +760,18 @@
       },
       "note": "CuS precipitates"
     },
-    "halogen_displacement": {
-      "substrates": [
-        "Br2",
-        "NaI"
-      ],
-      "products": [
-        "NaBr",
-        "I2"
-      ],
-      "rule": "halogen_displacement",
-      "equation": "Br2 + 2 NaI -> 2 NaBr + I2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
-          2,
-          1
-        ]
-      },
-      "note": "Br is more reactive than I"
-    },
     "halogen_disproportionation": {
       "substrates": [
-        "Br2",
+        "I2",
         "NaOH"
       ],
       "products": [
-        "NaBrO3",
-        "NaBr",
+        "NaIO3",
+        "NaI",
         "H2O"
       ],
       "rule": "halogen_disproportionation",
-      "equation": "3 Br2 + 6 NaOH -> NaBrO3 + 5 NaBr + 3 H2O",
+      "equation": "3 I2 + 6 NaOH -> NaIO3 + 5 NaI + 3 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -1164,19 +783,19 @@
           3
         ]
       },
-      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
     },
     "salt_with_base": {
       "substrates": [
-        "CuBr2",
+        "CuI2",
         "NaOH"
       ],
       "products": [
         "Cu(OH)2",
-        "NaBr"
+        "NaI"
       ],
       "rule": "salt_with_base",
-      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
+      "equation": "CuI2 + 2 NaOH -> Cu(OH)2 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -1192,14 +811,14 @@
     "acid_displacement": {
       "substrates": [
         "Na2S",
-        "HBr"
+        "HI"
       ],
       "products": [
         "H2S",
-        "NaBr"
+        "NaI"
       ],
       "rule": "acid_displacement",
-      "equation": "Na2S + 2 HBr -> H2S + 2 NaBr",
+      "equation": "Na2S + 2 HI -> H2S + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -1214,14 +833,14 @@
     "metal_with_acid": {
       "substrates": [
         "Na",
-        "HBr"
+        "HI"
       ],
       "products": [
-        "NaBr",
+        "NaI",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Na + 2 HBr -> 2 NaBr + H2",
+      "equation": "2 Na + 2 HI -> 2 NaI + H2",
       "coefficients": {
         "substrates": [
           2,
@@ -1235,15 +854,15 @@
     },
     "neutralisation": {
       "substrates": [
-        "HBr",
+        "HI",
         "NaOH"
       ],
       "products": [
-        "NaBr",
+        "NaI",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "HBr + NaOH -> NaBr + H2O",
+      "equation": "HI + NaOH -> NaI + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1267,76 +886,6 @@
     {
       "substrates": [
         "Cu(HS)2",
-        "NaBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "NaI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Cu(HS)2",
-        "NaIO3"
-      ],
-      "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "H2S"
-      ],
-      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "HI"
-      ],
-      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "I2"
-      ],
-      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "Na"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "NaBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "NaHS"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
-        "NaI"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuBr2",
         "NaIO3"
       ],
       "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
@@ -1351,23 +900,9 @@
     {
       "substrates": [
         "CuI2",
-        "HBr"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CuI2",
         "Na"
       ],
       "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "NaBrO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
@@ -1382,20 +917,6 @@
         "NaIO3"
       ],
       "note": "Cu(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaBrO3"
-      ],
-      "note": "H2S is no stronger than HBrO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "H2S",
-        "NaI"
-      ],
-      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -1403,34 +924,6 @@
         "NaIO3"
       ],
       "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NaBrO3"
-      ],
-      "note": "HBr is no stronger than HBrO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NaI"
-      ],
-      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HBr",
-        "NaIO3"
-      ],
-      "note": "HBr is no stronger than HIO3, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "HI",
-        "NaBrO3"
-      ],
-      "note": "HI is no stronger than HBrO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -1449,21 +942,7 @@
     {
       "substrates": [
         "Na",
-        "NaBrO3"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
         "NaHS"
-      ],
-      "note": "Na attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "Na",
-        "NaI"
       ],
       "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },

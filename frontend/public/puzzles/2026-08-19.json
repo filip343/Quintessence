@@ -1,173 +1,211 @@
 {
   "version": 3,
-  "target": "Al2(CO3)3",
-  "name": "aluminium carbonate",
-  "grade": "easy",
+  "target": "PbCO3",
+  "name": "lead(II) carbonate",
+  "grade": "medium",
   "want": 5,
   "ways": 6,
   "cut": 1,
   "palette": [
-    "Al",
-    "AlBr3",
-    "AlI3",
-    "Ba(OH)2",
+    "Ag2O",
+    "AgF",
     "CO2",
+    "Ca(OH)2",
+    "Cl2",
     "H2O",
     "K2O",
+    "Na2O",
+    "Pb",
     "SiO2"
   ],
   "species": {
-    "Al": {
-      "name": "aluminium",
+    "Ag": {
+      "name": "silver",
       "class": "element",
       "state": "s",
       "common": true
     },
-    "Al(HCO3)3": {
-      "name": "aluminium hydrogencarbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Al": 3,
-        "HCO3": -1
-      }
-    },
-    "Al(OH)3": {
-      "name": "aluminium hydroxide",
-      "class": "base",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Al": 3,
-        "OH": -1
-      }
-    },
-    "Al2(CO3)3": {
-      "name": "aluminium carbonate",
+    "Ag2CO3": {
+      "name": "silver carbonate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Al": 3,
+        "Ag": 1,
         "CO3": -2
       }
     },
-    "Al2(SiO3)3": {
-      "name": "aluminium silicate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Al": 3,
-        "SiO3": -2
-      }
-    },
-    "Al2O3": {
-      "name": "aluminium oxide",
-      "class": "amphoteric oxide",
-      "state": "s",
-      "common": true
-    },
-    "AlBr3": {
-      "name": "aluminium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Al": 3,
-        "Br": -1
-      }
-    },
-    "AlH3": {
-      "name": "aluminium hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Al": 3,
-        "H": -1
-      }
-    },
-    "AlI3": {
-      "name": "aluminium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Al": 3,
-        "I": -1
-      }
-    },
-    "Ba(HCO3)2": {
-      "name": "barium hydrogencarbonate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "HCO3": -1
-      }
-    },
-    "Ba(OH)2": {
-      "name": "barium hydroxide",
-      "class": "base",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "OH": -1
-      }
-    },
-    "BaBr2": {
-      "name": "barium bromide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "Br": -1
-      }
-    },
-    "BaCO3": {
-      "name": "barium carbonate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "CO3": -2
-      }
-    },
-    "BaI2": {
-      "name": "barium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "I": -1
-      }
-    },
-    "BaO": {
-      "name": "barium oxide",
+    "Ag2O": {
+      "name": "silver oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "BaSiO3": {
-      "name": "barium silicate",
+    "Ag2SiO3": {
+      "name": "silver silicate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Ba": 2,
+        "Ag": 1,
         "SiO3": -2
+      }
+    },
+    "AgCl": {
+      "name": "silver chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Cl": -1
+      }
+    },
+    "AgClO": {
+      "name": "silver hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "ClO": -1
+      }
+    },
+    "AgClO3": {
+      "name": "silver chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "ClO3": -1
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgHCO3": {
+      "name": "silver hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HCO3": -1
       }
     },
     "CO2": {
       "name": "carbon dioxide",
       "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "Ca(ClO)2": {
+      "name": "calcium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "ClO": -1
+      }
+    },
+    "Ca(ClO3)2": {
+      "name": "calcium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "ClO3": -1
+      }
+    },
+    "Ca(HCO3)2": {
+      "name": "calcium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "HCO3": -1
+      }
+    },
+    "Ca(OH)2": {
+      "name": "calcium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "OH": -1
+      }
+    },
+    "CaCO3": {
+      "name": "calcium carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "CO3": -2
+      }
+    },
+    "CaCl2": {
+      "name": "calcium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "Cl": -1
+      }
+    },
+    "CaF2": {
+      "name": "calcium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "F": -1
+      }
+    },
+    "CaO": {
+      "name": "calcium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "CaSiO3": {
+      "name": "calcium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "SiO3": -2
+      }
+    },
+    "Cl2": {
+      "name": "chlorine",
+      "class": "element",
       "state": "g",
       "common": true
     },
@@ -203,6 +241,36 @@
         "SiO3": -2
       }
     },
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "HClO": {
+      "name": "hypochlorous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "ClO": -1
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
     "K2CO3": {
       "name": "potassium carbonate",
       "class": "salt",
@@ -229,14 +297,44 @@
         "SiO3": -2
       }
     },
-    "KBr": {
-      "name": "potassium bromide",
+    "KCl": {
+      "name": "potassium chloride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
         "K": 1,
-        "Br": -1
+        "Cl": -1
+      }
+    },
+    "KClO": {
+      "name": "potassium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "ClO": -1
+      }
+    },
+    "KClO3": {
+      "name": "potassium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "ClO3": -1
+      }
+    },
+    "KF": {
+      "name": "potassium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "F": -1
       }
     },
     "KHCO3": {
@@ -249,16 +347,6 @@
         "HCO3": -1
       }
     },
-    "KI": {
-      "name": "potassium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
-        "I": -1
-      }
-    },
     "KOH": {
       "name": "potassium hydroxide",
       "class": "base",
@@ -267,6 +355,194 @@
       "ions": {
         "K": 1,
         "OH": -1
+      }
+    },
+    "Na2CO3": {
+      "name": "sodium carbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "CO3": -2
+      }
+    },
+    "Na2O": {
+      "name": "sodium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Na2SiO3": {
+      "name": "sodium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "SiO3": -2
+      }
+    },
+    "NaCl": {
+      "name": "sodium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Cl": -1
+      }
+    },
+    "NaClO": {
+      "name": "sodium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "ClO": -1
+      }
+    },
+    "NaClO3": {
+      "name": "sodium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "ClO3": -1
+      }
+    },
+    "NaF": {
+      "name": "sodium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "F": -1
+      }
+    },
+    "NaHCO3": {
+      "name": "sodium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "HCO3": -1
+      }
+    },
+    "NaOH": {
+      "name": "sodium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "OH": -1
+      }
+    },
+    "Pb": {
+      "name": "lead",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Pb(ClO)2": {
+      "name": "lead(II) hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "ClO": -1
+      }
+    },
+    "Pb(ClO3)2": {
+      "name": "lead(II) chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "ClO3": -1
+      }
+    },
+    "Pb(HCO3)2": {
+      "name": "lead(II) hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "HCO3": -1
+      }
+    },
+    "Pb(OH)2": {
+      "name": "lead(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Pb": 2,
+        "OH": -1
+      }
+    },
+    "PbCO3": {
+      "name": "lead(II) carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "CO3": -2
+      }
+    },
+    "PbCl2": {
+      "name": "lead(II) chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "Cl": -1
+      }
+    },
+    "PbF2": {
+      "name": "lead(II) fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "F": -1
+      }
+    },
+    "PbH2": {
+      "name": "lead(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Pb": 2,
+        "H": -1
+      }
+    },
+    "PbO": {
+      "name": "lead(II) oxide",
+      "class": "amphoteric oxide",
+      "state": "s",
+      "common": true
+    },
+    "PbSiO3": {
+      "name": "lead(II) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "SiO3": -2
       }
     },
     "SiO2": {
@@ -279,84 +555,101 @@
   "reactions": [
     {
       "substrates": [
-        "AlBr3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Al(OH)3",
-        "BaBr2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "2 AlBr3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaBr2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Al(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "AlI3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Al(OH)3",
-        "BaI2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "2 AlI3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 BaI2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Al(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(OH)2",
+        "Ag2O",
         "CO2"
       ],
       "products": [
-        "BaCO3",
-        "H2O"
+        "Ag2CO3"
       ],
-      "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + CO2 -> BaCO3 + H2O",
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + CO2 -> Ag2CO3",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
           1
         ]
-      },
-      "note": "BaCO3 is insoluble"
+      }
     },
     {
       "substrates": [
-        "Ba(OH)2",
+        "Ag2O",
+        "Pb"
+      ],
+      "products": [
+        "PbO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Pb -> PbO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
         "SiO2"
       ],
       "products": [
-        "BaSiO3",
+        "Ag2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + SiO2 -> Ag2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "AgF"
+      ],
+      "products": [
+        "PbF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgF -> PbF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ca(OH)2",
+        "CO2"
+      ],
+      "products": [
+        "CaCO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
+      "equation": "Ca(OH)2 + CO2 -> CaCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -367,7 +660,7 @@
           1
         ]
       },
-      "note": "BaSiO3 is insoluble"
+      "note": "CaCO3 is insoluble"
     },
     {
       "substrates": [
@@ -412,6 +705,119 @@
     },
     {
       "substrates": [
+        "Na2O",
+        "CO2"
+      ],
+      "products": [
+        "Na2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + CO2 -> Na2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO)2",
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "2 Cl2 + 2 Ca(OH)2 -> Ca(ClO)2 + CaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          2
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO3)2",
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 Cl2 + 6 Ca(OH)2 -> Ca(ClO3)2 + 5 CaCl2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Ca(OH)2",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ca(OH)2 + SiO2 -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "Cl2"
+      ],
+      "products": [
+        "PbCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Pb + Cl2 -> PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
         "K2O",
         "H2O"
       ],
@@ -420,6 +826,26 @@
       ],
       "rule": "basic_oxide_hydration",
       "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "H2O"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
       "coefficients": {
         "substrates": [
           1,
@@ -452,84 +878,76 @@
     },
     {
       "substrates": [
-        "H2CO3",
-        "Al(OH)3"
+        "Na2O",
+        "SiO2"
       ],
       "products": [
-        "Al2(CO3)3",
-        "H2O"
+        "Na2SiO3"
       ],
-      "rule": "neutralisation",
-      "equation": "3 H2CO3 + 2 Al(OH)3 -> Al2(CO3)3 + 6 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(CO3)3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2CO3",
-        "Al(OH)3"
-      ],
-      "products": [
-        "Al(HCO3)3",
-        "H2O"
-      ],
-      "rule": "partial_neutralisation",
-      "equation": "3 H2CO3 + Al(OH)3 -> Al(HCO3)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "an acid salt -- less base than the normal salt needs"
-    },
-    {
-      "substrates": [
-        "BaBr2",
-        "K2CO3"
-      ],
-      "products": [
-        "BaCO3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + K2CO3 -> BaCO3 + 2 KBr",
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
       "coefficients": {
         "substrates": [
           1,
           1
         ],
         "products": [
-          1,
-          2
+          1
         ]
-      },
-      "note": "BaCO3 precipitates"
+      }
     },
     {
       "substrates": [
-        "BaBr2",
-        "K2SiO3"
+        "Ag2CO3",
+        "H2CO3"
       ],
       "products": [
-        "BaSiO3",
-        "KBr"
+        "AgHCO3"
       ],
-      "rule": "double_displacement",
-      "equation": "BaBr2 + K2SiO3 -> BaSiO3 + 2 KBr",
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2CO3 + H2CO3 -> 2 AgHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cl2"
+      ],
+      "products": [
+        "AgCl"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + Cl2 -> 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Ag2CO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + H2CO3 -> H2SiO3 + Ag2CO3",
       "coefficients": {
         "substrates": [
           1,
@@ -537,67 +955,20 @@
         ],
         "products": [
           1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "K2CO3"
-      ],
-      "products": [
-        "BaCO3",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaI2 + K2CO3 -> BaCO3 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
           1
-        ],
-        "products": [
-          1,
-          2
         ]
-      },
-      "note": "BaCO3 precipitates"
+      }
     },
     {
       "substrates": [
-        "BaI2",
-        "K2SiO3"
+        "CaCO3"
       ],
       "products": [
-        "BaSiO3",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "BaI2 + K2SiO3 -> BaSiO3 + 2 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaCO3"
-      ],
-      "products": [
-        "BaO",
+        "CaO",
         "CO2"
       ],
       "rule": "carbonate_decomposition",
-      "equation": "BaCO3 -> BaO + CO2",
+      "equation": "CaCO3 -> CaO + CO2",
       "coefficients": {
         "substrates": [
           1
@@ -611,14 +982,14 @@
     },
     {
       "substrates": [
-        "BaCO3",
+        "CaCO3",
         "H2CO3"
       ],
       "products": [
-        "Ba(HCO3)2"
+        "Ca(HCO3)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "BaCO3 + H2CO3 -> Ba(HCO3)2",
+      "equation": "CaCO3 + H2CO3 -> Ca(HCO3)2",
       "coefficients": {
         "substrates": [
           1,
@@ -629,28 +1000,6 @@
         ]
       },
       "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "BaSiO3",
-        "H2CO3"
-      ],
-      "products": [
-        "H2SiO3",
-        "BaCO3"
-      ],
-      "rule": "acid_displacement",
-      "equation": "BaSiO3 + H2CO3 -> H2SiO3 + BaCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
     },
     {
       "substrates": [
@@ -675,38 +1024,38 @@
     },
     {
       "substrates": [
-        "Al",
-        "H2CO3"
+        "H2CO3",
+        "Ag2O"
       ],
       "products": [
-        "Al2(CO3)3",
-        "H2"
+        "Ag2CO3",
+        "H2O"
       ],
-      "rule": "metal_with_acid",
-      "equation": "2 Al + 3 H2CO3 -> Al2(CO3)3 + 3 H2",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Ag2O -> Ag2CO3 + H2O",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
           1,
-          3
+          1
         ]
       },
-      "note": "Al2(CO3)3 is insoluble"
+      "note": "Ag2CO3 is insoluble"
     },
     {
       "substrates": [
         "H2CO3",
-        "Ba(OH)2"
+        "Ca(OH)2"
       ],
       "products": [
-        "BaCO3",
+        "CaCO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + Ba(OH)2 -> BaCO3 + 2 H2O",
+      "equation": "H2CO3 + Ca(OH)2 -> CaCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -717,19 +1066,19 @@
           2
         ]
       },
-      "note": "BaCO3 is insoluble"
+      "note": "CaCO3 is insoluble"
     },
     {
       "substrates": [
         "H2CO3",
-        "Ba(OH)2"
+        "Ca(OH)2"
       ],
       "products": [
-        "Ba(HCO3)2",
+        "Ca(HCO3)2",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "2 H2CO3 + Ba(OH)2 -> Ba(HCO3)2 + 2 H2O",
+      "equation": "2 H2CO3 + Ca(OH)2 -> Ca(HCO3)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -766,6 +1115,51 @@
     },
     {
       "substrates": [
+        "H2CO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Na2O -> Na2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "H2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + H2CO3 -> PbCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "PbCO3 is insoluble"
+    },
+    {
+      "substrates": [
         "K2CO3",
         "H2CO3"
       ],
@@ -784,6 +1178,49 @@
         ]
       },
       "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "NaHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaCO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + H2CO3 -> H2SiO3 + CaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
     },
     {
       "substrates": [
@@ -832,6 +1269,51 @@
     },
     {
       "substrates": [
+        "H2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 NaOH -> Na2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaOH"
+      ],
+      "products": [
+        "NaHCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
         "K2SiO3",
         "H2CO3"
       ],
@@ -854,95 +1336,416 @@
     },
     {
       "substrates": [
-        "K2CO3",
-        "AlBr3"
+        "Na2SiO3",
+        "H2CO3"
       ],
       "products": [
-        "Al2(CO3)3",
-        "KBr"
+        "H2SiO3",
+        "Na2CO3"
       ],
-      "rule": "double_displacement",
-      "equation": "3 K2CO3 + 2 AlBr3 -> Al2(CO3)3 + 6 KBr",
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + H2CO3 -> H2SiO3 + Na2CO3",
       "coefficients": {
         "substrates": [
-          3,
-          2
+          1,
+          1
         ],
         "products": [
           1,
-          6
+          1
         ]
-      },
-      "note": "Al2(CO3)3 precipitates"
+      }
     },
     {
       "substrates": [
         "K2CO3",
-        "AlI3"
+        "AgF"
       ],
       "products": [
-        "Al2(CO3)3",
-        "KI"
+        "Ag2CO3",
+        "KF"
       ],
       "rule": "double_displacement",
-      "equation": "3 K2CO3 + 2 AlI3 -> Al2(CO3)3 + 6 KI",
+      "equation": "K2CO3 + 2 AgF -> Ag2CO3 + 2 KF",
       "coefficients": {
         "substrates": [
-          3,
+          1,
           2
         ],
         "products": [
           1,
-          6
+          2
         ]
       },
-      "note": "Al2(CO3)3 precipitates"
+      "note": "Ag2CO3 precipitates"
     },
     {
       "substrates": [
-        "AlBr3",
-        "KOH"
+        "K2CO3",
+        "Ca(ClO)2"
       ],
       "products": [
-        "Al(OH)3",
-        "KBr"
+        "CaCO3",
+        "KClO"
       ],
-      "rule": "salt_with_base",
-      "equation": "AlBr3 + 3 KOH -> Al(OH)3 + 3 KBr",
+      "rule": "double_displacement",
+      "equation": "K2CO3 + Ca(ClO)2 -> CaCO3 + 2 KClO",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "Al(OH)3 precipitates"
+      "note": "CaCO3 precipitates"
     },
     {
       "substrates": [
-        "AlI3",
-        "KOH"
+        "K2CO3",
+        "CaCl2"
       ],
       "products": [
-        "Al(OH)3",
-        "KI"
+        "CaCO3",
+        "KCl"
       ],
-      "rule": "salt_with_base",
-      "equation": "AlI3 + 3 KOH -> Al(OH)3 + 3 KI",
+      "rule": "double_displacement",
+      "equation": "K2CO3 + CaCl2 -> CaCO3 + 2 KCl",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "Al(OH)3 precipitates"
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "Ca(ClO3)2"
+      ],
+      "products": [
+        "CaCO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2CO3 + Ca(ClO3)2 -> CaCO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "AgF"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2CO3 + 2 AgF -> Ag2CO3 + 2 NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "Ca(ClO)2"
+      ],
+      "products": [
+        "CaCO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2CO3 + Ca(ClO)2 -> CaCO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "CaCl2"
+      ],
+      "products": [
+        "CaCO3",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2CO3 + CaCl2 -> CaCO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "Ca(ClO3)2"
+      ],
+      "products": [
+        "CaCO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2CO3 + Ca(ClO3)2 -> CaCO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO)2 + 2 AgF -> CaF2 + 2 AgClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO)2 + K2SiO3 -> CaSiO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO)2 + Na2SiO3 -> CaSiO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "CaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CaCl2 + 2 AgF -> 2 AgCl + CaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl and CaF2 both precipitate"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "K2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "KCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "CaCl2 + K2SiO3 -> CaSiO3 + 2 KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "CaCl2 + Na2SiO3 -> CaSiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO3)2 + 2 AgF -> CaF2 + 2 AgClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO3)2 + K2SiO3 -> CaSiO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO3)2 + Na2SiO3 -> CaSiO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
     },
     {
       "substrates": [
@@ -968,6 +1771,56 @@
     },
     {
       "substrates": [
+        "Cl2",
+        "KOH"
+      ],
+      "products": [
+        "KClO",
+        "KCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 KOH -> KClO + KCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "KOH"
+      ],
+      "products": [
+        "KClO3",
+        "KCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Cl2 + 6 KOH -> KClO3 + 5 KCl + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
         "KOH",
         "SiO2"
       ],
@@ -990,350 +1843,158 @@
     },
     {
       "substrates": [
-        "K2SiO3",
-        "AlBr3"
-      ],
-      "products": [
-        "Al2(SiO3)3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2SiO3 + 2 AlBr3 -> Al2(SiO3)3 + 6 KBr",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(SiO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "K2SiO3",
-        "AlI3"
-      ],
-      "products": [
-        "Al2(SiO3)3",
-        "KI"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2SiO3 + 2 AlI3 -> Al2(SiO3)3 + 6 KI",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(SiO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Al2(CO3)3"
-      ],
-      "products": [
-        "Al2O3",
-        "CO2"
-      ],
-      "rule": "carbonate_decomposition",
-      "equation": "Al2(CO3)3 -> Al2O3 + 3 CO2",
-      "coefficients": {
-        "substrates": [
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "needs heating"
-    },
-    {
-      "substrates": [
-        "Al2(CO3)3",
-        "H2CO3"
-      ],
-      "products": [
-        "Al(HCO3)3"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "Al2(CO3)3 + 3 H2CO3 -> 2 Al(HCO3)3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          2
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3"
-      ],
-      "products": [
-        "Al2(CO3)3",
-        "CO2",
-        "H2O"
-      ],
-      "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 Al(HCO3)3 -> Al2(CO3)3 + 3 CO2 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          2
-        ],
-        "products": [
-          1,
-          3,
-          3
-        ]
-      },
-      "note": "needs only gentle heating"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3",
-        "Ba(OH)2"
-      ],
-      "products": [
-        "Al(OH)3",
-        "Ba(HCO3)2"
-      ],
-      "rule": "salt_with_base",
-      "equation": "2 Al(HCO3)3 + 3 Ba(OH)2 -> 2 Al(OH)3 + 3 Ba(HCO3)2",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          2,
-          3
-        ]
-      },
-      "note": "Al(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3",
-        "Al(OH)3"
-      ],
-      "products": [
-        "Al2(CO3)3",
-        "H2O"
-      ],
-      "rule": "acid_salt_with_base",
-      "equation": "Al(HCO3)3 + Al(OH)3 -> Al2(CO3)3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "more base takes off another proton"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3",
-        "K2CO3"
-      ],
-      "products": [
-        "Al2(CO3)3",
-        "KHCO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Al(HCO3)3 + 3 K2CO3 -> Al2(CO3)3 + 6 KHCO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(CO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3",
-        "KOH"
-      ],
-      "products": [
-        "Al(OH)3",
-        "KHCO3"
-      ],
-      "rule": "salt_with_base",
-      "equation": "Al(HCO3)3 + 3 KOH -> Al(OH)3 + 3 KHCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Al(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "Al(HCO3)3",
-        "K2SiO3"
-      ],
-      "products": [
-        "Al2(SiO3)3",
-        "KHCO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "2 Al(HCO3)3 + 3 K2SiO3 -> Al2(SiO3)3 + 6 KHCO3",
-      "coefficients": {
-        "substrates": [
-          2,
-          3
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(SiO3)3 precipitates"
-    },
-    {
-      "substrates": [
-        "BaO",
+        "NaOH",
         "CO2"
       ],
       "products": [
-        "BaCO3"
+        "Na2CO3",
+        "H2O"
       ],
-      "rule": "oxide_with_oxide",
-      "equation": "BaO + CO2 -> BaCO3",
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + CO2 -> Na2CO3 + H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
+          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "BaO",
-        "H2O"
+        "Cl2",
+        "NaOH"
       ],
       "products": [
-        "Ba(OH)2"
+        "NaClO",
+        "NaCl",
+        "H2O"
       ],
-      "rule": "basic_oxide_hydration",
-      "equation": "BaO + H2O -> Ba(OH)2",
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 NaOH -> NaClO + NaCl + H2O",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
+          1,
+          1,
           1
         ]
-      }
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
     },
     {
       "substrates": [
-        "BaO",
+        "Cl2",
+        "NaOH"
+      ],
+      "products": [
+        "NaClO3",
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Cl2 + 6 NaOH -> NaClO3 + 5 NaCl + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "NaOH",
         "SiO2"
       ],
       "products": [
-        "BaSiO3"
+        "Na2SiO3",
+        "H2O"
       ],
-      "rule": "oxide_with_oxide",
-      "equation": "BaO + SiO2 -> BaSiO3",
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
-          1,
+          2,
           1
         ],
         "products": [
+          1,
           1
         ]
       }
     },
     {
       "substrates": [
-        "H2CO3",
-        "BaO"
+        "K2SiO3",
+        "AgF"
       ],
       "products": [
-        "BaCO3",
-        "H2O"
+        "Ag2SiO3",
+        "KF"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + BaO -> BaCO3 + H2O",
+      "rule": "double_displacement",
+      "equation": "K2SiO3 + 2 AgF -> Ag2SiO3 + 2 KF",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
-          1
+          2
         ]
       },
-      "note": "BaCO3 is insoluble"
+      "note": "Ag2SiO3 precipitates"
     },
     {
       "substrates": [
-        "H2SiO3",
-        "BaO"
+        "Na2SiO3",
+        "AgF"
       ],
       "products": [
-        "BaSiO3",
-        "H2O"
+        "Ag2SiO3",
+        "NaF"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + BaO -> BaSiO3 + H2O",
+      "rule": "double_displacement",
+      "equation": "Na2SiO3 + 2 AgF -> Ag2SiO3 + 2 NaF",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
-          1
+          2
         ]
       },
-      "note": "BaSiO3 is insoluble"
+      "note": "Ag2SiO3 precipitates"
     },
     {
       "substrates": [
-        "Ba(HCO3)2"
+        "AgHCO3"
       ],
       "products": [
-        "BaCO3",
+        "Ag2CO3",
         "CO2",
         "H2O"
       ],
       "rule": "hydrogencarbonate_decomposition",
-      "equation": "Ba(HCO3)2 -> BaCO3 + CO2 + H2O",
+      "equation": "2 AgHCO3 -> Ag2CO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
-          1
+          2
         ],
         "products": [
           1,
@@ -1345,107 +2006,222 @@
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
-        "Ba(OH)2"
+        "Pb",
+        "AgHCO3"
       ],
       "products": [
-        "BaCO3",
-        "H2O"
+        "Pb(HCO3)2",
+        "Ag"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "Ba(HCO3)2 + Ba(OH)2 -> 2 BaCO3 + 2 H2O",
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgHCO3 -> Pb(HCO3)2 + 2 Ag",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
-          2,
+          1,
           2
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "Pb is above Ag in the activity series"
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
+        "AgHCO3",
         "K2CO3"
       ],
       "products": [
-        "BaCO3",
+        "Ag2CO3",
         "KHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HCO3)2 + K2CO3 -> BaCO3 + 2 KHCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaCO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Ba(HCO3)2",
-        "K2SiO3"
-      ],
-      "products": [
-        "BaSiO3",
-        "KHCO3"
-      ],
-      "rule": "double_displacement",
-      "equation": "Ba(HCO3)2 + K2SiO3 -> BaSiO3 + 2 KHCO3",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          2
-        ]
-      },
-      "note": "BaSiO3 precipitates"
-    },
-    {
-      "substrates": [
-        "Al",
-        "H2SiO3"
-      ],
-      "products": [
-        "Al2(SiO3)3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "2 Al + 3 H2SiO3 -> Al2(SiO3)3 + 3 H2",
+      "equation": "2 AgHCO3 + K2CO3 -> Ag2CO3 + 2 KHCO3",
       "coefficients": {
         "substrates": [
           2,
-          3
+          1
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "Al2(SiO3)3 is insoluble"
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "Na2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + Na2CO3 -> Ag2CO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(HCO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + CaCl2 -> 2 AgCl + Ca(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + K2SiO3 -> Ag2SiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "Na2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + Na2SiO3 -> Ag2SiO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "KCl"
+      ],
+      "products": [
+        "AgCl",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHCO3 + KCl -> AgCl + KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "NaCl"
+      ],
+      "products": [
+        "AgCl",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHCO3 + NaCl -> AgCl + NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
     },
     {
       "substrates": [
         "H2SiO3",
-        "Ba(OH)2"
+        "Ag2O"
       ],
       "products": [
-        "BaSiO3",
+        "Ag2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Ag2O -> Ag2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2SiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaSiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "equation": "H2SiO3 + Ca(OH)2 -> CaSiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1456,7 +2232,7 @@
           2
         ]
       },
-      "note": "BaSiO3 is insoluble"
+      "note": "CaSiO3 is insoluble"
     },
     {
       "substrates": [
@@ -1483,25 +2259,47 @@
     {
       "substrates": [
         "H2SiO3",
-        "Al(OH)3"
+        "Na2O"
       ],
       "products": [
-        "Al2(SiO3)3",
+        "Na2SiO3",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "3 H2SiO3 + 2 Al(OH)3 -> Al2(SiO3)3 + 6 H2O",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
-          3,
-          2
+          1,
+          1
         ],
         "products": [
           1,
-          6
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "H2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + H2SiO3 -> PbSiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
         ]
       },
-      "note": "Al2(SiO3)3 is insoluble"
+      "note": "PbSiO3 is insoluble"
     },
     {
       "substrates": [
@@ -1527,18 +2325,481 @@
     },
     {
       "substrates": [
-        "Al",
+        "H2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "CaO"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + CaO -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "CaO",
+        "CO2"
+      ],
+      "products": [
+        "CaCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + CO2 -> CaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaO",
+        "H2O"
+      ],
+      "products": [
+        "Ca(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "CaO + H2O -> Ca(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaO",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + SiO2 -> CaSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "CaO"
+      ],
+      "products": [
+        "CaCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + CaO -> CaCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2"
+      ],
+      "products": [
+        "CaCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Ca(HCO3)2 -> CaCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + 2 AgF -> CaF2 + 2 AgHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(HCO3)2 + Ca(OH)2 -> 2 CaCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "K2CO3"
+      ],
+      "products": [
+        "CaCO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + K2CO3 -> CaCO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Na2CO3"
+      ],
+      "products": [
+        "CaCO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + Na2CO3 -> CaCO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + K2SiO3 -> CaSiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + Na2SiO3 -> CaSiO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "KF"
+      ],
+      "products": [
+        "CaF2",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + 2 KF -> CaF2 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "NaF"
+      ],
+      "products": [
+        "CaF2",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(HCO3)2 + 2 NaF -> CaF2 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "PbCO3"
+      ],
+      "products": [
+        "PbO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "PbCO3 -> PbO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "PbCO3",
+        "H2CO3"
+      ],
+      "products": [
+        "Pb(HCO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "PbCO3 + H2CO3 -> Pb(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2O",
         "H2"
       ],
       "products": [
-        "AlH3"
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "H2",
+        "Cl2"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Cl2 -> 2 HCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "H2"
+      ],
+      "products": [
+        "PbH2"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 Al + 3 H2 -> 2 AlH3",
+      "equation": "Pb + H2 -> PbH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "PbO",
+        "H2"
+      ],
+      "products": [
+        "Pb",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "PbO + H2 -> Pb + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
       "coefficients": {
         "substrates": [
           2,
-          3
+          1
         ],
         "products": [
           2
@@ -1593,130 +2854,2588 @@
     },
     {
       "substrates": [
-        "Al2(SiO3)3",
+        "NaHCO3"
+      ],
+      "products": [
+        "Na2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 NaHCO3 -> Na2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHCO3 + NaOH -> Na2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Ca(ClO)2"
+      ],
+      "products": [
+        "CaF2",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 KF + Ca(ClO)2 -> CaF2 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "KF",
+        "CaCl2"
+      ],
+      "products": [
+        "CaF2",
+        "KCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 KF + CaCl2 -> CaF2 + 2 KCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Ca(ClO3)2"
+      ],
+      "products": [
+        "CaF2",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 KF + Ca(ClO3)2 -> CaF2 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "KCl + AgF -> AgCl + KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "AgClO"
+      ],
+      "products": [
+        "AgCl",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "KCl + AgClO -> AgCl + KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "AgClO3"
+      ],
+      "products": [
+        "AgCl",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "KCl + AgClO3 -> AgCl + KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Ca(ClO)2"
+      ],
+      "products": [
+        "CaF2",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 NaF + Ca(ClO)2 -> CaF2 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "CaCl2"
+      ],
+      "products": [
+        "CaF2",
+        "NaCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 NaF + CaCl2 -> CaF2 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Ca(ClO3)2"
+      ],
+      "products": [
+        "CaF2",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 NaF + Ca(ClO3)2 -> CaF2 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "NaF"
+      ],
+      "rule": "double_displacement",
+      "equation": "NaCl + AgF -> AgCl + NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "AgClO"
+      ],
+      "products": [
+        "AgCl",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "NaCl + AgClO -> AgCl + NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "AgClO3"
+      ],
+      "products": [
+        "AgCl",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "NaCl + AgClO3 -> AgCl + NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "AgClO"
+      ],
+      "products": [
+        "Pb(ClO)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgClO -> Pb(ClO)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "K2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + K2CO3 -> Ag2CO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Na2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + Na2CO3 -> Ag2CO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + CaCl2 -> 2 AgCl + Ca(ClO)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "K2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + K2SiO3 -> Ag2SiO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Na2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + Na2SiO3 -> Ag2SiO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "AgClO3"
+      ],
+      "products": [
+        "Pb(ClO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgClO3 -> Pb(ClO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "K2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + K2CO3 -> Ag2CO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Na2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + Na2CO3 -> Ag2CO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(ClO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + CaCl2 -> 2 AgCl + Ca(ClO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + K2SiO3 -> Ag2SiO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Na2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + Na2SiO3 -> Ag2SiO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2"
+      ],
+      "products": [
+        "PbCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Pb(HCO3)2 -> PbCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "K2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(HCO3)2 + K2CO3 -> PbCO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "Na2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(HCO3)2 + Na2CO3 -> PbCO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "KOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "KHCO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(HCO3)2 + 2 KOH -> Pb(OH)2 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "NaOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "NaHCO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(HCO3)2 + 2 NaOH -> Pb(OH)2 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(HCO3)2 + K2SiO3 -> PbSiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "NaHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(HCO3)2 + Na2SiO3 -> PbSiO3 + 2 NaHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "PbCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Pb(HCO3)2 + 2 HCl -> 2 H2CO3 + PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "PbSiO3",
         "H2CO3"
       ],
       "products": [
         "H2SiO3",
-        "Al2(CO3)3"
+        "PbCO3"
       ],
       "rule": "acid_displacement",
-      "equation": "Al2(SiO3)3 + 3 H2CO3 -> 3 H2SiO3 + Al2(CO3)3",
+      "equation": "PbSiO3 + H2CO3 -> H2SiO3 + PbCO3",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
-          3,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "PbSiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "PbCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "PbSiO3 + 2 HCl -> H2SiO3 + PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ag2O"
+      ],
+      "products": [
+        "AgCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Ag2O -> 2 AgCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl is insoluble"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgF + HCl -> HF + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Ca(OH)2 -> CaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "K2O"
+      ],
+      "products": [
+        "KCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + K2O -> 2 KCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Na2O"
+      ],
+      "products": [
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Na2O -> 2 NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "HCl"
+      ],
+      "products": [
+        "PbCl2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + 2 HCl -> PbCl2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2CO3 + 2 HCl -> H2CO3 + 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + 2 HCl -> H2SiO3 + 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "PbF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "PbCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "PbF2 + 2 HCl -> 2 HF + PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaCO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaCO3 + 2 HCl -> H2CO3 + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "KCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2CO3 + 2 HCl -> H2CO3 + 2 KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2CO3 + 2 HCl -> H2CO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ca(ClO)2 + 2 HCl -> 2 HClO + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + 2 HCl -> H2SiO3 + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "KOH"
+      ],
+      "products": [
+        "KCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + KOH -> KCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NaOH"
+      ],
+      "products": [
+        "NaCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + NaOH -> NaCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "KCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + 2 HCl -> H2SiO3 + 2 KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "HCl"
+      ],
+      "products": [
+        "H2SiO3",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + 2 HCl -> H2SiO3 + 2 NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgHCO3 + HCl -> H2CO3 + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "CaO"
+      ],
+      "products": [
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + CaO -> CaCl2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ca(HCO3)2 + 2 HCl -> 2 H2CO3 + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "PbCO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "PbCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "PbCO3 + 2 HCl -> H2CO3 + PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "KCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KHCO3 + HCl -> H2CO3 + KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "HCl"
+      ],
+      "products": [
+        "H2CO3",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NaHCO3 + HCl -> H2CO3 + NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "KF",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "KCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KF + HCl -> HF + KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "KCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KClO + HCl -> HClO + KCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaF",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NaF + HCl -> HF + NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "NaCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NaClO + HCl -> HClO + NaCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaF2 + 2 HCl -> 2 HF + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgClO + HCl -> HClO + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "PbCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Pb(ClO)2 + 2 HCl -> 2 HClO + PbCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "K2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO)2 + K2CO3 -> PbCO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "Na2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO)2 + Na2CO3 -> PbCO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "KOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "KClO"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(ClO)2 + 2 KOH -> Pb(OH)2 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "NaOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "NaClO"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(ClO)2 + 2 NaOH -> Pb(OH)2 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "KClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO)2 + K2SiO3 -> PbSiO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "NaClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO)2 + Na2SiO3 -> PbSiO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "K2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO3)2 + K2CO3 -> PbCO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "Na2CO3"
+      ],
+      "products": [
+        "PbCO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO3)2 + Na2CO3 -> PbCO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "KOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "KClO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(ClO3)2 + 2 KOH -> Pb(OH)2 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "NaOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "NaClO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(ClO3)2 + 2 NaOH -> Pb(OH)2 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "KClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO3)2 + K2SiO3 -> PbSiO3 + 2 KClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(ClO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "PbSiO3",
+        "NaClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(ClO3)2 + Na2SiO3 -> PbSiO3 + 2 NaClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Pb(OH)2 -> PbCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb(HCO3)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2CO3 + Pb(OH)2 -> Pb(HCO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Pb(OH)2 -> PbSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Pb(HCO3)2",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Pb(HCO3)2 + Pb(OH)2 -> 2 PbCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Pb(OH)2 -> PbCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Pb(OH)2 -> PbF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Pb(OH)2 -> Pb(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ag2O"
+      ],
+      "products": [
+        "AgF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Ag2O -> 2 AgF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ca(OH)2 -> CaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2O"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + K2O -> 2 KF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Na2O"
+      ],
+      "products": [
+        "NaF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Na2O -> 2 NaF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "HF"
+      ],
+      "products": [
+        "PbF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + 2 HF -> PbF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "HF"
+      ],
+      "products": [
+        "H2SiO3",
+        "AgF"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + 2 HF -> H2SiO3 + 2 AgF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "HF"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaF2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + 2 HF -> H2SiO3 + CaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "KOH"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + KOH -> KF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "NaOH"
+      ],
+      "products": [
+        "NaF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + NaOH -> NaF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "HF"
+      ],
+      "products": [
+        "H2SiO3",
+        "KF"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + 2 HF -> H2SiO3 + 2 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "HF"
+      ],
+      "products": [
+        "H2SiO3",
+        "NaF"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + 2 HF -> H2SiO3 + 2 NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "CaO"
+      ],
+      "products": [
+        "CaF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + CaO -> CaF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "PbSiO3",
+        "HF"
+      ],
+      "products": [
+        "H2SiO3",
+        "PbF2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "PbSiO3 + 2 HF -> H2SiO3 + PbF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Ag2O"
+      ],
+      "products": [
+        "AgClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + Ag2O -> 2 AgClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Ca(OH)2 -> Ca(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "K2O"
+      ],
+      "products": [
+        "KClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + K2O -> 2 KClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Na2O"
+      ],
+      "products": [
+        "NaClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + Na2O -> 2 NaClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "HClO"
+      ],
+      "products": [
+        "Pb(ClO)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + 2 HClO -> Pb(ClO)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "HClO"
+      ],
+      "products": [
+        "H2SiO3",
+        "AgClO"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + 2 HClO -> H2SiO3 + 2 AgClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "HClO"
+      ],
+      "products": [
+        "H2SiO3",
+        "Ca(ClO)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + 2 HClO -> H2SiO3 + Ca(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "KOH"
+      ],
+      "products": [
+        "KClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + KOH -> KClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NaOH"
+      ],
+      "products": [
+        "NaClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + NaOH -> NaClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "HClO"
+      ],
+      "products": [
+        "H2SiO3",
+        "KClO"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + 2 HClO -> H2SiO3 + 2 KClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "HClO"
+      ],
+      "products": [
+        "H2SiO3",
+        "NaClO"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + 2 HClO -> H2SiO3 + 2 NaClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "CaO"
+      ],
+      "products": [
+        "Ca(ClO)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + CaO -> Ca(ClO)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "PbSiO3",
+        "HClO"
+      ],
+      "products": [
+        "H2SiO3",
+        "Pb(ClO)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "PbSiO3 + 2 HClO -> H2SiO3 + Pb(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
           1
         ]
       }
     }
   ],
   "answers": {
-    "double_displacement": {
-      "substrates": [
-        "K2CO3",
-        "AlBr3"
-      ],
-      "products": [
-        "Al2(CO3)3",
-        "KBr"
-      ],
-      "rule": "double_displacement",
-      "equation": "3 K2CO3 + 2 AlBr3 -> Al2(CO3)3 + 6 KBr",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(CO3)3 precipitates"
-    },
     "metal_with_acid": {
       "substrates": [
-        "Al",
+        "Pb",
         "H2CO3"
       ],
       "products": [
-        "Al2(CO3)3",
+        "PbCO3",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 Al + 3 H2CO3 -> Al2(CO3)3 + 3 H2",
+      "equation": "Pb + H2CO3 -> PbCO3 + H2",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
           1,
-          3
+          1
         ]
       },
-      "note": "Al2(CO3)3 is insoluble"
-    },
-    "neutralisation": {
-      "substrates": [
-        "H2CO3",
-        "Al(OH)3"
-      ],
-      "products": [
-        "Al2(CO3)3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 H2CO3 + 2 Al(OH)3 -> Al2(CO3)3 + 6 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          2
-        ],
-        "products": [
-          1,
-          6
-        ]
-      },
-      "note": "Al2(CO3)3 is insoluble"
+      "note": "PbCO3 is insoluble"
     },
     "acid_displacement": {
       "substrates": [
-        "Al2(SiO3)3",
+        "PbSiO3",
         "H2CO3"
       ],
       "products": [
         "H2SiO3",
-        "Al2(CO3)3"
+        "PbCO3"
       ],
       "rule": "acid_displacement",
-      "equation": "Al2(SiO3)3 + 3 H2CO3 -> 3 H2SiO3 + Al2(CO3)3",
+      "equation": "PbSiO3 + H2CO3 -> H2SiO3 + PbCO3",
       "coefficients": {
         "substrates": [
           1,
-          3
+          1
         ],
         "products": [
-          3,
+          1,
           1
         ]
       }
     },
-    "acid_salt_with_base": {
+    "double_displacement": {
       "substrates": [
-        "Al(HCO3)3",
-        "Al(OH)3"
+        "Pb(ClO)2",
+        "K2CO3"
       ],
       "products": [
-        "Al2(CO3)3",
-        "H2O"
+        "PbCO3",
+        "KClO"
       ],
-      "rule": "acid_salt_with_base",
-      "equation": "Al(HCO3)3 + Al(OH)3 -> Al2(CO3)3 + 3 H2O",
+      "rule": "double_displacement",
+      "equation": "Pb(ClO)2 + K2CO3 -> PbCO3 + 2 KClO",
       "coefficients": {
         "substrates": [
           1,
@@ -1724,385 +5443,1278 @@
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "more base takes off another proton"
+      "note": "PbCO3 precipitates"
     },
     "hydrogencarbonate_decomposition": {
       "substrates": [
-        "Al(HCO3)3"
+        "Pb(HCO3)2"
       ],
       "products": [
-        "Al2(CO3)3",
+        "PbCO3",
         "CO2",
         "H2O"
       ],
       "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 Al(HCO3)3 -> Al2(CO3)3 + 3 CO2 + 3 H2O",
+      "equation": "Pb(HCO3)2 -> PbCO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
-          2
+          1
         ],
         "products": [
           1,
-          3,
-          3
+          1,
+          1
         ]
       },
       "note": "needs only gentle heating"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Pb(HCO3)2",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Pb(HCO3)2 + Pb(OH)2 -> 2 PbCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2CO3",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Pb(OH)2 -> PbCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbCO3 is insoluble"
     }
   },
   "misses": [
     {
       "substrates": [
-        "Al",
-        "Al(HCO3)3"
+        "Ag",
+        "AgClO"
       ],
-      "note": "Al sits below Al in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "AlBr3"
+        "Ag",
+        "AgClO3"
       ],
-      "note": "Al sits below Al in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "AlI3"
+        "Ag",
+        "AgF"
       ],
-      "note": "Al sits below Al in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "Ba(HCO3)2"
+        "Ag",
+        "AgHCO3"
       ],
-      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "BaBr2"
+        "Ag",
+        "Ca(ClO)2"
       ],
-      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "BaI2"
+        "Ag",
+        "Ca(ClO3)2"
       ],
-      "note": "Al sits below Ba in the activity series, so it cannot push it out"
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
+        "Ag",
+        "Ca(HCO3)2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CaCl2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2CO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2SiO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HCl"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HClO"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HF"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
         "K2CO3"
       ],
-      "note": "Al sits below K in the activity series, so it cannot push it out"
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
+        "Ag",
         "K2SiO3"
       ],
-      "note": "Al sits below K in the activity series, so it cannot push it out"
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "KBr"
+        "Ag",
+        "KCl"
       ],
-      "note": "Al sits below K in the activity series, so it cannot push it out"
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
+        "Ag",
+        "KClO"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KClO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KF"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
         "KHCO3"
       ],
-      "note": "Al sits below K in the activity series, so it cannot push it out"
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al",
-        "KI"
+        "Ag",
+        "Na2CO3"
       ],
-      "note": "Al sits below K in the activity series, so it cannot push it out"
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al(HCO3)3",
-        "BaBr2"
+        "Ag",
+        "Na2SiO3"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al(HCO3)3",
-        "BaI2"
+        "Ag",
+        "NaCl"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
     },
     {
       "substrates": [
-        "Al(HCO3)3",
+        "Ag",
+        "NaClO"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaClO3"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaF"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NaHCO3"
+      ],
+      "note": "Ag sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Pb(ClO)2"
+      ],
+      "note": "Ag sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Pb(ClO3)2"
+      ],
+      "note": "Ag sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Pb(HCO3)2"
+      ],
+      "note": "Ag sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Al(HCO3)3",
-        "KBr"
+        "Ag2CO3",
+        "HClO"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Al(HCO3)3",
-        "KI"
+        "Ag2CO3",
+        "HF"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlBr3",
-        "Ba(HCO3)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AlBr3",
-        "BaI2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "AlBr3",
+        "AgCl",
         "H2CO3"
       ],
-      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlBr3",
+        "AgCl",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlBr3",
+        "AgCl",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ca(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "KClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
         "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlBr3",
-        "KI"
+        "AgClO",
+        "NaClO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlI3",
-        "Ba(HCO3)2"
+        "AgClO",
+        "NaF"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlI3",
-        "BaBr2"
+        "AgClO",
+        "NaHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlI3",
+        "AgClO",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ca(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
         "H2CO3"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlI3",
+        "AgClO3",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlI3",
-        "KBr"
+        "AgClO3",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "KClO"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlI3",
+        "AgClO3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
         "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
+        "AgClO3",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Cl2"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "KClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "KClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Pb(ClO)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
-        "KBr"
+        "AgHCO3",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "KClO"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
-        "KI"
+        "AgHCO3",
+        "KClO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HCO3)2",
-        "KOH"
+        "AgHCO3",
+        "KF"
       ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "K2CO3"
+        "AgHCO3",
+        "NaClO"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "K2SiO3"
+        "AgHCO3",
+        "NaClO3"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "KBr"
+        "AgHCO3",
+        "NaF"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "KHCO3"
+        "AgHCO3",
+        "Pb(ClO)2"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(OH)2",
-        "KI"
+        "AgHCO3",
+        "Pb(ClO3)2"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaBr2",
+        "Ca(ClO)2",
         "H2CO3"
       ],
-      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HClO, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaBr2",
+        "Ca(ClO)2",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HClO, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaBr2",
+        "Ca(ClO)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "KCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "KClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
         "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaBr2",
-        "KI"
+        "Ca(ClO)2",
+        "KOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "NaCl"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaBr2",
-        "KOH"
+        "Ca(ClO)2",
+        "NaClO3"
       ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaCO3",
+        "Ca(ClO)2",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "NaOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Pb"
+      ],
+      "note": "Pb sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "KCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "KClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "KOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "NaOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Pb"
+      ],
+      "note": "Pb sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaI2",
-        "H2CO3"
+        "Ca(HCO3)2",
+        "HClO"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaI2",
-        "H2SiO3"
+        "Ca(HCO3)2",
+        "HF"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaI2",
-        "KBr"
+        "Ca(HCO3)2",
+        "KCl"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaI2",
+        "Ca(HCO3)2",
+        "KClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "KClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "KOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "NaOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Pb"
+      ],
+      "note": "Pb sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(HCO3)2",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCO3",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "KClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "KClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
         "KHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaI2",
+        "CaCl2",
         "KOH"
       ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "NaOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Pb"
+      ],
+      "note": "Pb sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Pb(ClO)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "KF"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "NaF"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
     },
     {
       "substrates": [
         "H2CO3",
-        "KBr"
+        "KCl"
       ],
-      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HCl, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2CO3",
-        "KI"
+        "KClO"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KClO3"
+      ],
+      "note": "H2CO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KF"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaCl"
+      ],
+      "note": "H2CO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaClO"
+      ],
+      "note": "H2CO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaClO3"
+      ],
+      "note": "H2CO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaF"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Pb(ClO)2"
+      ],
+      "note": "H2CO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Pb(ClO3)2"
+      ],
+      "note": "H2CO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "PbCl2"
+      ],
+      "note": "H2CO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "PbF2"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -2114,9 +6726,30 @@
     {
       "substrates": [
         "H2SiO3",
-        "KBr"
+        "KCl"
       ],
-      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KClO"
+      ],
+      "note": "H2SiO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KClO3"
+      ],
+      "note": "H2SiO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KF"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
@@ -2128,9 +6761,975 @@
     {
       "substrates": [
         "H2SiO3",
-        "KI"
+        "Na2CO3"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaCl"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaClO"
+      ],
+      "note": "H2SiO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaClO3"
+      ],
+      "note": "H2SiO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaF"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Pb(ClO)2"
+      ],
+      "note": "H2SiO3 is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Pb(ClO3)2"
+      ],
+      "note": "H2SiO3 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Pb(HCO3)2"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "PbCl2"
+      ],
+      "note": "H2SiO3 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "PbF2"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "KClO3"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "NaClO3"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Pb(ClO3)2"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "K2CO3"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "KCl"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "KClO3"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "KF"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "KHCO3"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Na2CO3"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NaCl"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NaClO3"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NaF"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "NaHCO3"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Pb(ClO3)2"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Pb(HCO3)2"
+      ],
+      "note": "HClO is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "PbCl2"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "PbF2"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2CO3"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KCl"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KClO"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KClO3"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KHCO3"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Na2CO3"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NaCl"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NaClO"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NaClO3"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NaHCO3"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(ClO)2"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(ClO3)2"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(HCO3)2"
+      ],
+      "note": "HF is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "PbCl2"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Pb(ClO)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KCl",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KClO3",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Pb(ClO)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KF",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "Na2CO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "Na2SiO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "NaCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "NaClO"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "NaClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "NaOH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "Pb"
+      ],
+      "note": "Pb sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "Na2CO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "Na2SiO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaCl"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaClO"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaClO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaF"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaHCO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Na2CO3",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Pb(ClO)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaCl",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbCl2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaClO",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaClO",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaClO",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaClO3",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaClO3",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaClO3",
+        "Pb(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Pb(ClO)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Pb(ClO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaF",
+        "Pb(HCO3)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "Pb"
+      ],
+      "note": "Pb sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "Pb(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "NaHCO3",
+        "Pb(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "Pb(ClO)2"
+      ],
+      "note": "Pb sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "Pb(ClO3)2"
+      ],
+      "note": "Pb sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "Pb(HCO3)2"
+      ],
+      "note": "Pb sits below Pb in the activity series, so it cannot push it out"
     }
   ]
 }

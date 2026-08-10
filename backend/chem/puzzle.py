@@ -37,7 +37,7 @@ from chem.balance import balance
 from chem.difficulty import PLAYABLE_RULES, Grade, assess_all
 from chem.export import VERSION
 from chem.network import cheapest_moves
-from chem.generate import DEFAULT_CUT, WANT_WAYS, Puzzle, generate
+from chem.generate import DEFAULT_CUT, MIN_WAYS, WANT_WAYS, Puzzle, generate
 from chem.reaction import Reaction
 from chem.rules.catalogue import rule_slug
 from chem.rules.commonness import is_common
@@ -158,10 +158,18 @@ def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
     month of puzzles without changing yesterday's.
     """
     wanted = WEEK[day.weekday()]
-    # A hard target has few ways -- that is what makes it hard -- so demanding
-    # five of them excludes every hard compound and Friday never generates.
-    # The ask scales instead: five where five exist, three on a tight day.
-    floor = PLAYABLE_RULES if wanted is Grade.HARD else WANT_WAYS
+    # The pool floor is a cheap pre-filter over the grading pass, which counts
+    # ways across the whole network under the commonness gate. It is not the
+    # number that ships -- `_ways` below recounts against the dealt closure,
+    # which is usually larger -- so it is set as low as each grade can bear:
+    #
+    #   easy    68 targets, and every one of them offers five
+    #   medium  100 at four ways, 32 at five -- the floor is the whole point
+    #   hard    59 at three, and *none* at four, which is what hard means here
+    #
+    # Hard therefore has to admit three-way targets or Friday never generates;
+    # its hands still have to earn four below, from the closure.
+    floor = PLAYABLE_RULES if wanted is Grade.HARD else MIN_WAYS
     pool = sorted(
         target
         for target, found in _graded().items()
@@ -173,26 +181,26 @@ def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
     seed = day.toordinal()
     fallback: Puzzle | None = None
 
-    # Keep looking until a hand offers the full five, then settle. The grading
-    # pass counts ways across the whole network under the commonness gate; what
-    # a player meets is the closure of the dealt palette, which is usually
-    # larger. So a target graded at three ways often deals a hand worth five,
-    # and taking the first playable candidate was leaving those on the table --
-    # most Fridays asked for three when a few more draws found five.
+    # Keep looking until a hand offers the full five, then settle; below that,
+    # remember the first that clears the minimum and keep looking anyway. So a
+    # day asks five wherever five exist and four where they do not, and never
+    # deals a hand worth three -- the old fallback took the first playable
+    # candidate at any depth, which is how a day could ship asking for three.
     #
     # Bounded rather than exhaustive, for the same reason `_cover` is greedy:
     # a generator that might scan a thousand targets on a bad day is one nobody
-    # can predict the runtime of. Past the bound, the first playable hand wins
-    # and the day asks for what it has, which is the brief's rule -- a hard
-    # target has few ways, and that is what makes it hard.
+    # can predict the runtime of. Past the bound the remembered hand wins, and
+    # if nothing ever cleared the minimum the day has no puzzle -- better a gap
+    # the calendar can be asked about than a day that is not worth playing.
     for offset in range(min(len(pool), _CANDIDATES)):
         target = pool[(seed + offset * 7919) % len(pool)]  # a prime, to spread
         puzzle = generate(target, cut=cut, seed=seed)
-        if puzzle is None or puzzle.ways < floor:
+        if puzzle is None:
             continue
-        if len(_ways(target, network.build(puzzle.palette))) >= WANT_WAYS:
+        ways = len(_ways(target, network.build(puzzle.palette)))
+        if ways >= WANT_WAYS:
             return puzzle
-        if fallback is None:
+        if ways >= MIN_WAYS and fallback is None:
             fallback = puzzle
     return fallback
 

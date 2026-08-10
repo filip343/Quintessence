@@ -153,7 +153,16 @@ the variety in a 1183-species network.
 Difficulty rotates over the week the way a crossword does — gentle Monday, hardest
 Friday. Hard targets have *few* ways, that being what makes them hard, so demanding
 five would exclude every hard compound and Friday would never generate: the ask
-scales instead, five where five exist and three on a tight day.
+scales instead, five where five exist and **four** at the floor. Never three —
+a hand worth three is not a puzzle, and the day is better left with a gap.
+
+The floor is the variety dial, and it is worth more than the number suggests.
+Only 32 of the 100 playable medium targets offer a fifth way *on the grading
+pass*, so a floor of five threw two thirds of the medium catalogue away and left
+a weekly draw picking from 32 compounds. The other 68 still deal hands worth
+five, because the grading pass counts under the commonness gate across the whole
+network while a player meets the closure of the dealt palette, which is larger.
+So the floor is what admits them and the forward count is still what ships.
 
 A day is seeded off its date ordinal rather than shuffled, so a puzzle can be
 regenerated after the fact — to reproduce a bug report, or to rebuild a month —

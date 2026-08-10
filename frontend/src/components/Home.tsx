@@ -517,6 +517,9 @@ function Stat({
 const STEPS: [string, string][] = [
   ["Mix", "Put two things from the shelf together and see what comes out."],
   ["Keep", "Whatever they make joins the shelf. Nothing is ever used up."],
+  // Five is the usual ask and not a guaranteed one — a day with only four ways
+  // asks for four. This is the front door, where five is both the common case
+  // and the name of the game; the board reads the day's own number and says so.
   ["Win", "Five different kinds of reaction that make the target take the day."],
 ];
 

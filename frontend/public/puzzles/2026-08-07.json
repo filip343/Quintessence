@@ -1,127 +1,105 @@
 {
   "version": 3,
-  "target": "FeI2",
-  "name": "iron(II) iodide",
+  "target": "CaI2",
+  "name": "calcium iodide",
   "grade": "hard",
   "want": 5,
-  "ways": 5,
+  "ways": 6,
   "cut": 1,
   "palette": [
-    "BaI2",
-    "CuI2",
-    "Fe",
-    "FeO",
+    "Ca",
+    "Ca(OH)2",
+    "FeF3",
     "H2O",
     "I2",
-    "SO3"
+    "MgI2",
+    "NH3"
   ],
   "species": {
-    "Ba(HSO4)2": {
-      "name": "barium hydrogensulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "HSO4": -1
-      }
-    },
-    "BaI2": {
-      "name": "barium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "I": -1
-      }
-    },
-    "BaSO4": {
-      "name": "barium sulfate",
-      "class": "salt",
-      "state": "s",
-      "common": true,
-      "ions": {
-        "Ba": 2,
-        "SO4": -2
-      }
-    },
-    "Cu": {
-      "name": "copper",
+    "Ca": {
+      "name": "calcium",
       "class": "element",
       "state": "s",
       "common": true
     },
-    "CuH2": {
-      "name": "copper(II) hydride",
+    "Ca(IO3)2": {
+      "name": "calcium iodate",
+      "class": "salt",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Ca": 2,
+        "IO3": -1
+      }
+    },
+    "Ca(OH)2": {
+      "name": "calcium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "OH": -1
+      }
+    },
+    "CaF2": {
+      "name": "calcium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "F": -1
+      }
+    },
+    "CaH2": {
+      "name": "calcium hydride",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "Cu": 2,
+        "Ca": 2,
         "H": -1
       }
     },
-    "CuI2": {
-      "name": "copper(II) iodide",
+    "CaI2": {
+      "name": "calcium iodide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Cu": 2,
+        "Ca": 2,
         "I": -1
       }
     },
-    "Fe": {
-      "name": "iron",
-      "class": "element",
+    "Fe(OH)3": {
+      "name": "iron(III) hydroxide",
+      "class": "base",
       "state": "s",
-      "common": true
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "OH": -1
+      }
     },
-    "Fe(HSO4)2": {
-      "name": "iron(II) hydrogensulfate",
+    "FeF3": {
+      "name": "iron(III) fluoride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Fe": 2,
-        "HSO4": -1
+        "Fe": 3,
+        "F": -1
       }
     },
-    "FeH2": {
-      "name": "iron(II) hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 2,
-        "H": -1
-      }
-    },
-    "FeI2": {
-      "name": "iron(II) iodide",
+    "FeI3": {
+      "name": "iron(III) iodide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Fe": 2,
+        "Fe": 3,
         "I": -1
-      }
-    },
-    "FeO": {
-      "name": "iron(II) oxide",
-      "class": "basic oxide",
-      "state": "s",
-      "common": true
-    },
-    "FeSO4": {
-      "name": "iron(II) sulfate",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Fe": 2,
-        "SO4": -2
       }
     },
     "H2": {
@@ -136,14 +114,14 @@
       "state": "l",
       "common": true
     },
-    "H2SO4": {
-      "name": "sulfuric acid",
+    "HF": {
+      "name": "hydrofluoric acid",
       "class": "acid",
       "state": "aq",
-      "common": true,
+      "common": false,
       "ions": {
         "H": 1,
-        "SO4": -2
+        "F": -1
       }
     },
     "HI": {
@@ -162,88 +140,106 @@
       "state": "s",
       "common": true
     },
-    "SO3": {
-      "name": "sulfur trioxide",
-      "class": "acidic oxide",
-      "state": "l",
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "MgF2": {
+      "name": "magnesium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "F": -1
+      }
+    },
+    "MgI2": {
+      "name": "magnesium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "I": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
       "common": true
+    },
+    "NH4F": {
+      "name": "ammonium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "F": -1
+      }
+    },
+    "NH4I": {
+      "name": "ammonium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "I": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
     }
   },
   "reactions": [
     {
       "substrates": [
-        "Fe",
-        "CuI2"
-      ],
-      "products": [
-        "FeI2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + CuI2 -> FeI2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Fe is above Cu in the activity series"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "I2"
-      ],
-      "products": [
-        "FeI2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Fe + I2 -> FeI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Fe goes to +2 with I"
-    },
-    {
-      "substrates": [
-        "FeO",
-        "SO3"
-      ],
-      "products": [
-        "FeSO4"
-      ],
-      "rule": "oxide_with_oxide",
-      "equation": "FeO + SO3 -> FeSO4",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "SO3",
+        "Ca",
         "H2O"
       ],
       "products": [
-        "H2SO4"
+        "Ca(OH)2",
+        "H2"
       ],
-      "rule": "anhydride_hydration",
-      "equation": "SO3 + H2O -> H2SO4",
+      "rule": "metal_with_water",
+      "equation": "Ca + 2 H2O -> Ca(OH)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca",
+        "I2"
+      ],
+      "products": [
+        "CaI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ca + I2 -> CaI2",
       "coefficients": {
         "substrates": [
           1,
@@ -256,123 +252,62 @@
     },
     {
       "substrates": [
-        "Cu",
-        "I2"
+        "I2",
+        "Ca(OH)2"
       ],
       "products": [
-        "CuI2"
+        "Ca(IO3)2",
+        "CaI2",
+        "H2O"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Cu + I2 -> CuI2",
+      "rule": "halogen_disproportionation",
+      "equation": "6 I2 + 6 Ca(OH)2 -> Ca(IO3)2 + 5 CaI2 + 6 H2O",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          6,
+          6
         ],
         "products": [
-          1
+          1,
+          5,
+          6
         ]
       },
-      "note": "Cu goes to +2 with I"
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
     },
     {
       "substrates": [
-        "FeSO4",
-        "BaI2"
+        "FeF3",
+        "MgI2"
       ],
       "products": [
-        "BaSO4",
-        "FeI2"
+        "MgF2",
+        "FeI3"
       ],
       "rule": "double_displacement",
-      "equation": "FeSO4 + BaI2 -> BaSO4 + FeI2",
+      "equation": "2 FeF3 + 3 MgI2 -> 3 MgF2 + 2 FeI3",
       "coefficients": {
         "substrates": [
-          1,
-          1
+          2,
+          3
         ],
         "products": [
-          1,
-          1
+          3,
+          2
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "MgF2 precipitates"
     },
     {
       "substrates": [
-        "FeSO4",
-        "H2SO4"
-      ],
-      "products": [
-        "Fe(HSO4)2"
-      ],
-      "rule": "salt_with_parent_acid",
-      "equation": "FeSO4 + H2SO4 -> Fe(HSO4)2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "the acid protonates its own salt"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "H2SO4"
-      ],
-      "products": [
-        "FeSO4",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2SO4 -> FeSO4 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "H2SO4",
-        "FeO"
-      ],
-      "products": [
-        "FeSO4",
+        "NH3",
         "H2O"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SO4 + FeO -> FeSO4 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "BaSO4",
-        "H2SO4"
-      ],
       "products": [
-        "Ba(HSO4)2"
+        "NH4OH"
       ],
-      "rule": "salt_with_parent_acid",
-      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
       "coefficients": {
         "substrates": [
           1,
@@ -382,18 +317,18 @@
           1
         ]
       },
-      "note": "the acid protonates its own salt"
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
     },
     {
       "substrates": [
-        "Fe",
+        "Ca",
         "H2"
       ],
       "products": [
-        "FeH2"
+        "CaH2"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "Fe + H2 -> FeH2",
+      "equation": "Ca + H2 -> CaH2",
       "coefficients": {
         "substrates": [
           1,
@@ -402,31 +337,7 @@
         "products": [
           1
         ]
-      },
-      "note": "Fe goes to +2 with H"
-    },
-    {
-      "substrates": [
-        "FeO",
-        "H2"
-      ],
-      "products": [
-        "Fe",
-        "H2O"
-      ],
-      "rule": "oxide_reduction",
-      "equation": "FeO + H2 -> Fe + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "hydrogen reduces oxides below Zn in the activity series"
+      }
     },
     {
       "substrates": [
@@ -450,39 +361,62 @@
     },
     {
       "substrates": [
-        "Cu",
-        "H2"
+        "CaI2",
+        "FeF3"
       ],
       "products": [
-        "CuH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Cu + H2 -> CuH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Cu goes to +2 with H"
-    },
-    {
-      "substrates": [
-        "Ba(HSO4)2",
-        "FeSO4"
-      ],
-      "products": [
-        "BaSO4",
-        "Fe(HSO4)2"
+        "CaF2",
+        "FeI3"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HSO4)2 + FeSO4 -> BaSO4 + Fe(HSO4)2",
+      "equation": "3 CaI2 + 2 FeF3 -> 3 CaF2 + 2 FeI3",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeI3",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "NH4I"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI3 + 3 NH4OH -> Fe(OH)3 + 3 NH4I",
       "coefficients": {
         "substrates": [
           1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
           1
         ],
         "products": [
@@ -490,19 +424,65 @@
           1
         ]
       },
-      "note": "BaSO4 precipitates"
+      "note": "does not survive in solution"
     },
     {
       "substrates": [
-        "Fe",
+        "FeF3",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "NH4F"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeF3 + 3 NH4OH -> Fe(OH)3 + 3 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "NH4OH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "NH4I"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgI2 + 2 NH4OH -> Mg(OH)2 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca",
         "HI"
       ],
       "products": [
-        "FeI2",
+        "CaI2",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Fe + 2 HI -> FeI2 + H2",
+      "equation": "Ca + 2 HI -> CaI2 + H2",
       "coefficients": {
         "substrates": [
           1,
@@ -517,17 +497,104 @@
     {
       "substrates": [
         "HI",
-        "FeO"
+        "Ca(OH)2"
       ],
       "products": [
-        "FeI2",
+        "CaI2",
         "H2O"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HI + FeO -> FeI2 + H2O",
+      "rule": "neutralisation",
+      "equation": "2 HI + Ca(OH)2 -> CaI2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "FeI3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF3 + 3 HI -> 3 HF + FeI3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HI"
+      ],
+      "products": [
+        "NH4I"
+      ],
+      "rule": "neutralisation",
+      "equation": "NH3 + HI -> NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "MgI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HI -> 2 HF + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4I",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HI + NH4OH -> NH4I + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
           1
         ],
         "products": [
@@ -535,87 +602,84 @@
           1
         ]
       }
-    }
-  ],
-  "answers": {
-    "binary_salt_synthesis": {
+    },
+    {
       "substrates": [
-        "Fe",
-        "I2"
+        "CaF2",
+        "HI"
       ],
       "products": [
-        "FeI2"
+        "HF",
+        "CaI2"
       ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Fe + I2 -> FeI2",
+      "rule": "acid_displacement",
+      "equation": "CaF2 + 2 HI -> 2 HF + CaI2",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
+          2,
           1
         ]
-      },
-      "note": "Fe goes to +2 with I"
+      }
     },
-    "metal_displacement": {
-      "substrates": [
-        "Fe",
-        "CuI2"
-      ],
-      "products": [
-        "FeI2",
-        "Cu"
-      ],
-      "rule": "metal_displacement",
-      "equation": "Fe + CuI2 -> FeI2 + Cu",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "Fe is above Cu in the activity series"
-    },
-    "double_displacement": {
-      "substrates": [
-        "FeSO4",
-        "BaI2"
-      ],
-      "products": [
-        "BaSO4",
-        "FeI2"
-      ],
-      "rule": "double_displacement",
-      "equation": "FeSO4 + BaI2 -> BaSO4 + FeI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "BaSO4 precipitates"
-    },
-    "acid_with_basic_oxide": {
+    {
       "substrates": [
         "HI",
-        "FeO"
+        "Fe(OH)3"
       ],
       "products": [
-        "FeI2",
+        "FeI3",
         "H2O"
       ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "2 HI + FeO -> FeI2 + H2O",
+      "rule": "neutralisation",
+      "equation": "3 HI + Fe(OH)3 -> FeI3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "NH4I"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NH4F + HI -> HF + NH4I",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Mg(OH)2 -> MgI2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -623,21 +687,320 @@
         ],
         "products": [
           1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4I",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaI2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 NH4I + Ca(OH)2 -> 2 NH3 + CaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaF2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 NH4F + Ca(OH)2 -> 2 NH3 + CaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "MgI2"
+      ],
+      "products": [
+        "MgF2",
+        "NH4I"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 NH4F + MgI2 -> MgF2 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "CaI2"
+      ],
+      "products": [
+        "CaF2",
+        "NH4I"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 NH4F + CaI2 -> CaF2 + 2 NH4I",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "HF"
+      ],
+      "products": [
+        "CaF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + 2 HF -> CaF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ca(OH)2 -> CaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HF"
+      ],
+      "products": [
+        "NH4F"
+      ],
+      "rule": "neutralisation",
+      "equation": "NH3 + HF -> NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4F",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + NH4OH -> NH4F + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HF + Fe(OH)3 -> FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Mg(OH)2 -> MgF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    }
+  ],
+  "answers": {
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Ca",
+        "I2"
+      ],
+      "products": [
+        "CaI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ca + I2 -> CaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "halogen_disproportionation": {
+      "substrates": [
+        "I2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(IO3)2",
+        "CaI2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 I2 + 6 Ca(OH)2 -> Ca(IO3)2 + 5 CaI2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "CaF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "CaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaF2 + 2 HI -> 2 HF + CaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
           1
         ]
       }
     },
     "metal_with_acid": {
       "substrates": [
-        "Fe",
+        "Ca",
         "HI"
       ],
       "products": [
-        "FeI2",
+        "CaI2",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "Fe + 2 HI -> FeI2 + H2",
+      "equation": "Ca + 2 HI -> CaI2 + H2",
       "coefficients": {
         "substrates": [
           1,
@@ -648,155 +1011,181 @@
           1
         ]
       }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HI",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Ca(OH)2 -> CaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "salt_with_base": {
+      "substrates": [
+        "NH4I",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaI2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 NH4I + Ca(OH)2 -> 2 NH3 + CaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
     }
   },
   "misses": [
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "Cu"
+        "Ca",
+        "FeF3"
       ],
-      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "CuI2"
+        "Ca",
+        "FeI3"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "MgI2"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "NH4F"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "NH4I"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca(IO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(IO3)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4F"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)3",
+        "NH4I"
+      ],
+      "note": "Fe(OH)3 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "I2"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "NH4I"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "Fe"
+        "FeI3",
+        "HF"
       ],
-      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Ba(HSO4)2",
-        "HI"
-      ],
-      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "Cu"
-      ],
-      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "Fe"
-      ],
-      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "Fe(HSO4)2"
+        "FeI3",
+        "NH4F"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "BaI2",
-        "H2SO4"
+        "HF",
+        "MgI2"
       ],
-      "note": "H2SO4 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaSO4",
-        "HI"
+        "HF",
+        "NH4I"
       ],
-      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Cu",
-        "CuI2"
+        "I2",
+        "NH4F"
       ],
-      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
     },
     {
       "substrates": [
-        "Cu",
-        "Fe(HSO4)2"
+        "Mg(OH)2",
+        "NH4F"
       ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+      "note": "Mg(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
     },
     {
       "substrates": [
-        "Cu",
-        "FeSO4"
+        "Mg(OH)2",
+        "NH4I"
       ],
-      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "H2SO4"
-      ],
-      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "Cu",
-        "HI"
-      ],
-      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "Fe(HSO4)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "FeSO4"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "CuI2",
-        "H2SO4"
-      ],
-      "note": "H2SO4 is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Fe(HSO4)2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeSO4"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe(HSO4)2",
-        "HI"
-      ],
-      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "FeSO4",
-        "HI"
-      ],
-      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+      "note": "Mg(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
     }
   ]
 }
