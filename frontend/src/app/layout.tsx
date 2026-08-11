@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Archivo, IBM_Plex_Mono, Newsreader } from "next/font/google";
+import { Report } from "@/components/Report";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
@@ -87,6 +88,11 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: APPLY_THEME }} />
         <ThemeToggle />
         {children}
+        {/* Here rather than inside a page, so it is on every one of them —
+            including the ones that exist because something already went wrong,
+            which are exactly the pages worth being able to report from. What it
+            attaches comes from whichever page is mounted; see `lib/report`. */}
+        <Report />
         {/* Absent unless a website id is configured, which is what keeps
             development out of the numbers: the variable is set on the
             deployment only, so localhost never has a tracker to report to and

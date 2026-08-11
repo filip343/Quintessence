@@ -25,6 +25,7 @@ import {
   tutorialSeen,
 } from "@/lib/storage";
 import { track } from "@/lib/analytics";
+import { publish } from "@/lib/report";
 import { Chip } from "./Chip";
 import { Equation, Formula } from "./Formula";
 import { Legend } from "./Legend";
@@ -94,6 +95,15 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
     if (!day || !hydrated.current) return;
     store(day, bundle, state.log, state.failed, state.revealed);
   }, [bundle, day, state.log, state.failed, state.revealed]);
+
+  // What the report button in the corner would attach. It is a sibling of this
+  // page rather than a child of it — it has to be on every page, so it is
+  // mounted by the root layout — and this is how the board reaches it. Writing
+  // to a slot rather than through a provider is deliberate; see `lib/report`.
+  useEffect(
+    () => publish({ day: day ?? null, bundle, state }),
+    [bundle, day, state],
+  );
 
   // How the day ended, reported once. The streak is counted here rather than
   // where the win is displayed so that the two can never disagree: one claim,

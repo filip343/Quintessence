@@ -191,6 +191,12 @@ its solutions. Saves store the move log and nothing derived from it, and restori
 replays that log through the same reducer that validated the moves live — so a
 hand-edited save cannot put species into play that the bundle never produced.
 
+There is exactly one server function, and the heading above still holds: `POST
+/api/report` forwards a player's report to Resend. It carries a sentence in the other
+direction and nothing else — no chemistry runs on it, nothing the game needs comes
+back through it, and when it is unconfigured or down every page plays as before. A
+second endpoint is not a precedent; it is a decision to make again.
+
 ## Scope
 
 In: general and inorganic chemistry at school level. Out (for v1): organic synthesis,
