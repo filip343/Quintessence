@@ -38,6 +38,7 @@ import {
 } from "@/lib/storage";
 import { cn } from "@/lib/utils";
 import { Formula } from "./Formula";
+import { publish } from "@/lib/report";
 import { Glassware } from "./Glassware";
 import { Badge } from "./ui/badge";
 import { buttonVariants } from "./ui/button";
@@ -112,6 +113,20 @@ export function Home({ days }: { days: string[] }) {
       alive = false;
     };
   }, [days]);
+
+  // What the report button in the corner would attach from here. There is no
+  // game in progress on this page, so it is the day and the bundle only — and
+  // when the calendar failed to load, neither. That report is the one worth
+  // having most, so it goes with nothing attached rather than not at all.
+  useEffect(
+    () =>
+      publish({
+        day: front?.day ?? null,
+        bundle: front?.bundle ?? null,
+        state: null,
+      }),
+    [front],
+  );
 
   // Started only once there is something to count towards, so a page that never
   // resolves never ticks.
@@ -517,10 +532,13 @@ function Stat({
 const STEPS: [string, string][] = [
   ["Mix", "Put two things from the shelf together and see what comes out."],
   ["Keep", "Whatever they make joins the shelf. Nothing is ever used up."],
-  // Five is the usual ask and not a guaranteed one — a day with only four ways
-  // asks for four. This is the front door, where five is both the common case
-  // and the name of the game; the board reads the day's own number and says so.
-  ["Win", "Five different kinds of reaction that make the target take the day."],
+  // Five leads because it is the standard ask and the name of the game, but the
+  // clause is not decoration: the Today card below reads the day's own `want`,
+  // so a flat "five" here would sit inches from "Find 4" and read as a bug.
+  [
+    "Win",
+    "Five different kinds of reaction that make the target take the day — four, when only four exist.",
+  ],
 ];
 
 function Step({
