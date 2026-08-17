@@ -2,6 +2,7 @@
 
     python -m chem.puzzle 2026-08-04            write that day's puzzle
     python -m chem.puzzle --days 30             a month of them
+    python -m chem.puzzle --days 0 --prune      drop what has fallen out of range
     python -m chem.puzzle CuSO4 --out .         one named target
 
 A puzzle's whole closure is about 3 kB -- eighteen species and thirty-odd
@@ -48,6 +49,17 @@ DEFAULT_OUTPUT = Path("../frontend/public/puzzles")
 
 # How many targets a day may try before accepting a hand short of five ways.
 _CANDIDATES = 40
+
+# Two months, and it is two numbers wearing one name. A day will not deal a
+# target any day inside the window behind it dealt, and `prune` deletes what
+# falls out of the window behind today. They have to be the same number: a day
+# can only avoid what it can still read, so anything deleted is a repeat waiting
+# to happen, and anything kept past the window is being kept for nothing.
+#
+# Counted in days rather than calendar months so the window is one length all
+# year -- a February that means something different from a March is the sort of
+# detail that surfaces as an unreproducible day.
+RECENT_DAYS = 62
 
 # Rotates the difficulty over a week, the way a crossword does: gentle at the
 # start, hardest midweek. Monday is index 0.
@@ -123,10 +135,17 @@ def _ways(target: str, net: network.Network) -> dict[str, Reaction]:
 
     Reactions consuming the target are excluded, the trophy rule again --
     `Na2SO4 + H2SO4 -> NaHSO4` then back again is two real reactions and a fake
-    way. The shallowest reaction per rule wins, so the example shown is the one
-    a player could most plausibly have found.
+    way. Excluding them is not enough on its own, though: the same rule has to
+    reach one step further back, into what the *substrates* are made of. A rule
+    whose substrate is itself only reachable through the target is circular at
+    one remove, and it looked like a way here until a CO2 day shipped asking for
+    five and offering two. `without=target` is what makes the count the closure
+    the player actually meets rather than the one on paper.
+
+    The shallowest reaction per rule wins, so the example shown is the one a
+    player could most plausibly have found.
     """
-    cost = cheapest_moves(net)
+    cost = cheapest_moves(net, without=target)
     by_rule: dict[str, list[Reaction]] = defaultdict(list)
     for reaction in net.reactions:
         if target in reaction.products and target not in reaction.reactants:
@@ -150,12 +169,21 @@ def _ways(target: str, net: network.Network) -> dict[str, Reaction]:
     return {rule: best[rule] for rule in sorted(best, key=lambda r: (depth[r], r))}
 
 
-def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
+def daily(
+    day: Date, cut: int = DEFAULT_CUT, avoid: frozenset[str] = frozenset()
+) -> Puzzle | None:
     """The puzzle for a date. Same date, same hand, on every machine.
 
     Seeded off the ordinal rather than shuffled at random so a day can be
     regenerated after the fact -- to reproduce a bug report, or to rebuild a
     month of puzzles without changing yesterday's.
+
+    `avoid` is what the last two months already used; see `recent`. The draw
+    needs it because it has no other memory: a date ordinal and a prime stride
+    spread the *choices* evenly but know nothing of what was chosen before, so
+    the same compound could come up twice in a week and did. Filtering the pool
+    beforehand rather than rejecting a repeat afterwards keeps the scan below
+    doing one job, which is finding a hand worth five ways.
     """
     wanted = WEEK[day.weekday()]
     # The pool floor is a cheap pre-filter over the grading pass, which counts
@@ -164,34 +192,62 @@ def daily(day: Date, cut: int = DEFAULT_CUT) -> Puzzle | None:
     # which is usually larger -- so it is set as low as each grade can bear:
     #
     #   easy    68 targets, and every one of them offers five
-    #   medium  100 at four ways, 32 at five -- the floor is the whole point
-    #   hard    59 at three, and *none* at four, which is what hard means here
+    #   medium  99 at four ways, 31 at five -- the floor is the whole point
+    #   hard    58 at three, and *none* at four, which is what hard means here
     #
     # Hard therefore has to admit three-way targets or Friday never generates;
     # its hands still have to earn four below, from the closure.
     floor = PLAYABLE_RULES if wanted is Grade.HARD else MIN_WAYS
-    pool = sorted(
+    eligible = sorted(
         target
         for target, found in _graded().items()
         if found.grade is wanted and found.ways >= floor
     )
-    if not pool:
+    if not eligible:
         return None
 
+    # Two months takes roughly 27 days off easy and medium and 9 off hard, out
+    # of 68, 99 and 58, which looks comfortable and is only true of easy and
+    # medium. A target in the pool is not a target that deals: of the 58 hard
+    # ones, **7** produce a hand worth four ways or better, the rest failing
+    # `generate` or coming back with three. Friday wants one of those 7 and the
+    # window holds about 9 Fridays, so on hard the rule is not tight, it is
+    # unsatisfiable -- roughly one Friday in three has to repeat.
+    #
+    # Which is why the window yields and the day does not. A missing day is not
+    # a smaller version of a repeated target, it is a worse one: the site serves
+    # the most recent day it has, so a gap repeats yesterday's whole hand,
+    # answers and all. Try the targets the window has not used; if none of them
+    # deals, try the rest and take the repeat, saying so.
+    fresh = [target for target in eligible if target not in avoid]
+    for pool in (fresh, eligible):
+        if not pool:
+            continue
+        puzzle = _draw(pool, day, cut)
+        if puzzle is not None:
+            if pool is eligible and fresh:
+                print(f"  {day}: nothing outside the window dealt; repeating a target")
+            return puzzle
+    return None
+
+
+def _draw(pool: list[str], day: Date, cut: int) -> Puzzle | None:
+    """Scan a pool for the best hand this day can be given.
+
+    Keep looking until a hand offers the full five, then settle; below that,
+    remember the first that clears the minimum and keep looking anyway. So a day
+    asks five wherever five exist and four where they do not, and never deals a
+    hand worth three -- the old fallback took the first playable candidate at
+    any depth, which is how a day could ship asking for three.
+
+    Bounded rather than exhaustive, for the same reason `_cover` is greedy: a
+    generator that might scan a thousand targets on a bad day is one nobody can
+    predict the runtime of. Past the bound the remembered hand wins, and if
+    nothing ever cleared the minimum this pool has no hand to offer.
+    """
     seed = day.toordinal()
     fallback: Puzzle | None = None
 
-    # Keep looking until a hand offers the full five, then settle; below that,
-    # remember the first that clears the minimum and keep looking anyway. So a
-    # day asks five wherever five exist and four where they do not, and never
-    # deals a hand worth three -- the old fallback took the first playable
-    # candidate at any depth, which is how a day could ship asking for three.
-    #
-    # Bounded rather than exhaustive, for the same reason `_cover` is greedy:
-    # a generator that might scan a thousand targets on a bad day is one nobody
-    # can predict the runtime of. Past the bound the remembered hand wins, and
-    # if nothing ever cleared the minimum the day has no puzzle -- better a gap
-    # the calendar can be asked about than a day that is not worth playing.
     for offset in range(min(len(pool), _CANDIDATES)):
         target = pool[(seed + offset * 7919) % len(pool)]  # a prime, to spread
         puzzle = generate(target, cut=cut, seed=seed)
@@ -254,6 +310,111 @@ def _graded() -> dict[str, Any]:
 
 
 # --------------------------------------------------------------------------
+# The calendar already on disk
+# --------------------------------------------------------------------------
+
+
+def dealt(directory: Path) -> dict[str, str]:
+    """Every day already written, and the target it was dealt.
+
+    `index.json` names the calendar and is read first, because it is the file
+    that says what this deployment serves. It is not trusted on its own: a day
+    it lists but does not have is skipped, and every dated bundle in the
+    directory is read whether the index mentions it or not. The index has a
+    history of being written short -- it used to hold only the days of the run
+    that wrote it -- and the failure that would cause here is silent, a day
+    repeating because the walk could not see the day it was repeating.
+
+    Bundles are parsed rather than pattern-matched for their target. A hand is
+    a couple of hundred kB at worst and there are only two months of them, so
+    the whole read is a fraction of a second against a minute of grading.
+    """
+    days: set[str] = set()
+
+    try:
+        listed = json.loads((directory / "index.json").read_text(encoding="utf-8"))
+        days.update(day for day in listed.get("puzzles", []) if _is_date(str(day)))
+    except (OSError, json.JSONDecodeError, AttributeError):
+        pass  # no index yet, or an unreadable one; the directory still knows
+
+    days.update(p.stem for p in directory.glob("*.json") if _is_date(p.stem))
+
+    found: dict[str, str] = {}
+    for day in sorted(days):
+        try:
+            document = json.loads(
+                (directory / f"{day}.json").read_text(encoding="utf-8")
+            )
+        except (OSError, json.JSONDecodeError):
+            continue  # listed but missing, or half-written; it deals no target
+        target = document.get("target")
+        if isinstance(target, str):
+            found[day] = target
+    return found
+
+
+def recent(
+    known: dict[str, str], day: Date, window: int = RECENT_DAYS
+) -> frozenset[str]:
+    """What the `window` days *before* `day` were dealt.
+
+    Behind only, deliberately. A symmetric window would read the days after the
+    one being dealt too, which sounds strictly better and quietly costs the
+    property that makes this calendar debuggable: regenerate a day and you get
+    the same puzzle, because the same seed met the same inputs. Days after it
+    are inputs that did not exist when it was first dealt. Looking only
+    backwards means a day depends on its own past and nothing else, so it can
+    still be rebuilt from a date -- as long as the two months behind it are
+    still on disk, which is exactly what `prune` keeps.
+    """
+    first = day - timedelta(days=window)
+    return frozenset(
+        target
+        for other, target in known.items()
+        if first <= Date.fromisoformat(other) < day
+    )
+
+
+def prune(directory: Path, today: Date, window: int = RECENT_DAYS) -> list[str]:
+    """Delete bundles older than the window. Returns the days removed.
+
+    Safe to delete because nothing reads them. The front end serves exactly one
+    day -- the most recent that is not in the future -- and has no archive, so a
+    bundle two months past is bytes in a deployment and a diff nobody reads.
+    Every one of them is still in git history if a day ever has to be inspected.
+
+    Two rails. Future days are never touched however far ahead they run, and the
+    day the site is currently serving is never touched even if it is older than
+    the window, which it would be only if the calendar had already run dry. That
+    second one is the difference between a stale puzzle and a 404.
+    """
+    keep_from = today - timedelta(days=window)
+    days = sorted(p.stem for p in directory.glob("*.json") if _is_date(p.stem))
+    serving = _serving(days, today)
+
+    removed: list[str] = []
+    for day in days:
+        if Date.fromisoformat(day) >= keep_from or day == serving:
+            continue
+        (directory / f"{day}.json").unlink()
+        removed.append(day)
+    return removed
+
+
+def _serving(days: list[str], today: Date) -> str | None:
+    """The day the site would hand a player right now.
+
+    Mirrors `lib/day.pick` in the front end, down to the fallback: with nothing
+    but future days it serves the earliest rather than nothing. Duplicated in
+    two languages because it has to be, and kept to four lines so the two can be
+    read against each other.
+    """
+    now = today.isoformat()
+    past = [day for day in sorted(days) if day <= now]
+    return past[-1] if past else (sorted(days)[0] if days else None)
+
+
+# --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
 
@@ -284,23 +445,50 @@ def main(argv: list[str]) -> int:
         return 0
 
     start = Date.fromisoformat(names[0]) if names else Date.today()
+
+    # The calendar so far, kept in hand and added to as the run deals. Reading
+    # it once and updating it is not only cheaper than re-reading the directory
+    # each day -- it is the only version that is right, because the days this
+    # run is writing have to count against each other too. A week dealt in one
+    # go used to be the easiest place to draw the same target twice.
+    known = dealt(output)
+
     written = []
     for offset in range(days):
         day = start + timedelta(days=offset)
-        puzzle = daily(day)
+        puzzle = daily(day, avoid=recent(known, day))
         if puzzle is None:
             print(f"{day}: no puzzle available")
             continue
         _write(output / f"{day.isoformat()}.json", puzzle)
+        known[day.isoformat()] = puzzle.target
         written.append(day.isoformat())
 
-    if written:
-        index = output / "index.json"
-        index.write_text(
-            json.dumps({"version": VERSION, "puzzles": written}, indent=2) + "\n",
-            encoding="utf-8",
-        )
-        print(f"  wrote {index}  ({len(written)} puzzles)")
+    if "--prune" in argv:
+        # Against today, not against the days just dealt. The window is what a
+        # *player* has been shown, and dealing a month ahead must not drag the
+        # cutoff a month forward with it and delete two months of still-current
+        # calendar. `daily` reads the same window, so what goes is what nothing
+        # will ask for again.
+        removed = prune(output, Date.today())
+        for day in removed:
+            print(f"  pruned {day}  (older than {RECENT_DAYS} days)")
+        print(f"  pruned {len(removed)} bundle{'' if len(removed) == 1 else 's'}")
+
+    # Written from the directory rather than from `written`, always. The index
+    # used to list only the days of the run that produced it, so dealing one day
+    # truncated the calendar to that day and orphaned every other bundle --
+    # `verify_bundles.py --reindex` exists to repair exactly that. Now that a
+    # run can delete files as well as add them the index has to be rebuilt here
+    # anyway, and rebuilding it from what is on disk is the version that cannot
+    # be wrong. The repair stays, as the independent check it always was.
+    listing = sorted(p.stem for p in output.glob("*.json") if _is_date(p.stem))
+    index = output / "index.json"
+    index.write_text(
+        json.dumps({"version": VERSION, "puzzles": listing}, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"  wrote {index}  ({len(listing)} puzzles, {len(written)} new)")
     return 0
 
 

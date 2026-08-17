@@ -35,6 +35,16 @@ Two rules keep the mechanic from degenerating:
   target to make the target. Any route needing the target is circular, so refusing
   it as an input costs no legitimate route.
 
+  It does, however, cost *ways*, and that is not the same thing. Refusing the
+  target as an input is a statement about reachability, not about one reaction:
+  a substrate whose every route runs through the target is unobtainable too, and
+  the rule that needed it is circular at one remove. On a day whose target sits
+  at the root of a family this can take most of the family with it — bar CO2 and
+  every carbonate goes, which is three of that day's five ways. So any count of
+  "how many ways does this hand have" must be taken against the closure with the
+  target barred. Counting it against the plain closure is how a CO2 day shipped
+  to CI asking for five and offering two.
+
 ## Scoring counts rules, never routes (the load-bearing decision)
 
 H2CO3 has 813 routes in the network and 812 of them are the same acid displacement
@@ -157,9 +167,9 @@ scales instead, five where five exist and **four** at the floor. Never three —
 a hand worth three is not a puzzle, and the day is better left with a gap.
 
 The floor is the variety dial, and it is worth more than the number suggests.
-Only 32 of the 100 playable medium targets offer a fifth way *on the grading
+Only 31 of the 99 playable medium targets offer a fifth way *on the grading
 pass*, so a floor of five threw two thirds of the medium catalogue away and left
-a weekly draw picking from 32 compounds. The other 68 still deal hands worth
+a weekly draw picking from 31 compounds. The other 68 still deal hands worth
 five, because the grading pass counts under the commonness gate across the whole
 network while a player meets the closure of the dealt palette, which is larger.
 So the floor is what admits them and the forward count is still what ships.
@@ -167,6 +177,34 @@ So the floor is what admits them and the forward count is still what ships.
 A day is seeded off its date ordinal rather than shuffled, so a puzzle can be
 regenerated after the fact — to reproduce a bug report, or to rebuild a month —
 without disturbing yesterday's.
+
+## The two-month window
+
+A seed spreads the *choices* evenly and remembers nothing, so the draw repeated
+itself — the same compound twice in one week, which a player notices and a seed
+cannot see. So the picker reads the calendar: **a day will not deal a target any
+of the previous 62 days dealt.** Backwards only, because days after the one being
+dealt were not inputs when it was first dealt, and reading them would cost the
+property that a date rebuilds its own puzzle.
+
+The same 62 days decide what is deleted. The weekly job prunes every bundle older
+than the window, and the two numbers are one number (`chem.puzzle.RECENT_DAYS`)
+because a day can only avoid what it can still read: anything deleted early is a
+repeat waiting to happen, anything kept late is kept for nothing. Deleting is safe
+because nothing reads an old bundle — the front end serves exactly one day, the
+most recent that is not in the future, and has no archive — and git keeps them all
+anyway. Two rails on the delete: future days are never touched, and neither is the
+day the site is currently serving, even if the calendar has run so dry that it
+falls outside the window.
+
+**The window yields; the day does not.** Where no unused target deals a hand worth
+having, the day repeats one and says so in the log, because a missing day is the
+worse failure: the site would serve the most recent day it has, repeating
+yesterday's entire hand rather than one target. Friday lives there permanently —
+7 of the 58 hard targets deal a usable hand and a window holds about 9 Fridays, so
+on hard the rule is not tight but unsatisfiable, and about one Friday in three
+repeats. That is a fact about how few hard compounds have four ways, not about the
+window; the fix, when there is one, is a wider hard catalogue.
 
 ## Layout, and why there is no runtime backend
 

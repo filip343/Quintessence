@@ -91,18 +91,31 @@ def build(seeds: tuple[str, ...] = DEFAULT_SEEDS) -> Network:
     )
 
 
-def cheapest_moves(network: Network) -> dict[str, int]:
+def cheapest_moves(network: Network, without: str = "") -> dict[str, int]:
     """Minimum reactions to reach each species from the seeds -- the par metric.
 
     Firing a reaction costs one move plus the cost of assembling its inputs, so
     a product's cost is `max(cost of each reactant) + 1`. Relaxed to a fixed
     point; species the seeds cannot reach are absent from the result.
+
+    `without` bars one species from being used as an input, which is the trophy
+    rule expressed as reachability. Every caller that asks "can the player get
+    this" while a target is in play has to pass it: plain reachability answers
+    yes for CaCO3 because `Ca(OH)2 + CO2 -> CaCO3` exists, and a game that
+    refuses to let anyone pick up CO2 while it is the target has no such route.
+    Barring it is not the same as leaving it out of an answer -- it changes what
+    the rest of the network can reach, and for a target sitting at the root of
+    a family (an anhydride, most of all) it can remove the family.
     """
-    cost: dict[str, int] = {formula: 0 for formula in network.seeds}
+    cost: dict[str, int] = {
+        formula: 0 for formula in network.seeds if formula != without
+    }
     changed = True
     while changed:
         changed = False
         for reaction in network.reactions:
+            if without in reaction.reactants:
+                continue
             inputs = [cost.get(reactant) for reactant in reaction.reactants]
             if any(value is None for value in inputs):
                 continue

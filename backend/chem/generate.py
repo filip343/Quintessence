@@ -48,8 +48,8 @@ from chem.rules.commonness import is_common
 WANT_WAYS = 5
 
 # ...and the fewest it may ask for and still be worth dealing. The gap between
-# these two is what buys variety. Only 32 of the 100 playable medium targets
-# offer a fifth way; insisting on five threw the other 68 away, and a pool of 32
+# these two is what buys variety. Only 31 of the 99 playable medium targets
+# offer a fifth way; insisting on five threw the other 68 away, and a pool of 31
 # behind a weekly draw deals the same compounds over and over. Four is still a
 # puzzle -- four *different* kinds of reaction is the mechanic either way -- and
 # it is the difference between a third of the catalogue and all of it.
@@ -92,10 +92,15 @@ def generate(
     seed: int | None = None,
 ) -> Puzzle | None:
     """Deal a hand for `target`, or None if no palette within budget reaches it."""
-    net, cost, makers = _global()
+    net, makers = _global()
     if target not in makers:
         return None
 
+    # Costed with the trophy barred, not with the plain map. The backward walk
+    # uses these numbers for two things -- has this branch reached the cut, and
+    # which route is cheapest -- and both answers are wrong if the cheapest way
+    # to a substrate runs through the thing being made. About 45 ms per target.
+    cost = cheapest_moves(net, without=target)
     requirements = _requirements(target, cost, makers, cut, seed)
     if not requirements:
         return None
@@ -189,22 +194,36 @@ def _resolve(
     below the cut, it would otherwise be *dealt*, handing the player a bottle
     they can never pick up. Both readings are the same rule: nothing is made
     from the thing being made.
+
+    Refusing it by name is not enough, because a cycle can hide it. Two things
+    catch that. `cost` is costed with the trophy barred, so a species missing
+    from it is one the player could only reach by making the target first and
+    the branch is dead there. And the walk carries the path it came down, so a
+    species cannot be satisfied by *itself*. Without the second, `CaCO3 <-
+    H2CO3 <- CaCO3` settles: the walk meets CaCO3, goes looking for what makes
+    it, arrives back at CaCO3, finds it already visited and calls it done. That
+    is how a CO2 day proposed three carbonate ways it could not reach.
+
+    Marking a species visited on the way *in* is what conflates "being worked
+    on" with "resolved", so the two are separate sets here. `done` is a memo and
+    only ever holds species that really did bottom out; `path` is the branch
+    above the current one and is a refusal, not a memo.
     """
     leaves: set[str] = set()
-    seen: set[str] = set()
-    frontier = list(species)
+    done: set[str] = set()
 
-    while frontier:
-        current = frontier.pop()
-        if current == target:
-            return None  # circular: this branch is built out of the trophy
-        if current in seen:
-            continue
-        seen.add(current)
-
-        if cost.get(current, 99) <= cut:
+    def walk(current: str, path: frozenset[str]) -> bool:
+        if current == target or current in path:
+            return False  # circular: this branch is built out of itself
+        if current in done:
+            return True
+        here = cost.get(current)
+        if here is None:
+            return False  # only reachable through the trophy
+        if here <= cut:
             leaves.add(current)
-            continue
+            done.add(current)
+            return True
 
         routes = [
             r
@@ -212,10 +231,16 @@ def _resolve(
             if target not in r.reactants and all(is_common(x) for x in r.reactants)
         ]
         if not routes:
-            return None  # above the cut and unmakeable from common things
+            return False  # above the cut and unmakeable from common things
         cheapest = min(routes, key=lambda r: max(cost.get(x, 99) for x in r.reactants))
-        frontier += [x for x in cheapest.reactants if x not in seen]
+        below = path | {current}
+        if not all(walk(x, below) for x in cheapest.reactants):
+            return False
+        done.add(current)
+        return True
 
+    if not all(walk(x, frozenset()) for x in species):
+        return None
     return frozenset(leaves)
 
 
@@ -296,14 +321,17 @@ def _elements_in(formula: str) -> frozenset[str]:
 # --------------------------------------------------------------------------
 
 
+# No cost map here any more. There is no such thing as *the* cost of a species
+# in this game: what it costs depends on which target is in play, because the
+# target is the one thing the board will not hand over. `generate` costs its own.
 @lru_cache(maxsize=1)
-def _global() -> tuple[Network, dict[str, int], dict[str, list[Reaction]]]:
+def _global() -> tuple[Network, dict[str, list[Reaction]]]:
     net = network.build()
     makers: dict[str, list[Reaction]] = defaultdict(list)
     for reaction in net.reactions:
         for product in reaction.products:
             makers[product].append(reaction)
-    return net, cheapest_moves(net), makers
+    return net, makers
 
 
 # --------------------------------------------------------------------------

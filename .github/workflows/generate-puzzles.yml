@@ -16,6 +16,12 @@
 #
 # Weekly rather than daily: each run adds about seven days, so a daily job
 # would mostly be a commit and a redeploy that added nothing.
+#
+# It also prunes. The picker refuses to repeat a target the last two months
+# used, which means it has to be able to read those two months, and means the
+# months before them are of no use to anybody: the front end serves one day and
+# has no archive. So the same window that stops a repeat is the window that
+# decides what gets deleted, and both live in `chem.puzzle.RECENT_DAYS`.
 
 name: generate puzzles
 
@@ -70,35 +76,45 @@ jobs:
 
           days=$(( ( $(date -u -d "$end" +%s) - $(date -u -d "$start" +%s) ) / 86400 + 1 ))
           if [ "$days" -le 0 ]; then
+            # Still runs, with nothing to deal. Pruning is this job's other half
+            # and a full calendar is exactly when there is old material to drop.
             echo "calendar already reaches $last, nothing to deal"
-            echo "days=0" >> "$GITHUB_OUTPUT"
+            days=0
+            start=$(date -u +%F)
           else
             echo "dealing $days days from $start (last on disk: ${last:-none})"
-            echo "days=$days" >> "$GITHUB_OUTPUT"
-            echo "start=$start" >> "$GITHUB_OUTPUT"
           fi
+          echo "days=$days" >> "$GITHUB_OUTPUT"
+          echo "start=$start" >> "$GITHUB_OUTPUT"
 
-      - name: Deal them
-        if: steps.range.outputs.days != '0'
+      # `--prune` deletes bundles more than two months old, which is the same
+      # window the picker reads to avoid repeating a target -- see RECENT_DAYS.
+      # They have to be one number: a day can only avoid what it can still read.
+      # Nothing else reads an old bundle. The front end serves one day, the most
+      # recent that is not in the future, and has no archive; git keeps the rest.
+      - name: Deal them, and drop what has fallen out of the window
         working-directory: backend
-        run: uv run python -m chem.puzzle "${{ steps.range.outputs.start }}" --days "${{ steps.range.outputs.days }}"
+        run: uv run python -m chem.puzzle "${{ steps.range.outputs.start }}" --days "${{ steps.range.outputs.days }}" --prune
 
-      # Rebuilt from the directory, not from what the generator just happened to
-      # write -- that is the whole reason the index keeps getting truncated.
+      # The generator now writes the index from the directory itself, so this is
+      # no longer the only thing standing between a one-day run and a truncated
+      # calendar. It stays because it is the *independent* check: it imports
+      # nothing from `chem` and re-derives every day's winnability from the
+      # shipped JSON, so a generator bug cannot vouch for itself.
       - name: Rebuild the index and check every bundle
-        if: steps.range.outputs.days != '0'
         run: python backend/verify_bundles.py --reindex
 
       - name: Commit
-        if: steps.range.outputs.days != '0'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/puzzles
+          # -A, because this job deletes as well as writes and a bare `git add`
+          # of a pathspec has not always staged removals.
+          git add -A frontend/public/puzzles
           if git diff --cached --quiet; then
             echo "nothing changed"
             exit 0
           fi
-          git commit -m "chore(puzzles): deal through $(date -u -d "+${{ github.event.inputs.horizon || '30' }} days" +%F)"
+          git commit -m "chore(puzzles): deal through $(date -u -d "+${{ github.event.inputs.horizon || '30' }} days" +%F), prune past two months"
           git push

@@ -112,8 +112,29 @@ def grade(accessible: int, depth: int, common: bool) -> Grade:
 def _assess(target: str, net: Network, cost: dict[str, int]) -> Assessment:
     by_rule: dict[str, list[Reaction]] = defaultdict(list)
     for reaction in net.reactions:
-        if target in reaction.products:
+        if target in reaction.products and target not in reaction.reactants:
             by_rule[rule_slug(reaction.template) or reaction.template].append(reaction)
+
+    depth = cost.get(target, -1)
+
+    # The trophy rule, as reachability rather than as a filter on one reaction.
+    # A substrate is only a substrate if the player can hold it *and* the target
+    # at once, and the board never hands over the target -- so a rule whose
+    # substrate is reachable only by first making the target is not a way, it is
+    # the target laundered through one extra step. CO2 is the case that proves
+    # it: every carbonate here descends from CO2, so barring it takes the three
+    # decomposition ways away and leaves a compound with two.
+    #
+    # `cost` above is the shared map for the whole catalogue and recomputing it
+    # per target costs about 45 ms, which over 1143 targets is a minute. It is
+    # only ever wrong about a species made *from* the target, and such a species
+    # is necessarily deeper than it -- every step costs a move -- so a candidate
+    # no deeper than the target needs no second opinion. That skips about a
+    # quarter of them and the pass costs 45s rather than 4s, which is the price
+    # of the number being true. It runs weekly, in CI, next to a 100s generate.
+    candidates = {x for rs in by_rule.values() for r in rs for x in r.reactants}
+    if any(cost.get(x, -1) > depth for x in candidates):
+        cost = cheapest_moves(net, without=target)
 
     setup: dict[str, int] = {}
     examples: dict[str, Reaction] = {}
@@ -131,7 +152,6 @@ def _assess(target: str, net: Network, cost: dict[str, int]) -> Assessment:
 
     accessible = tuple(sorted(setup, key=lambda rule: (setup[rule], rule)))
     common = is_common(target)
-    depth = cost.get(target, -1)
     return Assessment(
         target=target,
         common=common,
