@@ -63,8 +63,17 @@ target — signalling path membership would turn the puzzle into a guided walk. 
 player sees what a reaction produced, whether it was the target, and whether that
 rule was new. Dead ends are remembered so a pair never has to be rediscovered.
 
-At the end — won or given up — the game shows one worked reaction for **every** way,
-including the ones missed. It is a teaching game; the last screen is the lesson.
+At the end the game shows one worked reaction for **every** way, including the ones
+missed. It is a teaching game; the last screen is the lesson.
+
+But winning is not the end of the day, and the sheet used to behave as though it
+were: it printed the instant the fifth slot filled, which handed over every bonus
+way the player had not reached — the ways that are the only thing a leaderboard
+could rank. So the win is announced instead, and the player picks. Keep the bench
+open and hunt, or print the sheet and close the day. Printing is the same door
+giving up uses and shuts the same way, because a way copied off the sheet is not
+a way anybody found. The choice is only offered when something is left; a rack
+already holding every way has nothing to decide, so the sheet simply prints.
 
 ## Representation
 

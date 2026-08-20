@@ -56,6 +56,14 @@ export interface GameState {
   misses: number;
   revealed: boolean;
   /**
+   * Whether the day has been won, told to the player, and answered with *keep
+   * going*. Only meaningful once `won` — it is the other side of `revealed`,
+   * and lives beside it for the same reason: it is a decision the player made,
+   * not something a replay could derive. Without it the solved window would
+   * reopen on every reload, one stray click away from printing the answers.
+   */
+  hunting: boolean;
+  /**
    * How much of a saved game survived replay, once one has been loaded. Kept in
    * game state rather than beside it so restoring is a single dispatch — a
    * `setState` inside the load effect would cascade an extra render.
@@ -79,6 +87,7 @@ export type Action =
   | { type: "chooseAll" }
   | { type: "cancel" }
   | { type: "reveal" }
+  | { type: "hunt" }
   | { type: "teach"; on: boolean }
   | { type: "restore"; state: GameState }
   | { type: "reset" };
@@ -98,6 +107,7 @@ export function initial(bundle: PuzzleBundle): GameState {
     moves: 0,
     misses: 0,
     revealed: false,
+    hunting: false,
     restored: null,
     teaching: false,
   };
@@ -105,6 +115,20 @@ export function initial(bundle: PuzzleBundle): GameState {
 
 export function won(state: GameState, bundle: PuzzleBundle): boolean {
   return state.order.length >= bundle.want;
+}
+
+/**
+ * The ways the answer sheet would print that are not in the rack.
+ *
+ * Counted off `answers` rather than off `bundle.ways`, because `answers` is
+ * what actually gets printed — if the two ever disagreed, the number shown to
+ * the player should be the one describing the page they are about to be given.
+ */
+export function outstanding(
+  found: GameState["found"],
+  bundle: PuzzleBundle,
+): string[] {
+  return Object.keys(bundle.answers).filter((rule) => !(rule in found));
 }
 
 export function reducer(
@@ -146,6 +170,12 @@ export function reducer(
         last: null,
         message: null,
       };
+
+    // Answering the solved window with "keep hunting". It changes nothing about
+    // the game — the day is already won and already reported — only whether the
+    // window has been answered, which is why it is one line and not a mode.
+    case "hunt":
+      return { ...state, hunting: true };
 
     case "restore":
       return action.state;

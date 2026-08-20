@@ -31,6 +31,14 @@ export interface Save {
   /** Dead ends worth remembering. Re-checked on load, never trusted. */
   failed: string[][];
   revealed: boolean;
+  /**
+   * Whether the solved window has been answered with *keep hunting*. Optional
+   * so that adding it costs nothing: a save written before it existed reads as
+   * `undefined`, which is the same as not having answered — and re-offering the
+   * choice is the harmless failure of the two. Bumping `SAVE_VERSION` for it
+   * would have thrown away every game in progress to save one reload.
+   */
+  hunting?: boolean;
 }
 
 function key(day: string): string {
@@ -59,12 +67,17 @@ export function load(day: string, bundle: PuzzleBundle): Save | null {
   }
 }
 
+/**
+ * `decisions` is an object rather than two more positional arguments because
+ * both are booleans, and `store(day, bundle, moves, failed, true, false)` is a
+ * line nobody can read twice and be sure about.
+ */
 export function store(
   day: string,
   bundle: PuzzleBundle,
   moves: Move[],
   failed: string[][],
-  revealed: boolean,
+  decisions: { revealed: boolean; hunting: boolean },
 ): void {
   if (typeof window === "undefined") return;
   const save: Save = {
@@ -73,7 +86,8 @@ export function store(
     target: bundle.target,
     moves,
     failed,
-    revealed,
+    revealed: decisions.revealed,
+    hunting: decisions.hunting,
   };
   try {
     window.localStorage.setItem(key(day), JSON.stringify(save));
@@ -342,6 +356,7 @@ function isSave(value: unknown): value is Save {
     typeof save.day === "string" &&
     typeof save.target === "string" &&
     typeof save.revealed === "boolean" &&
+    (save.hunting === undefined || typeof save.hunting === "boolean") &&
     Array.isArray(save.failed) &&
     save.failed.every(
       (pair) => Array.isArray(pair) && pair.every((f) => typeof f === "string"),

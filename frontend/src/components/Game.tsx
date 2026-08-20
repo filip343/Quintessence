@@ -8,6 +8,7 @@ import {
   type Action,
   type GameState,
   initial,
+  outstanding,
   reducer,
   replay,
   validFailures,
@@ -30,6 +31,7 @@ import { Chip } from "./Chip";
 import { Equation, Formula } from "./Formula";
 import { Legend } from "./Legend";
 import { Mark } from "./Mark";
+import { Solved } from "./Solved";
 import { Tutorial } from "./Tutorial";
 
 const GRADE_NOTE: Record<string, string> = {
@@ -45,6 +47,24 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
     initial,
   );
   const complete = won(state, bundle);
+
+  // Ways that exist and are not in the rack. Drives three things that have to
+  // agree: whether the solved window has anything to offer, whether the header
+  // still carries a way to ask for the rest, and whether the answer sheet is
+  // being held back at all.
+  // Keyed on `found` rather than on the whole state: this only moves when a way
+  // is scored, and every other action — a click, a dead end, a repeat — would
+  // otherwise recompute it.
+  const left = useMemo(
+    () => outstanding(state.found, bundle).length,
+    [state.found, bundle],
+  );
+
+  // The sheet is not a reward for winning; it is the end of the day. It prints
+  // when the day is over — given up, or every way found — and otherwise only
+  // when asked for. Winning used to print it outright, which handed over every
+  // bonus way the player had not reached yet.
+  const sheet = state.revealed || (complete && left === 0);
 
   const hydrated = useRef(false);
 
@@ -85,6 +105,7 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         ...rebuilt,
         failed: validFailures(bundle, rebuilt, save.failed ?? []),
         revealed: save.revealed,
+        hunting: save.hunting === true,
         restored: { kept: replayed, total: save.moves.length },
         teaching,
       },
@@ -93,8 +114,11 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
 
   useEffect(() => {
     if (!day || !hydrated.current) return;
-    store(day, bundle, state.log, state.failed, state.revealed);
-  }, [bundle, day, state.log, state.failed, state.revealed]);
+    store(day, bundle, state.log, state.failed, {
+      revealed: state.revealed,
+      hunting: state.hunting,
+    });
+  }, [bundle, day, state.log, state.failed, state.revealed, state.hunting]);
 
   // What the report button in the corner would attach. It is a sibling of this
   // page rather than a child of it — it has to be on every page, so it is
@@ -145,7 +169,37 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         />
       )}
 
-      <Header bundle={bundle} state={state} day={day} dispatch={dispatch} />
+      {/* Held behind the tutorial, which cannot really be up at the same time
+          — winning takes moves and the cards only appear on an untouched board
+          — but two modal overlays stacked is not a thing worth leaving to
+          chance. */}
+      {complete && !state.revealed && !state.hunting && !state.teaching && left > 0 && (
+        <Solved
+          bundle={bundle}
+          found={state.order}
+          moves={state.moves}
+          left={left}
+          onHunt={() => {
+            dispatch({ type: "hunt" });
+            track("kept-hunting", {
+              day: day ?? null,
+              grade: bundle.grade,
+              moves: state.moves,
+              ways: state.order.length,
+              left,
+            });
+          }}
+          onReveal={() => dispatch({ type: "reveal" })}
+        />
+      )}
+
+      <Header
+        bundle={bundle}
+        state={state}
+        day={day}
+        left={left}
+        dispatch={dispatch}
+      />
 
       {state.restored && state.restored.kept < state.restored.total && (
         <p className="rounded-lg border border-[color-mix(in_oklab,var(--brass)_40%,transparent)] bg-[color-mix(in_oklab,var(--brass)_10%,var(--panel))] px-4 py-3 text-sm">
@@ -229,7 +283,7 @@ export function Game({ bundle, day }: { bundle: PuzzleBundle; day?: string }) {
         </Trail>
       </div>
 
-      {(complete || state.revealed) && <Answers bundle={bundle} state={state} />}
+      {sheet && <Answers bundle={bundle} state={state} />}
     </main>
   );
 }
@@ -248,11 +302,14 @@ function Controls({
   dispatch,
   day,
   complete,
+  left,
 }: {
   state: GameState;
   dispatch: (a: Action) => void;
   day?: string;
   complete: boolean;
+  /** Ways not yet in the rack. Nothing to print once this is zero. */
+  left: number;
 }) {
   // Giving up cannot be taken back and survives a reload, so it asks first.
   const [confirming, setConfirming] = useState(false);
@@ -262,12 +319,17 @@ function Controls({
   // `!state.revealed` matters: answering the question leaves `confirming` set,
   // and without this the controls would stay stuck on a question that has
   // already been answered, with "start over" unreachable behind it.
-  if (confirming && !complete && !state.revealed) {
+  //
+  // A solved day asks the same question for a different reason. It is not
+  // giving up — the day is won and counted — but it ends the bonus hunt the
+  // same way and cannot be taken back either, so it is worth one look.
+  if (confirming && !state.revealed && (!complete || left > 0)) {
     return (
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
         <span className="font-body text-[14px] normal-case tracking-normal text-ink">
-          That closes the shelf for today and prints every way, including the
-          ones you have not found.
+          {complete
+            ? `That closes the bench and prints the ${left} ${left === 1 ? "way" : "ways"} you have not found. The day stays solved.`
+            : "That closes the shelf for today and prints every way, including the ones you have not found."}
         </span>
         <button type="button" onClick={() => dispatch({ type: "reveal" })} className={link}>
           yes, show me
@@ -288,9 +350,17 @@ function Controls({
       >
         how to play
       </button>
-      {!complete && !state.revealed && (
+      {/* One button, two meanings, and the wording is the whole difference:
+          before the win it is a surrender, after it the day is already banked
+          and this is only the end of the bonus hunt. It has to be here — the
+          solved window offers the same choice once, and a player who chose to
+          keep hunting would otherwise have no way back to the answers short of
+          finding every one of them. */}
+      {!state.revealed && left > 0 && (
         <button type="button" onClick={() => setConfirming(true)} className={link}>
-          give up, show every way
+          {complete
+            ? `show the ${left} ${left === 1 ? "way" : "ways"} left`
+            : "give up, show every way"}
         </button>
       )}
       {/* Anything worth wiping, not just successful moves: after giving up the
@@ -323,11 +393,13 @@ function Header({
   bundle,
   state,
   day,
+  left,
   dispatch,
 }: {
   bundle: PuzzleBundle;
   state: GameState;
   day?: string;
+  left: number;
   dispatch: (a: Action) => void;
 }) {
   const record = bundle.species[bundle.target];
@@ -414,6 +486,7 @@ function Header({
             dispatch={dispatch}
             day={day}
             complete={found >= bundle.want}
+            left={left}
           />
         </div>
       </div>
@@ -518,11 +591,28 @@ function Closed({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) {
       </div>
 
       <p className="panel rounded-lg border px-4 py-3 text-[15px] leading-snug">
-        Today is done — you found{" "}
-        <strong className="font-display font-semibold">{found}</strong> of{" "}
-        {bundle.want} kinds in {state.moves}{" "}
-        {state.moves === 1 ? "move" : "moves"}. Every way is written out below,
-        yours marked. Come back tomorrow, or start over and play this one again.
+        {/* Two ways to arrive here and they are not the same day. Reading "you
+            found 6 of 5" after a win would be a sentence written for the other
+            outcome. */}
+        {found >= bundle.want ? (
+          <>
+            Solved, and closed — you made{" "}
+            <Formula formula={bundle.target} className="font-mono" />{" "}
+            <strong className="font-display font-semibold">{found}</strong>{" "}
+            different {found === 1 ? "way" : "ways"} in {state.moves}{" "}
+            {state.moves === 1 ? "move" : "moves"}
+            {found > bundle.want && `, ${found - bundle.want} past the ask`}.
+          </>
+        ) : (
+          <>
+            Today is done — you found{" "}
+            <strong className="font-display font-semibold">{found}</strong> of{" "}
+            {bundle.want} kinds in {state.moves}{" "}
+            {state.moves === 1 ? "move" : "moves"}.
+          </>
+        )}{" "}
+        Every way is written out below, yours marked. Come back tomorrow, or
+        start over and play this one again.
       </p>
     </section>
   );
@@ -751,7 +841,7 @@ function Trail({
 
 function Answers({ bundle, state }: { bundle: PuzzleBundle; state: GameState }) {
   const rules = useMemo(() => Object.keys(bundle.answers), [bundle]);
-  const missed = rules.filter((rule) => !(rule in state.found)).length;
+  const missed = outstanding(state.found, bundle).length;
 
   return (
     <section className="panel flex flex-col gap-4 rounded-lg border p-6">
