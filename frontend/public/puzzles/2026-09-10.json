@@ -1,0 +1,2840 @@
+{
+  "version": 3,
+  "target": "CuSO3",
+  "name": "copper(II) sulfite",
+  "grade": "medium",
+  "want": 5,
+  "ways": 6,
+  "cut": 1,
+  "palette": [
+    "Ba(OH)2",
+    "CuBr2",
+    "CuO",
+    "H2O",
+    "Na2O",
+    "SO2",
+    "SO3",
+    "SiO2"
+  ],
+  "species": {
+    "Ba(HSO3)2": {
+      "name": "barium hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HSO3": -1
+      }
+    },
+    "Ba(HSO4)2": {
+      "name": "barium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HSO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaSO3": {
+      "name": "barium sulfite",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO3": -2
+      }
+    },
+    "BaSO4": {
+      "name": "barium sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO4": -2
+      }
+    },
+    "BaSiO3": {
+      "name": "barium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SiO3": -2
+      }
+    },
+    "Cu(HSO3)2": {
+      "name": "copper(II) hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "HSO3": -1
+      }
+    },
+    "Cu(HSO4)2": {
+      "name": "copper(II) hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "HSO4": -1
+      }
+    },
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "OH": -1
+      }
+    },
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuO": {
+      "name": "copper(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "CuSO3": {
+      "name": "copper(II) sulfite",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "SO3": -2
+      }
+    },
+    "CuSO4": {
+      "name": "copper(II) sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "SO4": -2
+      }
+    },
+    "CuSiO3": {
+      "name": "copper(II) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "SiO3": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SO3": {
+      "name": "sulfurous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO3": -2
+      }
+    },
+    "H2SO4": {
+      "name": "sulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO4": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "Na2O": {
+      "name": "sodium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Na2SO3": {
+      "name": "sodium sulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "SO3": -2
+      }
+    },
+    "Na2SO4": {
+      "name": "sodium sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "SO4": -2
+      }
+    },
+    "Na2SiO3": {
+      "name": "sodium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "SiO3": -2
+      }
+    },
+    "NaBr": {
+      "name": "sodium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaHSO3": {
+      "name": "sodium hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "HSO3": -1
+      }
+    },
+    "NaHSO4": {
+      "name": "sodium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "HSO4": -1
+      }
+    },
+    "NaOH": {
+      "name": "sodium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "OH": -1
+      }
+    },
+    "SO2": {
+      "name": "sulfur dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "SO3": {
+      "name": "sulfur trioxide",
+      "class": "acidic oxide",
+      "state": "l",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "CuBr2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + Ba(OH)2 -> Cu(OH)2 + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "SO2"
+      ],
+      "products": [
+        "BaSO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SO2 -> BaSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "SO3"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SO3 -> BaSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "SiO2"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "CuO",
+        "SO2"
+      ],
+      "products": [
+        "CuSO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + SO2 -> CuSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuO",
+        "SO3"
+      ],
+      "products": [
+        "CuSO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + SO3 -> CuSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuO",
+        "SiO2"
+      ],
+      "products": [
+        "CuSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + SiO2 -> CuSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "H2O"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Na2O + H2O -> 2 NaOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "SO2",
+        "H2O"
+      ],
+      "products": [
+        "H2SO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO2 + H2O -> H2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "SO3",
+        "H2O"
+      ],
+      "products": [
+        "H2SO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO3 + H2O -> H2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "SO2"
+      ],
+      "products": [
+        "Na2SO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SO2 -> Na2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "SO3"
+      ],
+      "products": [
+        "Na2SO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SO3 -> Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2O",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + Cu(OH)2 -> CuSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(HSO3)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO3 + Cu(OH)2 -> Cu(HSO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Cu(OH)2 -> CuSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Cu(OH)2 -> Cu(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "CuBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaBr2 + CuSO4 -> BaSO4 + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na2SO3"
+      ],
+      "products": [
+        "BaSO3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaBr2 + Na2SO3 -> BaSO3 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaBr2 + Na2SO4 -> BaSO4 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaBr2 + Na2SiO3 -> BaSiO3 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaSO3",
+        "H2SO3"
+      ],
+      "products": [
+        "Ba(HSO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO3 + H2SO3 -> Ba(HSO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaSO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSO3 + H2SO4 -> H2SO3 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaSO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2SO3 -> H2SiO3 + BaSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2SO4 -> H2SiO3 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuSO3",
+        "H2SO3"
+      ],
+      "products": [
+        "Cu(HSO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "CuSO3 + H2SO3 -> Cu(HSO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "CuSO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "CuSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuSO3 + H2SO4 -> H2SO3 + CuSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaSO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuSO4 + Ba(OH)2 -> Cu(OH)2 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Na2SO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuSO4 + 2 NaOH -> Cu(OH)2 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Cu(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "CuSO4 + H2SO4 -> Cu(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Na2SO3"
+      ],
+      "products": [
+        "CuSO3",
+        "Na2SO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuSO4 + Na2SO3 -> CuSO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CuSiO3",
+        "Na2SO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuSO4 + Na2SiO3 -> CuSiO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "CuSiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "CuSO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuSiO3 + H2SO3 -> H2SiO3 + CuSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuSiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "CuSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuSiO3 + H2SO4 -> H2SiO3 + CuSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "SO2"
+      ],
+      "products": [
+        "Na2SO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SO2 -> Na2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "SO3"
+      ],
+      "products": [
+        "Na2SO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SO3 -> Na2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaOH",
+        "SiO2"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + 2 NaOH -> Na2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NaOH"
+      ],
+      "products": [
+        "NaHSO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO3 + NaOH -> NaHSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "NaOH"
+      ],
+      "products": [
+        "NaHSO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO4 + NaOH -> NaHSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO3"
+      ],
+      "products": [
+        "SO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2SO3 -> SO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + Ba(OH)2 -> BaSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HSO3)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO3 + Ba(OH)2 -> Ba(HSO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "CuO"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + CuO -> CuSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2SO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + Na2O -> Na2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SO3",
+        "H2SO3"
+      ],
+      "products": [
+        "NaHSO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2SO3 + H2SO3 -> 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Na2SO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + H2SO3 -> H2SiO3 + Na2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Ba(OH)2 -> BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Ba(OH)2 -> Ba(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "CuO"
+      ],
+      "products": [
+        "CuSO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + CuO -> CuSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Na2O"
+      ],
+      "products": [
+        "Na2SO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + Na2O -> Na2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "Na2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SO3 + H2SO4 -> H2SO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Na2SO4",
+        "H2SO4"
+      ],
+      "products": [
+        "NaHSO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2SO4 + H2SO4 -> 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "Na2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Na2SiO3 + H2SO4 -> H2SiO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2SO3",
+        "CuBr2"
+      ],
+      "products": [
+        "CuSO3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2SO3 + CuBr2 -> CuSO3 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "CuBr2"
+      ],
+      "products": [
+        "CuSiO3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2SiO3 + CuBr2 -> CuSiO3 + 2 NaBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(HSO3)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HSO3)2 + Ba(OH)2 -> Cu(OH)2 + Ba(HSO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cu(HSO3)2 + Cu(OH)2 -> 2 CuSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaHSO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HSO3)2 + 2 NaOH -> Cu(OH)2 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "CuSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HSO3)2 + H2SO4 -> 2 H2SO3 + CuSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Na2SO3"
+      ],
+      "products": [
+        "CuSO3",
+        "NaHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HSO3)2 + Na2SO3 -> CuSO3 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CuSiO3",
+        "NaHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HSO3)2 + Na2SiO3 -> CuSiO3 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HSO4)2 + Ba(OH)2 -> Cu(OH)2 + Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cu(HSO4)2 + Cu(OH)2 -> 2 CuSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaHSO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HSO4)2 + 2 NaOH -> Cu(OH)2 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Na2SO3"
+      ],
+      "products": [
+        "CuSO3",
+        "NaHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HSO4)2 + Na2SO3 -> CuSO3 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "CuSiO3",
+        "NaHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HSO4)2 + Na2SiO3 -> CuSiO3 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HSO3)2 + Ba(OH)2 -> 2 BaSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "CuSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Cu(HSO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO3)2 + CuSO4 -> BaSO4 + Cu(HSO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HSO3)2 + H2SO4 -> 2 H2SO3 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Na2SO3"
+      ],
+      "products": [
+        "BaSO3",
+        "NaHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO3)2 + Na2SO3 -> BaSO3 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Na2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "NaHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO3)2 + Na2SO4 -> BaSO4 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "NaHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO3)2 + Na2SiO3 -> BaSiO3 + 2 NaHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HSO4)2 + Ba(OH)2 -> 2 BaSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "CuSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Cu(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + CuSO4 -> BaSO4 + Cu(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Na2SO3"
+      ],
+      "products": [
+        "BaSO3",
+        "NaHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + Na2SO3 -> BaSO3 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Na2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "NaHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + Na2SO4 -> BaSO4 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Na2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "NaHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + Na2SiO3 -> BaSiO3 + 2 NaHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "CuO"
+      ],
+      "products": [
+        "CuSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + CuO -> CuSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2O"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Cu(OH)2 -> CuSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NaHSO3",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHSO3 + NaOH -> Na2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaHSO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SO3",
+        "Na2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "2 NaHSO3 + H2SO4 -> 2 H2SO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "NaHSO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NaHSO4 + NaOH -> Na2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "oxide_with_oxide": {
+      "substrates": [
+        "CuO",
+        "SO2"
+      ],
+      "products": [
+        "CuSO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CuO + SO2 -> CuSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "CuSiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "CuSO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuSiO3 + H2SO3 -> H2SiO3 + CuSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2SO3",
+        "CuO"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + CuO -> CuSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSO3 is insoluble"
+    },
+    "double_displacement": {
+      "substrates": [
+        "CuSO4",
+        "Na2SO3"
+      ],
+      "products": [
+        "CuSO3",
+        "Na2SO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuSO4 + Na2SO3 -> CuSO3 + Na2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuSO3 precipitates"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2SO3",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + Cu(OH)2 -> CuSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSO3 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuSO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cu(HSO3)2 + Cu(OH)2 -> 2 CuSO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "Cu(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "NaHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO3)2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Cu(HSO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SO4"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Na2SiO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHSO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHSO4"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(HSO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaSO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "Na2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO3)2",
+        "NaHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "Na2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HSO4)2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Na2SO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NaHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuSO4",
+        "NaHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Na2SO4"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NaBr"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "NaHSO4"
+      ],
+      "note": "H2SO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "NaBr"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2SO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2SO4"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHSO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHSO4"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    }
+  ]
+}

@@ -1,0 +1,1960 @@
+{
+  "version": 3,
+  "target": "FeCO3",
+  "name": "iron(II) carbonate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 8,
+  "cut": 1,
+  "palette": [
+    "Ba(OH)2",
+    "CO2",
+    "Fe",
+    "FeI2",
+    "FeO",
+    "H2O",
+    "K2O",
+    "SiO2"
+  ],
+  "species": {
+    "Ba(HCO3)2": {
+      "name": "barium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HCO3": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaCO3": {
+      "name": "barium carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "CO3": -2
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaO": {
+      "name": "barium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "BaSiO3": {
+      "name": "barium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SiO3": -2
+      }
+    },
+    "CO2": {
+      "name": "carbon dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "Fe": {
+      "name": "iron",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Fe(HCO3)2": {
+      "name": "iron(II) hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "HCO3": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "FeCO3": {
+      "name": "iron(II) carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "CO3": -2
+      }
+    },
+    "FeH2": {
+      "name": "iron(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "H": -1
+      }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeO": {
+      "name": "iron(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeSiO3": {
+      "name": "iron(II) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "SiO3": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2CO3": {
+      "name": "carbonic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "CO3": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K2CO3": {
+      "name": "potassium carbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "CO3": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KHCO3": {
+      "name": "potassium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HCO3": -1
+      }
+    },
+    "KI": {
+      "name": "potassium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "I": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "CO2"
+      ],
+      "products": [
+        "BaCO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + CO2 -> BaCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "SiO2"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ba(OH)2 + SiO2 -> BaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "CO2"
+      ],
+      "products": [
+        "FeCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + CO2 -> FeCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CO2",
+        "H2O"
+      ],
+      "products": [
+        "H2CO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "CO2 + H2O -> H2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "CO2"
+      ],
+      "products": [
+        "K2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + CO2 -> K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeO",
+        "SiO2"
+      ],
+      "products": [
+        "FeSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + SiO2 -> FeSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaCO3"
+      ],
+      "products": [
+        "BaO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "BaCO3 -> BaO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "BaCO3",
+        "H2CO3"
+      ],
+      "products": [
+        "Ba(HCO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaCO3 + H2CO3 -> Ba(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Fe(OH)2 -> FeCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HCO3)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2CO3 + Fe(OH)2 -> Fe(HCO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "K2CO3"
+      ],
+      "products": [
+        "BaCO3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaI2 + K2CO3 -> BaCO3 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaI2 + K2SiO3 -> BaSiO3 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaCO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2CO3 -> H2SiO3 + BaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeCO3"
+      ],
+      "products": [
+        "FeO",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "FeCO3 -> FeO + CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "FeCO3",
+        "H2CO3"
+      ],
+      "products": [
+        "Fe(HCO3)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeCO3 + H2CO3 -> Fe(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3"
+      ],
+      "products": [
+        "CO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2CO3 -> CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Ba(OH)2 -> BaCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HCO3)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2CO3 + Ba(OH)2 -> Ba(HCO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2CO3"
+      ],
+      "products": [
+        "FeCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2CO3 -> FeCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "FeO"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + FeO -> FeCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "K2O"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + K2O -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "KHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2CO3 + H2CO3 -> 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "FeSiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "FeCO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeSiO3 + H2CO3 -> H2SiO3 + FeCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 KOH -> K2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KOH"
+      ],
+      "products": [
+        "KHCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + KOH -> KHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2CO3 -> H2SiO3 + K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "FeI2"
+      ],
+      "products": [
+        "FeCO3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2CO3 + FeI2 -> FeCO3 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "CO2"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + CO2 -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "KI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + 2 KOH -> Fe(OH)2 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "FeI2"
+      ],
+      "products": [
+        "FeSiO3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2SiO3 + FeI2 -> FeSiO3 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "BaO",
+        "CO2"
+      ],
+      "products": [
+        "BaCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "BaO + CO2 -> BaCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaO",
+        "H2O"
+      ],
+      "products": [
+        "Ba(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "BaO + H2O -> Ba(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaO",
+        "SiO2"
+      ],
+      "products": [
+        "BaSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "BaO + SiO2 -> BaSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "BaO"
+      ],
+      "products": [
+        "BaCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + BaO -> BaCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaCO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "BaO"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + BaO -> BaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2"
+      ],
+      "products": [
+        "BaCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Ba(HCO3)2 -> BaCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HCO3)2 + Ba(OH)2 -> 2 BaCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "K2CO3"
+      ],
+      "products": [
+        "BaCO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HCO3)2 + K2CO3 -> BaCO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HCO3)2 + K2SiO3 -> BaSiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2"
+      ],
+      "products": [
+        "FeCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Fe(HCO3)2 -> FeCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HCO3)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HCO3)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HCO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HCO3)2 + Fe(OH)2 -> 2 FeCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "K2CO3"
+      ],
+      "products": [
+        "FeCO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HCO3)2 + K2CO3 -> FeCO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "KHCO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HCO3)2 + 2 KOH -> Fe(OH)2 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "FeSiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HCO3)2 + K2SiO3 -> FeSiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ba(OH)2 -> BaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2SiO3"
+      ],
+      "products": [
+        "FeSiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2SiO3 -> FeSiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "FeO"
+      ],
+      "products": [
+        "FeSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + FeO -> FeSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Fe(OH)2 -> FeSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "FeO + H2 -> Fe + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "KHCO3"
+      ],
+      "products": [
+        "K2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 KHCO3 -> K2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHCO3 + KOH -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "oxide_with_oxide": {
+      "substrates": [
+        "FeO",
+        "CO2"
+      ],
+      "products": [
+        "FeCO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + CO2 -> FeCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "FeSiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "FeCO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeSiO3 + H2CO3 -> H2SiO3 + FeCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2CO3",
+        "FeO"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + FeO -> FeCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    "double_displacement": {
+      "substrates": [
+        "K2CO3",
+        "FeI2"
+      ],
+      "products": [
+        "FeCO3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2CO3 + FeI2 -> FeCO3 + 2 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeCO3 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Fe",
+        "H2CO3"
+      ],
+      "products": [
+        "FeCO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2CO3 -> FeCO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2CO3",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + Fe(OH)2 -> FeCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeCO3 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Fe(HCO3)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeCO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HCO3)2 + Fe(OH)2 -> 2 FeCO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "hydrogencarbonate_decomposition": {
+      "substrates": [
+        "Fe(HCO3)2"
+      ],
+      "products": [
+        "FeCO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "Fe(HCO3)2 -> FeCO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2CO3"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2SiO3"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KHCO3"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KI"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Fe(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HCO3)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeI2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "K2CO3"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "K2SiO3"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KHCO3"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KI"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HCO3)2",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KI"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KI"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    }
+  ]
+}

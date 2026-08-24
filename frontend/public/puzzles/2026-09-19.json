@@ -1,0 +1,1431 @@
+{
+  "version": 3,
+  "target": "BaHPO4",
+  "name": "barium hydrogenphosphate",
+  "grade": "medium",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Ba(OH)2",
+    "BaO",
+    "H2O",
+    "K2O",
+    "NH3",
+    "P2O5"
+  ],
+  "species": {
+    "(NH4)2HPO4": {
+      "name": "ammonium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "HPO4": -2
+      }
+    },
+    "(NH4)3PO4": {
+      "name": "ammonium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "PO4": -3
+      }
+    },
+    "Ba(H2PO4)2": {
+      "name": "barium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "H2PO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "Ba3(PO4)2": {
+      "name": "barium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "PO4": -3
+      }
+    },
+    "BaHPO4": {
+      "name": "barium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HPO4": -2
+      }
+    },
+    "BaO": {
+      "name": "barium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "K2HPO4": {
+      "name": "potassium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HPO4": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K3PO4": {
+      "name": "potassium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "PO4": -3
+      }
+    },
+    "KH2PO4": {
+      "name": "potassium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "H2PO4": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4H2PO4": {
+      "name": "ammonium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "H2PO4": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ba(OH)2 + P2O5 -> Ba3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "BaO",
+        "H2O"
+      ],
+      "products": [
+        "Ba(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "BaO + H2O -> Ba(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaO",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 BaO + P2O5 -> Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 K2O + P2O5 -> 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + 4 H3PO4 -> 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 KOH + P2O5 -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 KOH -> K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 KOH -> K2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "KH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + KOH -> KH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 NH4OH -> (NH4)3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 NH4OH -> (NH4)2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4H2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + NH4OH -> NH4H2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ba(OH)2 -> Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ba(OH)2 -> Ba(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "BaO"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 BaO -> Ba3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "K2O"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 K2O -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H3PO4"
+      ],
+      "products": [
+        "(NH4)3PO4"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 NH3 + H3PO4 -> (NH4)3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "K2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 K3PO4 + H3PO4 -> 3 K2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "KH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K3PO4 + 2 H3PO4 -> 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 BaHPO4 + Ba(OH)2 -> Ba3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + 2 Ba(OH)2 -> Ba3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "K3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 K3PO4 -> Ba3(PO4)2 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "K2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + K2HPO4 -> BaHPO4 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "(NH4)3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 (NH4)3PO4 -> Ba3(PO4)2 + 6 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + (NH4)2HPO4 -> BaHPO4 + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "K2HPO4 + KOH -> K3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + KOH -> K2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + 2 KOH -> K3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 (NH4)3PO4 + 3 Ba(OH)2 -> 6 NH3 + Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          6,
+          1,
+          6
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)3PO4 + 3 KOH -> 3 NH3 + K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1,
+          3
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "(NH4)2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 (NH4)3PO4 + H3PO4 -> 3 (NH4)2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "NH4H2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)3PO4 + 2 H3PO4 -> 3 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2HPO4 + Ba(OH)2 -> 2 NH3 + BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2HPO4 + 2 KOH -> 2 NH3 + K2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "(NH4)2HPO4 + NH4OH -> (NH4)3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 NH4H2PO4 + Ba(OH)2 -> 2 NH3 + Ba(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "KH2PO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "NH4H2PO4 + KOH -> NH3 + KH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4H2PO4 + NH4OH -> (NH4)2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4H2PO4 + 2 NH4OH -> (NH4)3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "partial_neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    "salt_with_parent_acid": {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + (NH4)2HPO4 -> BaHPO4 + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    "salt_with_base": {
+      "substrates": [
+        "(NH4)2HPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2HPO4 + Ba(OH)2 -> 2 NH3 + BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "K3PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "K2HPO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "NH4OH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K2HPO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "K3PO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "KH2PO4"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
+}

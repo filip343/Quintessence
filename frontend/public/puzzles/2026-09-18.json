@@ -1,0 +1,1232 @@
+{
+  "version": 3,
+  "target": "Cr2(SO3)3",
+  "name": "chromium(III) sulfite",
+  "grade": "hard",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Cr",
+    "CrBr3",
+    "CrF3",
+    "H2O",
+    "K2O",
+    "SO2",
+    "SiO2"
+  ],
+  "species": {
+    "Cr": {
+      "name": "chromium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cr(HSO3)3": {
+      "name": "chromium(III) hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "HSO3": -1
+      }
+    },
+    "Cr(OH)3": {
+      "name": "chromium(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "OH": -1
+      }
+    },
+    "Cr2(SO3)3": {
+      "name": "chromium(III) sulfite",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "SO3": -2
+      }
+    },
+    "Cr2(SiO3)3": {
+      "name": "chromium(III) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "SiO3": -2
+      }
+    },
+    "CrBr3": {
+      "name": "chromium(III) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "Br": -1
+      }
+    },
+    "CrF3": {
+      "name": "chromium(III) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "F": -1
+      }
+    },
+    "CrH3": {
+      "name": "chromium(III) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "H": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SO3": {
+      "name": "sulfurous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO3": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2SO3": {
+      "name": "potassium sulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SO3": -2
+      }
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KBr": {
+      "name": "potassium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "Br": -1
+      }
+    },
+    "KF": {
+      "name": "potassium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "F": -1
+      }
+    },
+    "KHSO3": {
+      "name": "potassium hydrogensulfite",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HSO3": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "SO2": {
+      "name": "sulfur dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "SO2",
+        "H2O"
+      ],
+      "products": [
+        "H2SO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO2 + H2O -> H2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to SO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SO2 -> K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrBr3 + 3 KOH -> Cr(OH)3 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "CrF3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KF"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrF3 + 3 KOH -> Cr(OH)3 + 3 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SO2"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SO2 -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO3 + 2 KOH -> K2SO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KOH"
+      ],
+      "products": [
+        "KHSO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO3 + KOH -> KHSO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SO3"
+      ],
+      "products": [
+        "SO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2SO3 -> SO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2SO3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2SO3 -> Cr2(SO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(SO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO3 + K2O -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SO3",
+        "H2SO3"
+      ],
+      "products": [
+        "KHSO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2SO3 + H2SO3 -> 2 KHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2SO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2SO3 -> H2SiO3 + K2SO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SO3 + 2 CrBr3 -> Cr2(SO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SO3",
+        "CrF3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SO3 + 2 CrF3 -> Cr2(SO3)3 + 6 KF",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrBr3 -> Cr2(SiO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrF3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrF3 -> Cr2(SiO3)3 + 6 KF",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SO3 + 2 Cr(OH)3 -> Cr2(SO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr(HSO3)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2SO3 + Cr(OH)3 -> Cr(HSO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SiO3 + 2 Cr(OH)3 -> Cr2(SiO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "KHSO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHSO3 + KOH -> K2SO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cr2(SO3)3",
+        "H2SO3"
+      ],
+      "products": [
+        "Cr(HSO3)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Cr2(SO3)3 + 3 H2SO3 -> 2 Cr(HSO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2"
+      ],
+      "products": [
+        "CrH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 H2 -> 2 CrH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2SiO3 -> Cr2(SiO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2(SO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2SO3 -> 3 H2SiO3 + Cr2(SO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KHSO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cr(HSO3)3 + 3 KOH -> Cr(OH)3 + 3 KHSO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "K2SO3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "KHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HSO3)3 + 3 K2SO3 -> Cr2(SO3)3 + 6 KHSO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KHSO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HSO3)3 + 3 K2SiO3 -> Cr2(SiO3)3 + 6 KHSO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HSO3)3 + Cr(OH)3 -> Cr2(SO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "double_displacement": {
+      "substrates": [
+        "K2SO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SO3 + 2 CrBr3 -> Cr2(SO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Cr",
+        "H2SO3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2SO3 -> Cr2(SO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(SO3)3 is insoluble"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2SO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2(SO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2SO3 -> 3 H2SiO3 + Cr2(SO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2SO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SO3 + 2 Cr(OH)3 -> Cr2(SO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SO3)3 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Cr(HSO3)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SO3)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HSO3)3 + Cr(OH)3 -> Cr2(SO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HSO3)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrBr3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrF3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2SO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2SiO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KBr"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KF"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KHSO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HSO3)3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrF3",
+        "H2SO3"
+      ],
+      "note": "H2SO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrF3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrF3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrF3",
+        "KHSO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KBr"
+      ],
+      "note": "H2SO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SO3",
+        "KF"
+      ],
+      "note": "H2SO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2SO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KF"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHSO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO3, so it cannot drive it out of its own salt"
+    }
+  ]
+}
