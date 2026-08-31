@@ -1,0 +1,1584 @@
+{
+  "version": 3,
+  "target": "Pb3(PO4)2",
+  "name": "lead(II) phosphate",
+  "grade": "hard",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "H2O",
+    "Li2O",
+    "P2O5",
+    "Pb",
+    "PbF2"
+  ],
+  "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2HPO4": {
+      "name": "silver hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HPO4": -2
+      }
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag3PO4": {
+      "name": "silver phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "PO4": -3
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgH2PO4": {
+      "name": "silver dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "H2PO4": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "Li2HPO4": {
+      "name": "lithium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "HPO4": -2
+      }
+    },
+    "Li2O": {
+      "name": "lithium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Li3PO4": {
+      "name": "lithium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "PO4": -3
+      }
+    },
+    "LiF": {
+      "name": "lithium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "F": -1
+      }
+    },
+    "LiH2PO4": {
+      "name": "lithium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "H2PO4": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "OH": -1
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Pb": {
+      "name": "lead",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Pb(H2PO4)2": {
+      "name": "lead(II) dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "H2PO4": -1
+      }
+    },
+    "Pb(OH)2": {
+      "name": "lead(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Pb": 2,
+        "OH": -1
+      }
+    },
+    "Pb3(PO4)2": {
+      "name": "lead(II) phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "PO4": -3
+      }
+    },
+    "PbF2": {
+      "name": "lead(II) fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "F": -1
+      }
+    },
+    "PbH2": {
+      "name": "lead(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Pb": 2,
+        "H": -1
+      }
+    },
+    "PbHPO4": {
+      "name": "lead(II) hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Pb": 2,
+        "HPO4": -2
+      }
+    },
+    "PbO": {
+      "name": "lead(II) oxide",
+      "class": "amphoteric oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "P2O5"
+      ],
+      "products": [
+        "Ag3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 Ag2O + P2O5 -> 2 Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Pb"
+      ],
+      "products": [
+        "PbO",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "Ag2O + Pb -> PbO + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "H2O"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Li2O + H2O -> 2 LiOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 Li2O + P2O5 -> 2 Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Ag2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Ag3PO4 + H3PO4 -> 3 Ag2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "AgH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag3PO4 + 2 H3PO4 -> 3 AgH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "LiOH",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 LiOH + P2O5 -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 LiOH -> Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 LiOH -> Li2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "LiH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 Ag2O -> 2 Ag3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "Ag3PO4 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Li2O"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 Li2O -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "H3PO4"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Pb + 2 H3PO4 -> Pb3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Pb3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "PbF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Pb3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 PbF2 + 2 H3PO4 -> 6 HF + Pb3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Li2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Li3PO4 + H3PO4 -> 3 Li2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "AgH2PO4"
+      ],
+      "products": [
+        "Pb(H2PO4)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgH2PO4 -> Pb(H2PO4)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgH2PO4 + Li3PO4 -> Ag3PO4 + 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + Li2HPO4 -> Ag2HPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Li2HPO4 + LiOH -> Li3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + LiOH -> Li2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + 2 LiOH -> Li3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Pb3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "PbHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Pb3(PO4)2 + H3PO4 -> 3 PbHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Pb3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Pb(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Pb3(PO4)2 + 4 H3PO4 -> 3 Pb(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "H2"
+      ],
+      "products": [
+        "PbH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Pb + H2 -> PbH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "PbO",
+        "H2"
+      ],
+      "products": [
+        "Pb",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "PbO + H2 -> Pb + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ag2O"
+      ],
+      "products": [
+        "AgF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Ag2O -> 2 AgF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2O"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Li2O -> 2 LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb",
+        "HF"
+      ],
+      "products": [
+        "PbF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Pb + 2 HF -> PbF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiOH"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + LiOH -> LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "LiOH"
+      ],
+      "products": [
+        "Pb(OH)2",
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Pb(H2PO4)2 + 2 LiOH -> Pb(OH)2 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Pb(H2PO4)2 + 2 Li3PO4 -> Pb3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Pb3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "PbHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Pb(H2PO4)2 + Li2HPO4 -> PbHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "PbHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "AgF"
+      ],
+      "products": [
+        "PbF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Pb + 2 AgF -> PbF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Pb is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 AgF + H3PO4 -> 3 HF + Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgF + Li3PO4 -> Ag3PO4 + 3 LiF",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + Li2HPO4 -> Ag2HPO4 + 2 LiF",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "LiF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Li3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 LiF + H3PO4 -> 3 HF + Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Pb(OH)2 -> Pb3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Pb3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Pb(OH)2 -> PbHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Pb(OH)2 -> Pb(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Pb(OH)2 -> PbF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "PbHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Pb(H2PO4)2 + Pb(OH)2 -> 2 PbHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Pb(H2PO4)2 + 2 Pb(OH)2 -> Pb3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "PbHPO4",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 PbHPO4 + Pb(OH)2 -> Pb3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "acid_displacement": {
+      "substrates": [
+        "PbF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Pb3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 PbF2 + 2 H3PO4 -> 6 HF + Pb3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Pb",
+        "H3PO4"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Pb + 2 H3PO4 -> Pb3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Pb3(PO4)2 is insoluble"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Pb(H2PO4)2 + 2 Li3PO4 -> Pb3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Pb3(PO4)2 precipitates"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Pb(H2PO4)2",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Pb(H2PO4)2 + 2 Pb(OH)2 -> Pb3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "Pb(OH)2"
+      ],
+      "products": [
+        "Pb3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Pb(OH)2 -> Pb3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Pb3(PO4)2 is insoluble"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ag",
+        "AgF"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgH2PO4"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H3PO4"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HF"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li2HPO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li3PO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "LiH2PO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Pb(H2PO4)2"
+      ],
+      "note": "Ag sits below Pb in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "LiH2PO4"
+      ],
+      "note": "LiF is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Pb(H2PO4)2"
+      ],
+      "note": "PbF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2HPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li3PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiH2PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Pb(H2PO4)2"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "PbHPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Pb"
+      ],
+      "note": "Pb sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "Pb"
+      ],
+      "note": "Pb sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "Pb"
+      ],
+      "note": "Pb sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Pb",
+        "Pb(H2PO4)2"
+      ],
+      "note": "Pb sits below Pb in the activity series, so it cannot push it out"
+    }
+  ]
+}
