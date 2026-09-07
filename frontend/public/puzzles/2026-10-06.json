@@ -1,0 +1,910 @@
+{
+  "version": 3,
+  "target": "KNO3",
+  "name": "potassium nitrate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 7,
+  "cut": 1,
+  "palette": [
+    "Fe2O3",
+    "H2O",
+    "K2O",
+    "KF",
+    "KOH",
+    "MgO",
+    "N2O5"
+  ],
+  "species": {
+    "Fe(NO3)3": {
+      "name": "iron(III) nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "NO3": -1
+      }
+    },
+    "Fe(OH)3": {
+      "name": "iron(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "OH": -1
+      }
+    },
+    "Fe2O3": {
+      "name": "iron(III) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeF3": {
+      "name": "iron(III) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "F": -1
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "HNO3": {
+      "name": "nitric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "NO3": -1
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "KF": {
+      "name": "potassium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "F": -1
+      }
+    },
+    "KNO3": {
+      "name": "potassium nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "NO3": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "Mg(NO3)2": {
+      "name": "magnesium nitrate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "NO3": -1
+      }
+    },
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "MgF2": {
+      "name": "magnesium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "F": -1
+      }
+    },
+    "MgO": {
+      "name": "magnesium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "N2O5": {
+      "name": "dinitrogen pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Fe2O3",
+        "N2O5"
+      ],
+      "products": [
+        "Fe(NO3)3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Fe2O3 + 3 N2O5 -> 2 Fe(NO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "N2O5",
+        "H2O"
+      ],
+      "products": [
+        "HNO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "N2O5 + H2O -> 2 HNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "N2O5"
+      ],
+      "products": [
+        "KNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + N2O5 -> 2 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "N2O5"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + N2O5 -> 2 KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgO",
+        "N2O5"
+      ],
+      "products": [
+        "Mg(NO3)2"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "MgO + N2O5 -> Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "KNO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(NO3)3 + 3 KOH -> Fe(OH)3 + 3 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe2O3"
+      ],
+      "products": [
+        "Fe(NO3)3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HNO3 + Fe2O3 -> 2 Fe(NO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "K2O"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + K2O -> 2 KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "KNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KF + HNO3 -> HF + KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "KOH"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HNO3 + KOH -> KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "MgO"
+      ],
+      "products": [
+        "Mg(NO3)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + MgO -> Mg(NO3)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(NO3)2",
+        "KF"
+      ],
+      "products": [
+        "MgF2",
+        "KNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(NO3)2 + 2 KF -> MgF2 + 2 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(NO3)2",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "KNO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(NO3)2 + 2 KOH -> Mg(OH)2 + 2 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "Fe(NO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HNO3 + Fe(OH)3 -> Fe(NO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 HF + Fe(OH)3 -> FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe2O3"
+      ],
+      "products": [
+        "FeF3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "6 HF + Fe2O3 -> 2 FeF3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2O"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + K2O -> 2 KF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "KOH"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + KOH -> KF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgO"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + MgO -> MgF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Mg(OH)2 -> MgF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Mg(NO3)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HNO3 -> 2 HF + Mg(NO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HNO3",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(NO3)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HNO3 + Mg(OH)2 -> Mg(NO3)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "KF"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeF3 + 3 KOH -> Fe(OH)3 + 3 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "Fe(NO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeF3 + 3 HNO3 -> 3 HF + Fe(NO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF3",
+        "Mg(NO3)2"
+      ],
+      "products": [
+        "MgF2",
+        "Fe(NO3)3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 FeF3 + 3 Mg(NO3)2 -> 3 MgF2 + 2 Fe(NO3)3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          3,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    }
+  ],
+  "answers": {
+    "base_with_acidic_oxide": {
+      "substrates": [
+        "KOH",
+        "N2O5"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + N2O5 -> 2 KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "oxide_with_oxide": {
+      "substrates": [
+        "K2O",
+        "N2O5"
+      ],
+      "products": [
+        "KNO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + N2O5 -> 2 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "KF",
+        "HNO3"
+      ],
+      "products": [
+        "HF",
+        "KNO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "KF + HNO3 -> HF + KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HNO3",
+        "K2O"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HNO3 + K2O -> 2 KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "Mg(NO3)2",
+        "KF"
+      ],
+      "products": [
+        "MgF2",
+        "KNO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(NO3)2 + 2 KF -> MgF2 + 2 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    "neutralisation": {
+      "substrates": [
+        "HNO3",
+        "KOH"
+      ],
+      "products": [
+        "KNO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HNO3 + KOH -> KNO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "salt_with_base": {
+      "substrates": [
+        "Fe(NO3)3",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)3",
+        "KNO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(NO3)3 + 3 KOH -> Fe(OH)3 + 3 KNO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe(OH)3 precipitates"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(NO3)3",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(NO3)2"
+      ],
+      "note": "HF is no stronger than HNO3, so it cannot drive it out of its own salt"
+    }
+  ]
+}

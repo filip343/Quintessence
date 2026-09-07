@@ -1,0 +1,1592 @@
+{
+  "version": 3,
+  "target": "Cr2S3",
+  "name": "chromium(III) sulfide",
+  "grade": "medium",
+  "want": 5,
+  "ways": 6,
+  "cut": 1,
+  "palette": [
+    "Cr",
+    "CrBr3",
+    "CrI3",
+    "H2O",
+    "H2S",
+    "K2O",
+    "Na2S",
+    "S",
+    "SiO2"
+  ],
+  "species": {
+    "Cr": {
+      "name": "chromium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cr(HS)3": {
+      "name": "chromium(III) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "HS": -1
+      }
+    },
+    "Cr(OH)3": {
+      "name": "chromium(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "OH": -1
+      }
+    },
+    "Cr2(SiO3)3": {
+      "name": "chromium(III) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "SiO3": -2
+      }
+    },
+    "Cr2S3": {
+      "name": "chromium(III) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "S": -2
+      }
+    },
+    "CrBr3": {
+      "name": "chromium(III) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "Br": -1
+      }
+    },
+    "CrH3": {
+      "name": "chromium(III) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "H": -1
+      }
+    },
+    "CrI3": {
+      "name": "chromium(III) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "I": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2S": {
+      "name": "potassium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "S": -2
+      }
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KBr": {
+      "name": "potassium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "Br": -1
+      }
+    },
+    "KHS": {
+      "name": "potassium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HS": -1
+      }
+    },
+    "KI": {
+      "name": "potassium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "I": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "Na2S": {
+      "name": "sodium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "S": -2
+      }
+    },
+    "NaBr": {
+      "name": "sodium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
+        "HS": -1
+      }
+    },
+    "NaI": {
+      "name": "sodium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "I": -1
+      }
+    },
+    "S": {
+      "name": "sulfur",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Cr",
+        "H2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2S -> Cr2S3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "S"
+      ],
+      "products": [
+        "Cr2S3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 S -> Cr2S3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "Na2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 CrBr3 + 3 Na2S -> Cr2S3 + 6 NaBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "Na2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "NaI"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 CrI3 + 3 Na2S -> Cr2S3 + 6 NaI",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2O"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr2S3",
+        "H2S"
+      ],
+      "products": [
+        "Cr(HS)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Cr2S3 + 3 H2S -> 2 Cr(HS)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2"
+      ],
+      "products": [
+        "CrH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 H2 -> 2 CrH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrBr3 + 3 KOH -> Cr(OH)3 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrI3 + 3 KOH -> Cr(OH)3 + 3 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2S3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 CrBr3 -> Cr2S3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "CrI3"
+      ],
+      "products": [
+        "Cr2S3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2S + 2 CrI3 -> Cr2S3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H2S"
+      ],
+      "products": [
+        "KHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2S + H2S -> 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrBr3 -> Cr2(SiO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrI3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrI3 -> Cr2(SiO3)3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2S"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "Na2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "NaHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HS)3 + 3 Na2S -> Cr2S3 + 6 NaHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cr(HS)3 + 3 KOH -> Cr(OH)3 + 3 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "K2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HS)3 + 3 K2S -> Cr2S3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HS)3 + 3 K2SiO3 -> Cr2(SiO3)3 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HS)3 + Cr(OH)3 -> Cr2S3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2S + 2 Cr(OH)3 -> Cr2S3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr(HS)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2S + Cr(OH)3 -> Cr(HS)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SiO3 + 2 Cr(OH)3 -> Cr2(SiO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2S3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Cr2S3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2SiO3 -> Cr2(SiO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Cr",
+        "S"
+      ],
+      "products": [
+        "Cr2S3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 S -> Cr2S3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "CrBr3",
+        "Na2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "NaBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 CrBr3 + 3 Na2S -> Cr2S3 + 6 NaBr",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Cr",
+        "H2S"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2S -> Cr2S3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2S3 is insoluble"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2S3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2S -> 3 H2SiO3 + Cr2S3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2S",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2S + 2 Cr(OH)3 -> Cr2S3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2S3 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Cr(HS)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2S3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HS)3 + Cr(OH)3 -> Cr2S3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HS)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrBr3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrI3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2S"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2SiO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KBr"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KHS"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KI"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Na2S"
+      ],
+      "note": "Cr sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NaBr"
+      ],
+      "note": "Cr sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NaHS"
+      ],
+      "note": "Cr sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "NaI"
+      ],
+      "note": "Cr sits below Na in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HS)3",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KBr"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaBr"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaI"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2S"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KI"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Na2S"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaI"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KBr",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NaI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KI",
+        "Na2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KI",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KI",
+        "NaHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "Na2S"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaBr"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaHS"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "NaI"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
+}

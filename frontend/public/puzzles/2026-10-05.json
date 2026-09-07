@@ -1,0 +1,4495 @@
+{
+  "version": 3,
+  "target": "K3PO4",
+  "name": "potassium phosphate",
+  "grade": "easy",
+  "want": 5,
+  "ways": 8,
+  "cut": 1,
+  "palette": [
+    "AgF",
+    "Fe",
+    "H2O",
+    "K",
+    "K2O",
+    "K2S",
+    "KOH",
+    "NH3",
+    "P2O5"
+  ],
+  "species": {
+    "(NH4)2HPO4": {
+      "name": "ammonium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "HPO4": -2
+      }
+    },
+    "(NH4)2S": {
+      "name": "ammonium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "S": -2
+      }
+    },
+    "(NH4)3PO4": {
+      "name": "ammonium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "PO4": -3
+      }
+    },
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2HPO4": {
+      "name": "silver hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HPO4": -2
+      }
+    },
+    "Ag2S": {
+      "name": "silver sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "S": -2
+      }
+    },
+    "Ag3PO4": {
+      "name": "silver phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "PO4": -3
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgH2PO4": {
+      "name": "silver dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "H2PO4": -1
+      }
+    },
+    "AgHS": {
+      "name": "silver hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "HS": -1
+      }
+    },
+    "Fe": {
+      "name": "iron",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Fe(H2PO4)2": {
+      "name": "iron(II) dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "H2PO4": -1
+      }
+    },
+    "Fe(HS)2": {
+      "name": "iron(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "HS": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "Fe3(PO4)2": {
+      "name": "iron(II) phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "PO4": -3
+      }
+    },
+    "FeF2": {
+      "name": "iron(II) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "F": -1
+      }
+    },
+    "FeH2": {
+      "name": "iron(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "H": -1
+      }
+    },
+    "FeHPO4": {
+      "name": "iron(II) hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "HPO4": -2
+      }
+    },
+    "FeS": {
+      "name": "iron(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "S": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "K": {
+      "name": "potassium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "K2HPO4": {
+      "name": "potassium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HPO4": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2S": {
+      "name": "potassium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "S": -2
+      }
+    },
+    "K3PO4": {
+      "name": "potassium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "PO4": -3
+      }
+    },
+    "KF": {
+      "name": "potassium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "F": -1
+      }
+    },
+    "KH": {
+      "name": "potassium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "H": -1
+      }
+    },
+    "KH2PO4": {
+      "name": "potassium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "H2PO4": -1
+      }
+    },
+    "KHS": {
+      "name": "potassium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HS": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4F": {
+      "name": "ammonium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "F": -1
+      }
+    },
+    "NH4H2PO4": {
+      "name": "ammonium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "H2PO4": -1
+      }
+    },
+    "NH4HS": {
+      "name": "ammonium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "NH4": 1,
+        "HS": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Fe",
+        "AgF"
+      ],
+      "products": [
+        "FeF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + 2 AgF -> FeF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "K2S"
+      ],
+      "products": [
+        "Ag2S",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgF + K2S -> Ag2S + 2 KF",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2O"
+      ],
+      "products": [
+        "KOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 K + 2 H2O -> 2 KOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 K2O + P2O5 -> 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 KOH + P2O5 -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "K2S"
+      ],
+      "products": [
+        "FeS",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeF2 + K2S -> FeS + 2 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "KF"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeF2 + 2 KOH -> Fe(OH)2 + 2 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4F"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeF2 + 2 NH4OH -> Fe(OH)2 + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Fe3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 FeF2 + 2 H3PO4 -> 6 HF + Fe3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "K3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 FeF2 + 2 K3PO4 -> Fe3(PO4)2 + 6 KF",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Ag2S + 2 H3PO4 -> 3 H2S + 2 Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 KF + H3PO4 -> 3 HF + K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2"
+      ],
+      "products": [
+        "KH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 K + H2 -> 2 KH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 NH4OH -> (NH4)3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 NH4OH -> (NH4)2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4H2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + NH4OH -> NH4H2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 AgF + H3PO4 -> 3 HF + Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Fe + 2 H3PO4 -> Fe3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "K",
+        "H3PO4"
+      ],
+      "products": [
+        "K3PO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "6 K + 2 H3PO4 -> 2 K3PO4 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          6,
+          2
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "K2O"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 K2O -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 K2S + 2 H3PO4 -> 3 H2S + 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 KOH -> K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 KOH -> K2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "KH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + KOH -> KH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H3PO4"
+      ],
+      "products": [
+        "(NH4)3PO4"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 NH3 + H3PO4 -> (NH4)3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "K2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 K3PO4 + H3PO4 -> 3 K2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "KH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K3PO4 + 2 H3PO4 -> 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K3PO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag3PO4",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "K3PO4 + 3 AgF -> Ag3PO4 + 3 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Fe3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 FeS + 2 H3PO4 -> 3 H2S + Fe3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Fe(OH)2 -> Fe3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Fe(OH)2 -> FeHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Fe(OH)2 -> Fe(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Fe(OH)2 -> FeF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "KF",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "NH4F + KOH -> NH3 + KF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4F",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "(NH4)3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 NH4F + H3PO4 -> 3 HF + (NH4)3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "HF"
+      ],
+      "products": [
+        "FeF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + 2 HF -> FeF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K",
+        "HF"
+      ],
+      "products": [
+        "KF",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + 2 HF -> 2 KF + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2O"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + K2O -> 2 KF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "KOH"
+      ],
+      "products": [
+        "KF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + KOH -> KF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "HF"
+      ],
+      "products": [
+        "NH4F"
+      ],
+      "rule": "neutralisation",
+      "equation": "NH3 + HF -> NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4F",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + NH4OH -> NH4F + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "FeHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Fe3(PO4)2 + H3PO4 -> 3 FeHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Fe(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Fe3(PO4)2 + 4 H3PO4 -> 3 Fe(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2S"
+      ],
+      "products": [
+        "FeS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2S -> FeS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2S"
+      ],
+      "products": [
+        "K2S",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2S -> K2S + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2O"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H2S"
+      ],
+      "products": [
+        "KHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2S + H2S -> 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2S"
+      ],
+      "products": [
+        "(NH4)2S"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 NH3 + H2S -> (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "H2S"
+      ],
+      "products": [
+        "AgHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2S + H2S -> 2 AgHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NH4OH -> NH4HS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Ag2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Ag3PO4 + H3PO4 -> 3 Ag2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "AgH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag3PO4 + 2 H3PO4 -> 3 AgH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag3PO4",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)3PO4 + 3 AgF -> Ag3PO4 + 3 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)3PO4 + 3 KOH -> 3 NH3 + K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1,
+          3
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "FeF2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 (NH4)3PO4 + 3 FeF2 -> Fe3(PO4)2 + 6 NH4F",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "(NH4)2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 (NH4)3PO4 + H3PO4 -> 3 (NH4)2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "NH4H2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)3PO4 + 2 H3PO4 -> 3 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2HPO4 + 2 AgF -> Ag2HPO4 + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2HPO4 + 2 KOH -> 2 NH3 + K2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "FeF2"
+      ],
+      "products": [
+        "FeHPO4",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2HPO4 + FeF2 -> FeHPO4 + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "(NH4)2HPO4 + NH4OH -> (NH4)3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "KH2PO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "NH4H2PO4 + KOH -> NH3 + KH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4H2PO4 + NH4OH -> (NH4)2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4H2PO4",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4H2PO4 + 2 NH4OH -> (NH4)3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2HPO4 + 2 AgF -> Ag2HPO4 + 2 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "K2HPO4 + KOH -> K3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "FeF2"
+      ],
+      "products": [
+        "FeHPO4",
+        "KF"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2HPO4 + FeF2 -> FeHPO4 + 2 KF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + KOH -> K2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KH2PO4 + 2 KOH -> K3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "K2S"
+      ],
+      "products": [
+        "FeS",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + K2S -> FeS + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "KHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + 2 KOH -> Fe(OH)2 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4HS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Fe3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Fe(HS)2 + 2 H3PO4 -> 6 H2S + Fe3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "K3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Fe(HS)2 + 2 K3PO4 -> Fe3(PO4)2 + 6 KHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "(NH4)3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Fe(HS)2 + 2 (NH4)3PO4 -> Fe3(PO4)2 + 6 NH4HS",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "FeHPO4",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + (NH4)2HPO4 -> FeHPO4 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "K2HPO4"
+      ],
+      "products": [
+        "FeHPO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + K2HPO4 -> FeHPO4 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "(NH4)2S"
+      ],
+      "products": [
+        "FeS",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + (NH4)2S -> FeS + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "FeHPO4",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 FeHPO4 + Fe(OH)2 -> Fe3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "K2S"
+      ],
+      "products": [
+        "FeS",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)2 + K2S -> FeS + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "KOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "KH2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(H2PO4)2 + 2 KOH -> Fe(OH)2 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "NH4OH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NH4H2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(H2PO4)2 + 2 NH4OH -> Fe(OH)2 + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "K3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Fe(H2PO4)2 + 2 K3PO4 -> Fe3(PO4)2 + 6 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)2 + Fe(OH)2 -> 2 FeHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(H2PO4)2 + 2 Fe(OH)2 -> Fe3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "(NH4)3PO4"
+      ],
+      "products": [
+        "Fe3(PO4)2",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Fe(H2PO4)2 + 2 (NH4)3PO4 -> Fe3(PO4)2 + 6 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Fe3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "FeHPO4",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)2 + (NH4)2HPO4 -> FeHPO4 + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "K2HPO4"
+      ],
+      "products": [
+        "FeHPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)2 + K2HPO4 -> FeHPO4 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "(NH4)2S"
+      ],
+      "products": [
+        "FeS",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(H2PO4)2 + (NH4)2S -> FeS + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 KHS + H3PO4 -> 3 H2S + K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "AgF"
+      ],
+      "products": [
+        "Ag2S",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + 2 AgF -> Ag2S + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K2S",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2S + 2 KOH -> 2 NH3 + K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "FeF2"
+      ],
+      "products": [
+        "FeS",
+        "NH4F"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + FeF2 -> FeS + 2 NH4F",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "(NH4)3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 (NH4)2S + 2 H3PO4 -> 3 H2S + 2 (NH4)3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2S"
+      ],
+      "products": [
+        "NH4HS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2S + H2S -> 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "AgHS"
+      ],
+      "products": [
+        "Ag2S",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + 2 AgHS -> Ag2S + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "AgH2PO4"
+      ],
+      "products": [
+        "Ag2S",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2S + 2 AgH2PO4 -> Ag2S + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "AgHS"
+      ],
+      "products": [
+        "Fe(HS)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + 2 AgHS -> Fe(HS)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "K2S"
+      ],
+      "products": [
+        "Ag2S",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + K2S -> Ag2S + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 AgHS + H3PO4 -> 3 H2S + Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "K3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgHS + K3PO4 -> Ag3PO4 + 3 KHS",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "(NH4)3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgHS + (NH4)3PO4 -> Ag3PO4 + 3 NH4HS",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + (NH4)2HPO4 -> Ag2HPO4 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "K2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHS + K2HPO4 -> Ag2HPO4 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "KHS",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "NH4HS + KOH -> NH3 + KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "(NH4)3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 NH4HS + H3PO4 -> 3 H2S + (NH4)3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "AgH2PO4"
+      ],
+      "products": [
+        "Fe(H2PO4)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + 2 AgH2PO4 -> Fe(H2PO4)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Fe is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "K2S"
+      ],
+      "products": [
+        "Ag2S",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + K2S -> Ag2S + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2S precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "K3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgH2PO4 + K3PO4 -> Ag3PO4 + 3 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "(NH4)3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgH2PO4 + (NH4)3PO4 -> Ag3PO4 + 3 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "(NH4)2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "NH4H2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + (NH4)2HPO4 -> Ag2HPO4 + 2 NH4H2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "K2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "KH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + K2HPO4 -> Ag2HPO4 + 2 KH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    }
+  ],
+  "answers": {
+    "base_with_acidic_oxide": {
+      "substrates": [
+        "KOH",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 KOH + P2O5 -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    "oxide_with_oxide": {
+      "substrates": [
+        "K2O",
+        "P2O5"
+      ],
+      "products": [
+        "K3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 K2O + P2O5 -> 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "K2S",
+        "H3PO4"
+      ],
+      "products": [
+        "H2S",
+        "K3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 K2S + 2 H3PO4 -> 3 H2S + 2 K3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          3,
+          2
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H3PO4",
+        "K2O"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 K2O -> 2 K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "K",
+        "H3PO4"
+      ],
+      "products": [
+        "K3PO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "6 K + 2 H3PO4 -> 2 K3PO4 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          6,
+          2
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H3PO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 KOH -> K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "K2HPO4",
+        "KOH"
+      ],
+      "products": [
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "K2HPO4 + KOH -> K3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "salt_with_base": {
+      "substrates": [
+        "(NH4)3PO4",
+        "KOH"
+      ],
+      "products": [
+        "NH3",
+        "K3PO4",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)3PO4 + 3 KOH -> 3 NH3 + K3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1,
+          3
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2HPO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "K2HPO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "Ag"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "Fe"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "Fe(OH)2"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "K2HPO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "K2S"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "(NH4)3PO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgF"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgH2PO4"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgHS"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Fe(H2PO4)2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Fe(HS)2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "FeF2"
+      ],
+      "note": "Ag sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2S"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H3PO4"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HF"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2HPO4"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2S"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KF"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KH2PO4"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KHS"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4F"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4H2PO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2S",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Fe(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Fe(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "Fe(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "FeF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgHS",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(H2PO4)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HS)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeF2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "K2HPO4"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "K2S"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KF"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KH2PO4"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "KHS"
+      ],
+      "note": "Fe sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4F"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4H2PO4"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "NH4HS"
+      ],
+      "note": "NH4+ is not a metal, so there is nothing here to displace"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(H2PO4)2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "KF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4F"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4H2PO4"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe(OH)2",
+        "NH4HS"
+      ],
+      "note": "Fe(OH)2 is too weak to drive the ammonia off -- that needs a strong alkali"
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe3(PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "KH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeF2",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeHPO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeHPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2HPO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KF"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KH2PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4F"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4H2PO4"
+      ],
+      "note": "H2S is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2HPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "K2S"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KH2PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "KHS"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4H2PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "NH4HS"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2HPO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2S"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KF"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KH2PO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4F"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4H2PO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "NH4HS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2HPO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KF",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "NH4HS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KH2PO4",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NH4F"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NH4H2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "NH4OH"
+      ],
+      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+    }
+  ]
+}
