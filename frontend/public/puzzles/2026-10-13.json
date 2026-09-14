@@ -1,0 +1,7591 @@
+{
+  "version": 3,
+  "target": "MgCl2",
+  "name": "magnesium chloride",
+  "grade": "easy",
+  "want": 5,
+  "ways": 8,
+  "cut": 1,
+  "palette": [
+    "Ba(OH)2",
+    "Cl2",
+    "CuCl2",
+    "H2O",
+    "HCl",
+    "Mg",
+    "MgBr2",
+    "MgF2",
+    "MgI2",
+    "MgO",
+    "MgS",
+    "ZnCl2"
+  ],
+  "species": {
+    "Ba(BrO3)2": {
+      "name": "barium bromate",
+      "class": "salt",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "BrO3": -1
+      }
+    },
+    "Ba(ClO)2": {
+      "name": "barium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "ClO": -1
+      }
+    },
+    "Ba(ClO3)2": {
+      "name": "barium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "ClO3": -1
+      }
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
+      }
+    },
+    "Ba(IO3)2": {
+      "name": "barium iodate",
+      "class": "salt",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "IO3": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaCl2": {
+      "name": "barium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Cl": -1
+      }
+    },
+    "BaF2": {
+      "name": "barium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "F": -1
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "Br2": {
+      "name": "bromine",
+      "class": "element",
+      "state": "l",
+      "common": true
+    },
+    "Cl2": {
+      "name": "chlorine",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "Cu": {
+      "name": "copper",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cu(ClO)2": {
+      "name": "copper(II) hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "ClO": -1
+      }
+    },
+    "Cu(HS)2": {
+      "name": "copper(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "HS": -1
+      }
+    },
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "OH": -1
+      }
+    },
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuCl2": {
+      "name": "copper(II) chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Cl": -1
+      }
+    },
+    "CuF2": {
+      "name": "copper(II) fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "F": -1
+      }
+    },
+    "CuH2": {
+      "name": "copper(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "H": -1
+      }
+    },
+    "CuI2": {
+      "name": "copper(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "I": -1
+      }
+    },
+    "CuS": {
+      "name": "copper(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "S": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "HBr": {
+      "name": "hydrobromic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "Br": -1
+      }
+    },
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "HClO": {
+      "name": "hypochlorous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "ClO": -1
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "HI": {
+      "name": "hydroiodic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "I": -1
+      }
+    },
+    "I2": {
+      "name": "iodine",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Mg": {
+      "name": "magnesium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Mg(ClO)2": {
+      "name": "magnesium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "ClO": -1
+      }
+    },
+    "Mg(HS)2": {
+      "name": "magnesium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Mg": 2,
+        "HS": -1
+      }
+    },
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "MgBr2": {
+      "name": "magnesium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "Br": -1
+      }
+    },
+    "MgCl2": {
+      "name": "magnesium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "Cl": -1
+      }
+    },
+    "MgF2": {
+      "name": "magnesium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "F": -1
+      }
+    },
+    "MgH2": {
+      "name": "magnesium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Mg": 2,
+        "H": -1
+      }
+    },
+    "MgI2": {
+      "name": "magnesium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "I": -1
+      }
+    },
+    "MgO": {
+      "name": "magnesium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "MgS": {
+      "name": "magnesium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "S": -2
+      }
+    },
+    "Zn": {
+      "name": "zinc",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Zn(ClO)2": {
+      "name": "zinc hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "ClO": -1
+      }
+    },
+    "Zn(HS)2": {
+      "name": "zinc hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "HS": -1
+      }
+    },
+    "Zn(OH)2": {
+      "name": "zinc hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "OH": -1
+      }
+    },
+    "ZnBr2": {
+      "name": "zinc bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "Br": -1
+      }
+    },
+    "ZnCl2": {
+      "name": "zinc chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "Cl": -1
+      }
+    },
+    "ZnF2": {
+      "name": "zinc fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "F": -1
+      }
+    },
+    "ZnH2": {
+      "name": "zinc hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "H": -1
+      }
+    },
+    "ZnI2": {
+      "name": "zinc iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "I": -1
+      }
+    },
+    "ZnS": {
+      "name": "zinc sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "S": -2
+      }
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Cl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO)2",
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "2 Cl2 + 2 Ba(OH)2 -> Ba(ClO)2 + BaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          2
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO3)2",
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 Cl2 + 6 Ba(OH)2 -> Ba(ClO3)2 + 5 BaCl2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaCl2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuCl2 + Ba(OH)2 -> Cu(OH)2 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Ba(OH)2 -> BaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgBr2 + Ba(OH)2 -> Mg(OH)2 + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgI2 + Ba(OH)2 -> Mg(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgS + Ba(OH)2 -> Mg(OH)2 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnCl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaCl2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnCl2 + Ba(OH)2 -> Zn(OH)2 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Cl2"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + Cl2 -> MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "MgBr2"
+      ],
+      "products": [
+        "MgCl2",
+        "Br2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + MgBr2 -> MgCl2 + Br2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than Br"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "MgI2"
+      ],
+      "products": [
+        "MgCl2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + MgI2 -> MgCl2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "CuCl2"
+      ],
+      "products": [
+        "MgCl2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + CuCl2 -> MgCl2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "MgCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuCl2 + MgS -> CuS + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HCl"
+      ],
+      "products": [
+        "MgCl2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HCl -> MgCl2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HCl -> 2 HF + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "MgO"
+      ],
+      "products": [
+        "MgCl2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + MgO -> MgCl2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgS + 2 HCl -> H2S + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "ZnCl2"
+      ],
+      "products": [
+        "MgCl2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + ZnCl2 -> MgCl2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "MgCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgS + ZnCl2 -> ZnS + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(ClO)2 + 2 HCl -> 2 HClO + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Cu(OH)2 -> CuCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Cu(OH)2 -> CuF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Cu(OH)2 -> CuS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Cu(OH)2 -> Cu(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Mg(OH)2 -> MgCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Mg(OH)2 -> MgF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "BaBr2"
+      ],
+      "products": [
+        "BaCl2",
+        "Br2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + BaBr2 -> BaCl2 + Br2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than Br"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "BaI2"
+      ],
+      "products": [
+        "BaCl2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + BaI2 -> BaCl2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "BaI2"
+      ],
+      "products": [
+        "BaBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + BaI2 -> BaBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "CuCl2"
+      ],
+      "products": [
+        "CuS",
+        "BaCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + CuCl2 -> CuS + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + 2 HCl -> H2S + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "ZnCl2"
+      ],
+      "products": [
+        "ZnS",
+        "BaCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + ZnCl2 -> ZnS + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Zn(OH)2 -> ZnCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Zn(OH)2 -> ZnF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "MgCl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaCl2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgCl2 + Ba(OH)2 -> Mg(OH)2 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(BrO3)2",
+        "BaBr2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 Br2 + 6 Ba(OH)2 -> Ba(BrO3)2 + 5 BaBr2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- Br is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Br2"
+      ],
+      "products": [
+        "MgBr2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + Br2 -> MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Br2",
+        "MgI2"
+      ],
+      "products": [
+        "MgBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + MgI2 -> MgBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Br2"
+      ],
+      "products": [
+        "CuBr2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + Br2 -> CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with Br"
+    },
+    {
+      "substrates": [
+        "H2",
+        "Br2"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Br2 -> 2 HBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Br2"
+      ],
+      "products": [
+        "ZnBr2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Zn + Br2 -> ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "I2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(IO3)2",
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 I2 + 6 Ba(OH)2 -> Ba(IO3)2 + 5 BaI2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "I2"
+      ],
+      "products": [
+        "MgI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + I2 -> MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "I2"
+      ],
+      "products": [
+        "CuI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + I2 -> CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with I"
+    },
+    {
+      "substrates": [
+        "H2",
+        "I2"
+      ],
+      "products": [
+        "HI"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + I2 -> 2 HI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "I2"
+      ],
+      "products": [
+        "ZnI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Zn + I2 -> ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cl2"
+      ],
+      "products": [
+        "CuCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + Cl2 -> CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with Cl"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2"
+      ],
+      "products": [
+        "CuH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + H2 -> CuH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "CuCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HCl -> H2S + CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "H2S"
+      ],
+      "products": [
+        "Cu(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "CuS + H2S -> Cu(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2",
+        "Cl2"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Cl2 -> 2 HCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H2"
+      ],
+      "products": [
+        "MgH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + H2 -> MgH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "H2"
+      ],
+      "products": [
+        "ZnH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Zn + H2 -> ZnH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ba(OH)2 -> BaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HF"
+      ],
+      "products": [
+        "MgF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HF -> MgF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgO"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + MgO -> MgF2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "HF"
+      ],
+      "products": [
+        "ZnF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + 2 HF -> ZnF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H2S"
+      ],
+      "products": [
+        "MgS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + H2S -> MgS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "MgO"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + MgO -> MgS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgS",
+        "H2S"
+      ],
+      "products": [
+        "Mg(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "MgS + H2S -> Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "H2S"
+      ],
+      "products": [
+        "ZnS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + H2S -> ZnS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "H2S"
+      ],
+      "products": [
+        "Zn(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "ZnS + H2S -> Zn(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Cl2"
+      ],
+      "products": [
+        "ZnCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Zn + Cl2 -> ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "CuCl2"
+      ],
+      "products": [
+        "ZnCl2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + CuCl2 -> ZnCl2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "HCl"
+      ],
+      "products": [
+        "ZnCl2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + 2 HCl -> ZnCl2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HCl -> H2S + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Ba(OH)2 -> Ba(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HClO"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HClO -> Mg(ClO)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgO"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + MgO -> Mg(ClO)2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "Cu(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Cu(OH)2 -> Cu(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Mg(OH)2 -> Mg(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Zn(OH)2 -> Zn(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "HClO"
+      ],
+      "products": [
+        "Zn(ClO)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + 2 HClO -> Zn(ClO)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaF2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuF2 + Ba(OH)2 -> Cu(OH)2 + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "CuCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuF2 + 2 HCl -> 2 HF + CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "CuF2"
+      ],
+      "products": [
+        "MgF2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + CuF2 -> MgF2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "MgBr2"
+      ],
+      "products": [
+        "MgF2",
+        "CuBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + MgBr2 -> MgF2 + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "MgI2"
+      ],
+      "products": [
+        "MgF2",
+        "CuI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + MgI2 -> MgF2 + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "MgF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + MgS -> CuS + MgF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS and MgF2 both precipitate"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "BaS"
+      ],
+      "products": [
+        "CuS",
+        "BaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + BaS -> CuS + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "MgCl2"
+      ],
+      "products": [
+        "MgF2",
+        "CuCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + MgCl2 -> MgF2 + CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "CuF2"
+      ],
+      "products": [
+        "ZnF2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + CuF2 -> ZnF2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Mg(HS)2"
+      ],
+      "products": [
+        "MgF2",
+        "Cu(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuF2 + Mg(HS)2 -> MgF2 + Cu(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HBr"
+      ],
+      "products": [
+        "HF",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuF2 + 2 HBr -> 2 HF + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuF2 + 2 HI -> 2 HF + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(HS)2 + Ba(OH)2 -> Cu(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "CuCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HCl -> 2 H2S + CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Cu(HS)2"
+      ],
+      "products": [
+        "Mg(HS)2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + Cu(HS)2 -> Mg(HS)2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HS)2 + MgS -> CuS + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cu(HS)2 + Cu(OH)2 -> 2 CuS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "BaS"
+      ],
+      "products": [
+        "CuS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(HS)2 + BaS -> CuS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Cu(HS)2"
+      ],
+      "products": [
+        "Zn(HS)2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + Cu(HS)2 -> Zn(HS)2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HBr -> 2 H2S + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(HS)2 + 2 HI -> 2 H2S + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(HS)2 + Ba(OH)2 -> Mg(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(HS)2 + 2 HCl -> 2 H2S + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "ZnF2"
+      ],
+      "products": [
+        "MgF2",
+        "Zn(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(HS)2 + ZnF2 -> MgF2 + Zn(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "MgBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(HS)2 + 2 HBr -> 2 H2S + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "MgI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(HS)2 + 2 HI -> 2 H2S + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + 2 HCl -> 2 H2S + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "BaBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + 2 HBr -> 2 H2S + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + 2 HI -> 2 H2S + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaF2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnF2 + Ba(OH)2 -> Zn(OH)2 + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnF2 + 2 HCl -> 2 HF + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "ZnF2"
+      ],
+      "products": [
+        "MgF2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + ZnF2 -> MgF2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "MgBr2"
+      ],
+      "products": [
+        "MgF2",
+        "ZnBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnF2 + MgBr2 -> MgF2 + ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "MgI2"
+      ],
+      "products": [
+        "MgF2",
+        "ZnI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnF2 + MgI2 -> MgF2 + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "MgS"
+      ],
+      "products": [
+        "MgF2",
+        "ZnS"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnF2 + MgS -> MgF2 + ZnS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 and ZnS both precipitate"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "BaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnF2 + BaS -> ZnS + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "MgCl2"
+      ],
+      "products": [
+        "MgF2",
+        "ZnCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnF2 + MgCl2 -> MgF2 + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "HBr"
+      ],
+      "products": [
+        "HF",
+        "ZnBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnF2 + 2 HBr -> 2 HF + ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnF2 + 2 HI -> 2 HF + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(HS)2 + Ba(OH)2 -> Zn(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HCl"
+      ],
+      "products": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HCl -> 2 H2S + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Zn(HS)2"
+      ],
+      "products": [
+        "Mg(HS)2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + Zn(HS)2 -> Mg(HS)2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "MgS"
+      ],
+      "products": [
+        "ZnS",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(HS)2 + MgS -> ZnS + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(HS)2 + BaS -> ZnS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "ZnBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HBr -> 2 H2S + ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HI -> 2 H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuBr2 + Ba(OH)2 -> Cu(OH)2 + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "CuBr2"
+      ],
+      "products": [
+        "CuCl2",
+        "Br2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + CuBr2 -> CuCl2 + Br2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than Br"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "CuBr2"
+      ],
+      "products": [
+        "MgBr2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + CuBr2 -> MgBr2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "MgBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuBr2 + MgS -> CuS + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "BaS"
+      ],
+      "products": [
+        "CuS",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuBr2 + BaS -> CuS + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "CuBr2"
+      ],
+      "products": [
+        "ZnBr2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + CuBr2 -> ZnBr2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaBr2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HBr + Ba(OH)2 -> BaBr2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HBr"
+      ],
+      "products": [
+        "MgBr2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HBr -> MgBr2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HBr"
+      ],
+      "products": [
+        "HF",
+        "MgBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HBr -> 2 HF + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "MgO"
+      ],
+      "products": [
+        "MgBr2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HBr + MgO -> MgBr2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgS",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "MgBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgS + 2 HBr -> H2S + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HBr"
+      ],
+      "products": [
+        "HClO",
+        "BaBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(ClO)2 + 2 HBr -> 2 HClO + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuBr2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HBr + Cu(OH)2 -> CuBr2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgBr2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HBr + Mg(OH)2 -> MgBr2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "BaBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + 2 HBr -> H2S + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnBr2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HBr + Zn(OH)2 -> ZnBr2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HBr -> H2S + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "HBr"
+      ],
+      "products": [
+        "ZnBr2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + 2 HBr -> ZnBr2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HBr"
+      ],
+      "products": [
+        "H2S",
+        "ZnBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HBr -> H2S + ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HBr"
+      ],
+      "products": [
+        "HF",
+        "BaBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaF2 + 2 HBr -> 2 HF + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnBr2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaBr2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnBr2 + Ba(OH)2 -> Zn(OH)2 + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "ZnBr2"
+      ],
+      "products": [
+        "ZnCl2",
+        "Br2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + ZnBr2 -> ZnCl2 + Br2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than Br"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "ZnBr2"
+      ],
+      "products": [
+        "MgBr2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + ZnBr2 -> MgBr2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "ZnBr2",
+        "MgS"
+      ],
+      "products": [
+        "ZnS",
+        "MgBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnBr2 + MgS -> ZnS + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "ZnBr2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "BaBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnBr2 + BaS -> ZnS + BaBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuI2 + Ba(OH)2 -> Cu(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "CuI2"
+      ],
+      "products": [
+        "CuCl2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + CuI2 -> CuCl2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "CuI2"
+      ],
+      "products": [
+        "MgI2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + CuI2 -> MgI2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "MgI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuI2 + MgS -> CuS + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "BaS"
+      ],
+      "products": [
+        "CuS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuI2 + BaS -> CuS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "CuI2"
+      ],
+      "products": [
+        "CuBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + CuI2 -> CuBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "CuI2"
+      ],
+      "products": [
+        "ZnI2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + CuI2 -> ZnI2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "HI",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Ba(OH)2 -> BaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HI"
+      ],
+      "products": [
+        "MgI2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HI -> MgI2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "MgI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HI -> 2 HF + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "MgO"
+      ],
+      "products": [
+        "MgI2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HI + MgO -> MgI2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "MgI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgS + 2 HI -> H2S + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(ClO)2 + 2 HI -> 2 HClO + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Cu(OH)2"
+      ],
+      "products": [
+        "CuI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Cu(OH)2 -> CuI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Mg(OH)2 -> MgI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + 2 HI -> H2S + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Zn(OH)2 -> ZnI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CuS + 2 HI -> H2S + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn",
+        "HI"
+      ],
+      "products": [
+        "ZnI2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Zn + 2 HI -> ZnI2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HI -> H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HI"
+      ],
+      "products": [
+        "HF",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaF2 + 2 HI -> 2 HF + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnI2 + Ba(OH)2 -> Zn(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "ZnI2"
+      ],
+      "products": [
+        "ZnCl2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + ZnI2 -> ZnCl2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "ZnI2"
+      ],
+      "products": [
+        "MgI2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + ZnI2 -> MgI2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "MgS"
+      ],
+      "products": [
+        "ZnS",
+        "MgI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnI2 + MgS -> ZnS + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "ZnI2 + BaS -> ZnS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "ZnI2"
+      ],
+      "products": [
+        "ZnBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + ZnI2 -> ZnBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaF2 + 2 HCl -> 2 HF + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(ClO)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO)2 + Ba(OH)2 -> Mg(OH)2 + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(ClO)2 + 2 HCl -> 2 HClO + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "CuF2"
+      ],
+      "products": [
+        "MgF2",
+        "Cu(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO)2 + CuF2 -> MgF2 + Cu(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "ZnF2"
+      ],
+      "products": [
+        "MgF2",
+        "Zn(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO)2 + ZnF2 -> MgF2 + Zn(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "HBr"
+      ],
+      "products": [
+        "HClO",
+        "MgBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(ClO)2 + 2 HBr -> 2 HClO + MgBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "MgI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(ClO)2 + 2 HI -> 2 HClO + MgI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "Ba(ClO)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cu(ClO)2 + Ba(OH)2 -> Cu(OH)2 + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "CuCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(ClO)2 + 2 HCl -> 2 HClO + CuCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Cu(ClO)2"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + Cu(ClO)2 -> Mg(ClO)2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "Mg(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(ClO)2 + MgS -> CuS + Mg(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "BaS"
+      ],
+      "products": [
+        "CuS",
+        "Ba(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Cu(ClO)2 + BaS -> CuS + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Cu(ClO)2"
+      ],
+      "products": [
+        "Zn(ClO)2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Zn + Cu(ClO)2 -> Zn(ClO)2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "HBr"
+      ],
+      "products": [
+        "HClO",
+        "CuBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(ClO)2 + 2 HBr -> 2 HClO + CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "CuI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cu(ClO)2 + 2 HI -> 2 HClO + CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "Ba(ClO)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(ClO)2 + Ba(OH)2 -> Zn(OH)2 + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "ZnCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(ClO)2 + 2 HCl -> 2 HClO + ZnCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Zn(ClO)2"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "Zn"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + Zn(ClO)2 -> Mg(ClO)2 + Zn",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "MgS"
+      ],
+      "products": [
+        "ZnS",
+        "Mg(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(ClO)2 + MgS -> ZnS + Mg(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "Ba(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(ClO)2 + BaS -> ZnS + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "HBr"
+      ],
+      "products": [
+        "HClO",
+        "ZnBr2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(ClO)2 + 2 HBr -> 2 HClO + ZnBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(ClO)2",
+        "HI"
+      ],
+      "products": [
+        "HClO",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(ClO)2 + 2 HI -> 2 HClO + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "acid_displacement": {
+      "substrates": [
+        "MgF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HCl -> 2 HF + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HCl",
+        "MgO"
+      ],
+      "products": [
+        "MgCl2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + MgO -> MgCl2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Mg",
+        "Cl2"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + Cl2 -> MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "CuCl2",
+        "MgS"
+      ],
+      "products": [
+        "CuS",
+        "MgCl2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CuCl2 + MgS -> CuS + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CuS precipitates"
+    },
+    "halogen_displacement": {
+      "substrates": [
+        "Cl2",
+        "MgBr2"
+      ],
+      "products": [
+        "MgCl2",
+        "Br2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Cl2 + MgBr2 -> MgCl2 + Br2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cl is more reactive than Br"
+    },
+    "metal_displacement": {
+      "substrates": [
+        "Mg",
+        "CuCl2"
+      ],
+      "products": [
+        "MgCl2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + CuCl2 -> MgCl2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg is above Cu in the activity series"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Mg",
+        "HCl"
+      ],
+      "products": [
+        "MgCl2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HCl -> MgCl2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HCl",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Mg(OH)2 -> MgCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(BrO3)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBrO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "CuCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Cu(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "CuCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Cu(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Br2"
+      ],
+      "note": "Br2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Cu(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Cu(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Cu(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "CuCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaI2",
+        "ZnF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Zn"
+      ],
+      "note": "Zn sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "CuCl2"
+      ],
+      "note": "Br2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "CuF2"
+      ],
+      "note": "Br2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "ZnCl2"
+      ],
+      "note": "Br2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "ZnF2"
+      ],
+      "note": "Br2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "CuF2"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "ZnF2"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(ClO)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Cu(HS)2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuBr2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuCl2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuF2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuI2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2S"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HBr"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HCl"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HClO"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HF"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HI"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Mg(ClO)2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Mg(HS)2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "MgBr2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "MgI2"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "MgS"
+      ],
+      "note": "Cu sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Zn(ClO)2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Zn(HS)2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnBr2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnCl2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnF2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "ZnI2"
+      ],
+      "note": "Cu sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "ZnF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(ClO)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cu(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "ZnF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "MgI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "ZnF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuCl2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "MgBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "ZnF2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuS",
+        "HF"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(ClO)2"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "MgBr2"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "MgF2"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "MgI2"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(ClO)2"
+      ],
+      "note": "H2S is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnBr2"
+      ],
+      "note": "H2S is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnCl2"
+      ],
+      "note": "H2S is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnF2"
+      ],
+      "note": "H2S is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnI2"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "MgI2"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "ZnCl2"
+      ],
+      "note": "HBr is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HBr",
+        "ZnI2"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "MgBr2"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "MgI2"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "ZnBr2"
+      ],
+      "note": "HCl is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "ZnI2"
+      ],
+      "note": "HCl is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg(HS)2"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgBr2"
+      ],
+      "note": "HClO is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgF2"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgI2"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgS"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Zn(HS)2"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnBr2"
+      ],
+      "note": "HClO is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnCl2"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnF2"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnI2"
+      ],
+      "note": "HClO is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "ZnS"
+      ],
+      "note": "HClO is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(ClO)2"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(HS)2"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgBr2"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgI2"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgS"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Zn(ClO)2"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Zn(HS)2"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "ZnBr2"
+      ],
+      "note": "HF is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "ZnCl2"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "ZnI2"
+      ],
+      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "ZnS"
+      ],
+      "note": "HF is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "MgBr2"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "ZnBr2"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HI",
+        "ZnCl2"
+      ],
+      "note": "HI is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "I2",
+        "MgBr2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "ZnBr2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "ZnCl2"
+      ],
+      "note": "I2 is less reactive than Cl2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "I2",
+        "ZnF2"
+      ],
+      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(ClO)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(HS)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgBr2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgI2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgS"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Zn"
+      ],
+      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "Zn"
+      ],
+      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgBr2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "Zn"
+      ],
+      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "Zn(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "ZnBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgI2",
+        "ZnCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "Zn"
+      ],
+      "note": "Zn sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Zn(ClO)2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "Zn(HS)2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnBr2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnCl2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnF2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Zn",
+        "ZnI2"
+      ],
+      "note": "Zn sits below Zn in the activity series, so it cannot push it out"
+    }
+  ]
+}
