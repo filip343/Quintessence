@@ -1,0 +1,1267 @@
+{
+  "version": 3,
+  "target": "BaI2",
+  "name": "barium iodide",
+  "grade": "medium",
+  "want": 5,
+  "ways": 7,
+  "cut": 1,
+  "palette": [
+    "Ba",
+    "Ba(OH)2",
+    "BaS",
+    "FeI2",
+    "H2O",
+    "I2",
+    "ZnI2"
+  ],
+  "species": {
+    "Ba": {
+      "name": "barium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
+      }
+    },
+    "Ba(IO3)2": {
+      "name": "barium iodate",
+      "class": "salt",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "IO3": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "BaH2": {
+      "name": "barium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "H": -1
+      }
+    },
+    "BaI2": {
+      "name": "barium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "I": -1
+      }
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "Fe(HS)2": {
+      "name": "iron(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "HS": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "OH": -1
+      }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeS": {
+      "name": "iron(II) sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "S": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "HI": {
+      "name": "hydroiodic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "I": -1
+      }
+    },
+    "I2": {
+      "name": "iodine",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Zn(HS)2": {
+      "name": "zinc hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Zn": 2,
+        "HS": -1
+      }
+    },
+    "Zn(OH)2": {
+      "name": "zinc hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "OH": -1
+      }
+    },
+    "ZnI2": {
+      "name": "zinc iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "I": -1
+      }
+    },
+    "ZnS": {
+      "name": "zinc sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Zn": 2,
+        "S": -2
+      }
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ba",
+        "H2O"
+      ],
+      "products": [
+        "Ba(OH)2",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "Ba + 2 H2O -> Ba(OH)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba",
+        "I2"
+      ],
+      "products": [
+        "BaI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ba + I2 -> BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "I2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(IO3)2",
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 I2 + 6 Ba(OH)2 -> Ba(IO3)2 + 5 BaI2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "ZnI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "ZnI2 + Ba(OH)2 -> Zn(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "FeI2"
+      ],
+      "products": [
+        "FeS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + FeI2 -> FeS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "ZnI2"
+      ],
+      "products": [
+        "ZnS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + ZnI2 -> ZnS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "H2"
+      ],
+      "products": [
+        "BaH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ba + H2 -> BaH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "I2"
+      ],
+      "products": [
+        "HI"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + I2 -> 2 HI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba",
+        "HI"
+      ],
+      "products": [
+        "BaI2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ba + 2 HI -> BaI2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Ba(OH)2 -> BaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + 2 HI -> H2S + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Fe(OH)2 -> FeI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Zn(OH)2 -> ZnI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "FeI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeS + 2 HI -> H2S + FeI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "ZnS + 2 HI -> H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba",
+        "H2S"
+      ],
+      "products": [
+        "BaS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ba + H2S -> BaS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ba(OH)2 -> BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ba(OH)2 -> Ba(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Zn(OH)2 -> ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "ZnS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "Zn(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Zn(OH)2 -> Zn(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "ZnS",
+        "H2S"
+      ],
+      "products": [
+        "Zn(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "ZnS + H2S -> Zn(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(HS)2 + Ba(OH)2 -> 2 BaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + 2 HI -> 2 H2S + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Fe(HS)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "BaS"
+      ],
+      "products": [
+        "FeS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Fe(HS)2 + BaS -> FeS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "FeI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Fe(HS)2 + 2 HI -> 2 H2S + FeI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Zn(OH)2",
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Zn(HS)2 + Ba(OH)2 -> Zn(OH)2 + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Zn(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "BaS"
+      ],
+      "products": [
+        "ZnS",
+        "Ba(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Zn(HS)2 + BaS -> ZnS + Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "ZnS precipitates"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "Zn(OH)2"
+      ],
+      "products": [
+        "ZnS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Zn(HS)2 + Zn(OH)2 -> 2 ZnS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Zn(HS)2",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "ZnI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Zn(HS)2 + 2 HI -> 2 H2S + ZnI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Ba",
+        "I2"
+      ],
+      "products": [
+        "BaI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ba + I2 -> BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "double_displacement": {
+      "substrates": [
+        "BaS",
+        "FeI2"
+      ],
+      "products": [
+        "FeS",
+        "BaI2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaS + FeI2 -> FeS + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    "halogen_disproportionation": {
+      "substrates": [
+        "I2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(IO3)2",
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 I2 + 6 Ba(OH)2 -> Ba(IO3)2 + 5 BaI2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- I is oxidised and reduced at once"
+    },
+    "salt_with_base": {
+      "substrates": [
+        "FeI2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "BaI2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe(OH)2 precipitates"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "BaS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "BaI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + 2 HI -> H2S + BaI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Ba",
+        "HI"
+      ],
+      "products": [
+        "BaI2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ba + 2 HI -> BaI2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HI",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaI2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HI + Ba(OH)2 -> BaI2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba",
+        "Ba(HS)2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "BaS"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "Fe(HS)2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "FeI2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "Zn(HS)2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba",
+        "ZnI2"
+      ],
+      "note": "Ba attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(IO3)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
+        "ZnI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "Zn(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "ZnI2"
+      ],
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
+    }
+  ]
+}
