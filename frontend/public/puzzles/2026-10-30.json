@@ -1,0 +1,1257 @@
+{
+  "version": 3,
+  "target": "FeBr2",
+  "name": "iron(II) bromide",
+  "grade": "hard",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "BaBr2",
+    "Br2",
+    "CuBr2",
+    "Fe",
+    "FeI2",
+    "FeO",
+    "H2O",
+    "SO3"
+  ],
+  "species": {
+    "Ba(HSO4)2": {
+      "name": "barium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HSO4": -1
+      }
+    },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
+    "BaSO4": {
+      "name": "barium sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO4": -2
+      }
+    },
+    "Br2": {
+      "name": "bromine",
+      "class": "element",
+      "state": "l",
+      "common": true
+    },
+    "Cu": {
+      "name": "copper",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuH2": {
+      "name": "copper(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cu": 2,
+        "H": -1
+      }
+    },
+    "CuI2": {
+      "name": "copper(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "I": -1
+      }
+    },
+    "Fe": {
+      "name": "iron",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Fe(HSO4)2": {
+      "name": "iron(II) hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "HSO4": -1
+      }
+    },
+    "FeBr2": {
+      "name": "iron(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "Br": -1
+      }
+    },
+    "FeBr3": {
+      "name": "iron(III) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 3,
+        "Br": -1
+      }
+    },
+    "FeH2": {
+      "name": "iron(II) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "H": -1
+      }
+    },
+    "FeI2": {
+      "name": "iron(II) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "I": -1
+      }
+    },
+    "FeO": {
+      "name": "iron(II) oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "FeSO4": {
+      "name": "iron(II) sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Fe": 2,
+        "SO4": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SO4": {
+      "name": "sulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO4": -2
+      }
+    },
+    "HBr": {
+      "name": "hydrobromic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "Br": -1
+      }
+    },
+    "HI": {
+      "name": "hydroiodic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "I": -1
+      }
+    },
+    "I2": {
+      "name": "iodine",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "SO3": {
+      "name": "sulfur trioxide",
+      "class": "acidic oxide",
+      "state": "l",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Fe",
+        "Br2"
+      ],
+      "products": [
+        "FeBr3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Fe + 3 Br2 -> 2 FeBr3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "Fe goes to +3 with Br"
+    },
+    {
+      "substrates": [
+        "Br2",
+        "FeI2"
+      ],
+      "products": [
+        "FeBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + FeI2 -> FeBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "CuBr2"
+      ],
+      "products": [
+        "FeBr2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + CuBr2 -> FeBr2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "SO3"
+      ],
+      "products": [
+        "FeSO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "FeO + SO3 -> FeSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "SO3",
+        "H2O"
+      ],
+      "products": [
+        "H2SO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO3 + H2O -> H2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "I2"
+      ],
+      "products": [
+        "FeI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + I2 -> FeI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with I"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "I2"
+      ],
+      "products": [
+        "CuI2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + I2 -> CuI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with I"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Br2"
+      ],
+      "products": [
+        "CuBr2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + Br2 -> CuBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with Br"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "BaBr2"
+      ],
+      "products": [
+        "BaSO4",
+        "FeBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeSO4 + BaBr2 -> BaSO4 + FeBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Fe(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeSO4 + H2SO4 -> Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2SO4"
+      ],
+      "products": [
+        "FeSO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + H2SO4 -> FeSO4 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "FeO"
+      ],
+      "products": [
+        "FeSO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + FeO -> FeSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Br2",
+        "CuI2"
+      ],
+      "products": [
+        "CuBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + CuI2 -> CuBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "CuI2"
+      ],
+      "products": [
+        "FeI2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + CuI2 -> FeI2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2",
+        "Br2"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Br2 -> 2 HBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "H2"
+      ],
+      "products": [
+        "FeH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Fe + H2 -> FeH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Fe goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "FeO",
+        "H2"
+      ],
+      "products": [
+        "Fe",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "FeO + H2 -> Fe + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "H2",
+        "I2"
+      ],
+      "products": [
+        "HI"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + I2 -> 2 HI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2"
+      ],
+      "products": [
+        "CuH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Cu + H2 -> CuH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "Cu goes to +2 with H"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "FeSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Fe(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + FeSO4 -> BaSO4 + Fe(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "HBr"
+      ],
+      "products": [
+        "FeBr2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + 2 HBr -> FeBr2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HBr",
+        "FeO"
+      ],
+      "products": [
+        "FeBr2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HBr + FeO -> FeBr2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Fe",
+        "HI"
+      ],
+      "products": [
+        "FeI2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + 2 HI -> FeI2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "FeO"
+      ],
+      "products": [
+        "FeI2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HI + FeO -> FeI2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "halogen_displacement": {
+      "substrates": [
+        "Br2",
+        "FeI2"
+      ],
+      "products": [
+        "FeBr2",
+        "I2"
+      ],
+      "rule": "halogen_displacement",
+      "equation": "Br2 + FeI2 -> FeBr2 + I2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Br is more reactive than I"
+    },
+    "metal_displacement": {
+      "substrates": [
+        "Fe",
+        "CuBr2"
+      ],
+      "products": [
+        "FeBr2",
+        "Cu"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Fe + CuBr2 -> FeBr2 + Cu",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Fe is above Cu in the activity series"
+    },
+    "double_displacement": {
+      "substrates": [
+        "FeSO4",
+        "BaBr2"
+      ],
+      "products": [
+        "BaSO4",
+        "FeBr2"
+      ],
+      "rule": "double_displacement",
+      "equation": "FeSO4 + BaBr2 -> BaSO4 + FeBr2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HBr",
+        "FeO"
+      ],
+      "products": [
+        "FeBr2",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HBr + FeO -> FeBr2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Fe",
+        "HBr"
+      ],
+      "products": [
+        "FeBr2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Fe + 2 HBr -> FeBr2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "CuBr2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu"
+      ],
+      "note": "Cu sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Fe"
+      ],
+      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "HI"
+      ],
+      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuBr2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "CuI2"
+      ],
+      "note": "Cu sits below Cu in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "Fe(HSO4)2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeBr3"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeI2"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "FeSO4"
+      ],
+      "note": "Cu sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "H2SO4"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HBr"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Cu",
+        "HI"
+      ],
+      "note": "Cu sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "Fe(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "Fe(HSO4)2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeBr3"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeI2"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe",
+        "FeSO4"
+      ],
+      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "FeBr3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Fe(HSO4)2",
+        "HI"
+      ],
+      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "FeI2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "FeSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "HI"
+      ],
+      "note": "HI is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeBr3",
+        "I2"
+      ],
+      "note": "I2 is less reactive than Br2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "H2SO4"
+      ],
+      "note": "H2SO4 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "HBr"
+      ],
+      "note": "HBr is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "FeSO4",
+        "HI"
+      ],
+      "note": "HI is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    }
+  ]
+}

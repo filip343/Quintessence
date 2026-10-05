@@ -1,0 +1,1082 @@
+{
+  "version": 3,
+  "target": "CaS",
+  "name": "calcium sulfide",
+  "grade": "easy",
+  "want": 5,
+  "ways": 7,
+  "cut": 1,
+  "palette": [
+    "Ca",
+    "Ca(OH)2",
+    "CaO",
+    "H2O",
+    "H2S",
+    "NH3",
+    "S",
+    "SiO2"
+  ],
+  "species": {
+    "(NH4)2S": {
+      "name": "ammonium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "S": -2
+      }
+    },
+    "(NH4)2SiO3": {
+      "name": "ammonium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "SiO3": -2
+      }
+    },
+    "Ca": {
+      "name": "calcium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ca(HS)2": {
+      "name": "calcium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ca": 2,
+        "HS": -1
+      }
+    },
+    "Ca(OH)2": {
+      "name": "calcium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "OH": -1
+      }
+    },
+    "CaH2": {
+      "name": "calcium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ca": 2,
+        "H": -1
+      }
+    },
+    "CaO": {
+      "name": "calcium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "CaS": {
+      "name": "calcium sulfide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "S": -2
+      }
+    },
+    "CaSiO3": {
+      "name": "calcium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "SiO3": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "NH3": {
+      "name": "ammonia",
+      "class": "hydride",
+      "state": "g",
+      "common": true
+    },
+    "NH4HS": {
+      "name": "ammonium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "NH4": 1,
+        "HS": -1
+      }
+    },
+    "NH4OH": {
+      "name": "ammonia solution",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "NH4": 1,
+        "OH": -1
+      }
+    },
+    "S": {
+      "name": "sulfur",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ca",
+        "H2O"
+      ],
+      "products": [
+        "Ca(OH)2",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "Ca + 2 H2O -> Ca(OH)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2S"
+      ],
+      "products": [
+        "CaS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2S -> CaS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca",
+        "S"
+      ],
+      "products": [
+        "CaS"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ca + S -> CaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ca(OH)2 -> CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Ca(OH)2 -> Ca(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Ca(OH)2",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "Ca(OH)2 + SiO2 -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "CaO",
+        "H2O"
+      ],
+      "products": [
+        "Ca(OH)2"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "CaO + H2O -> Ca(OH)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "CaO"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + CaO -> CaS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaO",
+        "SiO2"
+      ],
+      "products": [
+        "CaSiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "CaO + SiO2 -> CaSiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2O"
+      ],
+      "products": [
+        "NH4OH"
+      ],
+      "rule": "hydride_dissolution",
+      "equation": "NH3 + H2O -> NH4OH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "an equilibrium -- NH4OH gives back NH3 + H2O"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2S"
+      ],
+      "products": [
+        "(NH4)2S"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 NH3 + H2S -> (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2"
+      ],
+      "products": [
+        "CaH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ca + H2 -> CaH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaS",
+        "H2S"
+      ],
+      "products": [
+        "Ca(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "CaS + H2S -> Ca(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(HS)2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(HS)2 + Ca(OH)2 -> 2 CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "CaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + H2S -> H2SiO3 + CaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4OH"
+      ],
+      "products": [
+        "NH3",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "NH4OH -> NH3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NH4OH -> (NH4)2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NH4OH"
+      ],
+      "products": [
+        "NH4HS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NH4OH -> NH4HS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaS",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2S + Ca(OH)2 -> 2 NH3 + CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2S"
+      ],
+      "products": [
+        "NH4HS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "(NH4)2S + H2S -> 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "H2SiO3"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2SiO3 -> CaSiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Ca(OH)2 -> CaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "CaO"
+      ],
+      "products": [
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + CaO -> CaSiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "CaSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "NH3",
+        "H2SiO3"
+      ],
+      "products": [
+        "(NH4)2SiO3"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 NH3 + H2SiO3 -> (NH4)2SiO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "no water -- the base is a gas, not a hydroxide"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 NH4OH -> (NH4)2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "Ca(HS)2",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "2 NH4HS + Ca(OH)2 -> 2 NH3 + Ca(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "NH4HS",
+        "NH4OH"
+      ],
+      "products": [
+        "(NH4)2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "NH4HS + NH4OH -> (NH4)2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaSiO3",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2SiO3 + Ca(OH)2 -> 2 NH3 + CaSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "(NH4)2S"
+      ],
+      "rule": "acid_displacement",
+      "equation": "(NH4)2SiO3 + H2S -> H2SiO3 + (NH4)2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "Ca(HS)2"
+      ],
+      "products": [
+        "CaSiO3",
+        "NH4HS"
+      ],
+      "rule": "double_displacement",
+      "equation": "(NH4)2SiO3 + Ca(HS)2 -> CaSiO3 + 2 NH4HS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaSiO3 precipitates"
+    }
+  ],
+  "answers": {
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2S",
+        "CaO"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + CaO -> CaS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "binary_salt_synthesis": {
+      "substrates": [
+        "Ca",
+        "S"
+      ],
+      "products": [
+        "CaS"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Ca + S -> CaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Ca",
+        "H2S"
+      ],
+      "products": [
+        "CaS",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Ca + H2S -> CaS + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2S",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Ca(OH)2 -> CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "acid_displacement": {
+      "substrates": [
+        "CaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "CaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaSiO3 + H2S -> H2SiO3 + CaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Ca(HS)2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(HS)2 + Ca(OH)2 -> 2 CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "salt_with_base": {
+      "substrates": [
+        "(NH4)2S",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "NH3",
+        "CaS",
+        "H2O"
+      ],
+      "rule": "salt_with_base",
+      "equation": "(NH4)2S + Ca(OH)2 -> 2 NH3 + CaS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1,
+          2
+        ]
+      },
+      "note": "warm with alkali -- the test for an ammonium salt"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ca"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "Ca(HS)2"
+      ],
+      "note": "CaS is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "(NH4)2S",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "(NH4)2SiO3",
+        "Ca"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "Ca(HS)2"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca",
+        "NH4HS"
+      ],
+      "note": "Ca attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ca(HS)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(HS)2",
+        "NH4OH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NH4HS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    }
+  ]
+}
