@@ -1,0 +1,6074 @@
+{
+  "version": 3,
+  "target": "LiClO",
+  "name": "lithium hypochlorite",
+  "grade": "hard",
+  "want": 5,
+  "ways": 5,
+  "cut": 1,
+  "palette": [
+    "AgF",
+    "Ba(OH)2",
+    "Ca(OH)2",
+    "Cl2",
+    "H2O",
+    "Li2O",
+    "LiOH",
+    "Mg",
+    "P2O5"
+  ],
+  "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2HPO4": {
+      "name": "silver hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HPO4": -2
+      }
+    },
+    "Ag3PO4": {
+      "name": "silver phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "PO4": -3
+      }
+    },
+    "AgCl": {
+      "name": "silver chloride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Cl": -1
+      }
+    },
+    "AgClO": {
+      "name": "silver hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "ClO": -1
+      }
+    },
+    "AgClO3": {
+      "name": "silver chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "ClO3": -1
+      }
+    },
+    "AgF": {
+      "name": "silver fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "F": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgH2PO4": {
+      "name": "silver dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "H2PO4": -1
+      }
+    },
+    "Ba(ClO)2": {
+      "name": "barium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "ClO": -1
+      }
+    },
+    "Ba(ClO3)2": {
+      "name": "barium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "ClO3": -1
+      }
+    },
+    "Ba(H2PO4)2": {
+      "name": "barium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "H2PO4": -1
+      }
+    },
+    "Ba(OH)2": {
+      "name": "barium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "OH": -1
+      }
+    },
+    "Ba3(PO4)2": {
+      "name": "barium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "PO4": -3
+      }
+    },
+    "BaCl2": {
+      "name": "barium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Cl": -1
+      }
+    },
+    "BaF2": {
+      "name": "barium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "F": -1
+      }
+    },
+    "BaHPO4": {
+      "name": "barium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HPO4": -2
+      }
+    },
+    "Ca(ClO)2": {
+      "name": "calcium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "ClO": -1
+      }
+    },
+    "Ca(ClO3)2": {
+      "name": "calcium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "ClO3": -1
+      }
+    },
+    "Ca(H2PO4)2": {
+      "name": "calcium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "H2PO4": -1
+      }
+    },
+    "Ca(OH)2": {
+      "name": "calcium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "OH": -1
+      }
+    },
+    "Ca3(PO4)2": {
+      "name": "calcium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "PO4": -3
+      }
+    },
+    "CaCl2": {
+      "name": "calcium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "Cl": -1
+      }
+    },
+    "CaF2": {
+      "name": "calcium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "F": -1
+      }
+    },
+    "CaHPO4": {
+      "name": "calcium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ca": 2,
+        "HPO4": -2
+      }
+    },
+    "Cl2": {
+      "name": "chlorine",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H3PO4": {
+      "name": "phosphoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "PO4": -3
+      }
+    },
+    "HCl": {
+      "name": "hydrochloric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "Cl": -1
+      }
+    },
+    "HClO": {
+      "name": "hypochlorous acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "ClO": -1
+      }
+    },
+    "HF": {
+      "name": "hydrofluoric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "H": 1,
+        "F": -1
+      }
+    },
+    "Li2HPO4": {
+      "name": "lithium hydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "HPO4": -2
+      }
+    },
+    "Li2O": {
+      "name": "lithium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Li3PO4": {
+      "name": "lithium phosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "PO4": -3
+      }
+    },
+    "LiCl": {
+      "name": "lithium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "Cl": -1
+      }
+    },
+    "LiClO": {
+      "name": "lithium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "ClO": -1
+      }
+    },
+    "LiClO3": {
+      "name": "lithium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "ClO3": -1
+      }
+    },
+    "LiF": {
+      "name": "lithium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "F": -1
+      }
+    },
+    "LiH2PO4": {
+      "name": "lithium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "H2PO4": -1
+      }
+    },
+    "LiOH": {
+      "name": "lithium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Li": 1,
+        "OH": -1
+      }
+    },
+    "Mg": {
+      "name": "magnesium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Mg(ClO)2": {
+      "name": "magnesium hypochlorite",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "ClO": -1
+      }
+    },
+    "Mg(ClO3)2": {
+      "name": "magnesium chlorate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "ClO3": -1
+      }
+    },
+    "Mg(H2PO4)2": {
+      "name": "magnesium dihydrogenphosphate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "H2PO4": -1
+      }
+    },
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "Mg3(PO4)2": {
+      "name": "magnesium phosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "PO4": -3
+      }
+    },
+    "MgCl2": {
+      "name": "magnesium chloride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "Cl": -1
+      }
+    },
+    "MgF2": {
+      "name": "magnesium fluoride",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "F": -1
+      }
+    },
+    "MgH2": {
+      "name": "magnesium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Mg": 2,
+        "H": -1
+      }
+    },
+    "MgHPO4": {
+      "name": "magnesium hydrogenphosphate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "HPO4": -2
+      }
+    },
+    "P2O5": {
+      "name": "diphosphorus pentoxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Mg",
+        "AgF"
+      ],
+      "products": [
+        "MgF2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + 2 AgF -> MgF2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO)2",
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "2 Cl2 + 2 Ba(OH)2 -> Ba(ClO)2 + BaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          2
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO3)2",
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 Cl2 + 6 Ba(OH)2 -> Ba(ClO3)2 + 5 BaCl2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ba(OH)2 + P2O5 -> Ba3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO)2",
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "2 Cl2 + 2 Ca(OH)2 -> Ca(ClO)2 + CaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          2
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO3)2",
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "6 Cl2 + 6 Ca(OH)2 -> Ca(ClO3)2 + 5 CaCl2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          6
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Ca(OH)2",
+        "P2O5"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "3 Ca(OH)2 + P2O5 -> Ca3(PO4)2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ca3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 LiOH -> LiClO + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO3",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "3 Cl2 + 6 LiOH -> LiClO3 + 5 LiCl + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          6
+        ],
+        "products": [
+          1,
+          5,
+          3
+        ]
+      },
+      "note": "hot concentrated alkali -- Cl is oxidised and reduced at once"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Cl2"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + Cl2 -> MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "H2O"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "Li2O + H2O -> 2 LiOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "P2O5",
+        "H2O"
+      ],
+      "products": [
+        "H3PO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "P2O5 + 3 H2O -> 2 H3PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2O",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "3 Li2O + P2O5 -> 2 Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiOH",
+        "P2O5"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "6 LiOH + P2O5 -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          6,
+          1
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Mg3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 MgF2 + 2 H3PO4 -> 6 HF + Mg3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cl2"
+      ],
+      "products": [
+        "AgCl"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + Cl2 -> 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "H3PO4"
+      ],
+      "products": [
+        "HClO",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Ba(ClO)2 + 2 H3PO4 -> 6 HClO + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(ClO)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiClO",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "BaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "BaCl2 + 2 AgF -> 2 AgCl + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 BaCl2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiCl",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(ClO3)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiClO3",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "BaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + H3PO4 -> 3 BaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ba3(PO4)2 + 4 H3PO4 -> 3 Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO)2 + 2 AgF -> CaF2 + 2 AgClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "H3PO4"
+      ],
+      "products": [
+        "HClO",
+        "Ca3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Ca(ClO)2 + 2 H3PO4 -> 6 HClO + Ca3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ca(ClO)2 + 2 Li3PO4 -> Ca3(PO4)2 + 6 LiClO",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ca3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "CaF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "CaCl2 + 2 AgF -> 2 AgCl + CaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl and CaF2 both precipitate"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 CaCl2 + 2 Li3PO4 -> Ca3(PO4)2 + 6 LiCl",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ca3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(ClO3)2 + 2 AgF -> CaF2 + 2 AgClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ca(ClO3)2 + 2 Li3PO4 -> Ca3(PO4)2 + 6 LiClO3",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ca3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "CaHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ca3(PO4)2 + H3PO4 -> 3 CaHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ca3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Ca(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ca3(PO4)2 + 4 H3PO4 -> 3 Ca(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "H3PO4"
+      ],
+      "products": [
+        "HClO",
+        "Li3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 LiClO + H3PO4 -> 3 HClO + Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiCl",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "LiCl + AgF -> AgCl + LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "MgCl2",
+        "AgF"
+      ],
+      "products": [
+        "AgCl",
+        "MgF2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgCl2 + 2 AgF -> 2 AgCl + MgF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl and MgF2 both precipitate"
+    },
+    {
+      "substrates": [
+        "MgCl2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "BaCl2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgCl2 + Ba(OH)2 -> Mg(OH)2 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgCl2",
+        "LiOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "LiCl"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgCl2 + 2 LiOH -> Mg(OH)2 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgCl2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 MgCl2 + 2 Li3PO4 -> Mg3(PO4)2 + 6 LiCl",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Mg3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 AgF + H3PO4 -> 3 HF + Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ba(OH)2 -> Ba3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ba(OH)2 -> BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ba(OH)2 -> Ba(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Ca(OH)2 -> Ca3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ca3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Ca(OH)2 -> CaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Ca(OH)2 -> Ca(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Li2O"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 H3PO4 + 3 Li2O -> 2 Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H3PO4 + 3 LiOH -> Li3PO4 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + 2 LiOH -> Li2HPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiOH"
+      ],
+      "products": [
+        "LiH2PO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + LiOH -> LiH2PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H3PO4"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "3 Mg + 2 H3PO4 -> Mg3(PO4)2 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Mg3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Li2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Li3PO4 + H3PO4 -> 3 Li2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Li3PO4 + 2 H3PO4 -> 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li3PO4 + 3 AgF -> Ag3PO4 + 3 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ba(OH)2 -> BaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Ca(OH)2 -> CaF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2O"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HF + Li2O -> 2 LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiOH"
+      ],
+      "products": [
+        "LiF",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HF + LiOH -> LiF + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HF"
+      ],
+      "products": [
+        "MgF2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HF -> MgF2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgF2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HF + Mg(OH)2 -> MgF2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 is insoluble"
+    },
+    {
+      "substrates": [
+        "Mg3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "MgHPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Mg3(PO4)2 + H3PO4 -> 3 MgHPO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Mg3(PO4)2",
+        "H3PO4"
+      ],
+      "products": [
+        "Mg(H2PO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Mg3(PO4)2 + 4 H3PO4 -> 3 Mg(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          4
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Ba(OH)2 -> Ba(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Ca(OH)2 -> Ca(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Li2O"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + Li2O -> 2 LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + LiOH -> LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HClO"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HClO -> Mg(ClO)2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HClO + Mg(OH)2 -> Mg(ClO)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ba3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 BaF2 + 2 H3PO4 -> 6 HF + Ba3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 BaHPO4 + Ba(OH)2 -> Ba3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + Ba(OH)2 -> 2 BaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ba(H2PO4)2 + 2 Ba(OH)2 -> Ba3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(H2PO4)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(H2PO4)2 + Li2HPO4 -> BaHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Ca3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 CaF2 + 2 H3PO4 -> 6 HF + Ca3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "AgClO"
+      ],
+      "products": [
+        "Mg(ClO)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + 2 AgClO -> Mg(ClO)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "BaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ba(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + BaCl2 -> 2 AgCl + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + CaCl2 -> 2 AgCl + Ca(ClO)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "LiCl"
+      ],
+      "products": [
+        "AgCl",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgClO + LiCl -> AgCl + LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "MgCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Mg(ClO)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + MgCl2 -> 2 AgCl + Mg(ClO)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "H3PO4"
+      ],
+      "products": [
+        "HClO",
+        "Ag3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 AgClO + H3PO4 -> 3 HClO + Ag3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgClO + Li3PO4 -> Ag3PO4 + 3 LiClO",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO + Li2HPO4 -> Ag2HPO4 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "AgClO3"
+      ],
+      "products": [
+        "Mg(ClO3)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + 2 AgClO3 -> Mg(ClO3)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "BaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ba(ClO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + BaCl2 -> 2 AgCl + Ba(ClO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(ClO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + CaCl2 -> 2 AgCl + Ca(ClO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "LiCl"
+      ],
+      "products": [
+        "AgCl",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgClO3 + LiCl -> AgCl + LiClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "MgCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Mg(ClO3)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + MgCl2 -> 2 AgCl + Mg(ClO3)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgClO3 + Li3PO4 -> Ag3PO4 + 3 LiClO3",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgClO3 + Li2HPO4 -> Ag2HPO4 + 2 LiClO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "CaHPO4",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 CaHPO4 + Ca(OH)2 -> Ca3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "AgF"
+      ],
+      "products": [
+        "CaF2",
+        "AgH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(H2PO4)2 + 2 AgF -> CaF2 + 2 AgH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(H2PO4)2 + Ca(OH)2 -> 2 CaHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Ca(H2PO4)2 + 2 Ca(OH)2 -> Ca3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ca3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ca(H2PO4)2 + 2 Li3PO4 -> Ca3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ca3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "CaHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ca(H2PO4)2 + Li2HPO4 -> CaHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "LiF",
+        "H3PO4"
+      ],
+      "products": [
+        "HF",
+        "Li3PO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 LiF + H3PO4 -> 3 HF + Li3PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 H3PO4 + 3 Mg(OH)2 -> Mg3(PO4)2 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Mg3(PO4)2 is insoluble"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgHPO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H3PO4 + Mg(OH)2 -> MgHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(H2PO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H3PO4 + Mg(OH)2 -> Mg(H2PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "Ag2HPO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "2 Ag3PO4 + H3PO4 -> 3 Ag2HPO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "H3PO4"
+      ],
+      "products": [
+        "AgH2PO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag3PO4 + 2 H3PO4 -> 3 AgH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          3
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "AgF"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + 2 AgF -> Ag2HPO4 + 2 LiF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Li2HPO4 + LiOH -> Li3PO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Ba(ClO)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + Ba(ClO)2 -> BaHPO4 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "BaCl2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + BaCl2 -> BaHPO4 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Ba(ClO3)2"
+      ],
+      "products": [
+        "BaHPO4",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + Ba(ClO3)2 -> BaHPO4 + 2 LiClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Ca(ClO)2"
+      ],
+      "products": [
+        "CaHPO4",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + Ca(ClO)2 -> CaHPO4 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "CaCl2"
+      ],
+      "products": [
+        "CaHPO4",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + CaCl2 -> CaHPO4 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Ca(ClO3)2"
+      ],
+      "products": [
+        "CaHPO4",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + Ca(ClO3)2 -> CaHPO4 + 2 LiClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CaHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "MgCl2"
+      ],
+      "products": [
+        "MgHPO4",
+        "LiCl"
+      ],
+      "rule": "double_displacement",
+      "equation": "Li2HPO4 + MgCl2 -> MgHPO4 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li2HPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + LiOH -> Li2HPO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "LiOH"
+      ],
+      "products": [
+        "Li3PO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "LiH2PO4 + 2 LiOH -> Li3PO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "H2",
+        "Cl2"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + Cl2 -> 2 HCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "H2"
+      ],
+      "products": [
+        "MgH2"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "Mg + H2 -> MgH2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgHPO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "2 MgHPO4 + Mg(OH)2 -> Mg3(PO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "MgHPO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgHPO4 + 2 HCl -> H3PO4 + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "AgF"
+      ],
+      "products": [
+        "MgF2",
+        "AgH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(H2PO4)2 + 2 AgF -> MgF2 + 2 AgH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(H2PO4)2 + Ba(OH)2 -> Mg(OH)2 + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "LiOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "LiH2PO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(H2PO4)2 + 2 LiOH -> Mg(OH)2 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Mg(H2PO4)2 + 2 Li3PO4 -> Mg3(PO4)2 + 6 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Mg3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgHPO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(H2PO4)2 + Mg(OH)2 -> 2 MgHPO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(H2PO4)2 + 2 Mg(OH)2 -> Mg3(PO4)2 + 4 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          4
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "MgHPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(H2PO4)2 + Li2HPO4 -> MgHPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(H2PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(H2PO4)2 + 2 HCl -> 2 H3PO4 + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "AgF"
+      ],
+      "products": [
+        "MgF2",
+        "AgClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO)2 + 2 AgF -> MgF2 + 2 AgClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(ClO)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO)2 + Ba(OH)2 -> Mg(OH)2 + Ba(ClO)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "LiOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "LiClO"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO)2 + 2 LiOH -> Mg(OH)2 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "H3PO4"
+      ],
+      "products": [
+        "HClO",
+        "Mg3(PO4)2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "3 Mg(ClO)2 + 2 H3PO4 -> 6 HClO + Mg3(PO4)2",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Mg(ClO)2 + 2 Li3PO4 -> Mg3(PO4)2 + 6 LiClO",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Mg3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "MgHPO4",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO)2 + Li2HPO4 -> MgHPO4 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(ClO)2 + 2 HCl -> 2 HClO + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2HPO4 + 2 HCl -> H3PO4 + 2 AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(ClO3)2",
+        "AgF"
+      ],
+      "products": [
+        "MgF2",
+        "AgClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO3)2 + 2 AgF -> MgF2 + 2 AgClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgF2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO3)2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "Ba(ClO3)2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO3)2 + Ba(OH)2 -> Mg(OH)2 + Ba(ClO3)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO3)2",
+        "LiOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "LiClO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO3)2 + 2 LiOH -> Mg(OH)2 + 2 LiClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO3)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Mg3(PO4)2",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Mg(ClO3)2 + 2 Li3PO4 -> Mg3(PO4)2 + 6 LiClO3",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Mg3(PO4)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(ClO3)2",
+        "Li2HPO4"
+      ],
+      "products": [
+        "MgHPO4",
+        "LiClO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(ClO3)2 + Li2HPO4 -> MgHPO4 + 2 LiClO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgHPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "AgH2PO4"
+      ],
+      "products": [
+        "Mg(H2PO4)2",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Mg + 2 AgH2PO4 -> Mg(H2PO4)2 + 2 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "BaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ba(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + BaCl2 -> 2 AgCl + Ba(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "CaCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Ca(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + CaCl2 -> 2 AgCl + Ca(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "LiCl"
+      ],
+      "products": [
+        "AgCl",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgH2PO4 + LiCl -> AgCl + LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "MgCl2"
+      ],
+      "products": [
+        "AgCl",
+        "Mg(H2PO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + MgCl2 -> 2 AgCl + Mg(H2PO4)2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "AgCl precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ag3PO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgH2PO4 + Li3PO4 -> Ag3PO4 + 3 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Ag3PO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Li2HPO4"
+      ],
+      "products": [
+        "Ag2HPO4",
+        "LiH2PO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgH2PO4 + Li2HPO4 -> Ag2HPO4 + 2 LiH2PO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2HPO4 precipitates"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgH2PO4 + HCl -> H3PO4 + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgF + HCl -> HF + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "BaCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Ba(OH)2 -> BaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Ca(OH)2"
+      ],
+      "products": [
+        "CaCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Ca(OH)2 -> CaCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Li2O"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HCl + Li2O -> 2 LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiOH"
+      ],
+      "products": [
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HCl + LiOH -> LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg",
+        "HCl"
+      ],
+      "products": [
+        "MgCl2",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "Mg + 2 HCl -> MgCl2 + H2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgF2 + 2 HCl -> 2 HF + MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(ClO)2 + 2 HCl -> 2 HClO + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba3(PO4)2 + 6 HCl -> 2 H3PO4 + 3 BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ca(ClO)2 + 2 HCl -> 2 HClO + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca3(PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ca3(PO4)2 + 6 HCl -> 2 H3PO4 + 3 CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiClO + HCl -> HClO + LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Li3PO4 + 3 HCl -> H3PO4 + 3 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg3(PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "MgCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg3(PO4)2 + 6 HCl -> 2 H3PO4 + 3 MgCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          6
+        ],
+        "products": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaF2 + 2 HCl -> 2 HF + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaHPO4 + 2 HCl -> H3PO4 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "BaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(H2PO4)2 + 2 HCl -> 2 H3PO4 + BaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaF2 + 2 HCl -> 2 HF + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "HCl"
+      ],
+      "products": [
+        "HClO",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "AgClO + HCl -> HClO + AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CaHPO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "CaHPO4 + 2 HCl -> H3PO4 + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "CaCl2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ca(H2PO4)2 + 2 HCl -> 2 H3PO4 + CaCl2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiF",
+        "HCl"
+      ],
+      "products": [
+        "HF",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiF + HCl -> HF + LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgCl2",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "2 HCl + Mg(OH)2 -> MgCl2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "AgCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag3PO4 + 3 HCl -> H3PO4 + 3 AgCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Li2HPO4 + 2 HCl -> H3PO4 + 2 LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "HCl"
+      ],
+      "products": [
+        "H3PO4",
+        "LiCl"
+      ],
+      "rule": "acid_displacement",
+      "equation": "LiH2PO4 + HCl -> H3PO4 + LiCl",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "answers": {
+    "halogen_disproportionation": {
+      "substrates": [
+        "Cl2",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "LiCl",
+        "H2O"
+      ],
+      "rule": "halogen_disproportionation",
+      "equation": "Cl2 + 2 LiOH -> LiClO + LiCl + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "cold dilute alkali -- Cl is oxidised and reduced at once"
+    },
+    "double_displacement": {
+      "substrates": [
+        "Ba(ClO)2",
+        "Li3PO4"
+      ],
+      "products": [
+        "Ba3(PO4)2",
+        "LiClO"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 Ba(ClO)2 + 2 Li3PO4 -> Ba3(PO4)2 + 6 LiClO",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Ba3(PO4)2 precipitates"
+    },
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "HClO",
+        "Li2O"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "2 HClO + Li2O -> 2 LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "HClO",
+        "LiOH"
+      ],
+      "products": [
+        "LiClO",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HClO + LiOH -> LiClO + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "salt_with_base": {
+      "substrates": [
+        "Mg(ClO)2",
+        "LiOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "LiClO"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(ClO)2 + 2 LiOH -> Mg(OH)2 + 2 LiClO",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ag",
+        "AgClO"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgClO3"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgF"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "AgH2PO4"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ba(ClO)2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ba(ClO3)2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ba(H2PO4)2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "BaCl2"
+      ],
+      "note": "Ag sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ca(ClO)2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ca(ClO3)2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Ca(H2PO4)2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CaCl2"
+      ],
+      "note": "Ag sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H3PO4"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HCl"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HClO"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "HF"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li2HPO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Li3PO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "LiCl"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "LiClO3"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "LiH2PO4"
+      ],
+      "note": "Ag sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Mg(ClO)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Mg(ClO3)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Mg(H2PO4)2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "MgCl2"
+      ],
+      "note": "Ag sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2HPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ag3PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgCl",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ba(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ba(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Ca(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ba(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ba(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Ca(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgClO3",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Ba(ClO)2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Ba(ClO3)2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Ba(H2PO4)2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "Cl2"
+      ],
+      "note": "Cl2 is less reactive than F2, so it cannot push it out of a halide"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "LiClO3"
+      ],
+      "note": "LiF is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgF",
+        "LiH2PO4"
+      ],
+      "note": "LiF is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Ba(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Ba(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "AgH2PO4",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Ca(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "CaCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Ca(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "CaCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(ClO3)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "CaCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(H2PO4)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Ca(ClO)2"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Ca(ClO3)2"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Ca(H2PO4)2"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "CaCl2"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li2HPO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "Li3PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiCl"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiClO3"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "LiH2PO4"
+      ],
+      "note": "LiOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba3(PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Ca(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Ca(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Ca(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "LiOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ba in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaCl2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaF2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaHPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "LiOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HCl"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "LiOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(ClO3)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "LiCl"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "LiOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca(H2PO4)2",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ca3(PO4)2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ca3(PO4)2",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "H3PO4"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "HF"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "LiClO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "LiH2PO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "LiOH"
+      ],
+      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Mg"
+      ],
+      "note": "Mg sits below Ca in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaCl2",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CaF2",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaHPO4",
+        "HClO"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CaHPO4",
+        "HF"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiCl"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "LiClO3"
+      ],
+      "note": "H3PO4 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "Mg(ClO3)2"
+      ],
+      "note": "H3PO4 is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H3PO4",
+        "MgCl2"
+      ],
+      "note": "H3PO4 is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "LiClO3"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HCl",
+        "Mg(ClO3)2"
+      ],
+      "note": "HCl is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Li2HPO4"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Li3PO4"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiCl"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiClO3"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiF"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "LiH2PO4"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg(ClO3)2"
+      ],
+      "note": "HClO is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg(H2PO4)2"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "Mg3(PO4)2"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgCl2"
+      ],
+      "note": "HClO is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgF2"
+      ],
+      "note": "HClO is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HClO",
+        "MgHPO4"
+      ],
+      "note": "HClO is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li2HPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Li3PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiCl"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiClO3"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "LiH2PO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(ClO)2"
+      ],
+      "note": "HF is no stronger than HClO, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(ClO3)2"
+      ],
+      "note": "HF is no stronger than HClO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg(H2PO4)2"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "Mg3(PO4)2"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgCl2"
+      ],
+      "note": "HF is no stronger than HCl, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "HF",
+        "MgHPO4"
+      ],
+      "note": "HF is no stronger than H3PO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Li2HPO4",
+        "Mg"
+      ],
+      "note": "Mg sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Li3PO4",
+        "Mg"
+      ],
+      "note": "Mg sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "LiCl",
+        "Mg"
+      ],
+      "note": "Mg sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "LiCl",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiCl",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiCl",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "Mg"
+      ],
+      "note": "Mg sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "Mg(H2PO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiClO3",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "Mg"
+      ],
+      "note": "Mg sits below Li in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "Mg(ClO)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "Mg(ClO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "LiH2PO4",
+        "MgCl2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(ClO)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(ClO3)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "Mg(H2PO4)2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Mg",
+        "MgCl2"
+      ],
+      "note": "Mg sits below Mg in the activity series, so it cannot push it out"
+    }
+  ]
+}
