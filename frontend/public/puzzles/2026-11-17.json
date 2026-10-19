@@ -1,0 +1,2244 @@
+{
+  "version": 3,
+  "target": "K2S",
+  "name": "potassium sulfide",
+  "grade": "easy",
+  "want": 5,
+  "ways": 8,
+  "cut": 1,
+  "palette": [
+    "BaS",
+    "H2O",
+    "H2S",
+    "K",
+    "K2O",
+    "KOH",
+    "MgS",
+    "S",
+    "SO3",
+    "SiO2"
+  ],
+  "species": {
+    "Ba(HS)2": {
+      "name": "barium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ba": 2,
+        "HS": -1
+      }
+    },
+    "Ba(HSO4)2": {
+      "name": "barium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "HSO4": -1
+      }
+    },
+    "BaS": {
+      "name": "barium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "S": -2
+      }
+    },
+    "BaSO4": {
+      "name": "barium sulfate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SO4": -2
+      }
+    },
+    "BaSiO3": {
+      "name": "barium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "SiO3": -2
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2S": {
+      "name": "hydrosulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "S": -2
+      }
+    },
+    "H2SO4": {
+      "name": "sulfuric acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SO4": -2
+      }
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K": {
+      "name": "potassium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2S": {
+      "name": "potassium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "S": -2
+      }
+    },
+    "K2SO4": {
+      "name": "potassium sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SO4": -2
+      }
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KH": {
+      "name": "potassium hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "H": -1
+      }
+    },
+    "KHS": {
+      "name": "potassium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "K": 1,
+        "HS": -1
+      }
+    },
+    "KHSO4": {
+      "name": "potassium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HSO4": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "Mg(HS)2": {
+      "name": "magnesium hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Mg": 2,
+        "HS": -1
+      }
+    },
+    "Mg(HSO4)2": {
+      "name": "magnesium hydrogensulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "HSO4": -1
+      }
+    },
+    "Mg(OH)2": {
+      "name": "magnesium hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "OH": -1
+      }
+    },
+    "MgS": {
+      "name": "magnesium sulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "S": -2
+      }
+    },
+    "MgSO4": {
+      "name": "magnesium sulfate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "SO4": -2
+      }
+    },
+    "MgSiO3": {
+      "name": "magnesium silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Mg": 2,
+        "SiO3": -2
+      }
+    },
+    "S": {
+      "name": "sulfur",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "SO3": {
+      "name": "sulfur trioxide",
+      "class": "acidic oxide",
+      "state": "l",
+      "common": true
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "BaS",
+        "H2S"
+      ],
+      "products": [
+        "Ba(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaS + H2S -> Ba(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2O"
+      ],
+      "products": [
+        "KOH",
+        "H2"
+      ],
+      "rule": "metal_with_water",
+      "equation": "2 K + 2 H2O -> 2 KOH + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          2
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "SO3",
+        "H2O"
+      ],
+      "products": [
+        "H2SO4"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "SO3 + H2O -> H2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K",
+        "H2S"
+      ],
+      "products": [
+        "K2S",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2S -> K2S + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2O"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "KHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + KOH -> KHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "H2S"
+      ],
+      "products": [
+        "Mg(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "MgS + H2S -> Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 K + S -> K2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SO3"
+      ],
+      "products": [
+        "K2SO4"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SO3 -> K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgS",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "K2S"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgS + 2 KOH -> Mg(OH)2 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SO3"
+      ],
+      "products": [
+        "K2SO4",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SO3 -> K2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ba(HS)2 + H2SO4 -> 2 H2S + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + K2SO4 -> BaSO4 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HS)2 + K2SiO3 -> BaSiO3 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2"
+      ],
+      "products": [
+        "KH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 K + H2 -> 2 KH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "rule": "hydrogenation",
+      "equation": "H2 + S -> H2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaS + H2SO4 -> H2S + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K",
+        "H2SO4"
+      ],
+      "products": [
+        "K2SO4",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2SO4 -> K2SO4 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "K2O"
+      ],
+      "products": [
+        "K2SO4",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SO4 + K2O -> K2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "KOH"
+      ],
+      "products": [
+        "K2SO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + 2 KOH -> K2SO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "KOH"
+      ],
+      "products": [
+        "KHSO4",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2SO4 + KOH -> KHSO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "MgS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "MgSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgS + H2SO4 -> H2S + MgSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "K2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2S + H2SO4 -> H2S + K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KHS",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "K2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "2 KHS + H2SO4 -> 2 H2S + K2SO4",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "H2SO4"
+      ],
+      "products": [
+        "H2S",
+        "MgSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Mg(HS)2 + H2SO4 -> 2 H2S + MgSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SO4",
+        "H2SO4"
+      ],
+      "products": [
+        "KHSO4"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2SO4 + H2SO4 -> 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2SO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2SO4 -> H2SiO3 + K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgSO4",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SO4 + Mg(OH)2 -> MgSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SO4",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(HSO4)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2SO4 + Mg(OH)2 -> Mg(HSO4)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "K2S",
+        "H2S"
+      ],
+      "products": [
+        "KHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2S + H2S -> 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "KHS"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(HS)2 + 2 KOH -> Mg(OH)2 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "MgSiO3",
+        "KHS"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(HS)2 + K2SiO3 -> MgSiO3 + 2 KHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HS)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(HS)2 + Mg(OH)2 -> 2 MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "K2SO4",
+        "BaS"
+      ],
+      "products": [
+        "BaSO4",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2SO4 + BaS -> BaSO4 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "BaS"
+      ],
+      "products": [
+        "BaSiO3",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2SiO3 + BaS -> BaSiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2S"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "MgS"
+      ],
+      "products": [
+        "MgSiO3",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2SiO3 + MgS -> MgSiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Mg(OH)2 -> MgS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "Mg(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Mg(OH)2 -> Mg(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Ba(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "BaSO4 + H2SO4 -> Ba(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2S -> H2SiO3 + BaS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "BaSiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "BaSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "BaSiO3 + H2SO4 -> H2SiO3 + BaSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "KOH"
+      ],
+      "products": [
+        "K2SO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHSO4 + KOH -> K2SO4 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "MgSO4",
+        "BaS"
+      ],
+      "products": [
+        "BaSO4",
+        "MgS"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgSO4 + BaS -> BaSO4 + MgS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "MgSO4",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "K2SO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgSO4 + 2 KOH -> Mg(OH)2 + K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "MgSO4",
+        "Ba(HS)2"
+      ],
+      "products": [
+        "BaSO4",
+        "Mg(HS)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgSO4 + Ba(HS)2 -> BaSO4 + Mg(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "MgSO4",
+        "H2SO4"
+      ],
+      "products": [
+        "Mg(HSO4)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "MgSO4 + H2SO4 -> Mg(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "MgSO4",
+        "K2SiO3"
+      ],
+      "products": [
+        "MgSiO3",
+        "K2SO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "MgSO4 + K2SiO3 -> MgSiO3 + K2SO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "MgSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "K",
+        "H2SiO3"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2SiO3 -> K2SiO3 + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgSiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + Mg(OH)2 -> MgSiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgSiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Mg(HSO4)2",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "KHSO4"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Mg(HSO4)2 + 2 KOH -> Mg(OH)2 + 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HSO4)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "MgSiO3",
+        "KHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Mg(HSO4)2 + K2SiO3 -> MgSiO3 + 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "MgSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Mg(HSO4)2",
+        "Mg(OH)2"
+      ],
+      "products": [
+        "MgSO4",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Mg(HSO4)2 + Mg(OH)2 -> 2 MgSO4 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "MgSiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "MgS"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgSiO3 + H2S -> H2SiO3 + MgS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "MgSiO3",
+        "H2SO4"
+      ],
+      "products": [
+        "H2SiO3",
+        "MgSO4"
+      ],
+      "rule": "acid_displacement",
+      "equation": "MgSiO3 + H2SO4 -> H2SiO3 + MgSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "K2SO4"
+      ],
+      "products": [
+        "BaSO4",
+        "KHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + K2SO4 -> BaSO4 + 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "K2SiO3"
+      ],
+      "products": [
+        "BaSiO3",
+        "KHSO4"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + K2SiO3 -> BaSiO3 + 2 KHSO4",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "BaSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "MgSO4"
+      ],
+      "products": [
+        "BaSO4",
+        "Mg(HSO4)2"
+      ],
+      "rule": "double_displacement",
+      "equation": "Ba(HSO4)2 + MgSO4 -> BaSO4 + Mg(HSO4)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    }
+  ],
+  "answers": {
+    "acid_with_basic_oxide": {
+      "substrates": [
+        "H2S",
+        "K2O"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2S + K2O -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "binary_salt_synthesis": {
+      "substrates": [
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 K + S -> K2S",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "K",
+        "H2S"
+      ],
+      "products": [
+        "K2S",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 K + H2S -> K2S + H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2S",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 KOH -> K2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    "salt_with_base": {
+      "substrates": [
+        "MgS",
+        "KOH"
+      ],
+      "products": [
+        "Mg(OH)2",
+        "K2S"
+      ],
+      "rule": "salt_with_base",
+      "equation": "MgS + 2 KOH -> Mg(OH)2 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Mg(OH)2 precipitates"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "K2SiO3",
+        "H2S"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2S"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2S -> H2SiO3 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "KHS",
+        "KOH"
+      ],
+      "products": [
+        "K2S",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHS + KOH -> K2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "double_displacement": {
+      "substrates": [
+        "K2SO4",
+        "BaS"
+      ],
+      "products": [
+        "BaSO4",
+        "K2S"
+      ],
+      "rule": "double_displacement",
+      "equation": "K2SO4 + BaS -> BaSO4 + K2S",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "BaSO4 precipitates"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "Mg(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HS)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(HSO4)2",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "K"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KHS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KHSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "KOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaS",
+        "Mg(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2S"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaSO4",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "K2SO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "KHSO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Mg(HSO4)2"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "MgSO4"
+      ],
+      "note": "H2S is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2SO4"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHSO4"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Mg(HS)2"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Mg(HSO4)2"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgS"
+      ],
+      "note": "H2SiO3 is no stronger than H2S, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "MgSO4"
+      ],
+      "note": "H2SiO3 is no stronger than H2SO4, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2SO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "K2SiO3"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "KHSO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "Mg(HS)2"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "Mg(HSO4)2"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "MgS"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K",
+        "MgSO4"
+      ],
+      "note": "K attacks water on contact, so in solution it never reaches the salt"
+    },
+    {
+      "substrates": [
+        "K2SO4",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SO4",
+        "Mg(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "K2SO4",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "Mg(HSO4)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHS",
+        "MgSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "Mg(HS)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "MgS"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "KHSO4",
+        "MgSO4"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    }
+  ]
+}
