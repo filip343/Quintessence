@@ -1,0 +1,1922 @@
+{
+  "version": 3,
+  "target": "Cr2(CO3)3",
+  "name": "chromium(III) carbonate",
+  "grade": "medium",
+  "want": 5,
+  "ways": 6,
+  "cut": 1,
+  "palette": [
+    "Ag2O",
+    "CO2",
+    "Cr",
+    "CrBr3",
+    "CrI3",
+    "H2O",
+    "K2O",
+    "SiO2"
+  ],
+  "species": {
+    "Ag": {
+      "name": "silver",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Ag2CO3": {
+      "name": "silver carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "CO3": -2
+      }
+    },
+    "Ag2O": {
+      "name": "silver oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "Ag2SiO3": {
+      "name": "silver silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "SiO3": -2
+      }
+    },
+    "AgBr": {
+      "name": "silver bromide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "Br": -1
+      }
+    },
+    "AgH": {
+      "name": "silver hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Ag": 1,
+        "H": -1
+      }
+    },
+    "AgHCO3": {
+      "name": "silver hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "HCO3": -1
+      }
+    },
+    "AgI": {
+      "name": "silver iodide",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Ag": 1,
+        "I": -1
+      }
+    },
+    "CO2": {
+      "name": "carbon dioxide",
+      "class": "acidic oxide",
+      "state": "g",
+      "common": true
+    },
+    "Cr": {
+      "name": "chromium",
+      "class": "element",
+      "state": "s",
+      "common": true
+    },
+    "Cr(HCO3)3": {
+      "name": "chromium(III) hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "HCO3": -1
+      }
+    },
+    "Cr(OH)3": {
+      "name": "chromium(III) hydroxide",
+      "class": "base",
+      "state": "s",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "OH": -1
+      }
+    },
+    "Cr2(CO3)3": {
+      "name": "chromium(III) carbonate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "CO3": -2
+      }
+    },
+    "Cr2(SiO3)3": {
+      "name": "chromium(III) silicate",
+      "class": "salt",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "SiO3": -2
+      }
+    },
+    "Cr2O3": {
+      "name": "chromium(III) oxide",
+      "class": "amphoteric oxide",
+      "state": "s",
+      "common": true
+    },
+    "CrBr3": {
+      "name": "chromium(III) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "Br": -1
+      }
+    },
+    "CrH3": {
+      "name": "chromium(III) hydride",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Cr": 3,
+        "H": -1
+      }
+    },
+    "CrI3": {
+      "name": "chromium(III) iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cr": 3,
+        "I": -1
+      }
+    },
+    "H2": {
+      "name": "hydrogen",
+      "class": "element",
+      "state": "g",
+      "common": true
+    },
+    "H2CO3": {
+      "name": "carbonic acid",
+      "class": "acid",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "CO3": -2
+      }
+    },
+    "H2O": {
+      "name": "water",
+      "class": "water",
+      "state": "l",
+      "common": true
+    },
+    "H2SiO3": {
+      "name": "silicic acid",
+      "class": "acid",
+      "state": "s",
+      "common": true,
+      "ions": {
+        "H": 1,
+        "SiO3": -2
+      }
+    },
+    "K2CO3": {
+      "name": "potassium carbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "CO3": -2
+      }
+    },
+    "K2O": {
+      "name": "potassium oxide",
+      "class": "basic oxide",
+      "state": "s",
+      "common": true
+    },
+    "K2SiO3": {
+      "name": "potassium silicate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "SiO3": -2
+      }
+    },
+    "KBr": {
+      "name": "potassium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "Br": -1
+      }
+    },
+    "KHCO3": {
+      "name": "potassium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "HCO3": -1
+      }
+    },
+    "KI": {
+      "name": "potassium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "I": -1
+      }
+    },
+    "KOH": {
+      "name": "potassium hydroxide",
+      "class": "base",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "K": 1,
+        "OH": -1
+      }
+    },
+    "SiO2": {
+      "name": "silicon dioxide",
+      "class": "acidic oxide",
+      "state": "s",
+      "common": true
+    }
+  },
+  "reactions": [
+    {
+      "substrates": [
+        "Ag2O",
+        "CO2"
+      ],
+      "products": [
+        "Ag2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + CO2 -> Ag2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "Cr"
+      ],
+      "products": [
+        "Cr2O3",
+        "Ag"
+      ],
+      "rule": "aluminothermic_reduction",
+      "equation": "3 Ag2O + 2 Cr -> Cr2O3 + 6 Ag",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "SiO2"
+      ],
+      "products": [
+        "Ag2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "Ag2O + SiO2 -> Ag2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CO2",
+        "H2O"
+      ],
+      "products": [
+        "H2CO3"
+      ],
+      "rule": "anhydride_hydration",
+      "equation": "CO2 + H2O -> H2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "unstable -- decomposes to CO2 + H2O"
+    },
+    {
+      "substrates": [
+        "K2O",
+        "CO2"
+      ],
+      "products": [
+        "K2CO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + CO2 -> K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "H2O"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "rule": "basic_oxide_hydration",
+      "equation": "K2O + H2O -> 2 KOH",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2O",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3"
+      ],
+      "rule": "oxide_with_oxide",
+      "equation": "K2O + SiO2 -> K2SiO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "AgHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Ag2CO3 + H2CO3 -> 2 AgHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Ag2CO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Ag2SiO3 + H2CO3 -> H2SiO3 + Ag2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3"
+      ],
+      "products": [
+        "CO2",
+        "H2O"
+      ],
+      "rule": "unstable_decomposition",
+      "equation": "H2CO3 -> CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "does not survive in solution"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + Ag2O -> Ag2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2CO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2CO3 -> Cr2(CO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "K2O"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + K2O -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "H2CO3"
+      ],
+      "products": [
+        "KHCO3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "K2CO3 + H2CO3 -> 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2CO3 + 2 KOH -> K2CO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KOH"
+      ],
+      "products": [
+        "KHCO3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2CO3 + KOH -> KHCO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "K2SiO3 + H2CO3 -> H2SiO3 + K2CO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2CO3 + 2 CrBr3 -> Cr2(CO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2CO3",
+        "CrI3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2CO3 + 2 CrI3 -> Cr2(CO3)3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "CO2"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + CO2 -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KBr"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrBr3 + 3 KOH -> Cr(OH)3 + 3 KBr",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CrI3 + 3 KOH -> Cr(OH)3 + 3 KI",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "KOH",
+        "SiO2"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "base_with_acidic_oxide",
+      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrBr3 -> Cr2(SiO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "K2SiO3",
+        "CrI3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KI"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2SiO3 + 2 CrI3 -> Cr2(SiO3)3 + 6 KI",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 AgHCO3 -> Ag2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "AgHCO3"
+      ],
+      "products": [
+        "Cr(HCO3)3",
+        "Ag"
+      ],
+      "rule": "metal_displacement",
+      "equation": "Cr + 3 AgHCO3 -> Cr(HCO3)3 + 3 Ag",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr is above Ag in the activity series"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "CrBr3"
+      ],
+      "products": [
+        "AgBr",
+        "Cr(HCO3)3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgHCO3 + CrBr3 -> 3 AgBr + Cr(HCO3)3",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "CrI3"
+      ],
+      "products": [
+        "AgI",
+        "Cr(HCO3)3"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 AgHCO3 + CrI3 -> 3 AgI + Cr(HCO3)3",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          3,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "K2CO3"
+      ],
+      "products": [
+        "Ag2CO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + K2CO3 -> Ag2CO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2CO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 AgHCO3 + K2SiO3 -> Ag2SiO3 + 2 KHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Ag2SiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "KBr"
+      ],
+      "products": [
+        "AgBr",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHCO3 + KBr -> AgBr + KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgBr precipitates"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "KI"
+      ],
+      "products": [
+        "AgI",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "AgHCO3 + KI -> AgI + KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "AgI precipitates"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Ag2O"
+      ],
+      "products": [
+        "Ag2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + Ag2O -> Ag2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Ag2SiO3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2SiO3 -> Cr2(SiO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2O"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KOH"
+      ],
+      "products": [
+        "K2SiO3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2SiO3 + 2 Cr(OH)3 -> Cr2(SiO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "Cr2(CO3)3"
+      ],
+      "products": [
+        "Cr2O3",
+        "CO2"
+      ],
+      "rule": "carbonate_decomposition",
+      "equation": "Cr2(CO3)3 -> Cr2O3 + 3 CO2",
+      "coefficients": {
+        "substrates": [
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "needs heating"
+    },
+    {
+      "substrates": [
+        "Cr2(CO3)3",
+        "H2CO3"
+      ],
+      "products": [
+        "Cr(HCO3)3"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Cr2(CO3)3 + 3 H2CO3 -> 2 Cr(HCO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "Ag2O",
+        "H2"
+      ],
+      "products": [
+        "Ag",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Ag2O + H2 -> 2 Ag + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          1
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "H2"
+      ],
+      "products": [
+        "CrH3"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Cr + 3 H2 -> 2 CrH3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr2O3",
+        "H2"
+      ],
+      "products": [
+        "Cr",
+        "H2O"
+      ],
+      "rule": "oxide_reduction",
+      "equation": "Cr2O3 + 3 H2 -> 2 Cr + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          2,
+          3
+        ]
+      },
+      "note": "hydrogen reduces oxides below Zn in the activity series"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2"
+      ],
+      "products": [
+        "AgH"
+      ],
+      "rule": "binary_salt_synthesis",
+      "equation": "2 Ag + H2 -> 2 AgH",
+      "coefficients": {
+        "substrates": [
+          2,
+          1
+        ],
+        "products": [
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "KHCO3"
+      ],
+      "products": [
+        "K2CO3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 KHCO3 -> K2CO3 + CO2 + H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "KHCO3",
+        "KOH"
+      ],
+      "products": [
+        "K2CO3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "KHCO3 + KOH -> K2CO3 + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2CO3 + 2 Cr(OH)3 -> Cr2(CO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr(HCO3)3",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "3 H2CO3 + Cr(OH)3 -> Cr(HCO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2(CO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2CO3 -> 3 H2SiO3 + Cr2(CO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 Cr(HCO3)3 -> Cr2(CO3)3 + 3 CO2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          3,
+          3
+        ]
+      },
+      "note": "needs only gentle heating"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "K2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HCO3)3 + 3 K2CO3 -> Cr2(CO3)3 + 6 KHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "KOH"
+      ],
+      "products": [
+        "Cr(OH)3",
+        "KHCO3"
+      ],
+      "rule": "salt_with_base",
+      "equation": "Cr(HCO3)3 + 3 KOH -> Cr(OH)3 + 3 KHCO3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr(OH)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "K2SiO3"
+      ],
+      "products": [
+        "Cr2(SiO3)3",
+        "KHCO3"
+      ],
+      "rule": "double_displacement",
+      "equation": "2 Cr(HCO3)3 + 3 K2SiO3 -> Cr2(SiO3)3 + 6 KHCO3",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(SiO3)3 precipitates"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HCO3)3 + Cr(OH)3 -> Cr2(CO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    }
+  ],
+  "answers": {
+    "double_displacement": {
+      "substrates": [
+        "K2CO3",
+        "CrBr3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "KBr"
+      ],
+      "rule": "double_displacement",
+      "equation": "3 K2CO3 + 2 CrBr3 -> Cr2(CO3)3 + 6 KBr",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 precipitates"
+    },
+    "metal_with_acid": {
+      "substrates": [
+        "Cr",
+        "H2CO3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2"
+      ],
+      "rule": "metal_with_acid",
+      "equation": "2 Cr + 3 H2CO3 -> Cr2(CO3)3 + 3 H2",
+      "coefficients": {
+        "substrates": [
+          2,
+          3
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    "acid_displacement": {
+      "substrates": [
+        "Cr2(SiO3)3",
+        "H2CO3"
+      ],
+      "products": [
+        "H2SiO3",
+        "Cr2(CO3)3"
+      ],
+      "rule": "acid_displacement",
+      "equation": "Cr2(SiO3)3 + 3 H2CO3 -> 3 H2SiO3 + Cr2(CO3)3",
+      "coefficients": {
+        "substrates": [
+          1,
+          3
+        ],
+        "products": [
+          3,
+          1
+        ]
+      }
+    },
+    "neutralisation": {
+      "substrates": [
+        "H2CO3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "3 H2CO3 + 2 Cr(OH)3 -> Cr2(CO3)3 + 6 H2O",
+      "coefficients": {
+        "substrates": [
+          3,
+          2
+        ],
+        "products": [
+          1,
+          6
+        ]
+      },
+      "note": "Cr2(CO3)3 is insoluble"
+    },
+    "acid_salt_with_base": {
+      "substrates": [
+        "Cr(HCO3)3",
+        "Cr(OH)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Cr(HCO3)3 + Cr(OH)3 -> Cr2(CO3)3 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          3
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    "hydrogencarbonate_decomposition": {
+      "substrates": [
+        "Cr(HCO3)3"
+      ],
+      "products": [
+        "Cr2(CO3)3",
+        "CO2",
+        "H2O"
+      ],
+      "rule": "hydrogencarbonate_decomposition",
+      "equation": "2 Cr(HCO3)3 -> Cr2(CO3)3 + 3 CO2 + 3 H2O",
+      "coefficients": {
+        "substrates": [
+          2
+        ],
+        "products": [
+          1,
+          3,
+          3
+        ]
+      },
+      "note": "needs only gentle heating"
+    }
+  },
+  "misses": [
+    {
+      "substrates": [
+        "Ag",
+        "AgHCO3"
+      ],
+      "note": "Ag sits below Ag in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "Cr(HCO3)3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CrBr3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "CrI3"
+      ],
+      "note": "Ag sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2CO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "H2SiO3"
+      ],
+      "note": "Ag sits below hydrogen in the activity series, so it cannot displace it from an acid"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2CO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "K2SiO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KBr"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KHCO3"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag",
+        "KI"
+      ],
+      "note": "Ag sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Ag2CO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgBr",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgHCO3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgI",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "AgI",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "Cr(HCO3)3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrBr3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "CrI3"
+      ],
+      "note": "Cr sits below Cr in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2CO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "K2SiO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KBr"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KHCO3"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr",
+        "KI"
+      ],
+      "note": "Cr sits below K in the activity series, so it cannot push it out"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Cr(HCO3)3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrBr3",
+        "KI"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CrI3",
+        "KHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KBr"
+      ],
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "KI"
+      ],
+      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "K2CO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KBr"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KHCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "KI"
+      ],
+      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+    }
+  ]
+}
