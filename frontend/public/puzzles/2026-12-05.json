@@ -1,69 +1,58 @@
 {
   "version": 3,
-  "target": "KI",
-  "name": "potassium iodide",
+  "target": "NaI",
+  "name": "sodium iodide",
   "grade": "medium",
   "want": 5,
   "ways": 7,
   "cut": 1,
   "palette": [
-    "AlI3",
-    "CaI2",
+    "FeI2",
     "H2O",
     "I2",
-    "K",
-    "KF",
-    "KOH"
+    "Na",
+    "Na2S",
+    "NaOH"
   ],
   "species": {
-    "Al(OH)3": {
-      "name": "aluminium hydroxide",
+    "Fe(HS)2": {
+      "name": "iron(II) hydrogensulfide",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Fe": 2,
+        "HS": -1
+      }
+    },
+    "Fe(OH)2": {
+      "name": "iron(II) hydroxide",
       "class": "base",
       "state": "s",
       "common": true,
       "ions": {
-        "Al": 3,
+        "Fe": 2,
         "OH": -1
       }
     },
-    "AlF3": {
-      "name": "aluminium fluoride",
+    "FeI2": {
+      "name": "iron(II) iodide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Al": 3,
-        "F": -1
-      }
-    },
-    "AlI3": {
-      "name": "aluminium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Al": 3,
+        "Fe": 2,
         "I": -1
       }
     },
-    "CaF2": {
-      "name": "calcium fluoride",
+    "FeS": {
+      "name": "iron(II) sulfide",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Ca": 2,
-        "F": -1
-      }
-    },
-    "CaI2": {
-      "name": "calcium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "Ca": 2,
-        "I": -1
+        "Fe": 2,
+        "S": -2
       }
     },
     "H2": {
@@ -78,14 +67,14 @@
       "state": "l",
       "common": true
     },
-    "HF": {
-      "name": "hydrofluoric acid",
+    "H2S": {
+      "name": "hydrosulfuric acid",
       "class": "acid",
       "state": "aq",
-      "common": false,
+      "common": true,
       "ions": {
         "H": 1,
-        "F": -1
+        "S": -2
       }
     },
     "HI": {
@@ -104,59 +93,69 @@
       "state": "s",
       "common": true
     },
-    "K": {
-      "name": "potassium",
+    "Na": {
+      "name": "sodium",
       "class": "element",
       "state": "s",
       "common": true
     },
-    "KF": {
-      "name": "potassium fluoride",
+    "Na2S": {
+      "name": "sodium sulfide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
-        "F": -1
+        "Na": 1,
+        "S": -2
       }
     },
-    "KH": {
-      "name": "potassium hydride",
+    "NaH": {
+      "name": "sodium hydride",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "H": -1
       }
     },
-    "KI": {
-      "name": "potassium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
-        "I": -1
-      }
-    },
-    "KIO3": {
-      "name": "potassium iodate",
+    "NaHS": {
+      "name": "sodium hydrogensulfide",
       "class": "salt",
       "state": "aq",
       "common": false,
       "ions": {
-        "K": 1,
+        "Na": 1,
+        "HS": -1
+      }
+    },
+    "NaI": {
+      "name": "sodium iodide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "I": -1
+      }
+    },
+    "NaIO3": {
+      "name": "sodium iodate",
+      "class": "salt",
+      "state": "aq",
+      "common": false,
+      "ions": {
+        "Na": 1,
         "IO3": -1
       }
     },
-    "KOH": {
-      "name": "potassium hydroxide",
+    "NaOH": {
+      "name": "sodium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "OH": -1
       }
     }
@@ -164,38 +163,38 @@
   "reactions": [
     {
       "substrates": [
-        "AlI3",
-        "KOH"
+        "FeI2",
+        "Na2S"
       ],
       "products": [
-        "Al(OH)3",
-        "KI"
-      ],
-      "rule": "salt_with_base",
-      "equation": "AlI3 + 3 KOH -> Al(OH)3 + 3 KI",
-      "coefficients": {
-        "substrates": [
-          1,
-          3
-        ],
-        "products": [
-          1,
-          3
-        ]
-      },
-      "note": "Al(OH)3 precipitates"
-    },
-    {
-      "substrates": [
-        "CaI2",
-        "KF"
-      ],
-      "products": [
-        "CaF2",
-        "KI"
+        "FeS",
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "CaI2 + 2 KF -> CaF2 + 2 KI",
+      "equation": "FeI2 + Na2S -> FeS + 2 NaI",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS precipitates"
+    },
+    {
+      "substrates": [
+        "FeI2",
+        "NaOH"
+      ],
+      "products": [
+        "Fe(OH)2",
+        "NaI"
+      ],
+      "rule": "salt_with_base",
+      "equation": "FeI2 + 2 NaOH -> Fe(OH)2 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -206,19 +205,19 @@
           2
         ]
       },
-      "note": "CaF2 precipitates"
+      "note": "Fe(OH)2 precipitates"
     },
     {
       "substrates": [
-        "K",
+        "Na",
         "H2O"
       ],
       "products": [
-        "KOH",
+        "NaOH",
         "H2"
       ],
       "rule": "metal_with_water",
-      "equation": "2 K + 2 H2O -> 2 KOH + H2",
+      "equation": "2 Na + 2 H2O -> 2 NaOH + H2",
       "coefficients": {
         "substrates": [
           2,
@@ -232,14 +231,14 @@
     },
     {
       "substrates": [
-        "K",
+        "Na",
         "I2"
       ],
       "products": [
-        "KI"
+        "NaI"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 K + I2 -> 2 KI",
+      "equation": "2 Na + I2 -> 2 NaI",
       "coefficients": {
         "substrates": [
           2,
@@ -253,15 +252,15 @@
     {
       "substrates": [
         "I2",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "KIO3",
-        "KI",
+        "NaIO3",
+        "NaI",
         "H2O"
       ],
       "rule": "halogen_disproportionation",
-      "equation": "3 I2 + 6 KOH -> KIO3 + 5 KI + 3 H2O",
+      "equation": "3 I2 + 6 NaOH -> NaIO3 + 5 NaI + 3 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -297,14 +296,14 @@
     },
     {
       "substrates": [
-        "K",
+        "Na",
         "H2"
       ],
       "products": [
-        "KH"
+        "NaH"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 K + H2 -> 2 KH",
+      "equation": "2 Na + H2 -> 2 NaH",
       "coefficients": {
         "substrates": [
           2,
@@ -317,15 +316,15 @@
     },
     {
       "substrates": [
-        "K",
+        "Na",
         "HI"
       ],
       "products": [
-        "KI",
+        "NaI",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 K + 2 HI -> 2 KI + H2",
+      "equation": "2 Na + 2 HI -> 2 NaI + H2",
       "coefficients": {
         "substrates": [
           2,
@@ -339,19 +338,63 @@
     },
     {
       "substrates": [
-        "KF",
+        "Na2S",
         "HI"
       ],
       "products": [
-        "HF",
-        "KI"
+        "H2S",
+        "NaI"
       ],
       "rule": "acid_displacement",
-      "equation": "KF + HI -> HF + KI",
+      "equation": "Na2S + 2 HI -> H2S + 2 NaI",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "HI",
+        "NaOH"
+      ],
+      "products": [
+        "NaI",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "HI + NaOH -> NaI + H2O",
       "coefficients": {
         "substrates": [
           1,
           1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "FeS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "FeI2"
+      ],
+      "rule": "acid_displacement",
+      "equation": "FeS + 2 HI -> H2S + FeI2",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
         ],
         "products": [
           1,
@@ -362,102 +405,214 @@
     {
       "substrates": [
         "HI",
-        "KOH"
+        "Fe(OH)2"
       ],
       "products": [
-        "KI",
+        "FeI2",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "HI + KOH -> KI + H2O",
+      "equation": "2 HI + Fe(OH)2 -> FeI2 + 2 H2O",
       "coefficients": {
         "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "HI",
-        "Al(OH)3"
-      ],
-      "products": [
-        "AlI3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 HI + Al(OH)3 -> AlI3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "CaF2",
-        "HI"
-      ],
-      "products": [
-        "HF",
-        "CaI2"
-      ],
-      "rule": "acid_displacement",
-      "equation": "CaF2 + 2 HI -> 2 HF + CaI2",
-      "coefficients": {
-        "substrates": [
-          1,
-          2
-        ],
-        "products": [
           2,
           1
+        ],
+        "products": [
+          1,
+          2
         ]
       }
     },
     {
       "substrates": [
-        "K",
-        "HF"
+        "Na",
+        "H2S"
       ],
       "products": [
-        "KF",
+        "Na2S",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 K + 2 HF -> 2 KF + H2",
+      "equation": "2 Na + H2S -> Na2S + H2",
       "coefficients": {
         "substrates": [
           2,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "Na2S",
+        "H2S"
+      ],
+      "products": [
+        "NaHS"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "Na2S + H2S -> 2 NaHS",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "Na2S",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + 2 NaOH -> Na2S + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
           2
         ],
         "products": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "substrates": [
+        "H2S",
+        "NaOH"
+      ],
+      "products": [
+        "NaHS",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "H2S + NaOH -> NaHS + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
+    },
+    {
+      "substrates": [
+        "FeS",
+        "H2S"
+      ],
+      "products": [
+        "Fe(HS)2"
+      ],
+      "rule": "salt_with_parent_acid",
+      "equation": "FeS + H2S -> Fe(HS)2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1
+        ]
+      },
+      "note": "the acid protonates its own salt"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "neutralisation",
+      "equation": "H2S + Fe(OH)2 -> FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "FeS is insoluble"
+    },
+    {
+      "substrates": [
+        "H2S",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "Fe(HS)2",
+        "H2O"
+      ],
+      "rule": "partial_neutralisation",
+      "equation": "2 H2S + Fe(OH)2 -> Fe(HS)2 + 2 H2O",
+      "coefficients": {
+        "substrates": [
           2,
           1
+        ],
+        "products": [
+          1,
+          2
         ]
-      }
+      },
+      "note": "an acid salt -- less base than the normal salt needs"
     },
     {
       "substrates": [
-        "HF",
-        "KOH"
+        "NaHS",
+        "NaOH"
       ],
       "products": [
-        "KF",
+        "Na2S",
         "H2O"
       ],
-      "rule": "neutralisation",
-      "equation": "HF + KOH -> KF + H2O",
+      "rule": "acid_salt_with_base",
+      "equation": "NaHS + NaOH -> Na2S + H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "NaHS",
+        "HI"
+      ],
+      "products": [
+        "H2S",
+        "NaI"
+      ],
+      "rule": "acid_displacement",
+      "equation": "NaHS + HI -> H2S + NaI",
       "coefficients": {
         "substrates": [
           1,
@@ -471,90 +626,91 @@
     },
     {
       "substrates": [
-        "HF",
-        "Al(OH)3"
+        "Fe(HS)2",
+        "Na2S"
       ],
       "products": [
-        "AlF3",
-        "H2O"
-      ],
-      "rule": "neutralisation",
-      "equation": "3 HF + Al(OH)3 -> AlF3 + 3 H2O",
-      "coefficients": {
-        "substrates": [
-          3,
-          1
-        ],
-        "products": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "substrates": [
-        "AlF3",
-        "CaI2"
-      ],
-      "products": [
-        "CaF2",
-        "AlI3"
+        "FeS",
+        "NaHS"
       ],
       "rule": "double_displacement",
-      "equation": "2 AlF3 + 3 CaI2 -> 3 CaF2 + 2 AlI3",
+      "equation": "Fe(HS)2 + Na2S -> FeS + 2 NaHS",
       "coefficients": {
         "substrates": [
-          2,
-          3
+          1,
+          1
         ],
         "products": [
-          3,
+          1,
           2
         ]
       },
-      "note": "CaF2 precipitates"
+      "note": "FeS precipitates"
     },
     {
       "substrates": [
-        "AlF3",
-        "KOH"
+        "Fe(HS)2",
+        "NaOH"
       ],
       "products": [
-        "Al(OH)3",
-        "KF"
+        "Fe(OH)2",
+        "NaHS"
       ],
       "rule": "salt_with_base",
-      "equation": "AlF3 + 3 KOH -> Al(OH)3 + 3 KF",
+      "equation": "Fe(HS)2 + 2 NaOH -> Fe(OH)2 + 2 NaHS",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "Al(OH)3 precipitates"
+      "note": "Fe(OH)2 precipitates"
     },
     {
       "substrates": [
-        "AlF3",
+        "Fe(HS)2",
+        "Fe(OH)2"
+      ],
+      "products": [
+        "FeS",
+        "H2O"
+      ],
+      "rule": "acid_salt_with_base",
+      "equation": "Fe(HS)2 + Fe(OH)2 -> 2 FeS + 2 H2O",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          2,
+          2
+        ]
+      },
+      "note": "more base takes off another proton"
+    },
+    {
+      "substrates": [
+        "Fe(HS)2",
         "HI"
       ],
       "products": [
-        "HF",
-        "AlI3"
+        "H2S",
+        "FeI2"
       ],
       "rule": "acid_displacement",
-      "equation": "AlF3 + 3 HI -> 3 HF + AlI3",
+      "equation": "Fe(HS)2 + 2 HI -> 2 H2S + FeI2",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
         ],
         "products": [
-          3,
+          2,
           1
         ]
       }
@@ -563,14 +719,14 @@
   "answers": {
     "binary_salt_synthesis": {
       "substrates": [
-        "K",
+        "Na",
         "I2"
       ],
       "products": [
-        "KI"
+        "NaI"
       ],
       "rule": "binary_salt_synthesis",
-      "equation": "2 K + I2 -> 2 KI",
+      "equation": "2 Na + I2 -> 2 NaI",
       "coefficients": {
         "substrates": [
           2,
@@ -583,39 +739,39 @@
     },
     "double_displacement": {
       "substrates": [
-        "CaI2",
-        "KF"
+        "FeI2",
+        "Na2S"
       ],
       "products": [
-        "CaF2",
-        "KI"
+        "FeS",
+        "NaI"
       ],
       "rule": "double_displacement",
-      "equation": "CaI2 + 2 KF -> CaF2 + 2 KI",
+      "equation": "FeI2 + Na2S -> FeS + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
-          2
+          1
         ],
         "products": [
           1,
           2
         ]
       },
-      "note": "CaF2 precipitates"
+      "note": "FeS precipitates"
     },
     "halogen_disproportionation": {
       "substrates": [
         "I2",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "KIO3",
-        "KI",
+        "NaIO3",
+        "NaI",
         "H2O"
       ],
       "rule": "halogen_disproportionation",
-      "equation": "3 I2 + 6 KOH -> KIO3 + 5 KI + 3 H2O",
+      "equation": "3 I2 + 6 NaOH -> NaIO3 + 5 NaI + 3 H2O",
       "coefficients": {
         "substrates": [
           3,
@@ -631,60 +787,60 @@
     },
     "salt_with_base": {
       "substrates": [
-        "AlI3",
-        "KOH"
+        "FeI2",
+        "NaOH"
       ],
       "products": [
-        "Al(OH)3",
-        "KI"
+        "Fe(OH)2",
+        "NaI"
       ],
       "rule": "salt_with_base",
-      "equation": "AlI3 + 3 KOH -> Al(OH)3 + 3 KI",
+      "equation": "FeI2 + 2 NaOH -> Fe(OH)2 + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
-          3
+          2
         ],
         "products": [
           1,
-          3
+          2
         ]
       },
-      "note": "Al(OH)3 precipitates"
+      "note": "Fe(OH)2 precipitates"
     },
     "acid_displacement": {
       "substrates": [
-        "KF",
+        "Na2S",
         "HI"
       ],
       "products": [
-        "HF",
-        "KI"
+        "H2S",
+        "NaI"
       ],
       "rule": "acid_displacement",
-      "equation": "KF + HI -> HF + KI",
+      "equation": "Na2S + 2 HI -> H2S + 2 NaI",
       "coefficients": {
         "substrates": [
           1,
-          1
+          2
         ],
         "products": [
           1,
-          1
+          2
         ]
       }
     },
     "metal_with_acid": {
       "substrates": [
-        "K",
+        "Na",
         "HI"
       ],
       "products": [
-        "KI",
+        "NaI",
         "H2"
       ],
       "rule": "metal_with_acid",
-      "equation": "2 K + 2 HI -> 2 KI + H2",
+      "equation": "2 Na + 2 HI -> 2 NaI + H2",
       "coefficients": {
         "substrates": [
           2,
@@ -699,14 +855,14 @@
     "neutralisation": {
       "substrates": [
         "HI",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "KI",
+        "NaI",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "HI + KOH -> KI + H2O",
+      "equation": "HI + NaOH -> NaI + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -722,115 +878,80 @@
   "misses": [
     {
       "substrates": [
-        "AlF3",
-        "I2"
+        "Fe(HS)2",
+        "Na"
       ],
-      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "AlF3",
-        "K"
+        "Fe(HS)2",
+        "NaIO3"
       ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
+      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
-        "AlF3",
-        "KIO3"
+        "FeI2",
+        "H2S"
       ],
-      "note": "Al(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+      "note": "H2S is no stronger than HI, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "AlI3",
-        "HF"
+        "FeI2",
+        "Na"
       ],
-      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "AlI3",
-        "K"
-      ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "AlI3",
-        "KF"
+        "FeI2",
+        "NaHS"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "AlI3",
-        "KIO3"
+        "FeI2",
+        "NaIO3"
       ],
-      "note": "Al(IO3)3 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+      "note": "Fe(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
-        "CaI2",
-        "HF"
+        "H2S",
+        "NaIO3"
       ],
-      "note": "HF is no stronger than HI, so it cannot drive it out of its own salt"
-    },
-    {
-      "substrates": [
-        "CaI2",
-        "K"
-      ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
-    },
-    {
-      "substrates": [
-        "CaI2",
-        "KIO3"
-      ],
-      "note": "Ca(IO3)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "CaI2",
-        "KOH"
-      ],
-      "note": "Ca(OH)2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
-    },
-    {
-      "substrates": [
-        "HF",
-        "KIO3"
-      ],
-      "note": "HF is no stronger than HIO3, so it cannot drive it out of its own salt"
+      "note": "H2S is no stronger than HIO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "HI",
-        "KIO3"
+        "NaIO3"
       ],
       "note": "HI is no stronger than HIO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "I2",
-        "KF"
+        "Na",
+        "Na2S"
       ],
-      "note": "I2 is less reactive than F2, so it cannot push it out of a halide"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "K",
-        "KF"
+        "Na",
+        "NaHS"
       ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     },
     {
       "substrates": [
-        "K",
-        "KIO3"
+        "Na",
+        "NaIO3"
       ],
-      "note": "K attacks water on contact, so in solution it never reaches the salt"
+      "note": "Na attacks water on contact, so in solution it never reaches the salt"
     }
   ]
 }
