@@ -1,19 +1,19 @@
 {
   "version": 3,
-  "target": "FeCO3",
-  "name": "iron(II) carbonate",
+  "target": "CuCO3",
+  "name": "copper(II) carbonate",
   "grade": "easy",
   "want": 5,
-  "ways": 8,
+  "ways": 7,
   "cut": 1,
   "palette": [
     "Ba(OH)2",
     "CO2",
-    "Fe",
-    "FeI2",
-    "FeO",
+    "CuBr2",
+    "CuF2",
+    "CuO",
     "H2O",
-    "K2O",
+    "Na2O",
     "SiO2"
   ],
   "species": {
@@ -37,6 +37,16 @@
         "OH": -1
       }
     },
+    "BaBr2": {
+      "name": "barium bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Ba": 2,
+        "Br": -1
+      }
+    },
     "BaCO3": {
       "name": "barium carbonate",
       "class": "salt",
@@ -47,14 +57,14 @@
         "CO3": -2
       }
     },
-    "BaI2": {
-      "name": "barium iodide",
+    "BaF2": {
+      "name": "barium fluoride",
       "class": "salt",
-      "state": "aq",
+      "state": "s",
       "common": true,
       "ions": {
         "Ba": 2,
-        "I": -1
+        "F": -1
       }
     },
     "BaO": {
@@ -79,83 +89,71 @@
       "state": "g",
       "common": true
     },
-    "Fe": {
-      "name": "iron",
-      "class": "element",
-      "state": "s",
-      "common": true
-    },
-    "Fe(HCO3)2": {
-      "name": "iron(II) hydrogencarbonate",
+    "Cu(HCO3)2": {
+      "name": "copper(II) hydrogencarbonate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Fe": 2,
+        "Cu": 2,
         "HCO3": -1
       }
     },
-    "Fe(OH)2": {
-      "name": "iron(II) hydroxide",
+    "Cu(OH)2": {
+      "name": "copper(II) hydroxide",
       "class": "base",
       "state": "s",
       "common": true,
       "ions": {
-        "Fe": 2,
+        "Cu": 2,
         "OH": -1
       }
     },
-    "FeCO3": {
-      "name": "iron(II) carbonate",
+    "CuBr2": {
+      "name": "copper(II) bromide",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Cu": 2,
+        "Br": -1
+      }
+    },
+    "CuCO3": {
+      "name": "copper(II) carbonate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Fe": 2,
+        "Cu": 2,
         "CO3": -2
       }
     },
-    "FeH2": {
-      "name": "iron(II) hydride",
-      "class": "salt",
-      "state": "aq",
-      "common": false,
-      "ions": {
-        "Fe": 2,
-        "H": -1
-      }
-    },
-    "FeI2": {
-      "name": "iron(II) iodide",
+    "CuF2": {
+      "name": "copper(II) fluoride",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "Fe": 2,
-        "I": -1
+        "Cu": 2,
+        "F": -1
       }
     },
-    "FeO": {
-      "name": "iron(II) oxide",
+    "CuO": {
+      "name": "copper(II) oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "FeSiO3": {
-      "name": "iron(II) silicate",
+    "CuSiO3": {
+      "name": "copper(II) silicate",
       "class": "salt",
       "state": "s",
       "common": true,
       "ions": {
-        "Fe": 2,
+        "Cu": 2,
         "SiO3": -2
       }
-    },
-    "H2": {
-      "name": "hydrogen",
-      "class": "element",
-      "state": "g",
-      "common": true
     },
     "H2CO3": {
       "name": "carbonic acid",
@@ -183,59 +181,69 @@
         "SiO3": -2
       }
     },
-    "K2CO3": {
-      "name": "potassium carbonate",
+    "Na2CO3": {
+      "name": "sodium carbonate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "CO3": -2
       }
     },
-    "K2O": {
-      "name": "potassium oxide",
+    "Na2O": {
+      "name": "sodium oxide",
       "class": "basic oxide",
       "state": "s",
       "common": true
     },
-    "K2SiO3": {
-      "name": "potassium silicate",
+    "Na2SiO3": {
+      "name": "sodium silicate",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "SiO3": -2
       }
     },
-    "KHCO3": {
-      "name": "potassium hydrogencarbonate",
+    "NaBr": {
+      "name": "sodium bromide",
       "class": "salt",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
+        "Br": -1
+      }
+    },
+    "NaF": {
+      "name": "sodium fluoride",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
+        "F": -1
+      }
+    },
+    "NaHCO3": {
+      "name": "sodium hydrogencarbonate",
+      "class": "salt",
+      "state": "aq",
+      "common": true,
+      "ions": {
+        "Na": 1,
         "HCO3": -1
       }
     },
-    "KI": {
-      "name": "potassium iodide",
-      "class": "salt",
-      "state": "aq",
-      "common": true,
-      "ions": {
-        "K": 1,
-        "I": -1
-      }
-    },
-    "KOH": {
-      "name": "potassium hydroxide",
+    "NaOH": {
+      "name": "sodium hydroxide",
       "class": "base",
       "state": "aq",
       "common": true,
       "ions": {
-        "K": 1,
+        "Na": 1,
         "OH": -1
       }
     },
@@ -272,15 +280,15 @@
     },
     {
       "substrates": [
-        "FeI2",
+        "CuBr2",
         "Ba(OH)2"
       ],
       "products": [
-        "Fe(OH)2",
-        "BaI2"
+        "Cu(OH)2",
+        "BaBr2"
       ],
       "rule": "salt_with_base",
-      "equation": "FeI2 + Ba(OH)2 -> Fe(OH)2 + BaI2",
+      "equation": "CuBr2 + Ba(OH)2 -> Cu(OH)2 + BaBr2",
       "coefficients": {
         "substrates": [
           1,
@@ -291,7 +299,30 @@
           1
         ]
       },
-      "note": "Fe(OH)2 precipitates"
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "Ba(OH)2"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "BaF2"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuF2 + Ba(OH)2 -> Cu(OH)2 + BaF2",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          1
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
@@ -318,14 +349,14 @@
     },
     {
       "substrates": [
-        "FeO",
+        "CuO",
         "CO2"
       ],
       "products": [
-        "FeCO3"
+        "CuCO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "FeO + CO2 -> FeCO3",
+      "equation": "CuO + CO2 -> CuCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -359,14 +390,14 @@
     },
     {
       "substrates": [
-        "K2O",
+        "Na2O",
         "CO2"
       ],
       "products": [
-        "K2CO3"
+        "Na2CO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "K2O + CO2 -> K2CO3",
+      "equation": "Na2O + CO2 -> Na2CO3",
       "coefficients": {
         "substrates": [
           1,
@@ -379,14 +410,14 @@
     },
     {
       "substrates": [
-        "FeO",
+        "CuO",
         "SiO2"
       ],
       "products": [
-        "FeSiO3"
+        "CuSiO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "FeO + SiO2 -> FeSiO3",
+      "equation": "CuO + SiO2 -> CuSiO3",
       "coefficients": {
         "substrates": [
           1,
@@ -399,14 +430,14 @@
     },
     {
       "substrates": [
-        "K2O",
+        "Na2O",
         "H2O"
       ],
       "products": [
-        "KOH"
+        "NaOH"
       ],
       "rule": "basic_oxide_hydration",
-      "equation": "K2O + H2O -> 2 KOH",
+      "equation": "Na2O + H2O -> 2 NaOH",
       "coefficients": {
         "substrates": [
           1,
@@ -419,14 +450,14 @@
     },
     {
       "substrates": [
-        "K2O",
+        "Na2O",
         "SiO2"
       ],
       "products": [
-        "K2SiO3"
+        "Na2SiO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "K2O + SiO2 -> K2SiO3",
+      "equation": "Na2O + SiO2 -> Na2SiO3",
       "coefficients": {
         "substrates": [
           1,
@@ -482,14 +513,14 @@
     {
       "substrates": [
         "H2CO3",
-        "Fe(OH)2"
+        "Cu(OH)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + Fe(OH)2 -> FeCO3 + 2 H2O",
+      "equation": "H2CO3 + Cu(OH)2 -> CuCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -500,19 +531,19 @@
           2
         ]
       },
-      "note": "FeCO3 is insoluble"
+      "note": "CuCO3 is insoluble"
     },
     {
       "substrates": [
         "H2CO3",
-        "Fe(OH)2"
+        "Cu(OH)2"
       ],
       "products": [
-        "Fe(HCO3)2",
+        "Cu(HCO3)2",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "2 H2CO3 + Fe(OH)2 -> Fe(HCO3)2 + 2 H2O",
+      "equation": "2 H2CO3 + Cu(OH)2 -> Cu(HCO3)2 + 2 H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -527,15 +558,15 @@
     },
     {
       "substrates": [
-        "BaI2",
-        "K2CO3"
+        "BaBr2",
+        "Na2CO3"
       ],
       "products": [
         "BaCO3",
-        "KI"
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "BaI2 + K2CO3 -> BaCO3 + 2 KI",
+      "equation": "BaBr2 + Na2CO3 -> BaCO3 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -550,15 +581,15 @@
     },
     {
       "substrates": [
-        "BaI2",
-        "K2SiO3"
+        "BaBr2",
+        "Na2SiO3"
       ],
       "products": [
         "BaSiO3",
-        "KI"
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "BaI2 + K2SiO3 -> BaSiO3 + 2 KI",
+      "equation": "BaBr2 + Na2SiO3 -> BaSiO3 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -595,14 +626,14 @@
     },
     {
       "substrates": [
-        "FeCO3"
+        "CuCO3"
       ],
       "products": [
-        "FeO",
+        "CuO",
         "CO2"
       ],
       "rule": "carbonate_decomposition",
-      "equation": "FeCO3 -> FeO + CO2",
+      "equation": "CuCO3 -> CuO + CO2",
       "coefficients": {
         "substrates": [
           1
@@ -616,14 +647,14 @@
     },
     {
       "substrates": [
-        "FeCO3",
+        "CuCO3",
         "H2CO3"
       ],
       "products": [
-        "Fe(HCO3)2"
+        "Cu(HCO3)2"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "FeCO3 + H2CO3 -> Fe(HCO3)2",
+      "equation": "CuCO3 + H2CO3 -> Cu(HCO3)2",
       "coefficients": {
         "substrates": [
           1,
@@ -704,15 +735,15 @@
     },
     {
       "substrates": [
-        "Fe",
-        "H2CO3"
+        "H2CO3",
+        "CuO"
       ],
       "products": [
-        "FeCO3",
-        "H2"
+        "CuCO3",
+        "H2O"
       ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2CO3 -> FeCO3 + H2",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2CO3 + CuO -> CuCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -723,42 +754,19 @@
           1
         ]
       },
-      "note": "FeCO3 is insoluble"
+      "note": "CuCO3 is insoluble"
     },
     {
       "substrates": [
         "H2CO3",
-        "FeO"
+        "Na2O"
       ],
       "products": [
-        "FeCO3",
+        "Na2CO3",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + FeO -> FeCO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeCO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2CO3",
-        "K2O"
-      ],
-      "products": [
-        "K2CO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + K2O -> K2CO3 + H2O",
+      "equation": "H2CO3 + Na2O -> Na2CO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -772,14 +780,14 @@
     },
     {
       "substrates": [
-        "K2CO3",
+        "Na2CO3",
         "H2CO3"
       ],
       "products": [
-        "KHCO3"
+        "NaHCO3"
       ],
       "rule": "salt_with_parent_acid",
-      "equation": "K2CO3 + H2CO3 -> 2 KHCO3",
+      "equation": "Na2CO3 + H2CO3 -> 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -793,15 +801,15 @@
     },
     {
       "substrates": [
-        "FeSiO3",
+        "CuSiO3",
         "H2CO3"
       ],
       "products": [
         "H2SiO3",
-        "FeCO3"
+        "CuCO3"
       ],
       "rule": "acid_displacement",
-      "equation": "FeSiO3 + H2CO3 -> H2SiO3 + FeCO3",
+      "equation": "CuSiO3 + H2CO3 -> H2SiO3 + CuCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -816,14 +824,14 @@
     {
       "substrates": [
         "H2CO3",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "K2CO3",
+        "Na2CO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + 2 KOH -> K2CO3 + 2 H2O",
+      "equation": "H2CO3 + 2 NaOH -> Na2CO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -838,14 +846,14 @@
     {
       "substrates": [
         "H2CO3",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "KHCO3",
+        "NaHCO3",
         "H2O"
       ],
       "rule": "partial_neutralisation",
-      "equation": "H2CO3 + KOH -> KHCO3 + H2O",
+      "equation": "H2CO3 + NaOH -> NaHCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -860,15 +868,15 @@
     },
     {
       "substrates": [
-        "K2SiO3",
+        "Na2SiO3",
         "H2CO3"
       ],
       "products": [
         "H2SiO3",
-        "K2CO3"
+        "Na2CO3"
       ],
       "rule": "acid_displacement",
-      "equation": "K2SiO3 + H2CO3 -> H2SiO3 + K2CO3",
+      "equation": "Na2SiO3 + H2CO3 -> H2SiO3 + Na2CO3",
       "coefficients": {
         "substrates": [
           1,
@@ -882,15 +890,15 @@
     },
     {
       "substrates": [
-        "K2CO3",
-        "FeI2"
+        "Na2CO3",
+        "CuBr2"
       ],
       "products": [
-        "FeCO3",
-        "KI"
+        "CuCO3",
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "K2CO3 + FeI2 -> FeCO3 + 2 KI",
+      "equation": "Na2CO3 + CuBr2 -> CuCO3 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -901,19 +909,42 @@
           2
         ]
       },
-      "note": "FeCO3 precipitates"
+      "note": "CuCO3 precipitates"
     },
     {
       "substrates": [
-        "KOH",
+        "Na2CO3",
+        "CuF2"
+      ],
+      "products": [
+        "CuCO3",
+        "NaF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2CO3 + CuF2 -> CuCO3 + 2 NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuCO3 precipitates"
+    },
+    {
+      "substrates": [
+        "NaOH",
         "CO2"
       ],
       "products": [
-        "K2CO3",
+        "Na2CO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + CO2 -> K2CO3 + H2O",
+      "equation": "2 NaOH + CO2 -> Na2CO3 + H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -927,15 +958,15 @@
     },
     {
       "substrates": [
-        "FeI2",
-        "KOH"
+        "CuBr2",
+        "NaOH"
       ],
       "products": [
-        "Fe(OH)2",
-        "KI"
+        "Cu(OH)2",
+        "NaBr"
       ],
       "rule": "salt_with_base",
-      "equation": "FeI2 + 2 KOH -> Fe(OH)2 + 2 KI",
+      "equation": "CuBr2 + 2 NaOH -> Cu(OH)2 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -946,19 +977,42 @@
           2
         ]
       },
-      "note": "Fe(OH)2 precipitates"
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
-        "KOH",
+        "CuF2",
+        "NaOH"
+      ],
+      "products": [
+        "Cu(OH)2",
+        "NaF"
+      ],
+      "rule": "salt_with_base",
+      "equation": "CuF2 + 2 NaOH -> Cu(OH)2 + 2 NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          2
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "Cu(OH)2 precipitates"
+    },
+    {
+      "substrates": [
+        "NaOH",
         "SiO2"
       ],
       "products": [
-        "K2SiO3",
+        "Na2SiO3",
         "H2O"
       ],
       "rule": "base_with_acidic_oxide",
-      "equation": "2 KOH + SiO2 -> K2SiO3 + H2O",
+      "equation": "2 NaOH + SiO2 -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           2,
@@ -972,15 +1026,15 @@
     },
     {
       "substrates": [
-        "K2SiO3",
-        "FeI2"
+        "Na2SiO3",
+        "CuBr2"
       ],
       "products": [
-        "FeSiO3",
-        "KI"
+        "CuSiO3",
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "K2SiO3 + FeI2 -> FeSiO3 + 2 KI",
+      "equation": "Na2SiO3 + CuBr2 -> CuSiO3 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -991,7 +1045,30 @@
           2
         ]
       },
-      "note": "FeSiO3 precipitates"
+      "note": "CuSiO3 precipitates"
+    },
+    {
+      "substrates": [
+        "Na2SiO3",
+        "CuF2"
+      ],
+      "products": [
+        "CuSiO3",
+        "NaF"
+      ],
+      "rule": "double_displacement",
+      "equation": "Na2SiO3 + CuF2 -> CuSiO3 + 2 NaF",
+      "coefficients": {
+        "substrates": [
+          1,
+          1
+        ],
+        "products": [
+          1,
+          2
+        ]
+      },
+      "note": "CuSiO3 precipitates"
     },
     {
       "substrates": [
@@ -1148,14 +1225,14 @@
     {
       "substrates": [
         "Ba(HCO3)2",
-        "K2CO3"
+        "Na2CO3"
       ],
       "products": [
         "BaCO3",
-        "KHCO3"
+        "NaHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HCO3)2 + K2CO3 -> BaCO3 + 2 KHCO3",
+      "equation": "Ba(HCO3)2 + Na2CO3 -> BaCO3 + 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1171,14 +1248,14 @@
     {
       "substrates": [
         "Ba(HCO3)2",
-        "K2SiO3"
+        "Na2SiO3"
       ],
       "products": [
         "BaSiO3",
-        "KHCO3"
+        "NaHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Ba(HCO3)2 + K2SiO3 -> BaSiO3 + 2 KHCO3",
+      "equation": "Ba(HCO3)2 + Na2SiO3 -> BaSiO3 + 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1193,15 +1270,15 @@
     },
     {
       "substrates": [
-        "Fe(HCO3)2"
+        "Cu(HCO3)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "CO2",
         "H2O"
       ],
       "rule": "hydrogencarbonate_decomposition",
-      "equation": "Fe(HCO3)2 -> FeCO3 + CO2 + H2O",
+      "equation": "Cu(HCO3)2 -> CuCO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
           1
@@ -1216,15 +1293,15 @@
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
+        "Cu(HCO3)2",
         "Ba(OH)2"
       ],
       "products": [
-        "Fe(OH)2",
+        "Cu(OH)2",
         "Ba(HCO3)2"
       ],
       "rule": "salt_with_base",
-      "equation": "Fe(HCO3)2 + Ba(OH)2 -> Fe(OH)2 + Ba(HCO3)2",
+      "equation": "Cu(HCO3)2 + Ba(OH)2 -> Cu(OH)2 + Ba(HCO3)2",
       "coefficients": {
         "substrates": [
           1,
@@ -1235,19 +1312,19 @@
           1
         ]
       },
-      "note": "Fe(OH)2 precipitates"
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
-        "Fe(OH)2"
+        "Cu(HCO3)2",
+        "Cu(OH)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Fe(HCO3)2 + Fe(OH)2 -> 2 FeCO3 + 2 H2O",
+      "equation": "Cu(HCO3)2 + Cu(OH)2 -> 2 CuCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1262,15 +1339,15 @@
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
-        "K2CO3"
+        "Cu(HCO3)2",
+        "Na2CO3"
       ],
       "products": [
-        "FeCO3",
-        "KHCO3"
+        "CuCO3",
+        "NaHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Fe(HCO3)2 + K2CO3 -> FeCO3 + 2 KHCO3",
+      "equation": "Cu(HCO3)2 + Na2CO3 -> CuCO3 + 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1281,19 +1358,19 @@
           2
         ]
       },
-      "note": "FeCO3 precipitates"
+      "note": "CuCO3 precipitates"
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
-        "KOH"
+        "Cu(HCO3)2",
+        "NaOH"
       ],
       "products": [
-        "Fe(OH)2",
-        "KHCO3"
+        "Cu(OH)2",
+        "NaHCO3"
       ],
       "rule": "salt_with_base",
-      "equation": "Fe(HCO3)2 + 2 KOH -> Fe(OH)2 + 2 KHCO3",
+      "equation": "Cu(HCO3)2 + 2 NaOH -> Cu(OH)2 + 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1304,19 +1381,19 @@
           2
         ]
       },
-      "note": "Fe(OH)2 precipitates"
+      "note": "Cu(OH)2 precipitates"
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
-        "K2SiO3"
+        "Cu(HCO3)2",
+        "Na2SiO3"
       ],
       "products": [
-        "FeSiO3",
-        "KHCO3"
+        "CuSiO3",
+        "NaHCO3"
       ],
       "rule": "double_displacement",
-      "equation": "Fe(HCO3)2 + K2SiO3 -> FeSiO3 + 2 KHCO3",
+      "equation": "Cu(HCO3)2 + Na2SiO3 -> CuSiO3 + 2 NaHCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1327,7 +1404,7 @@
           2
         ]
       },
-      "note": "FeSiO3 precipitates"
+      "note": "CuSiO3 precipitates"
     },
     {
       "substrates": [
@@ -1354,15 +1431,15 @@
     },
     {
       "substrates": [
-        "Fe",
-        "H2SiO3"
+        "H2SiO3",
+        "CuO"
       ],
       "products": [
-        "FeSiO3",
-        "H2"
+        "CuSiO3",
+        "H2O"
       ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2SiO3 -> FeSiO3 + H2",
+      "rule": "acid_with_basic_oxide",
+      "equation": "H2SiO3 + CuO -> CuSiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1373,42 +1450,19 @@
           1
         ]
       },
-      "note": "FeSiO3 is insoluble"
+      "note": "CuSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "FeO"
+        "Na2O"
       ],
       "products": [
-        "FeSiO3",
+        "Na2SiO3",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + FeO -> FeSiO3 + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeSiO3 is insoluble"
-    },
-    {
-      "substrates": [
-        "H2SiO3",
-        "K2O"
-      ],
-      "products": [
-        "K2SiO3",
-        "H2O"
-      ],
-      "rule": "acid_with_basic_oxide",
-      "equation": "H2SiO3 + K2O -> K2SiO3 + H2O",
+      "equation": "H2SiO3 + Na2O -> Na2SiO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1423,14 +1477,14 @@
     {
       "substrates": [
         "H2SiO3",
-        "Fe(OH)2"
+        "Cu(OH)2"
       ],
       "products": [
-        "FeSiO3",
+        "CuSiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SiO3 + Fe(OH)2 -> FeSiO3 + 2 H2O",
+      "equation": "H2SiO3 + Cu(OH)2 -> CuSiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1441,19 +1495,19 @@
           2
         ]
       },
-      "note": "FeSiO3 is insoluble"
+      "note": "CuSiO3 is insoluble"
     },
     {
       "substrates": [
         "H2SiO3",
-        "KOH"
+        "NaOH"
       ],
       "products": [
-        "K2SiO3",
+        "Na2SiO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2SiO3 + 2 KOH -> K2SiO3 + 2 H2O",
+      "equation": "H2SiO3 + 2 NaOH -> Na2SiO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1467,59 +1521,15 @@
     },
     {
       "substrates": [
-        "Fe",
-        "H2"
+        "NaHCO3"
       ],
       "products": [
-        "FeH2"
-      ],
-      "rule": "binary_salt_synthesis",
-      "equation": "Fe + H2 -> FeH2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1
-        ]
-      },
-      "note": "Fe goes to +2 with H"
-    },
-    {
-      "substrates": [
-        "FeO",
-        "H2"
-      ],
-      "products": [
-        "Fe",
-        "H2O"
-      ],
-      "rule": "oxide_reduction",
-      "equation": "FeO + H2 -> Fe + H2O",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "hydrogen reduces oxides below Zn in the activity series"
-    },
-    {
-      "substrates": [
-        "KHCO3"
-      ],
-      "products": [
-        "K2CO3",
+        "Na2CO3",
         "CO2",
         "H2O"
       ],
       "rule": "hydrogencarbonate_decomposition",
-      "equation": "2 KHCO3 -> K2CO3 + CO2 + H2O",
+      "equation": "2 NaHCO3 -> Na2CO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
           2
@@ -1534,15 +1544,15 @@
     },
     {
       "substrates": [
-        "KHCO3",
-        "KOH"
+        "NaHCO3",
+        "NaOH"
       ],
       "products": [
-        "K2CO3",
+        "Na2CO3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "KHCO3 + KOH -> K2CO3 + H2O",
+      "equation": "NaHCO3 + NaOH -> Na2CO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1559,14 +1569,14 @@
   "answers": {
     "oxide_with_oxide": {
       "substrates": [
-        "FeO",
+        "CuO",
         "CO2"
       ],
       "products": [
-        "FeCO3"
+        "CuCO3"
       ],
       "rule": "oxide_with_oxide",
-      "equation": "FeO + CO2 -> FeCO3",
+      "equation": "CuO + CO2 -> CuCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1579,15 +1589,15 @@
     },
     "acid_displacement": {
       "substrates": [
-        "FeSiO3",
+        "CuSiO3",
         "H2CO3"
       ],
       "products": [
         "H2SiO3",
-        "FeCO3"
+        "CuCO3"
       ],
       "rule": "acid_displacement",
-      "equation": "FeSiO3 + H2CO3 -> H2SiO3 + FeCO3",
+      "equation": "CuSiO3 + H2CO3 -> H2SiO3 + CuCO3",
       "coefficients": {
         "substrates": [
           1,
@@ -1602,14 +1612,14 @@
     "acid_with_basic_oxide": {
       "substrates": [
         "H2CO3",
-        "FeO"
+        "CuO"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "H2O"
       ],
       "rule": "acid_with_basic_oxide",
-      "equation": "H2CO3 + FeO -> FeCO3 + H2O",
+      "equation": "H2CO3 + CuO -> CuCO3 + H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1620,19 +1630,19 @@
           1
         ]
       },
-      "note": "FeCO3 is insoluble"
+      "note": "CuCO3 is insoluble"
     },
     "double_displacement": {
       "substrates": [
-        "K2CO3",
-        "FeI2"
+        "Na2CO3",
+        "CuBr2"
       ],
       "products": [
-        "FeCO3",
-        "KI"
+        "CuCO3",
+        "NaBr"
       ],
       "rule": "double_displacement",
-      "equation": "K2CO3 + FeI2 -> FeCO3 + 2 KI",
+      "equation": "Na2CO3 + CuBr2 -> CuCO3 + 2 NaBr",
       "coefficients": {
         "substrates": [
           1,
@@ -1643,42 +1653,19 @@
           2
         ]
       },
-      "note": "FeCO3 precipitates"
-    },
-    "metal_with_acid": {
-      "substrates": [
-        "Fe",
-        "H2CO3"
-      ],
-      "products": [
-        "FeCO3",
-        "H2"
-      ],
-      "rule": "metal_with_acid",
-      "equation": "Fe + H2CO3 -> FeCO3 + H2",
-      "coefficients": {
-        "substrates": [
-          1,
-          1
-        ],
-        "products": [
-          1,
-          1
-        ]
-      },
-      "note": "FeCO3 is insoluble"
+      "note": "CuCO3 precipitates"
     },
     "neutralisation": {
       "substrates": [
         "H2CO3",
-        "Fe(OH)2"
+        "Cu(OH)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "H2O"
       ],
       "rule": "neutralisation",
-      "equation": "H2CO3 + Fe(OH)2 -> FeCO3 + 2 H2O",
+      "equation": "H2CO3 + Cu(OH)2 -> CuCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1689,19 +1676,19 @@
           2
         ]
       },
-      "note": "FeCO3 is insoluble"
+      "note": "CuCO3 is insoluble"
     },
     "acid_salt_with_base": {
       "substrates": [
-        "Fe(HCO3)2",
-        "Fe(OH)2"
+        "Cu(HCO3)2",
+        "Cu(OH)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "H2O"
       ],
       "rule": "acid_salt_with_base",
-      "equation": "Fe(HCO3)2 + Fe(OH)2 -> 2 FeCO3 + 2 H2O",
+      "equation": "Cu(HCO3)2 + Cu(OH)2 -> 2 CuCO3 + 2 H2O",
       "coefficients": {
         "substrates": [
           1,
@@ -1716,15 +1703,15 @@
     },
     "hydrogencarbonate_decomposition": {
       "substrates": [
-        "Fe(HCO3)2"
+        "Cu(HCO3)2"
       ],
       "products": [
-        "FeCO3",
+        "CuCO3",
         "CO2",
         "H2O"
       ],
       "rule": "hydrogencarbonate_decomposition",
-      "equation": "Fe(HCO3)2 -> FeCO3 + CO2 + H2O",
+      "equation": "Cu(HCO3)2 -> CuCO3 + CO2 + H2O",
       "coefficients": {
         "substrates": [
           1
@@ -1742,16 +1729,16 @@
     {
       "substrates": [
         "Ba(HCO3)2",
-        "Fe"
+        "CuBr2"
       ],
-      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
+      "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(HCO3)2",
-        "FeI2"
+        "CuF2"
       ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
     },
     {
       "substrates": [
@@ -1763,44 +1750,107 @@
     {
       "substrates": [
         "Ba(HCO3)2",
-        "KI"
+        "NaBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(HCO3)2",
-        "KOH"
+        "NaF"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "Ba(HCO3)2",
+        "NaOH"
       ],
       "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "K2CO3"
+        "Na2CO3"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "K2SiO3"
+        "Na2SiO3"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "KHCO3"
+        "NaBr"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
         "Ba(OH)2",
-        "KI"
+        "NaF"
       ],
-      "note": "KOH is soluble, so it stays in solution and nothing drives the exchange"
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "Ba(OH)2",
+        "NaHCO3"
+      ],
+      "note": "NaOH is soluble, so it stays in solution and nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "Cu(HCO3)2"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "CuF2"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaF"
+      ],
+      "note": "BaF2 is only slightly soluble, so whether it drops out depends on how concentrated things are -- and this game has no amounts, so it is left out"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "BaBr2",
+        "NaOH"
+      ],
+      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
     },
     {
       "substrates": [
@@ -1811,150 +1861,136 @@
     },
     {
       "substrates": [
-        "BaI2",
-        "Fe"
-      ],
-      "note": "Fe sits below Ba in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "Fe(HCO3)2"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaI2",
+        "BaF2",
         "H2CO3"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaI2",
+        "BaF2",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "BaI2",
-        "KHCO3"
-      ],
-      "note": "both possible products stay in solution, so nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "BaI2",
-        "KOH"
-      ],
-      "note": "Ba(OH)2 is soluble, so it stays in solution and nothing drives the exchange"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "Fe(HCO3)2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "FeI2"
-      ],
-      "note": "Fe sits below Fe in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "K2CO3"
-      ],
-      "note": "Fe sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "K2SiO3"
-      ],
-      "note": "Fe sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "KHCO3"
-      ],
-      "note": "Fe sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe",
-        "KI"
-      ],
-      "note": "Fe sits below K in the activity series, so it cannot push it out"
-    },
-    {
-      "substrates": [
-        "Fe(HCO3)2",
+        "Cu(HCO3)2",
         "H2SiO3"
       ],
       "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "Fe(HCO3)2",
-        "KI"
+        "Cu(HCO3)2",
+        "NaBr"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
-        "FeI2",
+        "Cu(HCO3)2",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
         "H2CO3"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "FeI2",
+        "CuBr2",
         "H2SiO3"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
-        "FeI2",
-        "KHCO3"
+        "CuBr2",
+        "NaF"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuBr2",
+        "NaHCO3"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "H2CO3"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "H2SiO3"
+      ],
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "NaBr"
+      ],
+      "note": "both possible products stay in solution, so nothing drives the exchange"
+    },
+    {
+      "substrates": [
+        "CuF2",
+        "NaHCO3"
       ],
       "note": "both possible products stay in solution, so nothing drives the exchange"
     },
     {
       "substrates": [
         "H2CO3",
-        "KI"
+        "NaBr"
       ],
-      "note": "H2CO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2CO3 is no stronger than HBr, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2CO3",
+        "NaF"
+      ],
+      "note": "H2CO3 is no stronger than HF, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "K2CO3"
+        "Na2CO3"
       ],
       "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "KHCO3"
+        "NaBr"
       ],
-      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HBr, so it cannot drive it out of its own salt"
     },
     {
       "substrates": [
         "H2SiO3",
-        "KI"
+        "NaF"
       ],
-      "note": "H2SiO3 is no stronger than HI, so it cannot drive it out of its own salt"
+      "note": "H2SiO3 is no stronger than HF, so it cannot drive it out of its own salt"
+    },
+    {
+      "substrates": [
+        "H2SiO3",
+        "NaHCO3"
+      ],
+      "note": "H2SiO3 is no stronger than H2CO3, so it cannot drive it out of its own salt"
     }
   ]
 }
